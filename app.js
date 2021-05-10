@@ -161,6 +161,13 @@ $(".fs-nav-butt").one("click", handler1);
 
 
 
+var video = document.getElementById("bgvid");
+video.oncanplaythrough = function() {
+    video.muted = true;
+    video.play();
+   console.log("RADIDIIDIIDIDIDIDIDI");
+}
+
 
 
 /*
@@ -649,7 +656,7 @@ menuAnimationBack
 /* -----------------------------
 // ADD EVENT LISTER
 ----------------------------- */
-  
+  /*
 burger.onclick = function() {
 
   toggle = !toggle;
@@ -657,11 +664,11 @@ burger.onclick = function() {
 };
 
 /* CLICK ON LINK CLOSE MENU*/
- 
+ /*
 $('nav li a, .menutrig').on('click', function(){
     $(burger).trigger('click');
 });
- 
+ */
 }
 
 /*
