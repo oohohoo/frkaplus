@@ -4,7 +4,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 let locoScroll;
 
-Splitting();
+//Splitting();
 
 /*
 ================================================================================
