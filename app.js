@@ -159,6 +159,14 @@ function handler2() {
 }
 $(".fs-nav-butt").one("click", handler1);
 
+
+/*video autoplay*/
+$("#video-bg").get(0).volume=0;
+  $('#video-bg').attr('playsinlineXXX',true);
+  $('#video-bg').attr('muted',"muted");
+  $('#video-bg').get(0).play()
+
+
 /*
 ================================================================================
 LOCOMOTIVE 4 SCROLL TO TOP
@@ -840,14 +848,13 @@ VIDEO AUTOPLAY
 */
 
 function autoPlay() {
+
+  
 /* mute and add playsinline to first DOM video on the page */
-document.addEventListener("DOMContentLoaded", function(){
+/*document.addEventListener("DOMContentLoaded", function(){
   // Handler when the DOM is fully loaded
-  $("#video-bg").get(0).volume=0;
-  $('#video-bg').attr('playsinline',true);
-  $('#video-bg').attr('muted',"muted");
-  $('#video-bg').get(0).play()
-});
+
+/*});
  
 }
 
