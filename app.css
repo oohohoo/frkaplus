@@ -53,7 +53,7 @@ IS TRANSITIONING / BLUE PROGRESS CURSOR & POINTER EVENTS
 LOADER
 ================================================================================
 */
-.loaderx,
+.loader,
 .loader__content {
   min-height: 100vh;
   position: fixed;
