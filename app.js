@@ -400,7 +400,7 @@ views: [{
   beforeEnter(data) {
   titleHero();
    //heroSwiper();
-   autoPlay();
+   //autoPlay();
    console.log("autoplay!"); 
   },
   once(data) {
