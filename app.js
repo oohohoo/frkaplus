@@ -391,7 +391,9 @@ views: [{
 
   beforeEnter(data) {
   titleHero();
-   heroSwiper();
+   //heroSwiper();
+   autoPlay();
+   console.log("autoplay!"); 
   },
   once(data) {
     titleHero();
@@ -831,4 +833,20 @@ fadeEffect: {
 }
 
 
+/*
+================================================================================
+VIDEO AUTOPLAY
+================================================================================
+*/
+
+function autoPlay() {
+/* mute and add playsinline to first DOM video on the page */
+document.addEventListener("DOMContentLoaded", function(){
+  // Handler when the DOM is fully loaded
+  $("video").get(0).volume=0;
+  $('video').attr('playsinline',true);
+  $('video').attr('muted',"muted");
+  $('video').get(0).play()
+});
  
+}
