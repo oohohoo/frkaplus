@@ -843,10 +843,10 @@ function autoPlay() {
 /* mute and add playsinline to first DOM video on the page */
 document.addEventListener("DOMContentLoaded", function(){
   // Handler when the DOM is fully loaded
-  $(".bgvideo").get(0).volume=0;
-  $('.bgvideo').attr('playsinline',true);
-  $('.bgvideo').attr('muted',"muted");
-  $('.bgvideo').get(0).play()
+  $("#video-bg").get(0).volume=0;
+  $('#video-bg').attr('playsinline',true);
+  $('#video-bg').attr('muted',"muted");
+  $('#video-bg').get(0).play()
 });
  
 }
