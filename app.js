@@ -849,12 +849,6 @@ VIDEO AUTOPLAY
 
 function autoPlay() {
 
-  
-/* mute and add playsinline to first DOM video on the page */
-/*document.addEventListener("DOMContentLoaded", function(){
-  // Handler when the DOM is fully loaded
 
-/*});
- 
 }
 
