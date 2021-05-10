@@ -844,9 +844,11 @@ function autoPlay() {
 document.addEventListener("DOMContentLoaded", function(){
   // Handler when the DOM is fully loaded
   $("video").get(0).volume=0;
-  $('video').attr('playsinlineXXX',true);
+  $('video').attr('playsinline',true);
+  $('video').attr('autoPlay',true);
   $('video').attr('muted',"muted");
   $('video').get(0).play()
 });
  
 }
+
