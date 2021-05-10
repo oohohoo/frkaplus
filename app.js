@@ -692,7 +692,7 @@ HOME PAGE TITLE & HERO GALLERY
 */
 function titleHero() {
 
-  Splitting();
+  //Splitting();
   
  /*
  ================================================================================
