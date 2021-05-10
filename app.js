@@ -161,6 +161,15 @@ $(".fs-nav-butt").one("click", handler1);
 
 
 
+var video = document.getElementById("bgvid");
+video.oncanplaythrough = function() {
+    video.muted = true;
+    video.play();
+   console.log("Hello world!");
+}
+
+
+
 /*
 ================================================================================
 LOCOMOTIVE 4 SCROLL TO TOP
@@ -395,7 +404,7 @@ views: [{
   titleHero();
    //heroSwiper();
    //autoPlay();
-   console.log("autoplay!"); 
+ 
   },
   once(data) {
     titleHero();
