@@ -159,13 +159,7 @@ function handler2() {
 }
 $(".fs-nav-butt").one("click", handler1);
 
-function autoPlay() {
-/*video autoplay*/
-$("#video-bg").get(0).volume=0;
-  $('#video-bg').attr('playsinlineXXX',true);
-  $('#video-bg').attr('muted',"muted");
-  $('#video-bg').get(0).play()
-}
+
 
 /*
 ================================================================================
