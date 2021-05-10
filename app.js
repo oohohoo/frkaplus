@@ -161,14 +161,7 @@ $(".fs-nav-butt").one("click", handler1);
 
 
 
-var video = document.getElementById("bgvid");
-video.oncanplaythrough = function() {
-    video.muted = true;
-    video.play();
-   console.log("Hello world!");
-}
 
-}
 
 /*
 ================================================================================
@@ -404,7 +397,7 @@ views: [{
   titleHero();
    //heroSwiper();
    //autoPlay();
- 
+   console.log("autoplay!"); 
   },
   once(data) {
     titleHero();
@@ -656,7 +649,7 @@ menuAnimationBack
 /* -----------------------------
 // ADD EVENT LISTER
 ----------------------------- */
-  /*
+  
 burger.onclick = function() {
 
   toggle = !toggle;
@@ -664,7 +657,7 @@ burger.onclick = function() {
 };
 
 /* CLICK ON LINK CLOSE MENU*/
- /*
+ 
 $('nav li a, .menutrig').on('click', function(){
     $(burger).trigger('click');
 });
