@@ -145,7 +145,8 @@ locoScroll.on('scroll', (instance) => {
   // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
   ScrollTrigger.refresh();
  
-
+  /*NE ZNAM DA LI OVO IDE???*/
+  locoScroll.update();
 
 /* PREVENT SCROLL UNDER FS MENU*/
 function handler1() {
@@ -256,7 +257,7 @@ function initLoader() {
 
   const tlLoaderIn = gsap.timeline({
     id: 'tlLoaderIn',
-    defaults: {duration: 0.8, ease: 'power2.out'},
+    defaults: {duration: 1.1, ease: 'power2.out'},
     onComplete: () => initContent()
   });
 
@@ -269,7 +270,7 @@ function initLoader() {
   const loaderInner = select('.inner-loader');
 
   tlLoaderIn
-
+/*
     .set(loaderContent, {autoAlpha: 1})
     .set(".txt", {yPercent: 100}) 
     .set(".imgg", {yPercent: 100})
@@ -280,19 +281,38 @@ function initLoader() {
     .addLabel('revealImage')
     //.to(image, {yPercent: 0}, 'revealImage-=0.5') 
     .to(".imgg", {yPercent: 0})
-    /* .to(".txt", {yPercent: 0}) */
-    .to(".txt", {yPercent: 0, stagger: 0.3}, 'revealImage-=0.4')
+        .to(".txt", {yPercent: 0, stagger: 0.3}, 'revealImage-=0.4')
     .to(".smallprint", {yPercent: 0})
+*/
+
+.set(loaderContent, {autoAlpha: 1})
+    .set(".txt", {yPercent: 100})
+    .set(mask, {yPercent: 0})
+    .set(image, {yPercent: 100})
+    .set("#main", {y: 150})
+
+    .to(loaderInner, {scaleY: 1, transformOrigin: 'bottom', ease: 'power1.inOut'})
+
+    .addLabel('revealImage')
+    .to(image, {yPercent: 0}, 'revealImage-=0.5')
+    .to(".txt", {yPercent: 0, stagger: 0.2}, 'revealImage-=0.4');
 
   // LOADER OUT
   const tlLoaderOut = gsap.timeline({
     id: 'tlLoaderOut',
-    defaults: {duration: 0.8, ease: 'power2.inOut'},delay: 0});
+    defaults: {duration: 1.2, ease: 'power2.inOut'},delay: 0});
 
   tlLoaderOut
+
+  /*
 .to(".imgg", {autoAlpha:0})
     .to(lines, {stagger: 0.3, autoAlpha:0}, '-=0.5')
     .to([loader, loaderContent], {yPercent: -100}, '-=0.5')
+*/
+
+.to(lines, {yPercent: -500, stagger: 0.2}, 0)
+    .to([loader, loaderContent], {yPercent: -100}, 0.2)
+    .to('#main', {y: 0}, 0);
 
   const tlLoader = gsap.timeline();
   tlLoader
@@ -323,7 +343,16 @@ function pageTransitionIn({
   // timeline to stretch the loader over the whole screen
   const tl = gsap.timeline({defaults: {duration: 0.6,ease: 'power3.out'}});
   tl
-    .to(container, {autoAlpha:0}, 0);
+
+  .set(loaderInner, {autoAlpha: 0})
+  .fromTo(loader, {yPercent: -100}, {yPercent: 0})
+  .fromTo(loaderMask, {yPercent: 80}, {yPercent: 0}, 0)
+  .to(container, {y: 150}, 0);
+
+/*
+  .to(container, {autoAlpha:0}, 0);
+*/
+
   return tl;
 }
 
@@ -342,8 +371,14 @@ function pageTransitionOut({
     onComplete: () => initContent()
   });
   tl
+/*
     .from(container, {autoAlpha:0}, 0);
-  return tl;
+  */
+
+    .to(loader, {yPercent: 100})
+    .to(loaderMask, {yPercent: -80}, 0)
+    .from(container, {y: -150}, 0);
+    return tl;
 }
 
 /*
