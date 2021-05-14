@@ -292,7 +292,7 @@ function initLoader() {
     .set(".txt", {yPercent: 100})
     .set(".freveal", {yPercent: 100})
     .set(mask, {yPercent: 0})
-    .set(image, {yPercent: 100})
+    //.set(image, {yPercent: 100})
     .set("#main", {y: 150})
 
     .to(loaderInner, {scaleY: 1, transformOrigin: 'bottom', ease: 'power1.inOut'})
@@ -300,8 +300,8 @@ function initLoader() {
     .addLabel('revealImage')
 
     .to(".freveal", {yPercent: 0, stagger: 0.2}, 'revealImage-=0.6')
-    .to(image, {yPercent: 0}, 'revealImage-=0.5')
-    .to(".txt", {yPercent: 0, stagger: 0.2}, 'revealImage-=0.4');
+    //.to(image, {yPercent: 0}, 'revealImage-=0.5')
+    //.to(".txt", {yPercent: 0, stagger: 0.2}, 'revealImage-=0.4');
 
   // LOADER OUT
   const tlLoaderOut = gsap.timeline({
