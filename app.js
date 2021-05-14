@@ -161,14 +161,14 @@ function handler2() {
 $(".fs-nav-butt").one("click", handler1);
 
 
-
+/*
 var video = document.getElementById("bgvid");
 video.oncanplaythrough = function() {
     video.muted = true;
     video.play();
    console.log("RADIDIIDIIDIDIDIDIDI");
 }
-
+*/
 
 
 /*
