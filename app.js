@@ -985,4 +985,30 @@ center: [-74.5, 40], // starting position [lng, lat]
 zoom: 9 // starting zoom
 });
 
+/*3 second before zoom*/
+var map = L.mapbox.map('mymap', 'mymap');
+
+// disable scroll-zooming initially
+map.scrollWheelZoom.disable();
+
+var zoomTimer;
+
+// on entering the map we're starting a timer to
+// 3 seconds after which we'll enable scroll-zooming
+map.on('mouseover', function() {
+	zoomTimer = setTimeout(function(){
+		map.scrollWheelZoom.enable();
+    }, 3000);
+});
+
+// on leaving the map we're disarming not yet triggered timers
+// and disabling scrolling
+map.on('mouseout', function() {
+    clearTimeout(zoomTimer);
+    map.scrollWheelZoom.disable();
+});
+
+
+
+
 }
