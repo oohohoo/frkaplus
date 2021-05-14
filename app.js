@@ -473,6 +473,10 @@ views: [{
  
   }},{
   namespace: 'lokacijesolo',
+  once(data) {
+    swiperlocation();
+  },
+
   beforeEnter(data) {
 
     swiperlocation();
@@ -494,7 +498,7 @@ views: [{
       once({
         next
       }) {
-        swiperlocation();
+       
         // do something once on the initial page load
         initLoader();
         /*fullscreenMenuNew(); */
