@@ -15,9 +15,9 @@ DEFINE ROOT VARIABLES / definiraj svoje
 ================================================================================
 */
 :root {
-  --bcg-lightblue:#f5f4f1;
+  --bcg-lightblue:#ffdc52;
   --bcg-loaderblue: #1e1e1e;
-  --bcg-loaderbluedark: #f5f4f1;
+  --bcg-loaderbluedark: #ffdc52;
   --loader-width: 50vw;
   --loader-height: 5em;
 }
