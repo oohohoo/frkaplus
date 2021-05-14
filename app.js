@@ -961,6 +961,6 @@ $(document).ready(function(){
   accordion.init({ speed: 1000, oneOpen: true }); //duration of opening body__contents
 });
 
-g
+
 
 }
