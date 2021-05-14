@@ -1064,7 +1064,7 @@ var menu = ['', '', '', '', '', '']
       pagination: {
 				el: '.swiper-pagination',
 				clickable: true,
-				type: 'bullets',
+				type: "progressbar",
 				renderBullet: function (index, className) {
 					return '<span class="' + className + '">' + (menu[index]) + '</span>';
 },
