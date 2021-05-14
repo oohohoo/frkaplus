@@ -290,7 +290,7 @@ function initLoader() {
 
 .set(loaderContent, {autoAlpha: 1})
     .set(".txt", {yPercent: 100})
-    .set(".l1, .l2", {scaleX: 0})
+    .set(".l1, .l3", {scaleX: 0})
     .set(".freveal", {yPercent: 100})
     .set(mask, {yPercent: 0})
     //.set(image, {yPercent: 100})
