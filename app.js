@@ -1058,7 +1058,7 @@ var menu = ['', '', '', '', '', '']
     // And if we need scrollbar
     //scrollbar: '.swiper-scrollbar',
     // "slide", "fade", "cube", "coverflow" or "flip"
-    effect: 'slide',
+   // effect: 'slide',
     
       pagination: {
 				el: '.swiper-pagination',
