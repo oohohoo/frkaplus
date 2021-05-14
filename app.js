@@ -473,7 +473,7 @@ views: [{
  
   }},{
   namespace: 'lokacijesolo',
-  afterEnter(data) {
+  beforeEnter(data) {
 
     swiperlocation();
     //contactHeroAnima();
