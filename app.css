@@ -274,6 +274,35 @@ GSAP PERFORMANCE FIX
   backface-visibility: hidden;
 }   
 
+
+/*
+================================================================================
+SWIPER ASPECT RATIO FIX
+================================================================================
+*/
+
+.swiper-container, .swiper-container-gal {
+  aspect-ratio: 16/9; 
+  width: 100%;
+   height: 100%;
+   overflow: hidden;
+ }
+ 
+   .d-container {
+     position: relative;
+     width: 100%;
+     padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  }
+  .d-inner {
+     position:  absolute;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+  }
+
+  
+  
 /*
 ================================================================================
 karta full format
