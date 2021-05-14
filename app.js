@@ -98,10 +98,13 @@ function initScroll(container) {
 
   locoScroll = new LocomotiveScroll({
     el: document.querySelector(".smooth-scroll"),
-    smooth: true,
+    smooth: true, 
+    offset: [0, 0],
     getDirection: true,
     scrollFromAnywhere: true,
-    touchMultiplier: 3,
+    multiplier: 1.0, // body sroll speed / object speed values are multiplied
+    touchMultiplier: 3.0,
+    inertia: .6,
     smartphone: {
       smooth: true,
     },
@@ -890,6 +893,6 @@ LOCO ACCORDION
 function locoAccordion() {
 
 
-  
+
 
 }
