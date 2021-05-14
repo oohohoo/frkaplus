@@ -494,6 +494,7 @@ views: [{
       once({
         next
       }) {
+        swiperlocation();
         // do something once on the initial page load
         initLoader();
         /*fullscreenMenuNew(); */
