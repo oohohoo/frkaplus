@@ -272,7 +272,21 @@ GSAP PERFORMANCE FIX
  .gsapfix {
   will-change: transform;
   backface-visibility: hidden;
-}    
+}   
+
+/*
+================================================================================
+karta full format
+================================================================================
+*/
+
+.mapboxgl-canvas {
+  width:100%!important;
+  height: 100%!important;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 /*
 ================================================================================
 SHOW HIDE MENU
