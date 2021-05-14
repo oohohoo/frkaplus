@@ -465,9 +465,11 @@ views: [{
     }
 
 },{
-    namespace: 'xxxxxxxx',
+    namespace: 'lokacije',
   beforeEnter(data) {
-    tailoredHeroAnima();
+
+    locationMap();
+    console.log("LOCATION MAP LOADED");
  
   }},{
   namespace: 'xxxxxxxxxx',
@@ -962,5 +964,25 @@ $(document).ready(function(){
 });
 
 
+
+}
+
+
+/*
+================================================================================
+LOCO ACCORDION
+================================================================================
+*/
+
+function locationMap() {
+
+
+mapboxgl.accessToken = 'pk.eyJ1IjoiZm9nc2VsbGVyIiwiYSI6ImNrN2VpbXlpbjAwNDIzbnM1N2ZhMW9laGkifQ.DUf-8r1jXF4o7ApMUcKVXQ';
+var map = new mapboxgl.Map({
+container: 'map', // container ID
+style: 'mapbox://styles/mapbox/streets-v11', // style URL
+center: [-74.5, 40], // starting position [lng, lat]
+zoom: 9 // starting zoom
+});
 
 }
