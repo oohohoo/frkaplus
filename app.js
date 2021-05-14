@@ -457,7 +457,7 @@ views: [{
 
     locoAccordion();
 
-    projectsHeroAnima();
+   // projectsHeroAnima();
     projectAnchorScroll();
     },
   once(){
@@ -777,7 +777,7 @@ PROJECTS - HERO ANIMACIJA
 */
 function projectsHeroAnima() {
 
-  Splitting();
+  //Splitting();
 
 const mq = window.matchMedia('(min-width: 999px)')
 if (mq.matches) {
