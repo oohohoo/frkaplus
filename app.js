@@ -290,7 +290,7 @@ function initLoader() {
 
 .set(loaderContent, {autoAlpha: 1})
     .set(".txt", {yPercent: 100})
-    .set(".l1", {xPercent: 0})
+    .set(".l1", {xPercent: 50})
     .set(".freveal", {yPercent: 100})
     .set(mask, {yPercent: 0})
     //.set(image, {yPercent: 100})
@@ -300,8 +300,8 @@ function initLoader() {
 
     .addLabel('revealImage')
 
-    .to(".l1", {xPercent: 100}, 'revealImage-gr=0.1')
-    .to(".freveal", {yPercent: 0, stagger: 0.1}, 'revealImage-gr=0.2')
+    .to(".l1", {xPercent: 100}, 'revealImage-=0.2')
+    .to(".freveal", {yPercent: 0, stagger: 0.1}, 'revealImage-=0.1')
     //.to(image, {yPercent: 0}, 'revealImage-=0.5')
     //.to(".txt", {yPercent: 0, stagger: 0.2}, 'revealImage-=0.4');
 
