@@ -911,7 +911,7 @@ function createAnimation(i, element) {
   var box  = element.querySelector(".accordion-content");
   
   gsap.set(box, { height: "auto"})
-  var tween = gsap.from(box, { duration:0.5, height: 0, ease: Power1.easeInOut }).reverse();
+  var tween = gsap.from(box, { duration:0.5, height: 0, ease: 'power1.out' }).reverse();
   
   return function(selected) {
     
