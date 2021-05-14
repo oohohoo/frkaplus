@@ -351,6 +351,13 @@ SWIPER STUFF
     }
   
 
+
+    .swiper-pagination {
+      z-index: 1 !important;
+  }
+
+  
+
 /*
 ================================================================================
 karta full format
