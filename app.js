@@ -987,7 +987,7 @@ zoom: 9 // starting zoom
 
 
 /*********************** NE RADI  */
-/*3 second before zoom*/
+/*3 second before zoom
 var mapo = L.mapbox.map('mymap', 'mymap');
 
 // disable scroll-zooming initially
