@@ -299,7 +299,7 @@ function initLoader() {
 
     .addLabel('revealImage')
 
-    .to(".freveal", {yPercent: 0, stagger: 0.1}, 'revealImage-=0.1')
+    .to(".freveal", {yPercent: 0, stagger: 0.1}, 'revealImage-=0.2')
     //.to(image, {yPercent: 0}, 'revealImage-=0.5')
     //.to(".txt", {yPercent: 0, stagger: 0.2}, 'revealImage-=0.4');
 
