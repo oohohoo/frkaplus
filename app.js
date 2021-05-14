@@ -985,7 +985,10 @@ center: [-74.5, 40], // starting position [lng, lat]
 zoom: 9 // starting zoom
 });
 
-
+map.on('load', function (e) {
+  var mapContainerEl = document.getElementById('map');
+  mapContainerEl.style.visibility = 'visible';
+  });
 /*********************** NE RADI  */
 /*3 second before zoom
 var mapo = L.mapbox.map('mymap', 'mymap');
