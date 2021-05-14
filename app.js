@@ -301,7 +301,7 @@ function initLoader() {
     .addLabel('revealImage')
 
     .to(".l1", {xPercent: 100, transformOrigin: 'left', duration: 1}, 'revealImage+=0.1')
-    .to(".l2", {xPercent: 100, transformOrigin: 'left', duration: 1}, 'revealImage+=0.3')
+    .to(".l3", {xPercent: 100, transformOrigin: 'left', duration: 1}, 'revealImage+=0.3')
     .to(".freveal", {yPercent: 0, stagger: 0.1}, 'revealImage+=0.8')
     //.to(image, {yPercent: 0}, 'revealImage-=0.5')
     //.to(".txt", {yPercent: 0, stagger: 0.2}, 'revealImage-=0.4');
