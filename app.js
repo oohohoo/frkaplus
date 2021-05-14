@@ -1053,8 +1053,8 @@ var menu = ['', '', '', '', '', '']
  
     
     // Navigation arrows
- /*   nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',*/
+   nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
     
     // And if we need scrollbar
     //scrollbar: '.swiper-scrollbar',
@@ -1065,9 +1065,9 @@ var menu = ['', '', '', '', '', '']
 				el: '.swiper-pagination',
 				clickable: true,
 				type: "progressbar",
-				renderBullet: function (index, className) {
+				/*renderBullet: function (index, className) {
 					return '<span class="' + className + '">' + (menu[index]) + '</span>';
-},
+},*/
     // Distance between slides in px.
   //  spaceBetween: 60,
     //
