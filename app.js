@@ -476,6 +476,7 @@ views: [{
   beforeEnter(data) {
 
     swiperlocation();
+    locationMap();
     //contactHeroAnima();
 
   }},{
@@ -495,7 +496,7 @@ views: [{
       }) {
         // do something once on the initial page load
         initLoader();
-        fullscreenMenuNew(); 
+        /*fullscreenMenuNew(); */
         underlineMouseover();
                 
       },

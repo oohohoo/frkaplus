@@ -294,35 +294,14 @@ SWIPER STUFF
      padding-top: 68.75%; /* 16:9 Aspect Ratio */
   }
   .d-inner {
-     position:  absolute;
+     position: absolute;
      top: 0;
      left: 0;
      bottom: 0;
      right: 0;
   }
 
-  .swiper-pagination-bullet {
-    transform-origin: top left;
-       margin-right: 1.200em;
-        border-radius: 0 !important;
-        width:4em; 
-        height: 3px; 
-        opacity: 1;
-        margin-bottom: 0.5em;
-        background-color: #9b2557; 
-        outline: none !important;
-        box-shadow: none;
-        transform: scaleX(1);
-        transition: all 0.3s ease 0s;
-    }
-    
-    .swiper-pagination-bullet-active {
-      background-color: #9b2557 !important;
-        outline: none !important;
-        box-shadow: none;
-         transform: scaleX(0.5);
-        transition: all 0.3s ease 0s;
-       }
+
     
     .swiper-container .swiper-wrapper .swiper-slide-active .up {
       animation-name: fade-in;
@@ -357,6 +336,24 @@ SWIPER STUFF
   }
 
   
+  /*
+================================================================================
+TXT SELECT
+================================================================================
+*/
+
+::selection {
+  background: #231f20; 
+  color: #F4DD54; 
+  text-shadow: none;}
+  
+  ::-moz-selection {
+     background: #231f20;
+     color: #F4DD54;
+  }
+  
+
+
 
 /*
 ================================================================================
