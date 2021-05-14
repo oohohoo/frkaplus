@@ -986,7 +986,7 @@ zoom: 9 // starting zoom
 });
 
 /*3 second before zoom*/
-var map = L.mapbox.map('mymap', 'mymap');
+//var map = L.mapbox.map('mymap', 'mymap');
 
 // disable scroll-zooming initially
 map.scrollWheelZoom.disable();
