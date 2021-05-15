@@ -486,5 +486,21 @@ TRICK TO UNIT PORTS ON MOBILE - VH
 }
 /*
 
+/*
+================================================================================
+CURSOR IMAGE OVER 
+================================================================================
 
-/* OVO ISPOD JE SMEĆE*/
+*/
+
+.cursor {
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -100px;
+  background: url(https://i.pinimg.com/564x/85/24/d7/8524d785a8427617d475bf02d51710fc.jpg) no-repeat 50% 50%;
+  background-size: contain;
+  z-index: 1;
+} 
