@@ -187,13 +187,14 @@ $("#btn-city").on("click", function(){
 });
 $("#btn-nature").on("click", function(){
    shuffleInstance.filter('nature');
+   locoScroll.update();
+console.log("LOCOSCROLL UPDATED AFTER SORT");
 });
 /*
 ScrollTrigger.refresh();
 console.log("SCROLLTRIGGER UPDATED AFTER SORT");
 */
-locoScroll.update();
-console.log("LOCOSCROLL UPDATED AFTER SORT");
+
 
 
 
