@@ -178,12 +178,18 @@ var shuffleInstance = new Shuffle(element, {
 // shuffleInstance.filter('animal');
 $("#all").on("click", function(){
    shuffleInstance.filter();
+   locoScroll.update();
+   console.log("LOCOSCROLL UPDATED AFTER SORT");
 });
 $("#btn-animal").on("click", function(){
    shuffleInstance.filter('animal');
+   locoScroll.update();
+   console.log("LOCOSCROLL UPDATED AFTER SORT");
 });
 $("#btn-city").on("click", function(){
    shuffleInstance.filter('city');
+   locoScroll.update();
+   console.log("LOCOSCROLL UPDATED AFTER SORT");
 });
 $("#btn-nature").on("click", function(){
    shuffleInstance.filter('nature');
