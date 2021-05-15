@@ -167,6 +167,7 @@ $(".fs-nav-butt").one("click", handler1);
 
 
 /* sort shuffle*/
+/*
 var Shuffle = window.Shuffle;
 var element = document.querySelector('.my-shuffle-container');
 var sizer = element.querySelector('.my-sizer-element');
@@ -190,6 +191,8 @@ $("#btn-nature").on("click", function(){
    locoScroll.update();
 console.log("LOCOSCROLL UPDATED AFTER SORT");
 });
+
+*/
 /*
 ScrollTrigger.refresh();
 console.log("SCROLLTRIGGER UPDATED AFTER SORT");
