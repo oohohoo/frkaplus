@@ -240,7 +240,8 @@ videoroll.to(".bgvideo", {
     scrub: 2,
   },
   clipPath: 'inset(-60%)',
-  rotate:6
+  scale:1.3,
+  rotate:-10
 })
 
 /* sort shuffle*/
