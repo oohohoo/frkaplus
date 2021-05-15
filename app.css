@@ -555,14 +555,14 @@ BUTTER SLIDER
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: #B6FA00;
+  background-color: #231f20;
 }
 
 .progress2 {
   position: relative;
   height: 2px;
   width: 90%;
-  background-color: #8E8E8E;
+  background-color: #231f20;
   margin-top: 20px;
   margin-bottom: 20px;
 }
