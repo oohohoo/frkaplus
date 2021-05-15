@@ -237,7 +237,7 @@ videoroll.to(".bgvideo", {
     trigger: firstSection,    
     start: 'top 30%',
     end: "+=30%",    
-    scrub: 2,
+    /*scrub: 2,*/
   },
   clipPath: 'inset(-30%)',
   rotate:6
