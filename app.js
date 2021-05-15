@@ -231,7 +231,7 @@ let videoroll = gsap.timeline()
 let cover = document.querySelector('.bgvideo')
 let firstSection = document.querySelector('.big-logo')
 
-videoroll.from(cover.querySelector('img'), {
+videoroll.from(".bgvideo", {
   scrollTrigger: {
     scroller: ".smooth-scroll",
     trigger: firstSection,    
