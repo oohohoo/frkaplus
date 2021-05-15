@@ -1116,7 +1116,6 @@ SWIPER HERO
 */
 
 function sortScript() {
-
   'use strict';
 
   var Shuffle = window.shuffle;
@@ -1267,8 +1266,6 @@ function sortScript() {
   document.addEventListener('DOMContentLoaded', function () {
     window.demo = new Demo(document.querySelector('.js-shuffle'));
   });
-
-
 
 
 }
