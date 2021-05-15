@@ -1221,5 +1221,26 @@ function roll(targets, vars, reverse) {
 }
 
 
+/*BUTTER SLIDER*/
+const bar = document.querySelector(".bar");
+
+// const myarrow = document.querySelector('.myArrow');
+
+// može se ugasiti / read doc
+//autoInit();
+
+const mySlider = new butterSlider.CreateSlider({
+ container: ".slider",
+  slider: ".slides",
+  getScrollPercent: (e) => {
+    bar.style.width = `${e}%`;
+  },
+  dragSpeed: 1.5,
+  smoothAmount: 0.2,
+  hasTouchEvent: true
+ });
+
+
+
 
 }
