@@ -282,6 +282,28 @@ inparallax.from(".img__background", {
 
 
 
+/*******BUTTER SLIDER*******/
+const bar2 = document.querySelector(".bar2");
+
+// const myarrow = document.querySelector('.myArrow');
+
+// može se ugasiti / read doc
+//autoInit();
+
+const imgSlider = new butterSlider.CreateSlider({
+  container: ".sliderimg",
+   slider: ".slidesimg",
+   getScrollPercent: (e) => {
+     bar2.style.width = `${e}%`;
+   },
+   dragSpeed: 3,
+   smoothAmount: 0.05,
+   hasTouchEvent: true
+  });
+  
+
+
+
 /* sort shuffle*/
 /*
 var Shuffle = window.Shuffle;
@@ -1274,42 +1296,7 @@ function sortScript() {
 
 }
 
-/*
-================================================================================
-SWIPER HERO
-================================================================================
-*/
 
-function homeScrollTrigger() {
-
-
-
-
-
-
-/*BUTTER SLIDER*/
-const bar = document.querySelector(".bar");
-
-// const myarrow = document.querySelector('.myArrow');
-
-// može se ugasiti / read doc
-//autoInit();
-
-const mySlider = new butterSlider.CreateSlider({
- container: ".slider",
-  slider: ".slides",
-  getScrollPercent: (e) => {
-    bar.style.width = `${e}%`;
-  },
-  dragSpeed: 1.5,
-  smoothAmount: 0.2,
-  hasTouchEvent: true
- });
-
-
-
-
-}
 
 
 
