@@ -1179,11 +1179,11 @@ const roll1 = roll(".rollingtext", {duration: 40}), // ugasi true i mijenja smje
 ScrollTrigger.create({
        trigger: ".cd-wrap",
       
-       toggleClass: {
+       /*toggleClass: {
         targets: '.logofrka, .navstyle, .kontakt',
         className: 'orange'
-      }, 
-        start: "top 5%",
+      }, */
+        start: "top 30%",
         end: "bottom top",
         scroller: ".smooth-scroll",
             /*  invalidateOnRefresh: true, */
