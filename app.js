@@ -228,14 +228,14 @@ SCROLL TRIGGER INSET CLIPMASK ON FIRST
 
 let videoroll = gsap.timeline()
 
-let cover = document.querySelector('.bgvideo)
+let cover = document.querySelector('.bgvideo')
 let firstSection = document.querySelector('.big-logo')
 
 videoroll.from(cover.querySelector('img'), {
   scrollTrigger: {
     scroller: ".smooth-scroll",
     trigger: firstSection,    
-    start: 'top 30%',
+    start: 'top 30',
     end: "+=30%",    
     scrub: 2,
   },
