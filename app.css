@@ -504,7 +504,7 @@ CURSOR IMAGE OVER
   background-size: contain;
   z-index: 1;
 } 
-
+/*
 .project-overlay{
   position: absolute;
   top: 0;
