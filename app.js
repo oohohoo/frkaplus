@@ -600,6 +600,7 @@ views: [{
   beforeEnter(data) {
   /*titleHero();*/
   homeScrollTrigger();
+  scrollerImgOverlay();
   
   },
   once(data) {
@@ -1307,5 +1308,56 @@ const mySlider = new butterSlider.CreateSlider({
 
 
 
+
+}
+
+
+
+
+function scrollerImgOverlay() {
+
+
+
+
+var cursor = $(".cursor"),
+    overlay = $(".project-overlay");
+
+gsap.set(cursor, {opacity:0});
+
+function moveCircle(e) {
+  gsap.to(cursor, {
+    duration:.5,
+    css: {
+      left: e.pageX,
+      top: e.pageY
+    }
+  });
+}
+
+$(".p-1").hover(function(){
+  $(".cursor").css({"background-image": "url(https://i.pinimg.com/474x/0e/04/6e/0e046e6bf35d98e2729c389395945435.jpg)" });
+});
+
+$(".p-2").hover(function(){
+  $(".cursor").css({ "background-image": "url(https://i.pinimg.com/474x/0e/04/6e/0e046e6bf35d98e2729c389395945435.jpg)" });
+});
+$(".p-3").hover(function(){
+  $(".cursor").css({ "background-image": "url(https://i.pinimg.com/474x/0e/04/6e/0e046e6bf35d98e2729c389395945435.jpg)" });
+});
+$(".p-4").hover(function(){
+  $(".cursor").css({ "background-image": "url(https://i.pinimg.com/474x/0e/04/6e/0e046e6bf35d98e2729c389395945435.jpg)" });
+});
+
+var flag = false;
+$(overlay).mousemove(function() {
+  flag = true;
+  gsap.to(cursor, {duration: 0.3, scale: 1, autoAlpha: 1});
+  $(overlay).on("mousemove", moveCircle);
+});
+
+$(overlay).mouseout(function() {
+  flag = false;
+  gsap.to(cursor, {duration: 0.3, scale: 0.1, autoAlpha: 0});
+});
 
 }
