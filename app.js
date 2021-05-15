@@ -260,6 +260,28 @@ videoroll.to(".bgvideo", {
  
 })
 
+
+
+/*------------/ SCROLLTRIGGER INNER IMAGE PARALLAX /------------*/
+
+var inparallax = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".img__wrapper",
+    scroller: ".smooth-scroll",
+    scrub: true,
+    pin: false,
+  },
+}); 
+inparallax.from(".img__background", {
+  yPercent: -80,
+  ease: "none",
+}).to(".img__background", {
+  yPercent: 80,
+  ease: "none",
+}); 
+
+
+
 /* sort shuffle*/
 /*
 var Shuffle = window.Shuffle;
