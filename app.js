@@ -273,10 +273,10 @@ var inparallax = gsap.timeline({
   },
 }); 
 inparallax.from(".img__background", {
-  yPercent: -100,
+  yPercent: -50,
   ease: "none",
 }).to(".img__background", {
-  yPercent: 100,
+  yPercent: 50,
   ease: "none",
 }); 
 
