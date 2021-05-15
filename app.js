@@ -245,6 +245,21 @@ videoroll.to(".bgvideo", {
   yPercent:-30
 })
 
+
+.to(".hero--white--background", {
+  scrollTrigger: {
+    scroller: ".smooth-scroll",
+    trigger: firstSection,    
+    start: 'top 30%',
+    end: "+=30%",    
+    scrub: 2,
+  },
+  /*clipPath: 'inset(60%)',*/
+  autoAlpha:0,
+  rotate:40,
+ 
+})
+
 /* sort shuffle*/
 /*
 var Shuffle = window.Shuffle;
