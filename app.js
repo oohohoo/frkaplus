@@ -239,7 +239,7 @@ videoroll.to(".bgvideo", {
     end: "+=30%",    
     scrub: 2,
   },
-  clipPath: 'outset(10%)',
+  clipPath: 'inset(-30%)',
   rotate:6
 })
 
