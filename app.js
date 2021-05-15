@@ -256,7 +256,7 @@ videoroll.to(".bgvideo", {
   },
   /*clipPath: 'inset(60%)',*/
   autoAlpha:0,
-  rotate:40,
+  rotate:0,
  
 })
 
