@@ -240,7 +240,7 @@ videoroll.to(".bgvideo", {
     scrub: 2,
   },
   clipPath: 'inset(60%)',
-  scale:60,
+  scale:2,
   rotate:-10
 })
 
