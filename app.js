@@ -1138,4 +1138,10 @@ function sortScript() {
      shuffleInstance.filter('nature');
   });
 
+  ScrollTrigger.refresh();
+  console.log("SCROLLTRIGGER UPDATED AFTER SORT");
+
+  locoScroll.update();
+  console.log("LOCOSCROLL UPDATED AFTER SORT");
+
 }
