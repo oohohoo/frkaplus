@@ -1170,16 +1170,16 @@ MARQUEE + SCROLLTRIGGER change direction
 
 let direction = 1; // 1 = forward, -1 = backward scroll
 
-const roll1 = roll(".home-scroller-wrap", {duration: 40}), // ugasi true i mijenja smjer
-      roll2 = roll(".home-scroller-wrap2", {duration: 60}),
-      roll3 = roll(".home-scroller-wrap3", {duration: 80}, true);
+const roll1 = roll(".rollingtext", {duration: 40}), // ugasi true i mijenja smjer
+      roll2 = roll(".rollingtext02", {duration: 60}),
+      roll3 = roll(".rollingtext03", {duration: 80}, true);
 ScrollTrigger.create({
-       trigger: ".home--scrolleri",
+       trigger: ".cd-wrap",
       
-       /*toggleClass: {
+       toggleClass: {
         targets: '.logofrka, .navstyle, .kontakt',
         className: 'orange'
-      }, */
+      }, 
         start: "top 5%",
         end: "bottom top",
         scroller: ".smooth-scroll",
