@@ -1137,10 +1137,10 @@ function sortScript() {
   $("#btn-nature").on("click", function(){
      shuffleInstance.filter('nature');
   });
-
+/*
   ScrollTrigger.refresh();
   console.log("SCROLLTRIGGER UPDATED AFTER SORT");
-
+*/
   locoScroll.update();
   console.log("LOCOSCROLL UPDATED AFTER SORT");
 
