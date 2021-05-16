@@ -281,7 +281,7 @@ IMAGE OVERLAY CURSOR
 ================================================================================
 */
 .cursor {
-  position: absolute;
+  position: fixed;
   width: 31.25em;
   height: 20.83em;
   top: 50%;
