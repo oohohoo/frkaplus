@@ -1293,7 +1293,11 @@ sections.forEach((section, index) => {
       text.classList.remove('is-active')
       gsap.to(text, 1, {
         height: 0,
-        ease: 'power2.out'
+        ease: 'power2.out',
+        onComplete:function() {
+          locoScroll.update();
+          console.log("donedonedonedonedonedonedonedonedone")
+         }
       })
     } else {
       text.classList.add('is-active')
@@ -1302,7 +1306,11 @@ sections.forEach((section, index) => {
       })
       gsap.from(text, 1, {
         height: 0,
-        ease: 'power2.out'
+        ease: 'power2.out',
+        onComplete:function() {
+          locoScroll.update();
+          console.log("donedonedonedonedonedonedonedonedone")
+         }
       })
     }
   })
