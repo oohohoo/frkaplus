@@ -280,6 +280,8 @@ GSAP PERFORMANCE FIX
 IMAGE OVERLAY CURSOR
 ================================================================================
 */
+
+/*
 .cursor {
   position: fixed;
   width: 31.25em;
@@ -293,7 +295,7 @@ IMAGE OVERLAY CURSOR
 } 
 
 .project-overlay{
-  /*position: absolute;*/
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -301,6 +303,7 @@ IMAGE OVERLAY CURSOR
   z-index: 1;
 }
 
+*/
 
 /*
 ================================================================================
