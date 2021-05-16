@@ -166,6 +166,14 @@ $(".fs-nav-butt").one("click", handler1);
 
 ///////////// 
 
+
+
+// Dynamic Copyright Year
+var date = new Date().getFullYear();
+document.getElementById("year").innerHTML = date;
+
+
+
 /* =============================================
 MARQUEE + SCROLLTRIGGER change direction
 ================================================ */
