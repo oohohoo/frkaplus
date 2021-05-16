@@ -639,13 +639,13 @@ views: [{
   namespace: 'onama',
   beforeEnter(){
 
-    locoAccordion();
+ /*    locoAccordion(); */
 
    // projectsHeroAnima();
-    projectAnchorScroll();
+ 
     },
   once(){
-    projectAnchorScroll();
+   
     }
 
 },{
@@ -660,7 +660,7 @@ views: [{
     namespace: 'sort',
   beforeEnter(data) {
 
-    sortScript ();
+   
   
   
  
@@ -828,119 +828,6 @@ function underlineMouseover() {
 
 }
 
-/*
-================================================================================
-FULLSCREEN MENU
-================================================================================
-*/
-function fullscreenMenuNew() {
-
-/*OLD MENU*/
-  const fnav = select('.f-nav');
-  const mainwrap = select('.nav-w');
-  const slide = select('.nav--transition-slide');
-  const burger = select('.fs-nav-butt');
-  const klll = select('.f-nav-wrap')
-  const linko = select('.line-wrapper')
-
-/*GREENSOCK*/
-var menuAnimation = gsap.timeline({paused:true});
-var menuAnimationBack = gsap.timeline({paused:true});
-
-var toggle = true;
-
-/*/
-/* -----------------------------
-// MENU IN ANIMATION
------------------------------ */
-  
-//menuIn
-
-menuAnimation
-.to(".open", {duration: 0.2, autoAlpha:1, rotate:22.5})
-.from(".close", {duration: 0.2, autoAlpha:0 })
-.to(".open", {autoAlpha:0}, "<")
-  /* .to(navMain, {xPercent: 100, duration: 0.8, ease: "Expo.inOut"},0) */
-
-
-.set(burger, {pointerEvents: "none"}, "<")
-.to(mainwrap, {scaleY: 1, duration: 0.1}, "<0.1")
-.fromTo(slide, {scaleY: 0, transformOrigin: "bottom center"}, {duration: 0.45, scaleY: 1, ease: "Expo.inOut" }, "<0.2") 
-.fromTo(".f-nav", {yPercent: 185}, {duration: 0.45, yPercent: 0, stagger: 0.05}, "<0.3")
-.fromTo(".fadeinnav", {autoAlpha: 0}, {duration: 0.65, autoAlpha: 1, ease: "Expo.inOut"}, "<0.8")
-
-.set(burger, {pointerEvents: "all"})
- 
-/* -----------------------------
-// MENU OUT  ANIMATION
------------------------------ */
-  
-/* let menuOut = gsap.timeline({paused: true });
-  
-menuOut */
-
-menuAnimationBack
-.to(".close", {duration: 0.01, autoAlpha:0},0)
-.to(".open", {duration: 0.01, autoAlpha:1},0)
-.to(".open", {duration: 0.2, rotate:0}, "<")
-
-
-.set(burger, {pointerEvents: "none"}, "<")
-
-.to(".f-nav", {duration: 0.3, yPercent: -110, stagger: 0.05}, "<0.1")
-.to(".fadeinnav", {autoAlpha: 0, duration: 0.3, ease: "Expo.out"}, "<0.2")
-.to(slide, {duration: 0.8,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut"}, "<0.3")
-.set(burger, {pointerEvents: "all"})
-.set(slide, {scaleY: 0, transformOrigin: "bottom center"})
-.set(mainwrap, {scaleY: 0})
-.set(".fadein", {autoAlpha:0})
-
-
-///////////////////////menuIn.invalidate();
-/* -----------------------------
-// ADD EVENT LISTER
------------------------------ */
-  /*
-burger.onclick = function() {
-
-  toggle = !toggle;
-  toggle == false ? menuAnimation.play(0) : menuAnimationBack.play(0);
-};
-
-/* CLICK ON LINK CLOSE MENU*/
- /*
-$('nav li a, .menutrig').on('click', function(){
-    $(burger).trigger('click');
-});
- */
-}
-
-/*
-================================================================================
-PROJECTS - ANCHOR SCROLL
-================================================================================
-*/
-
-function projectAnchorScroll() {
-
-$( "#tocom" ).on( "click", function() {
-  locoScroll.scrollTo( '#com', {
-    'offset': -120,
-    'duration': 2000,
-    'easing': [0.25, 0.00, 0.35, 1.00],
-    'disableLerp': true
-  });
-});
-
-$( "#tores" ).on( "click", function() {
-  locoScroll.scrollTo( '#res', {
-    'offset': -150,
-    'duration': 800,
-    'easing': [0.25, 0.00, 0.35, 1.00],
-    'disableLerp': true
-  });
-});
-}
 
 /*
 ================================================================================
@@ -1312,19 +1199,6 @@ var menu = ['', '', '', '', '', '']
   })        
   
 }
-
-/*
-================================================================================
-SWIPER HERO
-================================================================================
-*/
-
-function sortScript() {
-
-
-}
-
-
 
 
 
