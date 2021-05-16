@@ -624,7 +624,7 @@ views: [{
   imgoverlay();
   homeScrollTrigger();
   heroSwiper();
-
+  console.log("HERO SWIPER loooooooaded!");
   
   },
   once(data) {
