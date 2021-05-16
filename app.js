@@ -638,7 +638,8 @@ views: [{
 },{
   namespace: 'onama',
   beforeEnter(){
-
+    simpleaccordion();
+    console.log("ONAMA ACCORDION UČITAN");
  /*    locoAccordion(); */
 
    // projectsHeroAnima();
@@ -1200,7 +1201,11 @@ var menu = ['', '', '', '', '', '']
   
 }
 
-
+/*
+================================================================================
+IMAGE HOVER
+================================================================================
+*/
 
 
 function imgoverlay() {
@@ -1246,4 +1251,57 @@ $(overlay).mouseout(function() {
 flag = false;
 gsap.to(cursor, {duration: 0.3, scale: 0.1, autoAlpha: 0});
 });
+}
+
+
+/*
+================================================================================
+SIMPLE ACCORDION
+================================================================================
+*/
+
+
+function simpleaccordion() {
+
+
+const sections = document.querySelectorAll('section')
+const texts = document.querySelectorAll('.text')
+
+gsap.set(texts, {
+  height: 0
+})
+
+sections.forEach((section, index) => {
+  section.addEventListener('click', () => {
+    const text = texts[index]
+    
+    texts.forEach((el) => {
+      if (el != text && el.classList.contains('is-active')) {
+        el.classList.remove('is-active')
+        gsap.to(el, 1, {
+          height: 0,
+          ease: 'power2.out'
+        })
+      }
+    })
+   
+    if (text.classList.contains('is-active')) {
+      text.classList.remove('is-active')
+      gsap.to(text, 1, {
+        height: 0,
+        ease: 'power2.out'
+      })
+    } else {
+      text.classList.add('is-active')
+      gsap.set(text, {
+        height: 'auto'
+      })
+      gsap.from(text, 1, {
+        height: 0,
+        ease: 'power2.out'
+      })
+    }
+  })
+})
+
 }
