@@ -445,7 +445,7 @@ SWIPER STUFF
   /*  
   SIMPLE FADE IN / FADE OUT / AUTOALPHA 023 simple fadein fadeout 
   */
-.hero--header--wrapper{
+.fadeheader{
   visibility:hidden;
 }
 
