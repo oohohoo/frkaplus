@@ -629,7 +629,7 @@ views: [{
   },
   once(data) {
     titleHero();
-   
+    heroSwiper();
   },
   afterEnter(data) {
    }
@@ -662,7 +662,7 @@ views: [{
 
     sortScript ();
   
-    console.log("SORT SKRIPTA UČITANA");
+  
  
   }},{
 
