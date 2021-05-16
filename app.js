@@ -608,6 +608,7 @@ views: [{
   
   },
   once(data) {
+    heroSwiper();
     /* titleHero(); */
     /* heroSwiper(); */
   },
