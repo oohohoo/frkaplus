@@ -601,7 +601,7 @@ views: [{
   namespace: 'home',
 
   beforeEnter(data) {
- 
+    heroSwiper();
   /* imgoverlay(); */
     /*heroSwiper();
   console.log("HERO SWIPER loooooooaded!");*/
@@ -969,7 +969,7 @@ function heroSwiper() {
                      500: {
                       //   spaceBetween: 30,
                        //  loopedSlides: 3,
-                         slidesPerView: 1
+                        // slidesPerView: 1
                      },
                      1e3: {
                        //  loopedSlides: 3,
@@ -979,7 +979,7 @@ function heroSwiper() {
                      1200: {
                       //   spaceBetween: 20,
                          // loopedSlides: 3,
-                         slidesPerView: 3.1
+                        // slidesPerView: 3.1
                      }
                  }
 
@@ -988,10 +988,12 @@ function heroSwiper() {
 $('.swiper-container').on('mousedown touchstart', function(event) {
 gsap.to('.swiper-slide', {scale: 0.9, duration: 0.4});
 });
+console.log("SWIPER BISE TREBA SMANJITI");
 
 $('.swiper-container').on('mouseup touchend', function(event) {
 gsap.to('.swiper-slide', {scale:1, duration: 0.4, delay:0.2});
 });
+console.log("SWIPER BISE TREBA VRATITI NA STARU DIMENZIJU");
 }
 
 
