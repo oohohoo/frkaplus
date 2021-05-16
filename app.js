@@ -1334,7 +1334,7 @@ function heroApeli() {
 
 var action = gsap.timeline({repeat:-1, defaults:{duration:2, ease:'none'}})
 
-.to('.fadein-slide', {autoAlpha:1, stagger:5})
-.to('.fadein-slide', {autoAlpha:0, stagger:5}, 4)
+.to('.fadein-apel', {autoAlpha:1, stagger:5})
+.to('.fadein-apel', {autoAlpha:0, stagger:5}, 4)
 
 }
