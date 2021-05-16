@@ -286,6 +286,8 @@ DISABLE SELECTION
   user-select: none;          /* Likely future */      
 }
 
+
+
 /*
 ================================================================================
 IMAGE OVERLAY CURSOR
@@ -377,6 +379,14 @@ SWIPER STUFF
     .swiper-pagination {
       z-index: 1 !important;
   }
+
+
+  /*new location home swiper*/
+  .swiper-wrapper {
+    transition: transform 0.7s ease-out!important;
+  }
+
+  
   /*
 ================================================================================
 OKOMITI TXT
