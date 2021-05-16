@@ -621,9 +621,11 @@ views: [{
 
   beforeEnter(data) {
   /*titleHero();*/
+  imgoverlay();
+  console.log("img overlay loaded");
   homeScrollTrigger();
-  scrollerImgOverlay();
-  
+ 
+
   
   },
   once(data) {
@@ -1302,7 +1304,7 @@ function sortScript() {
 
 
 
-function scrollerImgOverlay() {
+function imgoverlay() {
 
 
   var cursor = $(".cursor"),
