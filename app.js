@@ -283,26 +283,6 @@ inparallax.from(".img__background", {
 
 
 
-/*******BUTTER SLIDER*******/
-const bar2 = document.querySelector(".bar2");
-
-// const myarrow = document.querySelector('.myArrow');
-
-// može se ugasiti / read doc
-//autoInit();
-
-const imgSlider = new butterSlider.CreateSlider({
-  container: ".sliderimg",
-   slider: ".slidesimg",
-   getScrollPercent: (e) => {
-     bar2.style.width = `${e}%`;
-   },
-   dragSpeed: 3,
-   smoothAmount: 0.05,
-   hasTouchEvent: true
-  });
-  
-
 
 
 /* sort shuffle*/
@@ -679,6 +659,18 @@ views: [{
     //contactHeroAnima();
 
   }},{
+
+    namespace: 'npp',
+    once(data) {
+      
+    },
+  
+    beforeEnter(data) {
+      simpleaccordion();
+      
+       
+    }},{
+
   },{
  
 
