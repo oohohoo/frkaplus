@@ -623,8 +623,8 @@ views: [{
   /*titleHero();*/
   imgoverlay();
   homeScrollTrigger();
-  heroSwiper();
-  console.log("HERO SWIPER loooooooaded!");
+  /*heroSwiper();
+  console.log("HERO SWIPER loooooooaded!");*/
   
   },
   once(data) {
