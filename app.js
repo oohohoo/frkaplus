@@ -1280,7 +1280,11 @@ sections.forEach((section, index) => {
         el.classList.remove('is-active')
         gsap.to(el, 1, {
           height: 0,
-          ease: 'power2.out'
+          ease: 'power2.out',
+          onComplete:function() {
+           locoScroll.update();
+           console.log("donedonedonedonedonedonedonedonedone")
+          }
         })
       }
     })
