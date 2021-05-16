@@ -149,7 +149,7 @@ locoScroll.on('scroll', (instance) => {
   ScrollTrigger.refresh();
  
   /*NE ZNAM DA LI OVO IDE???*/
-  locoScroll.update();
+  //locoScroll.update();
 
 /* PREVENT SCROLL UNDER FS MENU*/
 function handler1() {
