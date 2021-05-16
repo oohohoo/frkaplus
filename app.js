@@ -639,7 +639,7 @@ views: [{
   namespace: 'onama',
   beforeEnter(){
     simpleaccordion();
-    console.log("ONAMA ACCORDION UČITAN");
+    console.log("ONAMA ACCORDION SPACE ONAMA");
  /*    locoAccordion(); */
 
    // projectsHeroAnima();
@@ -647,6 +647,7 @@ views: [{
     },
   once(){
     simpleaccordion();
+    console.log("ONAMA ACCORDION ONCE");
     }
 
 },{
