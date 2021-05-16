@@ -951,7 +951,7 @@ function heroSwiper() {
 },
      direction: 'horizontal',
      resistanceRatio:0.5,
-     slidesPerView: 3.2,
+     slidesPerView: 4,
      longSwipes:true,
      longSwipesRatio:0.5,
      touchRatio:5,
