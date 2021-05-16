@@ -667,6 +667,7 @@ views: [{
   
     beforeEnter(data) {
       simpleaccordion();
+      console.log("HACCORDIJON UČIUTAN NA NPP");
       
        
     }},{
