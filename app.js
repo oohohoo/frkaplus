@@ -646,7 +646,7 @@ views: [{
  
     },
   once(){
-   
+    simpleaccordion();
     }
 
 },{
