@@ -1322,7 +1322,7 @@ gsap.to(cursor, {
 });
 }
 
-$(".p1").hover(function(){
+$(".p-1").hover(function(){
 $(".cursor").css({"background-image": "url(https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60a0dff0289cd76afcb13a51_test12.jpg)" });
 });
 
