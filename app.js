@@ -620,10 +620,9 @@ views: [{
   namespace: 'home',
 
   beforeEnter(data) {
-  /*titleHero();*/
-  imgoverlay();
-  homeScrollTrigger();
-  /*heroSwiper();
+ 
+  /* imgoverlay(); */
+    /*heroSwiper();
   console.log("HERO SWIPER loooooooaded!");*/
   
   },
