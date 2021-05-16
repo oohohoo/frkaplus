@@ -622,15 +622,14 @@ views: [{
   beforeEnter(data) {
   /*titleHero();*/
   imgoverlay();
-  console.log("img overlay loaded");
   homeScrollTrigger();
- 
+  heroSwiper();
 
   
   },
   once(data) {
     titleHero();
-    heroSwiper();
+   
   },
   afterEnter(data) {
    }
@@ -1063,29 +1062,55 @@ SWIPER - HERO ANIMACIJA
 */
 
 function heroSwiper() {
-/*
-var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 1,
-  loop: true,
-  speed: 800,
-  autoHeight: false,
-  updateOnWindowResize: true,
-  effect: 'fade',
-  slidesPerView: 1,
-  observer: true,
-  observeParents: true,
-  observeSlideChildren: true,
-  longSwipes: false,
-  grabCursor: true,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: true,
+  var swiper = new Swiper('.swiper-container', {
+    // pagination: '.swiper-pagination',
+      navigation: {
+  nextEl: '.next',
+  prevEl: '.prev',
 },
-fadeEffect: {
-    crossFade: true
-  },
+     direction: 'horizontal',
+     resistanceRatio:0.5,
+     /*slidesPerView: 3.3,*/
+     longSwipes:true,
+     longSwipesRatio:0.5,
+     touchRatio:5,
+     //paginationClickable: true,
+     //spaceBetween: 160,
+     //mousewheelControl: true,
+     parallax: true,
+     //preloadImages: true,
+     updateOnImagesReady: true,
+    // centeredSlides: true,
+    slidesOffsetBefore: 300,
+     speed: 600,
+     grabCursor: true,
+     breakpoints: {
+                     500: {
+                      //   spaceBetween: 30,
+                       //  loopedSlides: 3,
+                         slidesPerView: 1
+                     },
+                     1e3: {
+                       //  loopedSlides: 3,
+                        // spaceBetween:10,
+                        // slidesPerView: 1.1
+                     },
+                     1200: {
+                      //   spaceBetween: 20,
+                         // loopedSlides: 3,
+                         slidesPerView: 3.1
+                     }
+                 }
+
+ });
+
+$('.swiper-container').on('mousedown touchstart', function(event) {
+gsap.to('.swiper-slide', {scale: 0.9, duration: 0.4});
 });
-*/
+
+$('.swiper-container').on('mouseup touchend', function(event) {
+gsap.to('.swiper-slide', {scale:1, duration: 0.4, delay:0.2});
+});
 }
 
 
@@ -1225,7 +1250,7 @@ mapo.on('mouseout', function() {
 
 /*
 ================================================================================
-SWIPER HERO
+SWIPER LOCATION
 ================================================================================
 */
 
