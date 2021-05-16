@@ -1304,50 +1304,44 @@ function sortScript() {
 function scrollerImgOverlay() {
 
 
-
-
-var cursor = $(".cursor"),
-    overlay = $(".project-overlay");
+  var cursor = $(".cursor"),
+  overlay = $(".project-overlay");
 
 gsap.set(cursor, {opacity:0});
 
 function moveCircle(e) {
-  gsap.to(cursor, {
-    duration:.5,
-    css: {
-      left: e.pageX,
-      top: e.pageY
-    }
-  });
+gsap.to(cursor, {
+  duration:.5,
+  css: {
+    left: e.pageX,
+    top: e.pageY
+  }
+});
 }
 
-$(".p-1").hover(function(){
-  $(".cursor").css({"background-image": "url(https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60a0dff0289cd76afcb13a51_test12.jpg)" });
+$(".p1").hover(function(){
+$(".cursor").css({"background-image": "url(https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60a0dff0289cd76afcb13a51_test12.jpg)" });
 });
 
 $(".p-2").hover(function(){
-  $(".cursor").css({ "background-image": "url(https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60a0dff0d8e1e225cd7c2783_test11.jpg)" });
+$(".cursor").css({ "background-image": "url(https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60a0dff0d8e1e225cd7c2783_test11.jpg)" });
 });
-$(".p3").hover(function(){
-  $(".cursor").css({ "background-image": "url(https://i.pinimg.com/474x/0e/04/6e/0e046e6bf35d98e2729c389395945435.jpg)" });
+$(".p-3").hover(function(){
+$(".cursor").css({ "background-image": "url(https://i.pinimg.com/474x/0e/04/6e/0e046e6bf35d98e2729c389395945435.jpg)" });
 });
-$(".p4").hover(function(){
-  $(".cursor").css({ "background-image": "url(https://i.pinimg.com/474x/0e/04/6e/0e046e6bf35d98e2729c389395945435.jpg)" });
-});
-$(".p5").hover(function(){
-  $(".cursor").css({ "background-image": "url(https://i.pinimg.com/474x/0e/04/6e/0e046e6bf35d98e2729c389395945435.jpg)" });
+$(".p-4").hover(function(){
+$(".cursor").css({ "background-image": "url(https://i.pinimg.com/474x/0e/04/6e/0e046e6bf35d98e2729c389395945435.jpg)" });
 });
 
 var flag = false;
 $(overlay).mousemove(function() {
-  flag = true;
-  gsap.to(cursor, {duration: 0.3, scale: 1, autoAlpha: 1});
-  $(overlay).on("mousemove", moveCircle);
+flag = true;
+gsap.to(cursor, {duration: 0.3, scale: 1, autoAlpha: 1});
+$(overlay).on("mousemove", moveCircle);
 });
 
 $(overlay).mouseout(function() {
-  flag = false;
-  gsap.to(cursor, {duration: 0.3, scale: 0.1, autoAlpha: 0});
+flag = false;
+gsap.to(cursor, {duration: 0.3, scale: 0.1, autoAlpha: 0});
 });
-
 }
