@@ -624,6 +624,7 @@ views: [{
   homeScrollTrigger();
   scrollerImgOverlay();
   
+  
   },
   once(data) {
     titleHero();
