@@ -277,6 +277,33 @@ GSAP PERFORMANCE FIX
 
 /*
 ================================================================================
+IMAGE OVERLAY CURSOR
+================================================================================
+*/
+.cursor {
+  position: absolute;
+  width: 31.25em;
+  height: 20.83em;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -100px;
+  background: url(https://i.pinimg.com/564x/85/24/d7/8524d785a8427617d475bf02d51710fc.jpg) no-repeat 50% 50%;
+  background-size: contain;
+  z-index: 1;
+} 
+
+.project-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+
+/*
+================================================================================
 SWIPER STUFF
 ================================================================================
 */
