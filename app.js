@@ -629,7 +629,7 @@ views: [{
   },
   once(data) {
     titleHero();
-    heroSwiper();
+    /* heroSwiper(); */
   },
   afterEnter(data) {
    }
