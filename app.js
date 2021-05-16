@@ -1332,7 +1332,7 @@ function heroApeli() {
 023  --- SIMPLE FADE IN / FADE OUT / AUTOALPHA 023 simple fadein fadeout 
 ================================================ */
 
-var action = gsap.timeline({repeat:-1, defaults:{duration:0.8, ease:'none'}})
+var action = gsap.timeline({repeat:-1, defaults:{duration:2, ease:'none'}})
 
 .to('.fadein-slide', {autoAlpha:1, stagger:5})
 .to('.fadein-slide', {autoAlpha:0, stagger:5}, 4)
