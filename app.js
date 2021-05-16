@@ -628,7 +628,7 @@ views: [{
   
   },
   once(data) {
-    titleHero();
+    /* titleHero(); */
     /* heroSwiper(); */
   },
   afterEnter(data) {
@@ -646,8 +646,7 @@ views: [{
  
     },
   once(){
-    simpleaccordion();
-    console.log("ONAMA ACCORDION ONCE");
+ 
     }
 
 },{
@@ -698,7 +697,7 @@ views: [{
         // do something once on the initial page load
         initLoader();
         /*fullscreenMenuNew(); */
-        underlineMouseover();
+        /* underlineMouseover(); */
                 
       },
 
@@ -725,7 +724,7 @@ views: [{
       },
 
       beforeEnter({next}) {
-        underlineMouseover();
+        /* underlineMouseover(); */
      },
 
     }],
