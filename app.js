@@ -639,7 +639,7 @@ views: [{
   namespace: 'onama',
   beforeEnter(){
     simpleaccordion();
-    console.log("ONAMA ACCORDION SPACE ONAMA");
+    console.log("SIMPLE ACCORDION ONNNN");
  /*    locoAccordion(); */
 
    // projectsHeroAnima();
@@ -1264,7 +1264,7 @@ SIMPLE ACCORDION
 function simpleaccordion() {
 
 
-const sections = document.querySelectorAll('section')
+const sections = document.querySelectorAll('.acc-section')
 const texts = document.querySelectorAll('.text')
 
 gsap.set(texts, {
