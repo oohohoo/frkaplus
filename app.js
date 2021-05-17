@@ -226,6 +226,7 @@ gsap.to(".panelx", {
     end: "+=300%",
     scrub: true,
     pin: true,
+    anticipatePin: 1,
     scroller: ".smooth-scroll", 
   }
 });
@@ -236,6 +237,7 @@ ScrollTrigger.create({
   start: "top top",
   end: "+=100%",
   pin: true,
+  anticipatePin: 1,
   scroller: ".smooth-scroll",
 })
 
