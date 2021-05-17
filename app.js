@@ -702,7 +702,7 @@ views: [{
  
     },
   once(){
-    counteriOnama();
+    
     }
 
 },{
@@ -765,6 +765,7 @@ views: [{
        
         // do something once on the initial page load
         initLoader();
+        counteriOnama();
         /*fullscreenMenuNew(); */
         /* underlineMouseover(); */
                 
