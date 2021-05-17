@@ -228,7 +228,7 @@ gsap.to(".panelx", {
     start: "top top",
     end: "+=300%",
     scrub: true,
-    pin: true,
+    pin: "#pinn",
     scroller: ".smooth-scroll", 
   }
 });
