@@ -1521,11 +1521,21 @@ function openNav() {
   };
 }
 
+
+
+/* =============================================
+KONTAKT FULLSCREEW OPEN
+================================================ */
+
+
+
 function animateOpenNav() {
   var mobileNav = document.getElementById("krug");
   tl
   .set('body', { overflow: 'hidden' })
-  .to(mobileNav, {duration: 0.6, ease: "power1.out", scale:40 })
+  .to(mobileNav, {duration: 0.6, ease: "power1.in", scale:30 })
+  .to("fs--menu", {duration: 0.6, ease: "power1.in", autoAlpha:0 })
+  
   //.to('.kontakt-back', {y, ease: "power1.in"})
     .to(".nav__link", {opacity: 1, y: 0,duration: 0.2, stagger: {// wrap advanced options in an object
       each: 0.2,
