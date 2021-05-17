@@ -673,6 +673,8 @@ views: [{
   beforeEnter(data) {
     heroSwiper();
     heroApeli();
+    swiper.update();
+    console.log("Swiper updated");
   /* imgoverlay(); */
     /*heroSwiper();
   console.log("HERO SWIPER loooooooaded!");*/
