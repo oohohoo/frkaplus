@@ -693,7 +693,9 @@ views: [{
   namespace: 'onama',
   beforeEnter(){
     simpleaccordion();
-    console.log("SIMPLE ACCORDION ONNNN");
+
+    counteriOnama();
+    console.log("COUNTER LOADED");
  /*    locoAccordion(); */
 
    // projectsHeroAnima();
@@ -1400,5 +1402,68 @@ var action = gsap.timeline({repeat:-1, defaults:{duration:0.8, ease:'none'}})
 
 .to('.fadeheader', {autoAlpha:1, stagger:5})
 .to('.fadeheader', {autoAlpha:0, stagger:5}, 4)
+
+}
+
+/* =============================================
+O NAMA COUNTERI
+================================================ */
+
+
+
+function counteriOnama() {
+
+
+
+const items = document.querySelectorAll(".data");
+
+gsap.from(items, {
+scrollTrigger:{
+      scroller: ".smooth-scroll",
+				trigger: ".counter-container",
+				start: "top center", 
+				end: "bottom top", 
+        toggleActions: "restart none none reset",
+				//scrub: 1,
+				
+			},
+  textContent: 0,
+  duration: 4,
+  ease: "power1.in",
+  snap: { textContent: 1 },
+  stagger: {
+    each: 1.0,
+    onUpdate: function() {
+      this.targets()[0].innerHTML = numberWithCommas(Math.ceil(this.targets()[0].textContent));
+    },
+  }
+});
+
+
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+
+/* NUMBER COUNT from some value */
+
+var cont={val:236} , newval = 246 ;
+
+gsap.to(cont,2,{
+scrollTrigger:{
+      scroller: ".smooth-scroll",
+				trigger: ".counter-container",
+				start: "top 80%", 
+				end: "bottom top", 
+        toggleActions: "restart none none reset",
+				//scrub: 1,
+				
+			},
+      
+val:newval,
+roundProps:"val",
+onUpdate:function(){
+  document.getElementById("counterx").innerHTML=cont.val
+}});
 
 }
