@@ -702,7 +702,7 @@ views: [{
  
     },
   once(){
- 
+    counteriOnama();
     }
 
 },{
