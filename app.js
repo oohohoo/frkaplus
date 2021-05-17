@@ -1473,9 +1473,9 @@ onUpdate:function(){
 
 /* NUMBER COUNT from some value 02 */
 
-var cont={val:195} , newval = 200 ;
+var cont={val:197} , newval = 200 ;
 
-gsap.to(cont,2,{
+gsap.to(cont,2.5,{
 scrollTrigger:{
       scroller: ".smooth-scroll",
 				trigger: ".numbercounter2",
