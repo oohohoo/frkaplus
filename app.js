@@ -116,7 +116,7 @@ function initScroll(container) {
   });
 
 /*AKAPOWL JE OVO DODAO --- testiraj*/
- // locoScroll.update();
+  locoScroll.update();
 
 
 
@@ -239,6 +239,40 @@ $(".fs-nav-butt").one("click", handler1);
 
 
 
+
+  /* ============================================================================
+SHOW HIDE HEADER ON SCROLL + CUSTOM ANIMATION + CHANGE COLOR ON DIFF BACKGROUNDS
+================================================================================ */
+
+const showAnim = gsap.timeline({
+  paused: true,
+  defaults: { // children inherit these defaults
+    duration: 0.5,
+    ease: CustomEase.create("custom", "M0,0 C0.425,0.005 0,1 1,1 "),
+  },
+  scrollTrigger: {
+      scroller: ".smooth-scroll",
+     /*  toggleClass: {
+        targets: '.logofrka, .navstyle, .kontakt',
+        className: 'mrak'
+      },  */
+      start: "top top",
+      end: 99999,
+      /* onEnter: () => myfunction(), */
+     /*  onLeaveBack: () => myfunction(), */
+
+      onUpdate: (self) => {
+        self.direction === 1 ? showAnim.play() : showAnim.reverse()
+      }
+}
+});
+
+
+showAnim
+.to(".logo-frka", {autoAlpha:0 }, 0)
+.to(".navitem", {yPercent: 50, autoAlpha:0, stagger: 0.05},"<0.1")
+.to(".kontakt", {backgroundColor: "hsla(0,4%,13,0)", x:"11em"},"<0.2")
+.to(".kont-color", {color: "black", duration:0.2},"<0.2");
 
 
 
