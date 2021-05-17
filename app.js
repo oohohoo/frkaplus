@@ -104,7 +104,8 @@ function initScroll(container) {
     scrollFromAnywhere: true,
     multiplier: 1.0, // body sroll speed / object speed values are multiplied
     touchMultiplier: 3.0,
-    inertia: .6,
+    useKeyboard: true,
+    inertia: .75,
     smartphone: {
       smooth: true,
     },
@@ -113,6 +114,11 @@ function initScroll(container) {
 
     }
   });
+
+/*AKAPOWL JE OVO DODAO --- testiraj*/
+  locoScroll.update();
+
+
 
   // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
   locoScroll.on("scroll", ScrollTrigger.update);
@@ -128,25 +134,86 @@ locoScroll.on('scroll', (instance) => {
       return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
     }, // we don't have to define a scrollLeft because we're only scrolling vertically.
     getBoundingClientRect() {
-      return {
-        top: 0,
-        left: 0,
-        width: window.innerWidth,
-        height: window.innerHeight
-      };
+      return {top: 0, left: 0,width: window.innerWidth,height: window.innerHeight};
     },
 
     // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, 
     // we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
     // UKLJUČITI SAMO NA MOBILNOJ VERZIJI
-    // pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed"
+     pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed"
   });
 
-  // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
-  ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
-  // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
-  ScrollTrigger.refresh();
+
+ /* ============================================================================
+ SCROLL TRIGGER 
+================================================================================ */
+
+ 
+ /* ============================================================================
+INSET CLIPMASK ON FIRST
+================================================================================ */
+
+let videoroll = gsap.timeline()
+
+let cover = document.querySelector('.bgvideo')
+let firstSection = document.querySelector('.big-logo')
+
+videoroll.to(".bgvideo", {
+  scrollTrigger: {
+    scroller: ".smooth-scroll",
+    trigger: firstSection,    
+    start: 'top 20%',
+    end: "+=30%",    
+    scrub: 2,
+  },
+  /*clipPath: 'inset(60%)',*/
+  scale:1.3,
+  rotate:0,
+  yPercent:-30
+})
+
+
+.to(".hero--white--background", {
+  scrollTrigger: {
+    scroller: ".smooth-scroll",
+    trigger: firstSection,    
+    start: 'top 30%',
+    end: "+=30%",    
+    scrub: 2,
+  },
+  /*clipPath: 'inset(60%)',*/
+  duration: 0.2,
+  autoAlpha:0,
+  rotate:0,
+ 
+})
+
+
+
+/*------------/ SCROLLTRIGGER INNER IMAGE PARALLAX /------------*/
+
+var inparallax = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".img__wrapper",
+    scroller: ".smooth-scroll",
+    scrub: true,
+    pin: false,
+  },
+}); 
+inparallax.from(".img__background", {
+  yPercent: -50,
+  ease: "none",
+}).to(".img__background", {
+  yPercent: 50,
+  ease: "none",
+}); 
+
+
+
+
+
+
  
   /*NE ZNAM DA LI OVO IDE???*/
   //locoScroll.update();
@@ -164,7 +231,17 @@ function handler2() {
 $(".fs-nav-butt").one("click", handler1);
 
 
-///////////// 
+///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
+  // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
+  ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+
+  // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
+  ScrollTrigger.refresh();
+///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
+
+
+
+
 
 
 
@@ -230,66 +307,7 @@ function roll(targets, vars, reverse) {
 }
 
 
-  /* ============================================================================
-SCROLL TRIGGER INSET CLIPMASK ON FIRST
-================================================================================ */
-
-let videoroll = gsap.timeline()
-
-let cover = document.querySelector('.bgvideo')
-let firstSection = document.querySelector('.big-logo')
-
-videoroll.to(".bgvideo", {
-  scrollTrigger: {
-    scroller: ".smooth-scroll",
-    trigger: firstSection,    
-    start: 'top 20%',
-    end: "+=30%",    
-    scrub: 2,
-  },
-  /*clipPath: 'inset(60%)',*/
-  scale:1.3,
-  rotate:0,
-  yPercent:-30
-})
-
-
-.to(".hero--white--background", {
-  scrollTrigger: {
-    scroller: ".smooth-scroll",
-    trigger: firstSection,    
-    start: 'top 30%',
-    end: "+=30%",    
-    scrub: 2,
-  },
-  /*clipPath: 'inset(60%)',*/
-  duration: 0.2,
-  autoAlpha:0,
-  rotate:0,
  
-})
-
-
-
-/*------------/ SCROLLTRIGGER INNER IMAGE PARALLAX /------------*/
-
-var inparallax = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".img__wrapper",
-    scroller: ".smooth-scroll",
-    scrub: true,
-    pin: false,
-  },
-}); 
-inparallax.from(".img__background", {
-  yPercent: -50,
-  ease: "none",
-}).to(".img__background", {
-  yPercent: 50,
-  ease: "none",
-}); 
-
-
 
 
 
