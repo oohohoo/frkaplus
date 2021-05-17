@@ -1446,7 +1446,7 @@ function numberWithCommas(x) {
 } */
 
 
-/* NUMBER COUNT from some value */
+/* NUMBER COUNT from some value 01 */
 
 var cont={val:195} , newval = 200 ;
 
@@ -1465,6 +1465,31 @@ val:newval,
 roundProps:"val",
 onUpdate:function(){
   document.getElementById("counterx").innerHTML=cont.val
+  
+}});
+
+}
+
+
+/* NUMBER COUNT from some value 02 */
+
+var cont2={val:195} , newval = 200 ;
+
+gsap.to(cont2,2,{
+scrollTrigger:{
+      scroller: ".smooth-scroll",
+				trigger: ".numbercounter",
+				start: "top 80%", 
+				end: "bottom top", 
+        toggleActions: "restart none none reset",
+				//scrub: 1,
+				
+			},
+      
+val:newval,
+roundProps:"val",
+onUpdate:function(){
+  document.getElementById("countery").innerHTML=cont.val
   
 }});
 
