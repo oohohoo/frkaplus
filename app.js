@@ -764,8 +764,8 @@ views: [{
        
         // do something once on the initial page load
         initLoader();
-        kontaktfs();
-        console.log("FSKONTAKT LOADED");
+      /*   kontaktfs();
+        console.log("FSKONTAKT LOADED"); */
         /*fullscreenMenuNew(); */
         /* underlineMouseover(); */
                 
@@ -795,8 +795,8 @@ views: [{
 
       beforeEnter({next}) {
         heroSwiper();
-        kontaktfs();
-        console.log("FSKONTAKT LOADED");
+        /* kontaktfs();
+        console.log("FSKONTAKT LOADED"); */
         counteriOnama();
         /* underlineMouseover(); */
      },
@@ -1505,7 +1505,7 @@ O NAMA COUNTERI
 ================================================ */
 
 
-
+/* 
 function kontaktfs() {
 // Timeline created and paused
 var tl = gsap.timeline({ paused: true });
@@ -1519,7 +1519,7 @@ function openNav() {
     // Use the toggle method in the classList API
     navBtn.classList.toggle("active");
   };
-}
+} */
 
 
 
