@@ -449,6 +449,44 @@ SWIPER STUFF
   visibility:hidden;
 }
 
+/*
+================================================================================
+BUTTON HOVER LOCO
+================================================================================
+*/
+
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;}
+
+.item a {
+display: flex;
+flex-grow: 1;
+text-decoration: none;
+padding: 35px 0;
+border-bottom: 1px solid #17171c;
+color: #17171c;
+background-size: 200% 200%;
+background-image: 
+linear-gradient(to top, #17171c 50%, transparent 50%);
+transition: all 0.3s cubic-bezier(.4,0,0,1);
+}
+
+.item a:hover {
+color: #fff;
+background-image: 
+linear-gradient(to top, #17171c 51%, transparent 50%);
+background-position: 0 100%;
+padding: 35px;
+cursor: pointer;
+}
+
+.arrow--right {
+  flex: 1;
+}
+
+
+
 
   /*
 ================================================================================
