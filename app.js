@@ -794,6 +794,7 @@ views: [{
       },
 
       beforeEnter({next}) {
+        kontaktfs();
         /* underlineMouseover(); */
      },
 
@@ -1493,5 +1494,47 @@ onUpdate:function(){
   document.getElementById("countery").innerHTML=cont.val
   
 }});
+
+}
+
+/* =============================================
+O NAMA COUNTERI
+================================================ */
+
+
+
+function kontaktfs() {
+
+
+
+let button = document.querySelector(".menu__button");
+let menuCirclce = document.querySelector(".menu__circle");
+
+button.addEventListener("click", toggle(function() {
+  openCircleNav();
+}, function(){
+  closeCircleNav();
+}))
+
+function openCircleNav() {
+  TweenMax.to(menuCirclce, 0.888, {
+    scale: 100,
+    ease: Power4.easeIn,
+  });
+}
+
+function closeCircleNav() {
+  TweenMax.to(menuCirclce, 0.888, {
+    scale: 1,
+    ease: Power4.easeOut,
+  });
+}
+
+function toggle(a, b) {
+  var togg = false;
+  return function() {
+    return (togg = !togg) ? a() : b();
+  };
+}
 
 }
