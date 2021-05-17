@@ -682,7 +682,7 @@ views: [{
   once(data) {
     
     /* titleHero(); */
-    /* heroSwiper(); */
+    heroSwiper();
   },
   afterEnter(data) {
    }
@@ -724,7 +724,7 @@ views: [{
   namespace: 'lokacijesolo',
   once(data) {
     swiperlocation();
-    locationMap();
+     locationMap();
   },
 
   beforeEnter(data) {
