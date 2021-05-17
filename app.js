@@ -1447,7 +1447,7 @@ function numberWithCommas(x) {
 
 /* NUMBER COUNT from some value */
 
-var cont={val:236} , newval = 246 ;
+var cont={val:195} , newval = 200 ;
 
 gsap.to(cont,2,{
 scrollTrigger:{
