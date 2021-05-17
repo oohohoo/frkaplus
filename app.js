@@ -724,6 +724,7 @@ views: [{
   namespace: 'lokacijesolo',
   once(data) {
     swiperlocation();
+    locationMap();
   },
 
   beforeEnter(data) {
