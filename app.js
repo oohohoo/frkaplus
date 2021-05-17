@@ -116,7 +116,7 @@ function initScroll(container) {
   });
 
 /*AKAPOWL JE OVO DODAO --- testiraj*/
-  //locoScroll.update();
+  locoScroll.update();
 
 
 
@@ -143,13 +143,6 @@ locoScroll.on('scroll', (instance) => {
     pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed"
   });
 
-///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
-  // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
-  ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
-
-  // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
-  ScrollTrigger.refresh();
-///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
 
 
  /* ============================================================================
@@ -273,6 +266,23 @@ showAnim
 .to(".nav", {yPercent: 50, autoAlpha:0, stagger: 0.05},"<0.1")
 .to(".header-contact--button", {backgroundColor: "hsla(0,4%,13,0)", scale:0.8, x:"2.5em"},"<0.2")
 .to(".kont-color", {color: "black", duration:0.2},"<0.2");
+
+
+
+
+
+
+///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
+  // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
+  ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+
+  // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
+  ScrollTrigger.refresh();
+///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
+
+
+
+
 
 
 
