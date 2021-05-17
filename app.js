@@ -1453,7 +1453,7 @@ gsap.to(cont,2,{
 scrollTrigger:{
       scroller: ".smooth-scroll",
 				trigger: ".numbercounter",
-				start: "top 50%", 
+				start: "top 80%", 
 				end: "bottom top", 
         toggleActions: "restart none none reset",
 				//scrub: 1,
