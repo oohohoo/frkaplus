@@ -1526,7 +1526,7 @@ function animateOpenNav() {
   tl
   .set('body', { overflow: 'hidden' })
   //.to(mobileNav, {duration: 0.6, ease: "power3.out", y: 0 })
-  .to('.kontakt-back', {scale:100, ease: "power1.in"})
+  .to('.kontakt-back', {y:30, ease: "power1.in"})
     .to(".nav__link", {opacity: 1, y: 0,duration: 0.2, stagger: {// wrap advanced options in an object
       each: 0.2,
       //ease: "power1.in"
