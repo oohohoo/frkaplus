@@ -216,32 +216,7 @@ inparallax.from(".img__background", {
   ease: "none",
 }); 
 
-gsap.to(".panelx", {
-  yPercent: -100, 
-  ease: "none",
-  stagger: 0.5,
-  scrollTrigger: {
-    trigger: "#containerx",
-    start: "top top",
-    end: "+=300%",
-    scrub: true,
-    pin: true,
-    anticipatePin: 1,
-    scroller: ".smooth-scroll", 
-  }
-});
 
-// Layered Pinning from Bottom
-ScrollTrigger.create({
-  trigger: ".content",
-  start: "top top",
-  end: "+=100%",
-  pin: true,
-  anticipatePin: 1,
-  scroller: ".smooth-scroll",
-})
-
-gsap.set(".panelx", {zIndex: (i, target, targets) => targets.length - i});
 
 
 
