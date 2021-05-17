@@ -116,7 +116,7 @@ function initScroll(container) {
   });
 
 /*AKAPOWL JE OVO DODAO --- testiraj*/
-  locoScroll.update();
+  //locoScroll.update();
 
 
 
