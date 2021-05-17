@@ -1509,35 +1509,35 @@ O NAMA COUNTERI
 function kontaktfs() {
 
 
-
-let button = document.querySelector(".menu__button");
-let menuCirclce = document.querySelector(".menu__circle");
-
-button.addEventListener("click", toggle(function() {
-  openCircleNav();
-}, function(){
-  closeCircleNav();
-}))
-
-function openCircleNav() {
-  gsap.to(menuCirclce, 0.888, {
-    scale: 100,
-    ease: Power4.easeIn,
-  });
-}
-
-function closeCircleNav() {
-  gsap.to(menuCirclce, 0.888, {
-    scale: 1,
-    ease: Power4.easeOut,
-  });
-}
-
-function toggle(a, b) {
-  var togg = false;
-  return function() {
-    return (togg = !togg) ? a() : b();
-  };
-}
+  let button = document.querySelector(".menu__button");
+  let menuCirclce = document.querySelector(".menu__circle");
+  
+  button.addEventListener("click", toggle(function() {
+    openCircleNav();
+  }, function(){
+    closeCircleNav();
+  }))
+  
+  function openCircleNav() {
+    gsap.to(menuCirclce, {
+      scale: 100,
+      ease: "power1.in",
+    });
+  }
+  
+  function closeCircleNav() {
+    gsap.to(menuCirclce, {
+      scale: 1,
+      ease: "power1.out",
+    });
+  }
+  
+  function toggle(a, b) {
+    var togg = false;
+    return function() {
+      return (togg = !togg) ? a() : b();
+    };
+  }
+  
 
 }
