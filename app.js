@@ -233,13 +233,6 @@ gsap.to(".panelx", {
   }
 });
 
-ScrollTrigger.create({
-    trigger: ".content",
-    start: "top top",
-    end: "+=100%",
-    pin: true,
-    scroller: ".smooth-scroll",  
-})
 
 gsap.set(".panelx", {zIndex: (i, target, targets) => targets.length - i});
 
