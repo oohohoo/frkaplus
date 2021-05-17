@@ -796,7 +796,7 @@ views: [{
         heroSwiper();
      /*    kontaktfs();
         console.log("FSKONTAKT LOADED"); */
-        counteriOnama();
+       /*  counteriOnama(); */
         /* underlineMouseover(); */
      },
 
