@@ -1518,8 +1518,8 @@ function openNav() {
     tl.reversed(!tl.reversed());
     // Use the toggle method in the classList API
     navBtn.classList.toggle("active");
-  };
-} */
+  }; */
+}
 
 
 
