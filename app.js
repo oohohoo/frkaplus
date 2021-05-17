@@ -1507,37 +1507,43 @@ O NAMA COUNTERI
 
 
 function kontaktfs() {
+// Timeline created and paused
+var tl = gsap.timeline({ paused: true });
 
+function openNav() {
+  animateOpenNav();
+  var navBtn = document.getElementById("nav");
+  navBtn.onclick = function (e) {
+    // Toggle reversed to it's opposite value
+    tl.reversed(!tl.reversed());
+    // Use the toggle method in the classList API
+    navBtn.classList.toggle("active");
+  };
+}
 
-  let button = document.querySelector(".menu__button");
-  let menuCirclce = document.querySelector(".menu__circle");
-  
-  button.addEventListener("click", toggle(function() {
-    openCircleNav();
-  }, function(){
-    closeCircleNav();
-  }))
-  
-  function openCircleNav() {
-    gsap.to(menuCirclce, {
-      scale: 100,
-      ease: "power1.in",
-    });
-  }
-  
-  function closeCircleNav() {
-    gsap.to(menuCirclce, {
-      scale: 1,
-      ease: "power1.out",
-    });
-  }
-  
-  function toggle(a, b) {
-    var togg = false;
-    return function() {
-      return (togg = !togg) ? a() : b();
-    };
-  }
+function animateOpenNav() {
+  var mobileNav = document.getElementById("mb_nav");
+  tl
+  .set('body', { overflow: 'hidden' })
+  .to(mobileNav, {
+    duration: 0.6,
+    ease: "power3.out",
+    y: 0
+  }).to(".nav__link", {
+    opacity: 1,
+    y: 0,
+    duration: 0.3,
+    stagger: {
+      // wrap advanced options in an object
+      each: 0.2,
+      //ease: "power1.in"
+    }
+  })
+  .reverse(); // Finally reverse the timeline. reversed() is true
+}
+
+// init
+openNav();
   
 
 }
