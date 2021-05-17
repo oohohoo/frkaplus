@@ -1527,7 +1527,7 @@ function openNav() {
 KONTAKT FULLSCREEW OPEN
 ================================================ */
 
-
+/*
 
 function animateOpenNav() {
   var mobileNav = document.getElementById("krug");
@@ -1553,3 +1553,4 @@ openNav();
   
 
 }
+*/
