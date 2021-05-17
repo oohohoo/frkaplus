@@ -1416,7 +1416,7 @@ function counteriOnama() {
 
 
 
-const items = document.querySelectorAll(".data");
+/* const items = document.querySelectorAll(".data");
 
 gsap.from(items, {
 scrollTrigger:{
@@ -1443,7 +1443,7 @@ scrollTrigger:{
 
 function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
+} */
 
 
 /* NUMBER COUNT from some value */
@@ -1465,6 +1465,7 @@ val:newval,
 roundProps:"val",
 onUpdate:function(){
   document.getElementById("counterx").innerHTML=cont.val
+  
 }});
 
 }
