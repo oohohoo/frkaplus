@@ -692,8 +692,8 @@ views: [{
   namespace: 'onama',
   beforeEnter(){
     simpleaccordion();
-    counteriOnama();
-    console.log("COUNTER LOADED");
+    /* counteriOnama();
+    console.log("COUNTER LOADED"); */
  /*    locoAccordion(); */
 
    // projectsHeroAnima();
