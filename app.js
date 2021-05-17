@@ -681,7 +681,7 @@ views: [{
   
   },
   once(data) {
-    heroSwiper();
+    
     /* titleHero(); */
     /* heroSwiper(); */
   },
@@ -765,7 +765,7 @@ views: [{
        
         // do something once on the initial page load
         initLoader();
-        counteriOnama();
+        
         /*fullscreenMenuNew(); */
         /* underlineMouseover(); */
                 
@@ -794,7 +794,9 @@ views: [{
       },
 
       beforeEnter({next}) {
+        heroSwiper();
         kontaktfs();
+        counteriOnama();
         /* underlineMouseover(); */
      },
 
