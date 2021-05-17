@@ -1413,7 +1413,7 @@ var action = gsap.timeline({repeat:-1, defaults:{duration:0.8, ease:'none'}})
 O NAMA COUNTERI
 ================================================ */
 
-
+/*
 
 function counteriOnama() {
 
@@ -1450,7 +1450,7 @@ function numberWithCommas(x) {
 
 
 /* NUMBER COUNT from some value 01 */
-
+/*
 var cont={val:195} , newval = 200 ;
 
 gsap.to(cont,2,{
@@ -1476,7 +1476,7 @@ onUpdate:function(){
 
 /* NUMBER COUNT from some value 02 */
 
-
+/*
 var cont={val:197} , newval = 200 ;
 
 gsap.to(cont,2.5,{
@@ -1498,7 +1498,7 @@ onUpdate:function(){
 }});
 
 }
-
+*/
 /* =============================================
 O NAMA COUNTERI
 ================================================ */
