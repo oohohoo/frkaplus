@@ -765,7 +765,7 @@ views: [{
        
         // do something once on the initial page load
         initLoader();
-        
+        kontaktfs();
         /*fullscreenMenuNew(); */
         /* underlineMouseover(); */
                 
@@ -1519,14 +1519,14 @@ button.addEventListener("click", toggle(function() {
 }))
 
 function openCircleNav() {
-  TweenMax.to(menuCirclce, 0.888, {
+  gsap.to(menuCirclce, 0.888, {
     scale: 100,
     ease: Power4.easeIn,
   });
 }
 
 function closeCircleNav() {
-  TweenMax.to(menuCirclce, 0.888, {
+  gsap.to(menuCirclce, 0.888, {
     scale: 1,
     ease: Power4.easeOut,
   });
