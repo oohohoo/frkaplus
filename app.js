@@ -229,7 +229,7 @@ gsap.to(".panel", {
     end: "+=300%",
     scrub: true,
     pin: true,
-    scroller: '[data-scroll-container]'  // * //     
+    scroller: ".smooth-scroll", 
   }
 });
 
@@ -238,7 +238,7 @@ ScrollTrigger.create({
     start: "top top",
     end: "+=100%",
     pin: true,
-    scroller: '[data-scroll-container]'  // * //   
+    scroller: ".smooth-scroll",  
 })
 
 gsap.set(".panel", {zIndex: (i, target, targets) => targets.length - i});
