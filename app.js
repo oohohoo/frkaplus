@@ -209,32 +209,25 @@ var inparallax = gsap.timeline({
   },
 }); 
 inparallax.from(".img__background", {
-  yPercent: -50,
+  yPercent: -20,
   ease: "none",
 }).to(".img__background", {
-  yPercent: 50,
+  yPercent: 20,
   ease: "none",
 }); 
 
 
 
 // Layered Pinning from Bottom
-gsap.to(".panelx", {
-  yPercent: -100, 
-  ease: "none",
-  stagger: 0.5,
-  scrollTrigger: {
-    trigger: "#container",
-    start: "top top",
-    end: "+=300%",
-    scrub: true,
-    pin: true,
-    scroller: ".smooth-scroll", 
-  }
-});
+ScrollTrigger.create({
+  trigger: ".content",
+  start: "top top",
+  end: "+=100%",
+  pin: true,
+  scroller: ".smooth-scroll",
+})
 
-
-gsap.set(".panelx", {zIndex: (i, target, targets) => targets.length - i});
+//gsap.set(".panel", {zIndex: (i, target, targets) => targets.length - i});
 
 
 
