@@ -464,18 +464,18 @@ display: flex;
 flex-grow: 1;
 text-decoration: none;
 padding: 35px 0;
-border-bottom: 1px solid #17171c;
-color: #17171c;
+border-bottom: 1px solid #231F20;
+color: #231F20;
 background-size: 200% 200%;
 background-image: 
-linear-gradient(to top, #17171c 50%, transparent 50%);
+linear-gradient(to top, #231F20 50%, transparent 50%);
 transition: all 0.3s cubic-bezier(.4,0,0,1);
 }
 
 .item a:hover {
-color: #fff;
+color: #FFDC52;
 background-image: 
-linear-gradient(to top, #17171c 51%, transparent 50%);
+linear-gradient(to top, #231F20 51%, transparent 50%);
 background-position: 0 100%;
 padding: 35px;
 cursor: pointer;
