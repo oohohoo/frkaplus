@@ -271,7 +271,7 @@ GSAP PERFORMANCE FIX
 
  .gsapfix {
   will-change: transform;
-  backface-visibility: hidden;
+  /*backface-visibility: hidden;*/
 }   
 
 /*
