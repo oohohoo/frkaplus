@@ -1525,7 +1525,7 @@ function animateOpenNav() {
   var mobileNav = document.getElementById("krug");
   tl
   .set('body', { overflow: 'hidden' })
-  .to(mobileNav, {duration: 2, ease: "power3.out", scale:20 })
+  .to(mobileNav, {duration: 2, ease: "power1.out", scale:40 })
   //.to('.kontakt-back', {y, ease: "power1.in"})
     .to(".nav__link", {opacity: 1, y: 0,duration: 0.2, stagger: {// wrap advanced options in an object
       each: 0.2,
