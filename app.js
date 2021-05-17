@@ -765,6 +765,7 @@ views: [{
         // do something once on the initial page load
         initLoader();
         kontaktfs();
+        console.log("FSKONTAKT LOADED");
         /*fullscreenMenuNew(); */
         /* underlineMouseover(); */
                 
@@ -795,6 +796,7 @@ views: [{
       beforeEnter({next}) {
         heroSwiper();
         kontaktfs();
+        console.log("FSKONTAKT LOADED");
         counteriOnama();
         /* underlineMouseover(); */
      },
