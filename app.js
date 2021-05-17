@@ -1452,7 +1452,7 @@ var cont={val:195} , newval = 200 ;
 gsap.to(cont,2,{
 scrollTrigger:{
       scroller: ".smooth-scroll",
-				trigger: ".counter-container",
+				trigger: ".numbercounter",
 				start: "top 50%", 
 				end: "bottom top", 
         toggleActions: "restart none none reset",
