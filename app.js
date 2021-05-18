@@ -296,59 +296,6 @@ scroller: ".smooth-scroll",
 
 
 
-  // Pinning and horizontal scrolling
-
-  let horizontalSections = document.querySelectorAll(".horizontal-scroll");
-
- horizontalSections.forEach(horizontalSection => {
-    let pinWrap = document.querySelector(".pin-wrap");
-    let pinWrapWidth = pinWrap.offsetWidth;
-    let horizontalScrollLength = pinWrapWidth - window.innerWidth;
-    gsap.to(pinWrap, {
-      scrollTrigger: {
-       scroller: ".smooth-scroll",
-        scrub: true,
-        trigger: ".horizontal-scroll",
-        pin: true,
-        //markers: true,
-        start: "top top",
-        end: () => `+=${pinWrapWidth}`,
-        invalidateOnRefresh: true 
-        },
-
-      x: -horizontalScrollLength,
-      ease: "none" });
-
-  });
-
-  /* COLOR CHANGER */
-
-  const scrollColorElems = document.querySelectorAll("[data-bgcolor]");
-  scrollColorElems.forEach((colorSection, i) => {
-    const prevBg = i === 0 ? "" : scrollColorElems[i - 1].dataset.bgcolor;
-    const prevText = i === 0 ? "" : scrollColorElems[i - 1].dataset.textcolor;
-
-    ScrollTrigger.create({
-      trigger: colorSection,
-      scroller: ".smooth-scroll",
-      start: "top 50%",
-      onEnter: () =>
-      gsap.to("body", {
-        backgroundColor: colorSection.dataset.bgcolor,
-        color: colorSection.dataset.textcolor,
-        overwrite: "auto" }),
-
-      onLeaveBack: () =>
-      gsap.to("body", {
-        backgroundColor: prevBg,
-        color: prevText,
-        overwrite: "auto" }) });
-
-
-  });
-
-
-
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
   // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
