@@ -270,6 +270,34 @@ showAnim
 
 
 
+/* =============================================
+004 - SCROLLTRIGGER BATCH - TEXT REVEAL MULTILINE / VERZIJA 1
+================================================ */
+
+gsap.set('.b-text', {autoAlpha: 0, yPercent: 200});
+
+ScrollTrigger.batch(".batch-text", {
+scroller: ".smooth-scroll",
+  onEnter: batch => {
+    batch.forEach((section, i) => {
+      gsap.to(section.querySelectorAll(".b-text"), {
+        autoAlpha: 1,
+        yPercent: 0,
+        duration: 0.8,
+        ease: "power1.inOut", 
+        stagger: 0.1,
+        delay: i * 0.3,
+        toggleActions: "restart pause reverse pause"
+      });
+    });
+  },
+  start: "top 95%"
+});
+
+
+
+
+
 
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
