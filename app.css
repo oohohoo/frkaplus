@@ -454,8 +454,8 @@ OUTLINE
 
 
     .outlajn--black {
-      /* color: #231F20; /* Fallback */
-      /*-webkit-text-fill-color: #231F20; */
+      color: #FFDC52; /* Fallback */
+      -webkit-text-fill-color: #FFDC52; 
       -webkit-text-stroke-width: 2px;
       -webkit-text-stroke-color: #231F20;
       letter-spacing: 3px;
