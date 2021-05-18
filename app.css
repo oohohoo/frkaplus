@@ -21,7 +21,32 @@ DEFINE ROOT VARIABLES / definiraj svoje
   --bcg-loaderbluedark: #ffdc52;
   --loader-width: 50vw;
   --loader-height: 5em;
+
+  --text-color: #FFDC52;
+  --bg-color: #231F20;
+
 }
+
+
+
+
+
+body {
+   overscroll-behavior: none;
+}
+
+section:not(.horizontal-scroll) {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  padding: 50px 10vw;
+  margin: auto;
+
+
+
 /*
 ================================================================================
 HIDE PAGE CONTENT BY DEFAULT
