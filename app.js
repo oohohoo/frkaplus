@@ -287,7 +287,7 @@ scroller: ".smooth-scroll",
         ease: "power1.inOut", 
         stagger: 0.1,
         delay: i * 0.3,
-        toggleActions: "restart pause reverse pause"
+        toggleActions: "restart none none reset"
       });
     });
   },
