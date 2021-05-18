@@ -672,6 +672,7 @@ function initPageTransitions() {
   });
   //init scrolltrigger
   barba.hooks.afterEnter(() => {
+    ScrollTrigger.refresh();
    
   });
 
