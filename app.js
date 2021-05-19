@@ -224,7 +224,7 @@ var action = gsap.timeline({repeat:-1, defaults:{duration:0.8, ease:'none'}})
     trigger: firstSection,    
     start: 'top 20%',
     end: "+=30%",    
-    scrub: 2,
+    //scrub: 2,
   },
   
   autoAlpha:1, stagger:5})
@@ -234,7 +234,7 @@ var action = gsap.timeline({repeat:-1, defaults:{duration:0.8, ease:'none'}})
     trigger: firstSection,    
     start: 'top 20%',
     end: "+=30%",    
-    scrub: 2,
+    //scrub: 2,
   },
   
   autoAlpha:0, stagger:5}, 4)
