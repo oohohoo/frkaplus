@@ -1309,8 +1309,9 @@ var menu = ['', '', '', '', '', '']
 				disableOnInteraction: false,
 },
    // autoplayStopOnLast: false, // loop false also
-    // If we need pagination
+    // If we need paginationg
  
+    
     
     // Navigation arrows
    nextButton: '.swiper-button-next',
