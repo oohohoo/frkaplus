@@ -189,6 +189,21 @@ videoroll.to(".bgvideo", {
  
 })
 
+.from(".videoplay", {
+  scrollTrigger: {
+    scroller: ".smooth-scroll",
+    trigger: firstSection,    
+    start: 'top 30%',
+    end: "+=30%",    
+    scrub: 2,
+  },
+  /*clipPath: 'inset(60%)',*/
+  duration: 0.2,
+  autoAlpha:1,
+  rotate:360,
+ 
+})
+
 
 
 /*------------/ SCROLLTRIGGER INNER IMAGE PARALLAX /------------*/
