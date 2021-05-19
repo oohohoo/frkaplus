@@ -207,6 +207,45 @@ videoroll.to(".bgvideo", {
 
 
 
+
+
+
+
+
+/* =============================================
+023  --- SIMPLE FADE IN / FADE OUT / AUTOALPHA 023 simple fadein fadeout 
+================================================ */
+
+var action = gsap.timeline({repeat:-1, defaults:{duration:0.8, ease:'none'}})
+
+.to('.fadeheader', {
+  scrollTrigger: {
+    scroller: ".smooth-scroll",
+    trigger: firstSection,    
+    start: 'top 20%',
+    end: "+=30%",    
+    scrub: 2,
+  },
+  
+  autoAlpha:1, stagger:5})
+.to('.fadeheader', {
+  scrollTrigger: {
+    scroller: ".smooth-scroll",
+    trigger: firstSection,    
+    start: 'top 20%',
+    end: "+=30%",    
+    scrub: 2,
+  },
+  
+  autoAlpha:0, stagger:5}, 4)
+
+
+
+
+
+
+
+
 /*------------/ SCROLLTRIGGER INNER IMAGE PARALLAX /------------*/
 
 var inparallax = gsap.timeline({
@@ -1441,14 +1480,7 @@ sections.forEach((section, index) => {
 
 function heroApeli() {
 
-/* =============================================
-023  --- SIMPLE FADE IN / FADE OUT / AUTOALPHA 023 simple fadein fadeout 
-================================================ */
 
-var action = gsap.timeline({repeat:-1, defaults:{duration:0.8, ease:'none'}})
-
-.to('.fadeheader', {autoAlpha:1, stagger:5})
-.to('.fadeheader', {autoAlpha:0, stagger:5}, 4)
 
 }
 
