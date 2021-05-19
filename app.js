@@ -818,6 +818,19 @@ views: [{
        
     }},{
 
+      namespace: 'uvjeti',
+    once(data) {
+      
+    },
+  
+    beforeEnter(data) {
+      simpleaccordion();
+      console.log("ACCORDION NA TERMS");
+      
+       
+    }},{
+
+
   },{
  
 
