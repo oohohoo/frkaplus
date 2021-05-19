@@ -193,7 +193,7 @@ videoroll.to(".bgvideo", {
   scrollTrigger: {
     scroller: ".smooth-scroll",
     trigger: firstSection,    
-    start: 'top 30%',
+    start: 'top 60%',
     end: "+=30%",    
     scrub: 2,
   },
