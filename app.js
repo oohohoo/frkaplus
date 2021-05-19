@@ -188,6 +188,7 @@ videoroll.to(".bgvideo", {
   rotate:0,
  
 })
+
 /* 
 .from(".videoplay", {
   scrollTrigger: {
@@ -206,6 +207,33 @@ videoroll.to(".bgvideo", {
 }) */
 
 
+/*OUTLINE TEXT OVER IMAGE MASK */
+
+gsap.to(".filled-text, .outline-text", {
+  scrollTrigger:{
+  scroller: ".smooth-scroll",
+    trigger: ".filled-text, .outline-text", 
+    start: "top bottom", 
+    end: "bottom top", 
+    scrub: 1
+  },
+  x: 200
+})
+
+gsap.to(".imagex", {
+  scrollTrigger:{
+  scroller: ".smooth-scroll",
+    trigger: ".imagex",
+    start: "top bottom", 
+    end: "bottom top", 
+    scrub: 1,
+/*                 onRefresh: ({progress, direction, isActive}) => console.log(progress, direction, isActive)
+*/
+    
+  },
+  x: -200,
+
+})
 
 /*------------/ SCROLLTRIGGER INNER IMAGE PARALLAX /------------*/
 
