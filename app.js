@@ -830,7 +830,7 @@ views: [{
        
     }},{
 
-      namespace: 'privatnost,
+      namespace: 'privatnost',
       once(data) {
         
       },
