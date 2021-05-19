@@ -219,8 +219,8 @@ gsap.to(".filled-text, .outline-text", {
   },
   x: 600
 })
-
-/* gsap.set('.imagex', {x:400});
+/*
+gsap.set('.imagex', {x:400});
 gsap.to(".imagex", {
   scrollTrigger:{
   scroller: ".smooth-scroll",
@@ -230,12 +230,12 @@ gsap.to(".imagex", {
     scrub: 1,
 /*                 onRefresh: ({progress, direction, isActive}) => console.log(progress, direction, isActive)
 */
-    
+    /*
   },
   x: -200,
 
-}) */
-
+})
+*/
 /*------------/ SCROLLTRIGGER INNER IMAGE PARALLAX /------------*/
 
 var inparallax = gsap.timeline({
