@@ -220,7 +220,7 @@ gsap.to(".filled-text, .outline-text", {
   x: 600
 })
 
-gsap.set('.imagex', {x:200});
+gsap.set('.imagex', {x:600});
 gsap.to(".imagex", {
   scrollTrigger:{
   scroller: ".smooth-scroll",
