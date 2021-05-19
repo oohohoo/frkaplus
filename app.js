@@ -813,7 +813,7 @@ views: [{
   
     beforeEnter(data) {
       simpleaccordion();
-      console.log("HACCORDIJON UČIUTAN NA NPP");
+     
       
        
     }},{
@@ -825,11 +825,22 @@ views: [{
   
     beforeEnter(data) {
       simpleaccordion();
-      console.log("ACCORDION NA TERMS");
+     
       
        
     }},{
 
+      namespace: 'privatnost,
+      once(data) {
+        
+      },
+    
+      beforeEnter(data) {
+        simpleaccordion();
+        
+        
+         
+      }},{
 
   },{
  
