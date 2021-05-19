@@ -217,7 +217,7 @@ gsap.to(".filled-text, .outline-text", {
     end: "bottom top", 
     scrub: 1
   },
-  x: -600
+  x: -1000
 })
 
 gsap.to(".imagex", {
