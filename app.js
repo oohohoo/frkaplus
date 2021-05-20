@@ -243,7 +243,7 @@ gsap.to(".roll-number-wrap", {
     end: "bottom top", 
     //scrub: 1
   },
-  yPercent: -80
+  y: "-20em"
 })
 
 /*
