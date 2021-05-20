@@ -168,7 +168,7 @@ videoroll.to(".bgvideo", {
     scrub: 2,
   },
   /*clipPath: 'inset(60%)',*/
-  scale:1.1,
+  scale:1.15,
   rotate:0,
   yPercent:-30
 })
