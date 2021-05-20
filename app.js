@@ -854,9 +854,14 @@ views: [{
 
 },{
     namespace: 'lokacije',
+    once(data) {
+      locationMap();
+   
+    },
+
   beforeEnter(data) {
 
-    locationMap();
+    
     console.log("LOCATION MAP LOADED");
  
   }},{
@@ -1361,7 +1366,7 @@ var map = new mapboxgl.Map({
 container: 'map', // container ID
 style: 'mapbox://styles/fogseller/cknip0h0j0oqm17mgvd8wwi8y', // style URL
 center: [44.6, 16.3], // starting position [lng, lat]
-zoom: 6.55 // starting zoom
+zoom: 3.55 // starting zoom
 });
 
 map.on('load', function (e) {
