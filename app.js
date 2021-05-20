@@ -662,7 +662,7 @@ function initLoader() {
     .set(".freveal", {yPercent: 100})
     .set(mask, {yPercent: 0})
     //.set(image, {yPercent: 100})
-    .set("#main", {yPercent: 20})
+    .set("#main", {y: 150})
 
     /* OVO JE DODANO ZA PREZENTACIJU*/
     .set(progress, {autoAlpha: 0})
@@ -691,7 +691,7 @@ function initLoader() {
 
 //.to(lines, {yPercent: -500, stagger: 0.2}, 0)
     .to([loader, loaderContent], {yPercent: -100}, 0.2)
-    .to('#main', {yPercent: 0}, 0);
+    .to('#main', {y: 0}, 0);
 
   const tlLoader = gsap.timeline();
   tlLoader
@@ -726,7 +726,7 @@ function pageTransitionIn({
   .set(loaderInner, {autoAlpha: 0})
   .fromTo(loader, {yPercent: -100}, {yPercent: 0})
   .fromTo(loaderMask, {yPercent: 80}, {yPercent: 0}, 0)
-  .to(container, {yPercent: 20}, 0);
+  .to(container, {y: 150}, 0);
 
 /*
   .to(container, {autoAlpha:0}, 0);
@@ -756,7 +756,7 @@ function pageTransitionOut({
 
     .to(loader, {yPercent: 100})
     .to(loaderMask, {yPercent: -80}, 0)
-    .from(container, {yPercent: -20}, 0);
+    .from(container, {y: -150}, 0);
     return tl;
 }
 
