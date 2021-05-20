@@ -351,7 +351,7 @@ var cont={val:990} , newval = 1000 ;
 gsap.to(cont,2,{
 scrollTrigger:{
       scroller: ".smooth-scroll",
-				trigger: ".1000-wrap",
+				trigger: ".tisucu",
 				start: "top 90%", 
 				end: "bottom top", 
         toggleActions: "restart restart none reset",
