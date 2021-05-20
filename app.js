@@ -242,7 +242,7 @@ gsap.to(".roll-number-wrap", {
     start: "top 70%", 
     end: "bottom top", 
    scrub: 1,
-   toggleActions: "restart reset reset reset"
+   
   },
   y: -700,
   //duration:2
