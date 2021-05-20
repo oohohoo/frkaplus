@@ -794,7 +794,7 @@ views: [{
 
   namespace: 'lokacijesolo',
   once(data) {
-    /* swiperlocation(); */
+   
      locationMap();
   },
 
@@ -1357,10 +1357,10 @@ var menu = ['', '', '', '', '', '']
     // "slide", "fade", "cube", "coverflow" or "flip"
    // effect: 'slide',
     
-     /*  pagination: {
+    /*   pagination: {
 				el: '.swiper-pagination',
-				clickable: true, */
-			/* 	type: "progressbar", */
+				clickable: true,
+				type: "progressbar", */
 				/*renderBullet: function (index, className) {
 					return '<span class="' + className + '">' + (menu[index]) + '</span>';
 },*/
@@ -1379,7 +1379,7 @@ var menu = ['', '', '', '', '', '']
    // slidesOffsetBefore: 0,
     //
     grabCursor: true,
-  }
+ /*  } */
   })        
   
 }
