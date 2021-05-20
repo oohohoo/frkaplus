@@ -742,7 +742,7 @@ views: [{
   namespace: 'home',
 
   beforeEnter(data) {
-    heroSwiper();
+    /* heroSwiper(); */
     heroApeli();
 
   /* imgoverlay(); */
@@ -753,7 +753,7 @@ views: [{
   once(data) {
     
     /* titleHero(); */
-    heroSwiper();
+    /* heroSwiper(); */
   },
   afterEnter(data) {
    }
@@ -889,7 +889,7 @@ views: [{
       },
 
       beforeEnter({next}) {
-        heroSwiper();
+      /*   heroSwiper(); */
      /*    kontaktfs();
         console.log("FSKONTAKT LOADED"); */
        /*  counteriOnama(); */
@@ -1117,7 +1117,7 @@ else {
 SWIPER - HERO ANIMACIJA
 ================================================================================
 */
-
+/*
 function heroSwiper() {
   var swiper = new Swiper('.swiper-container', {
     // pagination: '.swiper-pagination',
@@ -1171,7 +1171,7 @@ gsap.to('.swiper-slide', {scale:1, duration: 0.4, delay:0.2});
 });
 console.log("SWIPER BISE TREBA VRATITI NA STARU DIMENZIJU");
 }
-
+*/
 
 /*
 ================================================================================
