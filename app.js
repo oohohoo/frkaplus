@@ -411,32 +411,7 @@ scroller: ".smooth-scroll",
 });
 
 
-/* =============================================
-NUMBER COUNT from some value 01
-================================================ */
 
-
-/* 
-var cont={val:990} , newval = 1000 ;
-
-gsap.to(cont,2,{
-scrollTrigger:{
-      scroller: ".smooth-scroll",
-				trigger: ".tisucu",
-				start: "top 100%", 
-				end: "bottom top", 
-        toggleActions: "restart none none reset",
-				//scrub: 1,
-				
-			},
-      
-val:newval,
-roundProps:"val",
-onUpdate:function(){
-  document.getElementById("counternew").innerHTML=cont.val
-  
-}});
- */
 
 
 
@@ -864,6 +839,7 @@ views: [{
   namespace: 'onama',
   beforeEnter(){
     simpleaccordion();
+    counteronama();
     /* counteriOnama();
     console.log("COUNTER LOADED"); */
  /*    locoAccordion(); */
@@ -1785,3 +1761,33 @@ $(el).on("mouseenter",function(){
 });   
 console.log("Hello world!");
   }
+
+
+
+  /* =============================================
+NUMBER COUNT from some value 01
+================================================ */
+
+function counteronama() {
+
+var cont={val:990} , newval = 1000 ;
+
+gsap.to(cont,2,{
+scrollTrigger:{
+      scroller: ".smooth-scroll",
+				trigger: ".tisucu",
+				start: "top 100%", 
+				end: "bottom top", 
+        toggleActions: "restart none none reset",
+				//scrub: 1,
+				
+			},
+      
+val:newval,
+roundProps:"val",
+onUpdate:function(){
+  document.getElementById("counternew").innerHTML=cont.val
+  
+}});
+
+}
