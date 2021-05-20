@@ -881,12 +881,12 @@ views: [{
   
   },
 afterEnter(data) {
-  locationMap();
+ 
    
   },
 
   beforeEnter(data) {
-   
+    locationMap();
     swiperlocation();
    /*  locationMap(); */
     /* locationMap(); */
