@@ -855,12 +855,12 @@ views: [{
 },{
     namespace: 'lokacije',
     once(data) {
-      locationMap();
+     
    
     },
 
-  beforeEnter(data) {
-
+  afterEnter(data) {
+    locationMap();
     
     console.log("LOCATION MAP LOADED");
  
