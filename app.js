@@ -346,7 +346,7 @@ NUMBER COUNT from some value 01
 
 
 
-var cont={val:990} , newval = 1.000 ;
+var cont={val:990} , newval = 1000 ;
 
 gsap.to(cont,2,{
 scrollTrigger:{
