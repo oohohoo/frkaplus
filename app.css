@@ -739,3 +739,12 @@ WIZARDRY 1920
 @media only screen and (min-width: 1920px) {
      body {font-size: 19.2px;}
 }
+
+
+
+
+.mapboxgl-ctrl, .mapboxgl-ctrl-attrib-inner {
+
+display:none;
+
+}
