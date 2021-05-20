@@ -745,6 +745,6 @@ WIZARDRY 1920
 
 .mapboxgl-ctrl, .mapboxgl-ctrl-attrib-inner {
 
-display:none;
+display:none!important;
 
 }
