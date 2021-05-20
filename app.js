@@ -235,15 +235,15 @@ gsap.to(".filled-text.two, .outline-text.two", {
 })
 
 /*14/15 ROLL */
-gsap.to(".gi--num--wrap", {
+gsap.to(".roll-number-wrap", {
   scrollTrigger:{
   scroller: ".smooth-scroll",
-    trigger: ".roll-number-wrap", 
+    trigger: ".gi--num--wrap", 
     start: "top 80%", 
     end: "bottom top", 
     scrub: 1
   },
-  yPercent: -45
+  yPercent: -80
 })
 
 /*
