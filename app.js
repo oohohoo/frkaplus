@@ -840,6 +840,7 @@ views: [{
   beforeEnter(){
     simpleaccordion();
     counteronama();
+    console.log("counterLOADED");
     /* counteriOnama();
     console.log("COUNTER LOADED"); */
  /*    locoAccordion(); */
@@ -872,12 +873,13 @@ views: [{
   namespace: 'lokacijesolo',
   once(data) {
    
-     locationMap();
+   
   },
 
   beforeEnter(data) {
-
+   
     swiperlocation();
+    locationMap();
     /* locationMap(); */
     //contactHeroAnima();
 
