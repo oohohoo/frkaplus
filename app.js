@@ -241,7 +241,8 @@ gsap.to(".roll-number-wrap", {
     trigger: ".gi--num--wrap", 
     start: "top 20%", 
     end: "bottom top", 
-   scrub: 1
+   scrub: 1,
+   toggleActions: "restart reset reset reset"
   },
   y: 300,
   //duration:2
