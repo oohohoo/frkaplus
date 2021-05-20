@@ -193,7 +193,7 @@ LOADER
 
 .progress {
   /*OVO JE UGAŠENO ZA PREZENTACIJU*/
-  background-color: var(--bcg-lightblue);
+  /* background-color: var(--bcg-lightblue); */
   position: absolute;
   left: 0;
   top: 0;
