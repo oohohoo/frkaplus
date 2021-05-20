@@ -879,7 +879,7 @@ views: [{
   beforeEnter(data) {
    
     swiperlocation();
-    locationMap();
+   /*  locationMap(); */
     /* locationMap(); */
     //contactHeroAnima();
 
@@ -1359,7 +1359,7 @@ var map = new mapboxgl.Map({
  /*  width: 100,
   height: 20, */
 container: 'map', // container ID
-style: 'mapbox://styles/mapbox/streets-v11', // style URL
+style: 'mapbox://styles/fogseller/cknip0h0j0oqm17mgvd8wwi8y', // style URL
 center: [44.686, 16.342], // starting position [lng, lat]
 zoom: 6.55 // starting zoom
 });
