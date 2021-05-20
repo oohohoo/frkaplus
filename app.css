@@ -733,50 +733,9 @@ CURSOR IMAGE OVER
 
 /*
 ================================================================================
-BUTTER SLIDER
+WIZARDRY 1920
 ================================================================================
 */
-
-.sliderimg {
-  width: 100vw;
-  overflow-x: hidden;
-}
-
-.slidesimg {
-  display: flex;
- will-change: transform; 
-  overflow-x: visible;
-}
-
-.slideimg {
-  flex: 0 0 auto;
-  will-change: transform; 
-  width: auto;
-  margin-right: 5vw;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  padding-bottom: 35px;
-}
-
-
-.bar2 {
-  position: absolute;
-  height: 2px;
-  width: 0%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: #231f20;
-}
-
-.progress2 {
-  position: relative;
-  height: 2px;
-  width: 90%;
-  background-color: #231f20;
-  margin-top: 20px;
-  margin-bottom: 20px;
+@media only screen and (min-width: 1920px) {
+     body {font-size: 19.2px;}
 }
