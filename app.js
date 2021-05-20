@@ -880,6 +880,10 @@ views: [{
    
    
   },
+afterEnter(data) {
+  locationMap();
+   
+  },
 
   beforeEnter(data) {
    
