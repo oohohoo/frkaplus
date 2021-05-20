@@ -340,6 +340,33 @@ scroller: ".smooth-scroll",
 });
 
 
+/* =============================================
+NUMBER COUNT from some value 01
+================================================ */
+
+
+
+var cont={val:990} , newval = 1000 ;
+
+gsap.to(cont,2,{
+scrollTrigger:{
+      scroller: ".smooth-scroll",
+				trigger: ".counter-trigger",
+				start: "top 90%", 
+				end: "bottom top", 
+        toggleActions: "restart none none reset",
+				//scrub: 1,
+				
+			},
+      
+val:newval,
+roundProps:"val",
+onUpdate:function(){
+  document.getElementById("counterx").innerHTML=cont.val
+  
+}});
+
+
 
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
@@ -1524,13 +1551,13 @@ var action = gsap.timeline({repeat:-1, defaults:{duration:0.8, ease:'none'}})
 O NAMA COUNTERI
 ================================================ */
 
-/*
-
-function counteriOnama() {
 
 
+/* function counteriOnama() {
 
-/* const items = document.querySelectorAll(".data");
+
+
+ const items = document.querySelectorAll(".data");
 
 gsap.from(items, {
 scrollTrigger:{
@@ -1557,12 +1584,12 @@ scrollTrigger:{
 
 function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-} */
-
+} 
+ */
 
 /* NUMBER COUNT from some value 01 */
-/*
-var cont={val:195} , newval = 200 ;
+
+/* var cont={val:195} , newval = 200 ;
 
 gsap.to(cont,2,{
 scrollTrigger:{
@@ -1580,8 +1607,7 @@ roundProps:"val",
 onUpdate:function(){
   document.getElementById("counterx").innerHTML=cont.val
   
-}});
-
+}}); */
 
 
 
