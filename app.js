@@ -235,7 +235,7 @@ gsap.to(".filled-text.two, .outline-text.two", {
 });
 
 /*14/15 ROLL */
-gsap.to(".roll-number-wrap", {
+/* gsap.to(".roll-number-wrap", {
   scrollTrigger:{
   scroller: ".smooth-scroll",
     trigger: ".gi--num--wrap", 
@@ -247,7 +247,7 @@ gsap.to(".roll-number-wrap", {
   y: 300,
   //duration:2
 });
-
+ */
 /*
 gsap.set('.imagex', {x:400});
 gsap.to(".imagex", {
