@@ -756,7 +756,7 @@ function pageTransitionOut({
 
     .to(loader, {yPercent: 100})
     .to(loaderMask, {yPercent: -80}, 0)
-    .from(container, {ypercent: -20}, 0);
+    .from(container, {yPercent: -20}, 0);
     return tl;
 }
 
