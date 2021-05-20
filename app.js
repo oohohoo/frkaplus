@@ -234,6 +234,7 @@ gsap.to(".filled-text.two, .outline-text.two", {
   x: -800
 })
 
+/*14/15 ROLL */
 gsap.to(".gi--num--wrap", {
   scrollTrigger:{
   scroller: ".smooth-scroll",
