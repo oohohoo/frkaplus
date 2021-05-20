@@ -1650,3 +1650,27 @@ openNav();
 
 }
 */
+
+
+  /* =============================================
+  023  --- SIMPLE FADE IN / FADE OUT / AUTOALPHA 023 simple fadein fadeout 
+  ================================================ */
+
+  function referenceHover() {
+
+// BUTTON MOUSE HOVER ORANGE + SHADOW
+const menuhover = document.getElementById('refbox');
+$(".reference-box").each(function(i, el) {
+	var tl = gsap.timeline({paused: true});
+	var t = tl
+		.to($(el).find('.reference-box'), {backgroundColor:"#EA5B0C", color:"#ffdc52", duration: 0.3, overwrite:"all", ease: "power1.out"})
+	el.animation = t;
+
+$(el).on("mouseenter",function(){
+	this.animation.play();
+	}).on("mouseleave",function(){
+	this.animation.reverse();
+});
+});   
+
+  }
