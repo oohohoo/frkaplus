@@ -374,8 +374,7 @@ let direction = 1; // 1 = forward, -1 = backward scroll
 const roll1 = roll(".roll1", {duration: 80}), // ugasi true i mijenja smjer
       roll2 = roll(".roll2", {duration: 50}, true),
       roll3 = roll(".roll3", {duration: 60}),
-      roll4 = roll(".roll4", {duration: 40}, true),
-      roll5 = roll(".roll5", {duration: 70});
+     
 ScrollTrigger.create({
        trigger: ".cd-wrap",
       
@@ -391,7 +390,7 @@ ScrollTrigger.create({
           if (self.direction !== direction) {
             direction *= -1;
            
-            gsap.to([roll1, roll2, roll3, roll4, roll5], {
+            gsap.to([roll1, roll2, roll3], {
                 timeScale: direction, 
                 overwrite: true            
             });
