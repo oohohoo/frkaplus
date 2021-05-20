@@ -720,13 +720,13 @@ function pageTransitionIn({
   container
 }) {
   // timeline to stretch the loader over the whole screen
-  const tl = gsap.timeline({defaults: {duration: 0.8,ease: 'power3.out'}});
+  const tl = gsap.timeline({defaults: {duration: 0.8, ease: 'power3.out'}});
   tl
 
   .set(loaderInner, {autoAlpha: 0})
   .fromTo(loader, {yPercent: -100}, {yPercent: 0})
   .fromTo(loaderMask, {yPercent: 80}, {yPercent: 0}, 0)
- .to(container, {yPercent: 20}, 0);
+ .to(container, {yPercent: 10}, 0);
 
 /*
   .to(container, {autoAlpha:0}, 0);
@@ -756,7 +756,7 @@ function pageTransitionOut({
 
     .to(loader, {yPercent: 100})
     .to(loaderMask, {yPercent: -80}, 0)
-    .from(container, {yPercent: -20}, 0);
+    .from(container, {yPercent: -10}, 0);
     return tl;
 }
 
