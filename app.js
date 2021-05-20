@@ -239,12 +239,12 @@ gsap.to(".roll-number-wrap", {
   scrollTrigger:{
   scroller: ".smooth-scroll",
     trigger: ".gi--num--wrap", 
-    start: "top 60%", 
+    start: "top 70%", 
     end: "bottom top", 
    scrub: 1,
    toggleActions: "restart reset reset reset"
   },
-  y: -600,
+  y: -700,
   //duration:2
 });
 
