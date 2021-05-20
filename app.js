@@ -241,7 +241,7 @@ gsap.to(".roll-number-wrap", {
     trigger: ".gi--num--wrap", 
     start: "top 20%", 
     end: "bottom top", 
-    //scrub: 1
+   scrub: 1
   },
   y: "-0.3em",
   duration:2
