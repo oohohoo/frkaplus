@@ -239,7 +239,7 @@ gsap.to(".roll-number-wrap", {
   scrollTrigger:{
   scroller: ".smooth-scroll",
     trigger: ".gi--num--wrap", 
-    start: "top 50%", 
+    start: "top 20%", 
     end: "bottom top", 
     //scrub: 1
   },
