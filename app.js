@@ -795,13 +795,13 @@ views: [{
   namespace: 'lokacijesolo',
   once(data) {
    
-   /*   locationMap(); */
+     locationMap();
   },
 
   beforeEnter(data) {
 
     swiperlocation();
-    locationMap();
+    /* locationMap(); */
     //contactHeroAnima();
 
   }},{
