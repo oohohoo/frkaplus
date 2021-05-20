@@ -1360,7 +1360,7 @@ var map = new mapboxgl.Map({
   height: 20, */
 container: 'map', // container ID
 style: 'mapbox://styles/fogseller/cknip0h0j0oqm17mgvd8wwi8y', // style URL
-center: [44.686, 16.342], // starting position [lng, lat]
+center: [44.6, 16.3], // starting position [lng, lat]
 zoom: 6.55 // starting zoom
 });
 
