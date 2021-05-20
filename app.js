@@ -328,8 +328,6 @@ inparallax.from(".img__background", {
 
 
 
-
-
  
   /*NE ZNAM DA LI OVO IDE???*/
   //locoScroll.update();
@@ -861,6 +859,8 @@ views: [{
 
 beforeEnter(data) {
   locationMap();
+  scrolltriggerupdate();
+  console.log("SKROLIĆ UPDEJTAN");
     
    
  
@@ -883,6 +883,7 @@ beforeEnter(data) {
   beforeEnter(data) {
     locationMap();
     swiperlocation();
+    scrolltriggerupdate();
    /*  locationMap(); */
     /* locationMap(); */
     //contactHeroAnima();
@@ -1799,3 +1800,10 @@ onUpdate:function(){
 }});
 
 }
+
+
+
+function scrolltriggerupdate() {
+  ScrollTrigger.update();
+  }
+  
