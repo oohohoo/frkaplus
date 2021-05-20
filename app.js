@@ -1671,7 +1671,7 @@ openNav();
 
 // BUTTON MOUSE HOVER ORANGE + SHADOW
 const menuhover = document.getElementById('refbox');
-$(".reference-box").each(function(i, el) {
+$(".ref-logo-container").each(function(i, el) {
 	var tl = gsap.timeline({paused: true});
 	var t = tl
 		.to($(el).find('.reference-box'), {backgroundColor:"#EA5B0C", color:"#ffdc52", duration: 0.3, overwrite:"all", ease: "power1.out"})
