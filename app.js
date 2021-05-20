@@ -1356,8 +1356,8 @@ function locationMap() {
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiZm9nc2VsbGVyIiwiYSI6ImNrN2VpbXlpbjAwNDIzbnM1N2ZhMW9laGkifQ.DUf-8r1jXF4o7ApMUcKVXQ';
 var map = new mapboxgl.Map({
-  width: 100,
-  height: 20,
+ /*  width: 100,
+  height: 20, */
 container: 'map', // container ID
 style: 'mapbox://styles/mapbox/streets-v11', // style URL
 center: [15.9, 45.8], // starting position [lng, lat]
