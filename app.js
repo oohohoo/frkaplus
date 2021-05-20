@@ -441,7 +441,7 @@ document.getElementById("year").innerHTML = date;
 /* =============================================
 MARQUEE + SCROLLTRIGGER change direction
 ================================================ */
-
+/*
 let direction = 1; // 1 = forward, -1 = backward scroll
 
 const roll1 = roll(".roll1", {duration: 80}), // ugasi true i mijenja smjer
@@ -455,11 +455,11 @@ ScrollTrigger.create({
         targets: '.logofrka, .navstyle, .kontakt',
         className: 'orange'
       }, */
-        start: "top 30%",
+    /*    start: "top 30%",
         end: "bottom top",
         scroller: ".smooth-scroll",
             /*  invalidateOnRefresh: true, */
-         onUpdate(self) {
+      /*   onUpdate(self) {
           if (self.direction !== direction) {
             direction *= -1;
            
