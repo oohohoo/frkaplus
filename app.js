@@ -855,7 +855,7 @@ views: [{
 },{
     namespace: 'lokacije',
     once(data) {
-      locationMap();
+    
    
     },
 
@@ -878,7 +878,7 @@ views: [{
   namespace: 'lokacijesolo',
   once(data) {
    
-    locationMap();
+  
   },
 afterEnter(data) {
   locationMap();
