@@ -354,7 +354,7 @@ scrollTrigger:{
 				trigger: ".tisucu",
 				start: "top 100%", 
 				end: "bottom top", 
-        toggleActions: "restart restart none reset",
+        toggleActions: "restart none none reset",
 				//scrub: 1,
 				
 			},
