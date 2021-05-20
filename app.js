@@ -239,7 +239,7 @@ gsap.to(".roll-number-wrap", {
   scrollTrigger:{
   scroller: ".smooth-scroll",
     trigger: ".gi--num--wrap", 
-    start: "top 20%", 
+    start: "top 60%", 
     end: "bottom top", 
    scrub: 1,
    toggleActions: "restart reset reset reset"
