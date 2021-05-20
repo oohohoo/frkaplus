@@ -222,7 +222,7 @@ gsap.to(".filled-text, .outline-text", {
   x: 800
 });
 
-gsap.set('.filled-text.two, .outline-text.two', {x:800});
+//gsap.set('.filled-text.two, .outline-text.two', {x:800});
 gsap.to(".filled-text.two, .outline-text.two", {
   scrollTrigger:{
   scroller: ".smooth-scroll",
