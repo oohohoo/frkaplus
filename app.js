@@ -250,7 +250,7 @@ gsap.to(".roll-number-wrap", {
 
 
 /* SCROLLTRIGGER LERP IMAGES - DELAY without LOCOMOTIVE SCROLL*/
-
+/*
 const delSections = document.querySelectorAll(".delayed-section");
 
 delSections.forEach(section => {
@@ -304,6 +304,8 @@ gsap.to(".imagex", {
   x: -200,
 
 })
+
+
 */
 /*------------/ SCROLLTRIGGER INNER IMAGE PARALLAX /------------*/
 
