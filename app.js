@@ -210,7 +210,7 @@ videoroll.to(".bgvideo", {
 /*OUTLINE TEXT OVER IMAGE MASK */
 
 
-gsap.set('.filled-text, .outline-text', {x:-800});
+gsap.set('.filled-text, .outline-text', {x:-1000});
 gsap.to(".filled-text, .outline-text", {
   scrollTrigger:{
   scroller: ".smooth-scroll",
