@@ -859,17 +859,17 @@ views: [{
    
     },
 
-  afterEnter(data) {
+beforeEnter(data) {
+  locationMap();
     
-    
-    console.log("LOCATION MAP LOADED");
+   
  
   }},{
 
     namespace: 'sort',
   beforeEnter(data) {
 
-    locationMap();
+  
   
   
  
@@ -880,11 +880,6 @@ views: [{
    
   
   },
-afterEnter(data) {
- 
-   
-  },
-
   beforeEnter(data) {
     locationMap();
     swiperlocation();
