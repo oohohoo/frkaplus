@@ -1375,8 +1375,8 @@ mapContainerEl.style.visibility = 'visible';
 });
 
 
-this.map.once('load', () => {
-  this.map.resize();
+map.once('load', () => {
+map.resize();
 });
 console.log("MAP RESIZE!");
 
