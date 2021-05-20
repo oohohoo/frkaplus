@@ -1357,9 +1357,9 @@ var menu = ['', '', '', '', '', '']
     // "slide", "fade", "cube", "coverflow" or "flip"
    // effect: 'slide',
     
-      pagination: {
+     /*  pagination: {
 				el: '.swiper-pagination',
-				clickable: true,
+				clickable: true, */
 			/* 	type: "progressbar", */
 				/*renderBullet: function (index, className) {
 					return '<span class="' + className + '">' + (menu[index]) + '</span>';
