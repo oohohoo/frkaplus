@@ -241,7 +241,7 @@ gsap.to(".roll-number-wrap", {
     trigger: ".gi--num--wrap", 
     start: "top 80%", 
     end: "bottom top", 
-    scrub: 1
+    //scrub: 1
   },
   yPercent: -80
 })
