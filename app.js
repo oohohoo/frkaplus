@@ -838,11 +838,22 @@ views: [{
       beforeEnter(data) {
         simpleaccordion();
         
-        
+
          
       }},{
 
   },{
+
+    namespace: 'reference',
+    once(data) {
+      
+    },
+  
+    beforeEnter(data) {
+       
+      referenceHover();
+       
+    }},{
  
 
 }],
