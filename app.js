@@ -251,7 +251,7 @@ gsap.to(".roll-number-wrap", {
 
 /* SCROLLTRIGGER LERP IMAGES - DELAY without LOCOMOTIVE SCROLL*/
 
-const delSections = document.querySelectorAll(".delayed-section");
+/* const delSections = document.querySelectorAll(".delayed-section");
 
 delSections.forEach(section => {
   const containerAnim = gsap.to(section.querySelector(".inner-container"), {
@@ -285,7 +285,7 @@ delSections.forEach(section => {
       scrub.invalidate().restart();
     }
   });
-});
+}); */
 
 
 /*
