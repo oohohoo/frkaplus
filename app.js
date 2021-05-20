@@ -855,12 +855,12 @@ views: [{
 },{
     namespace: 'lokacije',
     once(data) {
-     
+      locationMap();
    
     },
 
   afterEnter(data) {
-    locationMap();
+    
     
     console.log("LOCATION MAP LOADED");
  
@@ -869,7 +869,7 @@ views: [{
     namespace: 'sort',
   beforeEnter(data) {
 
-   
+    locationMap();
   
   
  
@@ -878,7 +878,7 @@ views: [{
   namespace: 'lokacijesolo',
   once(data) {
    
-   
+    locationMap();
   },
 afterEnter(data) {
   locationMap();
