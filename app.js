@@ -220,7 +220,7 @@ gsap.to(".filled-text, .outline-text", {
     scrub: 1
   },
   x: 800
-})
+});
 
 gsap.set('.filled-text.two, .outline-text.two', {x:800});
 gsap.to(".filled-text.two, .outline-text.two", {
@@ -232,7 +232,7 @@ gsap.to(".filled-text.two, .outline-text.two", {
     scrub: 1
   },
   x: -800
-})
+});
 
 /*14/15 ROLL */
 gsap.to(".roll-number-wrap", {
@@ -245,7 +245,7 @@ gsap.to(".roll-number-wrap", {
   },
   y: "-2em",
   duration:2
-})
+});
 
 /*
 gsap.set('.imagex', {x:400});
