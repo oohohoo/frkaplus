@@ -416,7 +416,7 @@ NUMBER COUNT from some value 01
 ================================================ */
 
 
-
+/* 
 var cont={val:990} , newval = 1000 ;
 
 gsap.to(cont,2,{
@@ -436,7 +436,7 @@ onUpdate:function(){
   document.getElementById("counternew").innerHTML=cont.val
   
 }});
-
+ */
 
 
 
