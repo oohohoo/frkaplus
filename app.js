@@ -243,7 +243,8 @@ gsap.to(".roll-number-wrap", {
     end: "bottom top", 
     //scrub: 1
   },
-  y: "-5em"
+  y: "-2em",
+  duration:2
 })
 
 /*
