@@ -221,6 +221,18 @@ gsap.to(".filled-text, .outline-text", {
   },
   x: 800
 })
+
+gsap.set('.filled-text.two, .outline-text.two', {x:800});
+gsap.to(".filled-text.two, .outline-text.two", {
+  scrollTrigger:{
+  scroller: ".smooth-scroll",
+    trigger: ".filled-text.two, .outline-text.two", 
+    start: "top bottom", 
+    end: "bottom top", 
+    scrub: 1
+  },
+  x: -800
+})
 /*
 gsap.set('.imagex', {x:400});
 gsap.to(".imagex", {
