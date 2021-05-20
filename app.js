@@ -362,7 +362,7 @@ scrollTrigger:{
 val:newval,
 roundProps:"val",
 onUpdate:function(){
-  document.getElementById("counterx").innerHTML=cont.val
+  document.getElementById("counternew").innerHTML=cont.val
   
 }});
 
