@@ -1376,6 +1376,7 @@ mapContainerEl.style.visibility = 'visible';
 
 map.on('idle',function(){
   map.resize()
+  console.log("MAP RESIZEEEEE!");
   })
 
 /* map.once('load', () => {
