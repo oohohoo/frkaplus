@@ -248,6 +248,46 @@ gsap.to(".roll-number-wrap", {
   //duration:2
 });
 
+
+/* SCROLLTRIGGER LERP IMAGES - DELAY without LOCOMOTIVE SCROLL*/
+
+const delSections = document.querySelectorAll(".delayed-section");
+
+delSections.forEach(section => {
+  const containerAnim = gsap.to(section.querySelector(".inner-container"), {
+    y: "100vh",
+    ease: "none"
+  });
+  
+  const imageAnim = gsap.to(section.querySelector("img"), {
+    y: "-100vh",
+    ease: "none",
+    paused: true
+  });
+  
+  const scrub = gsap.to(imageAnim, {
+    progress: 1,
+    paused: true,
+    ease: "power3",
+    duration: parseFloat(section.dataset.scrub) || 0.1,
+    overwrite: true
+  });
+  
+  ScrollTrigger.create({
+    animation: containerAnim,
+    scroller: ".smooth-scroll",
+    scrub: true,
+    trigger: section,
+    start: "top bottom",
+    end: "bottom top",
+    onUpdate: self => {
+      scrub.vars.progress = self.progress;
+      scrub.invalidate().restart();
+    }
+  });
+});
+
+
 /*
 gsap.set('.imagex', {x:400});
 gsap.to(".imagex", {
