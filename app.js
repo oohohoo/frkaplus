@@ -233,6 +233,18 @@ gsap.to(".filled-text.two, .outline-text.two", {
   },
   x: -800
 })
+
+gsap.to(".gi--num--wrap", {
+  scrollTrigger:{
+  scroller: ".smooth-scroll",
+    trigger: ".roll-number-wrap", 
+    start: "top 80%", 
+    end: "bottom top", 
+    scrub: 1
+  },
+  yPercent: -45
+})
+
 /*
 gsap.set('.imagex', {x:400});
 gsap.to(".imagex", {
