@@ -210,7 +210,7 @@ videoroll.to(".bgvideo", {
 /*OUTLINE TEXT OVER IMAGE MASK */
 
 
-gsap.set('.filled-text, .outline-text', {x:-800});
+gsap.set('.filled-text, .outline-text', {x:-500});
 gsap.to(".filled-text, .outline-text", {
   scrollTrigger:{
   scroller: ".smooth-scroll",
@@ -219,10 +219,10 @@ gsap.to(".filled-text, .outline-text", {
     end: "bottom top", 
     scrub: 1
   },
-  x: 800
+  x: 500
 });
 
-gsap.set('.filled-text.two, .outline-text.two', {x:800});
+gsap.set('.filled-text.two, .outline-text.two', {x:500});
 gsap.to(".filled-text.two, .outline-text.two", {
   scrollTrigger:{
   scroller: ".smooth-scroll",
@@ -231,7 +231,7 @@ gsap.to(".filled-text.two, .outline-text.two", {
     end: "bottom top", 
     scrub: 1
   },
-  x: -800
+  x: -500
 });
 
 /*14/15 ROLL */
