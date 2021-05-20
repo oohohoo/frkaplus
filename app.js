@@ -859,8 +859,8 @@ views: [{
 
 beforeEnter(data) {
   locationMap();
-  scrolltriggerupdate();
-  console.log("SKROLIĆ UPDEJTAN");
+/*   scrolltriggerupdate();
+  console.log("SKROLIĆ UPDEJTAN"); */
     
    
  
@@ -1373,6 +1373,13 @@ map.on('load', function (e) {
 var mapContainerEl = document.getElementById('map');
 mapContainerEl.style.visibility = 'visible';
 });
+
+
+this.map.once('load', () => {
+  this.map.resize();
+});
+console.log("MAP RESIZE!");
+
 /*********************** NE RADI  */
 /*3 second before zoom
 var mapo = L.mapbox.map('mymap', 'mymap');
