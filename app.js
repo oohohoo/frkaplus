@@ -277,7 +277,7 @@ delSections.forEach(section => {
     animation: containerAnim,
     scroller: ".smooth-scroll",
     scrub: true,
-    trigger: section,
+    trigger: "#iskustvo",
     start: "top bottom",
     end: "bottom top",
     onUpdate: self => {
