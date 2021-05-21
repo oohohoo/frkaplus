@@ -662,7 +662,7 @@ function initLoader() {
     .set(".freveal", {yPercent: 100})
     .set(mask, {yPercent: 0})
     //.set(image, {yPercent: 100})
-    .set("#main", {y: 150})
+    .set("#main", {y: 80})
 
     /* OVO JE DODANO ZA PREZENTACIJU*/
     .set(progress, {autoAlpha: 0})
@@ -726,7 +726,7 @@ function pageTransitionIn({
   .set(loaderInner, {autoAlpha: 0})
   .fromTo(loader, {yPercent: -100}, {yPercent: 0})
   .fromTo(loaderMask, {yPercent: 80}, {yPercent: 0}, 0)
-  .to(container, {y: 150}, 0);
+  .to(container, {y: 80}, 0);
 
 /*
   .to(container, {autoAlpha:0}, 0);
@@ -756,7 +756,7 @@ function pageTransitionOut({
 
     .to(loader, {yPercent: 100})
     .to(loaderMask, {yPercent: -80}, 0)
-    .from(container, {y: -150}, 0);
+    .from(container, {y: -80}, 0);
     return tl;
 }
 
@@ -1373,6 +1373,7 @@ map.on('load', function (e) {
 var mapContainerEl = document.getElementById('map');
 mapContainerEl.style.visibility = 'visible';
 });
+
 
 map.on('idle',function(){
   map.resize()
