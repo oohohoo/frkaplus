@@ -783,7 +783,7 @@ function initPageTransitions() {
   });
   //kill scrolltrigger
   barba.hooks.beforeLeave(() => {
-    locoScroll.destroy();
+   /*  locoScroll.destroy(); */
     
   });
   //init scrolltrigger
