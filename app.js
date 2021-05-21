@@ -348,9 +348,12 @@ $(".fs-nav-butt").one("click", handler1);
 
 $(".mapbox").hover(function(){
   locoScroll.stop();
-
 });
 
+$(".mapbox").mouseout(function(){
+  locoScroll.start();
+
+});start
 
   /* ============================================================================
 SHOW HIDE HEADER ON SCROLL + CUSTOM ANIMATION + CHANGE COLOR ON DIFF BACKGROUNDS
