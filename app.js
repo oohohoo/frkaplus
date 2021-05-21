@@ -728,6 +728,7 @@ function pageTransitionIn({
 
   .set(loaderInner, {autoAlpha: 0})
   .fromTo(loader, {yPercent: -100}, {yPercent: 0})
+  .to(iconload, {autoAlpha:1})
   .fromTo(loaderMask, {yPercent: 80}, {yPercent: 0}, 0)
   .to(container, {y: 80}, 0);
 
@@ -759,7 +760,7 @@ function pageTransitionOut({
     .set(loader, {yPercent: 100})
     .to(loader, {yPercent: 100})
     .to(loaderMask, {yPercent: -80}, 0)
-    .to(iconload, {yPercent: -20, rotate:45}, "-=0.2")
+    .to(iconload, {autoAlpha:0})
     .from(container, {y: -80}, 0);
     return tl;
 }
