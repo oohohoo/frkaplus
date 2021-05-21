@@ -783,7 +783,7 @@ function initPageTransitions() {
   });
   //kill scrolltrigger
   barba.hooks.beforeLeave(() => {
-   /*  locoScroll.destroy(); */
+   locoScroll.destroy(); 
     
   });
   //init scrolltrigger
@@ -984,6 +984,7 @@ beforeEnter(data) {
       },
 
       beforeEnter({next}) {
+        counteronama();
       /*   heroSwiper(); */
      /*    kontaktfs();
         console.log("FSKONTAKT LOADED"); */
