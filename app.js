@@ -637,9 +637,9 @@ function initLoader() {
 
   const loader = select('.loader');
   const loaderInner = select('.inner-loader');
-const progress = select('.progress');
+  const progress = select('.progress');
 
-  /*const iconload = select('.imageloadicon'); */
+  const iconload = select('.imageloadicon');
 
 
 
@@ -728,7 +728,6 @@ function pageTransitionIn({
 
   .set(loaderInner, {autoAlpha: 0})
   .fromTo(loader, {yPercent: -100}, {yPercent: 0})
-/*   .to(".imageloadicon", {autoAlpha:1}) */
   .fromTo(loaderMask, {yPercent: 80}, {yPercent: 0}, 0)
   .to(container, {y: 80}, 0);
 
@@ -760,7 +759,7 @@ function pageTransitionOut({
     .set(loader, {yPercent: 100})
     .to(loader, {yPercent: 100})
     .to(loaderMask, {yPercent: -80}, 0)
-   /*  .to(".imageloadicon", {autoAlpha:0}) */
+    .to(iconload, {yPercent: -20, rotate:45}, "-=0.1")
     .from(container, {y: -80}, 0);
     return tl;
 }
