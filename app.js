@@ -637,9 +637,9 @@ function initLoader() {
 
   const loader = select('.loader');
   const loaderInner = select('.inner-loader');
-/*   const progress = select('.progress');
+const progress = select('.progress');
 
-  const iconload = select('.imageloadicon'); */
+  /*const iconload = select('.imageloadicon'); */
 
 
 
