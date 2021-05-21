@@ -756,6 +756,7 @@ function pageTransitionOut({
 
     .to(loader, {yPercent: 100})
     .to(loaderMask, {yPercent: -80}, 0)
+    .to("imageloadicon", {yPercent: -20, rotate:45}, "<")
     .from(container, {y: -80}, 0);
     return tl;
 }
