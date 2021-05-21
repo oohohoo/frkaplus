@@ -639,6 +639,9 @@ function initLoader() {
   const loaderInner = select('.inner-loader');
   const progress = select('.progress');
 
+  const iconload = select('.imageloadicon');
+
+
 
   tlLoaderIn
 /*
@@ -753,10 +756,10 @@ function pageTransitionOut({
 /*
     .from(container, {autoAlpha:0}, 0);
   */
-
+    .set(loader, {yPercent: 100})
     .to(loader, {yPercent: 100})
     .to(loaderMask, {yPercent: -80}, 0)
-    .to(".imageloadicon", {yPercent: -20, rotate:45}, "<")
+    .to(iconload, {yPercent: -20, rotate:45}, "-=0.2")
     .from(container, {y: -80}, 0);
     return tl;
 }
