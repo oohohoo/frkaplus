@@ -954,7 +954,7 @@ beforeEnter(data) {
        
         // do something once on the initial page load
         initLoader();
-        counteronama();
+        
         /* kontaktfs();
         console.log("FSKONTAKT LOADED"); */
         /*fullscreenMenuNew(); */
