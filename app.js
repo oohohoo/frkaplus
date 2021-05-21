@@ -1375,15 +1375,15 @@ mapContainerEl.style.visibility = 'visible';
 });
 
 
-map.on('idle',function(){
+/* map.on('idle',function(){
   map.resize()
   console.log("MAP RESIZEEEEE!");
-  })
+  }) */
 
-/* map.once('load', () => {
+ map.once('load', () => {
 map.resize();
 });
-console.log("MAP RESIZE!"); */
+console.log("MAP RESIZE!"); 
 
 /*********************** NE RADI  */
 /*3 second before zoom
