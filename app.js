@@ -353,7 +353,7 @@ $(".mapbox").hover(function(){
 $(".mapbox").mouseout(function(){
   locoScroll.start();
 
-});start
+});
 
   /* ============================================================================
 SHOW HIDE HEADER ON SCROLL + CUSTOM ANIMATION + CHANGE COLOR ON DIFF BACKGROUNDS
