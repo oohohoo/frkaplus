@@ -1872,7 +1872,7 @@ function saveaspdftest() {
 
       },
       imageType: 'image/jpeg',
-      imageQuality: 10,
+      imageQuality: 100,
       margin: {
         top: 20,
         right: 20,
