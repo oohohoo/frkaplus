@@ -1850,6 +1850,25 @@ DOWNLOAD AS PDF *** TESTNA STRANICA *** NIJE PRODUKCIJA
 
 function saveaspdftest() {
 
+  function getImgFromUrl(logo_url, callback) {
+    var img = new Image();
+    img.src = logo_url;
+    img.onload = function () {
+        callback(img);
+    };
+} 
+  
+function generatePDF(img){
+  var options = {orientation: 'p', unit: 'mm', format: custom};
+  var doc = new jsPDF(options);
+  doc.addImage(img, 'JPEG', 0, 0, 100, 50);}
+
+  var logo_url = "https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60a52d4ec180eb2215e4c70f_asset%205.jpg";
+  getImgFromUrl(logo_url, function (img) {
+      generatePDF(img);
+  });
+
+/* 
   let btn = document.getElementById('btn');
   let page = document.getElementById('page');
   
@@ -1878,5 +1897,47 @@ function saveaspdftest() {
       }
     });
   });
+ */
 
+/*
+var canvas = document.createElement("canvas");
+var ctx = canvas.getContext("2d");
+
+function convertImgToBase64(img, outputFormat){
+
+    // clear canvas
+    canvas.width = img.width;
+    canvas.height = img.height;
+
+    // draw image
+    ctx.drawImage(img, 0, 0);
+
+    // get data url of output format or defaults to jpeg if not set
+    return canvas.toDataURL("image/" + (outputFormat || "jpeg"));
+}
+
+var images = [];
+
+for(var i = 0; i < myimgarray.length; i++) {        
+      var img = new Image();
+      img.onload = function() {
+          images.push({
+              base64: convertImgToBase64(this),
+              width: this.width,
+              height: this.height
+          });
+
+          // all images loaded
+          if(images.length === myimgarray.length) {
+              for(var j = 0; j < images.length; j++) {             
+                  doc.addImage(images[j].base64, 'JPEG', (j * 100), 10, 70, 15);
+              }    
+              doc.setFontSize(20);
+              doc.text(100, 20, "This is a test to see if images will show");
+              doc.save('My_file.pdf');
+          }
+      };
+      img.src = ' <img src="https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60a52d4ec180eb2215e4c70f_asset%205.jpg" alt="Italian Trulli">' + myimgarray[i];
+}
+*/
 }
