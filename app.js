@@ -1865,6 +1865,11 @@ function saveaspdftest() {
         imageTimeout: 15000,
         logging: true,
         useCORS: false,
+
+        scrollX: 0,
+    scrollY: -window.scrollY,
+
+
       },
       imageType: 'image/jpeg',
       imageQuality: 1,
@@ -1874,6 +1879,12 @@ function saveaspdftest() {
         bottom: 0,
         left: 0,
       },
+
+      doc.fromHTML(content, 10, 10, {
+        'width': 750,
+        useCORS: true
+        'elementHandlers': specialElementHandlers }, function(pdf) { doc.save('saveInCallback
+      });
       output: './pdf/generate.pdf',
       init: function() {},
       success: function(pdf) {
