@@ -1884,7 +1884,7 @@ function saveaspdftest() {
         'width': 750,
         useCORS: true
         'elementHandlers': specialElementHandlers }, function(pdf) { doc.save('saveInCallback
-      });
+      }),
       output: './pdf/generate.pdf',
       init: function() {},
       success: function(pdf) {
