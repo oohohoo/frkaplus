@@ -1850,23 +1850,7 @@ DOWNLOAD AS PDF *** TESTNA STRANICA *** NIJE PRODUKCIJA
 
 function saveaspdftest() {
 
-  function getImgFromUrl(logo_url, callback) {
-    var img = new Image();
-    img.src = logo_url;
-    img.onload = function () {
-        callback(img);
-    };
-} 
   
-function generatePDF(img){
-  var options = {orientation: 'p', unit: 'mm', format: custom};
-  var doc = new jsPDF(options);
-  doc.addImage(img, 'JPEG', 0, 0, 100, 50);}
-
-  var logo_url = "https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60a52d4ec180eb2215e4c70f_asset%205.jpg";
-  getImgFromUrl(logo_url, function (img) {
-      generatePDF(img);
-  });
 
 
   let btn = document.getElementById('btn');
@@ -1899,6 +1883,24 @@ function generatePDF(img){
   });
 
 
+
+  function getImgFromUrl(logo_url, callback) {
+    var img = new Image();
+    img.src = logo_url;
+    img.onload = function () {
+        callback(img);
+    };
+} 
+  
+function generatePDF(img){
+  var options = {orientation: 'p', unit: 'mm', format: custom};
+  var doc = new jsPDF(options);
+  doc.addImage(img, 'JPEG', 0, 0, 100, 50);}
+
+  var logo_url = "https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60a52d4ec180eb2215e4c70f_asset%205.jpg";
+  getImgFromUrl(logo_url, function (img) {
+      generatePDF(img);
+  });
 /*
 var canvas = document.createElement("canvas");
 var ctx = canvas.getContext("2d");
