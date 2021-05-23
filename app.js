@@ -1875,5 +1875,6 @@ function saveaspdftest() {
     });
   });
 
+  alert(canvas.height +'-' + canvas.width);ggr
 
 }
