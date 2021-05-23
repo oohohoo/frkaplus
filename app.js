@@ -1901,6 +1901,74 @@ function generatePDF(img){
   getImgFromUrl(logo_url, function (img) {
       generatePDF(img);
   });
+
+
+  generatePDF() {
+
+    let base64Img = null;
+    this.imgToBase64(this.imageURL, (base64) => {
+      base64Img = base64;
+      console.log('image in base 64', base64Img);
+
+      const doc = new jspdf('p', 'pt', 'a4');
+      const header = function(headerData: any) {
+        doc.setFontSize(20);
+        doc.setTextColor(0, 190, 208);
+        doc.setFontStyle('normal');
+        if (this.base64Img) {
+          doc.addImage(this.base64Img, 'JPEG', headerData.settings.margin.left, 15, 60, 10);
+          doc.setFontSize(20);
+        }
+        doc.text('Header Title', headerData.settings.margin.left, 60);
+        const currentdate = new Date();
+        const datetime = currentdate.getDate() + '/' + (currentdate.getMonth() + 1) + '/' + currentdate.getFullYear();
+        doc.text('Date: ' + datetime, headerData.settings.margin.left + 400, 60);
+        doc.setFontSize(5);
+      };
+
+      const totalPagesExp = '{total_pages_count_string}';
+      const footer = function(footerData) {
+        doc.setFontSize(10);
+        let str = 'Page ' + footerData.pageCount;
+        // Total page number plugin only available in jspdf v1.0+
+        if (typeof doc.putTotalPages === 'function') {
+          str = str + ' of ' + totalPagesExp;
+          console.log('test');
+        }
+        doc.text(str, footerData.settings.margin.left, doc.internal.pageSize.height - 10);
+        doc.text('https://wwww.example.com', footerData.settings.margin.left + 400, doc.internal.pageSize.height - 10);
+      };
+
+      const head = [['Name', 'Phone', 'Email', 'Gender', 'Location', 'Country']]
+
+      const options = {
+        beforePageContent: header,
+        afterPageContent: footer,
+        margin: {
+          top: 100
+        },
+        head: head,
+        columnStyles: {
+          0: {columnWidth: 100},
+          1: {columnWidth: 80},
+          2: {columnWidth: 80},
+          3: {columnWidth: 50},
+        }
+      };
+
+      const elem = document.getElementById('pdfContent');
+      const data = doc.autoTableHtmlToJson(elem);
+      doc.autoTable( data.columns, data.rows, options);
+
+      // Total page number plugin only available in jspdf v1.0+
+      if (typeof doc.putTotalPages === 'function') {
+        doc.putTotalPages(totalPagesExp);
+      }
+
+      doc.save('generated.pdf');
+      });
+  } 
+  
 /*
 var canvas = document.createElement("canvas");
 var ctx = canvas.getContext("2d");
