@@ -1868,7 +1868,7 @@ function generatePDF(img){
       generatePDF(img);
   });
 
-/* 
+
   let btn = document.getElementById('btn');
   let page = document.getElementById('page');
   
@@ -1897,7 +1897,7 @@ function generatePDF(img){
       }
     });
   });
- */
+
 
 /*
 var canvas = document.createElement("canvas");
