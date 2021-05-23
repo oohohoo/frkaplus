@@ -1864,7 +1864,7 @@ function saveaspdftest() {
       html2canvas: {
         imageTimeout: 15000,
         logging: true,
-        useCORS: false,
+        useCORS: true,
 
         scrollX: 0,
     scrollY: -window.scrollY,
