@@ -1859,7 +1859,7 @@ function saveaspdftest() {
   btn.addEventListener('click', function(){
     html2PDF(page, {
       jsPDF: {
-        format: 'a4',
+        format: '1920',
       },
       html2canvas: {
         imageTimeout: 15000,
