@@ -417,11 +417,11 @@ scroller: ".smooth-scroll",
 });
 
 
-/* OVO JE UBAČENO NAKNADNO*/
+/* OVO JE UBAČENO NAKNADNO
 
 ScrollTrigger.addEventListener("refreshInit", resize);
 console.log("refresh init mamicu mu AJMOOOO");
-
+*/
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
   // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
   ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
