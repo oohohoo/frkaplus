@@ -1941,7 +1941,7 @@ function logohover() {
        // silhouette = container.querySelector(".silhouette .cover"), */
         tl = gsap.timeline({ paused: true });
     
-    tl.to(logoitem, { color: "#ffdc52", backgroundColor: "#231f20", duration: 0.3, ease: "power1.inOut", });
+    tl.to(logoitem, { color: "#ffdc52", backgroundColor: "#231f20", duration: 0.3, ease: "expo.inOut", });
     
     container.addEventListener("mouseenter", () => tl.play() );
     container.addEventListener("mouseleave", () => tl.reverse() );
