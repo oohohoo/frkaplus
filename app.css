@@ -29,7 +29,9 @@ DEFINE ROOT VARIABLES / definiraj svoje
  */
 }
 
-
+svg {
+  fill: currentColor;
+}
 
 
 /* 
