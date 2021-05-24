@@ -1928,7 +1928,7 @@ function logohover() {
       duration: 0.6,
       ease: "power1.inOut",
       scrollTrigger: {
-        trigger: layer,
+        trigger: logo,
         //scrub: 1
       }
     });
