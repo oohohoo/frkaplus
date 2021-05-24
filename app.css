@@ -29,7 +29,7 @@ DEFINE ROOT VARIABLES / definiraj svoje
  */
 }
 
-svg path {fill: red !important;}
+.svg path {fill: red !important;}
 
 
 /* 
