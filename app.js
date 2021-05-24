@@ -1936,12 +1936,12 @@ function logohover() {
   
 
 
-  gsap.utils.toArray(".reference-box").forEach(container => {
+  gsap.utils.toArray(".reference--logo-wrap").forEach(container => {
 /*     let logoitem = container.querySelector(".information"),
         silhouette = container.querySelector(".silhouette .cover"), */
         tl = gsap.timeline({ paused: true });
     
-    tl.to(".reference-box", { color: "#231f20", backgroundColor: "#231f20", duration: 0.6, ease: "power1.inOut", });
+    tl.to(".reference-box", { color: "#ffdc52", backgroundColor: "#231f20", duration: 0.6, ease: "power1.inOut", });
     
     container.addEventListener("mouseenter", () => tl.play() );
     container.addEventListener("mouseleave", () => tl.reverse() );
