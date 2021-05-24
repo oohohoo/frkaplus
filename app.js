@@ -417,8 +417,9 @@ scroller: ".smooth-scroll",
 });
 
 
+/* OVO JE UBAČENO NAKNADNO*/
 
-
+ScrollTrigger.addEventListener("refreshInit", resize);
 
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
