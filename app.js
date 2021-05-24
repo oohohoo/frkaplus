@@ -943,7 +943,7 @@ beforeEnter(data) {
   
     beforeEnter(data) {
        
-      referenceHover();
+      logohover();
        
     }},{
 
@@ -1780,29 +1780,6 @@ openNav();
 */
 
 
-  /* =============================================
-  023  --- SIMPLE FADE IN / FADE OUT / AUTOALPHA 023 simple fadein fadeout 
-  ================================================ */
-
-  function referenceHover() {
-
-// BUTTON MOUSE HOVER ORANGE + SHADOW
-const menuhover = document.getElementById('refbox');
-$(".ref-logo-container").each(function(i, el) {
-	var tl = gsap.timeline({paused: true});
-	var t = tl
-		.to($(el).find('.reference-box'), {backgroundColor:"#EA5B0C", color:"#ffdc52", duration: 0.3, overwrite:"all", ease: "power1.out"})
-	el.animation = t;
-
-$(el).on("mouseenter",function(){
-	this.animation.play();
-	}).on("mouseleave",function(){
-	this.animation.reverse();
-});
-});   
-console.log("Hello world!");
-  }
-
 
 
   /* =============================================
@@ -1933,4 +1910,30 @@ for(var i = 0; i < myimgarray.length; i++) {
       img.src = ' <img src="https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60a52d4ec180eb2215e4c70f_asset%205.jpg" alt="Italian Trulli">' + myimgarray[i];
 }
 */
+}
+
+
+
+
+/* =============================================
+REFERENCE LOGOTIP HOVER 
+================================================ */
+
+function logohover() {
+
+  gsap.utils.toArray(".reference-box").forEach(logo => {
+    gsap.to(logo, {
+      color: "#231f20",
+      backgroundColor: "#231f20",
+      duration: 0.6,
+      ease: "power1.inOut",
+      scrollTrigger: {
+        trigger: layer,
+        //scrub: 1
+      }
+    });
+  })
+  
+
+
 }
