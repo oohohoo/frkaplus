@@ -796,9 +796,13 @@ function initPageTransitions() {
     
   });
   //init scrolltrigger
-  barba.hooks.afterEnter(() => {
+  barba.hooks.beforeEnter(() => {
    
-   
+       //KILL SCROLLTRIGGERRRRR
+    if (current.container !== null) {
+      ScrollTrigger.getAll().forEach(tl => tl.kill());
+    }
+    console.log("OH! SCROLLTRIGGER KILLED");
   });
 
   /*
