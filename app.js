@@ -309,7 +309,7 @@ gsap.to(".imagex", {
 
 /*------------/ SCROLLTRIGGER INNER IMAGE PARALLAX /------------*/
 
-gsap.utils.toArray(".img__background").forEach(section => {
+gsap.utils.toArray(".grid").forEach(section => {
 	const pimages = section.querySelectorAll(".img__background");
 
 var inparallax = gsap.timeline({
