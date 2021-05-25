@@ -912,7 +912,7 @@ beforeEnter(data) {
   
     beforeEnter(data) {
       simpleaccordion();
-      magnetic();
+      
      
       
        
@@ -1011,7 +1011,7 @@ beforeEnter(data) {
       },
 
       beforeEnter({next}) {
-      
+        magnetic();
       /*   heroSwiper(); */
      /*    kontaktfs();
         console.log("FSKONTAKT LOADED"); */
