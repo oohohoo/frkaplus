@@ -2031,7 +2031,7 @@ function openTestYourDesign() {
   
       .to('#tweenbox', {
          scaleY: 100,
-         transformOrigin: 'top'
+         transformOrigin: 'top',
         /* rotate:0, */
         duration: 1,
         ease: "linear",
@@ -2044,7 +2044,7 @@ function openTestYourDesign() {
      .to('#tweenbox', {
         x: 0,
        scaleY: 0,
-       transformOrigin: 'bottom'
+       transformOrigin: 'bottom',
        /* rotate:30, */
         duration: 3,
         ease: "expo",
