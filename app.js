@@ -2059,7 +2059,7 @@ function openTestYourDesign() {
       .to('#test-content', {
         autoAlpha:0,
         scaleY: 1,
-        rotate:-365,
+        rotate:-360,
       /*  transformOrigin: 'top', */
        /* rotate:30, */
         duration: 0.64,
