@@ -2075,11 +2075,12 @@ function openTestYourDesign() {
        /* rotate:30, */
         duration: 0.64,
         ease: 'power2.inOut',
-        overwrite: "auto"
+        overwrite: "auto",
+        
       });
       
     }
-    
+    tl.reverse();
     forwards = !forwards;
   });
   
