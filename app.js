@@ -856,7 +856,7 @@ views: [{
   beforeEnter(){
     simpleaccordion();
     counteronama();
-    saveaspdftest();
+    
     console.log("counterLOADED");
     /* counteriOnama();
     console.log("COUNTER LOADED"); */
@@ -904,6 +904,7 @@ beforeEnter(data) {
     swiperlocation();
     scrolltriggerupdate();
     openTestYourDesign();
+    saveaspdftest();
    /*  locationMap(); */
     /* locationMap(); */
     //contactHeroAnima();
