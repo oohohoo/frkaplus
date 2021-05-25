@@ -902,6 +902,7 @@ beforeEnter(data) {
     locationMap();
     swiperlocation();
     scrolltriggerupdate();
+    openTestYourDesign();
    /*  locationMap(); */
     /* locationMap(); */
     //contactHeroAnima();
@@ -2020,23 +2021,39 @@ IMAGE INLINE PARALLAX
 ================================================ 
 */
 
-function imageparalax() {
-/*
-var tl = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".img__wrapper",
-    scroller: ".smooth-scroll",
-    scrub: true,
-    pin: false,
-  },
-}); 
-tl.from(".img__background", {
-  yPercent: -15,
-  ease: "none",
-}).to(".img__background", {
-  yPercent: 15,
-  ease: "none",
-}); 
-*/
+function openTestYourDesign() {
+
+  let forwards = true;
+  document.querySelector("#tweenbutton").addEventListener("click", ev => {
+    if(forwards) {
+      
+      const tl = gsap.timeline({ })
+  
+      .to('#tweenbox', {
+        x: 100,
+        scaleX: 100,
+        rotate:0,
+        duration: 1,
+        ease: "linear",
+        overwrite: "auto"
+      })
+      
+    } else {
+      
+      const tl2 = gsap.timeline({ })
+     .to('#tweenbox', {
+        x: 0,
+       scaleX: 0,
+       rotate:30,
+        duration: 0.2,
+        ease: "expo",
+        overwrite: "auto"
+      });
+      
+    }
+    
+    forwards = !forwards;
+  });
+  
 
 }
