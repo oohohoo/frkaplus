@@ -2047,7 +2047,7 @@ function openTestYourDesign() {
      .to('#tweenbox', {
         x: 0,
        scaleY: 0,
-       transformOrigin: 'top',
+      /*  transformOrigin: 'top', */
        /* rotate:30, */
         duration: 3,
         ease: "expo",
