@@ -2037,7 +2037,7 @@ function openTestYourDesign() {
          scaleY: 1,
           /* rotate:0, */
         duration: 1,
-        ease: "linear",
+        ease: 'power2.inOut',
         overwrite: "auto"
       })
       
@@ -2050,7 +2050,7 @@ function openTestYourDesign() {
       /*  transformOrigin: 'top', */
        /* rotate:30, */
         duration: 1,
-        ease: "expo",
+        ease: 'power2.inOut',
         overwrite: "auto"
       });
       
