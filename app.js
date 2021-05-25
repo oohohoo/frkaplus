@@ -856,6 +856,7 @@ views: [{
   beforeEnter(){
     simpleaccordion();
     counteronama();
+    saveaspdftest();
     console.log("counterLOADED");
     /* counteriOnama();
     console.log("COUNTER LOADED"); */
