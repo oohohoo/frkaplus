@@ -799,8 +799,10 @@ function initPageTransitions() {
   barba.hooks.beforeEnter(() => {
    
        //KILL SCROLLTRIGGERRRRR
-    if (current.container !== null) {
-      ScrollTrigger.getAll().forEach(tl => tl.kill());
+       if (ScrollTrigger.getAll().length > 0) {
+        ScrollTrigger.getAll().forEach((trigger) => {
+            trigger.kill()
+        });
     }
     console.log("OH! SCROLLTRIGGER KILLED");
   });
