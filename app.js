@@ -2037,7 +2037,7 @@ function openTestYourDesign() {
       .to('#tweenbox', {
          scaleY: 1,
           /* rotate:0, */
-        duration: 1,
+        duration: 0.64,
         ease: 'power2.inOut',
         overwrite: "auto"
       })
@@ -2050,7 +2050,7 @@ function openTestYourDesign() {
        scaleY: 0,
       /*  transformOrigin: 'top', */
        /* rotate:30, */
-        duration: 1,
+        duration: 0.64,
         ease: 'power2.inOut',
         overwrite: "auto"
       });
