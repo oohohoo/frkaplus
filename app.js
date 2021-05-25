@@ -2056,7 +2056,7 @@ function openTestYourDesign() {
       
       const tl2 = gsap.timeline({ })
 
-      .to('#test-content', {
+      .to('.test-content', {
         autoAlpha:0,
         scaleY: 1,
         rotate:-360,
@@ -2080,7 +2080,7 @@ function openTestYourDesign() {
       });
       
     }
-    tl.reverse();
+    /* tl.reverse(); */
     forwards = !forwards;
   });
   
