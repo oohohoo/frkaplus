@@ -2041,13 +2041,34 @@ function openTestYourDesign() {
         ease: 'power2.inOut',
         overwrite: "auto"
       })
+
+      .to('.test-content', {
+        autoAlpha:1,
+        scaleY: 1.3,
+        rotate:360,
+         /* rotate:0, */
+       duration: 0.64,
+       ease: 'power2.inOut',
+       overwrite: "auto"
+     })
       
     } else {
       
       const tl2 = gsap.timeline({ })
      .to('#tweenbox', {
-        x: 0,
+        
        scaleY: 0,
+      /*  transformOrigin: 'top', */
+       /* rotate:30, */
+        duration: 0.64,
+        ease: 'power2.inOut',
+        overwrite: "auto"
+      })
+
+      .to('#test-content', {
+        autoAlpha:0,
+        scaleY: 1,
+        rotate:0,
       /*  transformOrigin: 'top', */
        /* rotate:30, */
         duration: 0.64,
