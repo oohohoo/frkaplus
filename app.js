@@ -1016,7 +1016,7 @@ beforeEnter(data) {
 
       beforeEnter({next}) {
         magnetic();
-        imageparalax();
+       
       /*   heroSwiper(); */
      /*    kontaktfs();
         console.log("FSKONTAKT LOADED"); */
