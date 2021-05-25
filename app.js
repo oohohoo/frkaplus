@@ -1012,6 +1012,7 @@ beforeEnter(data) {
 
       beforeEnter({next}) {
         magnetic();
+        imageparalax();
       /*   heroSwiper(); */
      /*    kontaktfs();
         console.log("FSKONTAKT LOADED"); */
@@ -2005,5 +2006,33 @@ mWrap.forEach(function (wrap) {
     });
   });
 });
+
+}
+
+
+
+/* 
+=============================================
+IMAGE INLINE PARALLAX
+================================================ 
+*/
+
+function imageparalax() {
+
+var tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".img__wrapper",
+    scroller: ".smooth-scroll",
+    scrub: true,
+    pin: false,
+  },
+}); 
+tl.from(".img__background", {
+  yPercent: -10,
+  ease: "none",
+}).to(".img__background", {
+  yPercent: 10,
+  ease: "none",
+}); 
 
 }
