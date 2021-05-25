@@ -2018,7 +2018,7 @@ IMAGE INLINE PARALLAX
 */
 
 function imageparalax() {
-
+/*
 var tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".img__wrapper",
@@ -2034,5 +2034,6 @@ tl.from(".img__background", {
   yPercent: 15,
   ease: "none",
 }); 
+*/
 
 }
