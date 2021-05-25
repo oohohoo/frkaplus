@@ -218,20 +218,6 @@ LOADER
 }
 
 
-/* FOOTER LINK HOVER  */
-
-.flink {
-  height: 1.2em;
-  color: #231f20;
-  text-shadow: 0 -1.2em #231f20;
-  line-height: var(--t, 3.6em);
-  /*background: linear-gradient(#231f20 0 0) bottom/100% var(--d, 0%) no-repeat;*/
-  transition: 0.2s linear;
-}
-.flink:hover {
-  --d: 100%;
-  --t: 1.2em;
-}
 
 
 
