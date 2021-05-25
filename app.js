@@ -2029,6 +2029,7 @@ function openTestYourDesign() {
       
       const tl = gsap.timeline({ })
       .set('#tweenbox', {
+        scaleY: 0,
         transformOrigin: 'top',
       
      })
