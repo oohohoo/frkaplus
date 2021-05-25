@@ -308,7 +308,7 @@ gsap.to(".imagex", {
 
 */
 /*------------/ SCROLLTRIGGER INNER IMAGE PARALLAX /------------*/
-/*
+
 var inparallax = gsap.timeline({
   scrollTrigger: {
     trigger: ".img__wrapper",
@@ -318,14 +318,14 @@ var inparallax = gsap.timeline({
   },
 }); 
 inparallax.from(".img__background", {
-  yPercent: -80,
+  yPercent: -10,
   ease: "none",
 }).to(".img__background", {
-  yPercent: 80,
+  yPercent: 10,
   ease: "none",
 }); 
 
-*/
+
 
 
  
