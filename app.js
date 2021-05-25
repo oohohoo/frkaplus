@@ -2029,12 +2029,12 @@ function openTestYourDesign() {
       
       const tl = gsap.timeline({ })
       .set('#tweenbox', {
-        transformOrigin: 'bottom',
+        transformOrigin: 'top',
       
      })
 
       .to('#tweenbox', {
-         scaleY: 20,
+         scaleY: 1,
           /* rotate:0, */
         duration: 1,
         ease: "linear",
@@ -2049,7 +2049,7 @@ function openTestYourDesign() {
        scaleY: 0,
       /*  transformOrigin: 'top', */
        /* rotate:30, */
-        duration: 3,
+        duration: 1,
         ease: "expo",
         overwrite: "auto"
       });
