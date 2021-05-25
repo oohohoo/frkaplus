@@ -2028,11 +2028,14 @@ function openTestYourDesign() {
     if(forwards) {
       
       const tl = gsap.timeline({ })
-  
+      .set('#tweenbox', {
+        transformOrigin: 'bottom',
+      
+     })
+
       .to('#tweenbox', {
-         scaleY: 100,
-         transformOrigin: 'bottom',
-        /* rotate:0, */
+         scaleY: 20,
+          /* rotate:0, */
         duration: 1,
         ease: "linear",
         overwrite: "auto"
