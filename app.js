@@ -2028,10 +2028,10 @@ var tl = gsap.timeline({
   },
 }); 
 tl.from(".img__background", {
-  yPercent: -10,
+  yPercent: -5,
   ease: "none",
 }).to(".img__background", {
-  yPercent: 10,
+  yPercent: 5,
   ease: "none",
 }); 
 
