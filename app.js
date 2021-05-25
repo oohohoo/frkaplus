@@ -2022,17 +2022,17 @@ IMAGE INLINE PARALLAX
 */
 
 function openTestYourDesign() {
-
+  gsap.set('#tweenbox', {
+    scaleY: 0,
+    transformOrigin: 'top',
+  
+ })
   let forwards = true;
   document.querySelector("#tweenbutton").addEventListener("click", ev => {
     if(forwards) {
       
       const tl = gsap.timeline({ })
-      .set('#tweenbox', {
-        scaleY: 0,
-        transformOrigin: 'top',
       
-     })
 
       .to('#tweenbox', {
          scaleY: 1,
