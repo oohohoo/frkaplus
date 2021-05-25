@@ -2055,9 +2055,11 @@ function openTestYourDesign() {
     } else {
       
       const tl2 = gsap.timeline({ })
-     .to('#tweenbox', {
-        
-       scaleY: 0,
+
+      .to('#test-content', {
+        autoAlpha:0,
+        scaleY: 1,
+        rotate:0,
       /*  transformOrigin: 'top', */
        /* rotate:30, */
         duration: 0.64,
@@ -2065,10 +2067,10 @@ function openTestYourDesign() {
         overwrite: "auto"
       })
 
-      .to('#test-content', {
-        autoAlpha:0,
-        scaleY: 1,
-        rotate:0,
+      
+     .to('#tweenbox', {
+        
+       scaleY: 0,
       /*  transformOrigin: 'top', */
        /* rotate:30, */
         duration: 0.64,
