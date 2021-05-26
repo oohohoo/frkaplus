@@ -2093,7 +2093,7 @@ function openTestYourDesign() {
      duration: 0.64,
      ease: 'power2.inOut',
      overwrite: "auto"
-   })
+   }, "<")
 
       
     } else {
@@ -2130,7 +2130,7 @@ function openTestYourDesign() {
        duration: 0.64,
        ease: 'power2.inOut',
        overwrite: "auto"
-     })
+     }, "<")
 
       
     }
