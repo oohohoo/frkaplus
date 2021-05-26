@@ -1882,7 +1882,8 @@ function saveaspdftest() {
  
     html2PDF(page, {
       jsPDF: {
-        format: 'b4',
+        format: 'a4',
+        orientation: "landscape",
         
       },
       html2canvas: {
