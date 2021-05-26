@@ -1847,10 +1847,39 @@ function saveaspdftest() {
   
 
 
+
+/*STARI KOD KOJI RADI*/
+
   let btn = document.getElementById('btn');
   let page = document.getElementById('page');
   
   btn.addEventListener('click', function(){
+   
+
+/*NOVI CODE*/
+
+   
+  var doc = new jsPDF('p', 'pt','a4',true);
+  doc.setFontSize(16);
+  doc.setTextColor(80, 77, 78);
+  doc.text(15, 2, 'should be an image under here'); 
+  html2canvas($("#page"), {
+      useCORS : true,
+      onrendered: function(canvas) {
+         var imgData = canvas.toDataURL('image/jpeg');
+  
+         doc.addImage(imgData, 'JPEG', 15, 0, 34, 37);
+         console.log(imgData);
+         $('#page').append(canvas);
+         doc.save('Spec_Sheet.pdf');
+      }
+  });
+
+  /*--- novi do tu ---+++
+
+
+  /*old code from here*/
+   /*
     html2PDF(page, {
       jsPDF: {
         format: 'a4',
@@ -1873,14 +1902,17 @@ function saveaspdftest() {
         bottom: 20,
         left: 20,
       },*/
-
-    
+    /*
       output: './pdf/generate.pdf',
       init: function() {},
       success: function(pdf) {
         pdf.save(this.output);
       }
     });
+
+*/
+
+
   });
 
 
