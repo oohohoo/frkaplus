@@ -2121,7 +2121,7 @@ function openTestYourDesign() {
         ease: 'power2.inOut',
         overwrite: "auto",
         
-      });
+      })
 
       .to('#tweenbutton', {
         rotate:0,
