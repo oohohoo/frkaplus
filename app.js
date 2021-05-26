@@ -1959,9 +1959,9 @@ for(var i = 0; i < myimgarray.length; i++) {
       img.src = ' <img src="https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60a52d4ec180eb2215e4c70f_asset%205.jpg" alt="Italian Trulli">' + myimgarray[i];
 }
 */
+})
+
 }
-
-
 
 
 /* =============================================
