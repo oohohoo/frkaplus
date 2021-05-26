@@ -1869,12 +1869,12 @@ btn.addEventListener('click', function(){
         
         var imgData = canvas.toDataURL('image/jpeg');
  
-        doc.addImage(imgData, 'JPEG', 0, 0, 1920, 800);
+        doc.addImage(imgData, 'JPEG', 15, 0, 34, 37);
         console.log(imgData);
         /* doc.text(10, 10, 'Hello everybody'); */ 
  
         $('#page').append(canvas);
-        html2PDF.save('Spec_Sheet.pdf');
+        doc.save('Spec_Sheet.pdf');
         alert('did it');
      },  
 
