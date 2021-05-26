@@ -1901,6 +1901,7 @@ function saveaspdftest() {
           console.log(imgData);
           $('#page').append(canvas);
           doc.save('Spec_Sheet.pdf');
+          alert('did it');
        }
 
 
