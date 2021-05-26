@@ -1882,13 +1882,18 @@ function saveaspdftest() {
  
     html2PDF(page, {
       jsPDF: {
-        format: 'a4',
+        format: 'a4', 'landscape',
+        
       },
       html2canvas: {
        /*  imageTimeout: 15000,
         logging: true, */
         useCORS: true,
         onrendered: function(canvas) {
+
+          doc.addPage(newWidth, newHeight);
+
+
           var imgData = canvas.toDataURL('image/jpeg');
    
           doc.addImage(imgData, 'JPEG', 15, 0, 34, 37);
@@ -1896,6 +1901,10 @@ function saveaspdftest() {
           $('#page').append(canvas);
           doc.save('Spec_Sheet.pdf');
        }
+
+
+       
+
 
         /* scrollX: 0,
     scrollY: -window.scrollY, */
