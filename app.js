@@ -1869,7 +1869,7 @@ btn.addEventListener('click', function(){
         
         var imgData = canvas.toDataURL('image/jpeg');
  
-        doc.addImage(imgData, 'JPEG', 0, 0, 1200, 800);
+        doc.addImage(imgData, 'JPEG', 0, 0, 1920, 800);
         console.log(imgData);
         /* doc.text(10, 10, 'Hello everybody'); */ 
  
