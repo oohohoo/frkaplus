@@ -1874,7 +1874,7 @@ btn.addEventListener('click', function(){
         /* doc.text(10, 10, 'Hello everybody'); */ 
  
         $('#page').append(canvas);
-        doc.save('Spec_Sheet.pdf');
+        html2PDF.save('Spec_Sheet.pdf');
         alert('did it');
      },  
 
