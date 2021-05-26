@@ -1867,7 +1867,7 @@ function saveaspdftest() {
   /* doc.setFontSize(16);
   doc.setTextColor(80, 77, 78);
   doc.text(15, 2, 'should be an image under here');  */
-  html2canvas($("#page"), {
+ /*  html2canvas($("#page"), {
       useCORS : true,
       onrendered: function(canvas) {
          var imgData = canvas.toDataURL('image/jpeg');
@@ -1878,7 +1878,7 @@ function saveaspdftest() {
          doc.save('Spec_Sheet.pdf');
       }
 
-  });
+  }); */
  
     html2PDF(page, {
       jsPDF: {
@@ -1888,6 +1888,14 @@ function saveaspdftest() {
        /*  imageTimeout: 15000,
         logging: true, */
         useCORS: true,
+        onrendered: function(canvas) {
+          var imgData = canvas.toDataURL('image/jpeg');
+   
+          doc.addImage(imgData, 'JPEG', 15, 0, 34, 37);
+          console.log(imgData);
+          $('#page').append(canvas);
+          doc.save('Spec_Sheet.pdf');
+       }
 
         /* scrollX: 0,
     scrollY: -window.scrollY, */
