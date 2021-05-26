@@ -2087,7 +2087,7 @@ function openTestYourDesign() {
   });
   
 
-  const button = document.querySelector('a');
+  const button = document.querySelector('.printtopdf');
 button.addEventListener('click', () => {window.print()});
 
 
