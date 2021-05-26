@@ -1884,7 +1884,7 @@ function saveaspdftest() {
            $('#page').append(canvas);
            doc.save('Spec_Sheet.pdf');
         }
-
+      }
         /* scrollX: 0,
     scrollY: -window.scrollY, */
 
