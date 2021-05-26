@@ -1864,9 +1864,9 @@ function saveaspdftest() {
 
 
 
-  doc.setFontSize(16);
+  /* doc.setFontSize(16);
   doc.setTextColor(80, 77, 78);
-  doc.text(15, 2, 'should be an image under here'); 
+  doc.text(15, 2, 'should be an image under here');  */
   html2canvas($("#page"), {
       useCORS : true,
       onrendered: function(canvas) {
