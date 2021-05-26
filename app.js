@@ -2037,7 +2037,7 @@ function openTestYourDesign() {
       
 
       .to('#tweenbox', {
-         scaleY: 1,
+         scaleY: 0.8,
           /* rotate:0, */
         duration: 0.64,
         ease: 'power2.inOut',
