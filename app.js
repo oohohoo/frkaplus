@@ -1862,6 +1862,7 @@ btn.addEventListener('click', function(){
        imageTimeout: 15000,
      /*logging: true, */
       useCORS: true,
+      
       onrendered: function(canvas) {
 
         /* doc.addPage(newWidth, newHeight); */
@@ -1870,6 +1871,8 @@ btn.addEventListener('click', function(){
  
         doc.addImage(imgData, 'JPEG', 15, 0, 34, 37);
         console.log(imgData);
+        doc.text(10, 10, 'Hello everybody'); 
+ 
         $('#page').append(canvas);
         doc.save('Spec_Sheet.pdf');
         alert('did it');
