@@ -1859,8 +1859,8 @@ btn.addEventListener('click', function(){
       
     },
     html2canvas: {
-     /*  imageTimeout: 15000,
-      logging: true, */
+       imageTimeout: 15000,
+     /*logging: true, */
       useCORS: true,
       onrendered: function(canvas) {
 
