@@ -966,9 +966,10 @@ beforeEnter(data) {
       beforeEnter(data) {
          
         matrixtransform();
+        console.log("MATRIX TRANS LOADANA");
         saveaspdftest();
 
-        console.log("SAVE AS PDF SKRIPTA LOADANA");
+        
          
       }},{
  
