@@ -2085,6 +2085,16 @@ function openTestYourDesign() {
        ease: 'power2.inOut',
        overwrite: "auto"
      })
+
+     .to('#tweenbutton', {
+      rotate:20,
+      scale:0.7,
+ backgroundColor: "#ff0000",
+     duration: 0.64,
+     ease: 'power2.inOut',
+     overwrite: "auto"
+   })
+
       
     } else {
       
@@ -2112,6 +2122,16 @@ function openTestYourDesign() {
         overwrite: "auto",
         
       });
+
+      .to('#tweenbutton', {
+        rotate:0,
+        scale:1,
+   backgroundColor: "#ffffff",
+       duration: 0.64,
+       ease: 'power2.inOut',
+       overwrite: "auto"
+     })
+
       
     }
     /* tl.reverse(); */
@@ -2329,7 +2349,7 @@ ZOOM IMAGE
 function zoomimage() {
 
 
-  
+
 }
 
 
