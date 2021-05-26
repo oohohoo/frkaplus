@@ -961,6 +961,19 @@ beforeEnter(data) {
        
     }},{
 
+      namespace: 'imagezoom',
+      once(data) {
+        
+      },
+    
+      beforeEnter(data) {
+         
+        
+         
+      }},{
+
+
+
       namespace: 'topdftest',
          
       beforeEnter(data) {
@@ -2302,3 +2315,21 @@ function matrixtransform() {
 
 
 }
+
+
+
+
+
+/* 
+=============================================
+ZOOM IMAGE
+================================================ 
+*/
+
+function zoomimage() {
+
+
+  
+}
+
+
