@@ -1899,7 +1899,7 @@ doc.text(15, 2, 'should be an image under here');  */
         $('#page').append(canvas);
         doc.save('Spec_Sheet.pdf');
         alert('did it');
-     }
+     },
 
 
      
