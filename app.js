@@ -1882,7 +1882,7 @@ function saveaspdftest() {
  
     html2PDF(page, {
       jsPDF: {
-        format: 'a4', 'landscape',
+        format: 'b4',
         
       },
       html2canvas: {
@@ -1893,7 +1893,7 @@ function saveaspdftest() {
 
           doc.addPage(newWidth, newHeight);
 
-
+          
           var imgData = canvas.toDataURL('image/jpeg');
    
           doc.addImage(imgData, 'JPEG', 15, 0, 34, 37);
