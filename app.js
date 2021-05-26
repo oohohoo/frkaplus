@@ -1892,7 +1892,7 @@ function saveaspdftest() {
         useCORS: true,
         onrendered: function(canvas) {
 
-          doc.addPage(newWidth, newHeight);
+          /* doc.addPage(newWidth, newHeight); */
 
           
           var imgData = canvas.toDataURL('image/jpeg');
