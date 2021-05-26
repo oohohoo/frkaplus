@@ -1845,82 +1845,118 @@ DOWNLOAD AS PDF *** TESTNA STRANICA *** NIJE PRODUKCIJA
 function saveaspdftest() {
 
   
+/*STARI KOD KOJI RADI*/
+
+let btn = document.getElementById('btn');
+let page = document.getElementById('page');
+
+btn.addEventListener('click', function(){
+ 
+
+/*NOVI CODE*/
+
+ 
+/*var doc = new jsPDF('p', 'pt','a4',true);*/
+
+
+
+
+/* doc.setFontSize(16);
+doc.setTextColor(80, 77, 78);
+doc.text(15, 2, 'should be an image under here');  */
+/*  html2canvas($("#page"), {
+    useCORS : true,
+    onrendered: function(canvas) {
+       var imgData = canvas.toDataURL('image/jpeg');
+
+       doc.addImage(imgData, 'JPEG', 15, 0, 34, 37);
+       console.log(imgData);
+       $('#page').append(canvas);
+       doc.save('Spec_Sheet.pdf');
+    }
+
+}); */
+
+  html2PDF(page, {
+    jsPDF: {
+      format: 'a4',
+      orientation: "landscape",
+      
+    },
+    html2canvas: {
+     /*  imageTimeout: 15000,
+      logging: true, */
+      useCORS: true,
+      onrendered: function(canvas) {
+
+        /* doc.addPage(newWidth, newHeight); */
+
+        
+        var imgData = canvas.toDataURL('image/jpeg');
+ 
+        doc.addImage(imgData, 'JPEG', 15, 0, 34, 37);
+        console.log(imgData);
+        $('#page').append(canvas);
+        doc.save('Spec_Sheet.pdf');
+        alert('did it');
+     }
+
+
+     
+
+
+      scrollX: 0,
+  scrollY: -window.scrollY, 
+
+
+    },
+    imageType: 'image/jpeg',
+    imageQuality: 100,
+    margin: {
+      top: 0,
+      right: 20,
+      bottom: 20,
+      left: 20,
+    },
+
+
+
+
+
 
 
 
 /*STARI KOD KOJI RADI*/
-
+/*
   let btn = document.getElementById('btn');
   let page = document.getElementById('page');
   
   btn.addEventListener('click', function(){
    
-
-/*NOVI CODE*/
-
    
-  /*var doc = new jsPDF('p', 'pt','a4',true);*/
- 
-
-
-
-  /* doc.setFontSize(16);
-  doc.setTextColor(80, 77, 78);
-  doc.text(15, 2, 'should be an image under here');  */
- /*  html2canvas($("#page"), {
-      useCORS : true,
-      onrendered: function(canvas) {
-         var imgData = canvas.toDataURL('image/jpeg');
-  
-         doc.addImage(imgData, 'JPEG', 15, 0, 34, 37);
-         console.log(imgData);
-         $('#page').append(canvas);
-         doc.save('Spec_Sheet.pdf');
-      }
-
-  }); */
- 
+   
     html2PDF(page, {
       jsPDF: {
         format: 'a4',
-        orientation: "landscape",
-        
       },
       html2canvas: {
-       /*  imageTimeout: 15000,
-        logging: true, */
+        imageTimeout: 15000,
+        logging: true,
         useCORS: true,
-        onrendered: function(canvas) {
 
-          /* doc.addPage(newWidth, newHeight); */
-
-          
-          var imgData = canvas.toDataURL('image/jpeg');
-   
-          doc.addImage(imgData, 'JPEG', 15, 0, 34, 37);
-          console.log(imgData);
-          $('#page').append(canvas);
-          doc.save('Spec_Sheet.pdf');
-          alert('did it');
-       }
-
-
-       
-
-
-        /* scrollX: 0,
-    scrollY: -window.scrollY, */
+        scrollX: 0,
+    scrollY: -window.scrollY,
 
 
       },
       imageType: 'image/jpeg',
       imageQuality: 100,
-      margin: {
-        top: 0,
+      /*margin: {
+        top: 20,
         right: 20,
         bottom: 20,
         left: 20,
-      },
+      },*/
     /*
       output: './pdf/generate.pdf',
       init: function() {},
@@ -1928,8 +1964,8 @@ function saveaspdftest() {
         pdf.save(this.output);
       }
     });
-
 */
+
 
 
   });
@@ -1978,9 +2014,9 @@ for(var i = 0; i < myimgarray.length; i++) {
       img.src = ' <img src="https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60a52d4ec180eb2215e4c70f_asset%205.jpg" alt="Italian Trulli">' + myimgarray[i];
 }
 */
-})
-
 }
+
+
 
 
 /* =============================================
