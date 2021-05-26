@@ -1855,6 +1855,7 @@ btn.addEventListener('click', function(){
     jsPDF: {
       format: 'a4',
       orientation: "landscape",
+      background: '#fff',
       
     },
     html2canvas: {
