@@ -1913,7 +1913,7 @@ function saveaspdftest() {
 
       },
       imageType: 'image/jpeg',
-      imageQuality: 1,
+      imageQuality: 100,
       margin: {
         top: 0,
         right: 20,
