@@ -1914,12 +1914,12 @@ function saveaspdftest() {
       },
       imageType: 'image/jpeg',
       imageQuality: 1,
-      /*margin: {
-        top: 20,
+      margin: {
+        top: 0,
         right: 20,
         bottom: 20,
         left: 20,
-      },*/
+      },
     /*
       output: './pdf/generate.pdf',
       init: function() {},
