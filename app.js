@@ -1851,32 +1851,6 @@ let btn = document.getElementById('btn');
 let page = document.getElementById('page');
 
 btn.addEventListener('click', function(){
- 
-
-/*NOVI CODE*/
-
- 
-/*var doc = new jsPDF('p', 'pt','a4',true);*/
-
-
-
-
-/* doc.setFontSize(16);
-doc.setTextColor(80, 77, 78);
-doc.text(15, 2, 'should be an image under here');  */
-/*  html2canvas($("#page"), {
-    useCORS : true,
-    onrendered: function(canvas) {
-       var imgData = canvas.toDataURL('image/jpeg');
-
-       doc.addImage(imgData, 'JPEG', 15, 0, 34, 37);
-       console.log(imgData);
-       $('#page').append(canvas);
-       doc.save('Spec_Sheet.pdf');
-    }
-
-}); */
-
   html2PDF(page, {
     jsPDF: {
       format: 'a4',
@@ -1890,7 +1864,6 @@ doc.text(15, 2, 'should be an image under here');  */
       onrendered: function(canvas) {
 
         /* doc.addPage(newWidth, newHeight); */
-
         
         var imgData = canvas.toDataURL('image/jpeg');
  
@@ -1899,15 +1872,10 @@ doc.text(15, 2, 'should be an image under here');  */
         $('#page').append(canvas);
         doc.save('Spec_Sheet.pdf');
         alert('did it');
-     },
-
-
-     
-
+     },  
 
       scrollX: 0,
   scrollY: -window.scrollY, 
-
 
     },
     imageType: 'image/jpeg',
@@ -1972,51 +1940,9 @@ doc.text(15, 2, 'should be an image under here');  */
 
 
 
-  
-/*
-var canvas = document.createElement("canvas");
-var ctx = canvas.getContext("2d");
-
-function convertImgToBase64(img, outputFormat){
-
-    // clear canvas
-    canvas.width = img.width;
-    canvas.height = img.height;
-
-    // draw image
-    ctx.drawImage(img, 0, 0);
-
-    // get data url of output format or defaults to jpeg if not set
-    return canvas.toDataURL("image/" + (outputFormat || "jpeg"));
 }
 
-var images = [];
-
-for(var i = 0; i < myimgarray.length; i++) {        
-      var img = new Image();
-      img.onload = function() {
-          images.push({
-              base64: convertImgToBase64(this),
-              width: this.width,
-              height: this.height
-          });
-
-          // all images loaded
-          if(images.length === myimgarray.length) {
-              for(var j = 0; j < images.length; j++) {             
-                  doc.addImage(images[j].base64, 'JPEG', (j * 100), 10, 70, 15);
-              }    
-              doc.setFontSize(20);
-              doc.text(100, 20, "This is a test to see if images will show");
-              doc.save('My_file.pdf');
-          }
-      };
-      img.src = ' <img src="https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60a52d4ec180eb2215e4c70f_asset%205.jpg" alt="Italian Trulli">' + myimgarray[i];
 }
-*/
-}
-
-
 
 
 /* =============================================
