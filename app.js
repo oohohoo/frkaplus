@@ -2019,7 +2019,7 @@ mWrap.forEach(function (wrap) {
 
 /* 
 =============================================
-IMAGE INLINE PARALLAX
+TEST YOUR DESIGN MODUL
 ================================================ 
 */
 
@@ -2086,5 +2086,10 @@ function openTestYourDesign() {
     forwards = !forwards;
   });
   
+
+  const button = document.querySelector('a');
+button.addEventListener('click', () => {window.print()});
+
+
 
 }
