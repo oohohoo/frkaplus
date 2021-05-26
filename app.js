@@ -1862,7 +1862,7 @@ btn.addEventListener('click', function(){
        imageTimeout: 15000,
      /*logging: true, */
       useCORS: true,
-      
+      backgroundColor:	"#ffffff",
       onrendered: function(canvas) {
 
         /* doc.addPage(newWidth, newHeight); */
