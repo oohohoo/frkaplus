@@ -967,7 +967,7 @@ beforeEnter(data) {
         
       },
     
-      beforeEnter(next) {
+      beforeEnter({next}) {
         let script = document.createElement('script');
 script.src = '/pages/fullscreenzoom.js';
 next.container.appendChild(script);
