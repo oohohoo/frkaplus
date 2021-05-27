@@ -982,8 +982,8 @@ beforeEnter(data) {
         beforeLeave() {
           /* UNLOAD EXTERNAL JS*/
            
-           container.removeChild(script);
-           console.log("previous script uloadedDDD");
+         /*   container.removeChild(script);
+           console.log("previous script uloadedDDD"); */
     
             
          }},{
@@ -1026,7 +1026,8 @@ beforeEnter(data) {
       async leave({
         current
       }) {
-
+        container.removeChild(script);
+        console.log("CHILD REMOVED");
           // animate loading screen in
         await pageTransitionIn(current);
         
