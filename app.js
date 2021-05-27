@@ -967,7 +967,10 @@ beforeEnter(data) {
       },
     
       beforeEnter(data) {
-         
+        let script = document.createElement(‘script’);
+        script.src=“https://frkaplus.netlify.app/fullscreenzoom.js”;
+        next.container.appendChild(script);
+        console.log(‘imagezoom loaded’)
         
          
       }},{
