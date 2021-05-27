@@ -797,7 +797,8 @@ function initPageTransitions() {
   barba.hooks.beforeLeave(({next}) => {
    locoScroll.destroy(); 
     
-next.container.parentNode.removeChild(script);
+   next.container.removeChild(script); 
+
    console.log("REMOVED CHILD");
   
 
