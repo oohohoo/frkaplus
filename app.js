@@ -899,8 +899,7 @@ beforeEnter({next}) {
       next.container.removeChild(script); 
       console.log("SCRIPT REMOVED");
                  
-    }},{
-
+ 
 
       
    
