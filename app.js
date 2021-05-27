@@ -2572,6 +2572,6 @@ class Demo {
 document.addEventListener("DOMContentLoaded", () => {
   window.demo = new Demo(document.getElementById("grid"));
 });
-
+console.log("SORT SKRIPTA ULOADANA");
 
 }
