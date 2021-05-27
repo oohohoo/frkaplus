@@ -971,9 +971,12 @@ beforeEnter(data) {
         let script = document.createElement('script');
 script.src = '/pages/fullscreenzoom.js';
 next.container.appendChild(script);
-console.log("ZOOM SCRIPT LOADED");
+console.log("imagezoom loaded");
 
-
+ document.onload = function() { 
+  var elements = document.querySelectorAll( '.demo-image' );
+  Intense( elements );
+  } 
          
       }},{
 
