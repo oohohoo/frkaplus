@@ -785,6 +785,18 @@ function initPageTransitions() {
   // do something after the transition finishes
   barba.hooks.after(() => {
     select('html').classList.remove('is-transitioning');
+
+    const bottomDOM = document.getElementsByTagName("body")[0]     
+    const newScript = document.createElement("script")
+    const oldScript = document.querySelector(".main-script")
+    newScript.src = "https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"
+    newScript.className = "main-script"
+      oldScript.remove()
+      console.log("MAPBOXX ODJEBIIII");
+      bottomDOM.appendChild(newScript)
+
+      
+      
   });
 
   // scroll to the top of the page
@@ -881,16 +893,8 @@ views: [{
    
     },
 
-afterEnter(data) {
+beforeEnter(data) {
 
-  const bottomDOM = document.getElementsByTagName("body")[0]     
-  const newScript = document.createElement("script")
-  const oldScript = document.querySelector(".main-script")
-  newScript.src = "https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"
-  newScript.className = "main-script"
-    oldScript.remove()
-    console.log("MAPBOXX ODJEBIIII");
-    bottomDOM.appendChild(newScript)
 
   //document.head.appendChild(script);
   console.log("MAPBOXX LOADED AJAJAJAJAJAJ");
