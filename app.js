@@ -1507,8 +1507,8 @@ map.resize();
 });
 console.log("MAP RESIZE!"); 
 
-map.remove();
-console.log("MAP REmoved!");
+/* map.remove();
+console.log("MAP REmoved!"); */
 
 /*********************** NE RADI  */
 /*3 second before zoom
