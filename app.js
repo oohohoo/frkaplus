@@ -969,18 +969,7 @@ beforeEnter(data) {
     
       beforeEnter({next}) {
        
-          let script = document.createElement('script');
-script.src = 'https://frkaplus.netlify.app/pages/fullscreenzoom.js';
-next.container.appendChild(script);
-
-
-$(document).ready(function(){ 
-  var elements = document.querySelectorAll( '.demo-image' );
-  Intense( elements );
-  }); 
- 
-  
-  console.log("imagezoom loaded");
+        zoomimagescripts(); 
  
          
       }},{
@@ -2359,9 +2348,19 @@ ZOOM IMAGE
 ================================================ 
 */
 
-function zoomimage() {
+function zoomimagescripts() {
 
-
+  let script = document.createElement('script');
+  script.src = 'https://frkaplus.netlify.app/pages/fullscreenzoom.js';
+  next.container.appendChild(script);
+  
+  
+  $(document).ready(function(){ 
+    var elements = document.querySelectorAll( '.demo-image' );
+    Intense( elements );
+    }); 
+     
+    console.log("imagezoom loaded");
 
 }
 
