@@ -914,7 +914,7 @@ beforeEnter(data) {
       }},{
 
     namespace: 'sort',
-  beforeEnter(data) {
+  beforeEnter({next}) {
 
     let script = document.createElement('script');
   script.src = 'https://unpkg.com/shufflejs@5';
