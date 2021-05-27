@@ -799,9 +799,6 @@ function initPageTransitions() {
     
   
 
-   console.log("REMOVED CHILD");
-  
-
   });
   //init scrolltrigger
   barba.hooks.beforeEnter(() => {
