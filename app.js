@@ -971,15 +971,22 @@ beforeEnter(data) {
         let script = document.createElement('script');
 script.src = '/pages/fullscreenzoom.js';
 next.container.appendChild(script);
-console.log("imagezoom loaded");
+console.log("ZOOM SCRIPT LOADED");
 
- document.onload = function() { 
-  var elements = document.querySelectorAll( '.demo-image' );
-  Intense( elements );
-  } 
+
          
       }},{
 
+        afterEnter(data) {
+    
+  
+   document.onload = function() { 
+    var elements = document.querySelectorAll( '.demo-image' );
+    Intense( elements );
+    console.log("ZOOM INIT LOADED");
+    } 
+           
+        }},{
 
 
       namespace: 'topdftest',
