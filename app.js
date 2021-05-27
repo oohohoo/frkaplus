@@ -1026,8 +1026,7 @@ beforeEnter(data) {
       async leave({
         current
       }) {
-        next.container.removeChild(script);
-        console.log("CHILD REMOVED");
+        current.container.removeChild(script);
           // animate loading screen in
         await pageTransitionIn(current);
         
