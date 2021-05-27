@@ -799,19 +799,9 @@ function initPageTransitions() {
     
   });
   //init scrolltrigger
-  barba.hooks.beforeEnter((data) => {
+  barba.hooks.beforeEnter(() => {
    
-    let script = document.createElement('script');
-    script.src = 'https://frkaplus.netlify.app/fullscreenzoom.js';
-    next.container.appendChild(script);
-    console.log("imagezoom loaded");
     
-     document.onload = function() { 
-      var elements = document.querySelectorAll( '.demo-image' );
-      Intense( elements );
-      } 
-
-
        //KILL SCROLLTRIGGERRRRR
        if (ScrollTrigger.getAll().length > 0) {
         ScrollTrigger.getAll().forEach((trigger) => {
@@ -979,7 +969,7 @@ beforeEnter(data) {
     
       beforeEnter(data) {
         let script = document.createElement('script');
-script.src = 'https://frkaplus.netlify.app/fullscreenzoom.js';
+script.src = '/pages/fullscreenzoom.js';
 next.container.appendChild(script);
 console.log("imagezoom loaded");
 
