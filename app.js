@@ -785,18 +785,6 @@ function initPageTransitions() {
   // do something after the transition finishes
   barba.hooks.after(() => {
     select('html').classList.remove('is-transitioning');
-
-    const bottomDOM = document.getElementsByTagName("body")[0]     
-    const newScript = document.createElement("script")
-    const oldScript = document.querySelector(".main-script")
-    newScript.src = "https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"
-    newScript.className = "main-script"
-      oldScript.remove()
-      console.log("MAPBOXX ODJEBIIII");
-      bottomDOM.appendChild(newScript)
-
-      
-      
   });
 
   // scroll to the top of the page
@@ -893,32 +881,19 @@ views: [{
    
     },
 
-beforeEnter(data) {
+beforeEnter({next}) {
+
+  let script = document.createElement('script');
+  script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js';
+  //next.container.appendChild(script); 
+
+  document.head.appendChild(script);
+  console.log("MAPBOXX LOADED");
 
 
-  //document.head.appendChild(script);
-  console.log("MAPBOXX LOADED AJAJAJAJAJAJ");
 
 
- 
   
-    
-   
-   
-   
- 
-
-
-  /*   barba.hooks.after(() => {
-      const bottomDOM = document.getElementsByTagName("body")[0]
-      const newScript = document.createElement("script")
-      const oldScript = document.querySelector(".main-script")
-      newScript.src = "js/main-dist.js"
-      newScript.className = "main-script"
-      oldScript.remove()
-      bottomDOM.appendChild(newScript)
-      }) */
-
 
   
   locationMap();
@@ -929,9 +904,9 @@ beforeEnter(data) {
 
     beforeLeave(data) {
      /*  data.container.removeChild(script);  */
-    // document.head.removeChild(script);
+     document.head.removeChild(script);
       //data.current.container.parentNode.removeChild(script);
-//console.log("MAPBOX REMOVED");
+      console.log("MAPBOX REMOVED");
                  
  
 
@@ -1512,8 +1487,8 @@ map.resize();
 });
 console.log("MAP RESIZE!"); 
 
-/* map.remove();
-console.log("MAP REmoved!"); */
+map.remove();
+console.log("MAP REmoved!");
 
 /*********************** NE RADI  */
 /*3 second before zoom
