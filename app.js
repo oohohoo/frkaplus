@@ -968,12 +968,14 @@ beforeEnter(data) {
       },
     
       beforeEnter({next}) {
-       /* LOAD EXTERNAL JS*/
-        let script = document.createElement('script');
-        script.src = 'https://frkaplus.netlify.app/pages/fullscreenzoom.js';
-        next.container.appendChild(script);
+       
+          let script = document.createElement('script');
+  script.src = 'https://frkaplus.netlify.app/pages/fullscreenzoom.js';
+  next.container.appendChild(script);
 
-        
+
+
+
         zoomimage(); 
  
          
