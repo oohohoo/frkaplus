@@ -889,6 +889,7 @@ beforeEnter({next}) {
   newScript.src = "https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"
   newScript.className = "main-script"
     oldScript.remove()
+    console.log("MAPBOXX ODJEBIIII");
     bottomDOM.appendChild(newScript)
 
   //document.head.appendChild(script);
