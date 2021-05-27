@@ -881,14 +881,38 @@ views: [{
    
     },
 
-beforeEnter(data) {
+beforeEnter({next}) {
 
-  let script = document.createElement('script');
-  script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js';
-  //next.container.appendChild(script); 
+  const bottomDOM = document.getElementsByTagName("body")[0]     
+  const newScript = document.createElement("script")
+  const oldScript = document.querySelector(".main-script")
+  newScript.src = "https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"
+  newScript.className = "main-script"
+    oldScript.remove()
+    bottomDOM.appendChild(newScript)
 
-  document.head.appendChild(script);
-  console.log("MAPBOXX LOADED");
+  //document.head.appendChild(script);
+  console.log("MAPBOXX LOADED AJAJAJAJAJAJ");
+
+
+ 
+  
+    
+   
+   
+   
+ 
+
+
+  /*   barba.hooks.after(() => {
+      const bottomDOM = document.getElementsByTagName("body")[0]
+      const newScript = document.createElement("script")
+      const oldScript = document.querySelector(".main-script")
+      newScript.src = "js/main-dist.js"
+      newScript.className = "main-script"
+      oldScript.remove()
+      bottomDOM.appendChild(newScript)
+      }) */
 
 
   
@@ -900,9 +924,9 @@ beforeEnter(data) {
 
     beforeLeave(data) {
      /*  data.container.removeChild(script);  */
-     document.head.removeChild(script);
+    // document.head.removeChild(script);
       //data.current.container.parentNode.removeChild(script);
-      console.log("MAPBOX REMOVED");
+//console.log("MAPBOX REMOVED");
                  
  
 
@@ -1456,7 +1480,7 @@ function locationMap() {
 
 
   $(document).ready(function(){ 
-    setTimeout(()=>{
+   // setTimeout(()=>{
 mapboxgl.accessToken = 'pk.eyJ1IjoiZm9nc2VsbGVyIiwiYSI6ImNrN2VpbXlpbjAwNDIzbnM1N2ZhMW9laGkifQ.DUf-8r1jXF4o7ApMUcKVXQ';
 var map = new mapboxgl.Map({
  /*  width: 100,
@@ -1512,7 +1536,7 @@ mapo.on('mouseout', function() {
 /*********************** */
 
 
-},3000) 
+///},3000) 
 
   })
 
