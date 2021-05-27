@@ -892,7 +892,7 @@ beforeEnter({next}) {
      
   }},{
 
-    beforeLeave(data) {
+    afterLeave(data) {
      /*  data.container.removeChild(script);  */
 
       data.current.container.parentNode.removeChild(script);
