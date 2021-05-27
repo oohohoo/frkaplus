@@ -967,7 +967,7 @@ beforeEnter(data) {
         
       },
     
-      beforeEnter({next}) {
+      beforeEnter(next) {
         document.onload = function() { 
           let script = document.createElement('script');
 script.src = 'https://frkaplus.netlify.app/pages/fullscreenzoom.js';
