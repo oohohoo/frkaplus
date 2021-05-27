@@ -893,7 +893,7 @@ beforeEnter({next}) {
     beforeLeave({next}) {
 
       
-      data.current.container.parentNode.removeChild(data.current.container);
+      data.current.container.parentNode.removeChild(script);
       console.log("REMOVED CHILD");
      
     /*   scrolltriggerupdate();
