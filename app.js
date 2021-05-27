@@ -971,7 +971,7 @@ beforeEnter(data) {
        
           let script = document.createElement('script');
   script.src = 'https://frkaplus.netlify.app/pages/fullscreenzoom.js';
- /*  next.container.appendChild(script); */
+  next.container.appendChild(script); 
 
 
 
