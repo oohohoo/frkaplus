@@ -982,7 +982,7 @@ beforeEnter(data) {
         beforeLeave() {
           /* UNLOAD EXTERNAL JS*/
            
-           next.container.removeChild(script);
+           container.removeChild(script);
            console.log("previous script uloadedDDD");
     
             
