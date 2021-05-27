@@ -1485,7 +1485,7 @@ mapo.on('mouseout', function() {
 
 },3000) 
 
-  }
+  })
 
 }
 
