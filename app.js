@@ -794,7 +794,7 @@ function initPageTransitions() {
 
   });
   //kill scrolltrigger
-  barba.hooks.beforeLeave(({next}) => {
+  barba.hooks.beforeLeave(() => {
    locoScroll.destroy(); 
     
    next.container.removeChild(script); 
