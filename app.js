@@ -975,7 +975,7 @@ console.log("imagezoom loaded");
  window.onload = function() { 
   var elements = document.querySelectorAll( '.demo-image' );
   Intense( elements );
-/*   } 
+  } 
          
       }},{
 
