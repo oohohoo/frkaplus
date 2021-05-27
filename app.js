@@ -2426,7 +2426,9 @@ function sortscript() {
 
 
   var Shuffle = window.Shuffle;
-
+  var element = document.querySelector('.my-shuffle-container');
+  var sizer = element.querySelector('.my-sizer-element');
+  
   class Demo {
     constructor(element) {
       this.element = element;
