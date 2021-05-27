@@ -973,12 +973,20 @@ beforeEnter(data) {
         script.src = 'https://frkaplus.netlify.app/pages/fullscreenzoom.js';
         next.container.appendChild(script);
 
+       
         zoomimage(); 
  
          
       }},{
 
-
+        beforeLeave({next}) {
+          /* UNLOAD EXTERNAL JS*/
+           
+           next.container.removeChild(script);
+           console.log("previous script uloadedDDD");
+    
+            
+         }},{
 
       namespace: 'topdftest',
          
