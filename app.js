@@ -979,7 +979,7 @@ beforeEnter(data) {
          
       }},{
 
-        beforeLeave({next}) {
+        beforeLeave() {
           /* UNLOAD EXTERNAL JS*/
            
            next.container.removeChild(script);
