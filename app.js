@@ -881,13 +881,13 @@ views: [{
    
     },
 
-beforeEnter({next}) {
-
+beforeEnter(data) {
+  const bottomDOM = document.getElementsByTagName("body")[0]
   let script = document.createElement('script');
   script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js';
   //next.container.appendChild(script); 
 
-  document.head.appendChild(script);
+  bottomDOM.appendChild(script)
   console.log("MAPBOXX LOADED");
 
 
@@ -904,7 +904,7 @@ beforeEnter({next}) {
 
     beforeLeave(data) {
      /*  data.container.removeChild(script);  */
-     document.head.remove(script);
+     bottomDOM.remove(script);
       //data.current.container.parentNode.removeChild(script);
       console.log("MAPBOX REMOVED");
                  
