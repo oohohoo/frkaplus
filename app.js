@@ -888,6 +888,8 @@ beforeEnter(data) {
   document.head.appendChild(script);
   console.log("MAPBOXX LOADED");
 
+
+  
   locationMap();
 /*   scrolltriggerupdate();
   console.log("SKROLIĆ UPDEJTAN"); */
@@ -991,7 +993,8 @@ beforeEnter(data) {
       },
     
       beforeEnter({next}) {
-       
+        document.getElementById('vid').play();
+        
           let script = document.createElement('script');
   script.src = 'https://frkaplus.netlify.app/pages/fullscreenzoom.js';
   next.container.appendChild(script); 
