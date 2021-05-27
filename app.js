@@ -968,7 +968,7 @@ beforeEnter(data) {
       },
     
       beforeEnter({next}) {
-        window.onload = function() { 
+       
           let script = document.createElement('script');
 script.src = 'https://frkaplus.netlify.app/pages/fullscreenzoom.js';
 next.container.appendChild(script);
@@ -978,7 +978,7 @@ $(document).ready(function(){
   var elements = document.querySelectorAll( '.demo-image' );
   Intense( elements );
   } 
-  });
+ 
   
   console.log("imagezoom loaded");
  
