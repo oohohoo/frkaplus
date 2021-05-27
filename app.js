@@ -877,19 +877,17 @@ views: [{
    
     },
 
-beforeEnter({next}) {
+beforeEnter(data) {
 
   let script = document.createElement('script');
   script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js';
-  next.container.appendChild(script); 
+  data.container.appendChild(script); 
   console.log("MAPBOXX LOADED");
 
   locationMap();
 /*   scrolltriggerupdate();
   console.log("SKROLIĆ UPDEJTAN"); */
-    
-   
- 
+     
   }},{
 
     namespace: 'sort',
