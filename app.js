@@ -882,7 +882,7 @@ views: [{
     },
 
 beforeEnter({next}) {
-
+<script class="main-script" src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
   const bottomDOM = document.getElementsByTagName("body")[0]     
   const newScript = document.createElement("script")
   const oldScript = document.querySelector(".main-script")
