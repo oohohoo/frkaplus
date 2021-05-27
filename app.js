@@ -797,6 +797,10 @@ function initPageTransitions() {
   barba.hooks.beforeLeave(() => {
    locoScroll.destroy(); 
     
+   data.current.container.parentNode.removeChild(script);
+   console.log("REMOVED CHILD");
+  
+   
   });
   //init scrolltrigger
   barba.hooks.beforeEnter(() => {
@@ -893,9 +897,7 @@ beforeEnter({next}) {
     beforeLeave({next}) {
 
       
-      data.current.container.parentNode.removeChild(script);
-      console.log("REMOVED CHILD");
-     
+   
     /*   scrolltriggerupdate();
       console.log("SKROLIĆ UPDEJTAN"); */
          
