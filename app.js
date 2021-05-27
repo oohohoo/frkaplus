@@ -797,7 +797,7 @@ function initPageTransitions() {
   barba.hooks.beforeLeave(() => {
    locoScroll.destroy(); 
     
-   container.removeChild(script); 
+  
 
    console.log("REMOVED CHILD");
   
@@ -992,12 +992,17 @@ beforeEnter({next}) {
   next.container.appendChild(script); 
 
 
-
-
         zoomimage(); 
  
          
       }},{
+
+
+        beforeLeave(data) {
+          next.container.removeChild(script); 
+          console.log("SCRIPT REMOVED");
+                     
+        }},{
 
 
 
