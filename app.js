@@ -893,11 +893,14 @@ beforeEnter({next}) {
 /*   scrolltriggerupdate();
   console.log("SKROLIĆ UPDEJTAN"); */
      
-  beforeLeave(data) {
-    next.container.removeChild(script); 
-    console.log("SCRIPT REMOVED");
-               
   }},{
+
+    beforeLeave(data) {
+      next.container.removeChild(script); 
+      console.log("SCRIPT REMOVED");
+                 
+    }},{
+
 
       
    
