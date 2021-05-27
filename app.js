@@ -977,7 +977,7 @@ next.container.appendChild(script);
 $(document).ready(function(){ 
   var elements = document.querySelectorAll( '.demo-image' );
   Intense( elements );
-  } 
+  }); 
  
   
   console.log("imagezoom loaded");
