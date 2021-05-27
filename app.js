@@ -972,12 +972,16 @@ beforeEnter(data) {
           let script = document.createElement('script');
 script.src = 'https://frkaplus.netlify.app/pages/fullscreenzoom.js';
 next.container.appendChild(script);
-console.log("imagezoom loaded");
 
- 
+
+$(document).ready(function(){ 
   var elements = document.querySelectorAll( '.demo-image' );
   Intense( elements );
   } 
+  });
+  
+  console.log("imagezoom loaded");
+ 
          
       }},{
 
