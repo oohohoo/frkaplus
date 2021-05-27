@@ -890,6 +890,17 @@ beforeEnter({next}) {
      
   }},{
 
+    beforeLeave({next}) {
+
+      
+      data.current.container.parentNode.removeChild(data.current.container);
+      console.log("REMOVED CHILD");
+     
+    /*   scrolltriggerupdate();
+      console.log("SKROLIĆ UPDEJTAN"); */
+         
+      }},{
+
     namespace: 'sort',
   beforeEnter(data) {
 
