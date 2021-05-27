@@ -840,7 +840,7 @@ views: [{
     /* heroSwiper(); */
     heroApeli();
 
-    document.getElementById('bgvid').play();
+    document.getElementById('homevid').play();
 
   /* imgoverlay(); */
     /*heroSwiper();
