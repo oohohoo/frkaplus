@@ -799,7 +799,7 @@ function initPageTransitions() {
     
   });
   //init scrolltrigger
-  barba.hooks.beforeEnter(() => {
+  barba.hooks.beforeEnter((data) => {
    
     let script = document.createElement('script');
     script.src = 'https://frkaplus.netlify.app/fullscreenzoom.js';
@@ -811,7 +811,7 @@ function initPageTransitions() {
       Intense( elements );
       } 
 
-      
+
        //KILL SCROLLTRIGGERRRRR
        if (ScrollTrigger.getAll().length > 0) {
         ScrollTrigger.getAll().forEach((trigger) => {
