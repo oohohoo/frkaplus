@@ -972,7 +972,7 @@ script.src = 'https://frkaplus.netlify.app/fullscreenzoom.js';
 next.container.appendChild(script);
 console.log("imagezoom loaded");
 
- window.onload = function() { */
+ window.onload = function() { 
   var elements = document.querySelectorAll( '.demo-image' );
   Intense( elements );
 /*   } 
