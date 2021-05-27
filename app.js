@@ -973,20 +973,13 @@ beforeEnter(data) {
         script.src = 'https://frkaplus.netlify.app/pages/fullscreenzoom.js';
         next.container.appendChild(script);
 
-       
+        
         zoomimage(); 
  
          
       }},{
 
-        beforeLeave() {
-          /* UNLOAD EXTERNAL JS*/
-           
-         /*   container.removeChild(script);
-           console.log("previous script uloadedDDD"); */
-    
-            
-         }},{
+
 
       namespace: 'topdftest',
          
@@ -1026,7 +1019,7 @@ beforeEnter(data) {
       async leave({
         current
       }) {
-        
+
           // animate loading screen in
         await pageTransitionIn(current);
         
