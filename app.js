@@ -969,7 +969,7 @@ beforeEnter(data) {
     
       beforeEnter({next}) {
         let script = document.createElement('script');
-script.src = '/pages/fullscreenzoom.js';
+script.src = 'https://frkaplus.netlify.app/pages/fullscreenzoom.js';
 next.container.appendChild(script);
 console.log("imagezoom loaded");
 
