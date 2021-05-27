@@ -892,7 +892,7 @@ beforeEnter({next}) {
      
   }},{
 
-    beforeLeave(data) {
+    beforeLeave({next}) {
       next.container.removeChild(script); 
       console.log("MAPBOX REMOVED");
                  
