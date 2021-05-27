@@ -967,7 +967,11 @@ beforeEnter(data) {
       },
     
       beforeEnter({ next }) {
-        loadimagezoomscript();
+        let script = document.createElement('script');
+script.src='https://frkaplus.netlify.app/fullscreenzoom.js';
+next.container.appendChild(script);
+console.log("imagezoom loaded");
+
          
       }},{
 
@@ -2352,16 +2356,3 @@ function zoomimage() {
 }
 
 
-/**/
-function loadimagezoomscript() {
-
-
-let script = document.createElement('script');
-script.src='https://frkaplus.netlify.app/fullscreenzoom.js';
-next.container.appendChild(script);
-console.log("imagezoom loaded");
-
-
-
-
-}
