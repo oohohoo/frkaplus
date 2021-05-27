@@ -840,6 +840,8 @@ views: [{
     /* heroSwiper(); */
     heroApeli();
 
+    document.getElementById('homevideo').play();
+
   /* imgoverlay(); */
     /*heroSwiper();
   console.log("HERO SWIPER loooooooaded!");*/
@@ -993,8 +995,8 @@ beforeEnter(data) {
       },
     
       beforeEnter({next}) {
-        document.getElementById('vid').play();
-        
+       
+
           let script = document.createElement('script');
   script.src = 'https://frkaplus.netlify.app/pages/fullscreenzoom.js';
   next.container.appendChild(script); 
