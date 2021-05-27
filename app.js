@@ -883,7 +883,9 @@ beforeEnter({next}) {
 
   let script = document.createElement('script');
   script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js';
-  next.container.appendChild(script); 
+  //next.container.appendChild(script); 
+
+  document.head.appendChild(script);
   console.log("MAPBOXX LOADED");
 
   locationMap();
@@ -892,10 +894,10 @@ beforeEnter({next}) {
      
   }},{
 
-    afterLeave(data) {
+    beforeLeave(data) {
      /*  data.container.removeChild(script);  */
-
-      data.current.container.parentNode.removeChild(script);
+     document.head.removeChild(script);
+      //data.current.container.parentNode.removeChild(script);
       console.log("MAPBOX REMOVED");
                  
  
