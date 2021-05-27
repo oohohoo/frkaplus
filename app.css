@@ -305,6 +305,11 @@ GSAP PERFORMANCE FIX
   /*backface-visibility: hidden;*/
 }   
 
+
+#main {
+  will-change: transform;
+  backface-visibility: hidden;
+}   
 /*
 ================================================================================
 DISABLE SELECTION
