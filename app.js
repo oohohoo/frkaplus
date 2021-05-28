@@ -913,7 +913,7 @@ beforeEnter({next}) {
   console.log("MAPBOXX LOADED");
 
 
-  }},{
+}),
 
     beforeLeave({current}) {
       map.remove();
