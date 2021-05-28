@@ -898,10 +898,6 @@ beforeLeave({current}) {
 
   
 
-  }},{
-
-
-
       
    
     /*   scrolltriggerupdate();
