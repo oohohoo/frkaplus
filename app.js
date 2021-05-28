@@ -889,12 +889,14 @@ beforeEnter({next}) {
   next.container.appendChild(script); 
   console.log("MAPBOXX LOADED");
 
+},
 
-  }},{
+  beforeLeave({current}) {
+    current.container.querySelector('mapbox-id').remove();
+    console.log("MAPBOX SCRIPT REMOVE");
+ 
 
-    beforeLeave({current}) {
-      current.container.querySelector('mapbox-id').remove();
-      console.log("MAPBOX SCRIPT REMOVE");
+  
                  
  
 
