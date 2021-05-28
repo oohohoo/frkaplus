@@ -900,12 +900,13 @@ beforeEnter({next}) {
 },
 
   beforeLeave({current}) {
-    current.container.querySelector('mapbox-id').remove();
+    current.container.querySelector('mapbox-id').remove(script);
     
    /*  data.container.removeChild(script);  */
  /*   document.head.remove(script); */
     //data.current.container.parentNode.removeChild(script);
- 
+
+        
  
 
       
