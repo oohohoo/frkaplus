@@ -880,7 +880,31 @@ views: [{
 
 beforeEnter({next}) {
 
-  locationMap();
+  $(document).ready(function(){ 
+    /*  setTimeout(()=>{ */
+ mapboxgl.accessToken = 'pk.eyJ1IjoiZm9nc2VsbGVyIiwiYSI6ImNrN2VpbXlpbjAwNDIzbnM1N2ZhMW9laGkifQ.DUf-8r1jXF4o7ApMUcKVXQ';
+ var map = new mapboxgl.Map({
+  /*  width: 100,
+   height: 20, */
+ container: 'map', // container ID
+ style: 'mapbox://styles/fogseller/cknip0h0j0oqm17mgvd8wwi8y', // style URL
+ center: [16.527, 44.663], // starting position [lng, lat]
+ zoom: 6.64 // starting zoom
+ });
+  /* map.on('load', function (e) {
+ var mapContainerEl = document.getElementById('map');
+ mapContainerEl.style.visibility = 'visible';
+ }); */
+   /* map.on('idle',function(){
+   map.resize()
+   console.log("MAP RESIZEEEEE!");
+   }) */
+ 
+  map.once('load', () => {
+ map.resize();
+ });
+ console.log("MAP RESIZE!");
+
 
   let script = document.createElement('script');
   script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js';
@@ -892,7 +916,8 @@ beforeEnter({next}) {
   }},{
 
     beforeLeave({current}) {
-      current.container.querySelector('mapbox-id').remove();
+      map.remove();
+      /* current.container.querySelector('mapbox-id').remove(); */
       console.log("MAPBOX SCRIPT REMOVE");
                  
  
