@@ -830,7 +830,7 @@ function initPageTransitions() {
     /* prefetch: true, */
 
     sync: true,
-   cacheIgnore: false,
+   cacheIgnore: true,
   /*
 ================================================================================
 BARBA VIEWS
