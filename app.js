@@ -786,8 +786,7 @@ function initPageTransitions() {
   barba.hooks.after(() => {
     select('html').classList.remove('is-transitioning');
   });
-  document.querySelector('mapbox-id').remove();
-  console.log("MAPBOX SCRIPT REMOVE");
+
   // scroll to the top of the page
   barba.hooks.enter(() => {
     window.scrollTo(0, 0);
@@ -892,11 +891,11 @@ beforeEnter({next}) {
 
 },
 
-/*   beforeLeave({current}) {
+  beforeLeave({current}) {
     current.container.querySelector('mapbox-id').remove();
     console.log("MAPBOX SCRIPT REMOVE");
          
-      } */
+      }
     
     },{
 
