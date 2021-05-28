@@ -879,6 +879,24 @@ views: [{
    
 beforeEnter({next}) {
 
+  // prevent Google Map API script from being loaded multiple times
+  if (typeof window.createMap === 'function') {
+    window.createMap();
+  } else {
+    window.createMap = () => {
+
+      locationMap();
+      console.log("PORODI MEEEE");
+      // create your map here using the Map API
+      // Map, LatLng, InfoWindow, etc.
+    };
+
+    // load the Google Map API script
+    let script = document.createElement('script');
+    script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js';
+    next.container.appendChild(script);
+
+
 /*   let script = document.createElement('script');
   script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js';
   script.setAttribute('id', 'mapbox-id');
@@ -887,7 +905,7 @@ beforeEnter({next}) {
 
 
 
-  locationMap();
+  
   console.log("MAP ADDDDEEEDDDDD BEFORE ENTER!"); 
  
 
