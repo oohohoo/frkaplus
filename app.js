@@ -885,6 +885,8 @@ beforeEnter({next}) {
   } else {
     window.locationMap = () => {
 
+      locationMap();
+      
       /* locationMap(); */
       console.log("PROŠLOOOOOO");
       // create your map here using the Map API
@@ -916,9 +918,9 @@ beforeEnter({next}) {
 
    
    /*  map.remove(); */
-    console.log("MAP KILLKILLKIOLLLLLLLLL!"); 
-         /*  current.container.querySelector('mapbox-id').remove();
-          console.log("MAPBOX SCRIPT REMOVE"); */
+   // console.log("MAP KILLKILLKIOLLLLLLLLL!"); 
+         // current.container.querySelector('mapbox-id').remove();
+        //  console.log("MAPBOX SCRIPT REMOVE"); */
          /*   scrolltriggerupdate();
           console.log("SKROLIĆ UPDEJTAN"); */
              
