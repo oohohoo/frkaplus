@@ -797,11 +797,7 @@ function initPageTransitions() {
   barba.hooks.beforeLeave(() => {
    locoScroll.destroy(); 
     
-   data.current.container.parentNode.querySelector('mapbox-id').remove();
-   /*  data.container.removeChild(script);  */
- /*   document.head.remove(script); */
-    //data.current.container.parentNode.removeChild(script);
-    console.log("MAPBOX SKRIPTA ODJEBI");
+  
 
   });
   //init scrolltrigger
@@ -903,8 +899,12 @@ beforeEnter({next}) {
      
   }},{
 
-    beforeLeave({current}) {
-      
+    beforeLeave() {
+      current.container.querySelector('mapbox-id').remove();
+     /*  data.container.removeChild(script);  */
+   /*   document.head.remove(script); */
+      //data.current.container.parentNode.removeChild(script);
+      console.log("MAPBOX SKRIPTA ODJEBI");
                  
  
 
