@@ -898,7 +898,7 @@ beforeEnter({next}) {
 },
 
 beforeLeave({current}) {
-
+  console.log("MAPBOX SKRIPTA ODJEBI");
   document.getElementById('mapbox-id').remove();
   /* current.container.querySelector('mapbox-id').remove(); */
   console.log("MAPBOX SKRIPTA ODJEBI");
