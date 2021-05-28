@@ -908,19 +908,22 @@ beforeEnter({next}) {
   
   console.log("MAP ADDDDEEEDDDDD BEFORE ENTER!"); 
  
-
- },
+  },
 
   beforeLeave({current}) {
 
-map.remove();
-console.log("MAP REMOVED!"); 
-     /*  current.container.querySelector('mapbox-id').remove();
-      console.log("MAPBOX SCRIPT REMOVE"); */
-     /*   scrolltriggerupdate();
-      console.log("SKROLIĆ UPDEJTAN"); */
-         
-      }},{
+    map.remove();
+    console.log("MAP REMOVED!"); 
+         /*  current.container.querySelector('mapbox-id').remove();
+          console.log("MAPBOX SCRIPT REMOVE"); */
+         /*   scrolltriggerupdate();
+          console.log("SKROLIĆ UPDEJTAN"); */
+             
+
+  }},{
+
+
+     
 
     namespace: 'sort',
     beforeEnter({next}) {
