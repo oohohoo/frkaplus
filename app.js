@@ -909,7 +909,7 @@ beforeEnter({next}) {
   console.log("MAP ADDDDEEEDDDDD BEFORE ENTER!"); 
  
 
-  }},{
+ ,}
 
   beforeLeave({current}) {
 
