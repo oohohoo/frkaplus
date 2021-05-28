@@ -917,6 +917,9 @@ beforeEnter({next}) {
 },
 
   beforeLeave({current}) {
+
+    var map = new mapboxgl.Map ({ });
+    map.remove();
    current.container.querySelector('mapbox-id').remove(); 
     console.log("MAPBOX SCRIPT REMOVE");
                
