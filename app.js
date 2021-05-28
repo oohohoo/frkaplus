@@ -797,7 +797,7 @@ function initPageTransitions() {
   barba.hooks.beforeLeave(() => {
    locoScroll.destroy(); 
     
-   container.querySelector('mapbox-id').remove();
+   data.current.container.querySelector('mapbox-id').remove();
    /*  data.container.removeChild(script);  */
  /*   document.head.remove(script); */
     //data.current.container.parentNode.removeChild(script);
