@@ -900,7 +900,7 @@ beforeEnter({next}) {
 
     beforeLeave() {
      /*  data.container.removeChild(script);  */
-newScript.remove()
+     next.container.remove(newScript)
       //data.current.container.parentNode.removeChild(script);
       console.log("MAPBOXXxxx REMOVED");
                  
