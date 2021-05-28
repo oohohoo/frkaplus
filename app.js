@@ -918,7 +918,7 @@ beforeEnter({next}) {
 
   beforeLeave({current}) {
 
-    map.remove();
+    current.container.map.remove();
  /*   current.container.querySelector('mapbox-id').remove();  */
     console.log("MAPBOX SCRIPT REMOVE");
                
