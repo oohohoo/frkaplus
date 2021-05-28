@@ -886,7 +886,7 @@ beforeEnter({next}) {
   let script = document.createElement('script');
   script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js';
   script.setAttribute('id', 'mapbox-id');
- next.container.appendChild(script); 
+ document.head.appendChild(script); 
 
   /* document.head.appendChild(script); */
   console.log("MAPBOXX LOADED");
@@ -899,7 +899,7 @@ beforeEnter({next}) {
 },
 
 beforeLeave({current}) {
-  current.container.querySelector('mapbox-id').remove();
+  document.head.querySelector('mapbox-id').remove();
  /*  data.container.removeChild(script);  */
 /*   document.head.remove(script); */
   //data.current.container.parentNode.removeChild(script);
