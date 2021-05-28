@@ -885,9 +885,9 @@ beforeEnter({next}) {
 
   let script = document.createElement('script');
   script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js';
-  //next.container.appendChild(script); 
+ next.container.appendChild(script); 
 
- /*  document.head.appendChild(script); */
+  /* document.head.appendChild(script); */
   console.log("MAPBOXX LOADED");
 
 
@@ -900,7 +900,7 @@ beforeEnter({next}) {
 
     beforeLeave(data) {
      /*  data.container.removeChild(script);  */
-    /*  document.head.remove(script); */
+   /*   document.head.remove(script); */
       //data.current.container.parentNode.removeChild(script);
       console.log("MAPBOX REMOVED");
                  
@@ -918,7 +918,7 @@ beforeEnter({next}) {
 
     let script = document.createElement('script');
   script.src = 'https://unpkg.com/shufflejs@5';
-  /* next.container.appendChild(script); */ 
+  next.container.appendChild(script); 
 
     sortscript();
   
@@ -1003,7 +1003,7 @@ beforeEnter({next}) {
 
           let script = document.createElement('script');
   script.src = 'https://frkaplus.netlify.app/pages/fullscreenzoom.js';
-  /* next.container.appendChild(script);  */
+  next.container.appendChild(script); 
 
 
         zoomimage(); 
