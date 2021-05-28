@@ -886,10 +886,10 @@ beforeEnter({next}) {
   console.log("MAPBOXX LOADED"); */
 
 
-/* 
+
   locationMap();
      
-  */ 
+ 
 
   }},{
 
