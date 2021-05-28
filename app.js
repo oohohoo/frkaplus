@@ -912,6 +912,7 @@ beforeEnter({next}) {
   next.container.appendChild(script); 
   console.log("MAPBOXX LOADED");
 
+},
 
   beforeLeave({current}) {
     map.remove();
