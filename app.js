@@ -914,8 +914,9 @@ beforeEnter({next}) {
 
   beforeLeave({current}) {
 
+    mapboxkill();
    /*  map.remove(); */
-    console.log("MAP REMOVED!"); 
+    console.log("MAP KILLKILLKIOLLLLLLLLL!"); 
          /*  current.container.querySelector('mapbox-id').remove();
           console.log("MAPBOX SCRIPT REMOVE"); */
          /*   scrolltriggerupdate();
@@ -1470,7 +1471,7 @@ function locationMap() {
 
 
   $(document).ready(function(){ 
-    setTimeout(()=>{
+    /* setTimeout(()=>{ */
 mapboxgl.accessToken = 'pk.eyJ1IjoiZm9nc2VsbGVyIiwiYSI6ImNrN2VpbXlpbjAwNDIzbnM1N2ZhMW9laGkifQ.DUf-8r1jXF4o7ApMUcKVXQ';
 var map = new mapboxgl.Map({
  /*  width: 100,
@@ -1499,6 +1500,14 @@ console.log("MAP RESIZE!");
 
 
 
+function mapboxkill() {
+
+map.remove();
+
+console.log("MAP REMOVE!"); 
+}
+
+
 /*********************** NE RADI  */
 /*3 second before zoom
 var mapo = L.mapbox.map('mymap', 'mymap');
@@ -1525,7 +1534,7 @@ mapo.on('mouseout', function() {
 /*********************** */
 
 
-},500) 
+/* },500)  */
 
   })
 
