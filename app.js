@@ -904,8 +904,7 @@ beforeLeave({current}) {
 /*   document.head.remove(script); */
   //data.current.container.parentNode.removeChild(script);
   
-             
-
+  
 /*   scrolltriggerupdate();
   console.log("SKROLIĆ UPDEJTAN"); */
      
