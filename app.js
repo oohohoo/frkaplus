@@ -893,7 +893,7 @@ beforeEnter({next}) {
 
 },
 
-beforeLeave({current}) {
+beforeLeave() {
   document.head.querySelector('mapbox-id').remove();
   console.log("MAPBOX REMOVED!!!!"); 
 /*
