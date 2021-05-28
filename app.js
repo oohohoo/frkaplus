@@ -899,7 +899,7 @@ beforeEnter({next}) {
      
   }},{
 
-    beforeLeave({current}) {
+    beforeLeave({data}) {
       document.remove(script);
      /*  data.container.removeChild(script);  */
    /*   document.head.remove(script); */
