@@ -911,7 +911,7 @@ beforeEnter({next}) {
   next.container.appendChild(script); 
   
 
-}),
+})
 
 },
 
