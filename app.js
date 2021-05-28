@@ -901,7 +901,6 @@ beforeLeave({current}) {
  console.log("MAP REMOVED!"); 
 
 
-  }},{
 
 
 
