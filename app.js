@@ -830,7 +830,7 @@ function initPageTransitions() {
     /* prefetch: true, */
 
     sync: true,
-   cacheIgnore: true,
+   cacheIgnore: false,
   /*
 ================================================================================
 BARBA VIEWS
@@ -899,8 +899,8 @@ beforeEnter({next}) {
      
   }},{
 
-    beforeLeave({next}) {
-      next.container.querySelector('mapbox-id').remove();
+    beforeLeave({current}) {
+      current.container.querySelector('mapbox-id').removeChild();
       console.log("MAPBOX SKRIPTA ODJEBI");
      /*  data.container.removeChild(script);  */
    /*   document.head.remove(script); */
