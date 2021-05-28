@@ -885,7 +885,7 @@ beforeEnter({next}) {
 
  const newScript = document.createElement('script');
  newScript.src = 'https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js';
-  next.container.appendChild(script); 
+  next.container.appendChild(newScript); 
 
 /*   document.head.appendChild(script); */
   console.log("MAPBOXX LOADED");
