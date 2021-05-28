@@ -905,14 +905,7 @@ beforeEnter({next}) {
    /*  data.container.removeChild(script);  */
  /*   document.head.remove(script); */
     //data.current.container.parentNode.removeChild(script);
-    
-           
-
-
-
-  }},{
-
-        
+ 
  
 
       
