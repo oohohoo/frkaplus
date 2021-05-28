@@ -899,12 +899,13 @@ beforeEnter({next}) {
      
   }},{
 
-    beforeLeave() {
+    beforeLeave({current}) {
       current.container.querySelector('mapbox-id').remove();
+      console.log("MAPBOX SKRIPTA ODJEBI");
      /*  data.container.removeChild(script);  */
    /*   document.head.remove(script); */
       //data.current.container.parentNode.removeChild(script);
-      console.log("MAPBOX SKRIPTA ODJEBI");
+      
                  
  
 
