@@ -1506,7 +1506,7 @@ map.remove();
 console.log("MAP REMOVE!"); 
 }) */
 
-}
+/*}*/
 
 
 /*********************** NE RADI  */
