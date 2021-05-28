@@ -897,7 +897,7 @@ beforeLeave({current}) {
   console.log("MAPBOX REMOVED");
 
 
-  map.remove();
+  locationMap.remove();
  console.log("MAP REMOVED!"); 
 
 
