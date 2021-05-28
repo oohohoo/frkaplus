@@ -913,21 +913,15 @@ beforeEnter({next}) {
   console.log("MAPBOXX LOADED");
 
 
-}),
+  beforeLeave({current}) {
+    map.remove();
+    /* current.container.querySelector('mapbox-id').remove(); */
+    console.log("MAPBOX SCRIPT REMOVE");
+               
 
-    beforeLeave({current}) {
-      map.remove();
-      /* current.container.querySelector('mapbox-id').remove(); */
-      console.log("MAPBOX SCRIPT REMOVE");
-                 
- 
+  }},{
 
-      
-   
-    /*   scrolltriggerupdate();
-      console.log("SKROLIĆ UPDEJTAN"); */
-         
-      }},{
+
 
     namespace: 'sort',
   beforeEnter({next}) {
