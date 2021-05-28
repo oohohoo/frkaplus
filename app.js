@@ -827,10 +827,10 @@ function initPageTransitions() {
 
   barba.init({
     debug: true,
-    prefetch: true,
+    /* prefetch: true, */
 
-   /*  sync: true,
-   cacheIgnore: false, */
+    sync: true,
+   cacheIgnore: false,
   /*
 ================================================================================
 BARBA VIEWS
@@ -882,9 +882,8 @@ views: [{
 
 
 beforeEnter({next}) {
-  const bottomDOM = document.getElementsByTagName("body")[0]
 
-  const script = document.createElement('script');
+  let script = document.createElement('script');
   script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js';
   script.setAttribute('id', 'mapbox-id');
  next.container.appendChild(script); 
@@ -899,22 +898,20 @@ beforeEnter({next}) {
 },
 
 beforeLeave({current}) {
-  
   current.container.querySelector('mapbox-id').remove();
   console.log("MAPBOX SKRIPTA ODJEBI");
-  /* current.container.querySelector('mapbox-id').remove(); */
- 
  /*  data.container.removeChild(script);  */
 /*   document.head.remove(script); */
   //data.current.container.parentNode.removeChild(script);
   
-  
+             
+
 /*   scrolltriggerupdate();
   console.log("SKROLIĆ UPDEJTAN"); */
      
 
 
-
+  }},{
 
 
 
