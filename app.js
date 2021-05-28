@@ -882,15 +882,18 @@ views: [{
 
 
 beforeEnter({next}) {
+  const bottomDOM = document.getElementsByTagName("body")[0]
 
-  let script = document.createElement('script');
+  const script = document.createElement('script');
   script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js';
   script.setAttribute('id', 'mapbox-id');
- next.container.appendChild(script); 
+  bottomDOM.appendChild(script); 
 
+bottomDOM.getElementById('mapbox-id').remove();
+  console.log("MAPBOX SKRIPTA ODJEBI");
   /* document.head.appendChild(script); */
   console.log("MAPBOXX SKRIPTA DOJEBI");
-
+  bottomDOM.appendChild(script); 
 
   
   locationMap();
@@ -899,8 +902,7 @@ beforeEnter({next}) {
 
 beforeLeave() {
   
-  document.getElementById('mapbox-id').remove();
-  console.log("MAPBOX SKRIPTA ODJEBI");
+
   /* current.container.querySelector('mapbox-id').remove(); */
  
  /*  data.container.removeChild(script);  */
