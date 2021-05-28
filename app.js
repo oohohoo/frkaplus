@@ -880,18 +880,13 @@ views: [{
 },{
     namespace: 'lokacije',
 
-
 beforeEnter({next}) {
 
   let script = document.createElement('script');
   script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js';
   script.setAttribute('id', 'mapbox-id');
- next.container.appendChild(script); 
-
-  /* document.head.appendChild(script); */
-  console.log("MAPBOXX SKRIPTA DOJEBI");
-
-
+  next.container.appendChild(script); 
+  console.log("MAPBOX LOADED");
   
   locationMap();
 
@@ -899,16 +894,11 @@ beforeEnter({next}) {
 
 beforeLeave({current}) {
   current.container.querySelector('mapbox-id').remove();
-  console.log("MAPBOX SKRIPTA ODJEBI");
- /*  data.container.removeChild(script);  */
-/*   document.head.remove(script); */
-  //data.current.container.parentNode.removeChild(script);
-  
-             
+  console.log("MAPBOX REMOVED");
 
-/*   scrolltriggerupdate();
-  console.log("SKROLIĆ UPDEJTAN"); */
-     
+
+  map.remove();
+ console.log("MAP REMOVED!"); 
 
 
   }},{
@@ -1465,7 +1455,7 @@ function locationMap() {
 
 
   $(document).ready(function(){ 
-    setTimeout(()=>{
+    /* setTimeout(()=>{ */
 mapboxgl.accessToken = 'pk.eyJ1IjoiZm9nc2VsbGVyIiwiYSI6ImNrN2VpbXlpbjAwNDIzbnM1N2ZhMW9laGkifQ.DUf-8r1jXF4o7ApMUcKVXQ';
 var map = new mapboxgl.Map({
  /*  width: 100,
@@ -1520,7 +1510,7 @@ mapo.on('mouseout', function() {
 /*********************** */
 
 
-},500) 
+/* },500)  */
 
   })
 
