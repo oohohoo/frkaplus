@@ -881,11 +881,11 @@ beforeEnter({next}) {
 
   // prevent Google Map API script from being loaded multiple times
   if (typeof window.createMap === 'function') {
-    window.createMap();
+    window.locationMap();
   } else {
-    window.createMap = () => {
+    window.locationMap = () => {
 
-      locationMap();
+      /* locationMap(); */
       console.log("PORODI MEEEE");
       // create your map here using the Map API
       // Map, LatLng, InfoWindow, etc.
