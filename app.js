@@ -1447,7 +1447,7 @@ function locationMap() {
 
 
   $(document).ready(function(){ 
-    setTimeout(()=>{
+   /*  setTimeout(()=>{ */
 mapboxgl.accessToken = 'pk.eyJ1IjoiZm9nc2VsbGVyIiwiYSI6ImNrN2VpbXlpbjAwNDIzbnM1N2ZhMW9laGkifQ.DUf-8r1jXF4o7ApMUcKVXQ';
 var map = new mapboxgl.Map({
  /*  width: 100,
@@ -1458,10 +1458,10 @@ center: [16.527, 44.663], // starting position [lng, lat]
 zoom: 6.64 // starting zoom
 });
 
-map.on('load', function (e) {
+/* map.on('load', function (e) {
 var mapContainerEl = document.getElementById('map');
 mapContainerEl.style.visibility = 'visible';
-});
+}); */
 
 
 /* map.on('idle',function(){
@@ -1502,7 +1502,7 @@ mapo.on('mouseout', function() {
 /*********************** */
 
 
-},500) 
+/* },500)  */
 
   })
 
