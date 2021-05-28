@@ -897,6 +897,7 @@ beforeEnter({next}) {
 /*   scrolltriggerupdate();
   console.log("SKROLIĆ UPDEJTAN"); */
      
+},
 
   beforeLeave({current}) {
     current.container.querySelector('mapbox-id').remove();
@@ -906,7 +907,7 @@ beforeEnter({next}) {
     //data.current.container.parentNode.removeChild(script);
     
            
-    
+
 
 
   }},{
