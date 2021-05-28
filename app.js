@@ -905,12 +905,6 @@ beforeLeave({current}) {
   //data.current.container.parentNode.removeChild(script);
   console.log("MAPBOX SKRIPTA ODJEBI");
 
-
-
-
-  }},{
-
-  
                  
  
 
