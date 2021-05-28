@@ -797,7 +797,11 @@ function initPageTransitions() {
   barba.hooks.beforeLeave(() => {
    locoScroll.destroy(); 
     
-  
+   current.container.querySelector('mapbox-id').remove();
+   /*  data.container.removeChild(script);  */
+ /*   document.head.remove(script); */
+    //data.current.container.parentNode.removeChild(script);
+    console.log("MAPBOX SKRIPTA ODJEBI");
 
   });
   //init scrolltrigger
@@ -880,6 +884,7 @@ views: [{
 },{
     namespace: 'lokacije',
 
+
 beforeEnter({next}) {
 
   let script = document.createElement('script');
@@ -899,11 +904,7 @@ beforeEnter({next}) {
   }},{
 
     beforeLeave({current}) {
-      current.container.querySelector('mapbox-id').removeChild();
-     /*  data.container.removeChild(script);  */
-   /*   document.head.remove(script); */
-      //data.current.container.parentNode.removeChild(script);
-      console.log("MAPBOX SKRIPTA ODJEBI");
+      
                  
  
 
