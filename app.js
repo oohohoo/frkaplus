@@ -827,7 +827,10 @@ function initPageTransitions() {
 
   barba.init({
     debug: true,
-    prefetch: true,
+    /* prefetch: true, */
+
+    sync: true,
+   cacheIgnore: false,
   /*
 ================================================================================
 BARBA VIEWS
@@ -876,10 +879,6 @@ views: [{
 
 },{
     namespace: 'lokacije',
-    once(data) {
-    
-   
-    },
 
 beforeEnter({next}) {
 
@@ -899,7 +898,7 @@ beforeEnter({next}) {
      
   }},{
 
-    beforeLeave({current}) {
+    beforeLeave(data) {
       current.container.querySelector('mapbox-id').remove();
      /*  data.container.removeChild(script);  */
    /*   document.head.remove(script); */
