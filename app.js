@@ -899,8 +899,8 @@ beforeEnter({next}) {
      
   }},{
 
-    beforeLeave({current}) {
-      current.container.querySelector('mapbox-id').remove();
+    beforeLeave({next}) {
+      next.container.querySelector('mapbox-id').remove();
       console.log("MAPBOX SKRIPTA ODJEBI");
      /*  data.container.removeChild(script);  */
    /*   document.head.remove(script); */
