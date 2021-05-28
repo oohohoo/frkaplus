@@ -891,21 +891,13 @@ beforeEnter({next}) {
 
 },
 
-  beforeLeave({current}) {
+/*   beforeLeave({current}) {
     current.container.querySelector('mapbox-id').remove();
     console.log("MAPBOX SCRIPT REMOVE");
- 
-
-  
-                 
- 
-
-      
-   
-    /*   scrolltriggerupdate();
-      console.log("SKROLIĆ UPDEJTAN"); */
          
-      }},{
+      } */
+    
+    },{
 
     namespace: 'sort',
   beforeEnter({next}) {
