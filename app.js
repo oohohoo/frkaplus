@@ -889,7 +889,7 @@ beforeEnter({next}) {
  next.container.appendChild(script); 
 
   /* document.head.appendChild(script); */
-  console.log("MAPBOXX SKRIPTA DOJEBI");
+  console.log("MAPBOXX SKRIPTA UČITANA");
 
 
   
@@ -901,7 +901,7 @@ beforeEnter({next}) {
 
   beforeLeave({current}) {
     current.container.querySelector('mapbox-id').remove();
-    
+    console.log("MAPBOXX SKRIPTA ODJEBANA");
    /*  data.container.removeChild(script);  */
  /*   document.head.remove(script); */
     //data.current.container.parentNode.removeChild(script);
