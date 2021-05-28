@@ -881,15 +881,20 @@ views: [{
 
 beforeEnter({next}) {
 
-  locationMap();
+  
 
   let script = document.createElement('script');
   script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js';
-  script.setAttribute('id', 'mapbox-id');
+  /* script.setAttribute('id', 'mapbox-id'); */
   next.container.appendChild(script); 
   console.log("MAPBOXX LOADED");
 
+
+  locationMap();
 },
+
+
+
 
  /*  beforeLeave({current}) {
     current.container.querySelector('mapbox-id').remove();
