@@ -882,18 +882,14 @@ views: [{
     },
 
 beforeEnter(data) {
-  const bottomDOM = document.getElementsByTagName("body")[0]
+
   let script = document.createElement('script');
   script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js';
   //next.container.appendChild(script); 
 
-  bottomDOM.appendChild(script)
+  document.head.appendChild(script);
   console.log("MAPBOXX LOADED");
 
-
-
-
-  
 
   
   locationMap();
@@ -904,7 +900,7 @@ beforeEnter(data) {
 
     beforeLeave(data) {
      /*  data.container.removeChild(script);  */
-     bottomDOM.remove(script);
+     document.head.removeChild(script);
       //data.current.container.parentNode.removeChild(script);
       console.log("MAPBOX REMOVED");
                  
@@ -1460,7 +1456,7 @@ function locationMap() {
 
 
   $(document).ready(function(){ 
-   // setTimeout(()=>{
+    setTimeout(()=>{
 mapboxgl.accessToken = 'pk.eyJ1IjoiZm9nc2VsbGVyIiwiYSI6ImNrN2VpbXlpbjAwNDIzbnM1N2ZhMW9laGkifQ.DUf-8r1jXF4o7ApMUcKVXQ';
 var map = new mapboxgl.Map({
  /*  width: 100,
@@ -1487,8 +1483,7 @@ map.resize();
 });
 console.log("MAP RESIZE!"); 
 
-/* map.remove();
-console.log("MAP REmoved!"); */
+
 
 /*********************** NE RADI  */
 /*3 second before zoom
@@ -1516,7 +1511,7 @@ mapo.on('mouseout', function() {
 /*********************** */
 
 
-///},3000) 
+},3000) 
 
   })
 
