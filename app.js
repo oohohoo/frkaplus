@@ -1503,8 +1503,9 @@ console.log("MAP RESIZE!");
 function mapboxkill() {
   $(document).ready(function(){ 
 map.remove();
-  }
 console.log("MAP REMOVE!"); 
+})
+
 }
 
 
