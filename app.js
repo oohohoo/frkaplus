@@ -885,17 +885,24 @@ beforeEnter({next}) {
   next.container.appendChild(script); 
   console.log("MAPBOXX LOADED");
 
+
 /* 
   locationMap();
      
   */ 
 
-  },
+  }},{
 
     beforeLeave({current}) {
-      current.container.querySelector('mapbox-id').remove(script);
+      current.container.querySelector('mapbox-id').remove();
       console.log("MAPBOX SCRIPT REMOVE");
+                 
+ 
 
+      
+   
+    /*   scrolltriggerupdate();
+      console.log("SKROLIĆ UPDEJTAN"); */
          
       }},{
 
