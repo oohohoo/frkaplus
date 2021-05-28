@@ -877,65 +877,39 @@ views: [{
 },{
     namespace: 'lokacije',
    
+
 beforeEnter({next}) {
 
-  // prevent Google Map API script from being loaded multiple times
-  if (typeof window.createMap === 'function') {
-    window.locationMap();
-  } else {
-    window.locationMap = () => {
+  locationMap();
 
-      locationMap();
-      
-      /* locationMap(); */
-      console.log("PROŠLOOOOOO");
-      // create your map here using the Map API
-      // Map, LatLng, InfoWindow, etc.
-    };
-
-    // load the Google Map API script
-    let script = document.createElement('script');
-    script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js';
-    next.container.appendChild(script);
-
-
-/*   let script = document.createElement('script');
+  let script = document.createElement('script');
   script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js';
   script.setAttribute('id', 'mapbox-id');
   next.container.appendChild(script); 
-  console.log("MAPBOXX LOADED"); */
+  console.log("MAPBOXX LOADED");
 
-
-
-  
-  console.log("MAP ADDDDEEEDDDDD BEFORE ENTER!"); 
- 
-  }
-
-  },
-
-  beforeLeave({current}) {
-
-   
-   /*  map.remove(); */
-   // console.log("MAP KILLKILLKIOLLLLLLLLL!"); 
-         // current.container.querySelector('mapbox-id').remove();
-        //  console.log("MAPBOX SCRIPT REMOVE"); */
-         /*   scrolltriggerupdate();
-          console.log("SKROLIĆ UPDEJTAN"); */
-             
 
   }},{
 
+    beforeLeave({current}) {
+      current.container.querySelector('mapbox-id').remove();
+      console.log("MAPBOX SCRIPT REMOVE");
+                 
+ 
 
-     
+      
+   
+    /*   scrolltriggerupdate();
+      console.log("SKROLIĆ UPDEJTAN"); */
+         
+      }},{
 
     namespace: 'sort',
-    beforeEnter({next}) {
+  beforeEnter({next}) {
 
     let script = document.createElement('script');
-    script.src = 'https://unpkg.com/shufflejs@5';
-   next.container.appendChild(script); 
+  script.src = 'https://unpkg.com/shufflejs@5';
+  next.container.appendChild(script); 
 
     sortscript();
   
@@ -1473,7 +1447,7 @@ function locationMap() {
 
 
   $(document).ready(function(){ 
-    /* setTimeout(()=>{ */
+    setTimeout(()=>{
 mapboxgl.accessToken = 'pk.eyJ1IjoiZm9nc2VsbGVyIiwiYSI6ImNrN2VpbXlpbjAwNDIzbnM1N2ZhMW9laGkifQ.DUf-8r1jXF4o7ApMUcKVXQ';
 var map = new mapboxgl.Map({
  /*  width: 100,
@@ -1502,15 +1476,6 @@ console.log("MAP RESIZE!");
 
 
 
-/* function mapboxkill() {
-  $(document).ready(function(){ 
-map.remove();
-console.log("MAP REMOVE!"); 
-}) */
-
-/*}*/
-
-
 /*********************** NE RADI  */
 /*3 second before zoom
 var mapo = L.mapbox.map('mymap', 'mymap');
@@ -1537,7 +1502,7 @@ mapo.on('mouseout', function() {
 /*********************** */
 
 
-/* },500)  */
+},500) 
 
   })
 
