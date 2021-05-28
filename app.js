@@ -827,10 +827,10 @@ function initPageTransitions() {
 
   barba.init({
     debug: true,
-    /* prefetch: true, */
+    prefetch: true,
 
-    sync: true,
-   cacheIgnore: false,
+   /*  sync: true,
+   cacheIgnore: false, */
   /*
 ================================================================================
 BARBA VIEWS
