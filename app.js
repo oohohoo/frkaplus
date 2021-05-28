@@ -888,7 +888,7 @@ beforeEnter({next}) {
 
 
   locationMap();
-     
+  console.log("MAP ADDDDEEEDDDDD BEFORE ENTER!"); 
  
 
   }},{
@@ -896,7 +896,7 @@ beforeEnter({next}) {
   beforeLeave({current}) {
 
 map.remove();
-console.log("MAP RESIZE!"); 
+console.log("MAP REMOVED!"); 
      /*  current.container.querySelector('mapbox-id').remove();
       console.log("MAPBOX SCRIPT REMOVE"); */
      /*   scrolltriggerupdate();
