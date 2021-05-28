@@ -889,7 +889,7 @@ beforeEnter({next}) {
   script.setAttribute('id', 'mapbox-id');
   bottomDOM.appendChild(script); 
 
-bottomDOM.getElementById('mapbox-id').remove();
+bottomDOM.remove();
   console.log("MAPBOX SKRIPTA ODJEBI");
   /* document.head.appendChild(script); */
   console.log("MAPBOXX SKRIPTA DOJEBI");
