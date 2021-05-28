@@ -893,7 +893,7 @@ beforeEnter({next}) {
 
 
   
-  locationMap();
+ /*  locationMap(); */
 
 },
 
