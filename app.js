@@ -899,7 +899,7 @@ beforeEnter({next}) {
      
   }},{
 
-    beforeLeave({current}) {
+    afterLeave({current}) {
       document.querySelector('mapbox-id').remove();
      /*  data.container.removeChild(script);  */
    /*   document.head.remove(script); */
