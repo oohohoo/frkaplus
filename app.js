@@ -876,42 +876,26 @@ views: [{
 
 },{
     namespace: 'lokacije',
-    once(data) {
-    
    
-    },
-
 beforeEnter({next}) {
 
   let script = document.createElement('script');
   script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js';
   script.setAttribute('id', 'mapbox-id');
- next.container.appendChild(script); 
-
-  /* document.head.appendChild(script); */
+  next.container.appendChild(script); 
   console.log("MAPBOXX LOADED");
 
-
-  
+/* 
   locationMap();
-/*   scrolltriggerupdate();
-  console.log("SKROLIĆ UPDEJTAN"); */
      
-  }},{
+  */ 
+
+  },
 
     beforeLeave({current}) {
       current.container.querySelector('mapbox-id').remove();
-     /*  data.container.removeChild(script);  */
-   /*   document.head.remove(script); */
-      //data.current.container.parentNode.removeChild(script);
-      console.log("MAPBOX SKRIPTA ODJEBI");
-                 
- 
+      console.log("MAPBOX SCRIPT REMOVE");
 
-      
-   
-    /*   scrolltriggerupdate();
-      console.log("SKROLIĆ UPDEJTAN"); */
          
       }},{
 
