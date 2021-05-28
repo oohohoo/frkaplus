@@ -894,20 +894,26 @@ beforeEnter({next}) {
 
   
   locationMap();
+
+},
+
+beforeLeave({current}) {
+  current.container.querySelector('mapbox-id').remove();
+  console.log("MAPBOX SKRIPTA ODJEBI");
+ /*  data.container.removeChild(script);  */
+/*   document.head.remove(script); */
+  //data.current.container.parentNode.removeChild(script);
+  
+             
+
 /*   scrolltriggerupdate();
   console.log("SKROLIĆ UPDEJTAN"); */
      
+
+
   }},{
 
-    beforeLeave({current}) {
-      current.container.querySelector('mapbox-id').removeChild(script);
-      console.log("MAPBOX SKRIPTA ODJEBI");
-     /*  data.container.removeChild(script);  */
-   /*   document.head.remove(script); */
-      //data.current.container.parentNode.removeChild(script);
-      
-                 
- 
+
 
       
    
