@@ -918,7 +918,7 @@ beforeEnter({next}) {
 
     let script = document.createElement('script');
   script.src = 'https://unpkg.com/shufflejs@5';
-  next.container.appendChild(script); 
+  /* next.container.appendChild(script); */ 
 
     sortscript();
   
