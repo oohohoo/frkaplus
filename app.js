@@ -891,11 +891,11 @@ beforeEnter({next}) {
 
 },
 
-  beforeLeave({current}) {
+ /*  beforeLeave({current}) {
     current.container.querySelector('mapbox-id').remove();
     console.log("MAPBOX SCRIPT REMOVE");
          
-      }
+      } */
     
     },{
 
