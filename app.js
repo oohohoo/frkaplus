@@ -786,7 +786,7 @@ function initPageTransitions() {
   barba.hooks.after(() => {
     select('html').classList.remove('is-transitioning');
   });
-  current.container.querySelector('mapbox-id').remove();
+  document.querySelector('mapbox-id').remove();
   console.log("MAPBOX SCRIPT REMOVE");
   // scroll to the top of the page
   barba.hooks.enter(() => {
