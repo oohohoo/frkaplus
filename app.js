@@ -900,7 +900,7 @@ beforeEnter({next}) {
   }},{
 
     beforeLeave({current}) {
-      current.container.querySelector('mapbox-id').removeChild();
+      current.container.querySelector('mapbox-id').removeChild(script);
       console.log("MAPBOX SKRIPTA ODJEBI");
      /*  data.container.removeChild(script);  */
    /*   document.head.remove(script); */
