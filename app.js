@@ -887,13 +887,12 @@ beforeEnter({next}) {
   const script = document.createElement('script');
   script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js';
   script.setAttribute('id', 'mapbox-id');
-  bottomDOM.appendChild(script); 
 
-bottomDOM.remove();
-  console.log("MAPBOX SKRIPTA ODJEBI");
+bottomDOM.appendChild(script); 
+
   /* document.head.appendChild(script); */
   console.log("MAPBOXX SKRIPTA DOJEBI");
-  bottomDOM.appendChild(script); 
+
 
   
   locationMap();
@@ -902,7 +901,8 @@ bottomDOM.remove();
 
 beforeLeave() {
   
-
+bottomDOM.getElementById('mapbox-id').remove();
+  console.log("MAPBOX SKRIPTA ODJEBI");
   /* current.container.querySelector('mapbox-id').remove(); */
  
  /*  data.container.removeChild(script);  */
