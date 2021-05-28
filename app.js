@@ -893,25 +893,23 @@ beforeEnter({next}) {
 
   }},{
 
-    beforeLeave({current}) {
+  beforeLeave({current}) {
+
+map.remove();
+console.log("MAP RESIZE!"); 
      /*  current.container.querySelector('mapbox-id').remove();
       console.log("MAPBOX SCRIPT REMOVE"); */
-                 
- 
-
-      
-   
-    /*   scrolltriggerupdate();
+     /*   scrolltriggerupdate();
       console.log("SKROLIĆ UPDEJTAN"); */
          
       }},{
 
     namespace: 'sort',
-  beforeEnter({next}) {
+    beforeEnter({next}) {
 
     let script = document.createElement('script');
-  script.src = 'https://unpkg.com/shufflejs@5';
-  next.container.appendChild(script); 
+    script.src = 'https://unpkg.com/shufflejs@5';
+   next.container.appendChild(script); 
 
     sortscript();
   
