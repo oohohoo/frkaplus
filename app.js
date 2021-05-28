@@ -899,7 +899,10 @@ beforeEnter({next}) {
 },
 
 beforeLeave({current}) {
-  document.head.remove();
+  let script = document.createElement('script');
+  script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js';
+  script.setAttribute('id', 'mapbox-id');
+  document.head.querySelector('mapbox-id').remove();
  /*  data.container.removeChild(script);  */
 /*   document.head.remove(script); */
   //data.current.container.parentNode.removeChild(script);
