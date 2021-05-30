@@ -903,10 +903,10 @@ afterLeave({current}) {
  /* return new Promise(resolve => {
     setTimeout(resolve, 2000);
   })*/
-  
+  /*
     current.container.querySelector('mapbox-id').remove();
     console.log("MAPBOX SCRIPT REMOVE JEEE");
-       
+       */
       } 
     
     },{
