@@ -901,18 +901,23 @@ beforeEnter({next}) {
 */
 const reloadScripts = (scrpSrc) => {
   console.log("Script loaded:  " + scrpSrc)
-
+ /* const wpcf7 = { 
+    "apiSettings": { 
+      "root": "/wp-json\/contact-form-7\/v1", 
+      "namespace": "contact-form-7\/v1" 
+      } 
+    };
+*/
   let head = document.querySelector('head'),
     headScript = head.querySelector('[src="='+ scrpSrc +'"]'),
     script = document.createElement('script');
-    script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js';
    //checking if head already has a script
   if (headScript != undefined || headScript != null) {
       head.removeChild(headScript);
   }
   //then always do this piece. not DRY to have it inside and outside the if stmt
  
-
+ script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js';
   script.src = scrpSrc;
 head.appendChild(script);
   console.log("skripta dodana u headddd"); 
