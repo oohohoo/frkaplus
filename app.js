@@ -886,7 +886,7 @@ beforeEnter({next}) {
   let script = document.createElement('script');
   script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js';
   script.setAttribute('id', 'mapbox-id'); 
- document.appendChild(script); 
+ document.head.appendChild(script); 
   console.log("MAPBOXX LOADED BEFORE ENTER");
 
 
@@ -901,7 +901,7 @@ afterLeave({current}) {
 return new Promise(resolve => {
     setTimeout(resolve, 2000);
   })
-    document.querySelector('mapbox-id').remove();
+    document.head.querySelector('mapbox-id').remove();
     console.log("MAPBOX SCRIPT REMOVE JEEE");
          
       } 
