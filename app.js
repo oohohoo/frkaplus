@@ -932,11 +932,8 @@ console.log("location map loaded");
 
  beforeLeave({current}) {
 
-  function killmap() {
-    map.remove();
-  }
-  killmap();
-  console.log("map killllled");
+  head.remove(script);
+  console.log("script removed!");
  /*  oldScript.remove();
   console.log("UBIJENA STARA SKRIPTA");
    map.remove(); */
