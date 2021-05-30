@@ -890,7 +890,7 @@ beforeEnter({next}) {
    //console.log("DODANA NOVA SKRIPTA");
   newScript.className = "main-script"
   oldScript.remove()
-  //console.log("UBIJENA STARA SKRIPTA");
+ console.log("UBIJENA STARA SKRIPTA");
   setTimeout(()=>{
   bottomDOM.appendChild(newScript)
 },3000)  
