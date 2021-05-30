@@ -828,7 +828,7 @@ function initPageTransitions() {
   */
 
   barba.init({
-    timeout: 10000,
+    timeout: 5000,
     debug: true,
     prefetch: true,
   /*
@@ -890,8 +890,8 @@ beforeEnter({next}) {
   newScript.className = "main-script"
   oldScript.remove()
   console.log("UBIJENA STARA SKRIPTA");
-  bottomDOM.appendChild(newScript)
-  console.log("DODANA NOVA SKRIPTA");
+  //bottomDOM.appendChild(newScript)
+  //console.log("DODANA NOVA SKRIPTA");
   /*
 
   let script = document.createElement('script');
