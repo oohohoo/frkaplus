@@ -908,6 +908,8 @@ setTimeout(()=>{
   locationMap();
 },3000)  
 
+console.log("timer done");
+
 
   
 },
