@@ -919,7 +919,8 @@ console.log("timer done");
 
   oldScript.remove();
   console.log("UBIJENA STARA SKRIPTA");
-   
+   map.remove();
+   console.log("MAPA UBIJENA");
    /* current.container.querySelector('mapbox-id').remove();
     console.log("MAPBOX SCRIPT REMOVE");
       */   
