@@ -936,6 +936,7 @@ function ()
     map.remove();
   }
   killmap();
+  console.log("map killllled");
  /*  oldScript.remove();
   console.log("UBIJENA STARA SKRIPTA");
    map.remove(); */
