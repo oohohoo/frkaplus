@@ -784,28 +784,9 @@ function initPageTransitions() {
   });
   // do something after the transition finishes
   barba.hooks.after(() => {
-    const bottomDOM = document.getElementsByTagName("body")[0]
-    const newScript = document.createElement("script")
-    const oldScript = document.querySelector(".main-script")
-    newScript.src = "https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"
-    newScript.className = "main-script"
-    oldScript.remove()
-    console.log("UBIJENA STARA SKRIPTA");
-    bottomDOM.appendChild(newScript)
-    console.log("DODANA NOVA SKRIPTA");
-
     select('html').classList.remove('is-transitioning');
 
-   
-
   });
-
-  
-    
-   
-
-
-
 
 
   // scroll to the top of the page
@@ -902,6 +883,15 @@ views: [{
 
 beforeEnter({next}) {
 
+  const bottomDOM = document.getElementsByTagName("body")[0]
+  const newScript = document.createElement("script")
+  const oldScript = document.querySelector(".main-script")
+  newScript.src = "https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"
+  newScript.className = "main-script"
+  oldScript.remove()
+  console.log("UBIJENA STARA SKRIPTA");
+  bottomDOM.appendChild(newScript)
+  console.log("DODANA NOVA SKRIPTA");
   /*
 
   let script = document.createElement('script');
