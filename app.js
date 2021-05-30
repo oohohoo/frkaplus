@@ -894,7 +894,7 @@ beforeEnter({next}) {
   setTimeout(()=>{
   bottomDOM.appendChild(newScript)
 },3000)  
-  console.log("DODANA NOVA SKRIPTA");
+  console.log("DODANA NOVA SKRIPTA NAKON 3 sekunde");
   /*
 
   let script = document.createElement('script');
