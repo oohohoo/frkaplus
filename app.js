@@ -927,7 +927,7 @@ console.log("location map loaded");
   
 },
 
-function () 
+
 
 
  beforeLeave({current}) {
