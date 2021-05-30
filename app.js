@@ -888,8 +888,8 @@ beforeEnter({next}) {
   const oldScript = document.querySelector(".main-script")
   newScript.src = "https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"
   newScript.className = "main-script"
-  oldScript.remove()
-  console.log("UBIJENA STARA SKRIPTA");
+  //oldScript.remove()
+  //console.log("UBIJENA STARA SKRIPTA");
   //bottomDOM.appendChild(newScript)
   //console.log("DODANA NOVA SKRIPTA");
   /*
