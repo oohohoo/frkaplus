@@ -928,10 +928,7 @@ console.log("location map loaded");
 },
 
  beforeLeave({current}) {
-  let oldscripta = document.querySelector('.main-script'),
 
-  oldscripta.remove(script);
-  console.log("skripta dIZBAČENA"); 
  /*  oldScript.remove();
   console.log("UBIJENA STARA SKRIPTA");
    map.remove(); */
