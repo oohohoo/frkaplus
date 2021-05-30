@@ -899,8 +899,8 @@ beforeEnter({next}) {
   next.container.appendChild(script); 
   console.log("MAPBOXX LOADED");
 */
-const reloadScripts = (scrpSrc) => {
-  console.log("Script loaded:  " + scrpSrc)
+/* const reloadScripts = (scrpSrc) => {
+  console.log("Script loaded:  " + scrpSrc) */
  /* const wpcf7 = { 
     "apiSettings": { 
       "root": "/wp-json\/contact-form-7\/v1", 
@@ -921,7 +921,7 @@ const reloadScripts = (scrpSrc) => {
   script.src = scrpSrc;
 head.appendChild(script);
   console.log("skripta dodana u headddd"); 
-}
+/* } */
 
 
 
