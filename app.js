@@ -921,8 +921,8 @@ const reloadScripts = (scrpSrc) => {
  
   script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js';
   script.src = scrpSrc;
-  head.appendChild(script)
-  console.log("skripta dodana u head");
+/*  head.appendChild(script)
+  console.log("skripta dodana u head"); */
 }
 
 
