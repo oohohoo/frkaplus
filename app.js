@@ -927,12 +927,15 @@ console.log("location map loaded");
   
 },
 
-
+function () 
 
 
  beforeLeave({current}) {
 
-  map.remove();
+  function killmap() {
+    map.remove();
+  }
+  killmap();
  /*  oldScript.remove();
   console.log("UBIJENA STARA SKRIPTA");
    map.remove(); */
