@@ -892,7 +892,7 @@ beforeEnter({next}) {
   console.log("MAPBOXX LOADED jeboje");
 
 
-  //locationMap();
+  locationMap();
 },
 
 
