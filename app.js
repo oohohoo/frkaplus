@@ -944,6 +944,7 @@ console.log("location map loaded");
 
 
  beforeLeave({current}) {
+  let head = document.querySelector('head')
   head.removeChild(headScript);
  /*  oldScript.remove();
   console.log("UBIJENA STARA SKRIPTA");
