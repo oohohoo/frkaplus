@@ -899,15 +899,11 @@ beforeEnter({next}) {
   next.container.appendChild(script); 
   console.log("MAPBOXX LOADED");
 */
+
+
+/*
 const reloadScripts = (scrpSrc) => {
   console.log("Script loaded:  " + scrpSrc)
- /* const wpcf7 = { 
-    "apiSettings": { 
-      "root": "/wp-json\/contact-form-7\/v1", 
-      "namespace": "contact-form-7\/v1" 
-      } 
-    };
-*/
   let head = document.querySelector('head'),
 
     headScript = head.querySelector('[src="='+ scrpSrc +'"]'),
@@ -923,7 +919,7 @@ const reloadScripts = (scrpSrc) => {
   next.container.appendChild(script);
   console.log("skripta dodana u headddd"); 
 }
-
+*/
 
 
 //let script = document.createElement('script');
