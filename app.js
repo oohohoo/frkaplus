@@ -908,6 +908,8 @@ beforeEnter({next}) {
       } 
     };
 */
+
+script.src = scrpSrc;
   let head = document.querySelector('head'),
     headScript = head.querySelector('[src="='+ scrpSrc +'"]'),
     script = document.createElement('script');
@@ -918,7 +920,7 @@ beforeEnter({next}) {
   //then always do this piece. not DRY to have it inside and outside the if stmt
  
  script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js';
-  script.src = scrpSrc;
+
 head.appendChild(script);
   console.log("skripta dodana u headddd"); 
 /* } */
