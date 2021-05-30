@@ -882,7 +882,7 @@ views: [{
    
 
 beforeEnter({next}) {
-
+/*
   const bottomDOM = document.getElementsByTagName("body")[0]
   const newScript = document.createElement("script")
   const oldScript = document.querySelector(".main-script")
@@ -898,15 +898,42 @@ beforeEnter({next}) {
    script.setAttribute('id', 'mapbox-id'); 
   next.container.appendChild(script); 
   console.log("MAPBOXX LOADED");
-
-
 */
+const reloadScripts = (scrpSrc) => {
+  console.log("Script loaded:  " + scrpSrc)
+ /* const wpcf7 = { 
+    "apiSettings": { 
+      "root": "/wp-json\/contact-form-7\/v1", 
+      "namespace": "contact-form-7\/v1" 
+      } 
+    };
+*/
+  let head = document.querySelector('head'),
 
+  
+    headScript = head.querySelector('[src="='+ scrpSrc +'"]'),
+    script = document.createElement('script');
+   //checking if head already has a script
+  if (headScript != undefined || headScript != null) {
+      head.removeChild(headScript);
+  }
+  //then always do this piece. not DRY to have it inside and outside the if stmt
+  //script.src = scrpSrc;
+  script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js';
+  head.appendChild(script)
+  console.log("skripta dodana u head");
+}
+
+
+
+//let script = document.createElement('script');
+//script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js';
+//next.container.appendChild(script); 
 
   locationMap();
 
 
-console.log("timer done");
+console.log("location map loaded");
 
 
   
@@ -917,10 +944,9 @@ console.log("timer done");
 
  beforeLeave({current}) {
 
-  oldScript.remove();
+ /*  oldScript.remove();
   console.log("UBIJENA STARA SKRIPTA");
-   map.remove();
-   console.log("MAPA UBIJENA");
+   map.remove(); */
    /* current.container.querySelector('mapbox-id').remove();
     console.log("MAPBOX SCRIPT REMOVE");
       */   
