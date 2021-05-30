@@ -927,13 +927,8 @@ console.log("location map loaded");
   
 },
 
-
-
-
  beforeLeave({current}) {
-  let head = document.querySelector('head'),
-  head.remove(script);
-  console.log("script removed!");
+
  /*  oldScript.remove();
   console.log("UBIJENA STARA SKRIPTA");
    map.remove(); */
