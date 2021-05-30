@@ -878,31 +878,16 @@ views: [{
 },{
     namespace: 'lokacije',
    
-    once({next}){
-    
-      let script = document.createElement('script');
-      script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js';
-      script.setAttribute('id', 'mapbox-id'); 
-      next.container.appendChild(script); 
-      console.log("UČITANO ONCE");
-    
-    
-      locationMap();
-
-    },
-
 
 beforeEnter({next}) {
 
-  return new Promise(resolve => {
-    setTimeout(resolve, 2000);
-  })
+  
 
   let script = document.createElement('script');
   script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js';
-  script.setAttribute('id', 'mapbox-id'); 
+  /* script.setAttribute('id', 'mapbox-id'); */
   next.container.appendChild(script); 
-  console.log("MAPBOXX LOADED jeboje");
+  console.log("MAPBOXX LOADED");
 
 
   locationMap();
@@ -911,15 +896,10 @@ beforeEnter({next}) {
 
 
 
-afterLeave({current}) {
-
- /* return new Promise(resolve => {
-    setTimeout(resolve, 2000);
-  })*/
-  /*
+ beforeLeave({current}) {
     current.container.querySelector('mapbox-id').remove();
-    console.log("MAPBOX SCRIPT REMOVE JEEE");
-       */
+    console.log("MAPBOX SCRIPT REMOVE");
+         
       } 
     
     },{
