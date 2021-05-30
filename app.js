@@ -889,11 +889,11 @@ beforeEnter({next}) {
   newScript.src = "https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"
    //console.log("DODANA NOVA SKRIPTA");
   newScript.className = "main-script"
-  oldScript.remove()
+  oldScript.remove();
  console.log("UBIJENA STARA SKRIPTA");
   setTimeout(()=>{
   bottomDOM.appendChild(newScript)
-},3000)  
+},5000)  
   console.log("DODANA NOVA SKRIPTA NAKON 3 sekunde");
   /*
 
