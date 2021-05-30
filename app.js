@@ -784,8 +784,6 @@ function initPageTransitions() {
   });
   // do something after the transition finishes
   barba.hooks.after(() => {
-    select('html').classList.remove('is-transitioning');
-
     const bottomDOM = document.getElementsByTagName("body")[0]
     const newScript = document.createElement("script")
     const oldScript = document.querySelector(".main-script")
@@ -793,7 +791,12 @@ function initPageTransitions() {
     newScript.className = "main-script"
     oldScript.remove()
     bottomDOM.appendChild(newScript)
-    
+
+
+    select('html').classList.remove('is-transitioning');
+
+   
+
   });
 
   
@@ -898,7 +901,7 @@ views: [{
 
 beforeEnter({next}) {
 
-  
+  /*
 
   let script = document.createElement('script');
   script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js';
@@ -906,7 +909,7 @@ beforeEnter({next}) {
   next.container.appendChild(script); 
   console.log("MAPBOXX LOADED");
 
-
+*/
   locationMap();
 },
 
@@ -914,9 +917,9 @@ beforeEnter({next}) {
 
 
  beforeLeave({current}) {
-    current.container.querySelector('mapbox-id').remove();
+   /* current.container.querySelector('mapbox-id').remove();
     console.log("MAPBOX SCRIPT REMOVE");
-         
+      */   
       } 
     
     },{
