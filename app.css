@@ -968,6 +968,12 @@ SORTING CSS
  /*  float: right; */
 }
 
+
+.input_field input::-webkit-search-cancel-button {
+  -webkit-appearance: button !important;
+}
+
+
 .input_field {
   position: relative;
   display: block;
