@@ -977,7 +977,6 @@ SORTING CSS
   border: none;
   border-radius: 0;
   color: #231f20;
-  font-weight: normal;
   background: none;
   box-shadow: none;
   -webkit-appearance: none;
@@ -1002,9 +1001,9 @@ SORTING CSS
   padding: 0 0.25em;
   width: 100%;
   height: calc(100% - 1em);
-  color: #d2d6d5;
+ /*  color: #d2d6d5; */
   font-weight: light;
-  font-size: 15px;
+  font-size: 3em;
   text-align: left;
   pointer-events: none;
   -webkit-font-smoothing: antialiased;
