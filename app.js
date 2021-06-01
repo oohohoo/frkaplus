@@ -1479,8 +1479,8 @@ function locationMap() {
 },3000)  */
 
 
-  $(document).ready(function(){ 
-    setTimeout(()=>{ 
+
+   /* setTimeout(()=>{ */
 mapboxgl.accessToken = 'pk.eyJ1IjoiZm9nc2VsbGVyIiwiYSI6ImNrN2VpbXlpbjAwNDIzbnM1N2ZhMW9laGkifQ.DUf-8r1jXF4o7ApMUcKVXQ';
 var map = new mapboxgl.Map({
  /*  width: 100,
@@ -1535,11 +1535,11 @@ mapo.on('mouseout', function() {
 /*********************** */
 
 
- },500)  
+/*  },500) */  
 
   })
 
-}
+
 
 
 
