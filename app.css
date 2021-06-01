@@ -965,7 +965,7 @@ SORTING CSS
   width: calc(100% - 2em); */
   vertical-align: top;
   overflow: hidden;
-  float: right;
+ /*  float: right; */
 }
 
 .input_field {
