@@ -1033,6 +1033,7 @@ SORTING CSS
 
 .input_label-content {
   position: absolute;
+  font-weight: normal;
   width: 100%;
   bottom: 0.73em;
 }
