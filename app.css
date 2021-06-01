@@ -969,7 +969,7 @@ SORTING CSS
 }
 
 
-.input_field input::-webkit-search-cancel-button {
+input::-webkit-search-cancel-button {
   -webkit-appearance: button !important;
 }
 
