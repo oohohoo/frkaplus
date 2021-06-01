@@ -1002,7 +1002,7 @@ SORTING CSS
   width: 100%;
   height: calc(100% - 1em);
   color: #231f20;
-  font-size: 3em;
+  font-size: 1em;
   text-align: left;
   pointer-events: none;
   -webkit-font-smoothing: antialiased;
