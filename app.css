@@ -960,9 +960,9 @@ SORTING CSS
 }
 .catalog-search {
   position: relative;
-  margin: 0 1.04em;
+/*   margin: 0 1.04em;
   max-width: 14.32em;
-  width: calc(100% - 2em);
+  width: calc(100% - 2em); */
   vertical-align: top;
   overflow: hidden;
   float: right;
