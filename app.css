@@ -852,7 +852,7 @@ SORTING CSS
   /* Space between tiles */
   margin-top: 1em;
 }
-
+/*OVO ISKORISTI ZA TOGGLE*/
 .col-span {
   width: 50%;
 }
@@ -887,7 +887,7 @@ SORTING CSS
   padding-bottom: calc(112.5% + 8px);
 }
 
-
+/*
 .containersort {
   padding-left: 3.5%;
   padding-right: 3.5%;
@@ -902,6 +902,7 @@ SORTING CSS
 .containersort:after {
   clear: both;
 }
+*/
 /*
 .row {
   margin-left: auto;
