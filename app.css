@@ -1047,11 +1047,10 @@ SORTING CSS
   color: rgba(49, 49, 49, 0.45);
 }
 .input_label-search:after {
-  content: "";
+  content: "X";
   position: absolute;
   top: 7px;
   right: 5px;
-  font-family: "fontawesome";
 }
 
 .input_field:focus + .input_label::after,
