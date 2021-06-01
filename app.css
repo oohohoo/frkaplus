@@ -820,3 +820,288 @@ WIZARDRY 1920
 display:none!important;
 
 }
+
+/*
+================================================================================
+SORTING CSS
+================================================================================
+*/
+
+.js-shuffle {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.picture-item {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Bootstrap-style columns */
+.column {
+  position: relative;
+  float: left;
+  min-height: 1px;
+  width: 33%;
+  padding-left: 1em;
+  padding-right: 1em;
+  
+  /* Space between tiles */
+  margin-top: 1em;
+}
+
+.col-span {
+  width: 50%;
+}
+
+.the-sizer {
+  width: 8.33333%;
+}
+
+/* Ensure images take up the same space when they load */
+/* https://vestride.github.io/Shuffle/images */
+.aspect {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  overflow: hidden;
+}
+
+.aspect__inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.aspect--16x9 {
+  padding-bottom: 126%;
+}
+
+.aspect--9x80 {
+  padding-bottom: calc(112.5% + 8px);
+}
+
+
+.containersort {
+  padding-left: 3.5%;
+  padding-right: 3.5%;
+}
+
+.containersort:after,
+.containersort:before {
+  content: " ";
+  display: table;
+}
+
+.containersort:after {
+  clear: both;
+}
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row:after,
+.row:before {
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+/*
+.row .row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+*/
+.row--centered {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+*/
+
+
+
+/*
+ *  Search Input
+*/
+
+.xxx {
+   position: relative;
+  
+}
+.catalog-search {
+  position: relative;
+  margin: 0 20px;
+  max-width: 275px;
+  width: calc(100% - 2em);
+  vertical-align: top;
+  overflow: hidden;
+  float: right;
+}
+
+.input_field {
+  position: relative;
+  display: block;
+  float: right;
+  margin-top: 10px;
+  padding: 14px 7px 0;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  color: #313131;
+  font-weight: normal;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  /* for box shadows to show on iOS */
+}
+.input_field:focus {
+  outline: none;
+  border: none;
+  background: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+}
+.input_field:focus .input_label-content {
+  bottom: 20px;
+}
+
+.input_label {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  left: 0;
+  padding: 0 0.25em;
+  width: 100%;
+  height: calc(100% - 1em);
+  color: #d2d6d5;
+  font-weight: light;
+  font-size: 15px;
+  text-align: left;
+  pointer-events: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+.input_label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 10px);
+  border-bottom: 1px solid rgba(49, 49, 49, 0.45);
+}
+.input_label:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 2px;
+  width: 100%;
+  height: calc(100% - 10px);
+  border-bottom: 3px solid #219e9a;
+  transform: translate3d(-100%, 0, 0);
+  transition: transform 0.3s;
+}
+
+.input_label-content {
+  position: absolute;
+  width: 100%;
+  bottom: 14px;
+}
+
+.input_label-search {
+  position: relative;
+  display: block;
+  color: rgba(49, 49, 49, 0.45);
+}
+.input_label-search:after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: 5px;
+  font-family: "fontawesome";
+}
+
+.input_field:focus + .input_label::after,
+.input--filled .input_label::after {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.input_field:focus + .input_label .input_label-content,
+.input--filled .input_label-content {
+  -webkit-animation: anim-1 0.3s forwards;
+  animation: anim-1 0.3s forwards;
+}
+
+@-webkit-keyframes anim-1 {
+  50% {
+    opacity: 0;
+    -webkit-transform: translate3d(1em, 0, 0);
+    transform: translate3d(1em, 0, 0);
+  }
+  51% {
+    opacity: 0;
+    -webkit-transform: translate3d(-1em, -40%, 0);
+    transform: translate3d(-1em, -40%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -40%, 0);
+    transform: translate3d(0, -40%, 0);
+  }
+}
+@keyframes anim-1 {
+  50% {
+    opacity: 0;
+    bottom: 24px;
+    -webkit-transform: translate3d(5em, 0, 0);
+    transform: translate3d(5em, 0, 0);
+  }
+  51% {
+    opacity: 0;
+    bottom: 24px;
+    -webkit-transform: translate3d(-5em, -40%, 0);
+    transform: translate3d(-5em, -40%, 0);
+  }
+  100% {
+    opacity: 1;
+    bottom: 24px;
+    -webkit-transform: translate3d(0, -40%, 0);
+    transform: translate3d(0, -40%, 0);
+  }
+}
+
+
