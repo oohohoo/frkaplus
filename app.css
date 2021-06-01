@@ -902,7 +902,7 @@ SORTING CSS
 .containersort:after {
   clear: both;
 }
-
+/*
 .row {
   margin-left: auto;
   margin-right: auto;
@@ -922,7 +922,7 @@ SORTING CSS
   margin-left: -8px;
   margin-right: -8px;
 }
-*/
+
 .row--centered {
   display: flex;
   flex-wrap: wrap;
