@@ -1034,7 +1034,7 @@ SORTING CSS
 .input_label-content {
   position: absolute;
   width: 100%;
-  bottom: 0.73em;
+  bottom: 2em;
 }
 
 .input_label-search {
