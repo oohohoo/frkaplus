@@ -960,8 +960,8 @@ SORTING CSS
 }
 .catalog-search {
   position: relative;
-  margin: 0 20px;
-  max-width: 275px;
+  margin: 0 1.04em;
+  max-width: 14.32em;
   width: calc(100% - 2em);
   vertical-align: top;
   overflow: hidden;
@@ -972,14 +972,13 @@ SORTING CSS
   position: relative;
   display: block;
   float: right;
-  margin-top: 10px;
-  padding: 14px 7px 0;
+  margin-top: 0.52em;
+  padding: 0.73em 0.36em 0;
   width: 100%;
   border: none;
   border-radius: 0;
-  color: #313131;
+  color: #231f20;
   font-weight: normal;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: none;
   box-shadow: none;
   -webkit-appearance: none;
@@ -993,7 +992,7 @@ SORTING CSS
   -webkit-appearance: none;
 }
 .input_field:focus .input_label-content {
-  bottom: 20px;
+  bottom: 1.04em;
 }
 
 .input_label {
@@ -1020,18 +1019,18 @@ SORTING CSS
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(100% - 10px);
-  border-bottom: 1px solid rgba(49, 49, 49, 0.45);
+  height: calc(100% - 0.52em);
+  border-bottom: 1px solid #231f20;
 }
 .input_label:after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: 2px;
+  margin-top: 0.1em;
   width: 100%;
-  height: calc(100% - 10px);
-  border-bottom: 3px solid #219e9a;
+  height: calc(100% - 0.52em);
+  border-bottom: 3px solid #231f20;
   transform: translate3d(-100%, 0, 0);
   transition: transform 0.3s;
 }
@@ -1039,7 +1038,7 @@ SORTING CSS
 .input_label-content {
   position: absolute;
   width: 100%;
-  bottom: 14px;
+  bottom: 0.73em;
 }
 
 .input_label-search {
@@ -1050,8 +1049,8 @@ SORTING CSS
 .input_label-search:after {
   content: "X";
   position: absolute;
-  top: 7px;
-  right: 5px;
+  top: 0.36em;
+  right: 0.26em;
 }
 
 .input_field:focus + .input_label::after,
