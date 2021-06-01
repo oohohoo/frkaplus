@@ -1042,12 +1042,12 @@ SORTING CSS
   display: block;
   color: rgba(49, 49, 49, 0.45);
 }
-.input_label-search:after {
+/* .input_label-search:after {
   content: "X";
   position: absolute;
 /*   top: 0.36em;
   right: 0.26em; */
-}
+} 
 
 .input_field:focus + .input_label::after,
 .input--filled .input_label::after {
