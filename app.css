@@ -1001,8 +1001,7 @@ SORTING CSS
   padding: 0 0.25em;
   width: 100%;
   height: calc(100% - 1em);
- /*  color: #d2d6d5; */
-  font-weight: light;
+  color: #231f20;
   font-size: 3em;
   text-align: left;
   pointer-events: none;
