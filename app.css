@@ -968,11 +968,11 @@ SORTING CSS
  /*  float: right; */
 }
 
-
+/*
 input::-webkit-search-cancel-button {
   -webkit-appearance: button !important;
 }
-
+*/
 
 .input_field {
   position: relative;
@@ -985,7 +985,7 @@ input::-webkit-search-cancel-button {
   color: #231f20;
   background: none;
   box-shadow: none;
-/*   -webkit-appearance: none; */
+  -webkit-appearance: auto; 
   /* for box shadows to show on iOS */
 }
 .input_field:focus {
@@ -993,7 +993,7 @@ input::-webkit-search-cancel-button {
   border: none;
   background: none;
   box-shadow: none;
- /*  -webkit-appearance: none; */
+   -webkit-appearance: auto; 
 }
 .input_field:focus .input_label-content {
   bottom: 1.04em;
@@ -1013,7 +1013,7 @@ input::-webkit-search-cancel-button {
   pointer-events: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-touch-callout: none;
+   -webkit-touch-callout: none; 
   user-select: none;
 }
 .input_label:before {
