@@ -2880,6 +2880,8 @@ Demo.prototype.onAppendBoxes = function () {
 */
 document.addEventListener("DOMContentLoaded", function() {
   window.demo = new Demo(document.querySelector(".js-shuffle"));
+
+  console.log("SHUFFLE UČITAN");
 });
 
 
