@@ -1034,7 +1034,7 @@ SORTING CSS
 .input_label-content {
   position: absolute;
   width: 100%;
-  bottom: 2em;
+  bottom: 0.73em;
 }
 
 .input_label-search {
@@ -1064,19 +1064,19 @@ SORTING CSS
 @-webkit-keyframes anim-1 {
   50% {
     opacity: 0;
-    bottom: 0em;
+    bottom: 0.73em;
     -webkit-transform: translate3d(1em, 0, 0);
     transform: translate3d(1em, 0, 0);
   }
   51% {
     opacity: 0;
-    bottom: 0em;
+    bottom: 0.73em;
     -webkit-transform: translate3d(-1em, -40%, 0);
     transform: translate3d(-1em, -40%, 0);
   }
   100% {
     opacity: 1;
-    bottom: 0em;
+    bottom: 0.73em;
     -webkit-transform: translate3d(0, -40%, 0);
     transform: translate3d(0, -40%, 0);
   }
@@ -1096,7 +1096,7 @@ SORTING CSS
   }
   100% {
     opacity: 1;
-    /* bottom: 2em; */
+    bottom: 2em;
     -webkit-transform: translate3d(0, -40%, 0);
     transform: translate3d(0, -40%, 0);
   }
