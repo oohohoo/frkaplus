@@ -1007,7 +1007,7 @@ SORTING CSS
   pointer-events: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-touch-callout: none;
+/*   -webkit-touch-callout: none; */
   user-select: none;
 }
 .input_label:before {
