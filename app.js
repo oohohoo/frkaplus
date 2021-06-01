@@ -935,8 +935,8 @@ console.log("location map loaded");
 
  beforeLeave({current}) {
 
-  Shuffle.destroy();
-  console.log("Shuffle DESTROYED");
+  //Shuffle.destroy();
+  //console.log("Shuffle DESTROYED");
       } 
     
     },{
