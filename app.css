@@ -979,7 +979,7 @@ SORTING CSS
   color: #231f20;
   background: none;
   box-shadow: none;
-  -webkit-appearance: none;
+/*   -webkit-appearance: none; */
   /* for box shadows to show on iOS */
 }
 .input_field:focus {
@@ -987,7 +987,7 @@ SORTING CSS
   border: none;
   background: none;
   box-shadow: none;
-  -webkit-appearance: none;
+ /*  -webkit-appearance: none; */
 }
 .input_field:focus .input_label-content {
   bottom: 1.04em;
@@ -1048,7 +1048,7 @@ SORTING CSS
   position: absolute;
 /*   top: 0.36em;
   right: 0.26em; */
-} 
+/* }  */
 
 .input_field:focus + .input_label::after,
 .input--filled .input_label::after {
