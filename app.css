@@ -979,7 +979,7 @@ SORTING CSS
   color: #231f20;
   background: none;
   box-shadow: none;
-  -webkit-appearance: none;
+/*   -webkit-appearance: none; */
   /* for box shadows to show on iOS */
 }
 .input_field:focus {
@@ -987,7 +987,7 @@ SORTING CSS
   border: none;
   background: none;
   box-shadow: none;
-  -webkit-appearance: none;
+/*   -webkit-appearance: none; */
 }
 .input_field:focus .input_label-content {
   bottom: 1.04em;
@@ -1004,11 +1004,11 @@ SORTING CSS
   color: #231f20;
   font-size: 1em;
   text-align: left;
-  pointer-events: none;
+ /*  pointer-events: none; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-touch-callout: none;
-  user-select: none;
+/*   -webkit-touch-callout: none;
+  user-select: none; */
 }
 .input_label:before {
   content: "";
