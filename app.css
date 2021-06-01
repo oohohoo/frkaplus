@@ -972,7 +972,7 @@ SORTING CSS
   position: relative;
   display: block;
   float: right;
-  padding: 0.5em;
+  padding: 0.5em 1.3em 1.5em 0em;
   width: 100%;
   border: none;
   border-radius: 0;
