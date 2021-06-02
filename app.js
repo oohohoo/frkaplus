@@ -1444,9 +1444,7 @@ var map = new mapboxgl.Map({
 container: 'map', // container ID
 style: 'mapbox://styles/fogseller/cknip0h0j0oqm17mgvd8wwi8y', // style URL
 center: [16.527, 44.663], // starting position [lng, lat]
-/* zoom: 6.64, // starting zoom */
-pitch: 60, // pitch in degrees
-/* bearing: -60, // bearing in degrees */
+zoom: 6.64 // starting zoom
 });
 
 map.on('click', function(e) {
