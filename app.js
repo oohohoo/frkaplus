@@ -640,7 +640,7 @@ function initPageTransitions() {
   // do something after the transition finishes
   barba.hooks.after(() => {
     select('html').classList.remove('is-transitioning');
-    ScrollTrigger.refresh();
+
   });
 
 
@@ -2789,11 +2789,7 @@ HOME - SCROLLTRIGGER - VIDEO position & zoom
 
 function homeScrolltrigger() {
  /*  setTimeout(()=>{ */
-    /* scrollTrigger.refresh(); */
-    $(document).ready(function(){
-  
-   
-    
+  scrollTrigger.refresh(); 
 let videoroll = gsap.timeline()
 
 let cover = document.querySelector('.bgvideo')
@@ -2812,8 +2808,6 @@ videoroll.to(".bgvideo", {
   rotate:0,
   yPercent:-30
 })
-
-});
 
 /* },3000)   */
 
