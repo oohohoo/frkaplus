@@ -880,6 +880,10 @@ views: [{
 },{
     namespace: 'lokacije',
    
+  },
+  once(){
+    sorting();
+    },
 
 beforeEnter({next}) {
   sorting();
