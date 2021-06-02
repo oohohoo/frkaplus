@@ -1448,7 +1448,7 @@ zoom: 6.64 // starting zoom
 });
 
 
-map.on('load', function() {
+map.on('load', function(e) {
 
   // Create a popup
   var popup = new mapboxgl.Popup({
