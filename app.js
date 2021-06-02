@@ -48,7 +48,7 @@ function init() {
   // setup variables
   let loadedImageCount = 0,
     imageCount;
-  const container = select('.main-wrapper');
+  const container = select('.smooth-scroll');
 
   // setup Images loaded
   const imgLoad = imagesLoaded(container);
@@ -116,7 +116,9 @@ function initScroll(container) {
   });
 
 /*AKAPOWL JE OVO DODAO --- testiraj*/
- /*  locoScroll.update(); */
+  locoScroll.update();
+
+
 
   // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
   locoScroll.on("scroll", ScrollTrigger.update);
@@ -171,6 +173,40 @@ videoroll.to(".bgvideo", {
   yPercent:-30
 })
 
+
+.to(".hero--white--background", {
+  scrollTrigger: {
+    scroller: ".smooth-scroll",
+    trigger: firstSection,    
+    start: 'top 20%',
+    end: "+=30%",    
+    scrub: 2,
+  },
+  /*clipPath: 'inset(60%)',*/
+  duration: 0.2,
+  autoAlpha:0,
+  rotate:0,
+ 
+})
+
+/* 
+.from(".videoplay", {
+  scrollTrigger: {
+    scroller: ".smooth-scroll",
+    trigger: firstSection,    
+    start: 'top 60%',
+    end: "+=30%",    
+    scrub: 2,
+  },
+  
+  duration: 0.2,
+  autoAlpha:0,
+  
+  
+ 
+}) */
+
+
 /*OUTLINE TEXT OVER IMAGE MASK */
 
 
@@ -213,6 +249,64 @@ gsap.to(".roll-number-wrap", {
 });
 
 
+/* SCROLLTRIGGER LERP IMAGES - DELAY without LOCOMOTIVE SCROLL*/
+
+/* const delSections = document.querySelectorAll(".delayed-section");
+
+delSections.forEach(section => {
+  const containerAnim = gsap.to(section.querySelector(".inner-container"), {
+    y: "100vh",
+    ease: "none"
+  });
+  
+  const imageAnim = gsap.to(section.querySelector("img"), {
+    y: "-100vh",
+    ease: "none",
+    paused: true
+  });
+  
+  const scrub = gsap.to(imageAnim, {
+    progress: 1,
+    paused: true,
+    ease: "power3",
+    duration: parseFloat(section.dataset.scrub) || 0.1,
+    overwrite: true
+  });
+  
+  ScrollTrigger.create({
+    animation: containerAnim,
+    scroller: ".smooth-scroll",
+    scrub: true,
+    trigger: "#iskustvo",
+    start: "top bottom",
+    end: "bottom top",
+    onUpdate: self => {
+      scrub.vars.progress = self.progress;
+      scrub.invalidate().restart();
+    }
+  });
+}); */
+
+
+/*
+gsap.set('.imagex', {x:400});
+gsap.to(".imagex", {
+  scrollTrigger:{
+  scroller: ".smooth-scroll",
+    trigger: ".imagex",
+    start: "top bottom", 
+    end: "bottom top", 
+    scrub: 1,
+/*                 onRefresh: ({progress, direction, isActive}) => console.log(progress, direction, isActive)
+*/
+    /*
+  },
+  x: -200,
+
+})
+
+*/
+
 /*------------/ SCROLLTRIGGER INNER IMAGE PARALLAX /------------*/
 
 gsap.utils.toArray(".grid").forEach(section => {
@@ -236,6 +330,10 @@ inparallax.from(pimages, {
 
 });
 
+
+ 
+  /*NE ZNAM DA LI OVO IDE???*/
+  //locoScroll.update();
 
 /* PREVENT SCROLL UNDER FS MENU*/
 function handler1() {
@@ -294,41 +392,13 @@ showAnim
 .to(".header-contact--button", {scale:0.7, x:"5.1em"},"<0.2")
 //.to(".kont-color", {color: "black", duration:0.2},"<0.2");
 
-  /* =============================================
-NUMBER COUNT from some value 01
-================================================ */
 
-function counteronama() {
-
-  var cont={val:990} , newval = 1000 ;
-  
-  gsap.to(cont,2,{
-  scrollTrigger:{
-        scroller: ".smooth-scroll",
-          trigger: ".tisucu",
-          start: "top 100%", 
-          end: "bottom top", 
-          toggleActions: "restart none none reset",
-          //scrub: 1,
-          
-        },
-        
-  val:newval,
-  roundProps:"val",
-  onUpdate:function(){
-    document.getElementById("counternew").innerHTML=cont.val
-    
-  }});
-  
-  }
-
-  
 
 
 /* =============================================
 004 - SCROLLTRIGGER BATCH - TEXT REVEAL MULTILINE / VERZIJA 1
 ================================================ */
-/*
+
 gsap.set('.reveal', {autoAlpha: 0, yPercent: 200});
 
 ScrollTrigger.batch(".batch-text", {
@@ -349,7 +419,7 @@ scroller: ".smooth-scroll",
   start: "top 95%"
 });
 
-*/
+
 /* OVO JE UBAČENO NAKNADNO
 
 ScrollTrigger.addEventListener("refreshInit", resize);
@@ -362,6 +432,12 @@ console.log("refresh init mamicu mu AJMOOOO");
   // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
   ScrollTrigger.refresh();
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
+
+
+
+
+
+
 
 
 
@@ -425,6 +501,55 @@ function roll(targets, vars, reverse) {
   });
   return tl;
 }
+
+
+ 
+
+
+
+/* sort shuffle*/
+/*
+var Shuffle = window.Shuffle;
+var element = document.querySelector('.my-shuffle-container');
+var sizer = element.querySelector('.my-sizer-element');
+
+var shuffleInstance = new Shuffle(element, {
+  itemSelector: '.picture-item',
+  sizer: sizer // could also be a selector: '.my-sizer-element'
+});
+// shuffleInstance.filter('animal');
+$("#all").on("click", function(){
+   shuffleInstance.filter();
+});
+$("#btn-animal").on("click", function(){
+   shuffleInstance.filter('animal');
+});
+$("#btn-city").on("click", function(){
+   shuffleInstance.filter('city');
+});
+$("#btn-nature").on("click", function(){
+   shuffleInstance.filter('nature');
+   locoScroll.update();
+console.log("LOCOSCROLL UPDATED AFTER SORT");
+});
+
+*/
+/*
+ScrollTrigger.refresh();
+console.log("SCROLLTRIGGER UPDATED AFTER SORT");
+*/
+
+
+
+
+/*
+var video = document.getElementById("bgvid");
+video.oncanplaythrough = function() {
+    video.muted = true;
+    video.play();
+   console.log("RADIDIIDIIDIDIDIDIDI");
+}
+*/
 
 
 /*
@@ -615,6 +740,10 @@ function pageTransitionIn({
   .fromTo(loaderMask, {yPercent: 80}, {yPercent: 0}, 0)
   .to(container, {y: 80, force3D:true}, 0);
 
+/*
+  .to(container, {autoAlpha:0}, 0);
+*/
+
   return tl;
 }
 
@@ -633,8 +762,11 @@ function pageTransitionOut({
     onComplete: () => initContent()
   });
   tl
+/*
+    .from(container, {autoAlpha:0}, 0);
+  */
 
-  .to(loader, {yPercent: 100})
+    .to(loader, {yPercent: 100})
     .to(loaderMask, {yPercent: -80}, 0)
     .from(container, {y: -80}, 0);
     return tl;
@@ -666,7 +798,7 @@ function initPageTransitions() {
   //kill scrolltrigger
   barba.hooks.beforeLeave(() => {
    locoScroll.destroy(); 
-     //KILL SCROLLTRIGGERRRRR PREBAČEN OD ISPOD IZ BEFOREENTER
+     //KILL SCROLLTRIGGERRRRR PREBAČEN
      if (ScrollTrigger.getAll().length > 0) {
       ScrollTrigger.getAll().forEach((trigger) => {
           trigger.kill()
@@ -696,7 +828,7 @@ function initPageTransitions() {
   */
 
   barba.init({
-   timeout: 5000, 
+   /*  timeout: 5000, */
     debug: true,
     prefetch: true,
   /*
@@ -708,23 +840,38 @@ views: [{
   namespace: 'home',
 
   beforeEnter(data) {
+    /* heroSwiper(); */
     heroApeli();
+
     document.getElementById('homevid').play();
- 
+
+  /* imgoverlay(); */
+    /*heroSwiper();
+  console.log("HERO SWIPER loooooooaded!");*/
+  
   },
   once(data) {
-
+    
+    /* titleHero(); */
+    /* heroSwiper(); */
   },
   afterEnter(data) {
    }
 
+
 },{
   namespace: 'onama',
   beforeEnter(){
-    /*simpleaccordion();
-    counteronama();*/
-   console.log("counterLOADED");
+    simpleaccordion();
+    counteronama();
+    
+    console.log("counterLOADED");
+    /* counteriOnama();
+    console.log("COUNTER LOADED"); */
+ /*    locoAccordion(); */
 
+   // projectsHeroAnima();
+ 
     },
   once(){
     
@@ -734,18 +881,22 @@ views: [{
     namespace: 'lokacije',
   
   once(){
+    sorting();
     },
 
 beforeEnter({next}) {
   sorting();
   locationMap();
   
+
 console.log("location SORTING pa MAP LOADED");
  
 },
 
  beforeLeave({current}) {
 
+  //Shuffle.destroy();
+  //console.log("Shuffle DESTROYED");
       } 
     
     },{
@@ -764,37 +915,62 @@ console.log("location SORTING pa MAP LOADED");
   beforeEnter(data) {
     locationMap();
     swiperlocation();
+    scrolltriggerupdate();
     openTestYourDesign();
     saveaspdftest();
+   /*  locationMap(); */
+    /* locationMap(); */
+    //contactHeroAnima();
+
   }},{
 
     namespace: 'npp',
-
+    once(data) {
+      
+    },
+  
     beforeEnter(data) {
-    simpleaccordion();
-             
+      simpleaccordion();
+      
+     
+      
+       
     }},{
 
-    namespace: 'uvjeti',
-     
+      namespace: 'uvjeti',
+    once(data) {
+      
+    },
+  
     beforeEnter(data) {
-    simpleaccordion();
+      simpleaccordion();
      
+      
+       
     }},{
 
       namespace: 'privatnost',
+      once(data) {
         
+      },
+    
       beforeEnter(data) {
-      simpleaccordion();
+        simpleaccordion();
         
+
+         
       }},{
 
   },{
 
     namespace: 'reference',
-
+    once(data) {
+      
+    },
+  
     beforeEnter(data) {
-    logohover();
+       
+      logohover();
        
     }},{
 
@@ -805,11 +981,11 @@ console.log("location SORTING pa MAP LOADED");
     
       beforeEnter({next}) {
        
-/*
+
           let script = document.createElement('script');
   script.src = 'https://frkaplus.netlify.app/pages/fullscreenzoom.js';
   next.container.appendChild(script); 
-*/
+
 
         zoomimage(); 
  
@@ -848,6 +1024,10 @@ console.log("location SORTING pa MAP LOADED");
         // do something once on the initial page load
         initLoader();
         
+        /* kontaktfs();
+        console.log("FSKONTAKT LOADED"); */
+        /*fullscreenMenuNew(); */
+        /* underlineMouseover(); */
                 
       },
 
@@ -875,7 +1055,13 @@ console.log("location SORTING pa MAP LOADED");
 
       beforeEnter({next}) {
         magnetic();
-            },
+       
+      /*   heroSwiper(); */
+     /*    kontaktfs();
+        console.log("FSKONTAKT LOADED"); */
+       /*  counteriOnama(); */
+        /* underlineMouseover(); */
+     },
 
     }],
 
@@ -927,12 +1113,318 @@ console.log("location SORTING pa MAP LOADED");
 
 }
 
+/*
+================================================================================
+MENU - UNDERLINE AND HAMBURGER ANIMATION
+================================================================================
+*/
 
+function underlineMouseover() {
+
+
+  /*
+  ================================================================================
+  MENU UNDERLINE
+  ================================================================================
+  */
+
+  // Mouseenter function
+  function enterAnimation(link, e, index) {
+    link.tl.tweenFromTo(0, "midway");
+  }
+  // Mouseleave function
+  function leaveAnimation(link, e) {
+    link.tl.play();
+  }
+  // Animations variables
+  let workLinkUnderlineAnimEnter;
+  let workLinkUnderlineAnimLeave;
+
+  // Get all links
+  let workLinks = document.querySelectorAll(".link-wrapper");
+
+  workLinks.forEach((link, index, value) => {
+
+  let underline = link.querySelector(".underline");
+  link.tl = gsap.timeline({paused: true});
+  link.tl.fromTo(underline, {width: "0%", left: "0%"}, {width: "100%", duration: 0.3, ease: "power1.out"});
+  link.tl.add("midway");
+  link.tl.fromTo(underline, {width: "100%",left: "0%"}, {width: "0%",left: "100%", duration: 0.3, ease: "power1.in", immediateRender: false});
+
+  // Mouseenter
+  link.addEventListener("mouseenter", (e) => {
+       enterAnimation(link, e, index);
+  });
+
+  // Mouseleave
+  link.addEventListener("mouseleave", (e) => {
+    leaveAnimation(link, e);
+    });
+
+  });
+
+}
 
 
 /*
 ================================================================================
-LOCATION MAP
+HOME PAGE TITLE & HERO GALLERY
+================================================================================
+*/
+function titleHero() {
+
+  //Splitting();
+  
+ /*
+ ================================================================================
+ CLIPPING PATH MASK REVEAL & TEXT REVEAL
+ ================================================================================
+ */
+
+ const mq = window.matchMedia('(min-width: 999px)')
+if (mq.matches) {
+ var animation = gsap.timeline({defaults:{ease: "power3.inOut"}})
+ animation
+ .from(".char", {stagger:0.02, yPercent:130, duration:1.5})
+ .fromTo(".clip", {autoAlpha:0, y:200, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
+ { autoAlpha:1, duration:2, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, "-=1.8")
+
+}
+else {
+var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
+  heroanimation
+.set(".char", {autoAlpha:1} ); 
+}
+
+}
+
+/*
+================================================================================
+PROJECTS - HERO ANIMACIJA
+================================================================================
+*/
+function projectsHeroAnima() {
+
+  //Splitting();
+
+const mq = window.matchMedia('(min-width: 999px)')
+if (mq.matches) {
+  var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
+  heroanimation
+  .from(".char", {duration:1.5, stagger:0.02, yPercent:130})
+  .fromTo(".in1", {autoAlpha:0, y:40},{duration:0.8,autoAlpha:1, y:0}, "<0.6")
+  .fromTo(".in2", {autoAlpha:0, y:40},{duration:0.6, autoAlpha:1, stagger:0.2, y:0}, "<0.1")
+  .fromTo(".clip", {y:200, autoAlpha:0, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
+  {autoAlpha:1, duration:2, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, "-=2")
+
+}
+else {
+  var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
+  heroanimation
+.set(".in1, .in2", {autoAlpha:1} );
+}
+
+  }
+
+  /*
+================================================================================
+TAILORED - HERO ANIMACIJA
+================================================================================
+*/
+function tailoredHeroAnima() {
+
+  Splitting();
+  
+const mq = window.matchMedia('(min-width: 999px)')
+if (mq.matches) {
+var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
+  heroanimation
+  .from(".char", {duration:1.5, stagger:0.02, yPercent:130})
+  .fromTo(".t1", {autoAlpha:0, y:40},{duration:0.8, stagger:0.02, autoAlpha:1, y:0}, "<0.6")
+  .fromTo(".clip", {y:200, autoAlpha:0, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
+  {autoAlpha:1, duration:2, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, "-=1.8")
+
+}
+else {
+  var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
+  heroanimation
+.set(".t1", {autoAlpha:1} )
+.set(".clip", {autoAlpha:1} )
+}
+
+}
+
+/*
+================================================================================
+CONTACT - HERO ANIMACIJA
+================================================================================
+*/
+function contactHeroAnima() {
+
+Splitting();
+
+const mq = window.matchMedia('(min-width: 999px)')
+if (mq.matches) {
+var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
+heroanimation
+.from(".char", {stagger:0.02, duration:1.5,yPercent:130})
+.fromTo(".c1", {autoAlpha:0, y:40},{duration:0.8, autoAlpha:1, stagger:0.02, y:0}, "-=1.2")
+
+}
+else {
+  var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
+  heroanimation
+.set(".c1", {autoAlpha:1} );
+}
+
+}
+ 
+/*
+================================================================================
+SWIPER - HERO ANIMACIJA
+================================================================================
+*/
+/*
+function heroSwiper() {
+  var swiper = new Swiper('.swiper-container', {
+    // pagination: '.swiper-pagination',
+      navigation: {
+  nextEl: '.next',
+  prevEl: '.prev',
+},
+     direction: 'horizontal',
+     resistanceRatio:0.5,
+     slidesPerView: 4,
+     longSwipes:true,
+     longSwipesRatio:0.5,
+     touchRatio:5,
+     //paginationClickable: true,
+     spaceBetween: 20,
+     //mousewheelControl: true,
+     parallax: true,
+     //preloadImages: true,
+     updateOnImagesReady: true,
+    // centeredSlides: true,
+    slidesOffsetBefore: 300,
+     speed: 600,
+     grabCursor: true,
+     breakpoints: {
+                     500: {
+                      //   spaceBetween: 30,
+                       //  loopedSlides: 3,
+                        // slidesPerView: 1
+                     },
+                     1e3: {
+                       //  loopedSlides: 3,
+                        // spaceBetween:10,
+                        // slidesPerView: 1.1
+                     },
+                     1200: {
+                      //   spaceBetween: 20,
+                         // loopedSlides: 3,
+                        // slidesPerView: 3.1
+                     }
+                 }
+
+ });
+
+$('.swiper-container').on('mousedown touchstart', function(event) {
+gsap.to('.swiper-slide', {scale: 0.9, duration: 0.4});
+});
+console.log("SWIPER BISE TREBA SMANJITI");
+
+$('.swiper-container').on('mouseup touchend', function(event) {
+gsap.to('.swiper-slide', {scale:1, duration: 0.4, delay:0.2});
+});
+console.log("SWIPER BISE TREBA VRATITI NA STARU DIMENZIJU");
+}
+*/
+
+/*
+================================================================================
+LOCO ACCORDION
+================================================================================
+*/
+
+function locoAccordion() {
+
+
+
+//jQuery Accordion Stuff
+var accordion = (function(){
+
+  var $accordion = $('.js-accordion');
+  var $accordion_header = $accordion.find('.js-accordion-header');
+  var $accordion_item = $('.js-accordion-item');
+  var delayInMilliseconds = 100; //10th of a second
+  // default settings 
+  var settings = {
+    // animation speed
+    speed: 400,
+    
+    // close all other accordion items if true
+    oneOpen: false
+  };
+    
+  return {
+    // pass configurable object literal
+    init: function($settings) {
+      $accordion_header.on('click', function() {
+           
+        accordion.toggle($(this));
+      
+        setTimeout(() => {
+          $('body, html').animate({ 
+            scrollTop: $(this).offset().top     
+           }, 500) //pause before scroll to top
+        }, 400) //duration of scroll to top
+        
+        setTimeout(function() { 
+          locoScroll.update();
+          console.log("LOCOSCROLL ACCORDION UPDATE!");
+    }, delayInMilliseconds);
+      });
+      
+      $.extend(settings, $settings); 
+      
+      // ensure only one accordion is active if oneOpen is true
+      if(settings.oneOpen && $('.js-accordion-item.active').length > 1) {
+        $('.js-accordion-item.active:not(:first)').removeClass('active');
+      }
+      
+      // reveal the active accordion bodies
+      $('.js-accordion-item.active').find('> .js-accordion-body').show();
+    },
+    toggle: function($this) {
+            
+      if(settings.oneOpen && $this[0] != $this.closest('.js-accordion').find('> .js-accordion-item.active > .js-accordion-header')[0]) {
+        $this.closest('.js-accordion')
+               .find('> .js-accordion-item') 
+               .removeClass('active')
+               .find('.js-accordion-body')
+               .slideUp()
+      }
+      
+      // show/hide the clicked accordion item
+      $this.closest('.js-accordion-item').toggleClass('active');
+      $this.next().stop().slideToggle(settings.speed);
+    }
+  }
+})();
+
+$(document).ready(function(){
+  
+  accordion.init({ speed: 1000, oneOpen: true }); //duration of opening body__contents
+});
+
+
+
+}
+
+
+/*
+================================================================================
+LOCO ACCORDION
 ================================================================================
 */
 
@@ -1086,7 +1578,7 @@ mapo.on('mouseout', function() {
 /*********************** */
 
 
- },500)  
+ },2000)  
 
   }
 
@@ -1158,6 +1650,58 @@ var menu = ['', '', '', '', '', '']
  /*  } */
   })        
   
+}
+
+/*
+================================================================================
+IMAGE HOVER
+================================================================================
+*/
+
+
+function imgoverlay() {
+
+
+  var cursor = $(".cursor"),
+  overlay = $(".project-overlay");
+
+gsap.set(cursor, {opacity:0});
+
+function moveCircle(e) {
+gsap.to(cursor, {
+  duration:.5,
+  css: {
+    left: e.pageX,
+    top: e.pageY
+  }
+});
+}
+
+$(".p-1").hover(function(){
+$(".cursor").css({"background-image": "url(https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60a0dff0289cd76afcb13a51_test12.jpg)" });
+});
+
+$(".p-2").hover(function(){
+$(".cursor").css({ "background-image": "url(https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60a0dff0d8e1e225cd7c2783_test11.jpg)" });
+});
+$(".p-3").hover(function(){
+$(".cursor").css({ "background-image": "url(https://i.pinimg.com/474x/0e/04/6e/0e046e6bf35d98e2729c389395945435.jpg)" });
+});
+$(".p-4").hover(function(){
+$(".cursor").css({ "background-image": "url(https://i.pinimg.com/474x/0e/04/6e/0e046e6bf35d98e2729c389395945435.jpg)" });
+});
+
+var flag = false;
+$(overlay).mousemove(function() {
+flag = true;
+gsap.to(cursor, {duration: 0.3, scale: 1, autoAlpha: 1});
+$(overlay).on("mousemove", moveCircle);
+});
+
+$(overlay).mouseout(function() {
+flag = false;
+gsap.to(cursor, {duration: 0.3, scale: 0.1, autoAlpha: 0});
+});
 }
 
 
@@ -1240,6 +1784,188 @@ var action = gsap.timeline({repeat:-1, defaults:{duration:0.8, ease:'none'}})
 .to('.fadeheader', {autoAlpha:0, stagger:5}, 4)
 
 }
+
+/* =============================================
+O NAMA COUNTERI
+================================================ */
+
+
+
+/* function counteriOnama() {
+
+
+
+ const items = document.querySelectorAll(".data");
+
+gsap.from(items, {
+scrollTrigger:{
+      scroller: ".smooth-scroll",
+				trigger: ".counter-container",
+				start: "top center", 
+				end: "bottom top", 
+        toggleActions: "restart none none reset",
+				//scrub: 1,
+				
+			},
+  textContent: 0,
+  duration: 4,
+  ease: "power1.in",
+  snap: { textContent: 1 },
+  stagger: {
+    each: 1.0,
+    onUpdate: function() {
+      this.targets()[0].innerHTML = numberWithCommas(Math.ceil(this.targets()[0].textContent));
+    },
+  }
+});
+
+
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+} 
+ */
+
+/* NUMBER COUNT from some value 01 */
+
+/* var cont={val:195} , newval = 200 ;
+
+gsap.to(cont,2,{
+scrollTrigger:{
+      scroller: ".smooth-scroll",
+				trigger: ".numbercounter",
+				start: "top 90%", 
+				end: "bottom top", 
+        toggleActions: "restart none none reset",
+				//scrub: 1,
+				
+			},
+      
+val:newval,
+roundProps:"val",
+onUpdate:function(){
+  document.getElementById("counterx").innerHTML=cont.val
+  
+}}); */
+
+
+
+/* NUMBER COUNT from some value 02 */
+
+/*
+var cont={val:197} , newval = 200 ;
+
+gsap.to(cont,2.5,{
+scrollTrigger:{
+      scroller: ".smooth-scroll",
+				trigger: ".numbercounter2",
+				start: "top 90%", 
+				end: "bottom top", 
+        toggleActions: "restart none none reset",
+				//scrub: 1,
+				
+			},
+      
+val:newval,
+roundProps:"val",
+onUpdate:function(){
+  document.getElementById("countery").innerHTML=cont.val
+  
+}});
+
+}
+*/
+/* =============================================
+O NAMA COUNTERI
+================================================ */
+/*
+
+
+function kontaktfs() {
+// Timeline created and paused
+var tl = gsap.timeline({ paused: true });
+
+function openNav() {
+  animateOpenNav();
+  var navBtn = document.getElementById("nav");
+  navBtn.onclick = function (e) {
+    // Toggle reversed to it's opposite value
+    tl.reversed(!tl.reversed());
+    // Use the toggle method in the classList API
+    navBtn.classList.toggle("active");
+  };
+}
+
+
+
+/* =============================================
+KONTAKT FULLSCREEW OPEN
+================================================ */
+
+/*
+
+function animateOpenNav() {
+  var mobileNav = document.getElementById("krug");
+  tl
+  .set('body', { overflow: 'hidden' })
+  .to(mobileNav, {duration: 0.6, ease: "power1.in", scale:30 })
+  .to(".fs--menu", {duration: 0.6, ease: "power1.in", autoAlpha:0 })
+  
+  //.to('.kontakt-back', {y, ease: "power1.in"})
+    .to(".nav__link", {opacity: 1, y: 0,duration: 0.2, stagger: {// wrap advanced options in an object
+      each: 0.2,
+      //ease: "power1.in"
+    }
+  })
+  
+
+  
+  .reverse(); // Finally reverse the timeline. reversed() is true
+}
+
+// init
+openNav();
+  
+
+}
+*/
+
+
+
+
+  /* =============================================
+NUMBER COUNT from some value 01
+================================================ */
+
+function counteronama() {
+
+var cont={val:990} , newval = 1000 ;
+
+gsap.to(cont,2,{
+scrollTrigger:{
+      scroller: ".smooth-scroll",
+				trigger: ".tisucu",
+				start: "top 100%", 
+				end: "bottom top", 
+        toggleActions: "restart none none reset",
+				//scrub: 1,
+				
+			},
+      
+val:newval,
+roundProps:"val",
+onUpdate:function(){
+  document.getElementById("counternew").innerHTML=cont.val
+  
+}});
+
+}
+
+
+
+function scrolltriggerupdate() {
+  ScrollTrigger.update();
+  }
+  
 
 
 
@@ -1361,6 +2087,21 @@ REFERENCE LOGOTIP HOVER
 ================================================ */
 
 function logohover() {
+/* 
+  gsap.utils.toArray(".reference-box").forEach(logo => {
+    gsap.to(logo, {
+      color: "#231f20",
+      backgroundColor: "#231f20",
+      duration: 0.6,
+      ease: "power1.inOut",
+      scrollTrigger: {
+        trigger: logo,
+        //scrub: 1
+      }
+    });
+  }) */
+  
+
 
   gsap.utils.toArray(".reference--logo-wrap").forEach(container => {
     let logoitem = container.querySelector(".reference-box"),
@@ -1372,6 +2113,10 @@ function logohover() {
     container.addEventListener("mouseenter", () => tl.play() );
     container.addEventListener("mouseleave", () => tl.reverse() );
   });
+
+
+
+
 
 }
 
@@ -1517,13 +2262,18 @@ function openTestYourDesign() {
   const button = document.querySelector('.printtopdf');
 button.addEventListener('click', () => {window.print()});
 
+
+
 }
+
+
 
 
 
 
 function matrixtransform() {
  
+
 /*TRANSFORM MATRIX 3d GENERATOR*/
 (function() {
   var $, applyTransform, getTransform, makeTransformable;
