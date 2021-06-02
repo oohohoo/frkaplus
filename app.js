@@ -1446,11 +1446,6 @@ center: [16.527, 44.663], // starting position [lng, lat]
 zoom: 6.64 // starting zoom
 });
 
-map.on('load', function (e) {
-var mapContainerEl = document.getElementById('map');
-mapContainerEl.style.visibility = 'visible';
-});
-
 map.on('click', function(e) {
   // If the user clicked on one of your markers, get its information.
   var features = map.queryRenderedFeatures(e.point, {
@@ -1474,6 +1469,13 @@ map.on('click', function(e) {
     .addTo(map);
     console.log("interactivityyyyy");
 });
+
+map.on('load', function (e) {
+var mapContainerEl = document.getElementById('map');
+mapContainerEl.style.visibility = 'visible';
+});
+
+
 /* map.on('idle',function(){
   map.resize()
   console.log("MAP RESIZEEEEE!");
