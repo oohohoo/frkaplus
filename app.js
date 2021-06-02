@@ -697,7 +697,7 @@ views: [{
   beforeEnter(data) {
     /* heroSwiper(); */
     heroApeli();
-
+    homeScrolltrigger();
     document.getElementById('homevid').play();
 
   /* imgoverlay(); */
@@ -2784,11 +2784,10 @@ S C R O L L T R I G G E R  FUNCTIONS
 
 /*
  ============================================================================
-HOME - VIDEO position & zoom 
+HOME - SCROLLTRIGGER - VIDEO position & zoom 
 ================================================================================ */
 
-function outlineScrolltrigger() {
-
+function homeScrolltrigger() {
 
 let videoroll = gsap.timeline()
 
