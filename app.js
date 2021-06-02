@@ -1004,9 +1004,9 @@ console.log("location SORTING pa MAP LOADED");
       beforeEnter({next}) {
        
 
-          let script = document.createElement('script');
+          /* let script = document.createElement('script');
   script.src = 'https://frkaplus.netlify.app/pages/fullscreenzoom.js';
-  next.container.appendChild(script); 
+  next.container.appendChild(script);  */
 
 
         zoomimage(); 
