@@ -1447,6 +1447,38 @@ center: [16.527, 44.663], // starting position [lng, lat]
 zoom: 6.64 // starting zoom
 });
 
+
+map.on('load', function() {
+
+  // Create a popup
+  var popup = new mapboxgl.Popup({
+    closeButton: false,
+    closeOnClick: false
+  });
+
+  function showPopup(e) {
+    // Change the cursor
+    map.getCanvas().style.cursor = 'pointer';
+
+    // Show the popup
+    popup.setLngLat(e.features[0].geometry.coordinates)
+      .setHTML(checkEmpty(e.features[0].properties.name))
+      .addTo(map);
+  }
+
+  function hidePopup() {
+    map.getCanvas().style.cursor = '';
+    popup.remove();
+  }
+
+  function checkEmpty(info) {
+    return (info) ? info : "No data";
+  }
+
+   map.on('mouseenter', 'places', showPopup);
+   map.on('mouseleave', 'places', hidePopup);
+});
+/*
 map.on('click', function(e) {
   // If the user clicked on one of your markers, get its information.
   var features = map.queryRenderedFeatures(e.point, {
@@ -1462,10 +1494,11 @@ map.on('click', function(e) {
     Create a popup, specify its options 
     and properties, and add it to the map.
   */
+ /*
     var popup = new mapboxgl.Popup({ offset: [0, -15] })
     .setLngLat(feature.geometry.coordinates)
     .setHTML(
-     /* '<h3>' + feature.properties.title + '</h3>' +*/
+      '<h3>' + feature.properties.title + '</h3>' 
       '<p>' + feature.properties.description + '</p>'
       )
     .addTo(map);
