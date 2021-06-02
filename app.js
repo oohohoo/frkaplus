@@ -880,7 +880,7 @@ console.log("location SORTING pa MAP LOADED");
         // do something once on the initial page load
         initLoader();
         
-
+/* OVO JE UBAČENOOOOOOOO*/
         homeScrolltrigger(next.container);
         console.log("SCROLLTRIGGER FOR HOME LOADED ONCE");
 
@@ -1822,10 +1822,6 @@ onUpdate:function(){
 
 
 
-function scrolltriggerupdate() {
-  ScrollTrigger.update();
-  }
-  
 
 
 
@@ -2792,8 +2788,12 @@ HOME - SCROLLTRIGGER - VIDEO position & zoom
 ================================================================================ */
 
 function homeScrolltrigger() {
-  setTimeout(()=>{
+ /*  setTimeout(()=>{ */
     /* scrollTrigger.refresh(); */
+    $(document).ready(function(){
+  
+   
+    
 let videoroll = gsap.timeline()
 
 let cover = document.querySelector('.bgvideo')
@@ -2813,7 +2813,9 @@ videoroll.to(".bgvideo", {
   yPercent:-30
 })
 
-},1000)  
+});
+
+/* },3000)   */
 
 }
 
