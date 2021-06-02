@@ -150,6 +150,28 @@ locoScroll.on('scroll', (instance) => {
 ================================================================================ */
 
  
+ /* ============================================================================
+INSET CLIPMASK ON FIRST
+================================================================================ */
+
+let videoroll = gsap.timeline()
+
+let cover = document.querySelector('.bgvideo')
+let firstSection = document.querySelector('.big-logo')
+
+videoroll.to(".bgvideo", {
+  scrollTrigger: {
+    scroller: ".smooth-scroll",
+    trigger: firstSection,    
+    start: 'top 20%',
+    end: "+=30%",    
+    scrub: 2,
+  },
+  /*clipPath: 'inset(60%)',*/
+  scale:1.15,
+  rotate:0,
+  yPercent:-30
+})
 /*
 
 .to(".hero--white--background", {
@@ -167,9 +189,24 @@ locoScroll.on('scroll', (instance) => {
   autoAlpha:0,
   rotate:0,
  
+}) 
+
+/* 
+.from(".videoplay", {
+  scrollTrigger: {
+    scroller: ".smooth-scroll",
+    trigger: firstSection,    
+    start: 'top 60%',
+    end: "+=30%",    
+    scrub: 2,
+  },
+  
+  duration: 0.2,
+  autoAlpha:0,
+  
+  
+ 
 }) */
-
-
 
 
 /*OUTLINE TEXT OVER IMAGE MASK */
@@ -783,9 +820,8 @@ views: [{
   beforeEnter(){
     simpleaccordion();
     counteronama();
-    outlineScrolltrigger();
     
-    console.log("SCROLL OUTLINE LOADED");
+    console.log("counterLOADED");
     /* counteriOnama();
     console.log("COUNTER LOADED"); */
  /*    locoAccordion(); */
@@ -2834,42 +2870,5 @@ function sorting() {
      },1000)  
   
    
-
-}
-
-
-
-
- /* ============================================================================
-S C R O L L T R I G G E R  FUNCTIONS
-================================================================================ */
-
-
-/*
- ============================================================================
-HOME -- VIDEO 
-================================================================================ */
-
-function outlineScrolltrigger() {
-
-
-let videoroll = gsap.timeline()
-
-let cover = document.querySelector('.bgvideo')
-let firstSection = document.querySelector('.big-logo')
-
-videoroll.to(".bgvideo", {
-  scrollTrigger: {
-    scroller: ".smooth-scroll",
-    trigger: firstSection,    
-    start: 'top 20%',
-    end: "+=30%",    
-    scrub: 2,
-  },
-  /*clipPath: 'inset(60%)',*/
-  scale:1.15,
-  rotate:0,
-  yPercent:-30
-})
 
 }
