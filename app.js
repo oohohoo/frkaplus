@@ -143,7 +143,10 @@ locoScroll.on('scroll', (instance) => {
   });
 
 
-
+  function ScrollTriggeRefresh() {
+  ScrollTrigger.refresh();
+  console.log("REFRESHED SCROLL TRIGGER");
+  }
  /* ============================================================================
  SCROLL TRIGGER 
 ================================================================================ */
@@ -2783,6 +2786,8 @@ S C R O L L T R I G G E R  FUNCTIONS
 ================================================================================ */
 
 
+
+
 /*
  ============================================================================
 HOME - SCROLLTRIGGER - VIDEO position & zoom 
@@ -2790,7 +2795,7 @@ HOME - SCROLLTRIGGER - VIDEO position & zoom
 
 function homeScrolltrigger() {
   setTimeout(()=>{
-    scrollTrigger.refresh();
+    ScrollTriggeRefresh();
 let videoroll = gsap.timeline()
 
 let cover = document.querySelector('.bgvideo')
