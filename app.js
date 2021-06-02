@@ -1450,6 +1450,13 @@ zoom: 6.64 // starting zoom
 
 map.on('load', function(e) {
 
+  /*FOTKA PRIJE UČITAVANJA */
+  const mapContainerEl = document.getElementById("map");
+  mapContainerEl.style.visibility = "visible";
+
+
+
+
   // Create a popup
   var popup = new mapboxgl.Popup({
     closeButton: false,
