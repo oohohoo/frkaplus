@@ -816,6 +816,7 @@ WIZARDRY 1920
 #map {
    width: 100%;
    height: 100%;
+   visibility: hidden;
 }
 
 .mapboxgl-ctrl, .mapboxgl-ctrl-attrib-inner {
