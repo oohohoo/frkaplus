@@ -1451,9 +1451,9 @@ zoom: 6.64 // starting zoom
 map.on('load', function(e) {
 
   /*FOTKA PRIJE UČITAVANJA */
-  const mapContainerEl = document.getElementById("map");
+  /*const mapContainerEl = document.getElementById("map");
   mapContainerEl.style.visibility = "visible";
-
+*/
 
 
 
@@ -1485,6 +1485,32 @@ map.on('load', function(e) {
    map.on('mouseenter', 'places', showPopup);
    map.on('mouseleave', 'places', hidePopup);
 });
+
+
+
+//var mapo = L.mapbox.map('mymap', 'mymap');
+
+// disable scroll-zooming initially
+map.scrollWheelZoom.disable();
+
+var zoomTimer;
+
+// on entering the map we're starting a timer to
+// 3 seconds after which we'll enable scroll-zooming
+map.on('mouseover', function() {
+	zoomTimer = setTimeout(function(){
+		map.scrollWheelZoom.enable();
+    }, 3000);
+});
+
+// on leaving the map we're disarming not yet triggered timers
+// and disabling scrolling
+map.on('mouseout', function() {
+    clearTimeout(zoomTimer);
+    map.scrollWheelZoom.disable();
+});
+
+
 /*
 map.on('click', function(e) {
   // If the user clicked on one of your markers, get its information.
@@ -1537,7 +1563,7 @@ Add an event listener that runs
 */
 
 
-/*********************** NE RADI  */
+
 /*3 second before zoom
 var mapo = L.mapbox.map('mymap', 'mymap');
 
