@@ -2435,8 +2435,7 @@ function sorting() {
    /* this.styles = toArray(document.querySelectorAll('.filter-group div')); */
     this.message = document.querySelector('.js-message');
   
-    setTimeout(()=>{ 
-    
+  
     this.shuffle = new Shuffle(element, {
       easing: "cubic-bezier(0.165, 0.840, 0.440, 1.000)", // easeOutQuart
       sizer: ".the-sizer",
@@ -2445,7 +2444,7 @@ function sorting() {
       itemSelector: '.picture-item',
     });
    
-  },500)  
+  
     
     this.filters = {
       shapes: [],
@@ -2716,7 +2715,15 @@ function sorting() {
       return this.filters[key].length > 0;
     }, this);
   };
-   
+  
+  
+  
+  
+  
+  
+  
+  
+  
   /**
    * Determine whether an element passes the current filters.
    * @param {Element} element Element to test.
@@ -2746,6 +2753,10 @@ function sorting() {
     */
     return true;
   };
+  
+  
+  
+  
   
   
   /* S E A R C H */
@@ -2806,12 +2817,13 @@ function sorting() {
     });
   };
    
-  
-document.addEventListener("DOMContentLoaded", function() { 
+  setTimeout(()=>{ 
+  /*document.addEventListener("DOMContentLoaded", function() { */
     window.demo = new Demo(document.querySelector(".js-shuffle"));
-    
+     //locoScroll.update();
     console.log("SHUFFLE UČITAN i loco updated");
-    
+     },1000)  
   
-    
-})
+   
+
+}
