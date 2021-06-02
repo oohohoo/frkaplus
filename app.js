@@ -887,6 +887,7 @@ views: [{
   namespace: 'onama',
   beforeEnter(){
     simpleaccordion();
+    zoomimage(); 
    
     /* counteriOnama();
     console.log("COUNTER LOADED"); */
