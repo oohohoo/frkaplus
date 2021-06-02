@@ -1447,7 +1447,7 @@ center: [16.527, 44.663], // starting position [lng, lat]
 zoom: 6.64 // starting zoom
 });
 
-4
+
 
 
 /* FLY TO LOCATION*/
@@ -1578,7 +1578,7 @@ mapo.on('mouseout', function() {
 /*********************** */
 
 
- },1000)  
+ },2000)  
 
   }
 
