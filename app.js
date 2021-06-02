@@ -879,8 +879,7 @@ views: [{
 
 },{
     namespace: 'lokacije',
-   
-  },
+  
   once(){
     sorting();
     },
