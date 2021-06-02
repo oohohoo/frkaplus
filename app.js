@@ -2809,7 +2809,7 @@ videoroll.to(".bgvideo", {
   yPercent:-30
 })
 
-},200)  
+},1000)  
 
 }
 
