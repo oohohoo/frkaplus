@@ -698,6 +698,7 @@ views: [{
     /* heroSwiper(); */
     heroApeli();
     homeScrolltrigger();
+    console.log("SCROLLTRIGGER FOR HOME LOADED");
     document.getElementById('homevid').play();
 
   /* imgoverlay(); */
