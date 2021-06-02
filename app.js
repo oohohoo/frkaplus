@@ -1448,6 +1448,19 @@ zoom: 6.64 // starting zoom
 });
 
 
+
+/* FLY TO LOCATION*/
+
+document.getElementById('fly').addEventListener('click', function () {
+  // Fly to a random location by offsetting the point -74.50, 40
+  // by up to 5 degrees.
+  map.flyTo({
+  center: [15.9595615, 45.7768948],
+  essential: true // this animation is considered essential with respect to prefers-reduced-motion
+  });
+  });
+
+
 map.on('load', function(e) {
 
   /*FOTKA PRIJE UČITAVANJA */
