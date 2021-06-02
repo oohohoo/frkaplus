@@ -1447,7 +1447,7 @@ center: [16.527, 44.663], // starting position [lng, lat]
 zoom: 6.64 // starting zoom
 });
 
-
+4
 
 
 /* FLY TO LOCATION*/
@@ -1457,6 +1457,7 @@ document.getElementById('fly').addEventListener('click', function () {
   // by up to 5 degrees.
   map.flyTo({
   center: [15.9595615, 45.7768948],
+  zoom: 10 // starting zoom
   essential: true // this animation is considered essential with respect to prefers-reduced-motion
   });
   });
