@@ -116,7 +116,8 @@ function initScroll(container) {
   });
 
 /*AKAPOWL JE OVO DODAO --- testiraj*/
-/*   locoScroll.update(); */
+  locoScroll.update();
+  console.log("JEBOTE AKAPOWEL SCROLLLOCO UPDATED");
 
   // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
   locoScroll.on("scroll", ScrollTrigger.update);
