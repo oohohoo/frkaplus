@@ -1454,6 +1454,7 @@ map.on('click', function(e) {
   });
   if (!features.length) {
     return;
+    console.log("interactivityyyyy");
   }
   var feature = features[0];
 
@@ -1468,7 +1469,7 @@ map.on('click', function(e) {
       '<p>' + feature.properties.description + '</p>'
       )
     .addTo(map);
-    console.log("interactivityyyyy");
+    
 });
 /*
 map.on('load', function (e) {
