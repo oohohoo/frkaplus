@@ -249,6 +249,30 @@ gsap.to(".roll-number-wrap", {
 });
 
 
+/* COUNTER O NAMA*/
+
+
+var cont={val:990} , newval = 1000 ;
+
+gsap.to(cont,2,{
+scrollTrigger:{
+      scroller: ".smooth-scroll",
+				trigger: ".tisucu",
+				start: "top 100%", 
+				end: "bottom top", 
+        toggleActions: "restart none none reset",
+				//scrub: 1,
+				
+			},
+      
+val:newval,
+roundProps:"val",
+onUpdate:function(){
+  document.getElementById("counternew").innerHTML=cont.val
+  
+}});
+
+
 /* SCROLLTRIGGER LERP IMAGES - DELAY without LOCOMOTIVE SCROLL*/
 
 /* const delSections = document.querySelectorAll(".delayed-section");
@@ -863,9 +887,7 @@ views: [{
   namespace: 'onama',
   beforeEnter(){
     simpleaccordion();
-    counteronama();
-    
-    console.log("counterLOADED");
+   
     /* counteriOnama();
     console.log("COUNTER LOADED"); */
  /*    locoAccordion(); */
@@ -1936,29 +1958,7 @@ openNav();
 NUMBER COUNT from some value 01
 ================================================ */
 
-function counteronama() {
 
-var cont={val:990} , newval = 1000 ;
-
-gsap.to(cont,2,{
-scrollTrigger:{
-      scroller: ".smooth-scroll",
-				trigger: ".tisucu",
-				start: "top 100%", 
-				end: "bottom top", 
-        toggleActions: "restart none none reset",
-				//scrub: 1,
-				
-			},
-      
-val:newval,
-roundProps:"val",
-onUpdate:function(){
-  document.getElementById("counternew").innerHTML=cont.val
-  
-}});
-
-}
 
 
 
