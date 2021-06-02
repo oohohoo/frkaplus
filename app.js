@@ -148,69 +148,6 @@ locoScroll.on('scroll', (instance) => {
  SCROLL TRIGGER 
 ================================================================================ */
 
- 
-/*
-
-.to(".hero--white--background", {
-  scrollTrigger: {
-    scroller: ".smooth-scroll",
-    trigger: firstSection,    
-    start: 'top 20%',
-    end: "+=30%",    
-    scrub: 2,
-  },
-  
-  /*clipPath: 'inset(60%)',*/
-  
-  /*duration: 0.2,
-  autoAlpha:0,
-  rotate:0,
- 
-}) */
-
-
-
-
-/*OUTLINE TEXT OVER IMAGE MASK */
-
-
-gsap.set('.filled-text, .outline-text', {x:-500});
-gsap.to(".filled-text, .outline-text", {
-  scrollTrigger:{
-  scroller: ".smooth-scroll",
-    trigger: ".filled-text, .outline-text", 
-    start: "top bottom", 
-    end: "bottom top", 
-    scrub: 1
-  },
-  x: 500
-});
-
-gsap.set('.filledtwo, .outlinetwo', {x:500});
-gsap.to(".filledtwo, .outlinetwo", {
-  scrollTrigger:{
-  scroller: ".smooth-scroll",
-    trigger: ".filledtwo, .outlinetwo", 
-    start: "top bottom", 
-    end: "bottom top", 
-    scrub: 1
-  },
-  x: -500
-});
-
-/*14/15 ROLL */
-gsap.to(".roll-number-wrap", {
-  scrollTrigger:{
-  scroller: ".smooth-scroll",
-    trigger: ".gi--num--wrap", 
-    start: "top 85%", 
-    end: "bottom top", 
-   scrub: 1,
-   
-  },
-  y: -700,
-  //duration:2
-});
 
 
 /* SCROLLTRIGGER LERP IMAGES - DELAY without LOCOMOTIVE SCROLL*/
@@ -783,6 +720,7 @@ views: [{
     simpleaccordion();
     counteronama();
     outlineScrolltrigger();
+    onamaScrolltriggers();
     
     console.log("SCROLL OUTLINE LOADED");
     /* counteriOnama();
@@ -2870,5 +2808,51 @@ videoroll.to(".bgvideo", {
   rotate:0,
   yPercent:-30
 })
+
+}
+
+
+function onamaScrolltriggers() {
+
+
+/*OUTLINE TEXT OVER IMAGE MASK */
+
+gsap.set('.filled-text, .outline-text', {x:-500});
+gsap.to(".filled-text, .outline-text", {
+  scrollTrigger:{
+  scroller: ".smooth-scroll",
+    trigger: ".filled-text, .outline-text", 
+    start: "top bottom", 
+    end: "bottom top", 
+    scrub: 1
+  },
+  x: 500
+});
+
+gsap.set('.filledtwo, .outlinetwo', {x:500});
+gsap.to(".filledtwo, .outlinetwo", {
+  scrollTrigger:{
+  scroller: ".smooth-scroll",
+    trigger: ".filledtwo, .outlinetwo", 
+    start: "top bottom", 
+    end: "bottom top", 
+    scrub: 1
+  },
+  x: -500
+});
+
+/*14/15 ROLL */
+gsap.to(".roll-number-wrap", {
+  scrollTrigger:{
+  scroller: ".smooth-scroll",
+    trigger: ".gi--num--wrap", 
+    start: "top 85%", 
+    end: "bottom top", 
+   scrub: 1,
+   
+  },
+  y: -700,
+  //duration:2
+});
 
 }
