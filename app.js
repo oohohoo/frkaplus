@@ -707,7 +707,8 @@ views: [{
   
   },
   once(data) {
-    
+    homeScrolltrigger();
+    console.log("SCROLLTRIGGER FOR HOME LOADED ONCE");
     /* titleHero(); */
     /* heroSwiper(); */
   },
