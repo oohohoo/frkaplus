@@ -798,7 +798,13 @@ function initPageTransitions() {
   //kill scrolltrigger
   barba.hooks.beforeLeave(() => {
    locoScroll.destroy(); 
-    
+     //KILL SCROLLTRIGGERRRRR
+     if (ScrollTrigger.getAll().length > 0) {
+      ScrollTrigger.getAll().forEach((trigger) => {
+          trigger.kill()
+      });
+  }
+  console.log("OH! SCROLLTRIGGER KILLED");
   
 
   });
@@ -806,13 +812,7 @@ function initPageTransitions() {
   barba.hooks.beforeEnter(() => {
    
     
-       //KILL SCROLLTRIGGERRRRR
-       if (ScrollTrigger.getAll().length > 0) {
-        ScrollTrigger.getAll().forEach((trigger) => {
-            trigger.kill()
-        });
-    }
-    console.log("OH! SCROLLTRIGGER KILLED");
+      
   });
 
   /*
