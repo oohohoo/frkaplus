@@ -143,10 +143,7 @@ locoScroll.on('scroll', (instance) => {
   });
 
 
-  function ScrollTriggeRefresh() {
-  ScrollTrigger.refresh();
-  console.log("REFRESHED SCROLL TRIGGER");
-  }
+
  /* ============================================================================
  SCROLL TRIGGER 
 ================================================================================ */
@@ -2767,12 +2764,12 @@ function sorting() {
     });
   };
    
-  setTimeout(()=>{ 
+  /* setTimeout(()=>{  */
   /*document.addEventListener("DOMContentLoaded", function() { */
     window.demo = new Demo(document.querySelector(".js-shuffle"));
      //locoScroll.update();
     console.log("SHUFFLE UČITAN i loco updated");
-     },1000)  
+    /*  },1000)   */
   
    
 
@@ -2787,7 +2784,6 @@ S C R O L L T R I G G E R  FUNCTIONS
 
 
 
-
 /*
  ============================================================================
 HOME - SCROLLTRIGGER - VIDEO position & zoom 
@@ -2795,7 +2791,7 @@ HOME - SCROLLTRIGGER - VIDEO position & zoom
 
 function homeScrolltrigger() {
   setTimeout(()=>{
-    ScrollTriggeRefresh();
+    /* scrollTrigger.refresh(); */
 let videoroll = gsap.timeline()
 
 let cover = document.querySelector('.bgvideo')
