@@ -1490,7 +1490,7 @@ map.on('click', function(e) {
       '<p>' + feature.properties.description + '</p>'
       )
     .addTo(map);
-
+    console.log("interactivityyyyy");
 });
 
 /*********************** NE RADI  */
