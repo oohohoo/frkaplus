@@ -707,8 +707,7 @@ views: [{
   
   },
   once(data) {
-    homeScrolltrigger();
-    console.log("SCROLLTRIGGER FOR HOME LOADED ONCE");
+  
     /* titleHero(); */
     /* heroSwiper(); */
   },
@@ -876,13 +875,15 @@ console.log("location SORTING pa MAP LOADED");
     */
     transitions: [{
    
-      once({
-        next
-      }) {
+      once({next}) {
        
         // do something once on the initial page load
         initLoader();
         
+
+        homeScrolltrigger(next.container);
+        console.log("SCROLLTRIGGER FOR HOME LOADED ONCE");
+
         /* kontaktfs();
         console.log("FSKONTAKT LOADED"); */
         /*fullscreenMenuNew(); */
