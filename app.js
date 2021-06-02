@@ -1449,6 +1449,7 @@ zoom: 6.64 // starting zoom
 
 
 
+
 /* FLY TO LOCATION*/
 
 document.getElementById('fly').addEventListener('click', function () {
