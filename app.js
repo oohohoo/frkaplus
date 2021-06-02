@@ -150,28 +150,6 @@ locoScroll.on('scroll', (instance) => {
 ================================================================================ */
 
  
- /* ============================================================================
-INSET CLIPMASK ON FIRST
-================================================================================ */
-
-let videoroll = gsap.timeline()
-
-let cover = document.querySelector('.bgvideo')
-let firstSection = document.querySelector('.big-logo')
-
-videoroll.to(".bgvideo", {
-  scrollTrigger: {
-    scroller: ".smooth-scroll",
-    trigger: firstSection,    
-    start: 'top 20%',
-    end: "+=30%",    
-    scrub: 2,
-  },
-  /*clipPath: 'inset(60%)',*/
-  scale:1.15,
-  rotate:0,
-  yPercent:-30
-})
 /*
 
 .to(".hero--white--background", {
@@ -805,8 +783,9 @@ views: [{
   beforeEnter(){
     simpleaccordion();
     counteronama();
+    outlineScrolltrigger();
     
-    console.log("counterLOADED");
+    console.log("SCROLL OUTLINE LOADED");
     /* counteriOnama();
     console.log("COUNTER LOADED"); */
  /*    locoAccordion(); */
@@ -2855,5 +2834,39 @@ function sorting() {
      },1000)  
   
    
+
+}
+
+
+
+
+
+
+
+ /* ============================================================================
+INSET CLIPMASK ON FIRST
+================================================================================ */
+
+function outlineScrolltrigger() {
+
+
+let videoroll = gsap.timeline()
+
+let cover = document.querySelector('.bgvideo')
+let firstSection = document.querySelector('.big-logo')
+
+videoroll.to(".bgvideo", {
+  scrollTrigger: {
+    scroller: ".smooth-scroll",
+    trigger: firstSection,    
+    start: 'top 20%',
+    end: "+=30%",    
+    scrub: 2,
+  },
+  /*clipPath: 'inset(60%)',*/
+  scale:1.15,
+  rotate:0,
+  yPercent:-30
+})
 
 }
