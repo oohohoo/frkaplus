@@ -1439,8 +1439,8 @@ function locationMap() {
 mapboxgl.accessToken = 'pk.eyJ1IjoiZm9nc2VsbGVyIiwiYSI6ImNrN2VpbXlpbjAwNDIzbnM1N2ZhMW9laGkifQ.DUf-8r1jXF4o7ApMUcKVXQ';
 
 var map = new mapboxgl.Map({
-  width: 1280,
-  height: 800, 
+ /*  width: 1280,
+  height: 800,  */
 container: 'map', // container ID
 style: 'mapbox://styles/fogseller/cknip0h0j0oqm17mgvd8wwi8y', // style URL
 center: [16.527, 44.663], // starting position [lng, lat]
