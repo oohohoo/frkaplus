@@ -172,7 +172,7 @@ videoroll.to(".bgvideo", {
   rotate:0,
   yPercent:-30
 })
-
+/*
 
 .to(".hero--white--background", {
   scrollTrigger: {
@@ -182,29 +182,16 @@ videoroll.to(".bgvideo", {
     end: "+=30%",    
     scrub: 2,
   },
+  
   /*clipPath: 'inset(60%)',*/
-  duration: 0.2,
+  
+  /*duration: 0.2,
   autoAlpha:0,
   rotate:0,
  
-})
-
-/* 
-.from(".videoplay", {
-  scrollTrigger: {
-    scroller: ".smooth-scroll",
-    trigger: firstSection,    
-    start: 'top 60%',
-    end: "+=30%",    
-    scrub: 2,
-  },
-  
-  duration: 0.2,
-  autoAlpha:0,
-  
-  
- 
 }) */
+
+
 
 
 /*OUTLINE TEXT OVER IMAGE MASK */
@@ -506,52 +493,6 @@ function roll(targets, vars, reverse) {
  
 
 
-
-/* sort shuffle*/
-/*
-var Shuffle = window.Shuffle;
-var element = document.querySelector('.my-shuffle-container');
-var sizer = element.querySelector('.my-sizer-element');
-
-var shuffleInstance = new Shuffle(element, {
-  itemSelector: '.picture-item',
-  sizer: sizer // could also be a selector: '.my-sizer-element'
-});
-// shuffleInstance.filter('animal');
-$("#all").on("click", function(){
-   shuffleInstance.filter();
-});
-$("#btn-animal").on("click", function(){
-   shuffleInstance.filter('animal');
-});
-$("#btn-city").on("click", function(){
-   shuffleInstance.filter('city');
-});
-$("#btn-nature").on("click", function(){
-   shuffleInstance.filter('nature');
-   locoScroll.update();
-console.log("LOCOSCROLL UPDATED AFTER SORT");
-});
-
-*/
-/*
-ScrollTrigger.refresh();
-console.log("SCROLLTRIGGER UPDATED AFTER SORT");
-*/
-
-
-
-
-/*
-var video = document.getElementById("bgvid");
-video.oncanplaythrough = function() {
-    video.muted = true;
-    video.play();
-   console.log("RADIDIIDIIDIDIDIDIDI");
-}
-*/
-
-
 /*
 ================================================================================
 LOCOMOTIVE 4 SCROLL TO TOP
@@ -798,7 +739,7 @@ function initPageTransitions() {
   //kill scrolltrigger
   barba.hooks.beforeLeave(() => {
    locoScroll.destroy(); 
-     //KILL SCROLLTRIGGERRRRR
+     //KILL SCROLLTRIGGERRRRR PREBAČEN OD ISPOD IZ BEFOREENTER
      if (ScrollTrigger.getAll().length > 0) {
       ScrollTrigger.getAll().forEach((trigger) => {
           trigger.kill()
