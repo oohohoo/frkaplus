@@ -640,7 +640,7 @@ function initPageTransitions() {
   // do something after the transition finishes
   barba.hooks.after(() => {
     select('html').classList.remove('is-transitioning');
-
+    ScrollTrigger.refresh();
   });
 
 
