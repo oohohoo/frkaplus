@@ -2789,7 +2789,7 @@ HOME - SCROLLTRIGGER - VIDEO position & zoom
 
 function homeScrolltrigger() {
   setTimeout(()=>{
-      
+    scrollTrigger.refresh();
 let videoroll = gsap.timeline()
 
 let cover = document.querySelector('.bgvideo')
