@@ -48,7 +48,7 @@ function init() {
   // setup variables
   let loadedImageCount = 0,
     imageCount;
-  const container = select('.smooth-scroll');
+  const container = select('.main-wrapper');
 
   // setup Images loaded
   const imgLoad = imagesLoaded(container);
