@@ -1451,24 +1451,6 @@ var mapContainerEl = document.getElementById('map');
 mapContainerEl.style.visibility = 'visible';
 });
 
-
-/* map.on('idle',function(){
-  map.resize()
-  console.log("MAP RESIZEEEEE!");
-  }) */
-
- map.once('load', () => {
-map.resize();
-});
-console.log("MAP RESIZE!"); 
-
-
-/* MAP POP UP INTERACTIVITY */
-
-/* 
-Add an event listener that runs
-  when a user clicks on the map element.
-*/
 map.on('click', function(e) {
   // If the user clicked on one of your markers, get its information.
   var features = map.queryRenderedFeatures(e.point, {
@@ -1492,6 +1474,24 @@ map.on('click', function(e) {
     .addTo(map);
     console.log("interactivityyyyy");
 });
+/* map.on('idle',function(){
+  map.resize()
+  console.log("MAP RESIZEEEEE!");
+  }) */
+
+ map.once('load', () => {
+map.resize();
+});
+console.log("MAP RESIZE!"); 
+
+
+/* MAP POP UP INTERACTIVITY */
+
+/* 
+Add an event listener that runs
+  when a user clicks on the map element.
+*/
+
 
 /*********************** NE RADI  */
 /*3 second before zoom
