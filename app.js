@@ -116,9 +116,7 @@ function initScroll(container) {
   });
 
 /*AKAPOWL JE OVO DODAO --- testiraj*/
-  locoScroll.update();
-
-
+/*   locoScroll.update(); */
 
   // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
   locoScroll.on("scroll", ScrollTrigger.update);
@@ -2840,11 +2838,14 @@ function sorting() {
 
 
 
-
-
-
  /* ============================================================================
-INSET CLIPMASK ON FIRST
+S C R O L L T R I G G E R  FUNCTIONS
+================================================================================ */
+
+
+/*
+ ============================================================================
+HOME - VIDEO position & zoom 
 ================================================================================ */
 
 function outlineScrolltrigger() {
