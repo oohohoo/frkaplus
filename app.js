@@ -460,7 +460,7 @@ scroller: ".smooth-scroll",
 /**/
 // Pinning and horizontal scrolling
 
-let horizontalSections = document.querySelectorAll(".horizontal-scroll");
+let horizontalSections = document.querySelectorAll(".autoblock");
 
 horizontalSections.forEach(horizontalSection => {
    let pinWrap = document.querySelector(".pin-wrap");
@@ -471,7 +471,7 @@ horizontalSections.forEach(horizontalSection => {
       scroller: ".smooth-scroll",
        scrub: true,
        trigger: ".horizontal-scroll",
-       pin: ".autoblock",
+       pin: "true",
        //markers: true,
        start: "top top",
        end: () => `+=${pinWrapWidth}`,
