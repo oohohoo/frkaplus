@@ -377,11 +377,11 @@ function initContent() {
 
   select('body').classList.remove('is-loading');
   initScroll();
-  hideMenu();
   homevideo();
   outlinehero();
   horizpin(); 
   numberoll();
+  /* hideMenu(); */
   /* imageparallax(); */
   console.log("OUTLINE HERO INIT  + HORIZ PINIMAGEPARALAXXHOMEEE");
 }
@@ -1964,7 +1964,7 @@ SHOW HIDE HEADER ON SCROLL + CUSTOM ANIMATION + CHANGE COLOR ON DIFF BACKGROUNDS
 ================================================================================ 
 */
 
-function hideMenux() {
+function hideMenu() {
 const showAnim = gsap.timeline({
   paused: true,
   defaults: { // children inherit these defaults
