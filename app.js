@@ -870,9 +870,9 @@ function initPageTransitions() {
     /* if (ScrollTrigger.getAll().length > 0) {
       ScrollTrigger.getAll().forEach((trigger) => {
           trigger.kill()
+          console.log("OH! SCROLLTRIGGER KILLED"); */
       });
-      console.log("OH! SCROLLTRIGGER KILLED");
-      */
+      
   }
   
  
