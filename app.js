@@ -147,8 +147,8 @@ locoScroll.on('scroll', (instance) => {
     // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, 
     // we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
     // UKLJUČITI SAMO NA MOBILNOJ VERZIJI
-    /*
-    pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed"*/
+    
+    pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed"
   });
 
 
@@ -771,7 +771,7 @@ function initLoader() {
 
 //.to(lines, {yPercent: -500, stagger: 0.2}, 0)
     .to([loader, loaderContent], {yPercent: -100}, 0.2)
-    .to('#main', {y: 0, force3D:true}, 0);
+    .to('#main', {y: 0, /*force3D:true*/}, 0);
 
   const tlLoader = gsap.timeline();
   tlLoader
@@ -806,7 +806,7 @@ function pageTransitionIn({
   .set(loaderInner, {autoAlpha: 0})
   .fromTo(loader, {yPercent: -100}, {yPercent: 0})
   .fromTo(loaderMask, {yPercent: 80}, {yPercent: 0}, 0)
-  .to(container, {y: 80, force3D:true}, 0);
+  .to(container, {y: 80, /*force3D:true*/}, 0);
 
 /*
   .to(container, {autoAlpha:0}, 0);
@@ -854,6 +854,11 @@ function initPageTransitions() {
   barba.hooks.after(() => {
     select('html').classList.remove('is-transitioning');
 
+    //REINT LOCOMOTIVE SCROLL
+    locoScroll.init();
+    
+
+    
   });
 
 
@@ -865,7 +870,7 @@ function initPageTransitions() {
   });
   //kill scrolltrigger
   barba.hooks.beforeLeave(() => {
-   locoScroll.destroy(); 
+   /*locoScroll.destroy(); */
    /*
      //KILL SCROLLTRIGGERRRRR PREBAČEN
      if (ScrollTrigger.getAll().length > 0) {
@@ -899,8 +904,9 @@ function initPageTransitions() {
   */
 
   barba.init({
-   /*  timeout: 5000, */
+     sync:true,
     debug: true,
+    timeout: 7000, 
     prefetch: true,
   /*
 ================================================================================
@@ -1127,7 +1133,7 @@ console.log("location SORTING pa MAP LOADED");
       },
 
       beforeEnter({next}) {
-        magnetic();
+       /*  magnetic(); */
        
       /*   heroSwiper(); */
      /*    kontaktfs();
