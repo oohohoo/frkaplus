@@ -135,7 +135,7 @@ function initScroll(container) {
     // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, 
     // we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
     // UKLJUČITI SAMO NA MOBILNOJ VERZIJI
-   
+   // ZBOG OVOG DESKTOP IGNORIRA HORIZONTAL PIN ITD //
   /*   pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed" */
   });
 
@@ -185,25 +185,6 @@ videoroll.to(".bgvideo", {
  
 })
 
-/* 
-.from(".videoplay", {
-  scrollTrigger: {
-    scroller: ".smooth-scroll",
-    trigger: firstSection,    
-    start: 'top 60%',
-    end: "+=30%",    
-    scrub: 2,
-  },
-  
-  duration: 0.2,
-  autoAlpha:0,
-  
-  
- 
-}) */
-
-
-
 
 /*14/15 ROLL */
 gsap.to(".roll-number-wrap", {
@@ -244,63 +225,6 @@ onUpdate:function(){
 }});
 
 
-/* SCROLLTRIGGER LERP IMAGES - DELAY without LOCOMOTIVE SCROLL*/
-
-/* const delSections = document.querySelectorAll(".delayed-section");
-
-delSections.forEach(section => {
-  const containerAnim = gsap.to(section.querySelector(".inner-container"), {
-    y: "100vh",
-    ease: "none"
-  });
-  
-  const imageAnim = gsap.to(section.querySelector("img"), {
-    y: "-100vh",
-    ease: "none",
-    paused: true
-  });
-  
-  const scrub = gsap.to(imageAnim, {
-    progress: 1,
-    paused: true,
-    ease: "power3",
-    duration: parseFloat(section.dataset.scrub) || 0.1,
-    overwrite: true
-  });
-  
-  ScrollTrigger.create({
-    animation: containerAnim,
-    scroller: ".smooth-scroll",
-    scrub: true,
-    trigger: "#iskustvo",
-    start: "top bottom",
-    end: "bottom top",
-    onUpdate: self => {
-      scrub.vars.progress = self.progress;
-      scrub.invalidate().restart();
-    }
-  });
-}); */
-
-
-/*
-gsap.set('.imagex', {x:400});
-gsap.to(".imagex", {
-  scrollTrigger:{
-  scroller: ".smooth-scroll",
-    trigger: ".imagex",
-    start: "top bottom", 
-    end: "bottom top", 
-    scrub: 1,
-/*                 onRefresh: ({progress, direction, isActive}) => console.log(progress, direction, isActive)
-*/
-    /*
-  },
-  x: -200,
-
-})
-
-*/
 
 /*------------/ SCROLLTRIGGER INNER IMAGE PARALLAX /------------*/
 
