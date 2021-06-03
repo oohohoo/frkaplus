@@ -464,7 +464,7 @@ scroller: ".smooth-scroll",
 let horizontalSections = document.querySelectorAll(".horizontal-scroll");
 
 horizontalSections.forEach(horizontalSection => {
-   let pinWrap = document.querySelector(".pin-wrap");
+   let pinWrap = document.querySelector(".horizontal-scroll");
    let pinWrapWidth = pinWrap.offsetWidth;
    let horizontalScrollLength = pinWrapWidth - window.innerWidth;
    gsap.to(pinWrap, {
