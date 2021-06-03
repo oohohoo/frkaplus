@@ -865,15 +865,7 @@ function initPageTransitions() {
   });
   //kill scrolltrigger
   barba.hooks.beforeLeave(() => {
-   locoScroll.destroy(); 
-     //KILL SCROLLTRIGGERRRRR PREBAČEN
-     if (ScrollTrigger.getAll().length > 0) {
-      ScrollTrigger.getAll().forEach((trigger) => {
-          trigger.kill()
-      });
-  }
-  
-  console.log("OH! SCROLLTRIGGER KILLED");
+ 
   
 
   });
@@ -898,7 +890,7 @@ function initPageTransitions() {
   */
 
   barba.init({
-   /*  timeout: 5000, */
+   timeout: 7000, 
     debug: true,
     prefetch: true,
   /*
@@ -1126,7 +1118,15 @@ console.log("location SORTING pa MAP LOADED");
       },
 
       beforeEnter({next}) {
-        magnetic();
+        locoScroll.destroy(); 
+        //KILL SCROLLTRIGGERRRRR PREBAČEN
+        if (ScrollTrigger.getAll().length > 0) {
+         ScrollTrigger.getAll().forEach((trigger) => {
+             trigger.kill()
+         });
+     }
+     
+     console.log("OH! SCROLLTRIGGER KILLED");
        
       /*   heroSwiper(); */
      /*    kontaktfs();
