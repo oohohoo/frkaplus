@@ -149,19 +149,7 @@ function initScroll(container) {
 
 
 
-/*14/15 ROLL */
-gsap.to(".roll-number-wrap", {
-  scrollTrigger:{
-  scroller: ".smooth-scroll",
-    trigger: ".gi--num--wrap", 
-    start: "top 85%", 
-    end: "bottom top", 
-   scrub: 1,
-   
-  },
-  y: -700,
-  //duration:2
-});
+
 
 
 /* COUNTER O NAMA*/
@@ -447,6 +435,7 @@ function initContent() {
   homevideo();
   outlinehero();
   horizpin(); 
+  numberoll();
   /* imageparallax(); */
   console.log("OUTLINE HERO INIT  + HORIZ PINIMAGEPARALAXXHOMEEE");
 }
@@ -1947,6 +1936,7 @@ inparallax.from(pimages, {
 HOME // VIDEO
 ================================================================================ 
 */
+
 function homevideo() {
 
 let videoroll = gsap.timeline()
@@ -1968,4 +1958,23 @@ videoroll.to(".bgvideo", {
   yPercent:-30
 })
 
+}
+
+/* 
+============================================================================
+O NAMA // 14/15 ROLL
+================================================================================ 
+*/
+function numberoll() {
+gsap.to(".roll-number-wrap", {
+  scrollTrigger:{
+  scroller: ".smooth-scroll",
+    trigger: ".gi--num--wrap", 
+    start: "top 85%", 
+    end: "bottom top", 
+   scrub: 1,
+  },
+  y: -700,
+  //duration:2
+});
 }
