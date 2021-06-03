@@ -122,8 +122,6 @@ function initScroll(container) {
   locoScroll.on("scroll", function (t) {
     document.documentElement.setAttribute("data-direction", t.direction);
   });
-
-
   // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
   locoScroll.on("scroll", ScrollTrigger.update);
 
@@ -134,7 +132,6 @@ locoScroll.on('scroll', (instance) => {
 });
 
 */
-
   // tell ScrollTrigger to use these proxy methods for the ".smooth-scroll" element since Locomotive Scroll is hijacking things
   ScrollTrigger.scrollerProxy(".smooth-scroll", {
     scrollTop(value) {
@@ -147,8 +144,8 @@ locoScroll.on('scroll', (instance) => {
     // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, 
     // we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
     // UKLJUČITI SAMO NA MOBILNOJ VERZIJI
-    /*
-    pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed"*/
+ 
+    pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed"
   });
 
 
@@ -762,7 +759,7 @@ function initContent() {
   initScroll();
   outlinehero();
   horizontalpin();
-  console.log("horizontal pin INIT LOAD");
+  console.log("OUTLINE HERO INIT LOAD");
 }
 
 /*
