@@ -280,6 +280,7 @@ INIT CONTENT --> vodi na --> INIT SCROLL
 function initContent() {
 
   select('body').classList.remove('is-loading');
+  
   initScroll();
   scrollTotop();
   homevideo();
@@ -408,7 +409,7 @@ BARBA VIEWS
 
               beforeEnter(data) {
                 heroApeli();
-                homevideo(); 
+                /* homevideo();  */
                 
                 document.getElementById('homevid').play();
 
