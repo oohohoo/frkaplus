@@ -600,7 +600,8 @@ views: [{
     document.getElementById('homevid').play();
 
   }},{
-  namespace: 'onama',
+
+    namespace: 'onama',
   beforeEnter(data){
     outlinehero();
     horizpin(); 
@@ -609,36 +610,28 @@ views: [{
     zoomimage(); 
    
   }},{
+   
     namespace: 'lokacije',
-  
-  once(){
+    once(){
     sorting();
     },
-
 beforeEnter({next}) {
   sorting();
   locationMap();
   console.log("location SORTING pa MAP LOADED");
  },
-
  beforeLeave({current}) {
 
-  //Shuffle.destroy();
-  //console.log("Shuffle DESTROYED");
-      } 
-    
-    },{
+}},{
 
     namespace: 'sort',
   beforeEnter({next}) {
 
- 
   }},{
 
   namespace: 'lokacijesolo',
   once(data) {
-   
-  
+    
   },
   beforeEnter(data) {
     locationMap();
@@ -646,50 +639,27 @@ beforeEnter({next}) {
     scrolltriggerupdate();
     openTestYourDesign();
     saveaspdftest();
-   /*  locationMap(); */
-    /* locationMap(); */
-    //contactHeroAnima();
 
   }},{
 
     namespace: 'npp',
+     beforeEnter(data) {
+      simpleaccordion();
+          }},{
+
+  namespace: 'uvjeti',
     once(data) {
       
     },
-  
-    beforeEnter(data) {
-      simpleaccordion();
-      
-     
-      
-       
-    }},{
-
-      namespace: 'uvjeti',
-    once(data) {
-      
-    },
-  
-    beforeEnter(data) {
-      simpleaccordion();
-     
-      
-       
-    }},{
-
-      namespace: 'privatnost',
-      once(data) {
-        
-      },
-    
       beforeEnter(data) {
-        simpleaccordion();
+      simpleaccordion();
+            
+    }},{
+      namespace: 'privatnost',
+      beforeEnter(data) {
+      simpleaccordion();
         
-
-         
       }},{
-
-  },{
 
     namespace: 'reference',
     once(data) {
