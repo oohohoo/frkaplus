@@ -176,39 +176,6 @@ onUpdate:function(){
 
 
 
-
-
-
-
-
-/* 
-=============================================
-004 - SCROLLTRIGGER BATCH - TEXT REVEAL MULTILINE / VERZIJA 1
-================================================ */
-
-gsap.set('.reveal', {autoAlpha: 0, yPercent: 200});
-
-ScrollTrigger.batch(".batch-text", {
-scroller: ".smooth-scroll",
-  onEnter: batch => {
-    batch.forEach((section, i) => {
-      gsap.to(section.querySelectorAll(".reveal"), {
-        autoAlpha: 1,
-        yPercent: 0,
-        duration: 0.8,
-        ease: "power1.inOut", 
-        stagger: 0.1,
-        delay: i * 0.3,
-        toggleActions: "restart none none reset"
-      });
-    });
-  },
-  start: "top 95%"
-});
-
-
-
-
 /* OVO JE UBAČENO NAKNADNO
 
 ScrollTrigger.addEventListener("refreshInit", resize);
@@ -382,6 +349,7 @@ function initContent() {
   horizpin(); 
   numberoll();
   hideMenu();
+  multilinereveal();
     /* imageparallax(); */
   console.log("OUTLINE HERO INIT  + HORIZ PINIMAGEPARALAXXHOMEEE");
 }
@@ -1993,5 +1961,36 @@ showAnim
 .to(".nav", {yPercent: -50, autoAlpha:0, stagger: 0.05},"<0.1")
 .to(".header-contact--button", {scale:0.7, x:"5.1em"},"<0.2")
 //.to(".kont-color", {color: "black", duration:0.2},"<0.2");
+
+}
+
+
+
+/* 
+=============================================
+BATCH MULTILINE TXT
+================================================ 
+*/
+
+function multilinereveal() {
+gsap.set('.reveal', {autoAlpha: 0, yPercent: 200});
+
+ScrollTrigger.batch(".batch-text", {
+scroller: ".smooth-scroll",
+  onEnter: batch => {
+    batch.forEach((section, i) => {
+      gsap.to(section.querySelectorAll(".reveal"), {
+        autoAlpha: 1,
+        yPercent: 0,
+        duration: 0.8,
+        ease: "power1.inOut", 
+        stagger: 0.1,
+        delay: i * 0.3,
+        toggleActions: "restart none none reset"
+      });
+    });
+  },
+  start: "top 95%"
+});
 
 }
