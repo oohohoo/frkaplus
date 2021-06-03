@@ -331,6 +331,31 @@ inparallax.from(pimages, {
 
 
  
+/**/
+
+let horizontalSections = document.querySelectorAll(".horizontal-scroll");
+
+horizontalSections.forEach(horizontalSection => {
+   let pinWrap = document.querySelector(".pin-wrap");
+   let pinWrapWidth = pinWrap.offsetWidth;
+   let horizontalScrollLength = pinWrapWidth - window.innerWidth;
+   gsap.to(pinWrap, {
+     scrollTrigger: {
+      scroller: ".smooth-scroll",
+       scrub: true,
+       trigger: ".horizontal-scroll",
+       pin: true,
+       //markers: true,
+       start: "top top",
+       end: () => `+=${pinWrapWidth}`,
+       invalidateOnRefresh: true 
+       },
+
+     x: -horizontalScrollLength,
+     ease: "none" });
+
+ });
+
   /*NE ZNAM DA LI OVO IDE???*/
   //locoScroll.update();
 
