@@ -1137,12 +1137,12 @@ console.log("location SORTING pa MAP LOADED");
       
       },
 
-      beforeEnter(data) {
+      beforeEnter({next}) {
        /*  magnetic(); */
        ScrollTrigger.getAll().forEach(t => t.kill());
         locoScroll.destroy();
 
-        console.log("UBIJENI LOCO I SCROLLTRIGGER KILLLKILLLKILLL");
+        console.log("UBIJENI LOCO I SCROLLTRIGGERKILLKILLKILL");
       /*   heroSwiper(); */
      /*    kontaktfs();
         console.log("FSKONTAKT LOADED"); */
