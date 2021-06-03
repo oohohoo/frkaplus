@@ -155,29 +155,7 @@ console.log("refresh init mamicu mu AJMOOOO");
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
 
 
-/*
-================================================================================
-LOCOMOTIVE 4 SCROLL TO TOP
-================================================================================
-*/
-$( "#tomain" ).on( "click", function() {
-  locoScroll.scrollTo( '#top', {
-    'offset': 0,
-    'duration': 1500,
-    'easing': [0.25, 0.00, 0.35, 1.00],
-    'disableLerp': true
-  });
-  
-});
-$( "#tomainipad" ).on( "click", function() {
-  locoScroll.scrollTo( '#top', {
-    'offset': 0,
-    'duration': 1500,
-    'easing': [0.25, 0.00, 0.35, 1.00],
-    'disableLerp': true
-  });
-  
-});
+
 
 /*
 ================================================================================
@@ -553,7 +531,8 @@ BARBA VIEWS
 
       beforeEnter({next}) {
         yearupdate();
-        console.log("YEAR UPDATE");
+        scrollTotop();
+        console.log("YEAR UPDATE+SCROLLTOTOP");
      
      },
 
@@ -1998,3 +1977,30 @@ onUpdate:function(){
 }});
 }
 
+/*
+================================================================================
+LOCOMOTIVE 4 SCROLL TO TOP
+================================================================================
+*/
+function scrollTotop() {
+
+$( "#tomain" ).on( "click", function() {
+  locoScroll.scrollTo( '#top', {
+    'offset': 0,
+    'duration': 1500,
+    'easing': [0.25, 0.00, 0.35, 1.00],
+    'disableLerp': true
+  });
+  
+});
+$( "#tomainipad" ).on( "click", function() {
+  locoScroll.scrollTo( '#top', {
+    'offset': 0,
+    'duration': 1500,
+    'easing': [0.25, 0.00, 0.35, 1.00],
+    'disableLerp': true
+  });
+  
+});
+
+}
