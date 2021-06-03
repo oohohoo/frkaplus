@@ -725,7 +725,8 @@ BARBA VIEWS
       },
 
       beforeEnter({next}) {
-           
+        scrolltriggerupdate();
+        console.log("scrolltriggerupdated");
      },
 
     }],
@@ -866,14 +867,9 @@ map.resize();
 });
 console.log("MAP RESIZE!"); 
 
-
  },200)  
 
-  }
-
-
-
-
+ }
 
 /*
 ================================================================================
@@ -943,66 +939,11 @@ var menu = ['', '', '', '', '', '']
 
 /*
 ================================================================================
-IMAGE HOVER
-================================================================================
-*/
-
-
-function imgoverlay() {
-
-
-  var cursor = $(".cursor"),
-  overlay = $(".project-overlay");
-
-gsap.set(cursor, {opacity:0});
-
-function moveCircle(e) {
-gsap.to(cursor, {
-  duration:.5,
-  css: {
-    left: e.pageX,
-    top: e.pageY
-  }
-});
-}
-
-$(".p-1").hover(function(){
-$(".cursor").css({"background-image": "url(https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60a0dff0289cd76afcb13a51_test12.jpg)" });
-});
-
-$(".p-2").hover(function(){
-$(".cursor").css({ "background-image": "url(https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60a0dff0d8e1e225cd7c2783_test11.jpg)" });
-});
-$(".p-3").hover(function(){
-$(".cursor").css({ "background-image": "url(https://i.pinimg.com/474x/0e/04/6e/0e046e6bf35d98e2729c389395945435.jpg)" });
-});
-$(".p-4").hover(function(){
-$(".cursor").css({ "background-image": "url(https://i.pinimg.com/474x/0e/04/6e/0e046e6bf35d98e2729c389395945435.jpg)" });
-});
-
-var flag = false;
-$(overlay).mousemove(function() {
-flag = true;
-gsap.to(cursor, {duration: 0.3, scale: 1, autoAlpha: 1});
-$(overlay).on("mousemove", moveCircle);
-});
-
-$(overlay).mouseout(function() {
-flag = false;
-gsap.to(cursor, {duration: 0.3, scale: 0.1, autoAlpha: 0});
-});
-}
-
-
-/*
-================================================================================
 SIMPLE ACCORDION
 ================================================================================
 */
 
-
 function simpleaccordion() {
-
 
 const sections = document.querySelectorAll('.acc-section')
 const texts = document.querySelectorAll('.text')
@@ -1059,166 +1000,18 @@ sections.forEach((section, index) => {
 }
 
 
-
+/* 
+=============================================
+HERO - APELI
+================================================ */
 
 function heroApeli() {
 
-/* =============================================
-023  --- SIMPLE FADE IN / FADE OUT / AUTOALPHA 023 simple fadein fadeout 
-================================================ */
-
 var action = gsap.timeline({repeat:-1, defaults:{duration:0.8, ease:'none'}})
-
 .to('.fadeheader', {autoAlpha:1, stagger:5})
 .to('.fadeheader', {autoAlpha:0, stagger:5}, 4)
 
 }
-
-/* =============================================
-O NAMA COUNTERI
-================================================ */
-
-
-
-/* function counteriOnama() {
-
-
-
- const items = document.querySelectorAll(".data");
-
-gsap.from(items, {
-scrollTrigger:{
-      scroller: ".smooth-scroll",
-				trigger: ".counter-container",
-				start: "top center", 
-				end: "bottom top", 
-        toggleActions: "restart none none reset",
-				//scrub: 1,
-				
-			},
-  textContent: 0,
-  duration: 4,
-  ease: "power1.in",
-  snap: { textContent: 1 },
-  stagger: {
-    each: 1.0,
-    onUpdate: function() {
-      this.targets()[0].innerHTML = numberWithCommas(Math.ceil(this.targets()[0].textContent));
-    },
-  }
-});
-
-
-function numberWithCommas(x) {
-  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-} 
- */
-
-/* NUMBER COUNT from some value 01 */
-
-/* var cont={val:195} , newval = 200 ;
-
-gsap.to(cont,2,{
-scrollTrigger:{
-      scroller: ".smooth-scroll",
-				trigger: ".numbercounter",
-				start: "top 90%", 
-				end: "bottom top", 
-        toggleActions: "restart none none reset",
-				//scrub: 1,
-				
-			},
-      
-val:newval,
-roundProps:"val",
-onUpdate:function(){
-  document.getElementById("counterx").innerHTML=cont.val
-  
-}}); */
-
-
-
-/* NUMBER COUNT from some value 02 */
-
-/*
-var cont={val:197} , newval = 200 ;
-
-gsap.to(cont,2.5,{
-scrollTrigger:{
-      scroller: ".smooth-scroll",
-				trigger: ".numbercounter2",
-				start: "top 90%", 
-				end: "bottom top", 
-        toggleActions: "restart none none reset",
-				//scrub: 1,
-				
-			},
-      
-val:newval,
-roundProps:"val",
-onUpdate:function(){
-  document.getElementById("countery").innerHTML=cont.val
-  
-}});
-
-}
-*/
-/* =============================================
-O NAMA COUNTERI
-================================================ */
-/*
-
-
-function kontaktfs() {
-// Timeline created and paused
-var tl = gsap.timeline({ paused: true });
-
-function openNav() {
-  animateOpenNav();
-  var navBtn = document.getElementById("nav");
-  navBtn.onclick = function (e) {
-    // Toggle reversed to it's opposite value
-    tl.reversed(!tl.reversed());
-    // Use the toggle method in the classList API
-    navBtn.classList.toggle("active");
-  };
-}
-
-
-
-/* =============================================
-KONTAKT FULLSCREEW OPEN
-================================================ */
-
-/*
-
-function animateOpenNav() {
-  var mobileNav = document.getElementById("krug");
-  tl
-  .set('body', { overflow: 'hidden' })
-  .to(mobileNav, {duration: 0.6, ease: "power1.in", scale:30 })
-  .to(".fs--menu", {duration: 0.6, ease: "power1.in", autoAlpha:0 })
-  
-  //.to('.kontakt-back', {y, ease: "power1.in"})
-    .to(".nav__link", {opacity: 1, y: 0,duration: 0.2, stagger: {// wrap advanced options in an object
-      each: 0.2,
-      //ease: "power1.in"
-    }
-  })
-  
-
-  
-  .reverse(); // Finally reverse the timeline. reversed() is true
-}
-
-// init
-openNav();
-  
-
-}
-*/
-
-
 
 
   /* =============================================
