@@ -2908,7 +2908,7 @@ function outlineonamahero() {
 
 /*OUTLINE TEXT OVER IMAGE MASK */
 
-$doc.ready(function ($) {
+$document.ready(function ($) {
 gsap.set('.filled-text, .outline-text', {x:-500});
 gsap.to(".filled-text, .outline-text", {
   scrollTrigger:{
