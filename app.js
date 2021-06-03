@@ -1107,7 +1107,7 @@ console.log("location SORTING pa MAP LOADED");
       async leave(data) {
 
           // animate loading screen in
-        await pageTransitionIn(current);
+        await pageTransitionIn(data.current);
         data.current.container.remove();
         console.log("CONTAINER REMOOOVEEED");
         
