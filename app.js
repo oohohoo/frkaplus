@@ -1104,9 +1104,7 @@ console.log("location SORTING pa MAP LOADED");
                 
       },
 
-      async leave({
-        current
-      }) {
+      async leave(data) {
 
           // animate loading screen in
         await pageTransitionIn(current);
