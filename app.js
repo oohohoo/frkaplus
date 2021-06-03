@@ -1121,7 +1121,7 @@ console.log("location SORTING pa MAP LOADED");
 
           // animate loading screen in
         await pageTransitionIn(current);
-        
+        await delay(1000);
       },
       enter({
         next
@@ -1142,7 +1142,7 @@ console.log("location SORTING pa MAP LOADED");
        ScrollTrigger.getAll().forEach(t => t.kill());
         locoScroll.destroy();
 
-        console.log("UBIJENI LOCO I SCROLLTRIGGER");
+        console.log("UBIJENI LOCO I SCROLLTRIGGER KILLLKILLLKILLL");
       /*   heroSwiper(); */
      /*    kontaktfs();
         console.log("FSKONTAKT LOADED"); */
