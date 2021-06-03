@@ -706,12 +706,7 @@ BARBA VIEWS
        
         // do something once on the initial page load
         initLoader();
-        
-        /* kontaktfs();
-        console.log("FSKONTAKT LOADED"); */
-        /*fullscreenMenuNew(); */
-        /* underlineMouseover(); */
-                
+  
       },
 
       async leave({
