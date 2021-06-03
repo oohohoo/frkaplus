@@ -944,8 +944,8 @@ views: [{
 },{
   namespace: 'onama',
   beforeEnter(){
-    outlinehero();
-    console.log("OUTLINE HERO LOADED");
+    /* outlinehero(); */
+    /* console.log("OUTLINE HERO LOADED"); */
     simpleaccordion();
     zoomimage(); 
     
