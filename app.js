@@ -471,7 +471,7 @@ horizontalSections.forEach(horizontalSection => {
       scroller: ".smooth-scroll",
        scrub: true,
        trigger: ".horizontal-scroll",
-       pin: true,
+       pin: ".autoblock",
        //markers: true,
        start: "top top",
        end: () => `+=${pinWrapWidth}`,
