@@ -380,8 +380,9 @@ horizontalSections.forEach(horizontalSection => {
        color: prevText,
        overwrite: "auto" }) });
 
-*/
+
  });
+ */
   /*NE ZNAM DA LI OVO IDE???*/
   //locoScroll.update();
 
