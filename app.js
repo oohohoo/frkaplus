@@ -603,7 +603,8 @@ views: [{
   namespace: 'onama',
   beforeEnter(){
     outlinehero();
-    console.log("OUTLINE HERO LOADED");
+    horizpin(); 
+    console.log("HORIZ LOAD ON TRANSITION");
     simpleaccordion();
     zoomimage(); 
    
