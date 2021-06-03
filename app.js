@@ -901,7 +901,7 @@ function initPageTransitions() {
   BARBA PREFETCH
   ================================================================================
   */
-  /*barba.use(barbaPrefetch);
+  barba.use(barbaPrefetch);
   /*
   ================================================================================
   BARBA INIT 
@@ -1137,7 +1137,7 @@ console.log("location SORTING pa MAP LOADED");
       
       },
 
-      beforeEnter({next}) {
+      beforeEnter(data) {
        /*  magnetic(); */
        ScrollTrigger.getAll().forEach(t => t.kill());
         locoScroll.destroy();
