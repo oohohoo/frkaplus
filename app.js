@@ -250,62 +250,31 @@ inparallax.from(pimages, {
 });
 
 
- 
-
-
- /* COLOR CHANGER */
-/*
- const scrollColorElems = document.querySelectorAll("[data-bgcolor]");
- scrollColorElems.forEach((colorSection, i) => {
-   const prevBg = i === 0 ? "" : scrollColorElems[i - 1].dataset.bgcolor;
-   const prevText = i === 0 ? "" : scrollColorElems[i - 1].dataset.textcolor;
-
-   ScrollTrigger.create({
-     trigger: colorSection,
-     scroller: ".smooth-scroll",
-     start: "top 50%",
-     onEnter: () =>
-     gsap.to("body", {
-       backgroundColor: colorSection.dataset.bgcolor,
-       color: colorSection.dataset.textcolor,
-       overwrite: "auto" }),
-
-     onLeaveBack: () =>
-     gsap.to("body", {
-       backgroundColor: prevBg,
-       color: prevText,
-       overwrite: "auto" }) });
-
-
- });
- */
-  /*NE ZNAM DA LI OVO IDE???*/
-  //locoScroll.update();
-
 /* PREVENT SCROLL UNDER FS MENU*/
 function handler1() {
-   locoScroll.stop();
-    $(this).one("click", handler2);
+  locoScroll.stop();
+  $(this).one("click", handler2);
 }
 
 function handler2() {
-   locoScroll.start();
-    $(this).one("click", handler1);
+  locoScroll.start();
+  $(this).one("click", handler1);
 }
 $(".fs-nav-butt").one("click", handler1);
 
 
 
-$(".mapbox").hover(function(){
+$(".mapbox").hover(function () {
   locoScroll.stop();
 });
 
-$(".mapbox").mouseout(function(){
+$(".mapbox").mouseout(function () {
   locoScroll.start();
 
 });
 
-  /* ============================================================================
+/* 
+============================================================================
 SHOW HIDE HEADER ON SCROLL + CUSTOM ANIMATION + CHANGE COLOR ON DIFF BACKGROUNDS
 ================================================================================ */
 
@@ -332,7 +301,6 @@ const showAnim = gsap.timeline({
 }
 });
 
-
 showAnim
 //.to(".logofade", {autoAlpha:0 }, 0)
 .to(".nav", {yPercent: -50, autoAlpha:0, stagger: 0.05},"<0.1")
@@ -340,9 +308,8 @@ showAnim
 //.to(".kont-color", {color: "black", duration:0.2},"<0.2");
 
 
-
-
-/* =============================================
+/* 
+=============================================
 004 - SCROLLTRIGGER BATCH - TEXT REVEAL MULTILINE / VERZIJA 1
 ================================================ */
 
@@ -365,10 +332,6 @@ scroller: ".smooth-scroll",
   },
   start: "top 95%"
 });
-
-
-
-
 
 /**/
 // Pinning and horizontal scrolling
@@ -406,7 +369,6 @@ ScrollTrigger.addEventListener("refreshInit", resize);
 console.log("refresh init mamicu mu AJMOOOO");
 */
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
-/* ScrollTrigger.addEventListener("refreshInit", resize); */
 
   // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
   ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
@@ -416,120 +378,9 @@ console.log("refresh init mamicu mu AJMOOOO");
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
 
 
-
-
-
-
-
-
 // Dynamic Copyright Year
 var date = new Date().getFullYear();
 document.getElementById("year").innerHTML = date;
-
-
-
-/* =============================================
-MARQUEE + SCROLLTRIGGER change direction
-================================================ */
-/*
-let direction = 1; // 1 = forward, -1 = backward scroll
-
-const roll1 = roll(".roll1", {duration: 80}), // ugasi true i mijenja smjer
-      roll2 = roll(".roll2", {duration: 50}, true),
-      roll3 = roll(".roll3", {duration: 60});
-
-ScrollTrigger.create({
-       trigger: ".cd-wrap",
-      
-       /*toggleClass: {
-        targets: '.logofrka, .navstyle, .kontakt',
-        className: 'orange'
-      }, */
-    /*    start: "top 30%",
-        end: "bottom top",
-        scroller: ".smooth-scroll",
-            /*  invalidateOnRefresh: true, */
-      /*   onUpdate(self) {
-          if (self.direction !== direction) {
-            direction *= -1;
-           
-            gsap.to([roll1, roll2, roll3], {
-                timeScale: direction, 
-                overwrite: true            
-            });
-
-            
-          }
-        }
-      });
-
-// helper function that clones the targets, places them next to the original, then animates the xPercent in a loop to make it appear to roll across the screen in a seamless loop.
-function roll(targets, vars, reverse) {
-  const tl = gsap.timeline({
-    repeat: -1,
-    onReverseComplete() { 
-      this.totalTime(this.rawTime() + this.duration() * 10); // otherwise when the playhead gets back to the beginning, it'd stop. So push the playhead forward 10 iterations (it could be any number)
-    }
-  });
-  vars = vars || {};
-  vars.ease || (vars.ease = "none");
-  gsap.utils.toArray(targets).forEach(el => {
-    let clone = el.cloneNode(true);
-    el.parentNode.appendChild(clone);
-    gsap.set(clone, {position: "absolute", top: el.offsetTop, left: el.offsetLeft + (reverse ? -el.offsetWidth : el.offsetWidth)});
-    tl.to([el, clone], {xPercent: reverse ? 100 : -100, ...vars}, 0);
-  });
-  return tl;
-}
-
-
- 
-
-
-
-/* sort shuffle*/
-/*
-var Shuffle = window.Shuffle;
-var element = document.querySelector('.my-shuffle-container');
-var sizer = element.querySelector('.my-sizer-element');
-
-var shuffleInstance = new Shuffle(element, {
-  itemSelector: '.picture-item',
-  sizer: sizer // could also be a selector: '.my-sizer-element'
-});
-// shuffleInstance.filter('animal');
-$("#all").on("click", function(){
-   shuffleInstance.filter();
-});
-$("#btn-animal").on("click", function(){
-   shuffleInstance.filter('animal');
-});
-$("#btn-city").on("click", function(){
-   shuffleInstance.filter('city');
-});
-$("#btn-nature").on("click", function(){
-   shuffleInstance.filter('nature');
-   locoScroll.update();
-console.log("LOCOSCROLL UPDATED AFTER SORT");
-});
-
-*/
-/*
-ScrollTrigger.refresh();
-console.log("SCROLLTRIGGER UPDATED AFTER SORT");
-*/
-
-
-
-
-/*
-var video = document.getElementById("bgvid");
-video.oncanplaythrough = function() {
-    video.muted = true;
-    video.play();
-   console.log("RADIDIIDIIDIDIDIDIDI");
-}
-*/
 
 
 /*
