@@ -447,7 +447,7 @@ function initContent() {
   homevideo();
   outlinehero();
   horizpin(); 
-  imageparallax();
+  /* imageparallax(); */
   console.log("OUTLINE HERO INIT  + HORIZ PINIMAGEPARALAXXHOMEEE");
 }
 
