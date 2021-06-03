@@ -147,19 +147,11 @@ locoScroll.on('scroll', (instance) => {
     // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, 
     // we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
     // UKLJUČITI SAMO NA MOBILNOJ VERZIJI
-    
-    pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed"
+    /*
+    pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed"*/
   });
 
-/**
-     * Remove Old Locomotive Scrollbar
-     */
-/*UBAČENO NAKNADNO*/
- const scrollbar = selectAll('.c-scrollbar');
 
- if(scrollbar.length > 1) {
-   scrollbar[0].remove();
- }
 
  /* ============================================================================
  SCROLL TRIGGER 
@@ -242,7 +234,7 @@ gsap.to(".roll-number-wrap", {
 
 /* COUNTER O NAMA*/
 
-/*
+
 var cont={val:990} , newval = 1000 ;
 
 gsap.to(cont,2,{
@@ -262,7 +254,7 @@ onUpdate:function(){
   document.getElementById("counternew").innerHTML=cont.val
   
 }});
-*/
+
 
 /* SCROLLTRIGGER LERP IMAGES - DELAY without LOCOMOTIVE SCROLL*/
 
@@ -502,7 +494,7 @@ ScrollTrigger.addEventListener("refreshInit", resize);
 console.log("refresh init mamicu mu AJMOOOO");
 */
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
-
+/* ScrollTrigger.addEventListener("refreshInit", resize); */
 
   // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
   ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
@@ -767,7 +759,7 @@ function initLoader() {
   // LOADER OUT
   const tlLoaderOut = gsap.timeline({
     id: 'tlLoaderOut',
-    defaults: {duration: 1.2, ease: 'power2.inOut'},delay: 1});
+    defaults: {duration: 1.2, ease: 'power2.inOut'},delay: 0});
 
   tlLoaderOut
 
@@ -779,23 +771,13 @@ function initLoader() {
 
 //.to(lines, {yPercent: -500, stagger: 0.2}, 0)
     .to([loader, loaderContent], {yPercent: -100}, 0.2)
-    .to('#main', {y: 0, /*force3D:true*/}, 0.2);
+    .to('#main', {y: 0, force3D:true}, 0);
 
   const tlLoader = gsap.timeline();
   tlLoader
     .add(tlLoaderIn)
     .add(tlLoaderOut);
 }
-
-function delay(n) {
-	n = n || 2000;
-	return new Promise((done) => {
-		setTimeout(() => {
-			done();
-		}, n);
-	});
-}
-
 
 /*
 ================================================================================
@@ -806,8 +788,7 @@ function initContent() {
 
   select('body').classList.remove('is-loading');
   initScroll();
-  outlinehero();
-  console.log("JEBOTE OUTLINE");
+ 
 }
 
 /*
@@ -825,7 +806,7 @@ function pageTransitionIn({
   .set(loaderInner, {autoAlpha: 0})
   .fromTo(loader, {yPercent: -100}, {yPercent: 0})
   .fromTo(loaderMask, {yPercent: 80}, {yPercent: 0}, 0)
-  .to(container, {y: 80, /*force3D:true*/}, 0);
+  .to(container, {y: 80, force3D:true}, 0);
 
 /*
   .to(container, {autoAlpha:0}, 0);
@@ -873,11 +854,6 @@ function initPageTransitions() {
   barba.hooks.after(() => {
     select('html').classList.remove('is-transitioning');
 
-    //REINT LOCOMOTIVE SCROLL
-   /*  locoScroll.init(); */
-    
-
-    
   });
 
 
@@ -889,7 +865,7 @@ function initPageTransitions() {
   });
   //kill scrolltrigger
   barba.hooks.beforeLeave(() => {
-   /*locoScroll.destroy(); */
+   locoScroll.destroy(); 
    /*
      //KILL SCROLLTRIGGERRRRR PREBAČEN
      if (ScrollTrigger.getAll().length > 0) {
@@ -923,9 +899,8 @@ function initPageTransitions() {
   */
 
   barba.init({
-     sync:true,
+   /*  timeout: 5000, */
     debug: true,
-    timeout: 7000, 
     prefetch: true,
   /*
 ================================================================================
@@ -959,7 +934,7 @@ views: [{
   namespace: 'onama',
   beforeEnter(){
     outlinehero();
-    console.log("OUTLINE HERO LOADED ON NAMECPACE");
+    console.log("OUTLINE HERO LOADED");
     simpleaccordion();
     zoomimage(); 
     
@@ -1115,12 +1090,13 @@ console.log("location SORTING pa MAP LOADED");
     */
     transitions: [{
    
-      once(data) {
+      once({
+        next
+      }) {
        
         // do something once on the initial page load
-        initScroll();
         initLoader();
-       
+        
         /* kontaktfs();
         console.log("FSKONTAKT LOADED"); */
         /*fullscreenMenuNew(); */
@@ -1128,25 +1104,20 @@ console.log("location SORTING pa MAP LOADED");
                 
       },
 
-      async leave(data) {
+      async leave({
+        current
+      }) {
 
           // animate loading screen in
-        pageTransitionIn(data.current);
-        await delay(1000);
-        data.current.container.remove();
-      },
-      async enter(data) {
-        // animate loading screen away
-        pageTransitionOut(data.next);
+        await pageTransitionIn(current);
         
       },
-
-      async beforeEnter(data) {
-        ScrollTrigger.getAll().forEach(t => t.kill());
-        console.log("new SCROLTRIGGER KILED");
-        scroll.destroy();
-        console.log("new LOCO SCROLL DESTOY");
-        initScroll(data.next.container);
+      enter({
+        next
+      }) {
+        // animate loading screen away
+        pageTransitionOut(next);
+        
       },
 
       afterEnter({
@@ -1156,7 +1127,7 @@ console.log("location SORTING pa MAP LOADED");
       },
 
       beforeEnter({next}) {
-       /*  magnetic(); */
+        magnetic();
        
       /*   heroSwiper(); */
      /*    kontaktfs();
