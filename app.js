@@ -187,7 +187,7 @@ gsap.to(".roll-number-wrap", {
 
 
 /* COUNTER O NAMA*/
-
+/*
 var cont={val:990} , newval = 1000 ;
 
 gsap.to(cont,2,{
@@ -206,7 +206,7 @@ onUpdate:function(){
   document.getElementById("counternew").innerHTML=cont.val
   
 }});
-
+*/
 
 
 /*------------/ SCROLLTRIGGER INNER IMAGE PARALLAX /------------*/
@@ -601,7 +601,7 @@ views: [{
 
   }},{
   namespace: 'onama',
-  beforeEnter({next}){
+  beforeEnter(data){
     outlinehero();
     horizpin(); 
     console.log("HORIZ LOAD ON TRANSITION");
