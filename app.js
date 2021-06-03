@@ -789,6 +789,16 @@ function initContent() {
  
 }
 
+
+function delay(n) {
+	n = n || 2000;
+	return new Promise((done) => {
+		setTimeout(() => {
+			done();
+		}, n);
+	});
+}
+
 /*
 ================================================================================
 BARBA PAGE TRANSITION IN
@@ -863,6 +873,8 @@ function initPageTransitions() {
   });
   //kill scrolltrigger
   barba.hooks.beforeLeave(() => {
+
+    /*
    locoScroll.destroy(); 
      //KILL SCROLLTRIGGERRRRR PREBAČEN
      if (ScrollTrigger.getAll().length > 0) {
@@ -872,7 +884,7 @@ function initPageTransitions() {
   }
   
   console.log("OH! SCROLLTRIGGER KILLED");
-  
+  */
 
   });
   //init scrolltrigger
@@ -888,7 +900,7 @@ function initPageTransitions() {
   BARBA PREFETCH
   ================================================================================
   */
-  barba.use(barbaPrefetch);
+  /*barba.use(barbaPrefetch);
   /*
   ================================================================================
   BARBA INIT 
@@ -1125,8 +1137,11 @@ console.log("location SORTING pa MAP LOADED");
       },
 
       beforeEnter({next}) {
-        magnetic();
-       
+       /*  magnetic(); */
+       ScrollTrigger.getAll().forEach(t => t.kill());
+        locoScroll.destroy();
+
+        console.log("UBIJENI LOCO I SCROLLTRIGGER");
       /*   heroSwiper(); */
      /*    kontaktfs();
         console.log("FSKONTAKT LOADED"); */
