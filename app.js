@@ -372,6 +372,10 @@ function initPageTransitions() {
   });
   //init scrolltrigger
   barba.hooks.afterEnter(() => {
+
+    ScrollTrigger.refresh(true); // ScrollTrigger Refresh
+  console.log("scrolltrigger refreshed ON HOOKS");
+            
    /*
     ScrollTrigger.refresh(true); // ScrollTrigger Refresh
     console.log("scrolltrigger refreshed after enter");
