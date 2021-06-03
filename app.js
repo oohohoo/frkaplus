@@ -725,8 +725,8 @@ BARBA VIEWS
       },
 
       beforeEnter({next}) {
-        scrolltriggerupdate();
-        console.log("scrolltriggerupdated");
+      /*   scrolltriggerupdate();
+        console.log("scrolltriggerupdated"); */
      },
 
     }],
@@ -1013,30 +1013,23 @@ var action = gsap.timeline({repeat:-1, defaults:{duration:0.8, ease:'none'}})
 
 }
 
-
-  /* =============================================
-NUMBER COUNT from some value 01
-================================================ */
-
-
-
-
+/* 
+=============================================
+SCROLLTRIGGER UPDATE možda out
+================================================ 
+*/
 
 function scrolltriggerupdate() {
   ScrollTrigger.update();
   }
   
-
-
-
-
-
-/* =============================================
+/* 
+=============================================
 DOWNLOAD AS PDF *** TESTNA STRANICA *** NIJE PRODUKCIJA
-================================================ */
+================================================ 
+*/
 
 function saveaspdftest() {
-
   
 /*STARI KOD KOJI RADI*/
 
@@ -1086,11 +1079,6 @@ btn.addEventListener('click', function(){
 
 
 
-
-
-
-
-
 /*STARI KOD KOJI RADI*/
 /*
   let btn = document.getElementById('btn');
@@ -1131,210 +1119,144 @@ btn.addEventListener('click', function(){
     });
 */
 
-
-
   })
-
-
 
 })
 
 }
 
-
-/* =============================================
+/* 
+=============================================
 REFERENCE LOGOTIP HOVER 
 ================================================ */
 
 function logohover() {
-/* 
-  gsap.utils.toArray(".reference-box").forEach(logo => {
-    gsap.to(logo, {
-      color: "#231f20",
-      backgroundColor: "#231f20",
-      duration: 0.6,
-      ease: "power1.inOut",
-      scrollTrigger: {
-        trigger: logo,
-        //scrub: 1
-      }
-    });
-  }) */
-  
-
 
   gsap.utils.toArray(".reference--logo-wrap").forEach(container => {
-    let logoitem = container.querySelector(".reference-box"),
-       // silhouette = container.querySelector(".silhouette .cover"), */
-        tl = gsap.timeline({ paused: true });
-    
-    tl.to(logoitem, { color: "#ffdc52", backgroundColor: "#231f20",  duration:0.2, ease: 'power1.inOut', });
-    
-    container.addEventListener("mouseenter", () => tl.play() );
-    container.addEventListener("mouseleave", () => tl.reverse() );
+        let logoitem = container.querySelector(".reference-box"),
+          // silhouette = container.querySelector(".silhouette .cover"), */
+          tl = gsap.timeline({
+            paused: true
+          });
+
+        tl.to(logoitem, {
+          color: "#ffdc52",
+          backgroundColor: "#231f20",
+          duration: 0.2,
+          ease: 'power1.inOut',
+        });
+
+        container.addEventListener("mouseenter", () => tl.play());
+        container.addEventListener("mouseleave", () => tl.reverse());
   });
-
-
-
-
 
 }
-
-
-/* 
-=============================================
-MAGNETIC KONTAKT BUTTON
-================================================ 
-*/
-
-function magnetic() {
-
-var mWrap = document.querySelectorAll(".magnetic-wrap");
-
-function parallaxIt(e, wrap, movement = 1) {
-  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  var boundingRect = wrap.mArea.getBoundingClientRect();
-  var halfDiff = Math.abs(boundingRect.width - boundingRect.height) / 2;
-  var relX = e.pageX - boundingRect.left - halfDiff;
-  var relY = e.pageY - boundingRect.top;
-
-  gsap.to(wrap.mContent, {
-    x: (relX - boundingRect.width / 2) * movement,
-    y: (relY - boundingRect.height / 2 - scrollTop) * movement,
-    ease: "power1",
-    duration: 0.6
-  });
-}
-
-mWrap.forEach(function (wrap) {
-  wrap.mContent = wrap.querySelector(".js-magnetic-content");
-  wrap.mArea = wrap.querySelector(".js-magnetic-area");
-  
-  wrap.mArea.addEventListener("mousemove", function(e) {
-    parallaxIt(e, wrap);
-  });
-  
-  wrap.mArea.addEventListener("mouseleave", function (e) {
-    gsap.to(wrap.mContent, {
-      scale: 1,
-      x: 0,
-      y: 0,
-      ease: "power3",
-      duration: 0.6
-    });
-  });
-});
-
-}
-
-
 
 /* 
 =============================================
 TEST YOUR DESIGN MODUL
 ================================================ 
 */
-
 function openTestYourDesign() {
   gsap.set('#tweenbox', {
     scaleY: 0,
     transformOrigin: 'top',
-  
- })
+
+  })
   let forwards = true;
   document.querySelector("#tweenbutton").addEventListener("click", ev => {
-    if(forwards) {
-      
-      const tl = gsap.timeline({ })
-      
+    if (forwards) {
 
-      .to('#tweenbox', {
-         scaleY: 1,
+      const tl = gsap.timeline({})
+
+
+        .to('#tweenbox', {
+          scaleY: 1,
           /* rotate:0, */
-        duration: 0.64,
-        ease: 'power2.inOut',
-        overwrite: "auto"
-      })
+          duration: 0.64,
+          ease: 'power2.inOut',
+          overwrite: "auto"
+        })
 
-      .to('.test-content', {
-        autoAlpha:1,
-        /* scaleY: 1.3, */
-        rotate:360,
-         /* rotate:0, */
-       duration: 0.64,
-       ease: 'power2.inOut',
-       overwrite: "auto"
-     })
+        .to('.test-content', {
+          autoAlpha: 1,
+          /* scaleY: 1.3, */
+          rotate: 360,
+          /* rotate:0, */
+          duration: 0.64,
+          ease: 'power2.inOut',
+          overwrite: "auto"
+        })
 
-     .to('#tweenbutton', {
-      rotate:20,
-      scale:0.7,
- backgroundColor: "#ff0000",
-     duration: 0.64,
-     ease: 'power2.inOut',
-     overwrite: "auto"
-   }, "<")
+        .to('#tweenbutton', {
+          rotate: 20,
+          scale: 0.7,
+          backgroundColor: "#ff0000",
+          duration: 0.64,
+          ease: 'power2.inOut',
+          overwrite: "auto"
+        }, "<")
 
-      
+
     } else {
-      
-      const tl2 = gsap.timeline({ })
 
-      .to('.test-content', {
-        autoAlpha:0,
-        /* scaleY: 1, */
-        rotate:-360,
-      /*  transformOrigin: 'top', */
-       /* rotate:30, */
-        duration: 0.64,
-        ease: 'power2.inOut',
-        overwrite: "auto"
-      })
+      const tl2 = gsap.timeline({})
+
+        .to('.test-content', {
+          autoAlpha: 0,
+          /* scaleY: 1, */
+          rotate: -360,
+          /*  transformOrigin: 'top', */
+          /* rotate:30, */
+          duration: 0.64,
+          ease: 'power2.inOut',
+          overwrite: "auto"
+        })
 
 
-     .to('#tweenbox', {
-        
-       scaleY: 0,
-      /*  transformOrigin: 'top', */
-       /* rotate:30, */
-        duration: 0.64,
-        ease: 'power2.inOut',
-        overwrite: "auto",
-        
-      })
+        .to('#tweenbox', {
 
-      .to('#tweenbutton', {
-        rotate:0,
-        scale:1,
-   backgroundColor: "#ffffff",
-       duration: 0.64,
-       ease: 'power2.inOut',
-       overwrite: "auto"
-     }, "<")
+          scaleY: 0,
+          /*  transformOrigin: 'top', */
+          /* rotate:30, */
+          duration: 0.64,
+          ease: 'power2.inOut',
+          overwrite: "auto",
 
-      
+        })
+
+        .to('#tweenbutton', {
+          rotate: 0,
+          scale: 1,
+          backgroundColor: "#ffffff",
+          duration: 0.64,
+          ease: 'power2.inOut',
+          overwrite: "auto"
+        }, "<")
+
     }
     /* tl.reverse(); */
     forwards = !forwards;
   });
-  
 
   const button = document.querySelector('.printtopdf');
-button.addEventListener('click', () => {window.print()});
-
-
+  button.addEventListener('click', () => {
+    window.print()
+  });
 
 }
 
 
 
 
-
+/* 
+=============================================
+TRANSFORM MATRIX 3d GENERATOR
+================================================ 
+*/
 
 function matrixtransform() {
  
-
-/*TRANSFORM MATRIX 3d GENERATOR*/
 (function() {
   var $, applyTransform, getTransform, makeTransformable;
 
@@ -1517,9 +1439,6 @@ function matrixtransform() {
 }
 
 
-
-
-
 /* 
 =============================================
 ZOOM IMAGE
@@ -1528,9 +1447,6 @@ ZOOM IMAGE
 
 function zoomimage() {
 
-
-  
-  
   $(document).ready(function(){ 
     var elements = document.querySelectorAll( '.demo-image' );
     Intense( elements );
@@ -1540,10 +1456,6 @@ function zoomimage() {
 
 }
 
-
-
-
-
 /* 
 =============================================
 SORT FINAL
@@ -1552,12 +1464,9 @@ SORT FINAL
 
 function sorting() {
 
-
-
   "use strict";
 
   var Shuffle = window.Shuffle;
-  
   
   // ES7 will have Array.prototype.includes.
   function arrayIncludes(array, value) {
@@ -1568,12 +1477,9 @@ function sorting() {
   function toArray(thing) {
     return Array.prototype.slice.call(thing);
   }
-  
-  
+
   /**/
-    
-  
-  
+
   var Demo = function(element) {
    
     /*dodano*/
@@ -1593,26 +1499,21 @@ function sorting() {
       itemSelector: '.picture-item',
     });
    
-  
-    
+
     this.filters = {
       shapes: [],
       colors: [],
      /* styles: [], */
     };
       
-        this.addSorting();
+    this.addSorting();
   
     this._bindEventListeners();
      
-  
   };
   
-  
-  
-  
-  
-  
+
+
   Demo.prototype.setupEvents = function () {
     document.querySelector('#append').addEventListener('click', this.onAppendBoxes.bind(this));
   };
@@ -1635,9 +1536,7 @@ function sorting() {
   };
   
   
-  
-  
-  
+
   /**
    * Sorting
    */
@@ -1693,9 +1592,6 @@ function sorting() {
   };
   
   
-  
-  
-   
   /**
    * Bind event listeners for when the filters change.
    */
@@ -1761,7 +1657,6 @@ function sorting() {
   };
   */
   
-  
   /**
    * A shape input check state changed, update the current filters and filte.r
    */
@@ -1814,7 +1709,6 @@ function sorting() {
   */
   
   
-  
   /**
    * Filter shuffle based on the current state of filters.
    */
@@ -1851,7 +1745,6 @@ function sorting() {
     
      }
     
-  
   };
   
   /**
@@ -1864,13 +1757,6 @@ function sorting() {
       return this.filters[key].length > 0;
     }, this);
   };
-  
-  
-  
-  
-  
-  
-  
   
   
   /**
@@ -1903,13 +1789,9 @@ function sorting() {
     return true;
   };
   
-  
-  
-  
-  
-  
+
   /* S E A R C H */
-  
+
   
   // Advanced filtering
   Demo.prototype.addSearchFilter = function () {
@@ -2018,11 +1900,13 @@ gsap.to(".filledtwo, .outlinetwo", {
 /*
 }) */
 }
-
+/* 
+=============================================
+OUTLINE ONAMA HERO
+================================================ 
+*/
 
 function horizpin() {
-/**/
-// Pinning and horizontal scrolling
 
 let horizontalSections = document.querySelectorAll(".horizontal-scroll");
 
