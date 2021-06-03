@@ -178,29 +178,6 @@ onUpdate:function(){
 
 
 
-/* PREVENT SCROLL UNDER FS MENU*/
-function handler1() {
-  locoScroll.stop();
-  $(this).one("click", handler2);
-}
-
-function handler2() {
-  locoScroll.start();
-  $(this).one("click", handler1);
-}
-$(".fs-nav-butt").one("click", handler1);
-
-
-
-$(".mapbox").hover(function () {
-  locoScroll.stop();
-});
-
-$(".mapbox").mouseout(function () {
-  locoScroll.start();
-
-});
-
 /* 
 ============================================================================
 SHOW HIDE HEADER ON SCROLL + CUSTOM ANIMATION + CHANGE COLOR ON DIFF BACKGROUNDS
@@ -567,14 +544,15 @@ BARBA VIEWS
 
               namespace: 'lokacije',
               once() {
-                sorting();
+                
               },
               beforeEnter({
                 next
               }) {
-                sorting();
                 locationMap();
-                console.log("location SORTING pa MAP LOADED");
+                sorting();
+                stopScrollMap():
+                console.log("location SORTING pa MAP LOADED + stop scroll map");
               },
               beforeLeave({
                 current
@@ -886,6 +864,37 @@ var menu = ['', '', '', '', '', '']
  /*  } */
   })        
   
+}
+
+
+/*
+================================================================================
+PREVENT SCROLL UNDER FS MENU
+================================================================================
+*/
+function stopScrollMap() {
+
+function handler1() {
+  locoScroll.stop();
+  $(this).one("click", handler2);
+}
+
+function handler2() {
+  locoScroll.start();
+  $(this).one("click", handler1);
+}
+$(".fs-nav-butt").one("click", handler1);
+
+
+
+$(".mapbox").hover(function () {
+  locoScroll.stop();
+});
+
+$(".mapbox").mouseout(function () {
+  locoScroll.start();
+
+});
 }
 
 /*
