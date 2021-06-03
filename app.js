@@ -343,7 +343,7 @@ horizontalSections.forEach(horizontalSection => {
      scrollTrigger: {
       scroller: ".smooth-scroll",
        scrub: true,
-       trigger: ".horizontal-scroll",
+       trigger: ".hor-section-200",
        pin: true,
        //markers: true,
        start: "top top",
