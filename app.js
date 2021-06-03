@@ -818,7 +818,7 @@ function initPageTransitions() {
   */
 
   barba.init({
-    timeout: 5000, 
+    timeout: 7000, 
     debug: true,
     prefetch: true,
   /*
@@ -832,7 +832,7 @@ views: [{
   beforeEnter(data) {
     homevideo();
     heroApeli();
-
+    ScrollTrigger.refresh();
     document.getElementById('homevid').play();
 
   /* imgoverlay(); */
