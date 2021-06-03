@@ -1110,6 +1110,8 @@ console.log("location SORTING pa MAP LOADED");
 
           // animate loading screen in
         await pageTransitionIn(current);
+        data.current.container.remove();
+        console.log("CONTAINER REMOOOVEEED");
         
       },
       enter({
