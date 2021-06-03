@@ -97,6 +97,8 @@ WIZARDRY -- MOŽDA NE!
      p {font-size: 12.48px;}
 }
 */
+
+
 /*
 ================================================================================
 LOADER
@@ -217,8 +219,31 @@ LOADER
     right: 1000px !important;
 }
 
+/*
+================================================================================
+O NAMA HORIZONTAL SCROLL
+================================================================================
+*/
 
+.horizontal-scroll {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  left: 0;
+}
 
+.pin-wrap {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 10vw;
+}
+
+.pin-wrap > * {
+  min-width: 60vw;
+  padding: 0 5vw;
+}
 
 
 
