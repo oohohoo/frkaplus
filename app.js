@@ -786,8 +786,8 @@ function initContent() {
 
   select('body').classList.remove('is-loading');
   initScroll();
- /*  outlinehero(); 
-  console.log("OUTLINE UČITAN TAMO"); */
+  outlinehero(); 
+  console.log("OUTLINE UČITAN TAMO");
 }
 
 
@@ -1121,7 +1121,7 @@ console.log("location SORTING pa MAP LOADED");
 
           // animate loading screen in
         await pageTransitionIn(current);
-        await delay(1000);
+       /*  await delay(1000); */
       },
       enter({
         next
