@@ -788,10 +788,6 @@ function initContent() {
 
   select('body').classList.remove('is-loading');
   initScroll();
-/*   $(document).ready(function(){ */
-    outlinehero();
-    console.log("OUTLINE HERO NA PEJĐU AFTER DOCUMENT READY");
-/*   }); */
  
 }
 
@@ -869,7 +865,15 @@ function initPageTransitions() {
   });
   //kill scrolltrigger
   barba.hooks.beforeLeave(() => {
- 
+   locoScroll.destroy(); 
+     //KILL SCROLLTRIGGERRRRR PREBAČEN
+     if (ScrollTrigger.getAll().length > 0) {
+      ScrollTrigger.getAll().forEach((trigger) => {
+          trigger.kill()
+      });
+  }
+  
+  console.log("OH! SCROLLTRIGGER KILLED");
   
 
   });
@@ -894,7 +898,7 @@ function initPageTransitions() {
   */
 
   barba.init({
-  /*  timeout: 7000,  */
+   /*  timeout: 5000, */
     debug: true,
     prefetch: true,
   /*
@@ -1122,15 +1126,7 @@ console.log("location SORTING pa MAP LOADED");
       },
 
       beforeEnter({next}) {
-        locoScroll.destroy(); 
-        //KILL SCROLLTRIGGERRRRR PREBAČEN
-        if (ScrollTrigger.getAll().length > 0) {
-         ScrollTrigger.getAll().forEach((trigger) => {
-             trigger.kill()
-         });
-     }
-     
-     console.log("OH! SCROLLTRIGGER KILLED");
+        magnetic();
        
       /*   heroSwiper(); */
      /*    kontaktfs();
@@ -2985,7 +2981,7 @@ function outlinehero() {
 /*$(document).ready(function(){ */
  /*  ScrollTrigger.refresh();
   console.log("FUCKER IS REFRESHED"); */
-/* gsap.set('.filled-text, .outline-text', {x:-500}); */
+gsap.set('.filled-text, .outline-text', {x:-500});
 gsap.to(".filled-text, .outline-text", {
   scrollTrigger:{
   scroller: ".smooth-scroll",
@@ -2997,7 +2993,7 @@ gsap.to(".filled-text, .outline-text", {
   x: 500
 });
 
-/* gsap.set('.filledtwo, .outlinetwo', {x:500}); */
+gsap.set('.filledtwo, .outlinetwo', {x:500});
 gsap.to(".filledtwo, .outlinetwo", {
   scrollTrigger:{
   scroller: ".smooth-scroll",
