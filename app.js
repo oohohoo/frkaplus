@@ -347,7 +347,7 @@ horizontalSections.forEach(horizontalSection => {
        trigger: ".horizontal-scroll",
        pin: true,
        //markers: true,
-       start: "top top",
+       start: "top 20%",
        end: () => `+=${pinWrapWidth}`,
        invalidateOnRefresh: true 
        },
