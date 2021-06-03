@@ -830,9 +830,8 @@ views: [{
   namespace: 'home',
 
   beforeEnter(data) {
-    homevideo();
+   /*  homevideo(); */
     heroApeli();
-    ScrollTrigger.refresh();
     document.getElementById('homevid').play();
 
   /* imgoverlay(); */
