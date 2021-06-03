@@ -317,34 +317,6 @@ scroller: ".smooth-scroll",
 });
 
 
-/**/
-// Pinning and horizontal scrolling
-
-let horizontalSections = document.querySelectorAll(".horizontal-scroll");
-
-horizontalSections.forEach(horizontalSection => {
-   let pinWrap = document.querySelector(".pin-wrap");
-   let pinWrapWidth = pinWrap.offsetWidth;
-   let horizontalScrollLength = pinWrapWidth - window.innerWidth;
-   gsap.to(pinWrap, {
-     scrollTrigger: {
-      scroller: ".smooth-scroll",
-       scrub: 2,
-       trigger: ".horizontal-scroll",
-       pin: ".stophor",
-       /* anticipatePin: 1, */
-       //markers: true,
-       start: "top top",
-       
-       end: () => `+=${pinWrapWidth}`,
-       invalidateOnRefresh: true 
-       },
-
-     x: -horizontalScrollLength,
-     ease: "none" });
-
- });
-
 
 
 /* OVO JE UBAČENO NAKNADNO
@@ -516,7 +488,8 @@ function initContent() {
   select('body').classList.remove('is-loading');
   initScroll();
   outlinehero();
-  console.log("OUTLINE HERO INIT LOAD");
+  horizpin(); 
+  console.log("OUTLINE HERO INIT  + HORIZ PIN lOADLOAD");
 }
 
 /*
@@ -2689,4 +2662,36 @@ gsap.to(".filledtwo, .outlinetwo", {
 
 /*
 }) */
+}
+
+
+function horizpin() {
+/**/
+// Pinning and horizontal scrolling
+
+let horizontalSections = document.querySelectorAll(".horizontal-scroll");
+
+horizontalSections.forEach(horizontalSection => {
+   let pinWrap = document.querySelector(".pin-wrap");
+   let pinWrapWidth = pinWrap.offsetWidth;
+   let horizontalScrollLength = pinWrapWidth - window.innerWidth;
+   gsap.to(pinWrap, {
+     scrollTrigger: {
+      scroller: ".smooth-scroll",
+       scrub: 2,
+       trigger: ".horizontal-scroll",
+       pin: ".stophor",
+       /* anticipatePin: 1, */
+       //markers: true,
+       start: "top top",
+       
+       end: () => `+=${pinWrapWidth}`,
+       invalidateOnRefresh: true 
+       },
+
+     x: -horizontalScrollLength,
+     ease: "none" });
+
+ });
+
 }
