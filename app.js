@@ -867,13 +867,15 @@ function initPageTransitions() {
   barba.hooks.beforeLeave(() => {
    locoScroll.destroy(); 
      //KILL SCROLLTRIGGERRRRR PREBAČEN
-     if (ScrollTrigger.getAll().length > 0) {
+    /* if (ScrollTrigger.getAll().length > 0) {
       ScrollTrigger.getAll().forEach((trigger) => {
           trigger.kill()
       });
+      console.log("OH! SCROLLTRIGGER KILLED");
+      */
   }
   
-  console.log("OH! SCROLLTRIGGER KILLED");
+ 
   
 
   });
