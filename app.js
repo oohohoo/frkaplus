@@ -155,77 +155,22 @@ locoScroll.on('scroll', (instance) => {
 ================================================================================ */
 
  
- /* ============================================================================
-INSET CLIPMASK ON FIRST
-================================================================================ */
-
-let videoroll = gsap.timeline()
-
-let cover = document.querySelector('.bgvideo')
-let firstSection = document.querySelector('.big-logo')
-
-videoroll.to(".bgvideo", {
-  scrollTrigger: {
-    scroller: ".smooth-scroll",
-    trigger: firstSection,    
-    start: 'top 20%',
-    end: "+=30%",    
-    scrub: 2,
-  },
-  /*clipPath: 'inset(60%)',*/
-  scale:1.15,
-  rotate:0,
-  yPercent:-30
-})
-
-
-.to(".hero--white--background", {
-  scrollTrigger: {
-    scroller: ".smooth-scroll",
-    trigger: firstSection,    
-    start: 'top 20%',
-    end: "+=30%",    
-    scrub: 2,
-  },
-  /*clipPath: 'inset(60%)',*/
-  duration: 0.2,
-  autoAlpha:0,
-  rotate:0,
- 
-})
-
-/* 
-.from(".videoplay", {
-  scrollTrigger: {
-    scroller: ".smooth-scroll",
-    trigger: firstSection,    
-    start: 'top 60%',
-    end: "+=30%",    
-    scrub: 2,
-  },
-  
-  duration: 0.2,
-  autoAlpha:0,
-  
-  
- 
-}) */
 
 
 
 
-/*14/15 ROLL */
+
+
+/* 14/15 ROLL */
 gsap.to(".roll-number-wrap", {
-  scrollTrigger:{
-  scroller: ".smooth-scroll",
-    trigger: ".gi--num--wrap", 
-    start: "top 85%", 
-    end: "bottom top", 
-   scrub: 1,
-   
+  scrollTrigger: {
+    scroller: ".smooth-scroll",
+    trigger: ".gi--num--wrap",
+    start: "top 85%",
+    end: "bottom top",
+    scrub: 1,
   },
   y: -700,
-  //duration:2
 });
 
 
@@ -757,6 +702,7 @@ function initContent() {
 
   select('body').classList.remove('is-loading');
   initScroll();
+  homevideo();
   outlinehero();
   horizontalpin();
   console.log("OUTLINE HERO INIT LOAD");
@@ -869,7 +815,7 @@ function initPageTransitions() {
   */
 
   barba.init({
-   /*  timeout: 5000, */
+    timeout: 5000, 
     debug: true,
     prefetch: true,
   /*
@@ -881,7 +827,7 @@ views: [{
   namespace: 'home',
 
   beforeEnter(data) {
-    /* heroSwiper(); */
+    homevideo();
     heroApeli();
 
     document.getElementById('homevid').play();
@@ -3014,5 +2960,35 @@ horizontalSections.forEach(horizontalSection => {
      ease: "none" });
 
  });
+
+}
+
+
+
+/* 
+============================================================================
+HOME VIDEO
+================================================================================ 
+*/
+
+function homevideo() {
+let videoroll = gsap.timeline()
+
+let cover = document.querySelector('.bgvideo')
+let firstSection = document.querySelector('.big-logo')
+
+videoroll.to(".bgvideo", {
+  scrollTrigger: {
+    scroller: ".smooth-scroll",
+    trigger: firstSection,
+    start: 'top 20%',
+    end: "+=30%",
+    scrub: 2,
+  },
+  /*clipPath: 'inset(60%)',*/
+  scale: 1.15,
+  rotate: 0,
+  yPercent: -30
+})
 
 }
