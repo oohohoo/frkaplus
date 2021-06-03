@@ -358,7 +358,7 @@ horizontalSections.forEach(horizontalSection => {
  });
 
  /* COLOR CHANGER */
-
+/*
  const scrollColorElems = document.querySelectorAll("[data-bgcolor]");
  scrollColorElems.forEach((colorSection, i) => {
    const prevBg = i === 0 ? "" : scrollColorElems[i - 1].dataset.bgcolor;
@@ -380,7 +380,7 @@ horizontalSections.forEach(horizontalSection => {
        color: prevText,
        overwrite: "auto" }) });
 
-
+*/
  });
   /*NE ZNAM DA LI OVO IDE???*/
   //locoScroll.update();
