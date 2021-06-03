@@ -96,7 +96,7 @@ MAIN JS + LOCOMOTIVE SCROLL + SCROLL TRIGGER PROXY
 */
 
 window.addEventListener("load", function () {
-  
+
 function initScroll(container) {
 
   locoScroll = new LocomotiveScroll({
@@ -176,7 +176,7 @@ videoroll.to(".bgvideo", {
   yPercent:-30
 })
 
-
+/* 
 .to(".hero--white--background", {
   scrollTrigger: {
     scroller: ".smooth-scroll",
@@ -190,7 +190,9 @@ videoroll.to(".bgvideo", {
   autoAlpha:0,
   rotate:0,
  
-})
+}) 
+
+});
 
 /* 
 .from(".videoplay", {
@@ -460,7 +462,7 @@ console.log("refresh init mamicu mu AJMOOOO");
   ScrollTrigger.refresh();
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
 
-});
+
 
 
 
