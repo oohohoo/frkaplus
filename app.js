@@ -786,8 +786,8 @@ function initContent() {
 
   select('body').classList.remove('is-loading');
   initScroll();
-  outlinehero(); 
-  console.log("OUTLINE UČITAN TAMO");
+ /*  outlinehero(); 
+  console.log("OUTLINE UČITAN TAMO"); */
 }
 
 
