@@ -155,11 +155,6 @@ console.log("refresh init mamicu mu AJMOOOO");
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
 
 
-// Dynamic Copyright Year
-var date = new Date().getFullYear();
-document.getElementById("year").innerHTML = date;
-
-
 /*
 ================================================================================
 LOCOMOTIVE 4 SCROLL TO TOP
@@ -315,6 +310,7 @@ function initContent() {
   hideMenu();
   multilinereveal();
   onamacounter();
+  
     /* imageparallax(); */
   console.log("SCRIPTS SCROLLTRIGGER LOADED");
 }
@@ -556,8 +552,9 @@ BARBA VIEWS
       },
 
       beforeEnter({next}) {
-      /*   scrolltriggerupdate();
-        console.log("scrolltriggerupdated"); */
+        yearupdate();
+        console.log("YEAR UPDATE");
+     
      },
 
     }],
@@ -875,6 +872,20 @@ var action = gsap.timeline({repeat:-1, defaults:{duration:0.8, ease:'none'}})
 
 }
 
+
+/* 
+=============================================
+Dynamic Copyright Year
+================================================ 
+*/
+function yearupdate() {
+
+  var date = new Date().getFullYear();
+  document.getElementById("year").innerHTML = date;
+  
+  }
+
+  
 /* 
 =============================================
 SCROLLTRIGGER UPDATE možda out
@@ -1986,3 +1997,4 @@ onUpdate:function(){
   
 }});
 }
+
