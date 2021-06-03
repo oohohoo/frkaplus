@@ -476,8 +476,8 @@ horizontalSections.forEach(horizontalSection => {
        /* anticipatePin: 1, */
        //markers: true,
        start: "top top",
-       end: "bottom bottom",
-      /*  end: () => `+=${pinWrapWidth}`, */
+       
+       end: () => `+=${pinWrapWidth}`,
        invalidateOnRefresh: true 
        },
 
@@ -494,7 +494,7 @@ ScrollTrigger.addEventListener("refreshInit", resize);
 console.log("refresh init mamicu mu AJMOOOO");
 */
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
-/* ScrollTrigger.addEventListener("refreshInit", resize); */
+ScrollTrigger.addEventListener("refreshInit", resize);
 
   // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
   ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
@@ -866,7 +866,6 @@ function initPageTransitions() {
   //kill scrolltrigger
   barba.hooks.beforeLeave(() => {
    locoScroll.destroy(); 
-   /*
      //KILL SCROLLTRIGGERRRRR PREBAČEN
      if (ScrollTrigger.getAll().length > 0) {
       ScrollTrigger.getAll().forEach((trigger) => {
@@ -876,7 +875,7 @@ function initPageTransitions() {
   
   console.log("OH! SCROLLTRIGGER KILLED");
   
-*/
+
   });
   //init scrolltrigger
   barba.hooks.afterEnter(() => {
