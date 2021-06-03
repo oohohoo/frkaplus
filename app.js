@@ -705,7 +705,8 @@ function initContent() {
   homevideo();
   outlinehero();
   horizontalpin();
-  console.log("OUTLINE HERO INIT LOAD");
+  ScrollTrigger.refresh();
+  console.log("OUTLINE HERO INIT LOAD + ST REFRESH");
 }
 
 /*
@@ -797,7 +798,7 @@ function initPageTransitions() {
   //init scrolltrigger
   barba.hooks.afterEnter(() => {
 
-    ScrollTrigger.refresh();
+    
    /*
     ScrollTrigger.refresh(true); // ScrollTrigger Refresh
     console.log("scrolltrigger refreshed after enter");
@@ -852,7 +853,7 @@ views: [{
   namespace: 'onama',
   beforeEnter(){
     outlinehero();
-    console.log("OUTLINE HERO LOADED");
+    horizontalpin();
     simpleaccordion();
     zoomimage(); 
     
