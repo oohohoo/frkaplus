@@ -864,6 +864,7 @@ views: [{
     simpleaccordion();
     zoomimage(); 
     outlineonamahero();
+    console.log("OUTLINE LOADED");
     /* counteriOnama();
     console.log("COUNTER LOADED"); */
  /*    locoAccordion(); */
