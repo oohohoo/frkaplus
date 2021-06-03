@@ -469,7 +469,7 @@ horizontalSections.forEach(horizontalSection => {
    gsap.to(pinWrap, {
      scrollTrigger: {
       scroller: ".smooth-scroll",
-       scrub: true,
+       scrub: 2,
        trigger: ".horizontal-scroll",
        pin: "true",
        //markers: true,
