@@ -1,5 +1,5 @@
 // OVA VERZIJA RADI BARBA
-
+window.addEventListener("load", function () {
 gsap.registerPlugin(ScrollTrigger);
 
 let locoScroll;
@@ -457,6 +457,7 @@ console.log("refresh init mamicu mu AJMOOOO");
   ScrollTrigger.refresh();
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
 
+});
 
 
 
