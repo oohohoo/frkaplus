@@ -790,7 +790,7 @@ function initContent() {
   initScroll();
   $(document).ready(function(){
     outlinehero();
-    console.log("OUTLINE HERO NA PEJĐU");
+    console.log("OUTLINE HERO NA PEJĐU AFTER DOCUMENT READY");
   });
  
 }
