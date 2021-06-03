@@ -788,10 +788,10 @@ function initContent() {
 
   select('body').classList.remove('is-loading');
   initScroll();
-  $(document).ready(function(){
+/*   $(document).ready(function(){ */
     outlinehero();
     console.log("OUTLINE HERO NA PEJĐU AFTER DOCUMENT READY");
-  });
+/*   }); */
  
 }
 
