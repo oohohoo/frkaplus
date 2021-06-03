@@ -2908,7 +2908,7 @@ function outlinehero() {
 
 /*OUTLINE TEXT OVER IMAGE MASK */
 
-$(document).ready(function(){ 
+/*$(document).ready(function(){ */
  /*  ScrollTrigger.refresh();
   console.log("FUCKER IS REFRESHED"); */
 gsap.set('.filled-text, .outline-text', {x:-500});
@@ -2935,6 +2935,6 @@ gsap.to(".filledtwo, .outlinetwo", {
   x: -500
 });
 
-
-}) 
+/*
+}) */
 }
