@@ -505,13 +505,13 @@ BARBA VIEWS
     */
     transitions: [{
    
-      once({
-        next
+      once({next
       }) {
        
         // do something once on the initial page load
         initLoader();
-  
+        scrollTotop();
+        console.log("SCROLLTO TOP INIT");
       },
 
       async leave({current}) {
@@ -531,8 +531,7 @@ BARBA VIEWS
 
       beforeEnter({next}) {
         yearupdate();
-        scrollTotop();
-        console.log("YEAR UPDATE+SCROLLTOTOP");
+       
      
      },
 
