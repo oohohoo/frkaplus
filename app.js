@@ -850,7 +850,7 @@ views: [{
 
 },{
   namespace: 'onama',
-  beforeEnter(){
+  beforeEnter(data){
  /*    outlinehero(); */
     horizontalpin();
     simpleaccordion();
