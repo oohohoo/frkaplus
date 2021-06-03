@@ -2932,5 +2932,5 @@ gsap.to(".filledtwo, .outlinetwo", {
   },
   x: -500
 });
-}
+})
 }
