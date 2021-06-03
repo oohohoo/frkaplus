@@ -791,14 +791,14 @@ function initContent() {
 }
 
 
-function delay(n) {
+/* function delay(n) {
 	n = n || 2000;
 	return new Promise((done) => {
 		setTimeout(() => {
 			done();
 		}, n);
 	});
-}
+} */
 
 /*
 ================================================================================
