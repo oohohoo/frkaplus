@@ -1147,7 +1147,7 @@ console.log("location SORTING pa MAP LOADED");
         scroll.destroy();
         console.log("new LOCO SCROLL DESTOY");
         initScroll(data.next.container);
-      }
+      },
 
       afterEnter({
         next
