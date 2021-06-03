@@ -116,17 +116,24 @@ function initScroll(container) {
   });
 
 /*AKAPOWL JE OVO DODAO --- testiraj*/
-  locoScroll.update();
+  /* locoScroll.update(); */
 
+
+  locoScroll.on("scroll", function (t) {
+    document.documentElement.setAttribute("data-direction", t.direction);
+  });
 
 
   // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
   locoScroll.on("scroll", ScrollTrigger.update);
 
 // data direction ubačeno naknadno
+/*
 locoScroll.on('scroll', (instance) => {
     document.documentElement.setAttribute('data-direction', instance.direction)
 });
+
+*/
 
   // tell ScrollTrigger to use these proxy methods for the ".smooth-scroll" element since Locomotive Scroll is hijacking things
   ScrollTrigger.scrollerProxy(".smooth-scroll", {
@@ -453,7 +460,7 @@ scroller: ".smooth-scroll",
 /**/
 // Pinning and horizontal scrolling
 
-let horizontalSections = document.querySelectorAll(".pinner");
+let horizontalSections = document.querySelectorAll(".horizontal-scroll");
 
 horizontalSections.forEach(horizontalSection => {
    let pinWrap = document.querySelector(".pin-wrap");
