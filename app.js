@@ -791,14 +791,14 @@ function initContent() {
 }
 
 
-/* function delay(n) {
+function delay(n) {
 	n = n || 2000;
 	return new Promise((done) => {
 		setTimeout(() => {
 			done();
 		}, n);
 	});
-} */
+}
 
 /*
 ================================================================================
@@ -1121,7 +1121,7 @@ console.log("location SORTING pa MAP LOADED");
 
           // animate loading screen in
         await pageTransitionIn(current);
-       /*  await delay(1000); */
+        await delay(1000);
       },
       enter({
         next
@@ -1139,21 +1139,12 @@ console.log("location SORTING pa MAP LOADED");
 
       beforeEnter({next}) {
        /*  magnetic(); */
-       /*ScrollTrigger.getAll().forEach(t => t.kill());
+       ScrollTrigger.getAll().forEach(t => t.kill());
         locoScroll.destroy();
-*/
-                        //KILL SCROLLTRIGGERRRRR PREBAČEN
-        if (ScrollTrigger.getAll().length > 0) {
-         ScrollTrigger.getAll().forEach((trigger) => {
-             trigger.kill()
-         });
-     }
 
-     locoScroll.destroy(); 
+        console.log("UBIJENI LOCO I SCROLLTRIGGERKILLKILLKILL");
 
-     console.log("LOKO + SCROLL KILLKILLKILL ");
-
-
+        
       /*   heroSwiper(); */
      /*    kontaktfs();
         console.log("FSKONTAKT LOADED"); */
@@ -1211,6 +1202,58 @@ console.log("location SORTING pa MAP LOADED");
 
 }
 
+/*
+================================================================================
+MENU - UNDERLINE AND HAMBURGER ANIMATION
+================================================================================
+*/
+
+function underlineMouseover() {
+
+
+  /*
+  ================================================================================
+  MENU UNDERLINE
+  ================================================================================
+  */
+
+  // Mouseenter function
+  function enterAnimation(link, e, index) {
+    link.tl.tweenFromTo(0, "midway");
+  }
+  // Mouseleave function
+  function leaveAnimation(link, e) {
+    link.tl.play();
+  }
+  // Animations variables
+  let workLinkUnderlineAnimEnter;
+  let workLinkUnderlineAnimLeave;
+
+  // Get all links
+  let workLinks = document.querySelectorAll(".link-wrapper");
+
+  workLinks.forEach((link, index, value) => {
+
+  let underline = link.querySelector(".underline");
+  link.tl = gsap.timeline({paused: true});
+  link.tl.fromTo(underline, {width: "0%", left: "0%"}, {width: "100%", duration: 0.3, ease: "power1.out"});
+  link.tl.add("midway");
+  link.tl.fromTo(underline, {width: "100%",left: "0%"}, {width: "0%",left: "100%", duration: 0.3, ease: "power1.in", immediateRender: false});
+
+  // Mouseenter
+  link.addEventListener("mouseenter", (e) => {
+       enterAnimation(link, e, index);
+  });
+
+  // Mouseleave
+  link.addEventListener("mouseleave", (e) => {
+    leaveAnimation(link, e);
+    });
+
+  });
+
+}
+
 
 /*
 ================================================================================
@@ -1244,6 +1287,147 @@ var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
 
 }
 
+/*
+================================================================================
+PROJECTS - HERO ANIMACIJA
+================================================================================
+*/
+function projectsHeroAnima() {
+
+  //Splitting();
+
+const mq = window.matchMedia('(min-width: 999px)')
+if (mq.matches) {
+  var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
+  heroanimation
+  .from(".char", {duration:1.5, stagger:0.02, yPercent:130})
+  .fromTo(".in1", {autoAlpha:0, y:40},{duration:0.8,autoAlpha:1, y:0}, "<0.6")
+  .fromTo(".in2", {autoAlpha:0, y:40},{duration:0.6, autoAlpha:1, stagger:0.2, y:0}, "<0.1")
+  .fromTo(".clip", {y:200, autoAlpha:0, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
+  {autoAlpha:1, duration:2, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, "-=2")
+
+}
+else {
+  var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
+  heroanimation
+.set(".in1, .in2", {autoAlpha:1} );
+}
+
+  }
+
+  /*
+================================================================================
+TAILORED - HERO ANIMACIJA
+================================================================================
+*/
+function tailoredHeroAnima() {
+
+  Splitting();
+  
+const mq = window.matchMedia('(min-width: 999px)')
+if (mq.matches) {
+var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
+  heroanimation
+  .from(".char", {duration:1.5, stagger:0.02, yPercent:130})
+  .fromTo(".t1", {autoAlpha:0, y:40},{duration:0.8, stagger:0.02, autoAlpha:1, y:0}, "<0.6")
+  .fromTo(".clip", {y:200, autoAlpha:0, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
+  {autoAlpha:1, duration:2, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, "-=1.8")
+
+}
+else {
+  var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
+  heroanimation
+.set(".t1", {autoAlpha:1} )
+.set(".clip", {autoAlpha:1} )
+}
+
+}
+
+/*
+================================================================================
+CONTACT - HERO ANIMACIJA
+================================================================================
+*/
+function contactHeroAnima() {
+
+Splitting();
+
+const mq = window.matchMedia('(min-width: 999px)')
+if (mq.matches) {
+var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
+heroanimation
+.from(".char", {stagger:0.02, duration:1.5,yPercent:130})
+.fromTo(".c1", {autoAlpha:0, y:40},{duration:0.8, autoAlpha:1, stagger:0.02, y:0}, "-=1.2")
+
+}
+else {
+  var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
+  heroanimation
+.set(".c1", {autoAlpha:1} );
+}
+
+}
+ 
+/*
+================================================================================
+SWIPER - HERO ANIMACIJA
+================================================================================
+*/
+/*
+function heroSwiper() {
+  var swiper = new Swiper('.swiper-container', {
+    // pagination: '.swiper-pagination',
+      navigation: {
+  nextEl: '.next',
+  prevEl: '.prev',
+},
+     direction: 'horizontal',
+     resistanceRatio:0.5,
+     slidesPerView: 4,
+     longSwipes:true,
+     longSwipesRatio:0.5,
+     touchRatio:5,
+     //paginationClickable: true,
+     spaceBetween: 20,
+     //mousewheelControl: true,
+     parallax: true,
+     //preloadImages: true,
+     updateOnImagesReady: true,
+    // centeredSlides: true,
+    slidesOffsetBefore: 300,
+     speed: 600,
+     grabCursor: true,
+     breakpoints: {
+                     500: {
+                      //   spaceBetween: 30,
+                       //  loopedSlides: 3,
+                        // slidesPerView: 1
+                     },
+                     1e3: {
+                       //  loopedSlides: 3,
+                        // spaceBetween:10,
+                        // slidesPerView: 1.1
+                     },
+                     1200: {
+                      //   spaceBetween: 20,
+                         // loopedSlides: 3,
+                        // slidesPerView: 3.1
+                     }
+                 }
+
+ });
+
+$('.swiper-container').on('mousedown touchstart', function(event) {
+gsap.to('.swiper-slide', {scale: 0.9, duration: 0.4});
+});
+console.log("SWIPER BISE TREBA SMANJITI");
+
+$('.swiper-container').on('mouseup touchend', function(event) {
+gsap.to('.swiper-slide', {scale:1, duration: 0.4, delay:0.2});
+});
+console.log("SWIPER BISE TREBA VRATITI NA STARU DIMENZIJU");
+}
+*/
 
 /*
 ================================================================================
@@ -1329,7 +1513,7 @@ $(document).ready(function(){
 
 /*
 ================================================================================
-LOCATION MAP
+LOCO ACCORDION
 ================================================================================
 */
 
