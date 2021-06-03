@@ -122,6 +122,8 @@ function initScroll(container) {
   locoScroll.on("scroll", function (t) {
     document.documentElement.setAttribute("data-direction", t.direction);
   });
+
+
   // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
   locoScroll.on("scroll", ScrollTrigger.update);
 
@@ -132,6 +134,7 @@ locoScroll.on('scroll', (instance) => {
 });
 
 */
+
   // tell ScrollTrigger to use these proxy methods for the ".smooth-scroll" element since Locomotive Scroll is hijacking things
   ScrollTrigger.scrollerProxy(".smooth-scroll", {
     scrollTop(value) {
@@ -144,8 +147,8 @@ locoScroll.on('scroll', (instance) => {
     // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, 
     // we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
     // UKLJUČITI SAMO NA MOBILNOJ VERZIJI
- 
-    pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed"
+    /*
+    pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed"*/
   });
 
 
@@ -155,28 +158,83 @@ locoScroll.on('scroll', (instance) => {
 ================================================================================ */
 
  
+ /* ============================================================================
+INSET CLIPMASK ON FIRST
+================================================================================ */
 
+let videoroll = gsap.timeline()
 
+let cover = document.querySelector('.bgvideo')
+let firstSection = document.querySelector('.big-logo')
 
-
-
-
-/* 14/15 ROLL */
-gsap.to(".roll-number-wrap", {
+videoroll.to(".bgvideo", {
   scrollTrigger: {
     scroller: ".smooth-scroll",
-    trigger: ".gi--num--wrap",
-    start: "top 85%",
-    end: "bottom top",
-    scrub: 1,
+    trigger: firstSection,    
+    start: 'top 20%',
+    end: "+=30%",    
+    scrub: 2,
+  },
+  /*clipPath: 'inset(60%)',*/
+  scale:1.15,
+  rotate:0,
+  yPercent:-30
+})
+
+
+.to(".hero--white--background", {
+  scrollTrigger: {
+    scroller: ".smooth-scroll",
+    trigger: firstSection,    
+    start: 'top 20%',
+    end: "+=30%",    
+    scrub: 2,
+  },
+  /*clipPath: 'inset(60%)',*/
+  duration: 0.2,
+  autoAlpha:0,
+  rotate:0,
+ 
+})
+
+/* 
+.from(".videoplay", {
+  scrollTrigger: {
+    scroller: ".smooth-scroll",
+    trigger: firstSection,    
+    start: 'top 60%',
+    end: "+=30%",    
+    scrub: 2,
+  },
+  
+  duration: 0.2,
+  autoAlpha:0,
+  
+  
+ 
+}) */
+
+
+
+
+/*14/15 ROLL */
+gsap.to(".roll-number-wrap", {
+  scrollTrigger:{
+  scroller: ".smooth-scroll",
+    trigger: ".gi--num--wrap", 
+    start: "top 85%", 
+    end: "bottom top", 
+   scrub: 1,
+   
   },
   y: -700,
+  //duration:2
 });
 
 
 /* COUNTER O NAMA*/
 
-/*
+
 var cont={val:990} , newval = 1000 ;
 
 gsap.to(cont,2,{
@@ -196,7 +254,7 @@ onUpdate:function(){
   document.getElementById("counternew").innerHTML=cont.val
   
 }});
-*/
+
 
 /* SCROLLTRIGGER LERP IMAGES - DELAY without LOCOMOTIVE SCROLL*/
 
@@ -400,6 +458,33 @@ scroller: ".smooth-scroll",
 
 
 
+/**/
+// Pinning and horizontal scrolling
+
+let horizontalSections = document.querySelectorAll(".horizontal-scroll");
+
+horizontalSections.forEach(horizontalSection => {
+   let pinWrap = document.querySelector(".pin-wrap");
+   let pinWrapWidth = pinWrap.offsetWidth;
+   let horizontalScrollLength = pinWrapWidth - window.innerWidth;
+   gsap.to(pinWrap, {
+     scrollTrigger: {
+      scroller: ".smooth-scroll",
+       scrub: 2,
+       trigger: ".horizontal-scroll",
+       pin: ".stophor",
+       /* anticipatePin: 1, */
+       //markers: true,
+       start: "top top",
+       
+       end: () => `+=${pinWrapWidth}`,
+       invalidateOnRefresh: true 
+       },
+
+     x: -horizontalScrollLength,
+     ease: "none" });
+
+ });
 
 
 
@@ -408,6 +493,7 @@ scroller: ".smooth-scroll",
 ScrollTrigger.addEventListener("refreshInit", resize);
 console.log("refresh init mamicu mu AJMOOOO");
 */
+///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
 /* ScrollTrigger.addEventListener("refreshInit", resize); */
 
   // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
@@ -685,7 +771,7 @@ function initLoader() {
 
 //.to(lines, {yPercent: -500, stagger: 0.2}, 0)
     .to([loader, loaderContent], {yPercent: -100}, 0.2)
-    .to('#main', {y: 0}, 0.2);
+    .to('#main', {y: 0, force3D:true}, 0);
 
   const tlLoader = gsap.timeline();
   tlLoader
@@ -702,11 +788,8 @@ function initContent() {
 
   select('body').classList.remove('is-loading');
   initScroll();
-  homevideo();
   outlinehero();
-  horizontalpin();
- 
-  console.log("OUTLINE HERO INIT LOAD + ST REFRESH");
+  console.log("OUTLINE HERO INIT LOAD");
 }
 
 /*
@@ -724,7 +807,7 @@ function pageTransitionIn({
   .set(loaderInner, {autoAlpha: 0})
   .fromTo(loader, {yPercent: -100}, {yPercent: 0})
   .fromTo(loaderMask, {yPercent: 80}, {yPercent: 0}, 0)
-  .to(container, {y: 80}, 0);
+  .to(container, {y: 80, force3D:true}, 0);
 
 /*
   .to(container, {autoAlpha:0}, 0);
@@ -797,8 +880,6 @@ function initPageTransitions() {
   });
   //init scrolltrigger
   barba.hooks.afterEnter(() => {
-
-    
    /*
     ScrollTrigger.refresh(true); // ScrollTrigger Refresh
     console.log("scrolltrigger refreshed after enter");
@@ -818,7 +899,7 @@ function initPageTransitions() {
   */
 
   barba.init({
-    timeout: 7000, 
+   /*  timeout: 5000, */
     debug: true,
     prefetch: true,
   /*
@@ -830,8 +911,9 @@ views: [{
   namespace: 'home',
 
   beforeEnter(data) {
-   /*  homevideo(); */
+    /* heroSwiper(); */
     heroApeli();
+
     document.getElementById('homevid').play();
 
   /* imgoverlay(); */
@@ -850,9 +932,9 @@ views: [{
 
 },{
   namespace: 'onama',
-  beforeEnter(data){
- /*    outlinehero(); */
-    /* horizontalpin(); */
+  beforeEnter(){
+    outlinehero();
+    console.log("OUTLINE HERO LOADED");
     simpleaccordion();
     zoomimage(); 
     
@@ -1022,12 +1104,12 @@ console.log("location SORTING pa MAP LOADED");
                 
       },
 
-      async leave(data) {
+      async leave({
+        current
+      }) {
 
           // animate loading screen in
-        await pageTransitionIn(data.current);
-        data.current.container.remove();
-        console.log("CONTAINER REMOOOVEEED");
+        await pageTransitionIn(current);
         
       },
       enter({
@@ -2894,7 +2976,7 @@ OUTLINE ONAMA HERO
 */
 
 function outlinehero() {
-  ScrollTrigger.refresh();
+
 /*OUTLINE TEXT OVER IMAGE MASK */
 
 /*$(document).ready(function(){ */
@@ -2926,71 +3008,4 @@ gsap.to(".filledtwo, .outlinetwo", {
 
 /*
 }) */
-}
-
-
-
-/* 
-=============================================
-Pinning and horizontal scrolling
-================================================ 
-*/
-
-function horizontalpin() {
-  ScrollTrigger.refresh();
-let horizontalSections = document.querySelectorAll(".horizontal-scroll");
-
-horizontalSections.forEach(horizontalSection => {
-   let pinWrap = document.querySelector(".pin-wrap");
-   let pinWrapWidth = pinWrap.offsetWidth;
-   let horizontalScrollLength = pinWrapWidth - window.innerWidth;
-   gsap.to(pinWrap, {
-     scrollTrigger: {
-      scroller: ".smooth-scroll",
-       scrub: 2,
-       trigger: ".horizontal-scroll",
-       pin: ".stophor",
-       /* anticipatePin: 1, */
-       //markers: true,
-       start: "top top",
-       
-       end: () => `+=${pinWrapWidth}`,
-       invalidateOnRefresh: true 
-       },
-
-     x: -horizontalScrollLength,
-     ease: "none" });
-
- });
-
-}
-
-
-
-/* 
-============================================================================
-HOME VIDEO
-================================================================================ 
-*/
-
-function homevideo() {
-let videoroll = gsap.timeline()
-
-let cover = document.querySelector('.bgvideo')
-let firstSection = document.querySelector('.big-logo')
-
-videoroll.to(".bgvideo", {
-  scrollTrigger: {
-    scroller: ".smooth-scroll",
-    trigger: firstSection,
-    start: 'top 20%',
-    end: "+=30%",
-    scrub: 2,
-  },
-  /*clipPath: 'inset(60%)',*/
-  scale: 1.15,
-  rotate: 0,
-  yPercent: -30
-})
-
 }
