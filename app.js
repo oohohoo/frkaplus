@@ -334,7 +334,7 @@ inparallax.from(pimages, {
 /**/
 // Pinning and horizontal scrolling
 
-let horizontalSections = document.querySelectorAll(".horizontal-scroll");
+let horizontalSections = document.querySelectorAll(".pinner");
 
 horizontalSections.forEach(horizontalSection => {
    let pinWrap = document.querySelector(".pin-wrap");
