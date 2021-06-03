@@ -779,7 +779,6 @@ BARBA VIEWS
 }
 
 
-
 /*
 ================================================================================
 LOCATION MAP
@@ -787,7 +786,6 @@ LOCATION MAP
 */
 
 function locationMap() {
-
 
  /*  setTimeout(()=>{
     myMap = createMapbox(data.next.container);
@@ -805,10 +803,11 @@ center: [16.527, 44.663], // starting position [lng, lat]
 zoom: 6.64 // starting zoom
 });
 
-
-
-
-/* FLY TO LOCATION*/
+/*
+================================================================================
+FLY TO LOCATION
+================================================================================
+*/
 
 document.getElementById('fly').addEventListener('click', function () {
   // Fly to a random location by offsetting the point -74.50, 40
@@ -823,14 +822,11 @@ document.getElementById('fly').addEventListener('click', function () {
 
 map.on('load', function(e) {
 
-  /*FOTKA PRIJE UČITAVANJA */
-  /*const mapContainerEl = document.getElementById("map");
-  mapContainerEl.style.visibility = "visible";
+/*
+================================================================================
+CREATE POPUP
+================================================================================
 */
-
-
-
-  // Create a popup
   var popup = new mapboxgl.Popup({
     closeButton: false,
     closeOnClick: false
@@ -855,46 +851,15 @@ map.on('load', function(e) {
     return (info) ? info : "No data";
   }
 
-   map.on('mouseenter', 'places', showPopup);
-   map.on('mouseleave', 'places', hidePopup);
-});
-/*
-map.on('click', function(e) {
-  // If the user clicked on one of your markers, get its information.
-  var features = map.queryRenderedFeatures(e.point, {
-    layers: ['frkaplus'] // replace with your layer name
+  map.on('mouseenter', 'places', showPopup);
+  map.on('mouseleave', 'places', hidePopup);
   });
-  if (!features.length) {
-    return;
-    console.log("interactivityyyyy");
-  }
-  var feature = features[0];
 
-    /* 
-    Create a popup, specify its options 
-    and properties, and add it to the map.
-  */
- /*
-    var popup = new mapboxgl.Popup({ offset: [0, -15] })
-    .setLngLat(feature.geometry.coordinates)
-    .setHTML(
-      '<h3>' + feature.properties.title + '</h3>' 
-      '<p>' + feature.properties.description + '</p>'
-      )
-    .addTo(map);
-    
-});
-/*
-map.on('load', function (e) {
-var mapContainerEl = document.getElementById('map');
-mapContainerEl.style.visibility = 'visible';
-});
-
+  /*
+================================================================================
+MAP RESIZE
+================================================================================
 */
-/* map.on('idle',function(){
-  map.resize()
-  console.log("MAP RESIZEEEEE!");
-  }) */
 
  map.once('load', () => {
 map.resize();
@@ -902,41 +867,7 @@ map.resize();
 console.log("MAP RESIZE!"); 
 
 
-/* MAP POP UP INTERACTIVITY */
-
-/* 
-Add an event listener that runs
-  when a user clicks on the map element.
-*/
-
-
-/*********************** NE RADI  */
-/*3 second before zoom
-var mapo = L.mapbox.map('mymap', 'mymap');
-
-// disable scroll-zooming initially
-mapo.scrollWheelZoom.disable();
-
-var zoomTimer;
-
-// on entering the map we're starting a timer to
-// 3 seconds after which we'll enable scroll-zooming
-mapo.on('mouseover', function() {
-	zoomTimer = setTimeout(function(){
-		mapo.scrollWheelZoom.enable();
-    }, 3000);
-});
-
-// on leaving the map we're disarming not yet triggered timers
-// and disabling scrolling
-mapo.on('mouseout', function() {
-    clearTimeout(zoomTimer);
-    mapo.scrollWheelZoom.disable();
-});
-/*********************** */
-
-
- },2000)  
+ },200)  
 
   }
 
