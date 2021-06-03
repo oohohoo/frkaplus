@@ -788,7 +788,7 @@ function initContent() {
 
   select('body').classList.remove('is-loading');
   initScroll();
-  outlinehero(container);
+  outlinehero(data);
   console.log("OUTLINE HERO INIT LOAD");
 }
 
