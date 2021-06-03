@@ -1,5 +1,5 @@
 // OVA VERZIJA RADI BARBA
-window.addEventListener("load", function () {
+
 gsap.registerPlugin(ScrollTrigger);
 
 let locoScroll;
@@ -94,6 +94,9 @@ init();
 MAIN JS + LOCOMOTIVE SCROLL + SCROLL TRIGGER PROXY
 ================================================================================
 */
+
+window.addEventListener("load", function () {
+  
 function initScroll(container) {
 
   locoScroll = new LocomotiveScroll({
