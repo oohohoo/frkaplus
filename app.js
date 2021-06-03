@@ -553,9 +553,9 @@ BARBA VIEWS
 
               namespace: 'onama',
               beforeEnter(data) {
-                outlinehero();
+               /*  outlinehero();
                 
-                imageparallax();
+                imageparallax(); */
                /* 
                 */
                 console.log("HORIZ LOAD ON TRANSITION");
