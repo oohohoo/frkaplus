@@ -473,6 +473,7 @@ horizontalSections.forEach(horizontalSection => {
        scrub: 2,
        trigger: ".horizontal-scroll",
        pin: "true",
+       anticipatePin: 1,
        //markers: true,
        start: "top top",
        end: () => `+=${pinWrapWidth}`,
