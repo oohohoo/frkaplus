@@ -281,6 +281,7 @@ function initContent() {
 
   select('body').classList.remove('is-loading');
   initScroll();
+  scrollTotop();
   homevideo();
   outlinehero();
   horizpin(); 
@@ -515,7 +516,7 @@ BARBA VIEWS
        
         // do something once on the initial page load
         initLoader();
-        scrollTotop();
+        
         console.log("SCROLLTO TOP INIT");
       },
 
