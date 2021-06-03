@@ -487,12 +487,14 @@ horizontalSections.forEach(horizontalSection => {
  });
 
 
+
 /* OVO JE UBAČENO NAKNADNO
 
 ScrollTrigger.addEventListener("refreshInit", resize);
 console.log("refresh init mamicu mu AJMOOOO");
 */
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
+ScrollTrigger.addEventListener("refreshInit", resize);
 
   // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
   ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
@@ -863,8 +865,6 @@ function initPageTransitions() {
   });
   //kill scrolltrigger
   barba.hooks.beforeLeave(() => {
-
-    
    locoScroll.destroy(); 
      //KILL SCROLLTRIGGERRRRR PREBAČEN
      if (ScrollTrigger.getAll().length > 0) {
@@ -898,8 +898,7 @@ function initPageTransitions() {
   */
 
   barba.init({
-    sync:true,
-     timeout: 7000, 
+   /*  timeout: 5000, */
     debug: true,
     prefetch: true,
   /*
