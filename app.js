@@ -851,7 +851,7 @@ views: [{
 },{
   namespace: 'onama',
   beforeEnter(){
-    outlinehero();
+ /*    outlinehero(); */
     horizontalpin();
     simpleaccordion();
     zoomimage(); 
