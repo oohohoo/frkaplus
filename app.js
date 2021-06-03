@@ -601,7 +601,7 @@ views: [{
 
   }},{
   namespace: 'onama',
-  beforeEnter(data){
+  beforeEnter({next}){
     outlinehero();
     horizpin(); 
     console.log("HORIZ LOAD ON TRANSITION");
