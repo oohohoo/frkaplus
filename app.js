@@ -767,7 +767,7 @@ function initLoader() {
   // LOADER OUT
   const tlLoaderOut = gsap.timeline({
     id: 'tlLoaderOut',
-    defaults: {duration: 1.2, ease: 'power2.inOut'},delay: 0});
+    defaults: {duration: 1.2, ease: 'power2.inOut'},delay: 1});
 
   tlLoaderOut
 
@@ -779,13 +779,23 @@ function initLoader() {
 
 //.to(lines, {yPercent: -500, stagger: 0.2}, 0)
     .to([loader, loaderContent], {yPercent: -100}, 0.2)
-    .to('#main', {y: 0, /*force3D:true*/}, 0);
+    .to('#main', {y: 0, /*force3D:true*/}, 0.2);
 
   const tlLoader = gsap.timeline();
   tlLoader
     .add(tlLoaderIn)
     .add(tlLoaderOut);
 }
+
+function delay(n) {
+	n = n || 2000;
+	return new Promise((done) => {
+		setTimeout(() => {
+			done();
+		}, n);
+	});
+}
+
 
 /*
 ================================================================================
@@ -796,7 +806,8 @@ function initContent() {
 
   select('body').classList.remove('is-loading');
   initScroll();
- 
+  outlinehero();
+  console.log("JEBOTE OUTLINE");
 }
 
 /*
@@ -948,7 +959,7 @@ views: [{
   namespace: 'onama',
   beforeEnter(){
     outlinehero();
-    console.log("OUTLINE HERO LOADED");
+    console.log("OUTLINE HERO LOADED ON NAMECPACE");
     simpleaccordion();
     zoomimage(); 
     
@@ -1104,13 +1115,12 @@ console.log("location SORTING pa MAP LOADED");
     */
     transitions: [{
    
-      once({
-        next
-      }) {
+      once(data) {
        
         // do something once on the initial page load
+        initScroll(data.next.container);
         initLoader();
-        
+       
         /* kontaktfs();
         console.log("FSKONTAKT LOADED"); */
         /*fullscreenMenuNew(); */
@@ -1118,21 +1128,26 @@ console.log("location SORTING pa MAP LOADED");
                 
       },
 
-      async leave({
-        current
-      }) {
+      async leave(data) {
 
           // animate loading screen in
-        await pageTransitionIn(current);
-        
+        pageTransitionIn(data.current);
+        await delay(1000);
+        data.current.container.remove();
       },
-      enter({
-        next
-      }) {
+      async enter(data) {
         // animate loading screen away
-        pageTransitionOut(next);
+        pageTransitionOut(data.next);
         
       },
+
+      async beforeEnter(data) {
+        ScrollTrigger.getAll().forEach(t => t.kill());
+        console.log("new SCROLTRIGGER KILED");
+        scroll.destroy();
+        console.log("new LOCO SCROLL DESTOY");
+        initScroll(data.next.container);
+      }
 
       afterEnter({
         next
