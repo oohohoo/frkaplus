@@ -584,128 +584,112 @@ function initPageTransitions() {
   */
 
   barba.init({
-   /*  timeout: 5000, */
-    debug: true,
-    prefetch: true,
-  /*
+        /*  timeout: 5000, */
+        debug: true,
+        prefetch: true,
+        /*
 ================================================================================
 BARBA VIEWS
 ================================================================================
-*/  
-views: [{
-  namespace: 'home',
+*/
+        views: [{
+              namespace: 'home',
 
-  beforeEnter(data) {
-    heroApeli();
-    document.getElementById('homevid').play();
+              beforeEnter(data) {
+                heroApeli();
+                document.getElementById('homevid').play();
 
-  }},{
+              }
+            }, {
 
-    namespace: 'onama',
-  beforeEnter(data){
-    outlinehero();
-    horizpin(); 
-    console.log("HORIZ LOAD ON TRANSITION");
-    simpleaccordion();
-    zoomimage(); 
-   
-  }},{
-   
-    namespace: 'lokacije',
-    once(){
-    sorting();
-    },
-beforeEnter({next}) {
-  sorting();
-  locationMap();
-  console.log("location SORTING pa MAP LOADED");
- },
- beforeLeave({current}) {
+              namespace: 'onama',
+              beforeEnter(data) {
+                outlinehero();
+               /*  horizpin(); */
+                console.log("HORIZ LOAD ON TRANSITION");
+                simpleaccordion();
+                zoomimage();
 
-}},{
+              }
+            }, {
 
-    namespace: 'sort',
-  beforeEnter({next}) {
+              namespace: 'lokacije',
+              once() {
+                sorting();
+              },
+              beforeEnter({
+                next
+              }) {
+                sorting();
+                locationMap();
+                console.log("location SORTING pa MAP LOADED");
+              },
+              beforeLeave({
+                current
+              }) {
 
-  }},{
+              }
+            }, {
 
-  namespace: 'lokacijesolo',
-  once(data) {
-    
-  },
-  beforeEnter(data) {
-    locationMap();
-    swiperlocation();
-    scrolltriggerupdate();
-    openTestYourDesign();
-    saveaspdftest();
+              namespace: 'sort',
+              beforeEnter({
+                next
+              }) {
 
-  }},{
+              }
+            }, {
 
-    namespace: 'npp',
-     beforeEnter(data) {
-      simpleaccordion();
-          }},{
+              namespace: 'lokacijesolo',
+              once(data) {
 
-  namespace: 'uvjeti',
-    once(data) {
-      
-    },
-      beforeEnter(data) {
-      simpleaccordion();
-            
-    }},{
-      namespace: 'privatnost',
-      beforeEnter(data) {
-      simpleaccordion();
-        
-      }},{
+              },
+              beforeEnter(data) {
+                locationMap();
+                swiperlocation();
+                scrolltriggerupdate();
+                openTestYourDesign();
+                saveaspdftest();
 
-    namespace: 'reference',
-    once(data) {
-      
-    },
-  
-    beforeEnter(data) {
-       
-      logohover();
-       
-    }},{
+              }
+            }, {
 
-      namespace: 'imagezoom',
-      once(data) {
-        
-      },
-    
-      beforeEnter({next}) {
-       
+              namespace: 'npp',
+              beforeEnter(data) {
+                simpleaccordion();
+              }
+            }, {
 
-          /* let script = document.createElement('script');
-  script.src = 'https://frkaplus.netlify.app/pages/fullscreenzoom.js';
-  next.container.appendChild(script);  */
+              namespace: 'uvjeti',
+              once(data) {
 
+              },
+              beforeEnter(data) {
+                simpleaccordion();
 
-        zoomimage(); 
- 
-         
-      }},{
+              }
+            }, {
+              namespace: 'privatnost',
+              beforeEnter(data) {
+                simpleaccordion();
 
+              }
+            }, {
 
-    
+              namespace: 'reference',
+              beforeEnter(data) {
+                logohover();
+              }
+            }, {
 
+              namespace: 'topdftest',
 
-      namespace: 'topdftest',
-         
-      beforeEnter(data) {
-         
-        matrixtransform();
-        console.log("MATRIX TRANS LOADANA");
-        saveaspdftest();
+              beforeEnter(data) {
+                matrixtransform();
+                console.log("MATRIX TRANS LOADANA");
+                saveaspdftest();
 
-        
-         
-      }},{
- 
+              }
+            }, {
 
 }],
     /*
