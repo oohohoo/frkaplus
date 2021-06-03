@@ -207,32 +207,7 @@ videoroll.to(".bgvideo", {
 }) */
 
 
-/*OUTLINE TEXT OVER IMAGE MASK */
 
-
-gsap.set('.filled-text, .outline-text', {x:-500});
-gsap.to(".filled-text, .outline-text", {
-  scrollTrigger:{
-  scroller: ".smooth-scroll",
-    trigger: ".filled-text, .outline-text", 
-    start: "top bottom", 
-    end: "bottom top", 
-    scrub: 1
-  },
-  x: 500
-});
-
-gsap.set('.filledtwo, .outlinetwo', {x:500});
-gsap.to(".filledtwo, .outlinetwo", {
-  scrollTrigger:{
-  scroller: ".smooth-scroll",
-    trigger: ".filledtwo, .outlinetwo", 
-    start: "top bottom", 
-    end: "bottom top", 
-    scrub: 1
-  },
-  x: -500
-});
 
 /*14/15 ROLL */
 gsap.to(".roll-number-wrap", {
@@ -888,7 +863,7 @@ views: [{
   beforeEnter(){
     simpleaccordion();
     zoomimage(); 
-   
+    outlineonamahero();
     /* counteriOnama();
     console.log("COUNTER LOADED"); */
  /*    locoAccordion(); */
@@ -2915,5 +2890,46 @@ function sorting() {
      },1000)  
   
    
+
+}
+
+
+/* 
+=============================================
+OUTLINE ONAMA HERO
+================================================ 
+*/
+
+function outlineonamahero() {
+
+
+
+
+/*OUTLINE TEXT OVER IMAGE MASK */
+
+
+gsap.set('.filled-text, .outline-text', {x:-500});
+gsap.to(".filled-text, .outline-text", {
+  scrollTrigger:{
+  scroller: ".smooth-scroll",
+    trigger: ".filled-text, .outline-text", 
+    start: "top bottom", 
+    end: "bottom top", 
+    scrub: 1
+  },
+  x: 500
+});
+
+gsap.set('.filledtwo, .outlinetwo', {x:500});
+gsap.to(".filledtwo, .outlinetwo", {
+  scrollTrigger:{
+  scroller: ".smooth-scroll",
+    trigger: ".filledtwo, .outlinetwo", 
+    start: "top bottom", 
+    end: "bottom top", 
+    scrub: 1
+  },
+  x: -500
+});
 
 }
