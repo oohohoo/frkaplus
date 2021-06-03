@@ -1965,7 +1965,7 @@ videoroll.to(".bgvideo", {
 O NAMA // 14/15 ROLL
 ================================================================================ 
 */
-function numberollx() {
+function numberoll() {
 gsap.to(".roll-number-wrap", {
   scrollTrigger:{
   scroller: ".smooth-scroll",
