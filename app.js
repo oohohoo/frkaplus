@@ -146,28 +146,6 @@ function initScroll(container) {
 ================================================================================ */
 
  
- /* ============================================================================
-INSET CLIPMASK ON FIRST
-================================================================================ */
-
-let videoroll = gsap.timeline()
-
-let cover = document.querySelector('.bgvideo')
-let firstSection = document.querySelector('.big-logo')
-
-videoroll.to(".bgvideo", {
-  scrollTrigger: {
-    scroller: ".smooth-scroll",
-    trigger: firstSection,    
-    start: 'top 20%',
-    end: "+=30%",    
-    scrub: 2,
-  },
-  /*clipPath: 'inset(60%)',*/
-  scale:1.15,
-  rotate:0,
-  yPercent:-30
-})
 
 
 
@@ -466,10 +444,11 @@ function initContent() {
 
   select('body').classList.remove('is-loading');
   initScroll();
+  homevideo();
   outlinehero();
   horizpin(); 
   imageparallax();
-  console.log("OUTLINE HERO INIT  + HORIZ PINIMAGEPARALAXX");
+  console.log("OUTLINE HERO INIT  + HORIZ PINIMAGEPARALAXXHOMEEE");
 }
 
 /*
@@ -585,6 +564,7 @@ BARBA VIEWS
               namespace: 'onama',
               beforeEnter(data) {
                 outlinehero();
+                homevideo();
                /* 
                 */
                 console.log("HORIZ LOAD ON TRANSITION");
@@ -1956,5 +1936,34 @@ inparallax.from(pimages, {
 }); 
 
 });
+
+}
+
+
+/* 
+============================================================================
+HOME // VIDEO
+================================================================================ 
+*/
+function homevideo() {
+
+let videoroll = gsap.timeline()
+
+let cover = document.querySelector('.bgvideo')
+let firstSection = document.querySelector('.big-logo')
+
+videoroll.to(".bgvideo", {
+  scrollTrigger: {
+    scroller: ".smooth-scroll",
+    trigger: firstSection,    
+    start: 'top 20%',
+    end: "+=30%",    
+    scrub: 2,
+  },
+  /*clipPath: 'inset(60%)',*/
+  scale:1.15,
+  rotate:0,
+  yPercent:-30
+})
 
 }
