@@ -472,7 +472,7 @@ horizontalSections.forEach(horizontalSection => {
       scroller: ".smooth-scroll",
        scrub: 2,
        trigger: ".horizontal-scroll",
-       pin: ".godina--iskustva",
+       pin: ".stophor",
        /* anticipatePin: 1, */
        //markers: true,
        start: "top top",
