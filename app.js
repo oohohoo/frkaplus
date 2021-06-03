@@ -797,15 +797,12 @@ function initPageTransitions() {
   //kill scrolltrigger
   barba.hooks.beforeLeave(() => {
    locoScroll.destroy(); 
-   ScrollTrigger.getAll().forEach(trigger => {
-	  trigger.kill()
-  });
      //KILL SCROLLTRIGGERRRRR PREBAČEN
-   /*  if (ScrollTrigger.getAll().length > 0) {
+     if (ScrollTrigger.getAll().length > 0) {
       ScrollTrigger.getAll().forEach((trigger) => {
           trigger.kill()
       });
-  } */
+  }
   
   console.log("OH! SCROLLTRIGGER KILLED");
   
@@ -865,10 +862,12 @@ views: [{
 },{
   namespace: 'onama',
   beforeEnter(){
+    outlinehero();
+    console.log("OUTLINE HERO LOADED");
     simpleaccordion();
     zoomimage(); 
-    outlineonamahero();
-    console.log("OUTLINE LOADED");
+    
+   
     /* counteriOnama();
     console.log("COUNTER LOADED"); */
  /*    locoAccordion(); */
@@ -2905,16 +2904,13 @@ OUTLINE ONAMA HERO
 ================================================ 
 */
 
-function outlineonamahero() {
-
-
-
+function outlinehero() {
 
 /*OUTLINE TEXT OVER IMAGE MASK */
 
-$(document).ready(function(){
-  ScrollTrigger.refresh();
-  console.log("FUCKER IS REFRESHED");
+/*$(document).ready(function(){ */
+ /*  ScrollTrigger.refresh();
+  console.log("FUCKER IS REFRESHED"); */
 gsap.set('.filled-text, .outline-text', {x:-500});
 gsap.to(".filled-text, .outline-text", {
   scrollTrigger:{
@@ -2938,5 +2934,7 @@ gsap.to(".filledtwo, .outlinetwo", {
   },
   x: -500
 });
-})
+
+/*
+}) */
 }
