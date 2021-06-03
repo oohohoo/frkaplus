@@ -449,34 +449,7 @@ scroller: ".smooth-scroll",
 
 
 
-/**/
-// Pinning and horizontal scrolling
 
-let horizontalSections = document.querySelectorAll(".pinner");
-
-horizontalSections.forEach(horizontalSection => {
-   let pinWrap = document.querySelector(".pin-wrap");
-   let pinWrapWidth = pinWrap.offsetWidth;
-   let horizontalScrollLength = pinWrapWidth - window.innerWidth;
-   gsap.to(pinWrap, {
-     scrollTrigger: {
-      scroller: ".smooth-scroll",
-       scrub: true,
-       trigger: ".horizontal-scroll",
-       pin: true,
-       //markers: true,
-       start: "top top",
-       end: () => `+=${pinWrapWidth}`,
-       invalidateOnRefresh: true 
-       },
-
-     x: -horizontalScrollLength,
-     ease: "none" });
-
- });
-
-
- 
 
 /* OVO JE UBAČENO NAKNADNO
 
