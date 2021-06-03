@@ -414,7 +414,7 @@ BARBA VIEWS
   console.log("scrolltrigger refreshed ON HOME");
             
 
-            }, {
+            }}, {
 
               namespace: 'onama',
               beforeEnter(data) {
