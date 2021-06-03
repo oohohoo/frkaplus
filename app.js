@@ -151,7 +151,15 @@ locoScroll.on('scroll', (instance) => {
     pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed"
   });
 
+/**
+     * Remove Old Locomotive Scrollbar
+     */
+/*UBAČENO NAKNADNO*/
+ const scrollbar = selectAll('.c-scrollbar');
 
+ if(scrollbar.length > 1) {
+   scrollbar[0].remove();
+ }
 
  /* ============================================================================
  SCROLL TRIGGER 
