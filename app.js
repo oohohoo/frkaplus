@@ -458,33 +458,6 @@ scroller: ".smooth-scroll",
 
 
 
-/**/
-// Pinning and horizontal scrolling
-
-let horizontalSections = document.querySelectorAll(".horizontal-scroll");
-
-horizontalSections.forEach(horizontalSection => {
-   let pinWrap = document.querySelector(".pin-wrap");
-   let pinWrapWidth = pinWrap.offsetWidth;
-   let horizontalScrollLength = pinWrapWidth - window.innerWidth;
-   gsap.to(pinWrap, {
-     scrollTrigger: {
-      scroller: ".smooth-scroll",
-       scrub: 2,
-       trigger: ".horizontal-scroll",
-       pin: ".stophor",
-       /* anticipatePin: 1, */
-       //markers: true,
-       start: "top top",
-       
-       end: () => `+=${pinWrapWidth}`,
-       invalidateOnRefresh: true 
-       },
-
-     x: -horizontalScrollLength,
-     ease: "none" });
-
- });
 
 
 
@@ -493,7 +466,6 @@ horizontalSections.forEach(horizontalSection => {
 ScrollTrigger.addEventListener("refreshInit", resize);
 console.log("refresh init mamicu mu AJMOOOO");
 */
-///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
 /* ScrollTrigger.addEventListener("refreshInit", resize); */
 
   // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
@@ -771,7 +743,7 @@ function initLoader() {
 
 //.to(lines, {yPercent: -500, stagger: 0.2}, 0)
     .to([loader, loaderContent], {yPercent: -100}, 0.2)
-    .to('#main', {y: 0, force3D:true}, 0);
+    .to('#main', {y: 0}, 0.2);
 
   const tlLoader = gsap.timeline();
   tlLoader
@@ -789,7 +761,8 @@ function initContent() {
   select('body').classList.remove('is-loading');
   initScroll();
   outlinehero();
-  console.log("OUTLINE HERO INIT LOAD");
+  horizontalpin();
+  console.log("horizontal pin INIT LOAD");
 }
 
 /*
@@ -807,7 +780,7 @@ function pageTransitionIn({
   .set(loaderInner, {autoAlpha: 0})
   .fromTo(loader, {yPercent: -100}, {yPercent: 0})
   .fromTo(loaderMask, {yPercent: 80}, {yPercent: 0}, 0)
-  .to(container, {y: 80, force3D:true}, 0);
+  .to(container, {y: 80}, 0);
 
 /*
   .to(container, {autoAlpha:0}, 0);
@@ -3008,4 +2981,41 @@ gsap.to(".filledtwo, .outlinetwo", {
 
 /*
 }) */
+}
+
+
+
+/* 
+=============================================
+Pinning and horizontal scrolling
+================================================ 
+*/
+
+function horizontalpin() {
+
+let horizontalSections = document.querySelectorAll(".horizontal-scroll");
+
+horizontalSections.forEach(horizontalSection => {
+   let pinWrap = document.querySelector(".pin-wrap");
+   let pinWrapWidth = pinWrap.offsetWidth;
+   let horizontalScrollLength = pinWrapWidth - window.innerWidth;
+   gsap.to(pinWrap, {
+     scrollTrigger: {
+      scroller: ".smooth-scroll",
+       scrub: 2,
+       trigger: ".horizontal-scroll",
+       pin: ".stophor",
+       /* anticipatePin: 1, */
+       //markers: true,
+       start: "top top",
+       
+       end: () => `+=${pinWrapWidth}`,
+       invalidateOnRefresh: true 
+       },
+
+     x: -horizontalScrollLength,
+     ease: "none" });
+
+ });
+
 }
