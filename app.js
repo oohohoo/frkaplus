@@ -1118,7 +1118,7 @@ console.log("location SORTING pa MAP LOADED");
       once(data) {
        
         // do something once on the initial page load
-        initScroll(data.next.container);
+        initScroll();
         initLoader();
        
         /* kontaktfs();
