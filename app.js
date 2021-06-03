@@ -626,7 +626,7 @@ views: [{
     heroApeli();
     document.getElementById('homevid').play();
 
-},{
+  }},{
   namespace: 'onama',
   beforeEnter(){
     outlinehero();
@@ -634,7 +634,7 @@ views: [{
     simpleaccordion();
     zoomimage(); 
    
-},{
+  }},{
     namespace: 'lokacije',
   
   once(){
@@ -644,11 +644,8 @@ views: [{
 beforeEnter({next}) {
   sorting();
   locationMap();
-  
-
-console.log("location SORTING pa MAP LOADED");
- 
-},
+  console.log("location SORTING pa MAP LOADED");
+ },
 
  beforeLeave({current}) {
 
