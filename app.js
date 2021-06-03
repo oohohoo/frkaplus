@@ -209,28 +209,7 @@ onUpdate:function(){
 */
 
 
-/*------------/ SCROLLTRIGGER INNER IMAGE PARALLAX /------------*/
 
-gsap.utils.toArray(".grid").forEach(section => {
-	const pimages = section.querySelectorAll(".img__background");
-
-var inparallax = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".img__wrapper",
-    scroller: ".smooth-scroll",
-    scrub: true,
-    pin: false,
-  },
-}); 
-inparallax.from(pimages, {
-  yPercent: -20,
-  ease: "none",
-}).to(pimages, {
-  yPercent: 20,
-  ease: "none",
-}); 
-
-});
 
 
 /* PREVENT SCROLL UNDER FS MENU*/
@@ -489,7 +468,8 @@ function initContent() {
   initScroll();
   outlinehero();
   horizpin(); 
-  console.log("OUTLINE HERO INIT  + HORIZ PIN lOADLOAD");
+  imageparallax();
+  console.log("OUTLINE HERO INIT  + HORIZ PINIMAGEPARALAXX");
 }
 
 /*
@@ -1860,49 +1840,62 @@ function sorting() {
 }
 
 
+
+
+/* 
+=============================================================================================================================================
+=============================================================================================================================================
+SCROLLTRIGGERS
+=============================================================================================================================================
+============================================================================================================================================= 
+*/
+
+
 /* 
 =============================================
-OUTLINE ONAMA HERO
+O NAMA // OUTLINE HERO
 ================================================ 
 */
 
 function outlinehero() {
 
-/*OUTLINE TEXT OVER IMAGE MASK */
+  /*OUTLINE TEXT OVER IMAGE MASK */
+  
+  /*$(document).ready(function(){ */
+   /*  ScrollTrigger.refresh();
+    console.log("FUCKER IS REFRESHED"); */
+  /* gsap.set('.filled-text, .outline-text', {x:-500}); */
+  gsap.to(".filled-text, .outline-text", {
+    scrollTrigger:{
+    scroller: ".smooth-scroll",
+      trigger: ".filled-text, .outline-text", 
+      start: "top bottom", 
+      end: "bottom top", 
+      scrub: 1
+    },
+    x: 500
+  });
+  
+  /* gsap.set('.filledtwo, .outlinetwo', {x:500}); */
+  gsap.to(".filledtwo, .outlinetwo", {
+    scrollTrigger:{
+    scroller: ".smooth-scroll",
+      trigger: ".filledtwo, .outlinetwo", 
+      start: "top bottom", 
+      end: "bottom top", 
+      scrub: 1
+    },
+    x: -500
+  });
+  
+  /*
+  }) */
+  }
 
-/*$(document).ready(function(){ */
- /*  ScrollTrigger.refresh();
-  console.log("FUCKER IS REFRESHED"); */
-gsap.set('.filled-text, .outline-text', {x:-500});
-gsap.to(".filled-text, .outline-text", {
-  scrollTrigger:{
-  scroller: ".smooth-scroll",
-    trigger: ".filled-text, .outline-text", 
-    start: "top bottom", 
-    end: "bottom top", 
-    scrub: 1
-  },
-  x: 500
-});
-
-gsap.set('.filledtwo, .outlinetwo', {x:500});
-gsap.to(".filledtwo, .outlinetwo", {
-  scrollTrigger:{
-  scroller: ".smooth-scroll",
-    trigger: ".filledtwo, .outlinetwo", 
-    start: "top bottom", 
-    end: "bottom top", 
-    scrub: 1
-  },
-  x: -500
-});
-
-/*
-}) */
-}
+  
 /* 
 =============================================
-OUTLINE ONAMA HERO
+O NAMA // HORIZONTAL PIN
 ================================================ 
 */
 
@@ -1932,5 +1925,36 @@ horizontalSections.forEach(horizontalSection => {
      ease: "none" });
 
  });
+
+}
+
+/* 
+=============================================
+SCROLLTRIGGER INNER IMAGE PARALLAX 
+================================================ 
+*/
+
+function imageparallax() {
+
+gsap.utils.toArray(".grid").forEach(section => {
+	const pimages = section.querySelectorAll(".img__background");
+
+var inparallax = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".img__wrapper",
+    scroller: ".smooth-scroll",
+    scrub: true,
+    pin: false,
+  },
+}); 
+inparallax.from(pimages, {
+  yPercent: -20,
+  ease: "none",
+}).to(pimages, {
+  yPercent: 20,
+  ease: "none",
+}); 
+
+});
 
 }
