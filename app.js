@@ -26,10 +26,11 @@ const loaderMask = select('.loader__mask');
 IMAGES LOADED
 ================================================================================
 */
-
 function init() {
   // show loader on page load
-  gsap.set(loader, {autoAlpha: 1});
+  gsap.set(loader, {
+    autoAlpha: 1
+  });
 
   // scale loader down
   gsap.set(loaderInner, {
@@ -67,7 +68,7 @@ function init() {
 
   // update the progress of our progressBar tween
   function updateProgress(value) {
-  
+
     // tween progress bar tween to the right value
     gsap.to(progressTween, {
       progress: value / imageCount,
@@ -91,7 +92,7 @@ init();
 
 /*
 ================================================================================
-MAIN JS + LOCOMOTIVE SCROLL + SCROLL TRIGGER PROXY
+MAIN JS + LOCOMOTIVE SCROLL + SCROLL TRIGGER
 ================================================================================
 */
 function initScroll(container) {
@@ -114,26 +115,13 @@ function initScroll(container) {
 
     }
   });
-
-/*AKAPOWL JE OVO DODAO --- testiraj*/
-  /* locoScroll.update(); */
-
-
+// data direction ubačeno naknadno
   locoScroll.on("scroll", function (t) {
     document.documentElement.setAttribute("data-direction", t.direction);
   });
 
-
   // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
   locoScroll.on("scroll", ScrollTrigger.update);
-
-// data direction ubačeno naknadno
-/*
-locoScroll.on('scroll', (instance) => {
-    document.documentElement.setAttribute('data-direction', instance.direction)
-});
-
-*/
 
   // tell ScrollTrigger to use these proxy methods for the ".smooth-scroll" element since Locomotive Scroll is hijacking things
   ScrollTrigger.scrollerProxy(".smooth-scroll", {
@@ -147,8 +135,8 @@ locoScroll.on('scroll', (instance) => {
     // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, 
     // we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
     // UKLJUČITI SAMO NA MOBILNOJ VERZIJI
-    /*
-    pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed"*/
+   
+    pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed"
   });
 
 
