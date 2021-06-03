@@ -405,6 +405,8 @@ BARBA VIEWS
               beforeEnter(data) {
                 heroApeli();
                 homevideo(); 
+                ScrollTrigger.refresh(true); // ScrollTrigger Refresh
+  console.log("scrolltrigger refreshed ON HOME");
                 document.getElementById('homevid').play();
 
               }
