@@ -476,7 +476,8 @@ horizontalSections.forEach(horizontalSection => {
        /* anticipatePin: 1, */
        //markers: true,
        start: "top top",
-       end: () => `+=${pinWrapWidth}`,
+       end: "bottom bottom",
+      /*  end: () => `+=${pinWrapWidth}`, */
        invalidateOnRefresh: true 
        },
 
