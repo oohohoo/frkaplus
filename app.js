@@ -347,6 +347,8 @@ function initPageTransitions() {
   // do something after the transition finishes
   barba.hooks.after(() => {
     select('html').classList.remove('is-transitioning');
+    ScrollTrigger.refresh(true); // ScrollTrigger Refresh
+    console.log("scrolltrigger refreshed after");
   });
   // scroll to the top of the page
   barba.hooks.enter(() => {
