@@ -95,7 +95,7 @@ MAIN JS + LOCOMOTIVE SCROLL + SCROLL TRIGGER PROXY
 ================================================================================
 */
 
-window.addEventListener("load", function () {
+
 
 function initScroll(container) {
 
@@ -192,7 +192,7 @@ videoroll.to(".bgvideo", {
  
 }) 
 
-});
+
 
 /* 
 .from(".videoplay", {
