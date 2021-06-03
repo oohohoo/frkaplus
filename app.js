@@ -381,8 +381,8 @@ function initContent() {
   outlinehero();
   horizpin(); 
   numberoll();
-  /* hideMenu(); */
-  /* imageparallax(); */
+  hideMenu();
+    /* imageparallax(); */
   console.log("OUTLINE HERO INIT  + HORIZ PINIMAGEPARALAXXHOMEEE");
 }
 
