@@ -896,7 +896,7 @@ function initPageTransitions() {
   */
 
   barba.init({
-   /*  timeout: 5000, */
+     timeout: 7000, 
     debug: true,
     prefetch: true,
   /*
