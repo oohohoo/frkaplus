@@ -484,20 +484,6 @@ function initLoader() {
 
 
   tlLoaderIn
-/*
-    .set(loaderContent, {autoAlpha: 1})
-    .set(".txt", {yPercent: 100}) 
-    .set(".imgg", {yPercent: 100})
-    .set(".smallprint", {yPercent: 120})
-
-    .to(loaderInner, {scaleX: 0,transformOrigin: 'right bottom',ease: 'power1.inOut'}) 
-
-    .addLabel('revealImage')
-    //.to(image, {yPercent: 0}, 'revealImage-=0.5') 
-    .to(".imgg", {yPercent: 0})
-        .to(".txt", {yPercent: 0, stagger: 0.3}, 'revealImage-=0.4')
-    .to(".smallprint", {yPercent: 0})
-*/
 
 .set(loaderContent, {autoAlpha: 1})
     .set(".txt", {yPercent: 100})
@@ -525,12 +511,6 @@ function initLoader() {
     defaults: {duration: 1.2, ease: 'power2.inOut'},delay: 0});
 
   tlLoaderOut
-
-  /*
-.to(".imgg", {autoAlpha:0})
-    .to(lines, {stagger: 0.3, autoAlpha:0}, '-=0.5')
-    .to([loader, loaderContent], {yPercent: -100}, '-=0.5')
-*/
 
 //.to(lines, {yPercent: -500, stagger: 0.2}, 0)
     .to([loader, loaderContent], {yPercent: -100}, 0.2)
@@ -572,13 +552,8 @@ function pageTransitionIn({
   .fromTo(loaderMask, {yPercent: 80}, {yPercent: 0}, 0)
   .to(container, {y: 80, force3D:true}, 0);
 
-/*
-  .to(container, {autoAlpha:0}, 0);
-*/
-
   return tl;
 }
-
 
 /*
 ================================================================================
@@ -594,9 +569,6 @@ function pageTransitionOut({
     onComplete: () => initContent()
   });
   tl
-/*
-    .from(container, {autoAlpha:0}, 0);
-  */
 
     .to(loader, {yPercent: 100})
     .to(loaderMask, {yPercent: -80}, 0)
@@ -617,15 +589,10 @@ function initPageTransitions() {
   // do something after the transition finishes
   barba.hooks.after(() => {
     select('html').classList.remove('is-transitioning');
-
   });
-
-
   // scroll to the top of the page
   barba.hooks.enter(() => {
     window.scrollTo(0, 0);
-  
-
   });
   //kill scrolltrigger
   barba.hooks.beforeLeave(() => {
@@ -636,10 +603,8 @@ function initPageTransitions() {
           trigger.kill()
       });
   }
+  console.log("LOCO*SCROLLTRIGGER DESTROYED");
   
-  console.log("OH! SCROLLTRIGGER KILLED");
-  
-
   });
   //init scrolltrigger
   barba.hooks.afterEnter(() => {
