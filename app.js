@@ -705,7 +705,7 @@ function initContent() {
   homevideo();
   outlinehero();
   horizontalpin();
-  ScrollTrigger.refresh();
+ 
   console.log("OUTLINE HERO INIT LOAD + ST REFRESH");
 }
 
@@ -2895,7 +2895,7 @@ OUTLINE ONAMA HERO
 */
 
 function outlinehero() {
-
+  ScrollTrigger.refresh();
 /*OUTLINE TEXT OVER IMAGE MASK */
 
 /*$(document).ready(function(){ */
@@ -2938,7 +2938,7 @@ Pinning and horizontal scrolling
 */
 
 function horizontalpin() {
-
+  ScrollTrigger.refresh();
 let horizontalSections = document.querySelectorAll(".horizontal-scroll");
 
 horizontalSections.forEach(horizontalSection => {
