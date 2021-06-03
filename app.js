@@ -170,21 +170,6 @@ videoroll.to(".bgvideo", {
 })
 
 
-.to(".hero--white--background", {
-  scrollTrigger: {
-    scroller: ".smooth-scroll",
-    trigger: firstSection,    
-    start: 'top 20%',
-    end: "+=30%",    
-    scrub: 2,
-  },
-  /*clipPath: 'inset(60%)',*/
-  duration: 0.2,
-  autoAlpha:0,
-  rotate:0,
- 
-})
-
 
 /*14/15 ROLL */
 gsap.to(".roll-number-wrap", {
@@ -203,7 +188,6 @@ gsap.to(".roll-number-wrap", {
 
 /* COUNTER O NAMA*/
 
-
 var cont={val:990} , newval = 1000 ;
 
 gsap.to(cont,2,{
@@ -216,7 +200,6 @@ scrollTrigger:{
 				//scrub: 1,
 				
 			},
-      
 val:newval,
 roundProps:"val",
 onUpdate:function(){
@@ -332,6 +315,7 @@ scroller: ".smooth-scroll",
   },
   start: "top 95%"
 });
+
 
 /**/
 // Pinning and horizontal scrolling
@@ -639,24 +623,8 @@ views: [{
   namespace: 'home',
 
   beforeEnter(data) {
-    /* heroSwiper(); */
     heroApeli();
-
     document.getElementById('homevid').play();
-
-  /* imgoverlay(); */
-    /*heroSwiper();
-  console.log("HERO SWIPER loooooooaded!");*/
-  
-  },
-  once(data) {
-    
-    /* titleHero(); */
-    /* heroSwiper(); */
-  },
-  afterEnter(data) {
-   }
-
 
 },{
   namespace: 'onama',
@@ -665,19 +633,7 @@ views: [{
     console.log("OUTLINE HERO LOADED");
     simpleaccordion();
     zoomimage(); 
-    
    
-    /* counteriOnama();
-    console.log("COUNTER LOADED"); */
- /*    locoAccordion(); */
-
-   // projectsHeroAnima();
- 
-    },
-  once(){
-    
-    }
-
 },{
     namespace: 'lokacije',
   
