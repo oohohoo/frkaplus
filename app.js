@@ -874,7 +874,7 @@ function initPageTransitions() {
     select('html').classList.remove('is-transitioning');
 
     //REINT LOCOMOTIVE SCROLL
-    locoScroll.init();
+   /*  locoScroll.init(); */
     
 
     
