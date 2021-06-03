@@ -556,6 +556,7 @@ BARBA VIEWS
 
               beforeEnter(data) {
                 heroApeli();
+                homevideo(); 
                 document.getElementById('homevid').play();
 
               }
@@ -564,7 +565,8 @@ BARBA VIEWS
               namespace: 'onama',
               beforeEnter(data) {
                 outlinehero();
-                homevideo();
+                
+                imageparallax();
                /* 
                 */
                 console.log("HORIZ LOAD ON TRANSITION");
