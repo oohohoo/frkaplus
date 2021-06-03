@@ -178,39 +178,7 @@ onUpdate:function(){
 
 
 
-/* 
-============================================================================
-SHOW HIDE HEADER ON SCROLL + CUSTOM ANIMATION + CHANGE COLOR ON DIFF BACKGROUNDS
-================================================================================ */
 
-const showAnim = gsap.timeline({
-  paused: true,
-  defaults: { // children inherit these defaults
-    duration: 0.5,
-   // ease: CustomEase.create("custom", "M0,0 C0.425,0.005 0,1 1,1 "),
-  },
-  scrollTrigger: {
-      scroller: ".smooth-scroll",
-     /*  toggleClass: {
-        targets: '.logofrka, .navstyle, .kontakt',
-        className: 'mrak'
-      },  */
-      start: "top top",
-      end: 99999,
-      /* onEnter: () => myfunction(), */
-     /*  onLeaveBack: () => myfunction(), */
-
-      onUpdate: (self) => {
-        self.direction === 1 ? showAnim.play() : showAnim.reverse()
-      }
-}
-});
-
-showAnim
-//.to(".logofade", {autoAlpha:0 }, 0)
-.to(".nav", {yPercent: -50, autoAlpha:0, stagger: 0.05},"<0.1")
-.to(".header-contact--button", {scale:0.7, x:"5.1em"},"<0.2")
-//.to(".kont-color", {color: "black", duration:0.2},"<0.2");
 
 
 /* 
@@ -409,6 +377,7 @@ function initContent() {
 
   select('body').classList.remove('is-loading');
   initScroll();
+  hideMenu();
   homevideo();
   outlinehero();
   horizpin(); 
@@ -1986,4 +1955,43 @@ gsap.to(".roll-number-wrap", {
   y: -700,
   //duration:2
 });
+}
+
+
+/* 
+============================================================================
+SHOW HIDE HEADER ON SCROLL + CUSTOM ANIMATION + CHANGE COLOR ON DIFF BACKGROUNDS
+================================================================================ 
+*/
+
+function hideMenu() {
+const showAnim = gsap.timeline({
+  paused: true,
+  defaults: { // children inherit these defaults
+    duration: 0.5,
+   // ease: CustomEase.create("custom", "M0,0 C0.425,0.005 0,1 1,1 "),
+  },
+  scrollTrigger: {
+      scroller: ".smooth-scroll",
+     /*  toggleClass: {
+        targets: '.logofrka, .navstyle, .kontakt',
+        className: 'mrak'
+      },  */
+      start: "top top",
+      end: 99999,
+      /* onEnter: () => myfunction(), */
+     /*  onLeaveBack: () => myfunction(), */
+
+      onUpdate: (self) => {
+        self.direction === 1 ? showAnim.play() : showAnim.reverse()
+      }
+}
+});
+
+showAnim
+//.to(".logofade", {autoAlpha:0 }, 0)
+.to(".nav", {yPercent: -50, autoAlpha:0, stagger: 0.05},"<0.1")
+.to(".header-contact--button", {scale:0.7, x:"5.1em"},"<0.2")
+//.to(".kont-color", {color: "black", duration:0.2},"<0.2");
+
 }
