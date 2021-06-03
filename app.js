@@ -414,8 +414,7 @@ BARBA VIEWS
 
               },
               afterEnter(data) {
-               ScrollTrigger.refresh(true); // ScrollTrigger Refresh
-  console.log("scrolltrigger refreshed ON HOME");
+              
             
 
             }}, {
