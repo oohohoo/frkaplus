@@ -2909,6 +2909,8 @@ function outlineonamahero() {
 /*OUTLINE TEXT OVER IMAGE MASK */
 
 $(document).ready(function(){
+  ScrollTrigger.refresh();
+  console.log("FUCKER IS REFRESHED");
 gsap.set('.filled-text, .outline-text', {x:-500});
 gsap.to(".filled-text, .outline-text", {
   scrollTrigger:{
