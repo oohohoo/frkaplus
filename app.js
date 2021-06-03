@@ -833,10 +833,10 @@ function initPageTransitions() {
 
   });
   //init scrolltrigger
-  barba.hooks.beforeEnter(() => {
+  barba.hooks.afterEnter(() => {
    
-    
-      
+    ScrollTrigger.refresh(); // ScrollTrigger Refresh
+    console.log("scrolltrigger refreshed after enter");
   });
 
   /*
@@ -1465,7 +1465,7 @@ var map = new mapboxgl.Map({
  /*  width: 1280,
   height: 800,  */
 container: 'map', // container ID
-style: 'mapbox://styles/fogseller/cknip0h0j0oqm17mgvd8wwi8y?optimize=true', // style URL
+style: 'mapbox://styles/fogseller/cknip0h0j0oqm17mgvd8wwi8y?optimize=true', // style URL / dodano optimize=true
 center: [16.527, 44.663], // starting position [lng, lat]
 zoom: 6.64 // starting zoom
 });
