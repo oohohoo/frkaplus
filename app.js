@@ -140,42 +140,6 @@ function initScroll(container) {
   });
 
 
-
- /* ============================================================================
- SCROLL TRIGGER 
-================================================================================ */
-
- 
-
-
-
-
-
-
-/* COUNTER O NAMA*/
-/*
-var cont={val:990} , newval = 1000 ;
-
-gsap.to(cont,2,{
-scrollTrigger:{
-      scroller: ".smooth-scroll",
-				trigger: ".tisucu",
-				start: "top 100%", 
-				end: "bottom top", 
-        toggleActions: "restart none none reset",
-				//scrub: 1,
-				
-			},
-val:newval,
-roundProps:"val",
-onUpdate:function(){
-  document.getElementById("counternew").innerHTML=cont.val
-  
-}});
-*/
-
-
-
 /* OVO JE UBAČENO NAKNADNO
 
 ScrollTrigger.addEventListener("refreshInit", resize);
@@ -350,8 +314,9 @@ function initContent() {
   numberoll();
   hideMenu();
   multilinereveal();
+  onamacounter();
     /* imageparallax(); */
-  console.log("OUTLINE HERO INIT  + HORIZ PINIMAGEPARALAXXHOMEEE");
+  console.log("SCRIPTS SCROLLTRIGGER LOADED");
 }
 
 /*
@@ -1993,4 +1958,31 @@ scroller: ".smooth-scroll",
   start: "top 95%"
 });
 
+}
+
+
+/* 
+=============================================
+O NAMA - COUNTER
+================================================ 
+*/
+function onamacounter() {
+var cont={val:990} , newval = 1000 ;
+
+gsap.to(cont,2,{
+scrollTrigger:{
+      scroller: ".smooth-scroll",
+				trigger: ".tisucu",
+				start: "top 100%", 
+				end: "bottom top", 
+        toggleActions: "restart none none reset",
+				//scrub: 1,
+				
+			},
+val:newval,
+roundProps:"val",
+onUpdate:function(){
+  document.getElementById("counternew").innerHTML=cont.val
+  
+}});
 }
