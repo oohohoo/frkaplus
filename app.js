@@ -1929,7 +1929,7 @@ const showAnim = gsap.timeline({
 showAnim
 //.to(".logofade", {autoAlpha:0 }, 0)
 .to(".nav", {yPercent: -50, autoAlpha:0, stagger: 0.05},"<0.1")
-.to(".header-contact--button", {scale:0.7, x:"3.5em"},"<0.2")
+.to(".header-contact--button", {scale:0.7, x:"3.1em"},"<0.2")
 //.to(".kont-color", {color: "black", duration:0.2},"<0.2");
 
 }
