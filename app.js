@@ -584,7 +584,7 @@ function initPageTransitions() {
   */
 
   barba.init({
-        /*  timeout: 5000, */
+          timeout: 7000, 
         debug: true,
         prefetch: true,
         /*
@@ -605,7 +605,8 @@ BARBA VIEWS
               namespace: 'onama',
               beforeEnter(data) {
                 outlinehero();
-               /*  horizpin(); */
+               /* 
+                */
                 console.log("HORIZ LOAD ON TRANSITION");
                 simpleaccordion();
                 zoomimage();
