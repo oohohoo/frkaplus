@@ -551,7 +551,7 @@ BARBA VIEWS
               }) {
                 locationMap();
                 sorting();
-                stopScrollMap():
+                stopScrollMap();
                 console.log("location SORTING pa MAP LOADED + stop scroll map");
               },
               beforeLeave({
