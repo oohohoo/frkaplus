@@ -786,18 +786,7 @@ function initContent() {
 
   select('body').classList.remove('is-loading');
   initScroll();
-  outlinehero(); 
-  console.log("OUTLINE UČITAN TAMO");
-}
-
-
-function delay(n) {
-	n = n || 2000;
-	return new Promise((done) => {
-		setTimeout(() => {
-			done();
-		}, n);
-	});
+ 
 }
 
 /*
@@ -875,7 +864,7 @@ function initPageTransitions() {
   //kill scrolltrigger
   barba.hooks.beforeLeave(() => {
 
-    /*
+    
    locoScroll.destroy(); 
      //KILL SCROLLTRIGGERRRRR PREBAČEN
      if (ScrollTrigger.getAll().length > 0) {
@@ -885,7 +874,7 @@ function initPageTransitions() {
   }
   
   console.log("OH! SCROLLTRIGGER KILLED");
-  */
+  
 
   });
   //init scrolltrigger
@@ -1121,7 +1110,7 @@ console.log("location SORTING pa MAP LOADED");
 
           // animate loading screen in
         await pageTransitionIn(current);
-        await delay(1000);
+        
       },
       enter({
         next
@@ -1138,13 +1127,8 @@ console.log("location SORTING pa MAP LOADED");
       },
 
       beforeEnter({next}) {
-       /*  magnetic(); */
-       ScrollTrigger.getAll().forEach(t => t.kill());
-        locoScroll.destroy();
-
-        console.log("UBIJENI LOCO I SCROLLTRIGGERKILLKILLKILL");
-
-        
+        magnetic();
+       
       /*   heroSwiper(); */
      /*    kontaktfs();
         console.log("FSKONTAKT LOADED"); */
