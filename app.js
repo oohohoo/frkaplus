@@ -1057,13 +1057,19 @@ function accordionhover() {
 
   gsap.utils.toArray(".acc-header-wrapper").forEach(container => {
         let naslov = container.querySelector(".acc-header-cont"),
-          // silhouette = container.querySelector(".silhouette .cover"), */
+        let ikona = container.querySelector(".right-icon"),
           tlhover = gsap.timeline({
             paused: true
           });
 
         tlhover.to(naslov, {
           x: 30,
+          duration: 0.2,
+          ease: 'power1.inOut',
+        });
+
+        tlhover.to(ikona, {
+          x: -30,
           duration: 0.2,
           ease: 'power1.inOut',
         });
