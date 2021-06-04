@@ -284,10 +284,18 @@ function initContent() {
   initScroll();
   scrollTotop();
   homevideo();
+
+// LOAD ON ONAMA
+
+if (document.querySelector('#onama')) {
+  numberoll();
+  console.log("O NAMA SCRIPTS -- loaded");
+  
+  }
+  
   outlinehero();
   horizpin(); 
-  numberoll();
-  hideMenu();
+    hideMenu();
   multilinereveal();
   onamacounter();
  
