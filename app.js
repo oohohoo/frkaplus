@@ -181,6 +181,7 @@ allVideoDivs.forEach((videoDiv, i) => {
     onLeaveBack: () => videoElem.pause(),
   });
   
+  console.log("PLAY PAUSE VIDEO");
 });
 
 
