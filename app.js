@@ -309,7 +309,7 @@ function initContent() {
     sorting();
     console.log("LOKACIJE SCRIPTS -- loaded");
   }
-
+}); 
  
  
   
@@ -319,7 +319,7 @@ function initContent() {
   console.log("scrolltrigger refreshed after enter");
 /* locoScroll.update();
 console.log("locoscroll refreshed after enter"); */
-}); 
+
 }
 
 /*
