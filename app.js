@@ -2100,12 +2100,16 @@ allVideoDivs.forEach((videoDiv, i) => {
     markers: true,
     scroller:".smooth-scroll",
     onEnter: () => videoElem.play(),
+    console.log("PLAY");
     onEnterBack: () => videoElem.play(),
-    onLeave: () => videoElem.pause(),
+    console.log("PLAY");
+    onLeave: () => videoElem.pause(), 
+    console.log("PAUSE");
     onLeaveBack: () => videoElem.pause(),
+    console.log("PAUSE");
   });
   
-  console.log("PLAY PAUSE VIDEO");
+  
 });
 }
 
