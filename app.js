@@ -451,7 +451,7 @@ BARBA VIEWS
 
               namespace: 'onama',
               beforeEnter(data) {
-                
+                playpausevideo();
                 
 
 /*                 onamacounter();
