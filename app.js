@@ -309,18 +309,17 @@ function initContent() {
     sorting();
     console.log("LOKACIJE SCRIPTS -- loaded");
   }
-}); 
+
  
  
   
-    /* imageparallax(); */
- 
+//DRUKČIJE SE PONAŠA AKO UBACIMO UNUTAR document ready/ 
 
   ScrollTrigger.refresh(true); // ScrollTrigger Refresh
   console.log("scrolltrigger refreshed after enter");
 /* locoScroll.update();
 console.log("locoscroll refreshed after enter"); */
-
+}); 
 }
 
 /*
