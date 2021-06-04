@@ -1072,7 +1072,7 @@ function accordionhover() {
           x: -30,
           duration: 0.2,
           ease: 'power1.inOut',
-        });
+        },"<" );
 
         container.addEventListener("mouseenter", () => tlhover.play());
         container.addEventListener("mouseleave", () => tlhover.reverse());
