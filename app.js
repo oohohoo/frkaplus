@@ -278,7 +278,9 @@ INIT CONTENT --> vodi na --> INIT SCROLL
 ================================================================================
 */
 function initContent() {
+  $(document).ready(function(){ 
 
+  
   select('body').classList.remove('is-loading');
  /* ORIGINAL*/
   initScroll();
@@ -314,6 +316,8 @@ function initContent() {
 
   ScrollTrigger.refresh(true); // ScrollTrigger Refresh
   console.log("scrolltrigger refreshed after enter");
+
+}); 
 }
 
 /*
