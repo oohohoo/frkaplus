@@ -432,13 +432,20 @@ BARBA VIEWS
 
               namespace: 'onama',
               beforeEnter(data) {
-                onamacounter();
-                console.log("OOOOONNNNAAAAMMMMAAA");
-               
+                
+                
+
+/*                 onamacounter();
+                console.log("OOOOONNNNAAAAMMMMAAA"); */
                 simpleaccordion();
                 zoomimage();
 
-              }
+              },
+
+              once(data) {
+                onamacounter();
+                console.log("O NAMA ONCE");
+              },
             }, {
 
               namespace: 'lokacije',
