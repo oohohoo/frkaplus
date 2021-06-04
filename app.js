@@ -280,10 +280,9 @@ INIT CONTENT --> vodi na --> INIT SCROLL
 function initContent() {
 
   select('body').classList.remove('is-loading');
-  
  /* ORIGINAL*/
   initScroll();
-/* DODANE SKRIPTE*/
+/* DODANE*/
   scrollTotop();
   hideMenu();
   /* multilinereveal(); */
@@ -293,6 +292,7 @@ function initContent() {
     homevideo();
     console.log("O NAMA SCRIPTS -- loaded");
   }
+
   if (document.querySelector('#onama')) {
     outlinehero();
     onamacounter();
@@ -1335,14 +1335,14 @@ ZOOM IMAGE
 
 function zoomimage() {
 
- 
+  $(document).ready(function(){ 
     var elements = document.querySelectorAll( '.demo-image' );
     Intense( elements );
     }); 
      
     console.log("imagezoom loaded");
 
-
+}
 
 /* 
 =============================================
