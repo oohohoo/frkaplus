@@ -1057,7 +1057,7 @@ function accordionhover() {
 
   gsap.utils.toArray(".acc-header-wrapper").forEach(container => {
         let naslov = container.querySelector(".acc-header-cont"),
-        let ikona = container.querySelector(".right-icon"),
+         ikona = container.querySelector(".right-icon"),
           tlhover = gsap.timeline({
             paused: true
           });
