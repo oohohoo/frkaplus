@@ -300,6 +300,15 @@ if (document.querySelector('#onama')) {
   console.log("O NAMA SCRIPTS -- loaded");
   
   }
+
+
+  if (document.querySelector('#lokacije')) {
+    sorting();
+    console.log("LOKACIJE SCRIPTS -- loaded");
+    
+    }
+
+ 
  
   
     /* imageparallax(); */
@@ -450,7 +459,7 @@ BARBA VIEWS
 
               namespace: 'lokacije',
               once() {
-                sorting();
+               
               },
               beforeEnter({
                 next
