@@ -283,14 +283,15 @@ function initContent() {
   
   initScroll();
   scrollTotop();
-  homevideo();
-
-
-  
   hideMenu();
-  multilinereveal();
+  /* multilinereveal(); */
   console.log("SCRIPTS SCROLLTRIGGER LOADED");
   // LOAD ON ONAMA
+  if (document.querySelector('#home')) {
+    homevideo();
+    console.log("O NAMA SCRIPTS -- loaded");
+    
+    }
 
 if (document.querySelector('#onama')) {
   outlinehero();
