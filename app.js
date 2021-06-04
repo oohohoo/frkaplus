@@ -1899,6 +1899,27 @@ videoroll.to(".bgvideo", {
   yPercent:-30
 })
 
+.from(".apeli--hero-wrap", {
+  scrollTrigger: {
+    scroller: ".smooth-scroll",
+    trigger: firstSection,    
+    start: 'top 20%',
+    end: "+=30%",    
+    scrub: 2,
+  },
+  /*clipPath: 'inset(60%)',*/
+  duration: 0.2,
+  autoAlpha:0,
+ 
+ 
+})
+
+
+
+
+
+
+
 }
 
 /* 
