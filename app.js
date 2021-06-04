@@ -1940,7 +1940,7 @@ videoroll.to(".bgvideo", {
   yPercent:-30
 })
 
-.from(".apeli--hero-wrap", {
+.from(".apeli--hero-wrapz", {
   scrollTrigger: {
     scroller: ".smooth-scroll",
     trigger: firstSection,    
