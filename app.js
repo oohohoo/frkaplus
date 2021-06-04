@@ -450,7 +450,7 @@ BARBA VIEWS
                 console.log("OOOOONNNNAAAAMMMMAAA"); */
                 simpleaccordion();
                 zoomimage();
-
+                accordionhover();
               },
 
               once(data) {
@@ -503,6 +503,7 @@ BARBA VIEWS
               namespace: 'npp',
               beforeEnter(data) {
                 simpleaccordion();
+                accordionhover();
               }
             }, {
 
@@ -512,12 +513,14 @@ BARBA VIEWS
               },
               beforeEnter(data) {
                 simpleaccordion();
+                accordionhover();
 
               }
             }, {
               namespace: 'privatnost',
               beforeEnter(data) {
                 simpleaccordion();
+                accordionhover();
 
               }
             }, {
@@ -1043,6 +1046,36 @@ function logohover() {
   });
 
 }
+
+
+/* 
+=============================================
+ACCORDION HOVER 
+================================================ */
+
+function accordionhover() {
+
+  gsap.utils.toArray(".acc-header-wrapper").forEach(container => {
+        let naslov = container.querySelector(".acc-header-cont"),
+          // silhouette = container.querySelector(".silhouette .cover"), */
+          tlhover = gsap.timeline({
+            paused: true
+          });
+
+        tlhover.to(naslov, {
+          x: 30,
+          duration: 0.2,
+          ease: 'power1.inOut',
+        });
+
+        container.addEventListener("mouseenter", () => tlhover.play());
+        container.addEventListener("mouseleave", () => tlhover.reverse());
+  });
+
+}
+
+
+
 
 /* 
 =============================================
@@ -1907,7 +1940,7 @@ videoroll.to(".bgvideo", {
     end: "+=30%",    
     /* scrub: 2, */
   },
-  clipPath: 'inset(0%)',
+ /*  clipPath: 'inset(0%)', */
   duration: 0.2,
   autoAlpha:0,
 })
