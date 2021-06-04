@@ -306,7 +306,7 @@ function initContent() {
     /* console.log("LOKACIJE SCRIPTS -- loaded"); */
   }
   console.log("DOCUMENT READY SCRIPTS LOADED");
-}
+})
  
   
     /* imageparallax(); */
