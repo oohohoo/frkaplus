@@ -433,6 +433,7 @@ BARBA VIEWS
               namespace: 'onama',
               beforeEnter(data) {
                 onamacounter();
+                console.log("OOOOONNNNAAAAMMMMAAA");
                
                 simpleaccordion();
                 zoomimage();
