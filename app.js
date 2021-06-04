@@ -2097,19 +2097,15 @@ allVideoDivs.forEach((videoDiv, i) => {
     trigger: videoElem,
     start: 'top 70%',
     end: 'bottom 30%',
-    markers: true,
+    /* markers: true, */
     scroller:".smooth-scroll",
     onEnter: () => videoElem.play(),
-    console.log("PLAY");
     onEnterBack: () => videoElem.play(),
-    console.log("PLAY");
-    onLeave: () => videoElem.pause(), 
-    console.log("PAUSE");
+    onLeave: () => videoElem.pause(),
     onLeaveBack: () => videoElem.pause(),
-    console.log("PAUSE");
-  });
+    });
   
-  
+  console.log("PLAY PAUSE VIDEO");
 });
 }
 
