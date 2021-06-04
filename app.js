@@ -1945,7 +1945,7 @@ videoroll.to(".bgvideo", {
   scrollTrigger: {
     scroller: ".smooth-scroll",
     trigger: apelTrigger,    
-    start: 'top 30%',
+    start: 'top 60%',
     end: "+=30%",  
     toggleActions: "restart none none reset"  
     /* scrub: 2, */
