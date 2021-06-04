@@ -292,7 +292,7 @@ function initContent() {
   // LOAD ON ONAMA
   if (document.querySelector('#home')) {
     homevideo();
-    console.log("O NAMA SCRIPTS -- loaded");
+    console.log("HOME SCRIPTS -- loaded");
   }
 
   if (document.querySelector('#onama')) {
