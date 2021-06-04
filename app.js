@@ -450,7 +450,7 @@ BARBA VIEWS
 
               namespace: 'lokacije',
               once() {
-                
+                sorting();
               },
               beforeEnter({
                 next
