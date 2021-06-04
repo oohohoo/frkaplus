@@ -280,35 +280,33 @@ INIT CONTENT --> vodi na --> INIT SCROLL
 function initContent() {
 
   select('body').classList.remove('is-loading');
-  
+  $(document).ready(function(){ 
+ /* ORIGINAL*/
   initScroll();
+/* DODANE SKRIPTE*/
   scrollTotop();
   hideMenu();
   /* multilinereveal(); */
-  console.log("SCRIPTS SCROLLTRIGGER LOADED");
+ /*  console.log("SCRIPTS SCROLLTRIGGER LOADED"); */
   // LOAD ON ONAMA
   if (document.querySelector('#home')) {
     homevideo();
-    console.log("O NAMA SCRIPTS -- loaded");
-     }
-
-if (document.querySelector('#onama')) {
-  outlinehero();
-  onamacounter();
-  numberoll();
-  horizpin(); 
-  console.log("O NAMA SCRIPTS -- loaded");
-  
+  /*   console.log("O NAMA SCRIPTS -- loaded"); */
   }
+  if (document.querySelector('#onama')) {
+    outlinehero();
+    onamacounter();
+    numberoll();
+    horizpin();
+   /*  console.log("O NAMA SCRIPTS -- loaded"); */
 
-
+  }
   if (document.querySelector('#lokacije')) {
     sorting();
-    console.log("LOKACIJE SCRIPTS -- loaded");
-    
-    }
-
- 
+    /* console.log("LOKACIJE SCRIPTS -- loaded"); */
+  }
+  console.log("DOCUMENT READY SCRIPTS LOADED");
+}
  
   
     /* imageparallax(); */
@@ -1337,14 +1335,14 @@ ZOOM IMAGE
 
 function zoomimage() {
 
-  $(document).ready(function(){ 
+ 
     var elements = document.querySelectorAll( '.demo-image' );
     Intense( elements );
     }); 
      
     console.log("imagezoom loaded");
 
-}
+
 
 /* 
 =============================================
