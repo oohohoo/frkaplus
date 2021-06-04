@@ -159,6 +159,36 @@ console.log("refresh init mamicu mu AJMOOOO");
 
 /*
 ================================================================================
+PLAY/PAUSE VIDEO ON SCROLL TRIGGER
+================================================================================
+*/
+
+let allVideoDivs = gsap.utils.toArray('.vid');
+
+allVideoDivs.forEach((videoDiv, i) => {
+  
+  let videoElem = videoDiv.querySelector('video')
+  
+  ScrollTrigger.create({
+    trigger: videoElem,
+    start: 'top 70%',
+    end: 'bottom 30%',
+    markers: true,
+    scroller:".smooth-scroll",
+    onEnter: () => videoElem.play(),
+    onEnterBack: () => videoElem.play(),
+    onLeave: () => videoElem.pause(),
+    onLeaveBack: () => videoElem.pause(),
+  });
+  
+});
+
+
+
+
+
+/*
+================================================================================
 RELOAD ON MOBILE ORIENTATION CHANGE
 ================================================================================
 */
