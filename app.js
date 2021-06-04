@@ -290,8 +290,7 @@ function initContent() {
   if (document.querySelector('#home')) {
     homevideo();
     console.log("O NAMA SCRIPTS -- loaded");
-    
-    }
+     }
 
 if (document.querySelector('#onama')) {
   outlinehero();
@@ -433,12 +432,8 @@ BARBA VIEWS
 
               namespace: 'onama',
               beforeEnter(data) {
-               /*  outlinehero();
-                
-                imageparallax(); */
-               /* 
-                */
-                console.log("HORIZ LOAD ON TRANSITION");
+                onamacounter();
+               
                 simpleaccordion();
                 zoomimage();
 
