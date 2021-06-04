@@ -432,7 +432,7 @@ BARBA VIEWS
 
               beforeEnter(data) {
                 heroApeli();
-                 homevideo();  
+                /*  homevideo();   */
                 
                 document.getElementById('homevid').play();
 
