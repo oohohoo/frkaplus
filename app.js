@@ -1944,8 +1944,8 @@ videoroll.to(".bgvideo", {
 .from(".apeli--hero-wrap", {
   scrollTrigger: {
     scroller: ".smooth-scroll",
-    trigger: cover,    
-    start: 'top 30%',
+    trigger: firstSection,    
+    start: 'top 20%',
     end: "+=30%",  
     toggleActions: "restart none none reset"  
     /* scrub: 2, */
