@@ -1945,12 +1945,12 @@ videoroll.to(".bgvideo", {
   scrollTrigger: {
     scroller: ".smooth-scroll",
     trigger: firstSection,    
-    start: 'top 20%',
+    start: 'top 40%',
     end: "+=30%",    
     /* scrub: 2, */
   },
  /*  clipPath: 'inset(0%)', */
-  duration: 0.2,
+  duration: 0.4,
   autoAlpha:0,
 })
 
