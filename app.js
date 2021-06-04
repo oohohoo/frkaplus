@@ -314,8 +314,8 @@ function initContent() {
     /* imageparallax(); */
  
 
-  ScrollTrigger.refresh(true); // ScrollTrigger Refresh
-  console.log("scrolltrigger refreshed after enter");
+ /*  ScrollTrigger.refresh(true); // ScrollTrigger Refresh
+  console.log("scrolltrigger refreshed after enter"); */
 /* locoScroll.update();
 console.log("locoscroll refreshed after enter"); */
 }); 
