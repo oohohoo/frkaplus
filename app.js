@@ -1884,7 +1884,7 @@ let videoroll = gsap.timeline()
 
 let cover = document.querySelector('.bgvideo')
 let firstSection = document.querySelector('.big-logo')
-
+/* .set(".apeli--hero-wrap", {autoAlpha: 0}) */
 videoroll.to(".bgvideo", {
   scrollTrigger: {
     scroller: ".smooth-scroll",
@@ -1905,20 +1905,12 @@ videoroll.to(".bgvideo", {
     trigger: firstSection,    
     start: 'top 20%',
     end: "+=30%",    
-    scrub: 2,
+    /* scrub: 2, */
   },
-  /*clipPath: 'inset(60%)',*/
+  clipPath: 'inset(0%)',
   duration: 0.2,
   autoAlpha:0,
- 
- 
 })
-
-
-
-
-
-
 
 }
 
