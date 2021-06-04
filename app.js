@@ -285,23 +285,24 @@ function initContent() {
   scrollTotop();
   homevideo();
 
-// LOAD ON ONAMA
+
+  numberoll();
+  outlinehero();
+  horizpin(); 
+    hideMenu();
+  multilinereveal();
+  console.log("SCRIPTS SCROLLTRIGGER LOADED");
+  // LOAD ON ONAMA
 
 if (document.querySelector('#onama')) {
   onamacounter();
   console.log("O NAMA SCRIPTS -- loaded");
   
   }
-  numberoll();
-  outlinehero();
-  horizpin(); 
-    hideMenu();
-  multilinereveal();
- 
  
   
     /* imageparallax(); */
-  console.log("SCRIPTS SCROLLTRIGGER LOADED");
+ 
 
   ScrollTrigger.refresh(true); // ScrollTrigger Refresh
   console.log("scrolltrigger refreshed after enter");
