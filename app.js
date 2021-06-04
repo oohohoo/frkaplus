@@ -286,16 +286,17 @@ function initContent() {
   homevideo();
 
 
-  numberoll();
-  outlinehero();
-  horizpin(); 
-    hideMenu();
+  
+  hideMenu();
   multilinereveal();
   console.log("SCRIPTS SCROLLTRIGGER LOADED");
   // LOAD ON ONAMA
 
 if (document.querySelector('#onama')) {
+  outlinehero();
   onamacounter();
+  numberoll();
+  horizpin(); 
   console.log("O NAMA SCRIPTS -- loaded");
   
   }
