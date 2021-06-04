@@ -284,8 +284,8 @@ function initContent() {
   select('body').classList.remove('is-loading');
  /* ORIGINAL*/
   initScroll();
-  locoScroll.update();
-  console.log("INIT LOCO SCROLL UPDATED");
+ /*  locoScroll.update();
+  console.log("INIT LOCO SCROLL UPDATED"); */
 /* DODANE*/
   scrollTotop();
   hideMenu();
