@@ -288,16 +288,16 @@ function initContent() {
 // LOAD ON ONAMA
 
 if (document.querySelector('#onama')) {
-  numberoll();
+  onamacounter();
   console.log("O NAMA SCRIPTS -- loaded");
   
   }
-  
+  numberoll();
   outlinehero();
   horizpin(); 
     hideMenu();
   multilinereveal();
-  onamacounter();
+ 
  
   
     /* imageparallax(); */
