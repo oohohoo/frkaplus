@@ -309,7 +309,7 @@ INIT CONTENT --> vodi na --> INIT SCROLL
 ================================================================================
 */
 function initContent() {
-  $(document).ready(function(){ 
+  /* $(document).ready(function(){  */
 
   
   select('body').classList.remove('is-loading');
@@ -340,7 +340,7 @@ function initContent() {
     sorting();
     console.log("LOKACIJE SCRIPTS -- loaded");
   }
-}); 
+/* });  */
  
  
   
