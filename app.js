@@ -1925,7 +1925,7 @@ let videoroll = gsap.timeline()
 
 let cover = document.querySelector('.bgvideo')
 let firstSection = document.querySelector('.big-logo')
-let apelTrigger = document.querySelector('.hero--video')
+let apelTrigger = document.querySelector('.hero-video--container')
 /* .set(".apeli--hero-wrap", {autoAlpha: 0}) */
 videoroll.to(".bgvideo", {
   scrollTrigger: {
