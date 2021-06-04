@@ -308,7 +308,7 @@ function initContent() {
     numberoll();
     horizpin();
     playpausevideo();
-    console.log("O NAMA SCRIPTS -- loaded");
+    console.log("O NAMA SCRIPTS PLAYPAUSE -- loaded");
 
   }
   if (document.querySelector('#lokacije')) {
