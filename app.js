@@ -1426,7 +1426,7 @@ function sorting() {
     /*dodano*/
     this.element = element;
 
-    this.setupEvents();
+    
     this.gridItems = this.element.querySelectorAll('.picture-item');
     this.shapes = Array.from(document.querySelectorAll(".js-shapes select"));
     this.colors = Array.from(document.querySelectorAll(".js-colors button"));
@@ -1451,6 +1451,7 @@ function sorting() {
       document.querySelector('#append').addEventListener('click', this.onAppendBoxes.bind(this));
     };
 
+    this.setupEvents();
 /* APPEND end */
 
     this.filters = {
