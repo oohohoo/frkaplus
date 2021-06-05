@@ -2146,7 +2146,7 @@ function createBatch(target) {
 	});
 }
 
-var ajaxitem = '<div class="card"></div><div class="card"></div><div class="card"></div><div class="card"></div><div class="card"></div><div class="card"></div>';
+var ajaxitem = '<div class="picture-item"></div><div class="picture-item"></div><div class="picture-item"></div><div class="picture-item"></div><div class="picture-item"></div><div class="picture-item"></div>';
 
 function init() {
   createBatch(".picture-item");
