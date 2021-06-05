@@ -134,10 +134,10 @@ function initScroll(container) {
 
     // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, 
     // we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
-  // UKLJUČITI SAMO NA MOBILNOJ VERZIJI
-   // ZBOG OVOG DESKTOP IGNORIRA HORIZONTAL PIN ITD //
-    pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed" */
-});
+    // 
+   //
+   pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed" 
+  });
 
 
 /* OVO JE UBAČENO NAKNADNO
