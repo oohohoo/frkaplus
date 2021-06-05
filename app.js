@@ -1425,21 +1425,23 @@ function sorting() {
    
     /*dodano*/
     this.element = element;
+    this.initShuffle();
+    this.setupEvents();
     this.gridItems = this.element.querySelectorAll('.picture-item');
     this.shapes = Array.from(document.querySelectorAll(".js-shapes select"));
     this.colors = Array.from(document.querySelectorAll(".js-colors button"));
    /* this.styles = toArray(document.querySelectorAll('.filter-group div')); */
     this.message = document.querySelector('.js-message');
   
-  
-    this.shuffle = new Shuffle(element, {
+    Demo.prototype.initShuffle = function () {
+    this.shuffle = new Shuffle(this.element, {
       easing: "cubic-bezier(0.165, 0.840, 0.440, 1.000)", // easeOutQuart
       sizer: ".the-sizer",
        buffer: 1,
       /*DODANO*/
       itemSelector: '.picture-item',
     });
-   
+  };
 
      /* APPEND */
 
@@ -1458,7 +1460,7 @@ function sorting() {
     };
       
 
-    this.setupEvents();
+   
 
     
     this.addSorting();
