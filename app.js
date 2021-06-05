@@ -1452,7 +1452,6 @@ function sorting() {
     };
 
     this.setupEvents();
-   
 /* APPEND end */
 
     this.filters = {
@@ -1463,7 +1462,7 @@ function sorting() {
       
 
    
-    this.onAppendBoxes();
+
     
     this.addSorting();
   
@@ -1480,15 +1479,15 @@ function sorting() {
  * shuffle about the new items. You could also insert the HTML as a string.
  */
  Demo.prototype.onAppendBoxes = function () {
-  var elements = this._getArrayOfElementsToAdd();
+  var gridItems = this._getArrayOfElementsToAdd();
 
-  elements.forEach(function (element) {
-    this.element.appendChild(element);
+  gridItems.forEach(function (gridItems) {
+    this.element.appendChild(gridItems);
   }, this);
 
   // Tell shuffle items have been appended.
   // It expects an array of elements as the parameter.
-  this.shuffle.add(elements);
+  this.shuffle.add(gridItems);
 };
   
 
