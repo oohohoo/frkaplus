@@ -2157,7 +2157,8 @@ function init() {
     
     // Create a new batch just for the new content
     createBatch(newContent);
-    
+    ScrollTrigger.refresh(true);
+    console.log("scrolltrigger after batch");
   });
 }
 
