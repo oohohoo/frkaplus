@@ -136,7 +136,7 @@ function initScroll(container) {
     // we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
     // 
    //
-   pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed" 
+   /* pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed"  */
   });
 
 
