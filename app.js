@@ -1802,12 +1802,12 @@ function sorting() {
     });
   };
    
-  setTimeout(()=>{ 
+  /* setTimeout(()=>{  */
   /*document.addEventListener("DOMContentLoaded", function() { */
     window.demo = new Demo(document.querySelector(".js-shuffle"));
      //locoScroll.update();
     console.log("SHUFFLE UČITAN i loco updated");
-     },1000)  
+     /* },1000)  */ 
   
    
 
