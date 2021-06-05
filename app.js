@@ -1458,13 +1458,13 @@ function sorting() {
     };
       
 
-    this.setupEvents();
+   
 
-    
+
     this.addSorting();
   
     this._bindEventListeners();
-     
+    this.setupEvents();
   };
   
 
