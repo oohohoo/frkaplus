@@ -1452,7 +1452,7 @@ function sorting() {
     };
 
     this.setupEvents();
-    this.onAppendBoxes();
+   
 /* APPEND end */
 
     this.filters = {
@@ -1463,7 +1463,7 @@ function sorting() {
       
 
    
-
+    this.onAppendBoxes();
     
     this.addSorting();
   
