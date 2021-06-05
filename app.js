@@ -1420,6 +1420,7 @@ function sorting() {
 
   /**/
 
+  
   var Demo = function(element) {
    
     /*dodano*/
@@ -1440,6 +1441,16 @@ function sorting() {
     });
    
 
+     /* APPEND */
+
+    this.setupEvents();
+
+       Demo.prototype.setupEvents = function () {
+      document.querySelector('#append').addEventListener('click', this.onAppendBoxes.bind(this));
+    };
+
+/* APPEND end */
+
     this.filters = {
       shapes: [],
       colors: [],
@@ -1454,27 +1465,23 @@ function sorting() {
   
 
 
-  Demo.prototype.setupEvents = function () {
-    document.querySelector('#append').addEventListener('click', this.onAppendBoxes.bind(this));
-  };
+
   
-  /**
-   * Create some DOM elements, append them to the shuffle container, then notify
-   * shuffle about the new items. You could also insert the HTML as a string.
-   */
-  Demo.prototype.onAppendBoxes = function () {
-    var elements = this._getArrayOfElementsToAdd();
-  
-    elements.forEach(function (element) {
-      this.element.appendChild(element);
-    }, this);
-  
-    // Tell shuffle elements have been appended.
-    // It expects an array of elements as the parameter.
-    this.shuffle.add(elements);
-    console.log("NEW CHILDREN ADDED");
-  };
-  
+/**
+ * Create some DOM elements, append them to the shuffle container, then notify
+ * shuffle about the new items. You could also insert the HTML as a string.
+ */
+ Demo.prototype.onAppendBoxes = function () {
+  var elements = this._getArrayOfElementsToAdd();
+
+  elements.forEach(function (element) {
+    this.shuffle.element.appendChild(element);
+  }, this);
+
+  // Tell shuffle items have been appended.
+  // It expects an array of elements as the parameter.
+  this.shuffle.add(elements);
+};
   
 
   /**
