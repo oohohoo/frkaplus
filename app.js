@@ -313,7 +313,7 @@ function initContent() {
   }
   if (document.querySelector('#lokacije')) {
     sorting();
-    appendmore();
+    /* appendmore(); */
     console.log("LOKACIJE SCRIPTS apendmore -- loaded");
   }
 /* });  */
@@ -2120,6 +2120,8 @@ LOCATION / APPEND LOAD MORE
 ================================================================================ */
 
 function appendmore() {
+
+  /*
 // Show the given batch
 function show(batch) {
   gsap.set(batch, {opacity: 0, y:80});
@@ -2163,7 +2165,7 @@ function init() {
 }
 
 init();
-
+*/
 }
 
 
