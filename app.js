@@ -289,6 +289,7 @@ function initContent() {
   select('body').classList.remove('is-loading');
  /* ORIGINAL*/
   initScroll();
+  customCursor();
  /*  locoScroll.update();
   console.log("INIT LOCO SCROLL UPDATED"); */
 /* DODANE*/
@@ -2230,6 +2231,143 @@ $( "#tomainipad" ).on( "click", function() {
     'disableLerp': true
   });
   
+});
+
+}
+
+
+
+
+
+/*
+================================================================================
+CUSTOM CURSOR QUICK SETTER BLAKE + SVG TRANSFORMS
+================================================================================
+*/
+
+
+/*
+================================================================================
+SET TO CENTER
+================================================================================
+*/
+
+function customCursor() {
+
+gsap.set(".cursory", {xPercent: -50, yPercent: -50});
+
+/*
+================================================================================
+SET VARIABLE
+================================================================================
+*/
+var ball = document.querySelector(".cursory");
+var pos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+var mouse = { x: pos.x, y: pos.y };
+var speed = 0.15;
+
+var fpms = 60 / 1000;
+
+var xSet = gsap.quickSetter(ball, "x", "px");
+var ySet = gsap.quickSetter(ball, "y", "px");
+
+
+/*
+================================================================================
+SET OUT OF WINDOW ANIMATION 
+================================================================================
+*/
+var showAnimation = gsap.to(ball, {
+  opacity: 1,
+  paused: true
+
+});
+
+var timer = gsap.delayedCall(5, () => {
+  showAnimation.reverse();
+}).pause();
+
+/*
+================================================================================
+MOUSE MOVE LISTENER
+================================================================================
+*/
+
+window.addEventListener("mousemove", init);
+
+function init() {
+   
+  window.removeEventListener("mousemove", init);
+  
+  window.addEventListener("mousemove", e => {    
+    mouse.x = e.x;
+    mouse.y = e.y;  
+  });
+  
+/*
+================================================================================
+OUT OF WINDOW LISTENER
+================================================================================
+*/  
+  document.addEventListener("mouseleave", e => {
+    showAnimation.reverse();
+      console.log("Mouse Leave");
+  });
+  
+  document.addEventListener("mouseenter", e => {
+    showAnimation.play();
+    console.log("Mouse Enter");
+  
+/*
+================================================================================
+GSAP TICKER -- NE ZNAM DETALJE
+================================================================================
+*/  
+  
+    mouse.x = pos.x = e.x;
+    mouse.y = pos.y = e.y;
+  });
+
+  gsap.ticker.add((time, deltaTime) => {
+
+    var delta = deltaTime * fpms;
+    var dt = 1.0 - Math.pow(1.0 - speed, delta); 
+
+    pos.x += (mouse.x - pos.x) * dt;
+    pos.y += (mouse.y - pos.y) * dt;
+    xSet(pos.x);
+    ySet(pos.y);
+  });
+  
+  showAnimation.play();
+}
+
+$('.splide__list, .trigger').hover(function() {
+  $('.cursor__dot1').toggleClass('is--larger');
+  $('.cursor__dot2').toggleClass('is--larger');
+
+});
+
+$('.trigger').hover(function() {
+  $('.cursor__text').toggleClass('fadein');
+  $('.cursor__text').text('OPEN');
+   
+});
+
+$('.splide__list').hover(function() {
+$('.dragicon').toggleClass('fadein');
+ $('.cursor__text').text('');
+/*  $('.cursor__text').text('DRAG'); */
+   
+});
+
+$('.control').hover(function() {
+  $('.cursor__dot1').toggleClass('opacity-0');
+ /* $('.cursor__dot2').toggleClass('light-ring'); */
+});
+
+$('.trigger').click(function() {
+	$('.cursor').toggleClass('hide-cursor');
 });
 
 }
