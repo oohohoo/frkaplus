@@ -1452,6 +1452,7 @@ function sorting() {
     };
 
     this.setupEvents();
+    this.onAppendBoxes();
 /* APPEND end */
 
     this.filters = {
