@@ -1482,7 +1482,7 @@ function sorting() {
   var elements = this._getArrayOfElementsToAdd();
 
   elements.forEach(function (element) {
-    this.shuffle.element.appendChild(element);
+    this.element.appendChild(element);
   }, this);
 
   // Tell shuffle items have been appended.
