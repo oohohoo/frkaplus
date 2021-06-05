@@ -1425,8 +1425,6 @@ function sorting() {
    
     /*dodano*/
     this.element = element;
-
-    this.setupEvents();
     this.gridItems = this.element.querySelectorAll('.picture-item');
     this.shapes = Array.from(document.querySelectorAll(".js-shapes select"));
     this.colors = Array.from(document.querySelectorAll(".js-colors button"));
@@ -1458,9 +1456,9 @@ function sorting() {
       colors: [],
      /* styles: [], */
     };
-      
-
-   
+     
+    
+    this.setupEvents();
 
     
     this.addSorting();
@@ -1478,7 +1476,7 @@ function sorting() {
  * shuffle about the new items. You could also insert the HTML as a string.
  */
  Demo.prototype.onAppendBoxes = function () {
-  var elements = this.shuffle._getArrayOfElementsToAdd();
+  var elements = this._getArrayOfElementsToAdd();
 
   elements.forEach(function (element) {
     this.shuffle.element.appendChild(element);
