@@ -487,7 +487,6 @@ BARBA VIEWS
               }
             }, {
 
-
               namespace: 'sort',
               beforeEnter({
                 next
