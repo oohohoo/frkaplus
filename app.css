@@ -850,6 +850,27 @@ display:none!important;
 
 }
 
+
+/*
+================================================================================
+SPLIDE CSS
+================================================================================
+*/
+
+
+.nav-link__contain, .sublink__contain {
+	opacity: 0;
+}
+
+.splide__arrow.splide__arrow--next, .splide__arrow.splide__arrow--prev, .splide__pagination {
+	display: none;
+}
+
+.splide *:focus { outline: none; }
+
+
+
+
 /*
 ================================================================================
 SORTING CSS

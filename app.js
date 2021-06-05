@@ -501,7 +501,9 @@ BARBA VIEWS
               },
               beforeEnter(data) {
                 locationMap();
-                swiperlocation();
+                splidesolo();
+                console.log("SPLIDE LOADED");
+                /* swiperlocation(); */
                 scrolltriggerupdate();
                 openTestYourDesign();
                 saveaspdftest();
@@ -1460,7 +1462,7 @@ function sorting() {
     
     this.setupEvents();
 
-    
+
     this.addSorting();
   
     this._bindEventListeners();
@@ -1811,6 +1813,29 @@ function sorting() {
 }
 
 
+function splidesolo() {
+
+new Splide( '.splide', {
+	perPage: 1,
+	perMove: 1,
+  type   : 'loop',
+	focus  : 'center',
+  breakpoints: {
+		767: {
+			perPage: 1,
+		}
+	}
+} ).mount();
+
+$('.next-splide').click(function() {
+	$('.splide__arrow.splide__arrow--next').click();
+});
+
+$('.prev-splide').click(function() {
+	$('.splide__arrow.splide__arrow--prev').click();
+});
+
+}
 
 
 /* 
