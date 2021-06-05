@@ -1443,7 +1443,7 @@ function sorting() {
 
      /* APPEND */
 
-     this.shuffle.setupEvents();    
+    
 
        Demo.prototype.setupEvents = function () {
       document.querySelector('#append').addEventListener('click', this.onAppendBoxes.bind(this));
@@ -1458,7 +1458,7 @@ function sorting() {
     };
       
 
-   
+    this.setupEvents();
 
     
     this.addSorting();
@@ -1487,8 +1487,6 @@ function sorting() {
   this.shuffle.add(elements);
 };
   
-
-
 
   /**
    * Sorting
