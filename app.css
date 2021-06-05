@@ -733,37 +733,6 @@ TRICK TO UNIT PORTS ON MOBILE - VH
 }
 /*
 
-/*
-================================================================================
-CURSOR IMAGE OVER 
-================================================================================
-
-*/
-
-.cursor {
-  position: absolute;
-  width: 600px;
-  height: 400px;
-  top: 50%;
-  left: 50%;
-  margin: -100px 0 0 -100px;
-  background: url(https://i.pinimg.com/564x/85/24/d7/8524d785a8427617d475bf02d51710fc.jpg) no-repeat 50% 50%;
-  background-size: contain;
-  z-index: 100;
-} 
-/*
-.project-overlay{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-
-
-*/
-
 
 /*
 ================================================================================
@@ -1188,6 +1157,6 @@ input::-webkit-search-cancel-button {
 
 
 /* IMAGE CURSOR*/
-.demo-image {
+/* .demo-image {
   cursor: url("http://tholman.com/intense-images/img/plus_cursor.png") 25 25, auto;
-}
+} */
