@@ -1460,11 +1460,11 @@ function sorting() {
 
    
 
-
+    
     this.addSorting();
   
     this._bindEventListeners();
-    this.setupEvents();
+     
   };
   
 
@@ -1487,6 +1487,8 @@ function sorting() {
   this.shuffle.add(elements);
 };
   
+
+this.setupEvents();
 
   /**
    * Sorting
