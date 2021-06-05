@@ -2140,9 +2140,9 @@ function createBatch(target) {
   ScrollTrigger.batch(target, {
 		//interval: 0.15,
 		onEnter: show,
-		onLeave: hide,
+		onLeave: show,
 		onEnterBack: show,
-		onLeaveBack: hide
+		onLeaveBack: show
 	});
 }
 
