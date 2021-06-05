@@ -1426,7 +1426,7 @@ function sorting() {
     /*dodano*/
     this.element = element;
 
-    
+    this.setupEvents();
     this.gridItems = this.element.querySelectorAll('.picture-item');
     this.shapes = Array.from(document.querySelectorAll(".js-shapes select"));
     this.colors = Array.from(document.querySelectorAll(".js-colors button"));
@@ -1437,7 +1437,7 @@ function sorting() {
     this.shuffle = new Shuffle(element, {
       easing: "cubic-bezier(0.165, 0.840, 0.440, 1.000)", // easeOutQuart
       sizer: ".the-sizer",
-       /* buffer: 1, */
+       buffer: 1,
       /*DODANO*/
       itemSelector: '.picture-item',
     });
@@ -1451,7 +1451,6 @@ function sorting() {
       document.querySelector('#append').addEventListener('click', this.onAppendBoxes.bind(this));
     };
 
-    this.setupEvents();
 /* APPEND end */
 
     this.filters = {
@@ -1479,15 +1478,15 @@ function sorting() {
  * shuffle about the new items. You could also insert the HTML as a string.
  */
  Demo.prototype.onAppendBoxes = function () {
-  var gridItems = this._getArrayOfElementsToAdd();
+  var elements = this.shuffle._getArrayOfElementsToAdd();
 
-  gridItems.forEach(function (gridItems) {
-    this.element.appendChild(gridItems);
+  elements.forEach(function (element) {
+    this.shuffle.element.appendChild(element);
   }, this);
 
   // Tell shuffle items have been appended.
   // It expects an array of elements as the parameter.
-  this.shuffle.add(gridItems);
+  this.shuffle.add(elements);
 };
   
 
