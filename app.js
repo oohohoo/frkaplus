@@ -1443,7 +1443,7 @@ function sorting() {
 
      /* APPEND */
 
-    this.setupEvents();
+    
 
        Demo.prototype.setupEvents = function () {
       document.querySelector('#append').addEventListener('click', this.onAppendBoxes.bind(this));
@@ -1457,6 +1457,10 @@ function sorting() {
      /* styles: [], */
     };
       
+
+    this.setupEvents();
+
+    
     this.addSorting();
   
     this._bindEventListeners();
