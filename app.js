@@ -1843,7 +1843,7 @@ function sorting() {
 
 function splidesolo() {
 
-  const splide = new Splide( "#splide01" ) {
+  const splide = new Splide( "#splide01" {
  /*  const splide = new Splide( ".splide" { */
 /* new Splide( '.splide', { */
 	perPage: 1,
@@ -1855,7 +1855,7 @@ function splidesolo() {
 			perPage: 1,
 		}
 	}
-}
+})
 .mount();
 
 $('.next-splide').click(function() {
