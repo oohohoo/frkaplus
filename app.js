@@ -2380,19 +2380,19 @@ $('.trigger').click(function() {
 function sortButtons() {
 
 
-$('.link').hover(function() {
+$('.linkx').hover(function() {
 	$('.cursor').toggleClass('link-hover');
 	let textOne = $(this).find('.link_text').eq(0).text();
   $(this).find('.link_text.is--2').text(textOne);
 });
 
-$( ".options .link input" ).change(function() {
+$( ".options .linkx input" ).change(function() {
 	$(this).closest('.shapes').find('.selected-toggle').removeClass('selected-toggle');
-  $(this).closest('.link').addClass('selected-toggle');
+  $(this).closest('.linkx').addClass('selected-toggle');
 });
 
-$( ".check .link input" ).change(function() {
-  $(this).closest('.link').toggleClass('selected-toggle');
+$( ".check .linkx input" ).change(function() {
+  $(this).closest('.linkx').toggleClass('selected-toggle');
 });
 
 $('.field').focus(function() {
