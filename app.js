@@ -1806,7 +1806,7 @@ function sorting() {
   /*document.addEventListener("DOMContentLoaded", function() { */
     window.demo = new Demo(document.querySelector(".js-shuffle"));
      //locoScroll.update();
-     ScrollTrigger.refresh();
+     ScrollTrigger.refresh(true);
     console.log("SHUFFLE UČITAN i scroll refresh");
       },1000)  
   
