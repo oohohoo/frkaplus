@@ -679,6 +679,9 @@ center: [16.527, 44.663], // starting position [lng, lat]
 zoom: 6.64 // starting zoom
 });
 
+
+map.doubleClickZoom.enable();
+console.log("MAP DOUBLECLICK!"); 
 /*
 ================================================================================
 FLY TO LOCATION
@@ -748,6 +751,8 @@ console.log("MAP RESIZE!");
 mapboxgl.clearStorage();
 console.log("STORAGE CLEARED"); 
  }
+
+/*  mapboxgl.prewarm(); */
 
 /*
 ================================================================================
