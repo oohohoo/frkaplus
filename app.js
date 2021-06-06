@@ -522,7 +522,7 @@ BARBA VIEWS
                 saveaspdftest();
               },
                 beforeLeave({current}) {
-                  Splide.destroy( completely = true );
+                  splide.destroy( completely = true );
                   console.log("Splide Removed");
              }
             }, {
