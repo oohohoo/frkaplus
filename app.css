@@ -1166,3 +1166,59 @@ input::-webkit-search-cancel-button {
 /*TIMOTHY BUTTONS*/
 .radio-button {pointer-events: auto;}
 .link_container.is--submit.disable {pointer-events: none;}
+
+
+
+@media only screen and (min-width: 1440px) {
+  body {font-size: 14px;}
+  }
+  
+  a {
+    color: inherit;
+  }
+  
+  .cursor {
+    pointer-events: none;
+  }
+  
+  .cursor.link-hover  {
+     mix-blend-mode: difference;
+     font-size: 4.5em;
+  }
+  .cursor.link-hover .cursor_dot {
+    background-color: white;
+  }
+  
+  body:hover .cursor {
+    opacity: 1.0;
+  }
+  .linkx {
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+  }
+  
+  .linkx.selected-toggle {
+    color: white;
+  }
+  .link_circle, .radio-button, .field_line {
+    pointer-events: none;
+  }
+  .selected-toggle .link_circle {
+    border-radius: 0%;
+    margin-bottom: 0em;
+  }
+  
+  .field {
+    font-size: inherit;
+  }
+  
+  .field_parent:hover .field_line {
+    opacity: 0.5;
+  }
+  
+  .field_parent:focus-within .field_line {
+    opacity: 1.0;
+  }
+  
+  .full-opacity {
+    opacity: 1.0 !important;
+  }
