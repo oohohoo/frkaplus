@@ -475,9 +475,7 @@ BARBA VIEWS
               once() {
                
               },
-              beforeEnter({
-                next
-              }) {
+              beforeEnter(data) {
                 locationMap();
                 sorting();
                 sortButtons();
