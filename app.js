@@ -521,11 +521,17 @@ BARBA VIEWS
                 openTestYourDesign();
                 saveaspdftest();
               },
-                beforeLeave({next
-                }) {
-                  splide.destroy(completely = true);
-                  console.log("SPLIDE ODJEBAN");
-             }
+                beforeLeave(data) {
+
+                  splide.on( 'destroy', function() {
+                    splide.destroy(completely = true);
+                    console.log("SPLIDE ODJEBAN");
+                  }
+
+
+                  
+                  
+             },
             }, {
 
               namespace: 'npp',
