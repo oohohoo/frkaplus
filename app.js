@@ -2423,11 +2423,11 @@ const lineAnim = gsap.timeline({
 .to(".underlinetab", { xPercent: 200 })
 
 
-containertab.addEventListener("mouseenter", () => {
+container.addEventListener("mouseenter", () => {
   shouldPlay = false;
   lineAnim.restart();
 }); 
-containertab.addEventListener("mouseleave", () => {
+container.addEventListener("mouseleave", () => {
   shouldPlay = true;
   lineAnim.play();
 });
