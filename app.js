@@ -1844,8 +1844,8 @@ function sorting() {
 function splidesolo() {
 
 
-  
-new Splide( '.splide', {
+  const splide = new Splide( ".splide" 
+/* new Splide( '.splide', { */
 	perPage: 1,
 	perMove: 1,
   type   : 'loop',
@@ -1867,10 +1867,17 @@ $('.prev-splide').click(function() {
 
 
 
-Splide.destroy( completely = true );
-                  console.log("Splide Removed");
+/* Splide.destroy( completely = true ); */
+                  
+
 
                   
+
+setTimeout( () => {
+  splide.destroy();
+  console.log("Splide Removed");
+}, 1000 );
+
 }
 
 
