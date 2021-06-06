@@ -234,6 +234,7 @@ function initLoader() {
   const loaderContent = select('.loader__content');
 
   const loader = select('.loader');
+  const loadertwo = select('.loadertwo');
   const loaderInner = select('.inner-loader');
   const progress = select('.progress');
 
@@ -345,9 +346,9 @@ function pageTransitionIn({
   tl
 
   .set(loaderInner, {autoAlpha: 0})
-  .fromTo(loader, {yPercent: -100}, {yPercent: 0})
+  .fromTo(loadertwo, {yPercent: -100}, {yPercent: 0})
   .fromTo(loaderMask, {yPercent: 80}, {yPercent: 0}, 0)
-  .to(container, {y: 80, force3D:true}, 0);
+  .to(container, {y: 80}, 0);
 
   return tl;
 }
@@ -367,7 +368,7 @@ function pageTransitionOut({
   });
   tl
 
-    .to(loader, {yPercent: 100})
+    .to(loadertwo, {yPercent: 100})
     .to(loaderMask, {yPercent: -80}, 0)
     .from(container, {y: -80}, 0);
     return tl;
