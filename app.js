@@ -1837,8 +1837,6 @@ function sorting() {
     console.log("SHUFFLE UČITAN i scroll refresh");
       },1000)  
   
-   
-
 }
 
 
@@ -1866,11 +1864,6 @@ $('.next-splide').click(function() {
 $('.prev-splide').click(function() {
 	$('.splide__arrow.splide__arrow--prev').click();
 });
-
-
-
-                  
-
 
 }
 
