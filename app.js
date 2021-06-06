@@ -521,7 +521,7 @@ BARBA VIEWS
                 openTestYourDesign();
                 saveaspdftest();
               },
-                beforeLeave(data) {
+                beforeLeave() {
                   splide.destroy(completely = true );
                   console.log("SPLIDE ODJEBAN");
              }
