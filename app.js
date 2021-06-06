@@ -315,6 +315,7 @@ function initContent() {
   }
   if (document.querySelector('#lokacije')) {
     sorting();
+    sortButtons();
     /* appendmore(); */
     console.log("LOKACIJE SCRIPTS apendmore -- loaded");
   }
