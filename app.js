@@ -2376,7 +2376,11 @@ $('.trigger').click(function() {
 }
 
 
-
+/*
+================================================================================
+SORT BUTTONS
+================================================================================
+*/  
 
 function sortButtons() {
 
@@ -2407,7 +2411,7 @@ GSAP UNDERLINE
 
 function underlineLink() {
 
-
+/* 
   gsap.utils.toArray(".underline--wrap").forEach(container => {
 
     let underlinetab = container.querySelector(".underlinetab"),
@@ -2421,7 +2425,7 @@ function underlineLink() {
     container.addEventListener("mouseenter", () => tl.play());
     container.addEventListener("mouseleave", () => tl.reverse());
   });
-
+ */
 }
 
 
