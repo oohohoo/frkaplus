@@ -2407,32 +2407,21 @@ GSAP UNDERLINE
 
 function underlineLink() {
 
-gsap.utils.toArray(".underline--wrap").forEach(container => {
-/* const containertab = document.querySelector(".underline--wrap"); */
-let shouldPlay = true;
 
-const lineAnim = gsap.timeline({
-  paused: true,
-  defaults: {
-    duration: 0.3,
-    ease: "power1.inOut"
-  }
-})
-.from(".underlinetab", { xPercent: -101 })
-.call(() => !shouldPlay && lineAnim.pause())
-.to(".underlinetab", { xPercent: 200 })
+  gsap.utils.toArray(".underline--wrap").forEach(container => {
 
-
-container.addEventListener("mouseenter", () => {
-  shouldPlay = false;
-  lineAnim.restart();
-}); 
-container.addEventListener("mouseleave", () => {
-  shouldPlay = true;
-  lineAnim.play();
-});
-
-});
+    let underlinetab = container.querySelector(".underlinetab"),
+      // silhouette = container.querySelector(".silhouette .cover"), */
+      tl = gsap.timeline({
+        paused: true
+      });
+  
+    tl.from("underlinetab", { xPercent: -101 })
+  
+    container.addEventListener("mouseenter", () => tl.play());
+    container.addEventListener("mouseleave", () => tl.reverse());
+  });
 
 }
+
 
