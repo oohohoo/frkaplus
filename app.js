@@ -236,14 +236,14 @@ function initLoader() {
   const loader = select('.loader');
   const loaderInner = select('.inner-loader');
   const progress = select('.progress');
-  const translogo = select('.imageloadicon');
+ 
   
 
   tlLoaderIn
-
+  .set(".imageloadicon", {autoAlpha: 0})
 .set(loaderContent, {autoAlpha: 1})
     .set(".txt", {yPercent: 100})
-    .set(translogo, {autoAlpha: 0})
+    .set(".imageloadicon", {autoAlpha: 0})
     .set(".l1, .l3", {scaleX: 0})
     .set(".freveal", {yPercent: 100})
     .set(mask, {yPercent: 0})
@@ -345,7 +345,7 @@ function pageTransitionIn({
   // timeline to stretch the loader over the whole screen
   const tl = gsap.timeline({defaults: {duration: 0.8,ease: 'power3.out'}});
   tl
-  .set(translogo, {autoAlpha: 1})
+  .set(".imageloadicon", {autoAlpha: 1})
   .set(loaderInner, {autoAlpha: 0})
   .fromTo(loader, {yPercent: -100}, {yPercent: 0})
   .fromTo(loaderMask, {yPercent: 80}, {yPercent: 0}, 0)
