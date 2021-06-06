@@ -290,6 +290,7 @@ function initContent() {
   select('body').classList.remove('is-loading');
  /* ORIGINAL*/
   initScroll();
+
   customCursor();
   underlineLink();
  /*  locoScroll.update();
@@ -346,7 +347,7 @@ function pageTransitionIn({
   tl
 
   .set(loaderInner, {autoAlpha: 0})
-  .fromTo(loadertwo, {yPercent: -100}, {yPercent: 0})
+  .fromTo(".loadertwo", {yPercent: -100}, {yPercent: 0})
   .fromTo(loaderMask, {yPercent: 80}, {yPercent: 0}, 0)
   .to(container, {y: 80}, 0);
 
@@ -368,7 +369,7 @@ function pageTransitionOut({
   });
   tl
 
-    .to(loadertwo, {yPercent: 100})
+    .to(".loadertwo", {yPercent: 100})
     .to(loaderMask, {yPercent: -80}, 0)
     .from(container, {y: -80}, 0);
     return tl;
