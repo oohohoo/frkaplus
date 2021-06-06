@@ -1160,3 +1160,9 @@ input::-webkit-search-cancel-button {
 /* .demo-image {
   cursor: url("http://tholman.com/intense-images/img/plus_cursor.png") 25 25, auto;
 } */
+
+
+
+/*TIMOTHY BUTTONS*/
+.radio-button {pointer-events: auto;}
+.link_container.is--submit.disable {pointer-events: none;}
