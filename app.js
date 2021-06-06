@@ -1843,8 +1843,8 @@ function sorting() {
 
 function splidesolo() {
 
-
-  const splide = new Splide( ".splide" {
+  const splide = new Splide( "#splide01" ) {
+ /*  const splide = new Splide( ".splide" { */
 /* new Splide( '.splide', { */
 	perPage: 1,
 	perMove: 1,
@@ -1855,7 +1855,8 @@ function splidesolo() {
 			perPage: 1,
 		}
 	}
-}).mount();
+}
+.mount();
 
 $('.next-splide').click(function() {
 	$('.splide__arrow.splide__arrow--next').click();
