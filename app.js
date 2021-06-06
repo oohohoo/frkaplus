@@ -744,6 +744,9 @@ console.log("MAP RESIZE!");
 
 /*  },200)   */
 
+
+mapboxgl.clearStorage();
+console.log("STORAGE CLEARED"); 
  }
 
 /*
