@@ -506,6 +506,7 @@ BARBA VIEWS
 
               },
               beforeEnter(data) {
+                /* DA LI OVDJE UČITATI MAPU??*/
                 /* locationMap(); */
                 splidesolo();
                 console.log("SPLIDE LOADED");
