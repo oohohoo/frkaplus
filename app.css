@@ -1200,7 +1200,7 @@ input::-webkit-search-cancel-button {
   }
   
   .linky.selected-toggle {
-    color: white;
+    color: #ffdc52;
   }
   .link_circle, .radio-button, .field_line {
     pointer-events: none;
