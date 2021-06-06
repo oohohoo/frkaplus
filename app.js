@@ -523,8 +523,7 @@ BARBA VIEWS
               },
                 beforeLeave({next
                 }) {
-                  splidedestroy();
-                  /* splide.destroy(completely = true); */
+                  splide.destroy(completely = true);
                   console.log("SPLIDE ODJEBAN");
              }
             }, {
@@ -1867,9 +1866,7 @@ $('.prev-splide').click(function() {
 	$('.splide__arrow.splide__arrow--prev').click();
 });
 
-function splidedestroy() {
-splide.destroy(completely = true);
-}
+
 
 }
 
