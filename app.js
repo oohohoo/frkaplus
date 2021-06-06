@@ -1844,7 +1844,9 @@ function sorting() {
 
 function splidesolo() {
 
-new Splide( '.splide', {
+
+mainslide = new Splide( '.splide', {
+/* new Splide( '.splide', { */
 	perPage: 1,
 	perMove: 1,
   type   : 'loop',
