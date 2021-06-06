@@ -521,8 +521,8 @@ BARBA VIEWS
                 openTestYourDesign();
                 saveaspdftest();
               },
-                beforeLeave({current}) {
-                  splide.destroy( completely = true );
+                beforeLeave(data) {
+                  Splide.destroy( completely = true );
                   console.log("Splide Removed");
              }
             }, {
@@ -1845,8 +1845,8 @@ function sorting() {
 function splidesolo() {
 
 
-mainslide = new Splide( '.splide', {
-/* new Splide( '.splide', { */
+  
+new Splide( '.splide', {
 	perPage: 1,
 	perMove: 1,
   type   : 'loop',
@@ -1867,6 +1867,7 @@ $('.prev-splide').click(function() {
 });
 
 }
+
 
 
 /* 
