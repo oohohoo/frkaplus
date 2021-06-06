@@ -493,10 +493,9 @@ BARBA VIEWS
                 stopScrollMap();
                 console.log("location SORTING pa MAP LOADED + stop scroll map");
               },
-              beforeLeave({
-                current
-              }) {
-
+              beforeLeave({current}) {
+                map.remove();
+                console.log("Mapremoooooooooveeedddddd");
               }
             }, {
 
@@ -684,10 +683,6 @@ map.doubleClickZoom.enable();
 console.log("MAP DOUBLECLICK!"); 
 
 
-setTimeout(()=>{
-  map.remove();
-  console.log("Map removed");
-},3000)  
 
 
 /*
