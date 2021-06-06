@@ -2407,8 +2407,8 @@ GSAP UNDERLINE
 
 function underlineLink() {
 
-
-const containertab = document.querySelector(".underline--wrap");
+gsap.utils.toArray(".underline--wrap").forEach(container => {
+/* const containertab = document.querySelector(".underline--wrap"); */
 let shouldPlay = true;
 
 const lineAnim = gsap.timeline({
@@ -2418,7 +2418,7 @@ const lineAnim = gsap.timeline({
     ease: "power1.inOut"
   }
 })
-.from(".underlinetab", { xPercent: -100 })
+.from(".underlinetab", { xPercent: -101 })
 .call(() => !shouldPlay && lineAnim.pause())
 .to(".underlinetab", { xPercent: 200 })
 
