@@ -321,7 +321,14 @@ function initContent() {
     sortButtons();
     
     /* appendmore(); */
-    console.log("LOKACIJE SCRIPTS apendmore -- loaded");
+    console.log("LOKACIJE SCRIPTS -- loaded");
+  }
+
+  if (document.querySelector('#lokacijesolo')) {
+    locationMap();
+      
+    /* appendmore(); */
+    console.log("LOKACIJE SOLO SCRIPTS -- loaded");
   }
 /* });  */
  
