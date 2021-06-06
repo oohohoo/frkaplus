@@ -316,8 +316,10 @@ function initContent() {
 
   }
   if (document.querySelector('#lokacije')) {
+    locationMap();
     sorting();
     sortButtons();
+    
     /* appendmore(); */
     console.log("LOKACIJE SCRIPTS apendmore -- loaded");
   }
@@ -478,7 +480,7 @@ BARBA VIEWS
                
               },
               beforeEnter(data) {
-                locationMap();
+                /* locationMap(); */
                 sorting();
                 sortButtons();
                 stopScrollMap();
