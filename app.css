@@ -79,7 +79,7 @@ IS TRANSITIONING / BLUE PROGRESS CURSOR & POINTER EVENTS
 LINK COLOR
 ================================================================================
 */
-/*
+
 a {
 	color: inherit;
 }
@@ -1172,15 +1172,15 @@ input::-webkit-search-cancel-button {
 /*PROOOOOČISTI*/
 
 
-@media only screen and (min-width: 1440px) {
+/* @media only screen and (min-width: 1440px) {
   body {font-size: 14px;}
-  }
+  } */
   
-  a {
+/*   a {
     color: inherit;
-  }
+  } */
   
-  .cursor {
+  /* .cursor {
     pointer-events: none;
   }
   
@@ -1190,11 +1190,11 @@ input::-webkit-search-cancel-button {
   }
   .cursor.link-hover .cursor_dot {
     background-color: white;
-  }
+  } */
   
-  body:hover .cursor {
+  /* body:hover .cursor {
     opacity: 1.0;
-  }
+  } */
   .linky {
     -webkit-mask-image: -webkit-radial-gradient(white, black);
   }
@@ -1209,7 +1209,7 @@ input::-webkit-search-cancel-button {
     border-radius: 0%;
     margin-bottom: 0em;
   }
-  
+  /* 
   .field {
     font-size: inherit;
   }
@@ -1220,8 +1220,8 @@ input::-webkit-search-cancel-button {
   
   .field_parent:focus-within .field_line {
     opacity: 1.0;
-  }
+  } */
   
-  .full-opacity {
+/*   .full-opacity {
     opacity: 1.0 !important;
-  }
+  } */
