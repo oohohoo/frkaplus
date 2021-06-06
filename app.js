@@ -479,7 +479,7 @@ BARBA VIEWS
               once(data) {
                 onamacounter();
                 console.log("O NAMA ONCE");
-              },
+              }
             }, {
 
               namespace: 'lokacije',
@@ -520,8 +520,11 @@ BARBA VIEWS
                 scrolltriggerupdate();
                 openTestYourDesign();
                 saveaspdftest();
-
-              }
+              },
+                beforeLeave({current}) {
+                  Splide.destroy( completely = true );
+                  console.log("Splide Removed");
+             }
             }, {
 
               namespace: 'npp',
