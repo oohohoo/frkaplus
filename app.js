@@ -767,13 +767,13 @@ console.log("STORAGE CLEARED");
 
  /* OVO MOŽDA KORISTITI ZA LOADANJE SKRIPTI*/
 
- document.body.contains(document.getElementById("map")) && $(document).ready(function() {
+/*  document.body.contains(document.getElementById("map")) && $(document).ready(function() {
   map = new map,
- /*  mapView.createMaps(),
+ mapView.createMaps(),
   mapView.showFilters(),
   mapView.addSlider(),
-  project.createViewslider(1) */
-});
+  project.createViewslider(1) 
+}); */
 
 
 
