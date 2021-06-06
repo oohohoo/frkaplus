@@ -1874,10 +1874,10 @@ $('.prev-splide').click(function() {
 
                   
 
-/* setTimeout( () => {
+ setTimeout( () => {
   splide.destroy();
   console.log("Splide Removed");
-}, 1000 ); */
+}, 3000 );
 
 }
 
