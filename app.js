@@ -2416,7 +2416,7 @@ function underlineLink() {
 
     let underlinetab = container.querySelector(".underlinetab"),
       // silhouette = container.querySelector(".silhouette .cover"), */
-      tl = gsap.timeline({
+ /*      tl = gsap.timeline({
         paused: true
       });
   
