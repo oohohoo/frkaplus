@@ -290,6 +290,7 @@ function initContent() {
  /* ORIGINAL*/
   initScroll();
   customCursor();
+  underlineLink();
  /*  locoScroll.update();
   console.log("INIT LOCO SCROLL UPDATED"); */
 /* DODANE*/
@@ -2394,5 +2395,41 @@ function sortButtons() {
     $(this).closest('.linky').toggleClass('selected-toggle');
   });
   
+
+}
+
+
+/*
+================================================================================
+GSAP UNDERLINE
+================================================================================
+*/
+
+function underlineLink() {
+
+
+const containertab = document.querySelector(".underline--wrap");
+let shouldPlay = true;
+
+const lineAnim = gsap.timeline({
+  paused: true,
+  defaults: {
+    duration: 0.3,
+    ease: "power1.inOut"
+  }
+})
+.from(".underlinetab", { xPercent: -100 })
+.call(() => !shouldPlay && lineAnim.pause())
+.to(".underlinetab", { xPercent: 200 })
+
+
+containertab.addEventListener("mouseenter", () => {
+  shouldPlay = false;
+  lineAnim.restart();
+}); 
+containertab.addEventListener("mouseleave", () => {
+  shouldPlay = true;
+  lineAnim.play();
+});
 
 }
