@@ -523,9 +523,9 @@ BARBA VIEWS
               },
                 beforeLeave(data) {
 
-                  splide.on( 'destroy', function() {
+                 /*  splide.on( 'destroy', function() { */
                     splide.destroy(completely = true);
-                    console.log("SPLIDE ODJEBAN");
+                    /* console.log("SPLIDE ODJEBAN"); */
                   });
 
 
