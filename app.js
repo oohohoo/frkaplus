@@ -1843,8 +1843,8 @@ function sorting() {
 
 function splidesolo() {
 
-  const splide = new Splide( "#splide01" {
- /*  const splide = new Splide( ".splide" { */
+  const splide = new Splide ( "#splide01", {
+
 /* new Splide( '.splide', { */
 	perPage: 1,
 	perMove: 1,
