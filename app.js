@@ -1855,7 +1855,7 @@ function splidesolo() {
 			perPage: 1,
 		}
 	}
-} ).mount();
+}).mount();
 
 $('.next-splide').click(function() {
 	$('.splide__arrow.splide__arrow--next').click();
