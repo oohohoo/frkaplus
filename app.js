@@ -683,8 +683,12 @@ zoom: 6.64 // starting zoom
 map.doubleClickZoom.enable();
 console.log("MAP DOUBLECLICK!"); 
 
-map.addControl(new MapboxBrowserLanguage({  defaultLanguage: 'fr'}));
-console.log("FRENCH LANGUAGE");
+
+setTimeout(()=>{
+  map.remove();
+  console.log("Map removed");
+},3000)  
+
 
 /*
 ================================================================================
