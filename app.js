@@ -2432,4 +2432,7 @@ containertab.addEventListener("mouseleave", () => {
   lineAnim.play();
 });
 
+});
+
 }
+
