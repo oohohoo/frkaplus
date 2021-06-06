@@ -522,7 +522,8 @@ BARBA VIEWS
                 saveaspdftest();
               },
                 beforeLeave(data) {
-                  
+                  splide.destroy(completely = true );
+                  console.log("SPLIDE ODJEBAN");
              }
             }, {
 
@@ -1868,16 +1869,8 @@ $('.prev-splide').click(function() {
 
 
 
-/* Splide.destroy( completely = true ); */
                   
 
-
-                  
-
- setTimeout( () => {
-  splide.destroy();
-  console.log("Splide Removed");
-}, 3000 );
 
 }
 
