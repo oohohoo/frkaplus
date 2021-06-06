@@ -657,7 +657,7 @@ function locationMap() {
     myMap = createMapbox(data.next.container);
 },3000)  */
 
-    setTimeout(()=>{ 
+ /*    setTimeout(()=>{  */
 mapboxgl.accessToken = 'pk.eyJ1IjoiZm9nc2VsbGVyIiwiYSI6ImNrN2VpbXlpbjAwNDIzbnM1N2ZhMW9laGkifQ.DUf-8r1jXF4o7ApMUcKVXQ';
 
 var map = new mapboxgl.Map({
@@ -732,7 +732,7 @@ map.resize();
 });
 console.log("MAP RESIZE!"); 
 
- },200)  
+/*  },200)   */
 
  }
 
