@@ -1844,7 +1844,7 @@ function sorting() {
 
 function splidesolo() {
 
-  const splide = new Splide ( ".splide", {
+  var splide = new Splide ( ".splide", {
 
 /* new Splide( '.splide', { */
 	perPage: 1,
