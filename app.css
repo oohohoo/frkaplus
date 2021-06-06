@@ -1169,6 +1169,9 @@ input::-webkit-search-cancel-button {
 
 
 
+/*PROOOOOČISTI*/
+
+
 @media only screen and (min-width: 1440px) {
   body {font-size: 14px;}
   }
@@ -1192,11 +1195,11 @@ input::-webkit-search-cancel-button {
   body:hover .cursor {
     opacity: 1.0;
   }
-  .linkx {
+  .linky {
     -webkit-mask-image: -webkit-radial-gradient(white, black);
   }
   
-  .linkx.selected-toggle {
+  .linky.selected-toggle {
     color: white;
   }
   .link_circle, .radio-button, .field_line {
