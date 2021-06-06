@@ -287,7 +287,7 @@ INIT CONTENT --> vodi na --> INIT SCROLL
 function initContent() {
   /* $(document).ready(function(){  */
 
-  
+
   select('body').classList.remove('is-loading');
  /* ORIGINAL*/
   initScroll();
@@ -506,7 +506,7 @@ BARBA VIEWS
 
               },
               beforeEnter(data) {
-                locationMap();
+                /* locationMap(); */
                 splidesolo();
                 console.log("SPLIDE LOADED");
                 /* swiperlocation(); */
