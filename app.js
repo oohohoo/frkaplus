@@ -1795,7 +1795,7 @@ function sorting() {
   
   // Advanced filtering
   Demo.prototype.addSearchFilter = function () {
-    document.querySelector('.shuffle-search').addEventListener('keyup', this._handleSearchKeyup.bind(this));
+    document.querySelector('.shuffle-search').addEventListener('input', this._handleSearchKeyup.bind(this));
   };
   
   // Filter the shuffle instance by items with a title that matches the search input.
