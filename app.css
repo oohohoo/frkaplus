@@ -1081,7 +1081,7 @@ input::-webkit-search-cancel-button {
   border-bottom: 1px solid #231f20;
 }
 .input_label:after {
-  content: "";
+  content: "X";
   position: absolute;
   top: 0;
   left: 0;
