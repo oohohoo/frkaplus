@@ -2413,7 +2413,7 @@ followArea.forEach(function(el) {
   
   el.addEventListener('mouseover', () => {
     gsap.to(cursor, 0.25, {
-      scale: 3,
+      scale: 5,
       backgroundColor: "#ffdc52",
       /* autoAlpha: 1 */
     });
