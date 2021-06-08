@@ -2427,7 +2427,8 @@ followArea.forEach(function(el) {
   
   el.addEventListener('mouseout', () => {
     gsap.to(cursor, 0.25, {
-      scale: 0.5,
+      scale: 1,
+      backgroundColor: "#231f20",
       /* autoAlpha: 0 */
     });
   });
