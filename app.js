@@ -2440,7 +2440,7 @@ followArea.forEach(function(el) {
     gsap.to(cursor, 0.5, {
       css: { transform: `translate(-50%, -50%) scale(0.75)` }
     });
-
+    $('.cursor__text').text('OPEN');
     gsap.to(buttonText, 0.25, {
       css: { opacity: 1  }
     });
