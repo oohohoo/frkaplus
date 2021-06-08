@@ -2418,8 +2418,8 @@ followArea.forEach(function(el) {
       /* autoAlpha: 1 */
     });
 
-/*     page.addEventListener('mousemove', moveCircle);
-  }); */
+/*     page.addEventListener('mousemove', moveCircle);*/
+  }); 
 
   
   
