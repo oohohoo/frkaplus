@@ -2408,7 +2408,7 @@ var followArea = document.querySelectorAll('.botun--is--master');
 
 followArea.forEach(function(el) {
 
-
+  gsap.set(cursor, {autoAlpha: 1, backgroundColor: "#231f20", scale:1});
   
   
   el.addEventListener('mouseover', () => {
