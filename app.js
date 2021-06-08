@@ -2415,11 +2415,11 @@ followArea.forEach(function(el) {
     gsap.to(cursor, 0.25, {
       scale: 3,
       color: "#ffdc52",
-      autoAlpha: 1
+      /* autoAlpha: 1 */
     });
 
-    page.addEventListener('mousemove', moveCircle);
-  });
+/*     page.addEventListener('mousemove', moveCircle);
+  }); */
 
   
   
@@ -2428,7 +2428,7 @@ followArea.forEach(function(el) {
   el.addEventListener('mouseout', () => {
     gsap.to(cursor, 0.25, {
       scale: 0.5,
-      autoAlpha: 0
+      /* autoAlpha: 0 */
     });
   });
 
