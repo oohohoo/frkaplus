@@ -2293,7 +2293,7 @@ $( "#tomainipad" ).on( "click", function() {
 
 /*
 ================================================================================
-CUSTOM CURSOR QUICK SETTER BLAKE + SVG TRANSFORMS
+CUSTOM CURSOR QUICK SETTER BLAKE + AKAPOWL GSAP CSS
 ================================================================================
 */
 
@@ -2394,6 +2394,85 @@ GSAP TICKER -- NE ZNAM DETALJE
   showAnimation.play();
 }
 
+
+// Variables
+// ************
+var cursor = document.querySelector('.cursor__dot1');
+var buttonText = document.querySelector('.cursor__text');
+var followArea = document.querySelectorAll('.botun--is--master');
+/* var page = document.querySelector('.posts'); */
+
+
+// Event Listeners
+// ************
+
+followArea.forEach(function(el) {
+
+
+  
+  
+  el.addEventListener('mouseover', () => {
+    gsap.to(cursor, 0.25, {
+      scale: 1,
+      autoAlpha: 1
+    });
+
+    page.addEventListener('mousemove', moveCircle);
+  });
+
+  
+  
+  
+  
+  el.addEventListener('mouseout', () => {
+    gsap.to(cursor, 0.25, {
+      scale: 0.5,
+      autoAlpha: 0
+    });
+  });
+
+  
+  
+
+  el.addEventListener('mousedown', () => {
+
+    gsap.to(cursor, 0.5, {
+      css: { transform: `translate(-50%, -50%) scale(0.75)` }
+    });
+
+    gsap.to(buttonText, 0.25, {
+      css: { opacity: 1  }
+    });
+  });
+
+  
+  
+  
+  el.addEventListener('mouseup', () => {
+    gsap.to(cursor, 1, {
+      css: { background: `transparent` }
+    });
+
+    gsap.to(cursor, 0.5, {
+      css: { transform: `translate(-50%, -50%) scale(1)` }
+    });
+
+    gsap.to(buttonText, 0.25, {
+      css: {
+        opacity: 1
+      }
+    });
+  });
+  
+  
+
+
+})
+
+
+
+/* OLD*/
+/*
 $('.splide__list, .trigger').hover(function() {
   $('.cursor__dot1').toggleClass('is--larger');
   $('.cursor__dot2').toggleClass('is--larger');
@@ -2410,18 +2489,19 @@ $('.splide__list').hover(function() {
 $('.dragicon').toggleClass('fadein');
  $('.cursor__text').text('');
 /*  $('.cursor__text').text('DRAG'); */
-   
+  /* 
 });
 
 $('.control').hover(function() {
   $('.cursor__dot1').toggleClass('opacity-0');
  /* $('.cursor__dot2').toggleClass('light-ring'); */
+ /*
 });
 
 $('.trigger').click(function() {
 	$('.cursor').toggleClass('hide-cursor');
 });
-
+*/
 }
 
 
