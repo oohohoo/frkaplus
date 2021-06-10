@@ -1253,7 +1253,7 @@ CUSTOM SELECT BUTTON - LOKACIJE
     display: inline-block;
     /*margin-bottom: 20px;*/
     margin-right: 20px;
-    margin-left: -4px;
+    /* margin-left: -4px; */
   }
   .select-dropdown:first-child {
     margin-left: 0;
