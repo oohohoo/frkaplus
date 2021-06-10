@@ -2114,7 +2114,7 @@ showAnim
 /* .addLabel('revealImage') */
 
 .to(".freveal", {y: 100, duration: 0.6, stagger: 0.02}, "<0.1")
-.to(".l2", {scaleY: 0, transformOrigin: 'bottom', duration: 0.3}, "<0.2")
+.to(".l2", {scaleY: 0, transformOrigin: 'bottom', duration: 0.3}, "<0.25")
 .to(".l3", {scaleX: 0, transformOrigin: 'left', duration: 0.3}, "<0.3")
 .to(".l1", {scaleX: 0, transformOrigin: 'left', duration: 0.3}, "<0.3")
 
