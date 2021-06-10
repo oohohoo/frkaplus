@@ -2572,7 +2572,7 @@ CUSTOM SELECT BUTTON - LOKACIJE
 
 function customSelect() {
 
-  $(document).ready(function(){ 
+  
     
 const OPEN = 'is-open'; // state
 const documentEvent = $(document);
@@ -2659,10 +2659,10 @@ let dynamicCustomSelect = defaultSelectFieldID => {
 
 dynamicCustomSelect(defaultSelect);
 dynamicCustomSelect(defaultSelect2);
-/*dynamicCustomSelect(defaultSelect3);*/
+/* dynamicCustomSelect(defaultSelect3); */
 
 
-});
+
 console.log("BOTUNČIĆIIIIIII");
 
 }
