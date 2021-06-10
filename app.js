@@ -2112,8 +2112,8 @@ showAnim
 .to(".header-contact--button", {scale:0.7, x:"3.1em"},"<0.2")
 /* .addLabel('revealImage') */
 .to(".freveal", {yPercent: 100, /*stagger: 0.05*/}, "<0.3")
-.to(".l3", {scaleX: 1, transformOrigin: 'left', duration: 0.6}, "<0.3")
-    .to(".l1", {scaleX: 1, transformOrigin: 'left', duration: 0.6}, "<0.3")
+.to(".l3", {scaleX: 0, transformOrigin: 'left', duration: 0.6}, "<0.3")
+    .to(".l1", {scaleX: 0, transformOrigin: 'left', duration: 0.6}, "<0.3")
     
    
 //.to(".kont-color", {color: "black", duration:0.2},"<0.2");
