@@ -320,6 +320,7 @@ function initContent() {
     locationMap();
     sorting();
     sortButtons();
+    customSelect();
     
     /* appendmore(); */
     console.log("LOKACIJE SCRIPTS -- loaded");
@@ -489,7 +490,7 @@ BARBA VIEWS
               },
               beforeEnter(data) {
                 /* locationMap(); */
-                customSelect();
+                
                 sorting();
                 sortButtons();
                 stopScrollMap();
