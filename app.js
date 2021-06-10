@@ -2111,9 +2111,9 @@ showAnim
 .to(".nav", {yPercent: -50, autoAlpha:0, stagger: 0.05},"<0.1")
 .to(".header-contact--button", {scale:0.7, x:"3.1em"},"<0.2")
 /* .addLabel('revealImage') */
-.to(".freveal", {yPercent: 100, stagger: 0.05}, "<0.3")
-.to(".l3", {scaleX: 1, transformOrigin: 'left', duration: 0.6}, "<0.4")
-    .to(".l1", {scaleX: 1, transformOrigin: 'left', duration: 0.6}, "<0.5")
+.to(".freveal", {yPercent: 100, /*stagger: 0.05*/}, "<0.3")
+.to(".l3", {scaleX: 1, transformOrigin: 'left', duration: 0.6}, "<0.3")
+    .to(".l1", {scaleX: 1, transformOrigin: 'left', duration: 0.6}, "<0.3")
     
    
 //.to(".kont-color", {color: "black", duration:0.2},"<0.2");
