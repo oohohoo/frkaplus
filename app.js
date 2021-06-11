@@ -2583,95 +2583,92 @@ CUSTOM SELECT BUTTON - LOKACIJE
 function customSelect() {
 
   
-    
-const OPEN = 'is-open'; // state
-const documentEvent = $(document);
-const defaultSelect = $('#select-name'); // default select id
-const defaultSelect2 = $('#select-last-name');
-/*const defaultSelect3 = $('#select-gender');*/
-
-let dynamicCustomSelect = defaultSelectFieldID => {
-  if (defaultSelectFieldID.length) {// prevent errors and code will not run if ID doesn't exist
-    let currentValue,
-    currentText,
-    selectedID,
-    mainParent,
-    appendParent,
-    customSelectID,
-    defaultOptions,
-    customSelectedField,
-    customOptionsField,
-    customOptionListField,
-    extractedData = []; // adding variables that we can use
-
-    selectedID = defaultSelectFieldID;
-    // get data of the default select attributes
-    mainParent = `js-${selectedID.attr('id')}`;
-    customSelectID = selectedID.attr('name');
-    defaultOptions = selectedID.find('option');
-
-    // extract the data in the select field
-    defaultOptions.each(function () {
-      extractedData.push({ value: $(this).val(), text: $(this).text() });
-    });
-
-    selectedID.after(`<div class="select-dropdown" id="${mainParent}"></div>`); // append parent wrapper of our custom select next to the select field
-
-    // assign variables to the class and id that will be usefull in the functionality
-    currentValue = extractedData[0];
-    appendParent = $(`#${mainParent}`);
-    customSelectedField = `js-${customSelectID}-head`;
-    customOptionsField = `js-${customSelectID}-options`;
-    customOptionListField = `js-${customSelectID}-option-list`;
-
-    // append the custom selected field which class is select-head and the wrapper for our options which class is select-option
-    appendParent.append(`
-      <div class="select-head" id="${customSelectedField}">${currentValue['text']}</div>
-      <div class="select-options" id="${customOptionsField}"></div>
-    `);
-
-    // append the datas in the list
-    for (let i = 0; i < extractedData.length; i++) {if (window.CP.shouldStopExecution(0)) break;
-      $(`#${customOptionsField}`).append(`<div class="select-option-list ${customOptionListField}" data-value="${extractedData[i]['value']}">${extractedData[i]['text']}</div>`);
-    }
-
-    // add toggle state which open the select-option when select-head is clicked
-    window.CP.exitedLoop(0);documentEvent.on('click', `#${customSelectedField}`, function () {
-      $(this).parent().toggleClass(OPEN);
-
-      if ($(this).parent().hasClass(OPEN)) {
-        $(this).next().slideDown();
-      } else {
-        $(this).next().slideUp();
+  const OPEN = 'is-open'; // state
+  const documentEvent = $(document);
+  const defaultSelect = $('#select-name'); // default select id
+  const defaultSelect2 = $('#select-last-name');
+  /*const defaultSelect3 = $('#select-gender');*/
+  
+  let dynamicCustomSelect = (defaultSelectFieldID) => {
+    if(defaultSelectFieldID.length){ // prevent errors and code will not run if ID doesn't exist
+      let currentValue,
+          currentText,
+          selectedID,
+          mainParent,
+          appendParent,
+          customSelectID,
+          defaultOptions,
+          customSelectedField,
+          customOptionsField,
+          customOptionListField,
+          extractedData = []; // adding variables that we can use
+  
+      selectedID = defaultSelectFieldID;
+      // get data of the default select attributes
+      mainParent = `js-${selectedID.attr('id')}`;
+      customSelectID = selectedID.attr('name');
+      defaultOptions = selectedID.find('option');
+      
+      // extract the data in the select field
+      defaultOptions.each(function(){
+        extractedData.push({value: $(this).val(), text: $(this).text()});
+      });
+  
+      selectedID.after(`<div class="select-dropdown" id="${mainParent}"></div>`); // append parent wrapper of our custom select next to the select field
+  
+      // assign variables to the class and id that will be usefull in the functionality
+      currentValue = extractedData[0];
+      appendParent = $(`#${mainParent}`);
+      customSelectedField = `js-${customSelectID}-head`;
+      customOptionsField = `js-${customSelectID}-options`;
+      customOptionListField = `js-${customSelectID}-option-list`;
+      
+      // append the custom selected field which class is select-head and the wrapper for our options which class is select-option
+      appendParent.append(`
+        <div class="select-head" id="${customSelectedField}">${currentValue['text']}</div>
+        <div class="select-options" id="${customOptionsField}"></div>
+      `);
+      
+      // append the datas in the list
+      for(let i = 0; i < extractedData.length; i++){
+        $(`#${customOptionsField}`).append(`<div class="select-option-list ${customOptionListField}" data-value="${extractedData[i]['value']}">${extractedData[i]['text']}</div>`);
       }
-    });
-
-    // adding selected data in the selected data field and default select field after clicking the select-option list
-    documentEvent.on('click', `.${customOptionListField}`, function () {
-      currentText = $(this).text();
-      currentValue = $(this).attr('data-value');
-      selectedID.find(`option[value="${currentValue}"]`).prop('selected', true);
-      $(`#${customSelectedField}`).text(currentText).next().slideUp().parent().removeClass(OPEN);
-    });
-
-    // clicking outside the custom select field will close the opened option field
-    documentEvent.click(() => {
-      $(`.${OPEN}`).removeClass(OPEN);
-      $(`#${customOptionsField}`).slideUp();
-    });
-    documentEvent.on('click', `#${mainParent}`, event => {
-      event.stopPropagation();
-    });
-
+      
+      // add toggle state which open the select-option when select-head is clicked
+      documentEvent.on('click',`#${customSelectedField}`, function() {
+        $(this).parent().toggleClass(OPEN);
+        
+        if($(this).parent().hasClass(OPEN)){
+          $(this).next().slideDown(); 
+        }else{
+          $(this).next().slideUp();
+        }
+      });
+      
+      // adding selected data in the selected data field and default select field after clicking the select-option list
+      documentEvent.on('click',`.${customOptionListField}`,function(){
+        currentText = $(this).text();
+        currentValue = $(this).attr('data-value');
+        selectedID.find(`option[value="${currentValue}"]`).prop('selected',true);
+        $(`#${customSelectedField}`).text(currentText).next().slideUp().parent().removeClass(OPEN);
+      });
+  
+      // clicking outside the custom select field will close the opened option field
+      documentEvent.click(() => {
+       $(`.${OPEN}`).removeClass(OPEN);
+       $(`#${customOptionsField}`).slideUp();
+      });
+      documentEvent.on('click',`#${mainParent}`,(event) => {
+        event.stopPropagation();
+      });
+      
+    }
   }
-};
-
-
-dynamicCustomSelect(defaultSelect);
-dynamicCustomSelect(defaultSelect2);
-/* dynamicCustomSelect(defaultSelect3); */
-
-
+  
+  
+  dynamicCustomSelect(defaultSelect);
+  dynamicCustomSelect(defaultSelect2);
+  /*dynamicCustomSelect(defaultSelect3);*/
 
 console.log("BOTUNČIĆIIIIIII");
 
