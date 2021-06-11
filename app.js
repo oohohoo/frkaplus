@@ -1478,8 +1478,8 @@ function sorting() {
     /*dodano*/
     this.element = element;
     this.gridItems = this.element.querySelectorAll('.picture-item');
-    this.shapes = Array.from(document.querySelectorAll(".js-shapes div"));
-    this.colors = Array.from(document.querySelectorAll(".js-colors div"));
+    this.shapes = Array.from(document.querySelectorAll(".js-shapes select"));
+    this.colors = Array.from(document.querySelectorAll(".js-colors select"));
    /* this.styles = toArray(document.querySelectorAll('.filter-group div')); */
     this.message = document.querySelector('.js-message');
   
@@ -1629,10 +1629,10 @@ function sorting() {
   Demo.prototype._getCurrentShapeFilters = function() {
     return this.shapes
       .filter(function(select) {
-        return select.data-value;
+        return select.value;
       })
       .map(function(select) {
-        return select.data-value;
+        return select.value;
       });
   };
   
@@ -1643,10 +1643,10 @@ function sorting() {
    Demo.prototype._getCurrentColorFilters = function() {
     return this.colors
       .filter(function(select) {
-        return select.data-value;
+        return select.value;
       })
       .map(function(select) {
-        return select.data-value;
+        return select.value;
       });
   };
   
