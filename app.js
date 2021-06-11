@@ -2616,7 +2616,7 @@ function customSelect() {
       
       // append the datas in the list
       for(let i = 0; i < extractedData.length; i++){
-        $(`#${customOptionsField}`).append(`<div class="select-option-list ${customOptionListField}" data-value="${extractedData[i]['data-value']}">${extractedData[i]['text']}</div>`);
+        $(`#${customOptionsField}`).append(`<div class="select-option-list ${customOptionListField}" data-value="${extractedData[i]['value']}">${extractedData[i]['text']}</div>`);
       }
       
       // add toggle state which open the select-option when select-head is clicked
@@ -2634,7 +2634,7 @@ function customSelect() {
       documentEvent.on('click',`.${customOptionListField}`,function(){
         currentText = $(this).text();
         currentValue = $(this).attr('data-value');
-        selectedID.find(`option[data-value="${currentValue}"]`).prop('selected',true);
+        selectedID.find(`option[value="${currentValue}"]`).prop('selected',true);
         $(`#${customSelectedField}`).text(currentText).next().slideUp().parent().removeClass(OPEN);
       });
   
