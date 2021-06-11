@@ -2634,7 +2634,7 @@ function customSelect() {
       documentEvent.on('click',`.${customOptionListField}`,function(){
         currentText = $(this).text();
         currentValue = $(this).attr('data-value');
-        selectedID.find(`option[value="${currentValue}"]`).prop('selected',true);
+        selectedID.find(`option[data-value="${currentValue}"]`).prop('selected',true);
         $(`#${customSelectedField}`).text(currentText).next().slideUp().parent().removeClass(OPEN);
       });
   
