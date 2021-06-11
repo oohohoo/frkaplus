@@ -1609,7 +1609,7 @@ function sorting() {
     }, this);
   
     this.colors.forEach(function(select) {
-      button.addEventListener("change", this._onColorChange);
+      select.addEventListener("change", this._onColorChange);
     }, this);
   
    /*this.styles.forEach(function (div) {
