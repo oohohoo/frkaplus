@@ -1834,14 +1834,14 @@ function sorting() {
     });
   };
    
-   /* setTimeout(()=>{   */
-  document.addEventListener("DOMContentLoaded", function() { 
+   setTimeout(()=>{  
+  /*document.addEventListener("DOMContentLoaded", function() { */
     window.demo = new Demo(document.querySelector(".js-shuffle"));
      //locoScroll.update();
      ScrollTrigger.refresh(true);
     console.log("SHUFFLE UČITAN i scroll refresh");
-      /* },1000)  */ 
-    });
+      },1000)  
+  
 }
 
 
