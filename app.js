@@ -1479,7 +1479,7 @@ function sorting() {
     this.element = element;
     this.gridItems = this.element.querySelectorAll('.picture-item');
     this.shapes = Array.from(document.querySelectorAll(".js-shapes select"));
-    this.colors = Array.from(document.querySelectorAll(".js-colors button"));
+    this.colors = Array.from(document.querySelectorAll(".js-colors select"));
    /* this.styles = toArray(document.querySelectorAll('.filter-group div')); */
     this.message = document.querySelector('.js-message');
   
@@ -1608,8 +1608,8 @@ function sorting() {
       select.addEventListener("change", this._onShapeChange);
     }, this);
   
-    this.colors.forEach(function(button) {
-      button.addEventListener("click", this._onColorChange);
+    this.colors.forEach(function(select) {
+      button.addEventListener("change", this._onColorChange);
     }, this);
   
    /*this.styles.forEach(function (div) {
@@ -1640,13 +1640,13 @@ function sorting() {
    * Get the values of each `active` button.
    * @return {Array.<string>}
    */
-  Demo.prototype._getCurrentColorFilters = function() {
+   Demo.prototype._getCurrentColorFilters = function() {
     return this.colors
-      .filter(function(button) {
-        return button.classList.contains("active");
+      .filter(function(select) {
+        return select.value;
       })
-      .map(function(button) {
-        return button.getAttribute("data-value");
+      .map(function(select) {
+        return select.value;
       });
   };
   
@@ -1668,24 +1668,7 @@ function sorting() {
     this.filter();
   };
   
-  /**
-   * A color button was clicked. Update filters and display.
-   * @param {Event} evt Click event object.
-   */
-  Demo.prototype._handleColorChange = function(evt) {
-    var button = evt.currentTarget;
-  
-    // Treat these buttons like radio buttons where only 1 can be selected.
-    if (button.classList.contains("active")) {
-      button.classList.remove("active");
-    } else {
-      this.colors.forEach(function(btn) {
-        btn.classList.remove("active");
-      });
-  
-      button.classList.add("active");
-    }
-  
+  Demo.prototype._handleColorChange = function() {
     this.filters.colors = this._getCurrentColorFilters();
     this.filter();
   };
@@ -1851,16 +1834,18 @@ function sorting() {
     });
   };
    
-   setTimeout(()=>{  
-  /*document.addEventListener("DOMContentLoaded", function() { */
+   /* setTimeout(()=>{   */
+  document.addEventListener("DOMContentLoaded", function() { 
     window.demo = new Demo(document.querySelector(".js-shuffle"));
      //locoScroll.update();
      ScrollTrigger.refresh(true);
     console.log("SHUFFLE UČITAN i scroll refresh");
-      },1000)  
-  
+      /* },1000)  */ 
+    });
 }
 
+
+/* SPLIDE */
 
 function splidesolo() {
 
