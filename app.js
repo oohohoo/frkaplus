@@ -2616,7 +2616,7 @@ function customSelect() {
       
       // append the datas in the list
       for(let i = 0; i < extractedData.length; i++){
-        $(`#${customOptionsField}`).append(`<div class="select-option-list ${customOptionListField}" data-value="${extractedData[i]['value']}">${extractedData[i]['text']}</div>`);
+        $(`#${customOptionsField}`).append(`<div class="select-option-list ${customOptionListField}" data-value="${extractedData[i]['data-value']}">${extractedData[i]['text']}</div>`);
       }
       
       // add toggle state which open the select-option when select-head is clicked
