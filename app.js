@@ -332,7 +332,7 @@ function initContent() {
     openTestYourDesign();
     console.log("TEST YOUR DESIGN DIRECT");
     uploadCrop();
-
+    splidesolo();
     locationMap(); 
       
     /* appendmore(); */
