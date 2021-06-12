@@ -330,6 +330,7 @@ function initContent() {
   if (document.querySelector('#lokacijesolo')) {
     locationMap();
     openTestYourDesign();
+    console.log("TEST YOUR DESIGN OPENED");
     uploadCrop();
       
     /* appendmore(); */
