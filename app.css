@@ -1408,7 +1408,7 @@ FILEPOND STYLING
 
 /* the border radius of the drop area and file item */
 .filepond--panel-root, .filepond--item-panel {
-  border-radius: 0em;
+  border-radius: 0em!important;
 }
 
 /* the background color of the file and file panel (used when dropping an image) */
