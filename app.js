@@ -1176,7 +1176,7 @@ function openTestYourDesign() {
         .to('.test-content', {
           autoAlpha: 1,
           /* scaleY: 1.3, */
-          rotate: 360,
+          /* rotate: 360, */
           /* rotate:0, */
           duration: 0.64,
           ease: 'power2.inOut',
@@ -1200,7 +1200,7 @@ function openTestYourDesign() {
         .to('.test-content', {
           autoAlpha: 0,
           /* scaleY: 1, */
-          rotate: -360,
+          /* rotate: -360, */
           /*  transformOrigin: 'top', */
           /* rotate:30, */
           duration: 0.64,
