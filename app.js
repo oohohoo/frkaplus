@@ -2680,7 +2680,7 @@ CUSTOM SELECT BUTTON - LOKACIJE
 
 function locationDropdownSelect() {
 
-
+/*
 
   $('.placeholder select').each(function(){
     var $this = $(this), numberOfOptions = $(this).children('option').length;
@@ -2727,7 +2727,7 @@ function locationDropdownSelect() {
     });
 
 });
-
+*/
 }
 
 
