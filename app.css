@@ -1497,15 +1497,16 @@ body {
   background-color: #ffdc52;
 }
 
-*/.placeholder {
- /*  border-bottom: 2px solid; */
+/*
+/*.placeholder {
+
   cursor: pointer;  
 }
 
 .list {
-  /* display: inline-block; */
+
   position: relative;
- /* margin-left: 6px;*/
+
 }
 
 .select-hidden {
@@ -1516,7 +1517,7 @@ body {
 
 .select {
   cursor: pointer;
- /*  display: inline-block; */
+
   position: relative;
   font-size: 3.1rem;
   color: #231f20;
@@ -1531,7 +1532,7 @@ body {
   bottom: 0;
   left: 0;
   background-color: #FFDC52;
-  /* padding: 8px 15px; */
+
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
@@ -1541,11 +1542,9 @@ body {
   content: "";
   width: 0;
   height: 0;
-  /* border: 7px solid transparent;
-  border-color: #231f20 transparent transparent transparent; */
   position: absolute;
   top: 60px;
-  /* right: 10px; */
+
 }
 /*
 .select-styled:hover {
@@ -1555,7 +1554,7 @@ body {
 .select-styled:active, .select-styled.active {
   background-color: transparent;
 }
-*/
+
 .select-styled:active:after, .select-styled.active:after {
   top: 60px;
   border-color: transparent transparent #231f20 transparent;
@@ -1574,11 +1573,11 @@ body {
   background-color: #FFDC52;
 }
 .select-options li {
-  /* display: inline-block; */
+
   margin: 0;
   padding: 12px 0;
   text-indent: 0px;
-  /* border-top: 1px solid darken($select-background, 10);*/
+
   -moz-transition: all 0.15s ease-in;
   -o-transition: all 0.15s ease-in;
   -webkit-transition: all 0.15s ease-in;
@@ -1587,7 +1586,7 @@ body {
 
 .select-options li {
   transition: all 0.4s;
- /* color: #7b00ff;*/
+
   position: relative;
 }
 .select-options li:after {
@@ -1613,7 +1612,7 @@ body {
   display: none;
 }
 
-
+**/
 
 
 
