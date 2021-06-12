@@ -1824,7 +1824,7 @@ function sorting() {
         // If there is a current filter applied, ignore elements that don't match it.
       if (shuffle.group !== Shuffle.ALL_ITEMS) {
         // Get the item's groups.
-        var groups = JSON.parse(element.getAttribute('data-groups'));
+        var groups = JSON.parse(element.getAttribute('data-value'));
         var isElementInCurrentGroup = groups.indexOf(shuffle.group) !== -1;
   
         // Only search elements in the current group
