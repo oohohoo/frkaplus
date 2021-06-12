@@ -1544,8 +1544,8 @@ body {
   border: 7px solid transparent;
   border-color: #231f20 transparent transparent transparent;
   position: absolute;
-  top: 60px;
-  right: 10px;
+  top: 3.13em;
+ /*  right: 10px; */
 }
 /*
 .select-styled:hover {
@@ -1571,7 +1571,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: transparent;
+  background-color: #FFDC52;
 }
 .select-options li {
   /* display: inline-block; */
