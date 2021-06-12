@@ -1824,7 +1824,7 @@ function sorting() {
         // If there is a current filter applied, ignore elements that don't match it.
       if (shuffle.group !== Shuffle.ALL_ITEMS) {
         // Get the item's groups.
-        var groups = JSON.parse(element.getAttribute('data-value'));
+        var groups = JSON.parse(element.getAttribute('data-groups'));
         var isElementInCurrentGroup = groups.indexOf(shuffle.group) !== -1;
   
         // Only search elements in the current group
@@ -2579,92 +2579,96 @@ CUSTOM SELECT BUTTON - LOKACIJE
 */
 
 function customSelect() {
-  const OPEN = 'is-open'; // state
-  const documentEvent = $(document);
-  const defaultSelect = $('#select-name'); // default select id
-  const defaultSelect2 = $('#select-last-name');
-  /*const defaultSelect3 = $('#select-gender');*/
+
+  $(document).ready(function() { // use jQuery lib
+
+    var $select = $("select"),
+      $speed = "fast";
   
-  let dynamicCustomSelect = (defaultSelectFieldID) => {
-    if(defaultSelectFieldID.length){ // prevent errors and code will not run if ID doesn't exist
-      let currentValue,
-          currentText,
-          selectedID,
-          mainParent,
-          appendParent,
-          customSelectID,
-          defaultOptions,
-          customSelectedField,
-          customOptionsField,
-          customOptionListField,
-          extractedData = []; // adding variables that we can use
-  
-      selectedID = defaultSelectFieldID;
-      // get data of the default select attributes
-      mainParent = `js-${selectedID.attr('id')}`;
-      customSelectID = selectedID.attr('name');
-      defaultOptions = selectedID.find('option');
-      
-      // extract the data in the select field
-      defaultOptions.each(function(){
-        extractedData.push({value: $(this).val(), text: $(this).text()});
-      });
-  
-      selectedID.after(`<div class="select-dropdown" id="${mainParent}"></div>`); // append parent wrapper of our custom select next to the select field
-  
-      // assign variables to the class and id that will be usefull in the functionality
-      currentValue = extractedData[0];
-      appendParent = $(`#${mainParent}`);
-      customSelectedField = `js-${customSelectID}-head`;
-      customOptionsField = `js-${customSelectID}-options`;
-      customOptionListField = `js-${customSelectID}-option-list`;
-      
-      // append the custom selected field which class is select-head and the wrapper for our options which class is select-option
-      appendParent.append(`
-        <div class="select-head" id="${customSelectedField}">${currentValue['text']}</div>
-        <div class="select-options" id="${customOptionsField}"></div>
-      `);
-      
-      // append the datas in the list
-      for(let i = 0; i < extractedData.length; i++){
-        $(`#${customOptionsField}`).append(`<div class="select-option-list ${customOptionListField}" data-value="${extractedData[i]['value']}">${extractedData[i]['text']}</div>`);
+    $select.each(function() {
+      // Allow default browser styling
+      if ($(this).hasClass("default")) {
+        return;
       }
-      
-      // add toggle state which open the select-option when select-head is clicked
-      documentEvent.on('click',`#${customSelectedField}`, function() {
-        $(this).parent().toggleClass(OPEN);
-        
-        if($(this).parent().hasClass(OPEN)){
-          $(this).next().slideDown(); 
-        }else{
-          $(this).next().slideUp();
+      $(this).css("display", "none");
+      // Generate fancy select box
+      $(this).after('<ul class="fancy-select" style="display: none;"></ul>');
+      var $current = $(this),
+        $fancy = $current.next(".fancy-select");
+  
+      // Get options
+      var $options = $(this).find("option");
+      $options.each(function(index) {
+        var $val = $(this).val(),
+          $text = $(this).text(),
+          $disabled = "";
+        // Add class for disabled options
+        if ($(this).attr("disabled")) $disabled = " disabled";
+  
+        if (index == 0) {
+          // Create clickable object from first option
+          $fancy.before('<span class="selected" data-val="' + $val + '">' + $text + "</span>");
+        }
+        // Load all options into fake dropdown
+        $fancy.append('<li class="fancy-option' + $disabled + '" data-val="' + $val + '">' + $text + "</li>");
+        // Update fake select box if this option is selected
+        if ($(this).attr("selected")) {
+          $(this).parent("select").val($val);
+          $(this).parent("select").next(".selected").attr("data-val", $val).text($text);
         }
       });
-      
-      // adding selected data in the selected data field and default select field after clicking the select-option list
-      documentEvent.on('click',`.${customOptionListField}`,function(){
-        currentText = $(this).text();
-        currentValue = $(this).attr('data-value');
-        selectedID.find(`option[value="${currentValue}"]`).prop('selected',true);
-        $(`#${customSelectedField}`).text(currentText).next().slideUp().parent().removeClass(OPEN);
-      });
+    });
   
-      // clicking outside the custom select field will close the opened option field
-      documentEvent.click(() => {
-       $(`.${OPEN}`).removeClass(OPEN);
-       $(`#${customOptionsField}`).slideUp();
-      });
-      documentEvent.on('click',`#${mainParent}`,(event) => {
-        event.stopPropagation();
-      });
-      
-    }
-  }
+    // Show/hide options on click
+    $(".selected").click(function(target) {
+      var $box = $(this).next(".fancy-select"),
+        $target = target,
+        $object = $(this);
   
+      // Prevent multiple open select boxes
+      if ($box.is(":visible")) {
+        $box.slideUp($speed);
+        return;
+      } else {
+        $(".fancy-select").slideUp();
+        $box.slideDown($speed);
+      }
   
-  dynamicCustomSelect(defaultSelect);
-  dynamicCustomSelect(defaultSelect2);
-  /*dynamicCustomSelect(defaultSelect3);*/
+      // Click outside select box closes it
+      $target.stopPropagation();
+      if ($box.css("display") !== "none") {
+        $(document).click(function() {
+          $box.slideUp($speed);
+        });
+      }
+    });
+  
+    // Make selection
+    $(".fancy-option").click(function() {
+      var $val = $(this).attr("data-val"),
+        $text = $(this).text(),
+        $box = $(this).parent(".fancy-select"),
+        $selected = $box.prev(".selected"),
+        $disabled = $(this).hasClass("disabled");
+  
+      // Basic disabled option functionality
+      if ($disabled) {
+        return;
+      }
+  
+      $box.slideUp($speed);
+  
+      // Update select object's value
+      // and the fake box's "value"
+      $selected.prev("select").val($val);
+      $selected.attr("data-val", $val).text($text);
+  
+      // Get Output
+      var $what = $("#what").val(),
+        $when = $("#when").val();
+      console.log($what);
+    });
+  });
 
 console.log("OHOHOHOHOHOHO BOTUNI");
 

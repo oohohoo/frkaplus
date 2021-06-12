@@ -1695,3 +1695,85 @@ body {
 
 
 
+/*NNOOVVO*/
+
+
+.selectField {
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.selectField .selected {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 13px 20px;
+  background-color: #fff;
+  border: 1.8px solid rgba(107, 107, 107, 0.4);
+  border-radius: 3px;
+  width: 100%;
+  cursor: pointer;
+  color: black;
+}
+
+.selectField .selected:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  margin-top: 1px;
+  border-width: 5px 4px 0 4px;
+  border-color: #6b6b6b transparent transparent transparent;
+}
+
+.selectField .fancy-select {
+  list-style: none;
+  margin-top: 5px;
+  border-radius: 3px;
+  border: 1.8px solid rgba(107, 107, 107, 0.4);
+  width: 100%;
+  max-height: 50vh;
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+  background-color: white;
+  overflow-y: auto;
+  position: absolute;
+  z-index: 2;
+}
+
+.selectField .fancy-select .fancy-option {
+  padding: 9px 20px;
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+}
+
+.selectField .fancy-select .fancy-option:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.selectField .fancy-select .fancy-option:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.selectField .fancy-select .fancy-option:not(.disabled):hover {
+  background-color: #6b6b6b;
+  color: white;
+}
+
+.selectField .fancy-select .fancy-option.disabled {
+  color: rgba(0, 0, 0, 0.5);
+  cursor: default;
+}
