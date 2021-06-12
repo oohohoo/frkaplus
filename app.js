@@ -503,7 +503,7 @@ BARBA VIEWS
                 sortButtons();
                 stopScrollMap();
                 locationDropdownSelect();
-                customSelect();
+               /*  customSelect(); */
                 console.log("CUSTOM SELECT LOADED");
               },
               beforeLeave({current}) {
