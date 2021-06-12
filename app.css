@@ -1518,10 +1518,10 @@ body {
   cursor: pointer;
   display: inline-block;
   position: relative;
-  font-size: 96px;
+  font-size: 36px;
   color: #231f20;
-  width: 800px;
-  height: 100px;
+  width: 300px;
+  height: 40px;
 }
 
 .select-styled {
