@@ -330,8 +330,8 @@ function initContent() {
   if (document.querySelector('#lokacijesolo')) {
    
     openTestYourDesign();
-    console.log("TEST YOUR DESIGN DIRECT");
-  
+    uploadCrop();
+    console.log("UPLOAD CROP");
     splidesolo();
     locationMap(); 
       
@@ -530,7 +530,7 @@ BARBA VIEWS
                 scrolltriggerupdate();
                 openTestYourDesign();
                 console.log("TEST YOUR DESIGN SOLOOO");
-                
+                uploadCrop();
                 
               },
                 beforeLeave(data) {
