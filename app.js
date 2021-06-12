@@ -330,7 +330,7 @@ function initContent() {
   if (document.querySelector('#lokacijesolo')) {
     locationMap();
     openTestYourDesign();
-    console.log("TEST YOUR DESIGN OPENED");
+    console.log("TEST YOUR DESIGN DIRECT");
     uploadCrop();
       
     /* appendmore(); */
@@ -523,10 +523,11 @@ BARBA VIEWS
                 /* DA LI OVDJE UČITATI MAPU??*/
                 locationMap();
                 splidesolo();
-                console.log("SPLIDE LOADED");
+               
                 /* swiperlocation(); */
                 scrolltriggerupdate();
                 openTestYourDesign();
+                console.log("TEST YOUR DESIGN SOLOOO");
                 uploadCrop();
                 saveaspdftest();
               },
