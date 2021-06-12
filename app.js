@@ -2599,7 +2599,7 @@ function customSelect() {
       // Get options
       var $options = $(this).find("option");
       $options.each(function(index) {
-        var $val = $(this).val(),
+        var $val = $(this).value(),
           $text = $(this).text(),
           $disabled = "";
         // Add class for disabled options
