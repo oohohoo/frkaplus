@@ -1520,8 +1520,8 @@ body {
   position: relative;
   font-size: 3.1rem;
   color: #231f20;
-  width: 20em;
-  height: 2.08em; 
+  width: 15em;
+  height: 1em; 
 }
 
 .select-styled {
@@ -1541,8 +1541,8 @@ body {
   content: "";
   width: 0;
   height: 0;
-  border: 7px solid transparent;
-  border-color: #231f20 transparent transparent transparent;
+  /* border: 7px solid transparent;
+  border-color: #231f20 transparent transparent transparent; */
   position: absolute;
   top: 60px;
   /* right: 10px; */
