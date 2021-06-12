@@ -333,7 +333,7 @@ function initContent() {
     uploadCrop();
     console.log("UPLOAD CROP");
     splidesolo();
-    saveaspdftest();
+    saveaspdf();
     locationMap(); 
       
     /* appendmore(); */
@@ -532,7 +532,7 @@ BARBA VIEWS
                 openTestYourDesign();
                 console.log("TEST YOUR DESIGN SOLOOO");
                 uploadCrop();
-                saveaspdftest();
+                saveaspdf();
                 
               },
                 beforeLeave(data) {
@@ -996,7 +996,7 @@ DOWNLOAD AS PDF *** TESTNA STRANICA *** NIJE PRODUKCIJA
 ================================================ 
 */
 
-function saveaspdftest() {
+function saveaspdf() {
   
 /*STARI KOD KOJI RADI*/
 
