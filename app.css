@@ -1503,7 +1503,7 @@ body {
 }
 
 .list {
-  display: inline-block;
+  /* display: inline-block; */
   position: relative;
  /* margin-left: 6px;*/
 }
@@ -1574,7 +1574,7 @@ body {
   background-color: transparent;
 }
 .select-options li {
-  display: inline-block;
+  /* display: inline-block; */
   margin: 0;
   padding: 12px 0;
   text-indent: 0px;
