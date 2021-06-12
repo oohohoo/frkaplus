@@ -2578,7 +2578,7 @@ CUSTOM SELECT BUTTON - LOKACIJE
 ================================================================================
 */
 
-function customSelect() {
+function customSelectx() {
 
   $(document).ready(function() { // use jQuery lib
 
