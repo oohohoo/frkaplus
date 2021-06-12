@@ -503,7 +503,7 @@ BARBA VIEWS
                 stopScrollMap();
                 locationDropdownSelect();
                 customSelect();
-                console.log("location SORTING pa MAP LOADED + stop scroll map");
+                console.log("CUSTOM SELECT LOADED");
               },
               beforeLeave({current}) {
                 map.remove();
