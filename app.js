@@ -329,6 +329,7 @@ function initContent() {
 
   if (document.querySelector('#lokacijesolo')) {
     locationMap();
+    openTestYourDesign();
       
     /* appendmore(); */
     console.log("LOKACIJE SOLO SCRIPTS -- loaded");
