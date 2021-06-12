@@ -1571,7 +1571,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: transparent;
+  background-color: #FFDC52;
 }
 .select-options li {
   /* display: inline-block; */
