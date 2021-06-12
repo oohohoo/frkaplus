@@ -328,10 +328,12 @@ function initContent() {
   }
 
   if (document.querySelector('#lokacijesolo')) {
-    /* locationMap(); */
+   
     openTestYourDesign();
     console.log("TEST YOUR DESIGN DIRECT");
     uploadCrop();
+
+    locationMap(); 
       
     /* appendmore(); */
     console.log("LOKACIJE SOLO SCRIPTS -- loaded");
