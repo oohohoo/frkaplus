@@ -502,6 +502,7 @@ BARBA VIEWS
                 sortButtons();
                 stopScrollMap();
                 locationDropdownSelect();
+                customSelect();
                 console.log("location SORTING pa MAP LOADED + stop scroll map");
               },
               beforeLeave({current}) {
@@ -2666,7 +2667,7 @@ function customSelect() {
   dynamicCustomSelect(defaultSelect2);
   /*dynamicCustomSelect(defaultSelect3);*/
 
-console.log("BOTUNČIĆIIIIIII");
+console.log("OHOHOHOHOHOHO BOTUNI");
 
 }
 
