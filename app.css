@@ -1378,4 +1378,107 @@ TEST YOUR DESIGN
         }
     }
 
+
+/*
+================================================================================
+FILEPOND STYLING
+================================================================================
+*/
+
+/* use a hand cursor intead of arrow for the action buttons */
+.filepond--file-action-button {
+  cursor: pointer!important;
+}
+
+/* the text color of the drop label*/
+.filepond--drop-label {
+  color: #232021;
+}
+
+/* underline color for "Browse" button */
+.filepond--label-action {
+  text-decoration-color:  #F4DD54;
+}
+
+/* the background color of the filepond drop area */
+.filepond--panel-root {
+  background-color: #232021;
+ 
+}
+
+/* the border radius of the drop area and file item */
+.filepond--panel-root, .filepond--item-panel {
+  border-radius: 0em;
+}
+
+/* the background color of the file and file panel (used when dropping an image) */
+.filepond--item-panel {
+  background-color: #F4DD54;
+ 
+}
+
+/* the background color of the drop circle */
+.filepond--drip-blob {
+  background-color: #232021;
+}
+
+/* the background color of the black action buttons */
+.filepond--file-action-button {
+  background-color: #232021;
+}
+
+/* the icon color of the black action buttons */
+.filepond--file-action-button {
+  color: #F4DD54;
+}
+
+/* the color of the focus ring */
+.filepond--file-action-button:hover,
+.filepond--file-action-button:focus {
+  box-shadow: 0 0 0 0.125em rgba(244,221,84,0.9);
+}
+
+/* the text color of the file status and info labels */
+.filepond--file {
+  color: #232021;
+}
+
+
+/* error state color */
+[data-filepond-item-state*='error'] .filepond--item-panel,
+[data-filepond-item-state*='invalid'] .filepond--item-panel {
+  background-color: #F4DD54;
+}
+
+[data-filepond-item-state='processing-complete'] .filepond--item-panel {
+  background-color: white;
+}
+
+/* bordered drop area */
+
+.filepond--panel-root {
+  background-color: transparent;
+  border: 2px solid #232021;
+  color: #232021;
+}
+
+.filepond--file-status {
+display:none;
+}
+/*
+.filepond--root {
+  height: 20em;
+}
+
+.filepond--root .filepond--list-scroller {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+
+.filepond--list {
+  left: 0em;
+  right: 0em;
+}
+*/
     
