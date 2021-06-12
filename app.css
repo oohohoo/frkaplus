@@ -593,7 +593,7 @@ KONTAKT BUTTON MARQUEE
 ================================================================================
 */
 
-  .button--atlas > span {
+/*   .button--atlas > span {
     display: inline-block;
   }
   
@@ -610,6 +610,7 @@ KONTAKT BUTTON MARQUEE
     pointer-events: none;
   }
   */
+  /*
   .marquee__inner {
     width: fit-content;
     display: flex;
@@ -644,8 +645,8 @@ KONTAKT BUTTON MARQUEE
     100% {
       transform: translate3d(var(--move-final), 0, 0);
     }
-  }
-
+  } 
+*/
 
   /*
 ================================================================================
