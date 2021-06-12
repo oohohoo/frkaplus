@@ -1498,7 +1498,7 @@ body {
 }
 
 */.placeholder {
-  border-bottom: 2px solid;
+ /*  border-bottom: 2px solid; */
   cursor: pointer;  
 }
 
@@ -1511,7 +1511,7 @@ body {
 .select-hidden {
   display: none;
   visibility: hidden;
-  padding-right: 10px;
+  padding-right: 0.52em;
 }
 
 .select {
