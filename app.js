@@ -2681,7 +2681,7 @@ CUSTOM SELECT BUTTON - LOKACIJE
 function locationDropdownSelect() {
 
 
-$('select').each(function(){
+$('.placeholder select').each(function(){
   var $this = $(this), numberOfOptions = $(this).children('option').length;
 
   $this.addClass('select-hidden'); 
