@@ -483,6 +483,7 @@ BARBA VIEWS
                 simpleaccordion();
                 zoomimage();
                 accordionhover();
+                customSelect();
               },
 
               once(data) {
