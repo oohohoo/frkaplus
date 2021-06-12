@@ -331,7 +331,7 @@ function initContent() {
    
     openTestYourDesign();
     console.log("TEST YOUR DESIGN DIRECT");
-    uploadCrop();
+  
     splidesolo();
     locationMap(); 
       
@@ -530,8 +530,8 @@ BARBA VIEWS
                 scrolltriggerupdate();
                 openTestYourDesign();
                 console.log("TEST YOUR DESIGN SOLOOO");
-                uploadCrop();
-                saveaspdftest();
+                
+                
               },
                 beforeLeave(data) {
 
@@ -582,7 +582,7 @@ BARBA VIEWS
               beforeEnter(data) {
                 matrixtransform();
                 console.log("MATRIX TRANS LOADANA");
-                saveaspdftest();
+              
 
               }
             }, {
