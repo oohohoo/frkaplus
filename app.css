@@ -1697,7 +1697,7 @@ body {
 
 /*NNOOVVO*/
 
-/*
+
 .selectField {
   position: relative;
   -webkit-user-select: none;
@@ -1717,9 +1717,9 @@ body {
   -ms-flex-align: center;
   align-items: center;
   padding: 13px 20px;
-  background-color: #fff;
+  background-color: #FFDC52;
   border: 1.8px solid rgba(107, 107, 107, 0.4);
-  border-radius: 3px;
+  /* border-radius: 3px; */
   width: 100%;
   cursor: pointer;
   color: black;
@@ -1778,4 +1778,3 @@ body {
   cursor: default;
 }
 
-*/
