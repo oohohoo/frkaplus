@@ -1530,7 +1530,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: transparent;
+  background-color: #FFDC52;
   /* padding: 8px 15px; */
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
