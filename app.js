@@ -328,7 +328,7 @@ function initContent() {
   }
 
   if (document.querySelector('#lokacijesolo')) {
-    locationMap();
+    /* locationMap(); */
     openTestYourDesign();
     console.log("TEST YOUR DESIGN DIRECT");
     uploadCrop();
