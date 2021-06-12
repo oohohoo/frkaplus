@@ -1392,17 +1392,17 @@ FILEPOND STYLING
 
 /* the text color of the drop label*/
 .filepond--drop-label {
-  color: #232021;
+  color: #232021!important;
 }
 
 /* underline color for "Browse" button */
 .filepond--label-action {
-  text-decoration-color:  #F4DD54;
+  text-decoration-color: #F4DD54!important;
 }
 
 /* the background color of the filepond drop area */
 .filepond--panel-root {
-  background-color: #232021;
+  background-color: #232021!important;
  
 }
 
@@ -1413,57 +1413,57 @@ FILEPOND STYLING
 
 /* the background color of the file and file panel (used when dropping an image) */
 .filepond--item-panel {
-  background-color: #F4DD54;
+  background-color: #F4DD54!important;
  
 }
 
 /* the background color of the drop circle */
 .filepond--drip-blob {
-  background-color: #232021;
+  background-color: #232021!important;
 }
 
 /* the background color of the black action buttons */
 .filepond--file-action-button {
-  background-color: #232021;
+  background-color: #232021!important;
 }
 
 /* the icon color of the black action buttons */
 .filepond--file-action-button {
-  color: #F4DD54;
+  color: #F4DD54!important;
 }
 
 /* the color of the focus ring */
 .filepond--file-action-button:hover,
 .filepond--file-action-button:focus {
-  box-shadow: 0 0 0 0.125em rgba(244,221,84,0.9);
+  box-shadow: 0 0 0 0.125em rgba(244,221,84,0.9)!important;
 }
 
 /* the text color of the file status and info labels */
 .filepond--file {
-  color: #232021;
+  color: #232021!important;
 }
 
 
 /* error state color */
 [data-filepond-item-state*='error'] .filepond--item-panel,
 [data-filepond-item-state*='invalid'] .filepond--item-panel {
-  background-color: #F4DD54;
+  background-color: #F4DD54!important;
 }
 
 [data-filepond-item-state='processing-complete'] .filepond--item-panel {
-  background-color: white;
+  background-color: white!important;
 }
 
 /* bordered drop area */
 
 .filepond--panel-root {
-  background-color: transparent;
-  border: 2px solid #232021;
-  color: #232021;
+  background-color: transparent!important;
+  border: 2px solid #232021!important;
+  color: #232021!important;
 }
 
 .filepond--file-status {
-display:none;
+display:none!important;
 }
 /*
 .filepond--root {
