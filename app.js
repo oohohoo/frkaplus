@@ -333,6 +333,7 @@ function initContent() {
     uploadCrop();
     console.log("UPLOAD CROP");
     splidesolo();
+    saveaspdftest();
     locationMap(); 
       
     /* appendmore(); */
@@ -531,6 +532,7 @@ BARBA VIEWS
                 openTestYourDesign();
                 console.log("TEST YOUR DESIGN SOLOOO");
                 uploadCrop();
+                saveaspdftest();
                 
               },
                 beforeLeave(data) {
