@@ -2937,6 +2937,7 @@ function newSort() {
 
 
 
+
 'use strict';
 
 //select2 start
@@ -2966,6 +2967,11 @@ function newSort() {
 	});
 	//select2 end
 
+
+  $('select.combobox').select2({ width: 'style' });
+
+
+  
 var Shuffle = window.Shuffle;
 
 var Demo = function (element) {
