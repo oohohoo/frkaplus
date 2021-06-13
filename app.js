@@ -418,21 +418,21 @@ function initPageTransitions() {
    locoScroll.destroy(); 
      //KILL SCROLLTRIGGERRRRR PREBAČEN
 
-     /*
+    
      if (ScrollTrigger.getAll().length > 0) {
       ScrollTrigger.getAll().forEach((trigger) => {
           trigger.kill()
       });
   }
-  */
+ 
 
   /* NEW JACK SCROLLTRIGGER DESTROY*/
 
-  const cleanGSAP = () => {
+/*   const cleanGSAP = () => {
     ScrollTrigger.getAll().forEach(t => t.kill(false));
     ScrollTrigger.refresh();
     window.dispatchEvent(new Event("resize"));
-  };
+  }; */
 
   console.log("LOCO*SCROLLTRIGGER YEYEYEYEYEYEY UBIJEN");
   
