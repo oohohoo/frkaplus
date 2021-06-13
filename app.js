@@ -3155,11 +3155,11 @@ $('.linkos').hover(function() {
 });
 
 $( ".options .link input" ).change(function() {
-	$(this).closest('.shapes').find('.selected-toggle').removeClass('selected-toggle');
+	$(this).closest('.shapeso').find('.selected-toggle').removeClass('selected-toggle');
   $(this).closest('.linkos').addClass('selected-toggle');
 });
 
-$( ".check .link input" ).change(function() {
+/* $( ".check .link input" ).change(function() {
   $(this).closest('.linkos').toggleClass('selected-toggle');
 });
 
@@ -3176,7 +3176,7 @@ $('.field').change(function() {
   } else {
   	$(this).closest('.field_parent').find('.field_line').removeClass('full-opacity');
   }
-});
+}); */
 
 /* $('.your-name, .your-email').keyup(function() {
 	if ( $('.your-name').val().length && $('.your-email').val().length > 0 ) {
