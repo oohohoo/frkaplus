@@ -12,7 +12,7 @@
     box-sizing: border-box;
     cursor: pointer;
     display: block;
-    height: 28px;
+    height: 2.5em;
     user-select: none;
     -webkit-user-select: none
 }
