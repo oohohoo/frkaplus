@@ -1625,14 +1625,14 @@ display:none!important;
   }
   
   .linkos.selected-toggle {
-    color: white;
+    color: #F4DD54;
   }
   .link_circle, .radio-button, .field_line {
     pointer-events: none;
   }
   .selected-toggle .link_circle {
     border-radius: 0%;
-    margin-bottom: -4;
+    margin-bottom: -4em;
   }
   
   .field {
