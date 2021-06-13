@@ -1599,13 +1599,11 @@ display:none!important;
 
 
 
-@media only screen and (min-width: 1440px) {
-  body {font-size: 14px;}
-  }
+
   
   a {
     color: inherit;
-  } */
+  } 
  
   .cursor {
     pointer-events: none;
