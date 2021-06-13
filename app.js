@@ -2893,8 +2893,8 @@ $(".counter").each(function() {
       gsap.to(zero, {
         scrollTrigger:{
           scroller: ".smooth-scroll",
-            trigger: "#autoblock",
-            start: "top 100%", 
+            trigger: ".counter",
+            start: "top 20%", 
             end: "bottom top", 
             toggleActions: "restart none none reset",
             //scrub: 1,
