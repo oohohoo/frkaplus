@@ -3148,12 +3148,6 @@ LOKACIJE BOTUNI // PROČISTI
 
 function lokacijeBotuni() {
 
-
-
-.radio-button {pointer-events: auto;}
-.link_container.is--submit.disable {pointer-events: none;}
-</style>
-<script>
 $('.link').hover(function() {
 	$('.cursor').toggleClass('link-hover');
 	let textOne = $(this).find('.link_text').eq(0).text();

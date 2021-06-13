@@ -1591,3 +1591,8 @@ display:none!important;
 */
 
 /* FINALNI FILTERI*/
+
+
+/* LOKACIJE BOTUNI*/
+.radio-button {pointer-events: auto;}
+.link_container.is--submit.disable {pointer-events: none;}
