@@ -320,6 +320,7 @@ function initContent() {
   if (document.querySelector('#lokacije')) {
     locationMap();
     newSort();
+    console.log("NEW SORT LOADED DIRECTLY");
    /*  sorting(); */
     /* sortButtons(); */
     /* customSelect(); */
@@ -514,6 +515,7 @@ BARBA VIEWS
               beforeEnter(data) {
                 /* locationMap(); */
                 newSort();
+    console.log("NEW SORT LOADED BEFORE ENTER LOCALY");
                /*  sorting();
                 sortButtons(); */
                 stopScrollMap();
