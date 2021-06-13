@@ -433,8 +433,8 @@ function initPageTransitions() {
     ScrollTrigger.refresh();
     window.dispatchEvent(new Event("resize"));
   };
-  
-  console.log("LOCO*SCROLLTRIGGER DESTROYED");
+
+  console.log("LOCO*SCROLLTRIGGER YEYEYEYEYEYEY UBIJEN");
   
   });
   //init scrolltrigger
