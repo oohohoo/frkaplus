@@ -319,10 +319,10 @@ function initContent() {
   }
   if (document.querySelector('#lokacije')) {
     locationMap();
-    sorting();
-    sortButtons();
-    customSelect();
-    locationDropdownSelect();
+   /*  sorting(); */
+    /* sortButtons(); */
+    /* customSelect(); */
+    /* locationDropdownSelect(); */
     
     /* appendmore(); */
     console.log("LOKACIJE SCRIPTS -- loaded");
@@ -513,10 +513,10 @@ BARBA VIEWS
               beforeEnter(data) {
                 /* locationMap(); */
                 
-                sorting();
-                sortButtons();
+               /*  sorting();
+                sortButtons(); */
                 stopScrollMap();
-                locationDropdownSelect();
+               /*  locationDropdownSelect(); */
                /*  customSelect(); */
                 console.log("CUSTOM SELECT LOADED");
               },
