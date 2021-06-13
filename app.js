@@ -3126,9 +3126,9 @@ setTimeout(()=>{
      /* ScrollTrigger.refresh(true); */
     console.log("SHUFFLE L O A D E D + scrolltrigger refresh");
       },2000)  
-
-      ScrollTrigger.refresh(true);
       locoScroll.update();
+      ScrollTrigger.refresh(true);
+      
 }
 
 
