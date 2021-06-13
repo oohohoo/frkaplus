@@ -320,6 +320,7 @@ function initContent() {
   if (document.querySelector('#lokacije')) {
     locationMap();
     newSort();
+    lokacijeBotuni();
     console.log("NEW SORT LOADED DIRECTLY");
    /*  sorting(); */
     /* sortButtons(); */
@@ -2971,7 +2972,7 @@ function newSort() {
   $('select.combobox').select2({ width: 'style' });
 
 
-  
+
 var Shuffle = window.Shuffle;
 
 var Demo = function (element) {
@@ -3138,3 +3139,58 @@ setTimeout(()=>{
 }
 
 
+
+  /*
+================================================================================
+LOKACIJE BOTUNI // PROČISTI
+================================================================================
+*/
+
+function lokacijeBotuni() {
+
+
+
+.radio-button {pointer-events: auto;}
+.link_container.is--submit.disable {pointer-events: none;}
+</style>
+<script>
+$('.link').hover(function() {
+	$('.cursor').toggleClass('link-hover');
+	let textOne = $(this).find('.link_text').eq(0).text();
+  $(this).find('.link_text.is--2').text(textOne);
+});
+
+$( ".options .link input" ).change(function() {
+	$(this).closest('.shapes').find('.selected-toggle').removeClass('selected-toggle');
+  $(this).closest('.link').addClass('selected-toggle');
+});
+
+$( ".check .link input" ).change(function() {
+  $(this).closest('.link').toggleClass('selected-toggle');
+});
+
+$('.field').focus(function() {
+	$(this).closest('.field_parent').find('.field_line').click();
+});
+$('.field').focusout(function() {
+	$(this).closest('.field_parent').find('.field_line').click();
+});
+
+$('.field').change(function() {
+	if ( $(this).val().length > 0 ) {
+  	$(this).closest('.field_parent').find('.field_line').addClass('full-opacity');
+  } else {
+  	$(this).closest('.field_parent').find('.field_line').removeClass('full-opacity');
+  }
+});
+
+$('.your-name, .your-email').keyup(function() {
+	if ( $('.your-name').val().length && $('.your-email').val().length > 0 ) {
+  	$('.link_container.is--submit').removeClass('disable');
+  } else {
+  	$('.link_container.is--submit').addClass('disable');
+  }
+});
+
+
+}
