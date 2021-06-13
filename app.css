@@ -1606,7 +1606,7 @@ display:none!important;
   a {
     color: inherit;
   }
-  
+ /*  
   .cursor {
     pointer-events: none;
   }
@@ -1617,16 +1617,16 @@ display:none!important;
   }
   .cursor.link-hover .cursor_dot {
     background-color: white;
-  }
+  } */
   
-  body:hover .cursor {
+ /*  body:hover .cursor {
     opacity: 1.0;
-  }
-  .link {
+  } */
+  .linkos {
     -webkit-mask-image: -webkit-radial-gradient(white, black);
   }
   
-  .link.selected-toggle {
+  .linkos.selected-toggle {
     color: white;
   }
   .link_circle, .radio-button, .field_line {
@@ -1653,4 +1653,3 @@ display:none!important;
     opacity: 1.0 !important;
   }
 
-  
