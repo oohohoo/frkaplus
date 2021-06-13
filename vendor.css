@@ -167,9 +167,9 @@
 }
 
 .select2-container--default .select2-selection--single {
-    background-color: #fff;
-    border: 1px solid #aaa;
-    border-radius: 4px
+    background-color: #231f20;
+    /* border: 1px solid #aaa; */
+    border-radius: 0.5px
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
