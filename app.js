@@ -3128,7 +3128,7 @@ setTimeout(()=>{
       },2000)  
 
       ScrollTrigger.refresh(true);
-
+      locoScroll.update();
 }
 
 
