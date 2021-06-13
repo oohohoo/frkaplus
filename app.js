@@ -2889,15 +2889,27 @@ $(".counter").each(function() {
         split = (num + "").split("."),
         decimals = split.length > 1 ? split[1].length : 0;
 
-    $(".animate").on("click", function() {
+    /* $(".animate").on("click", function() { */
       gsap.to(zero, {
+        scrollTrigger:{
+          scroller: ".smooth-scroll",
+            trigger: "#autoblock",
+            start: "top 100%", 
+            end: "bottom top", 
+            toggleActions: "restart none none reset",
+            //scrub: 1,
+            
+          },
         val: num,
         duration: 2,
         onUpdate: function() {
           count.text(zero.val.toFixed(decimals));
         }
       });
-    });
+   /*  }); */
 });
 
 }
+
+
+  
