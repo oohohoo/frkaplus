@@ -882,7 +882,7 @@ body .cursor__circle--big {
 SORTING CSS
 ================================================================================
 */
-
+/*
 .js-shuffle {
   width: 100%;
   margin: auto;
@@ -897,6 +897,7 @@ SORTING CSS
 }
 
 /* Bootstrap-style columns */
+/*
 .column {
   position: relative;
   float: left;
@@ -906,10 +907,12 @@ SORTING CSS
   padding-left: 1em;
   padding-right: 1em;
   
-  /* Space between tiles */
+  /* Space between tiles 
   margin-top: 1em;
 }
+
 /*OVO ISKORISTI ZA TOGGLE*/
+/*
 .col-span {
   width: 50%;
 }
@@ -920,6 +923,7 @@ SORTING CSS
 
 /* Ensure images take up the same space when they load */
 /* https://vestride.github.io/Shuffle/images */
+/*
 .aspect {
   position: relative;
   width: 100%;
@@ -943,7 +947,7 @@ SORTING CSS
 .aspect--9x80 {
   padding-bottom: calc(112.5% + 8px);
 }
-
+*/
 /*
  *  Search Input
 */
