@@ -3148,7 +3148,7 @@ LOKACIJE BOTUNI // PROČISTI
 
 function lokacijeBotuni() {
 
-$('.link').hover(function() {
+$('.linkos').hover(function() {
 	$('.cursor').toggleClass('link-hover');
 	let textOne = $(this).find('.link_text').eq(0).text();
   $(this).find('.link_text.is--2').text(textOne);
@@ -3156,11 +3156,11 @@ $('.link').hover(function() {
 
 $( ".options .link input" ).change(function() {
 	$(this).closest('.shapes').find('.selected-toggle').removeClass('selected-toggle');
-  $(this).closest('.link').addClass('selected-toggle');
+  $(this).closest('.linkos').addClass('selected-toggle');
 });
 
 $( ".check .link input" ).change(function() {
-  $(this).closest('.link').toggleClass('selected-toggle');
+  $(this).closest('.linkos').toggleClass('selected-toggle');
 });
 
 $('.field').focus(function() {
@@ -3178,13 +3178,13 @@ $('.field').change(function() {
   }
 });
 
-$('.your-name, .your-email').keyup(function() {
+/* $('.your-name, .your-email').keyup(function() {
 	if ( $('.your-name').val().length && $('.your-email').val().length > 0 ) {
   	$('.link_container.is--submit').removeClass('disable');
   } else {
   	$('.link_container.is--submit').addClass('disable');
   }
-});
+}); */
 
 
 }
