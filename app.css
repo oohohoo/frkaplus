@@ -1634,7 +1634,7 @@ display:none!important;
   }
   .selected-toggle .link_circle {
     border-radius: 0%;
-    margin-bottom: 0em;
+    margin-bottom: -4;
   }
   
   .field {
