@@ -1598,14 +1598,14 @@ display:none!important;
 .link_container.is--submit.disable {pointer-events: none;}
 
 
-
+/* 
 @media only screen and (min-width: 1440px) {
   body {font-size: 14px;}
   }
   
   a {
     color: inherit;
-  }
+  } */
  /*  
   .cursor {
     pointer-events: none;
