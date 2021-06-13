@@ -313,6 +313,7 @@ function initContent() {
     numberoll();
     horizpin();
     playpausevideo();
+    smallCounteronama();
     console.log("O NAMA SCRIPTS PLAYPAUSE -- loaded");
 
   }
@@ -484,6 +485,7 @@ BARBA VIEWS
                 zoomimage();
                 accordionhover();
                 customSelect();
+                smallCounteronama();
               },
 
               once(data) {
@@ -2859,5 +2861,43 @@ videoupload.appendChild(pondvideo.element);
 
 onclick = function(){ botun.appendChild(".filepond--media-preview"); }
 */
+
+}
+
+
+
+/*
+================================================================================
+O NAMA MALI BROJEVI COUNTER - LOKACIJE
+================================================================================
+*/
+
+function smallCounteronama() {
+
+
+// adds commas and forces 2 decimal places.
+function formatNumber(value) {
+  let s = (+value).toLocaleString('en-US').split(".");
+  return s[0] + "." + ((s[1] || "") + "00").substr(0, 2);
+}
+
+
+$(".counter").each(function() {
+    var count = $(this),
+        zero = {val:0},
+        num = count.data("number"),
+        split = (num + "").split("."),
+        decimals = split.length > 1 ? split[1].length : 0;
+
+    $(".animate").on("click", function() {
+      gsap.to(zero, {
+        val: num,
+        duration: 2,
+        onUpdate: function() {
+          count.text(zero.val.toFixed(decimals));
+        }
+      });
+    });
+});
 
 }
