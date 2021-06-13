@@ -3176,7 +3176,7 @@ $('.field').change(function() {
   } else {
   	$(this).closest('.field_parent').find('.field_line').removeClass('full-opacity');
   }
-}); */
+});
 
 /* $('.your-name, .your-email').keyup(function() {
 	if ( $('.your-name').val().length && $('.your-email').val().length > 0 ) {
