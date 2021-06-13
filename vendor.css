@@ -1,7 +1,7 @@
 /*select2.min.css*/
 .select2-container {
     box-sizing: border-box;
-    width: 268px;
+    /* width: 268px; */
     display: inline-block;
     margin: 0;
     position: relative;
@@ -69,9 +69,9 @@
 }
 
 .select2-dropdown {
-    background-color: white;
-    border: 1px solid #aaa;
-    border-radius: 4px;
+    background-color: #ffdc52;
+    border: 0px solid #aaa;
+    border-radius: 0.5px;
     box-sizing: border-box;
     display: block;
     position: absolute;
@@ -91,7 +91,7 @@
 }
 
 .select2-results__option {
-    padding: 6px;
+    padding: 1.25em;
     user-select: none;
     -webkit-user-select: none
 }
@@ -149,7 +149,7 @@
     width: auto;
     opacity: 0;
     z-index: 99;
-    background-color: #fff;
+    background-color: #ffdc52;
     filter: alpha(opacity=0)
 }
 
