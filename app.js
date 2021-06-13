@@ -2894,7 +2894,7 @@ $(".counter").each(function() {
         scrollTrigger:{
           scroller: ".smooth-scroll",
             trigger: ".counter",
-            start: "top 20%", 
+            start: "top 100%", 
             end: "bottom top", 
             toggleActions: "restart none none reset",
             //scrub: 1,
