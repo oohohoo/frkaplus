@@ -945,69 +945,6 @@ SORTING CSS
 }
 
 /*
-.containersort {
-  padding-left: 3.5%;
-  padding-right: 3.5%;
-}
-
-.containersort:after,
-.containersort:before {
-  content: " ";
-  display: table;
-}
-
-.containersort:after {
-  clear: both;
-}
-*/
-/*
-.row {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.row:after,
-.row:before {
-  content: " ";
-  display: table;
-}
-
-.row:after {
-  clear: both;
-}
-/*
-.row .row {
-  margin-left: -8px;
-  margin-right: -8px;
-}
-
-.row--centered {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-/*
-.hidden {
-  display: none !important;
-  visibility: hidden;
-}
-
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-*/
-
-
-
-/*
  *  Search Input
 */
 
@@ -1484,143 +1421,12 @@ display:none!important;
     
 
 
-/*
-================================================================================
-SELECT LOKACIJE IZGLED PADAJUĆIH SELECT BIG TEKSTOVA
-================================================================================
-*/
-
-
-/*
-body {
-  color: #231f20;
-  background-color: #ffdc52;
-}
-
-/*
-/*.placeholder {
-
-  cursor: pointer;  
-}
-
-.list {
-
-  position: relative;
-
-}
-
-.select-hidden {
-  display: none;
-  visibility: hidden;
-  padding-right: 0.52em;
-}
-
-.select {
-  cursor: pointer;
-
-  position: relative;
-  font-size: 3.1rem;
-  color: #231f20;
-  width: 15em;
-  height: 1em; 
-}
-
-.select-styled {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #FFDC52;
-
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-.select-styled:after {
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  top: 60px;
-
-}
-/*
-.select-styled:hover {
-  background-color: transparent;
-}
-
-.select-styled:active, .select-styled.active {
-  background-color: transparent;
-}
-
-.select-styled:active:after, .select-styled.active:after {
-  top: 60px;
-  border-color: transparent transparent #231f20 transparent;
-}
-
-.select-options {
-  display: none;
-  position: absolute;
-  top: 100%;
-  right: 0;
-  left: 0;
-  z-index: 999;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  background-color: #FFDC52;
-}
-.select-options li {
-
-  margin: 0;
-  padding: 12px 0;
-  text-indent: 0px;
-
-  -moz-transition: all 0.15s ease-in;
-  -o-transition: all 0.15s ease-in;
-  -webkit-transition: all 0.15s ease-in;
-  transition: all 0.15s ease-in;
-}
-
-.select-options li {
-  transition: all 0.4s;
-
-  position: relative;
-}
-.select-options li:after {
-  position: absolute;
-  content: "";
-  height: 5px;
-  width: 0;
-  left: 0;
-  color: #ff0000;
-  background: #b066ff;
-  bottom: 0;
-  transition: all 0.4s ease-out;
-}
-.select-options li:hover {
-  cursor: pointer;
-  color: #b066ff;
-}
-.select-options li:hover:after {
-  width: 100%;
-}
-
-.select-options li[rel="hide"] {
-  display: none;
-}
-
-**/
-
-
 
 /*OVO JE MOŽDA VIŠAK*/
 
 
 /* STARI CUSTOM SELECT*/
-
+/*
 .main-select {
   display: none;
 }
@@ -1693,11 +1499,11 @@ body {
   background-color: #231f20;
 }
 
-
+*/
 
 /*NNOOVVO*/
 
-
+/*
 .selectField {
   position: relative;
   -webkit-user-select: none;
@@ -1719,7 +1525,7 @@ body {
   padding: 13px 20px;
   background-color: #FFDC52;
   border: 1.8px solid rgba(107, 107, 107, 0.4);
-  /* border-radius: 3px; */
+   border-radius: 3px; 
   width: 100%;
   cursor: pointer;
   color: black;
@@ -1778,3 +1584,180 @@ body {
   cursor: default;
 }
 
+*/
+
+/* FINALNI FILTERI*/
+
+.webinar-posts__event {
+  padding-bottom: 227px;
+}
+.webinar-posts__event .container {
+  width: calc(100% - 190px);
+  max-width: 1180px;
+  margin: 0 auto;
+  background-color: transparent;
+  position: relative;
+  padding: 0;
+}
+.webinar-posts__event-title {
+  font-size: 60px;
+  font-weight: 800;
+  color: #000;
+  text-transform: uppercase;
+}
+.webinar-posts__event-wrapper {
+  width: 100%;
+}
+.webinar-posts__event-list {
+  padding: 0;
+  margin: 0 -20px -40px;
+  list-style-type: none;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.webinar-posts__event-list li {
+  margin: 0 20px 40px;
+}
+.webinar-posts__event-item {
+  width: calc(50% - 40px);
+  overflow: hidden;
+  position: relative;
+}
+
+
+.webinar-posts__event-item:after {
+  content: "";
+  position: absolute;
+  height: 0;
+  background: #ff0000;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transition: height 0.2s ease;
+}
+
+.webinar-posts__event-item .category {
+  font-family: "TheSans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #FF0000;
+  text-transform: uppercase;
+  margin-bottom: 9px;
+  display: inline-block;
+  text-decoration: none;
+}
+.webinar-posts__event-item .category:hover, .webinar-posts__event-item .category:active, .webinar-posts__event-item .category:focus {
+  color: #E83316;
+}
+
+.webinar-posts__event-item .description {
+  font-size: 25px;
+  line-height: 1.32em;
+  font-family: "TheSans", sans-serif;
+  font-weight: 300;
+  margin: 0 0 25px;
+  color: #000;
+}
+.webinar-posts__event-item .title {
+  min-height: 60px;
+  margin: 0 0 10px;
+  font-size: 35px;
+  font-family: "TheSans", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: unset;
+  line-height: 1em;
+}
+.webinar-posts__event-item .btn {
+  font-family: "Open Sans", sans-serif;
+  background: 0 0;
+  border: 1px solid #93908d;
+  border-radius: 15px;
+  padding: 5px 15px 6px 15px;
+  margin-top: 5px;
+  color: #93908d;
+  font-size: 18px;
+  line-height: 1.27em;
+  font-weight: 700;
+  display: inline-block;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+.webinar-posts__event-item .btn:hover, .webinar-posts__event-item .btn:active, .webinar-posts__event-item .btn:focus {
+  color: #fff;
+  background-color: #E83316;
+  border: 1px solid #E83316;
+}
+.webinar-posts__event-link {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+  width: 100%;
+  height: 100%;
+  text-decoration: unset;
+}
+
+
+
+/* FILTERS */
+.webinar-posts__event-filters {
+  margin: 0 0 73px;
+  padding: 30px 0;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  background-color: #fff;
+  border-top: 1px solid #C9C9C9;
+  border-bottom: 1px solid #C9C9C9;
+}
+.webinar-posts__event-filters .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.webinar-posts__event-filter {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.webinar-posts__event-filter li {
+  margin-right: 20px;
+}
+.webinar-posts__event-filter .btn.active {
+  background-color: #E83316;
+  color: #fff;
+}
+.webinar-posts__event-filter .btn:hover, .webinar-posts__event-filter .btn:active, .webinar-posts__event-filter .btn:focus {
+  outline: none;
+}
+.webinar-posts__event-filter-regions {
+  min-width: 30%;
+}
+.webinar-posts__event-filter .checkboxes {
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+  opacity: 0;
+}
+.webinar-posts__event img {
+  height: 367px;
+  width: 100%;
+  transition: transform 0.8s ease;
+  flex-grow: 0;
+}
+.webinar-posts__event .content {
+  padding: 50px 44px 40px;
+  background-color: #fff;
+  flex-grow: 1;
+}
+.webinar-posts__event .select2-container {
+  max-width: 450px;
+  margin: 0;
+  border: none;
+}
