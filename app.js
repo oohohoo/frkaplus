@@ -2188,7 +2188,7 @@ function onamacounter() {
       gsap.to(zero, {
         scrollTrigger:{
           scroller: ".smooth-scroll",
-            trigger: ".counts",
+            trigger: ".1000-wrap",
             start: "top 100%", 
             end: "bottom top", 
             toggleActions: "restart none none reset",
