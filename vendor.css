@@ -93,7 +93,9 @@
 }
 
 .select2-results__option {
-    padding: 1.25em;
+   /*  padding: 1.25em; */
+    padding-top: 0.45em;
+    padding-left: 1.25em;
     user-select: none;
     -webkit-user-select: none
 }
