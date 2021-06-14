@@ -3115,6 +3115,12 @@ Demo.prototype.filter = function () {
 	if (this.hasActiveFilters()) {
 		this.shuffle.filter(this.itemPassesFilters.bind(this));
     
+    setTimeout(()=>{
+      locoScroll.update();
+       console.log("Locoscrollupdated 1");
+   },200)  
+
+
 	} else {
 		this.shuffle.filter(Shuffle.ALL_ITEMS);
 	}
