@@ -256,10 +256,13 @@
     background: url("https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60c7101c907ce3e5f5b7cdad_arrow_down.svg") no-repeat;
     /* border-color: transparent transparent #888 transparent; */
     position: absolute;
-    background-size: 0.79em; 
-    top: -3px;
     right: 3px;
-    width: 3em;
+    width: 2.5em;
+    height: 100%;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: #F4DD54;
+    background-size: 0.79em; 
     height: 100%;
     background-position: calc(100% - 10px) center;
     background-repeat: no-repeat;
