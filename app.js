@@ -2180,7 +2180,7 @@ function onamacounter() {
 
   $(".counts").each(function() {
     var count = $(this),
-        zero = {val:998},
+        zero = {val:990},
         num = count.data("number"),
         split = (num + "").split("."),
         decimals = split.length > 1 ? split[1].length : 0;
@@ -2196,7 +2196,7 @@ function onamacounter() {
             
           },
         val: num,
-        duration: 5,
+        duration: 2,
         onUpdate: function() {
           count.text(zero.val.toFixed(decimals));
         }
