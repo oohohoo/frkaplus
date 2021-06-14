@@ -3120,8 +3120,8 @@ Demo.prototype.filter = function () {
        console.log("Locoscrollupdated 1");
    },200)  
 
-	} else {
-		this.shuffle.filter(Shuffle.ALL_ITEMS);
+/* 	} else {
+		this.shuffle.filter(Shuffle.ALL_ITEMS); */
 	
 } else {
   this.shuffle.filter(Shuffle.ALL_ITEMS);
