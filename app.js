@@ -807,9 +807,9 @@ FADE IN MAP
     myMap = createMapbox(data.next.container);
   */
 /* setTimeout(()=>{ */
-var fadein = gsap.timeline({defaults:{duration:0.8, ease:'none'}})
+var fadein = gsap.timeline({defaults:{ease:'none'}})
 .to('.loader-icon', {autoAlpha:1})
-.to('.loader-icon', {rotate: 360, repeat: -1})
+.to('.loader-wrap', {rotate: 360, repeat: -1, duration:0.8}, "<")
 .to('.loader-txt', {autoAlpha:1}, "<")
 .to('.lokacije-mapbox-container', {autoAlpha:1, delay:1.5})
 .to('.loader-icon', {autoAlpha:0})
