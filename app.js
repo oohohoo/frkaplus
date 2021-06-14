@@ -3230,7 +3230,7 @@ setTimeout(()=>{
        setTimeout(()=>{  
        locoScroll.update();
        ScrollTrigger.refresh(true);
-       console.log("ČEKAO I RIFREŠAO");
+       console.log("NAKRAJU RIFREEEŠŠŠŠ");
       },5000) 
       
 }
