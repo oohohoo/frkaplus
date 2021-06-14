@@ -252,7 +252,13 @@
 .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
     background: url("https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60c7101c907ce3e5f5b7cdad_arrow_down.svg") no-repeat;
     /* border-color: transparent transparent #888 transparent; */
-    border-width: 0 4px 5px 4px
+    position: absolute;
+    top: -3px;
+    right: 3px;
+    width: 3em;
+    height: 100%;
+    background-position: calc(100% - 10px) center;
+    background-repeat: no-repeat;
 }
 
 .select2-container--default .select2-selection--multiple {
