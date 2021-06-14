@@ -262,7 +262,7 @@
     /* border-color: transparent transparent #888 transparent; */
     position: absolute;
     right: 0.16em;
-    width: 2.5em;
+    /* width: 2.5em; */
     height: 100%;
     border-left-style: solid;
     border-left-width: 2px;
