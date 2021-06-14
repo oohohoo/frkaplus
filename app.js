@@ -2186,7 +2186,7 @@ function onamacounter() {
         decimals = split.length > 1 ? split[1].length : 0;
 
       gsap.to(zero, {
-        scrollTrigger:{
+       /* scrollTrigger:{
           scroller: ".smooth-scroll",
             trigger: ".tisucu",
             start: "top 100%", 
@@ -2194,7 +2194,7 @@ function onamacounter() {
             toggleActions: "restart none none reset",
             //scrub: 1,
             
-          },
+          },*/
         val: num,
         duration: 2,
         onUpdate: function() {
