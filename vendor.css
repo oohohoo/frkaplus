@@ -19,7 +19,7 @@
 
 .select2-container .select2-selection--single .select2-selection__rendered {
     display: block;
-    padding: 1.25em;
+    padding: 1em;
   /*   padding-top: 0.45em;
     padding-left: 1.25em;
    /*  padding-bottom: 1.25em; */ 
@@ -204,7 +204,7 @@
   /*   background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%238C98F2'><polygon points='0,0 100,0 50,50'/></svg>") no-repeat; */
     background: url("https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60c7101c907ce3e5f5b7cdad_arrow_down.svg") no-repeat;
     /* background-size: 20px; */
-    background-position: calc(100% - 5px) center;
+    background-position: calc(100% - 10px) center;
     background-repeat: no-repeat;
     /* background-color: #efefef; */
 }
@@ -217,7 +217,7 @@
     height: 100%;
     background: url("https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60c712f5640a9b37a36b19ea_arrow_up.svg") no-repeat;
     /* background-size: 20px; */
-    background-position: calc(100% - 5px) center;
+    background-position: calc(100% - 10px) center;
     background-repeat: no-repeat;
    /*  border-color: #888 transparent transparent transparent; */
     /* border-style: solid;
