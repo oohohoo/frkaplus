@@ -1651,3 +1651,129 @@ display:none!important;
     opacity: 1.0 !important;
   }
 
+
+/*
+================================================================================
+SORT CSS NOVI FINAL
+================================================================================
+*/
+
+
+/*
+.webinar-posts__event {
+  padding-bottom: 227px;
+}
+/*
+.webinar-posts__event .containero {
+  width: calc(100% - 190px);
+  max-width: 1180px;
+  margin: 0 auto;
+  background-color: transparent;
+  position: relative;
+  padding: 0;
+}
+*/
+/*
+.webinar-posts__event-title {
+  font-size: 60px;
+  font-weight: 800;
+  color: #000;
+  text-transform: uppercase;
+}
+
+*/
+.webinar-posts__event-wrapper {
+  width: 100%;
+}
+.webinar-posts__event-list {
+  /*padding: 0;
+ 
+  margin: 0 -100px 0 100px;
+  list-style-type: none;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap; */
+}
+/*
+.webinar-posts__event-list li {
+  margin: 0 0px 40px;
+}
+*/
+.webinar-posts__event-item {
+  width: calc(50% - 10px);
+  overflow: hidden;
+  position: relative;
+}
+
+.webinar-posts__event-link {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+  width: 100%;
+  height: 100%;
+  text-decoration: unset;
+}
+
+
+
+/* FILTERS */
+.webinar-posts__event-filters {
+  margin: 0 0 73px;
+  padding: 30px 0;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+}
+.webinar-posts__event-filters .containero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.webinar-posts__event-filter {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.webinar-posts__event-filter li {
+  margin-right: 20px;
+}
+.webinar-posts__event-filter .btn.active {
+  background-color: #E83316;
+  color: #fff;
+}
+.webinar-posts__event-filter .btn:hover, .webinar-posts__event-filter .btn:active, .webinar-posts__event-filter .btn:focus {
+  outline: none;
+}
+/*
+.webinar-posts__event-filter-regions {
+  min-width: 30%;
+}
+*/
+.webinar-posts__event-filter .checkboxes {
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+  opacity: 0;
+}
+/*
+.webinar-posts__event .picture-item {
+  flex-grow: 1;
+}
+*/
+/*
+.webinar-posts__event .select2-container {
+  max-width: 450px;
+  margin: 0;
+  border: none;
+  
+
+}
+
+  */
+
+
