@@ -3141,6 +3141,11 @@ Demo.prototype.filter = function () {
   
 } else{
 this.message.innerHTML = "";
+setTimeout(()=>{
+  locoScroll.update();
+  ScrollTrigger.refresh(true);
+   console.log("Locoscrollupdated + SCROLLTRIGGER REFRESHHHHH 4");
+    },200)  
 
  }
 
