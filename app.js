@@ -2186,17 +2186,17 @@ function onamacounter() {
         decimals = split.length > 1 ? split[1].length : 0;
 
       gsap.to(zero, {
-       /* scrollTrigger:{
+        scrollTrigger:{
           scroller: ".smooth-scroll",
-            trigger: ".tisucu",
+            trigger: ".counts",
             start: "top 100%", 
             end: "bottom top", 
             toggleActions: "restart none none reset",
             //scrub: 1,
             
-          },*/
+          },
         val: num,
-        duration: 6,
+        duration: 5,
         onUpdate: function() {
           count.text(zero.val.toFixed(decimals));
         }
