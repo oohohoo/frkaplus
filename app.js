@@ -3225,7 +3225,7 @@ Demo.prototype.itemPassesFilters = function (element) {
 setTimeout(()=>{  
   /*document.addEventListener("DOMContentLoaded", function() { */
     window.demo = new Demo(document.querySelector(".js-shuffle"));
-       },2000)  
+       },200)  
 
        setTimeout(()=>{  
        locoScroll.update();
