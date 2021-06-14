@@ -184,8 +184,12 @@
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
     color: #ffdc52;
+        outline: none;
+     
    /*  line-height: 28px */
 }
+
+.select2-container--default:focus {outline:0;}
 
 .select2-container--default .select2-selection--single .select2-selection__clear {
     cursor: pointer;
