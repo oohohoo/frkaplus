@@ -3114,36 +3114,10 @@ Demo.prototype._handlecategoryChange = function (evt) {
 Demo.prototype.filter = function () {
 	if (this.hasActiveFilters()) {
 		this.shuffle.filter(this.itemPassesFilters.bind(this));
-
-    setTimeout(()=>{
-      locoScroll.update();
-       console.log("Locoscrollupdated 1");
-   },200)  
-
-/* 	} else {
-		this.shuffle.filter(Shuffle.ALL_ITEMS); */
-	
-} if {
-  this.shuffle.filter(Shuffle.ALL_ITEMS);
-   setTimeout(()=>{
-    locoScroll.update();
-  console.log("Locoscrollupdated 2");
-  },200)  
-}
-
-if(this.shuffle.visibleItems == 0){
-  this.message.innerHTML = (this.shuffle.visibleItems) + " items";
-setTimeout(()=>{
-locoScroll.update();
-console.log("Locoscrollupdated 3");
- },200)  
-
-} else{
-this.message.innerHTML = "";
-
-}
-
-
+    
+	} else {
+		this.shuffle.filter(Shuffle.ALL_ITEMS);
+	}
 };
 
 /**
