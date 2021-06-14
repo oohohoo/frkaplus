@@ -84,7 +84,8 @@
 }
 
 .select2-results {
-    display: block
+    display: block;
+    margin-top: 0.2em;
 }
 
 .select2-results__options {
