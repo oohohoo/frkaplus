@@ -1,6 +1,7 @@
 /*select2.min.css*/
 .select2-container {
     box-sizing: border-box;
+    margin-top: 0.9em;
    width: 13.96em!important;
     display: inline-block;
     margin: 0;
@@ -12,7 +13,7 @@
     box-sizing: border-box;
     cursor: pointer;
     display: block;
-    height: 2.5em; 
+    height: 3em; 
     user-select: none;
     -webkit-user-select: none
 }
