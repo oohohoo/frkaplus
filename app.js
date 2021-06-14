@@ -3226,10 +3226,12 @@ setTimeout(()=>{
   /*document.addEventListener("DOMContentLoaded", function() { */
     window.demo = new Demo(document.querySelector(".js-shuffle"));
        },2000)  
- 
+
+       setTimeout(()=>{  
        locoScroll.update();
        ScrollTrigger.refresh(true);
-       console.log("IZVANA KOKO REFREŠŠŠŠ refreshhhh");
+       console.log("ČEKAO I RIFREŠAO");
+      },400) 
       
 }
 
