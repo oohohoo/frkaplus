@@ -495,7 +495,7 @@ BARBA VIEWS
                 
 
                  onamacounter();
-                console.log("NOVI O NAMA COUNTER"); */
+                console.log("NOVI O NAMA COUNTER"); 
                 simpleaccordion();
                 zoomimage();
                 accordionhover();
@@ -2186,6 +2186,15 @@ function onamacounter() {
         decimals = split.length > 1 ? split[1].length : 0;
 
       gsap.to(zero, {
+        scrollTrigger:{
+          scroller: ".smooth-scroll",
+            trigger: ".tisucu",
+            start: "top 100%", 
+            end: "bottom top", 
+            toggleActions: "restart none none reset",
+            //scrub: 1,
+            
+          },
         val: num,
         duration: 2,
         onUpdate: function() {
