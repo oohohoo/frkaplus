@@ -494,8 +494,8 @@ BARBA VIEWS
                 playpausevideo();
                 
 
-/*                 onamacounter();
-                console.log("OOOOONNNNAAAAMMMMAAA"); */
+                 onamacounter();
+                console.log("NOVI O NAMA COUNTER"); */
                 simpleaccordion();
                 zoomimage();
                 accordionhover();
@@ -504,8 +504,7 @@ BARBA VIEWS
               },
 
               once(data) {
-                onamacounter();
-                console.log("O NAMA ONCE");
+              
               }
             }, {
 
@@ -2178,6 +2177,24 @@ O NAMA - COUNTER
 ================================================ 
 */
 function onamacounter() {
+
+  $(".counts").each(function() {
+    var count = $(this),
+        zero = {val:998},
+        num = count.data("number"),
+        split = (num + "").split("."),
+        decimals = split.length > 1 ? split[1].length : 0;
+
+      gsap.to(zero, {
+        val: num,
+        duration: 2,
+        onUpdate: function() {
+          count.text(zero.val.toFixed(decimals));
+        }
+      });
+});
+
+  /*
 var cont={val:990} , newval = 1000 ;
 
 gsap.to(cont,2,{
@@ -2196,6 +2213,8 @@ onUpdate:function(){
   document.getElementById("counternew").innerHTML=cont.val
   
 }});
+
+*/
 }
 
 
