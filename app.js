@@ -716,7 +716,7 @@ var map = new mapboxgl.Map({
  /*  width: 1280,
   height: 800,  */
 container: 'map', // container ID
-style: 'mapbox://styles/fogseller/ckpwnkglx3czh17perf3rzk1u?optimize=true', // style URL / dodano optimize=true
+style: 'mapbox://styles/fogseller/ckpwns2as069i17pfu4b8rt5v?optimize=true', // style URL / dodano optimize=true
 center: [16.527, 44.663], // starting position [lng, lat]
 zoom: 6.64 // starting zoom
 });
