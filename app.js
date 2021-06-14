@@ -3122,7 +3122,7 @@ Demo.prototype.filter = function () {
 
 	} else {
 		this.shuffle.filter(Shuffle.ALL_ITEMS);
-	}
+	
 } else {
   this.shuffle.filter(Shuffle.ALL_ITEMS);
    setTimeout(()=>{
