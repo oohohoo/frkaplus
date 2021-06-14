@@ -2999,6 +2999,7 @@ function newSort() {
 
   $('select.combobox').select2({ width: 'style' });
 
+PRIJE DRKANJA
 
 
 var Shuffle = window.Shuffle;
