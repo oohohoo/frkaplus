@@ -3119,7 +3119,7 @@ Demo.prototype.filter = function () {
       locoScroll.update();
       ScrollTrigger.refresh(true);
        console.log("Locoscrollupdated + SCROLLTRIGGER REFRESHHHHH 1");
-   },200)  
+   },400)  
 
 
   } else {
@@ -3128,20 +3128,20 @@ Demo.prototype.filter = function () {
       locoScroll.update();
       ScrollTrigger.refresh(true);
     console.log("Locoscrollupdated + SCROLLTRIGGER REFRESHHHHH 2");
-    },200)  
+    },400)  
   }
 
   if(this.shuffle.visibleItems == 0){
     this.message.innerHTML = (this.shuffle.visibleItems) + " items";
- setTimeout(()=>{
- locoScroll.update();
- ScrollTrigger.refresh(true);
-  console.log("Locoscrollupdated + SCROLLTRIGGER REFRESHHHHH 3");
-   },200)  
+
   
 } else{
 this.message.innerHTML = "";
-
+setTimeout(()=>{
+  locoScroll.update();
+  ScrollTrigger.refresh(true);
+   console.log("Locoscrollupdated + SCROLLTRIGGER REFRESHHHHH 3");
+    },200)  
 
  }
 
