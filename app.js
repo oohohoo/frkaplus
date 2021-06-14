@@ -2196,7 +2196,7 @@ function onamacounter() {
             
           },*/
         val: num,
-        duration: 2,
+        duration: 6,
         onUpdate: function() {
           count.text(zero.val.toFixed(decimals));
         }
