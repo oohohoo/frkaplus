@@ -213,7 +213,7 @@
     position: absolute;
     top: 1px;
     right: 1px;
-    width: 2.5em;
+    /* width: 2.5em; */
     height: 100%;
     background: url("https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60c712f5640a9b37a36b19ea_arrow_up.svg") no-repeat;
     background-size: 20px;
