@@ -211,9 +211,9 @@
 
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
     position: absolute;
-    top: -3px;
+    /* top: -3px; */
     right: 3px;
-    width: 3em;
+    width: 2.5em;
     height: 100%;
     border-left-style: solid;
     border-left-width: 1px;
