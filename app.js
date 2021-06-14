@@ -810,7 +810,7 @@ setTimeout(()=>{
 var fadein = gsap.timeline({defaults:{duration:0.8, ease:'none'}})
 .to('.lokacije-mapbox-container', {autoAlpha:1})
 /* .to('.fadeheader', {autoAlpha:0, stagger:5}, 4) */
-},1000)
+},500)
 
 
  }
