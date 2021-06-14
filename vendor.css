@@ -137,11 +137,11 @@
 .select2-search--dropdown .select2-search__field::-webkit-search-cancel-button {
     -webkit-appearance: none
 }
-
+*/
 .select2-search--dropdown.select2-search--hide {
     display: none
 }
-*/
+
 .select2-close-mask {
     border: 0;
     margin: 0;
