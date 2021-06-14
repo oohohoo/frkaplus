@@ -19,7 +19,8 @@
 
 .select2-container .select2-selection--single .select2-selection__rendered {
     display: block;
-    padding: 1em;
+    padding-top: 1.04em;
+    padding-bottom: 1.04em; 
   /*   padding-top: 0.45em;
     padding-left: 1.25em;
    /*  padding-bottom: 1.25em; */ 
