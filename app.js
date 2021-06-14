@@ -806,11 +806,15 @@ FADE IN MAP
  /*  setTimeout(()=>{
     myMap = createMapbox(data.next.container);
   */
-setTimeout(()=>{
+/* setTimeout(()=>{ */
 var fadein = gsap.timeline({defaults:{duration:0.8, ease:'none'}})
-.to('.lokacije-mapbox-container', {autoAlpha:1})
+.to('.loader-icon', {autoAlpha:1, rotate: 360, repeat: -1})
+.to('.loader-txt', {autoAlpha:1}, "<")
+.to('.lokacije-mapbox-container', {autoAlpha:1, delay:1.5})
+.to('.loader-icon', {autoAlpha:0})
+.to('.loader-txt', {autoAlpha:0}, "<")
 /* .to('.fadeheader', {autoAlpha:0, stagger:5}, 4) */
-},1000)
+/* },1500) */
 
 
  }
