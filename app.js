@@ -3225,11 +3225,11 @@ Demo.prototype.itemPassesFilters = function (element) {
 setTimeout(()=>{  
   /*document.addEventListener("DOMContentLoaded", function() { */
     window.demo = new Demo(document.querySelector(".js-shuffle"));
-    locoScroll.update();
-    ScrollTrigger.refresh(true);
-    console.log("KOKOLOKO refreshhhh");
-      },2000)  
-  
+       },2000)  
+ 
+       locoScroll.update();
+       ScrollTrigger.refresh(true);
+       console.log("IZVANA KOKO REFREŠŠŠŠ refreshhhh");
       
 }
 
