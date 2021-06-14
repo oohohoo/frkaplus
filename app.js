@@ -3231,7 +3231,7 @@ setTimeout(()=>{
        locoScroll.update();
        ScrollTrigger.refresh(true);
        console.log("ČEKAO I RIFREŠAO");
-      },400) 
+      },5000) 
       
 }
 
