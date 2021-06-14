@@ -810,7 +810,7 @@ FADE IN MAP
 var fadein = gsap.timeline({defaults:{ease:'none'}})
 .to('.loader-icon', {autoAlpha:1})
 .to('.loader-wrap', {rotate: 360, repeat: -1, duration:2}, "<")
-.to('.loader-txt', {autoAlpha:1, repeat: -1, duration:2}, "<")
+.to('.loader-txt', {autoAlpha:1, repeat: -1, duration:0.2}, "<")
 .to('.lokacije-mapbox-container', {autoAlpha:1, delay:0.5})
 .to('.loader-icon', {autoAlpha:0})
 .to('.loader-txt', {autoAlpha:0}, "<")
