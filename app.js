@@ -102,7 +102,7 @@ function initScroll(container) {
     smooth: true, 
     offset: [0, 0],
     getDirection: true,
-    scrollbarContainer: document.querySelector('.fake-scrollbar'),
+    scrollbarContainer: document.querySelector('.xxxfake-scrollbar'),
     scrollFromAnywhere: true,
     multiplier: 1.0, // body sroll speed / object speed values are multiplied
     touchMultiplier: 3.0,
