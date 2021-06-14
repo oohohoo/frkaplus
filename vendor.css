@@ -216,7 +216,7 @@
     width: 3em;
     height: 100%;
     background: url("https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60c712f5640a9b37a36b19ea_arrow_up.svg") no-repeat;
-     background-size: 0.79em; 
+    background-size: 0.79em; 
     background-position: calc(100% - 10px) center;
     background-repeat: no-repeat;
    /*  border-color: #888 transparent transparent transparent; */
@@ -253,6 +253,7 @@
     background: url("https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60c7101c907ce3e5f5b7cdad_arrow_down.svg") no-repeat;
     /* border-color: transparent transparent #888 transparent; */
     position: absolute;
+    background-size: 0.79em; 
     top: -3px;
     right: 3px;
     width: 3em;
