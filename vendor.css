@@ -219,7 +219,7 @@
     width: 2.5em;
     height: 100%;
     border-left-style: solid;
-    border-left-width: 1px;
+    border-left-width: 2px;
     border-left-color: #F4DD54;
     background: url("https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60c712f5640a9b37a36b19ea_arrow_up.svg") no-repeat;
     background-size: 0.79em; 
@@ -263,7 +263,7 @@
     width: 2.5em;
     height: 100%;
     border-left-style: solid;
-    border-left-width: 1px;
+    border-left-width: 2px;
     border-left-color: #F4DD54;
     background-size: 0.79em; 
     height: 100%;
