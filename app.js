@@ -812,8 +812,9 @@ var fadein = gsap.timeline({defaults:{ease:'none'}})
 .to('.loader-wrap', {rotate: 360, repeat: -1, duration:2}, "<")
 .to('.loader-txt', {autoAlpha:1, repeat: -1, duration:0.5}, "<")
 .to('.lokacije-mapbox-container', {autoAlpha:1, duration:1.5, delay:2})
-.to('.loader-icon', {autoAlpha:0}"-=1.5")
-.to('.loader-txt', {autoAlpha:0}, "<")
+.to('.loader-icon', {autoAlpha:0}, "-=1.5")
+.to('.loader-txt', {autoAlpha:0}, "<")fe
+
 /* .to('.fadeheader', {autoAlpha:0, stagger:5}, 4) */
 /* },1500) */
 
