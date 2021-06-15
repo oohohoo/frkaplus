@@ -3245,9 +3245,11 @@ LOKACIJE BOTUNI // PROČISTI
 */
 
 function lokacijeBotuni() {
+  /*
 
 $('.linkos').hover(function() {
 	/* $('.cursor').toggleClass('link-hover'); */
+  /*
 	let textOne = $(this).find('.link_text').eq(0).text();
   $(this).find('.link_text.is--2').text(textOne);
 });
@@ -3258,9 +3260,11 @@ $( ".options .linkos input" ).change(function() {
 });
 
 /*  $( ".check .linkos input" ).change(function() { */
+  /*
   $('.linkos').click(function() {
   $(this).closest('.linkos').toggleClass('selected-toggle');
 });
+*/
 /* 
 $('.field').focus(function() {
 	$(this).closest('.field_parent').find('.field_line').click();
