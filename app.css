@@ -1661,6 +1661,51 @@ display:none!important;
   /* PROBERI ACTIVE BUTTON */
 
  /* OVO KONTROLIRA ŠIRINU ITEM COLUMNI 100% */
+
+
+
+ .webinar-posts__event-wrapper {
+  width: 100%;
+ }
+ 
+ .webinar-posts__event-list {
+   padding: 0;
+   margin: 0 -20px -40px;
+   list-style-type: none;
+   display: flex;
+   align-items: stretch;
+   justify-content: space-between;
+   flex-wrap: wrap;
+ }
+ .webinar-posts__event-list li {
+   margin: 0 20px 40px;
+ }
+ .webinar-posts__event-item {
+  width: calc(50% - 40px);
+   overflow: hidden;
+   position: relative;
+ }
+ 
+ .webinar-posts__event-filter .btn.active {
+   background-color: #E83316;
+   color: #fff;
+ }
+ 
+ .webinar-posts__event-filter .btn:hover, .webinar-posts__event-filter .btn:active, .webinar-posts__event-filter .btn:focus {
+   outline: none;
+ }
+ 
+ .webinar-posts__event-filter .checkboxes {
+   position: absolute;
+   overflow: hidden;
+   z-index: -1;
+   opacity: 0;
+ }
+
+ 
+
+ 
+ /*
   .webinar-posts__event-wrapper {
     width: 100%;
   }
@@ -1713,6 +1758,7 @@ display:none!important;
   }
   */
 
+  /*
   .webinar-posts__event-item .btn {
     font-family: "Open Sans", sans-serif;
     background: 0 0;
@@ -1777,3 +1823,4 @@ display:none!important;
     opacity: 0;
   }
  
+  */
