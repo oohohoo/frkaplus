@@ -3253,13 +3253,13 @@ $('.linkos').hover(function() {
 });
 
 $( ".options .linkos input" ).change(function() {
-	$(this).closest('.shapeso').find('.selected-toggle').removeClass('selected-toggle');
-  $(this).closest('.linkos').addClass('selected-toggle');
+	$(this).closest('.shapeso').find('.active').removeClass('active');
+  $(this).closest('.linkos').addClass('active');
 });
 
 /*  $( ".check .linkos input" ).change(function() { */
   $('.linkos').click(function() {
-  $(this).closest('.linkos').toggleClass('selected-toggle');
+  $(this).closest('.linkos').toggleClass('active');
 });
 /* 
 $('.field').focus(function() {

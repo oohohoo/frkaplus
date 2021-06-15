@@ -1605,17 +1605,17 @@ display:none!important;
     color: inherit;
   } 
  
-  .cursor {
+  /* .cursor {
     pointer-events: none;
-  }
+  } */
   
-  .cursor.link-hover  {
+/*   .cursor.link-hover  {
      mix-blend-mode: difference;
      font-size: 4.5em;
   }
   .cursor.link-hover .cursor_dot {
     background-color: white;
-  } 
+  }  */
   
  /*  body:hover .cursor {
     opacity: 1.0;
@@ -1630,7 +1630,7 @@ display:none!important;
   .link_circle, .radio-button, .field_line {
     pointer-events: none;
   }
-  .selected-toggle .link_circle {
+  .active .link_circle {
     border-radius: 0%;
     margin-bottom: -3em;
   }
