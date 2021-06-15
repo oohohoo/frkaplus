@@ -3123,11 +3123,13 @@ Demo.prototype._handlecategoryChange = function (evt) {
 		// Treat these buttons like radio buttons where only 1 can be selected.
 		if (button.classList.contains('active')) {
 			button.classList.remove('active');
+      console.log("active removed");
 		} else {
 			this.categories.forEach(function (btn) {
 				btn.classList.remove('active');
 			});
 			button.classList.add('active');
+      console.log("active added");
 		}
 		this.filters.categories = this._getCurrentcategoryFilters();
 		this.filter();
