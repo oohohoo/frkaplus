@@ -3038,7 +3038,7 @@ var Shuffle = window.Shuffle;
 
 var Demo = function (element) {
 	this.regions = Array.from(document.querySelectorAll('.js-regions input'));
-	this.categories = Array.from(document.querySelectorAll('.js-categories button'));
+	this.categories = Array.from(document.querySelectorAll('.js-categories .btn'));
   this.message = document.querySelector('.js-message');
 
 	this.shuffle = new Shuffle(element, {
