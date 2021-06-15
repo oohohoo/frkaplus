@@ -2998,238 +2998,187 @@ function newSort() {
 
 
 
+  'use strict';
 
-'use strict';
-
-//select2 start
-	if ($("select").length) {
-		setTimeout(function () {
-			$("select").each(function (index, item) {
-				var text = $(item).data("placeholder");
-				$(item).select2({
-					placeholder: text,
-					minimumResultsForSearch: -1
-				});
-			});
-		}, 100);
-	}
-
-  $("select").each(function (index, item) {
-		$(item).select2({
-			minimumResultsForSearch: -1
-		});
-		$(item).on("change", function (e) {
-			var current = $(item).val();
-			if($(item).closest(".filter-group").length>0) {
-				$(item).closest(".filter-group").find(".checkboxes input").prop( "checked", false );
-				$(item).closest(".filter-group").find("[data-value='" + current + "']").trigger("click");
-			}
-		});
-	});
-	//select2 end
-
-
-  $('select.combobox').select2({ width: 'style' });
-
-
-
-
-var Shuffle = window.Shuffle;
-
-var Demo = function (element) {
-	this.regions = Array.from(document.querySelectorAll('.js-regions input'));
-	this.categories = Array.from(document.querySelectorAll('.js-categories button'));
-  this.message = document.querySelector('.js-message');
-
-	this.shuffle = new Shuffle(element, {
-		easing: 'cubic-bezier(0.165, 0.840, 0.440, 1.000)', // easeOutQuart
-		sizer: '.the-sizer',
-	});
-
-	this.filters = {
-		regions: [],
-		categories: [],
-	};
-
-	this._bindEventListeners();
-};
-
-/**
- * Bind event listeners for when the filters change.
- */
-Demo.prototype._bindEventListeners = function () {
-	this._onregionChange = this._handleregionChange.bind(this);
-	this._oncategoryChange = this._handlecategoryChange.bind(this);
-
-	this.regions.forEach(function (input) {
-		input.addEventListener('change', this._onregionChange);
-	}, this);
-
-	this.categories.forEach(function (button) {
-		button.addEventListener('click', this._oncategoryChange);
-	}, this);
-};
-
-/**
- * Get the values of each checked input.
- * @return {Array.<string>}
- */
-Demo.prototype._getCurrentregionFilters = function () {
-	return this.regions.filter(function (input) {
-		return input.checked;
-	}).map(function (input) {
-		return input.value;
-	});
-};
-
-/**
- * Get the values of each `active` button.
- * @return {Array.<string>}
- */
-Demo.prototype._getCurrentcategoryFilters = function () {
-	return this.categories.filter(function (button) {
-		return button.classList.contains('active');
-	}).map(function (button) {
-		return button.getAttribute('data-value');
-	});
-};
-
-
-/* OVDJE SE DEŠAVA KLIKANJE NA CHECKBOX*/
-/**
- * A region input check state changed, update the current filters and filte.r
- */
-Demo.prototype._handleregionChange = function (evt) {
-	this.filters.regions = this._getCurrentregionFilters();
-	if(this.filters.regions[0]!='all') {
-		this.filter();
-	} else {
-		var regionArray = Array.from(document.querySelectorAll('.js-regions .checkboxes input'));
-		regionArray.forEach(function (input) {
-			input.checked = true;
-		});
-		this.filters.regions = [];
-		this.filter();
-	}
-};
-
-/**
- * A category button was clicked. Update filters and display.
- * @param {Event} evt Click event object.
- */
-Demo.prototype._handlecategoryChange = function (evt) {
-	var button = evt.currentTarget;
-	if(button.dataset.value!='all') {
-		// Treat these buttons like radio buttons where only 1 can be selected.
-		if (button.classList.contains('active')) {
-			button.classList.remove('active');
-      console.log("active removed");
-		} else {
-			this.categories.forEach(function (btn) {
-				btn.classList.remove('active');
-			});
-			button.classList.add('active');
-      console.log("active added");
-		}
-		this.filters.categories = this._getCurrentcategoryFilters();
-		this.filter();
-	} else {
-		this.categories.forEach(function (btn) {
-			btn.classList.remove('active');
-      console.log("active removed");
-		});
-		button.classList.add('active');
-    console.log("active added");
-		this.filters.categories = [];
-		this.filter();
-	}
-};
-
-/**
- * Filter shuffle based on the current state of filters.
- */
-Demo.prototype.filter = function () {
-	if (this.hasActiveFilters()) {
-		this.shuffle.filter(this.itemPassesFilters.bind(this));
-    
-    setTimeout(()=>{
-      this.shuffle.update();
-      console.log("SHUFFLE UPDATED1");
-      locoScroll.update();
-      ScrollTrigger.refresh(true);
-       console.log("Locoscrollupdated + SCROLLTRIGGER REFRESHHHHH 1");
-   },400)  
-
-
-  } else {
-    this.shuffle.filter(Shuffle.ALL_ITEMS);
-     setTimeout(()=>{
-      this.shuffle.update();
-      console.log("SHUFFLE UPDATED2");
-      locoScroll.update();
-      ScrollTrigger.refresh(true);
-    console.log("Locoscrollupdated + SCROLLTRIGGER REFRESHHHHH 2");
-    },400)  
-  }
-
-  if(this.shuffle.visibleItems == 0){
-    this.message.innerHTML = (this.shuffle.visibleItems) + " items";
-
+  //select2 start
+    if ($("select").length) {
+      setTimeout(function () {
+        $("select").each(function (index, item) {
+          var text = $(item).data("placeholder");
+          $(item).select2({
+            placeholder: text,
+            minimumResultsForSearch: -1
+          });
+        });
+      }, 100);
+    }
   
-} else{
-this.message.innerHTML = "";
-/*
-setTimeout(()=>{
-  locoScroll.update();
-  ScrollTrigger.refresh(true);
-   console.log("Locoscrollupdated + SCROLLTRIGGER REFRESHHHHH 3");
-    },200)  
-    */
-
- }
-
-
-
-
-};
-
-/**
- * If any of the arrays in the `filters` property have a length of more than zero,
- * that means there is an active filter.
- * @return {boolean}
- */
-Demo.prototype.hasActiveFilters = function () {
-	return Object.keys(this.filters).some(function (key) {
-		return this.filters[key].length > 0;
-	}, this);
-};
-
-/**
- * Determine whether an element passes the current filters.
- * @param {Element} element Element to test.
- * @return {boolean} Whether it satisfies all current filters.
- */
-Demo.prototype.itemPassesFilters = function (element) {
-	var regions = this.filters.regions;
-	var categories = this.filters.categories;
-	var region = element.getAttribute('data-region');
-	var category = element.getAttribute('data-category');
-	// If there are active region filters and this region is not in that array.
-	if (regions.length > 0 && !regions.includes(region)) {
-		return false;
-	}
-	// If there are active category filters and this category is not in that array.
-	if (categories.length > 0 && !categories.includes(category)) {
-		return false;
-	}
-	return true;
-};
-
-/* document.addEventListener('DOMContentLoaded', function () {
-	window.demo = new Demo(document.querySelector('.js-shuffle'));
-});
- */
-
+    $("select").each(function (index, item) {
+      $(item).select2({
+        minimumResultsForSearch: -1
+      });
+      $(item).on("change", function (e) {
+        var current = $(item).val();
+        if($(item).closest(".filter-group").length>0) {
+          $(item).closest(".filter-group").find(".checkboxes input").prop( "checked", false );
+          $(item).closest(".filter-group").find("[data-value='" + current + "']").trigger("click");
+        }
+      });
+    });
+    //select2 end
+  
+  var Shuffle = window.Shuffle;
+  
+  var Demo = function (element) {
+    this.regions = Array.from(document.querySelectorAll('.js-regions input'));
+    this.categories = Array.from(document.querySelectorAll('.js-categories .btn'));
+  
+    this.shuffle = new Shuffle(element, {
+      easing: 'cubic-bezier(0.165, 0.840, 0.440, 1.000)', // easeOutQuart
+      sizer: '.the-sizer',
+    });
+  
+    
+    this.filters = {
+      regions: [],
+      categories: [],
+    };
+  
+    this._bindEventListeners();
+  };
+  
+  /**
+   * Bind event listeners for when the filters change.
+   */
+  Demo.prototype._bindEventListeners = function () {
+    this._onregionChange = this._handleregionChange.bind(this);
+    this._oncategoryChange = this._handlecategoryChange.bind(this);
+  
+    this.regions.forEach(function (input) {
+      input.addEventListener('change', this._onregionChange);
+    }, this);
+  
+    this.categories.forEach(function (button) {
+      button.addEventListener('click', this._oncategoryChange);
+    }, this);
+  };
+  
+  /**
+   * Get the values of each checked input.
+   * @return {Array.<string>}
+   */
+  Demo.prototype._getCurrentregionFilters = function () {
+    return this.regions.filter(function (input) {
+      return input.checked;
+    }).map(function (input) {
+      return input.value;
+    });
+  };
+  
+  /**
+   * Get the values of each `active` button.
+   * @return {Array.<string>}
+   */
+  Demo.prototype._getCurrentcategoryFilters = function () {
+    return this.categories.filter(function (button) {
+      return button.classList.contains('active');
+    }).map(function (button) {
+      return button.getAttribute('data-value');
+    });
+  };
+  
+  /**
+   * A region input check state changed, update the current filters and filte.r
+   */
+  Demo.prototype._handleregionChange = function (evt) {
+    this.filters.regions = this._getCurrentregionFilters();
+    if(this.filters.regions[0]!='all') {
+      this.filter();
+    } else {
+      var regionArray = Array.from(document.querySelectorAll('.js-regions .checkboxes input'));
+      regionArray.forEach(function (input) {
+        input.checked = true;
+      });
+      this.filters.regions = [];
+      this.filter();
+    }
+  };
+  
+  /**
+   * A category button was clicked. Update filters and display.
+   * @param {Event} evt Click event object.
+   */
+  Demo.prototype._handlecategoryChange = function (evt) {
+    var button = evt.currentTarget;
+    if(button.dataset.value!='all') {
+      // Treat these buttons like radio buttons where only 1 can be selected.
+      if (button.classList.contains('active')) {
+        button.classList.remove('active');
+      } else {
+        this.categories.forEach(function (btn) {
+          btn.classList.remove('active');
+        });
+        button.classList.add('active');
+      }
+      this.filters.categories = this._getCurrentcategoryFilters();
+      this.filter();
+    } else {
+      this.categories.forEach(function (btn) {
+        btn.classList.remove('active');
+      });
+      button.classList.add('active');
+      this.filters.categories = [];
+      this.filter();
+    }
+  };
+  
+  /**
+   * Filter shuffle based on the current state of filters.
+   */
+  Demo.prototype.filter = function () {
+    if (this.hasActiveFilters()) {
+      this.shuffle.filter(this.itemPassesFilters.bind(this));
+    } else {
+      this.shuffle.filter(Shuffle.ALL_ITEMS);
+    }
+  };
+  
+  /**
+   * If any of the arrays in the `filters` property have a length of more than zero,
+   * that means there is an active filter.
+   * @return {boolean}
+   */
+  Demo.prototype.hasActiveFilters = function () {
+    return Object.keys(this.filters).some(function (key) {
+      return this.filters[key].length > 0;
+    }, this);
+  };
+  
+  /**
+   * Determine whether an element passes the current filters.
+   * @param {Element} element Element to test.
+   * @return {boolean} Whether it satisfies all current filters.
+   */
+  Demo.prototype.itemPassesFilters = function (element) {
+    var regions = this.filters.regions;
+    var categories = this.filters.categories;
+    var region = element.getAttribute('data-region');
+    var category = element.getAttribute('data-category');
+    // If there are active region filters and this region is not in that array.
+    if (regions.length > 0 && !regions.includes(region)) {
+      return false;
+    }
+    // If there are active category filters and this category is not in that array.
+    if (categories.length > 0 && !categories.includes(category)) {
+      return false;
+    }
+    return true;
+  };
+  
+ /*  document.addEventListener('DOMContentLoaded', function () {
+    window.demo = new Demo(document.querySelector('.js-shuffle'));
+  }); */
+  
 
 setTimeout(()=>{  
   /*document.addEventListener("DOMContentLoaded", function() { */
