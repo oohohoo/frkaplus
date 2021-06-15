@@ -1747,7 +1747,7 @@ display:none!important;
     position: sticky;
     z-index: 100;
     top: 0;
-    background-color: #fff;
+    background-color: transparent;
     border-top: 1px solid #C9C9C9;
     border-bottom: 1px solid #C9C9C9;
   }
