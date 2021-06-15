@@ -3151,6 +3151,8 @@ Demo.prototype.filter = function () {
 		this.shuffle.filter(this.itemPassesFilters.bind(this));
     
     setTimeout(()=>{
+      this.shuffle.update();
+      console.log("SHUFFLE UPDATED1");
       locoScroll.update();
       ScrollTrigger.refresh(true);
        console.log("Locoscrollupdated + SCROLLTRIGGER REFRESHHHHH 1");
@@ -3160,6 +3162,8 @@ Demo.prototype.filter = function () {
   } else {
     this.shuffle.filter(Shuffle.ALL_ITEMS);
      setTimeout(()=>{
+      this.shuffle.update();
+      console.log("SHUFFLE UPDATED2");
       locoScroll.update();
       ScrollTrigger.refresh(true);
     console.log("Locoscrollupdated + SCROLLTRIGGER REFRESHHHHH 2");
@@ -3231,9 +3235,7 @@ setTimeout(()=>{
        },200)  
 
        setTimeout(()=>{  
-        this.shuffle.update();
-        console.log("SHUFFLE UPDATED");
-       locoScroll.update();
+       ocoScroll.update();
        ScrollTrigger.refresh(true);
        console.log("NAKRAJU RIFREEEŠŠŠŠ");
       },5000) 
