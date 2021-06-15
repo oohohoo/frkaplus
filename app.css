@@ -1630,10 +1630,9 @@ display:none!important;
   .link_circle, .radio-button, .field_line {
     pointer-events: none;
   }
-  .active .link_circle {
+  .selected-toggle .link_circle {
     border-radius: 0%;
     margin-bottom: -3em;
-    background-color: #ff0000;
   }
   
   .field {
