@@ -3136,8 +3136,10 @@ Demo.prototype._handlecategoryChange = function (evt) {
 	} else {
 		this.categories.forEach(function (btn) {
 			btn.classList.remove('active');
+      console.log("active removed");
 		});
 		button.classList.add('active');
+    console.log("active added");
 		this.filters.categories = [];
 		this.filter();
 	}
