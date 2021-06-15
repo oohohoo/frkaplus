@@ -1660,14 +1660,7 @@ display:none!important;
 
   /* PROBERI ACTIVE BUTTON */
 
-  body {
-    background-color: #eee;
-  }
-  
-  .webinar-posts__event {
-    padding-bottom: 227px;
-  }
- 
+ /* OVO KONTROLIRA ŠIRINU ITEM COLUMNI 100% */
   .webinar-posts__event-wrapper {
     width: 100%;
   }
