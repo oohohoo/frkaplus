@@ -722,6 +722,35 @@ zoom: 6.64 // starting zoom
 });
 
 
+/* 
+Add an event listener that runs
+  when a user clicks on the map element.
+*/
+map.on('click', function(e) {
+  // If the user clicked on one of your markers, get its information.
+  var features = map.queryRenderedFeatures(e.point, {
+    layers: ['frkaplus'] // replace with your layer name
+  });
+  if (!features.length) {
+    return;
+  }
+  var feature = features[0];
+
+   /* 
+    Create a popup, specify its options 
+    and properties, and add it to the map.
+  */
+    var popup = new mapboxgl.Popup({ offset: [0, -15] })
+    .setLngLat(feature.geometry.coordinates)
+    .setHTML(
+      '<h3>' + feature.properties.title + '</h3>' +
+      '<p>' + feature.properties.description + '</p>'
+      )
+    .addTo(map);
+    console.log("POPUP on MAP");
+});
+
+
 map.doubleClickZoom.enable();
 console.log("MAP DOUBLECLICK!"); 
 
@@ -745,14 +774,14 @@ document.getElementById('fly').addEventListener('click', function () {
   });
 
 
-map.on('load', function(e) {
+/* map.on('load', function(e) { */
 
 /*
 ================================================================================
 CREATE POPUP
 ================================================================================
 */
-  var popup = new mapboxgl.Popup({
+ /*  var popup = new mapboxgl.Popup({
     closeButton: false,
     closeOnClick: false
   });
@@ -778,7 +807,7 @@ CREATE POPUP
 
   map.on('mouseenter', 'places', showPopup);
   map.on('mouseleave', 'places', hidePopup);
-  });
+  }); */
 
   /*
 ================================================================================
