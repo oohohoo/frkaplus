@@ -3231,6 +3231,8 @@ setTimeout(()=>{
        },200)  
 
        setTimeout(()=>{  
+        this.shuffle.update();
+        console.log("SHUFFLE UPDATED");
        locoScroll.update();
        ScrollTrigger.refresh(true);
        console.log("NAKRAJU RIFREEEŠŠŠŠ");
