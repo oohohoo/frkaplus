@@ -3039,6 +3039,7 @@ var Shuffle = window.Shuffle;
 var Demo = function (element) {
 	this.regions = Array.from(document.querySelectorAll('.js-regions input'));
 	this.categories = Array.from(document.querySelectorAll('.js-categories button'));
+  this.message = document.querySelector('.js-message');
 
 	this.shuffle = new Shuffle(element, {
 		easing: 'cubic-bezier(0.165, 0.840, 0.440, 1.000)', // easeOutQuart
