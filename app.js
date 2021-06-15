@@ -3237,7 +3237,7 @@ setTimeout(()=>{
        },200)  
 
        setTimeout(()=>{  
-       ocoScroll.update();
+       locoScroll.update();
        ScrollTrigger.refresh(true);
        console.log("NAKRAJU RIFREEEŠŠŠŠ");
       },5000) 
