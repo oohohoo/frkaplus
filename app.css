@@ -1667,21 +1667,7 @@ display:none!important;
   .webinar-posts__event {
     padding-bottom: 227px;
   }
-  .webinar-posts__event .container {
-    width: calc(100% - 190px);
-    max-width: 1180px;
-    margin: 0 auto;
-    background-color: transparent;
-    position: relative;
-    padding: 0;
-  }
-  .webinar-posts__event-title {
-    font-size: 60px;
-    font-weight: 800;
-    font-family: "TheSans", sans-serif;
-    color: #000;
-    text-transform: uppercase;
-  }
+ 
   .webinar-posts__event-wrapper {
     width: 100%;
   }
@@ -1702,10 +1688,8 @@ display:none!important;
     overflow: hidden;
     position: relative;
   }
-  .webinar-posts__event-item:hover img, .webinar-posts__event-item:active img, .webinar-posts__event-item:focus img {
-    transform: scale(1.08);
-    transition: transform 0.8s ease;
-  }
+
+
   .webinar-posts__event-item:hover:after, .webinar-posts__event-item:active:after, .webinar-posts__event-item:focus:after {
     height: 10px;
     transition: height 0.2s ease;
@@ -1735,32 +1719,15 @@ display:none!important;
    color: #E83316;
   }
   */
-  .webinar-posts__event-item .description {
-    font-size: 25px;
-    line-height: 1.32em;
-    font-family: "TheSans", sans-serif;
-    font-weight: 300;
-    margin: 0 0 25px;
-    color: #000;
-  }
-  .webinar-posts__event-item .title {
-    min-height: 60px;
-    margin: 0 0 10px;
-    font-size: 35px;
-    font-family: "TheSans", sans-serif;
-    font-weight: 800;
-    text-transform: uppercase;
-    text-decoration: unset;
-    line-height: 1em;
-  }
+
   .webinar-posts__event-item .btn {
     font-family: "Open Sans", sans-serif;
     background: 0 0;
-    border: 1px solid #93908d;
+    border: 1px solid #dc7917;
     border-radius: 15px;
     padding: 5px 15px 6px 15px;
     margin-top: 5px;
-    color: #93908d;
+    color: #c7690a;
     font-size: 18px;
     line-height: 1.27em;
     font-weight: 700;
@@ -1770,18 +1737,10 @@ display:none!important;
   }
   .webinar-posts__event-item .btn:hover, .webinar-posts__event-item .btn:active, .webinar-posts__event-item .btn:focus {
     color: #fff;
-    background-color: #ff0000;
+    background-color: #0059ff;
     border: 1px solid #E83316;
   }
-  .webinar-posts__event-link {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: stretch;
-    width: 100%;
-    height: 100%;
-    text-decoration: unset;
-  }
+
   .webinar-posts__event-filters {
     margin: 0 0 73px;
     padding: 30px 0;
@@ -1824,19 +1783,4 @@ display:none!important;
     z-index: -1;
     opacity: 0;
   }
-  .webinar-posts__event img {
-    height: 367px;
-    width: 100%;
-    transition: transform 0.8s ease;
-    flex-grow: 0;
-  }
-  .webinar-posts__event .content {
-    padding: 50px 44px 40px;
-    background-color: #fff;
-    flex-grow: 1;
-  }
-  .webinar-posts__event .select2-container {
-    max-width: 450px;
-    margin: 0;
-    border: none;
-  }
+ 
