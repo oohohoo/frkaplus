@@ -1673,7 +1673,7 @@ display:none!important;
   }
   .webinar-posts__event-list {
     padding: 0;
-    margin: 0 -20px -40px;
+    margin: 0 -1.04em -2.08em;
     list-style-type: none;
     display: flex;
     align-items: stretch;
@@ -1681,7 +1681,7 @@ display:none!important;
     flex-wrap: wrap;
   }
   .webinar-posts__event-list li {
-    margin: 0 20px 40px;
+    margin: 0 1.04em 2.08em;
   }
   .webinar-posts__event-item {
     width: calc(50% - 40px);
