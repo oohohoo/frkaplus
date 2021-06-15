@@ -3257,7 +3257,7 @@ $( ".options .linkos input" ).change(function() {
 });
 
 /*  $( ".check .linkos input" ).change(function() { */
-  $('.btn').click(function() {
+  $('.linkos').click(function() {
   $(this).closest('.linkos').toggleClass('selected-toggle');
 });
 /* 
