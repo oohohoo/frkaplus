@@ -1824,3 +1824,11 @@ display:none!important;
   }
  
   */
+
+
+.popup-style {
+width:300px;
+height: 150px;
+background-color: whitesmoke;
+color: var(--bcg-lightblue);
+}

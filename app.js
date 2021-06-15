@@ -740,12 +740,14 @@ map.on('click', function(e) {
     Create a popup, specify its options 
     and properties, and add it to the map.
   */
-    var popup = new mapboxgl.Popup({ offset: [0, -15] })
+    var popup = new mapboxgl.Popup({ offset: [0, -15], className: 'popup-style' })
     .setLngLat(feature.geometry.coordinates)
-    .setHTML(
+   /*  .setHTML(
       '<p>' + feature.properties.title + '<p>' +
       '<p>' + feature.properties.description + '</p>'
-      )
+      ) */
+      .setHTML("<h1>Hello World!</h1>")
+      .setMaxWidth("300px")
     .addTo(map);
     console.log("POPUP on MAP");
 });
