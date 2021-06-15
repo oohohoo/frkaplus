@@ -746,8 +746,7 @@ map.on('click', function(e) {
       '<p>' + feature.properties.title + '<p>' +
       '<p>' + feature.properties.description + '</p>'
       ) */
-     
-      .setHTML('<h1>' + feature.properties.title + '</h1>')
+      .setHTML("<h1>Hello World!</h1>")
       .setMaxWidth("300px")
     .addTo(map);
     console.log("POPUP on MAP");
