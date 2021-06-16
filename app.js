@@ -3307,7 +3307,7 @@ setTimeout(()=>{
    $('.newsminigrid').toggleClass('full');
     $('.newsimgwrap').toggleClass('full'); 
   setTimeout(()=>{
-    this.shuffle.update();
+    Shuffle.update();
     locoScroll.update();
    ScrollTrigger.refresh(true); 
    console.log("EVERYTHING FRESHHHHHHH");
