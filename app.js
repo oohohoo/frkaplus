@@ -754,7 +754,7 @@ map.on('click', function(e) {
       '<p>' + feature.properties.description + '</p>'
       ) */
       .setHTML("<h3>Hello World!</h3>")
-      .setMaxWidth("14.06em")
+      .setMaxWidth("300px")
     .addTo(map);
     console.log("POPUP on MAP");
 });

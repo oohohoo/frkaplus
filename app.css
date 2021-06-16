@@ -1842,8 +1842,8 @@ background: transparent;
 
 /* MAPBOX */
 .popup-style {
-width:14.06em;
-height: 5.21em;
+width:270px;
+height: 100px;
 /* background-color: whitesmoke; */
 color: var(--bcg-lightblue);
 }
