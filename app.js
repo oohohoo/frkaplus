@@ -2750,7 +2750,7 @@ CUSTOM SELECT BUTTON - LOKACIJE
 */
 
 function customSelect() {
-
+/*
   $(document).ready(function() { // use jQuery lib
 
     var $select = $("select"),
@@ -2842,7 +2842,7 @@ function customSelect() {
   });
 
 console.log("OHOHOHOHOHOHO BOTUNI");
-
+*/
 }
 
 
@@ -3412,22 +3412,6 @@ $('.linkos').hover(function() {
 
 
 
-/* SWITCH LAYOUT LOKACIJE ITEMS*/
-
-$('.switch-layout').click(function() {
-   $('.webinar-posts__event-item').toggleClass('full'); 
-  $('.newsminigrid').toggleClass('full');
-   $('.newsimgwrap').toggleClass('full'); 
-setTimeout(()=>{
-   locoScroll.update();
-  ScrollTrigger.refresh(true); 
-  console.log("FRESHHHHHHH");
-/*   shuffleUpdate();
-  console.log("SHUFFLE UPDATED"); */
-},200) 
- 
-       
-   });
 
 
 
