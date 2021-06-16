@@ -3145,6 +3145,12 @@ var Demo = function (element) {
 
 	});
 
+
+
+  this.shuffle.destroy();
+console.log("SHUFFLE DESTROYED");
+
+
 	this.filters = {
 		regions: [],
 		categories: [],
@@ -3344,8 +3350,7 @@ setTimeout(()=>{
 
 /* Shuffle.destroy();
 this.shuffle.update(); */
-this.shuffle.destroy();
-console.log("SHUFFLE DESTROYED");
+
 /* setTimeout(function () {
   shuffleItems.shuffle('destroy').shuffle();
 }, 100);
