@@ -3398,7 +3398,7 @@ setTimeout(()=>{
   console.log("SHUFFLE UPDATED"); */
 }5r00) 
  
-       console.log("APDEJT APDEJT");
+       console.log("UOPUPUPUP");
    });
 
 
