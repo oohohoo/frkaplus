@@ -3390,15 +3390,15 @@ $('.linkos').hover(function() {
 $('.switch-layout').click(function() {
    $('.webinar-posts__event-item').toggleClass('full'); 
   $('.newsminigrid').toggleClass('full');
-/*   $('.newsimgwrap').toggleClass('full'); */
+   $('.newsimgwrap').toggleClass('full'); 
 setTimeout(()=>{
    locoScroll.update();
   ScrollTrigger.refresh(true);
-  shuffleUpdate();
-  console.log("SHUFFLE UPDATED");
+/*   shuffleUpdate();
+  console.log("SHUFFLE UPDATED"); */
 },200) 
  
-     /*  console.log("ŠAFLE LOCO STRIGER APDEJTID"); */
+       console.log("APDEJT APDEJT");
    });
 
 
