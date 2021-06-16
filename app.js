@@ -3373,9 +3373,9 @@ $('.linkos').hover(function() {
 /* SWITCH LAYOUT LOKACIJE ITEMS*/
 
 $('.switch-layout').click(function() {
-  $('.webinar-posts__event-item').toggleClass('full');
-/*   $('.newsminigrid').toggleClass('full');
-  $('.newsimgwrap').toggleClass('full'); */
+/*   $('.webinar-posts__event-item').toggleClass('full'); */
+  $('.newsminigrid').toggleClass('full');
+  $('.newsimgwrap').toggleClass('full');
   this.shuffle.update();
       console.log("ŠAFLE APDEJTID");
    });
