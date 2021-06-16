@@ -3451,17 +3451,17 @@ $('.field').change(function() {
       $('.webinar-posts__event-item').toggleClass('full'); 
      $('.newsminigrid').toggleClass('full');
       $('.newsimgwrap').toggleClass('full'); 
-    /* setTimeout(()=>{ */
+    setTimeout(()=>{ 
      /* this.shuffle.update(); */
       locoScroll.update();
      ScrollTrigger.refresh(true); 
      console.log("EVERYTHING FRESHHHHHHH");
     /*   shuffleUpdate();
      console.log("SHUFFLE UPDATED"); */
-    });
+    }, 3000);
     
 
-    
+
 
   
 
