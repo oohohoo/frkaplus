@@ -776,7 +776,7 @@ document.getElementById('fly').addEventListener('click', function () {
   // by up to 5 degrees.
   map.flyTo({
   center: [15.9595615, 45.7768948],
-  zoom: 12, // starting zoom
+  zoom: 18, // starting zoom
   essential: true // this animation is considered essential with respect to prefers-reduced-motion
   });
   });
