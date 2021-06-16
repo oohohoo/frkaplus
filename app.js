@@ -3166,6 +3166,22 @@ console.log("SHUFFLE DESTROYED"); */
 };
 
 
+    /* SWITCH LAYOUT LOKACIJE ITEMS*/
+
+    $('.switch-layout').click(function() {
+      $('.webinar-posts__event-item').toggleClass('full'); 
+     $('.newsminigrid').toggleClass('full');
+      $('.newsimgwrap').toggleClass('full'); 
+    /* setTimeout(()=>{ */
+      this.shuffle.update(); 
+      locoScroll.update();
+     ScrollTrigger.refresh(true); 
+     console.log("EVERYTHING FRESHHHHHHH");
+    /*   shuffleUpdate();
+     console.log("SHUFFLE UPDATED"); */
+    });
+    
+
 
 
     
@@ -3445,20 +3461,6 @@ $('.field').change(function() {
 
 
 
-    /* SWITCH LAYOUT LOKACIJE ITEMS*/
-
-$('.switch-layout').click(function() {
-  $('.webinar-posts__event-item').toggleClass('full'); 
- $('.newsminigrid').toggleClass('full');
-  $('.newsimgwrap').toggleClass('full'); 
-/* setTimeout(()=>{ */
-  this.shuffle.update(); 
-  locoScroll.update();
- ScrollTrigger.refresh(true); 
- console.log("EVERYTHING FRESHHHHHHH");
-/*   shuffleUpdate();
- console.log("SHUFFLE UPDATED"); */
-});
 
 
   
