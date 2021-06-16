@@ -40,7 +40,7 @@ function sorting() {
       sizer: ".the-sizer",
        buffer: 1,
       /*DODANO*/
-      itemSelector: '.picture-item',
+     /*  itemSelector: '.picture-item', */
     });
    
 
