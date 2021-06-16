@@ -875,18 +875,18 @@ document.getElementById('zadar').addEventListener('change', function () {
 MAP RESIZE
 ================================================================================
 */
-
+/*
  map.once('load', () => {
 map.resize();
 });
 console.log("MAP RESIZE!"); 
-
+/*
 /*  },200)   */
 
-
+/*
 mapboxgl.clearStorage();
 console.log("STORAGE CLEARED"); 
-
+*/
 
 
  /* 
@@ -898,7 +898,7 @@ FADE IN MAP
   */
 /* setTimeout(()=>{ */
 
-  /*
+  
 var fadein = gsap.timeline({defaults:{ease:'none'}})
 .to('.loader-icon', {autoAlpha:1})
 .to('.loader-wrap', {rotate: 360, repeat: -1, duration:2}, "<")
