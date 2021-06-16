@@ -3380,7 +3380,7 @@ setTimeout(()=>{
   this.shuffle.update();
   locoScroll.update();
   ScrollTrigger.refresh(true);
-},200) 
+},500) 
  
       console.log("ŠAFLE LOCO STRIGER APDEJTID");
    });
