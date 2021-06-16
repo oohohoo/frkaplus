@@ -782,7 +782,7 @@ FLY TO ZAGREB
 ================================================================================
 */
 
-document.getElementById('fly').addEventListener('click', function () {
+document.getElementById('zagreb').addEventListener('click', function () {
   // Fly to a random location by offsetting the point -74.50, 40
   // by up to 5 degrees.
   map.flyTo({
@@ -791,7 +791,7 @@ document.getElementById('fly').addEventListener('click', function () {
   essential: true // this animation is considered essential with respect to prefers-reduced-motion
   });
   });
-
+  console.log("zagreb clicked");
 /* map.on('load', function(e) { */
 
 /*
