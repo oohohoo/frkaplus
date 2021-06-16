@@ -732,35 +732,12 @@ zoom: 6.64 // starting zoom
 Add an event listener that runs
   when a user clicks on the map element.
 */
-map.on('click', function(e) {
-  // If the user clicked on one of your markers, get its information.
-  var features = map.queryRenderedFeatures(e.point, {
-    layers: ['frkaplus'] // replace with your layer name
-  });
-  if (!features.length) {
-    return;
-  }
-  var feature = features[0];
 
    /* 
     Create a popup, specify its options 
     and properties, and add it to the map.
   */
-    var popup = new mapboxgl.Popup({ offset: [0, -15], className: 'popup-style' })
-    .setLngLat(feature.geometry.coordinates)
-   /*  .setHTML(
-      '<p>' + feature.properties.title + '<p>' +
-      '<p>' + feature.properties.description + '</p>'
-      ) */
-      .setHTML("<h1>Hello World!</h1>")
-      .setMaxWidth("300px")
-    .addTo(map);
-    console.log("POPUP on MAP");
-});
 
-
-map.doubleClickZoom.enable();
-console.log("MAP DOUBLECLICK!"); 
 
 
 
@@ -771,15 +748,7 @@ FLY TO LOCATION
 ================================================================================
 */
 
-document.getElementById('fly').addEventListener('click', function () {
-  // Fly to a random location by offsetting the point -74.50, 40
-  // by up to 5 degrees.
-  map.flyTo({
-  center: [15.9595615, 45.7768948],
-  zoom: 12, // starting zoom
-  essential: true // this animation is considered essential with respect to prefers-reduced-motion
-  });
-  });
+
 
 
   /*
