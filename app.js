@@ -3444,8 +3444,8 @@ $('.field').change(function() {
   $('.webinar-posts__event-item').toggleClass('full'); 
  $('.newsminigrid').toggleClass('full');
   $('.newsimgwrap').toggleClass('full'); 
-  $('.location-switcher_column).toggleClass('hide');
-  $('.location-switcher_full).toggleClass('hide');
+  $('.location-switcher_column').toggleClass('hide');
+  $('.location-switcher_full').toggleClass('hide');
   /* setTimeout(()=>{ */
  /*  Demo.this.shuffle.update();  */
   locoScroll.update();
