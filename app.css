@@ -1593,7 +1593,8 @@ display:none!important;
 /* FINALNI FILTERI*/
 
 
-/* LOKACIJE BOTUNI*/
+/* LOKACIJE BOTUNI TIMOTY
+*/
 .radio-button {pointer-events: auto;}
 .link_container.is--submit.disable {pointer-events: none;}
 
@@ -1825,7 +1826,7 @@ display:none!important;
  
   */
 
-
+/* MAPBOX */
 .popup-style {
 width:300px;
 height: 150px;
