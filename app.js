@@ -327,8 +327,7 @@ function initContent() {
     
     newSort();
     lokacijeBotuni();
-    resizeLeftRight();
-    locationMap();
+       locationMap();
     console.log("NEW SORT LOADED DIRECTLY");
    /*  sorting(); */
     /* sortButtons(); */
@@ -3399,40 +3398,3 @@ $('.field').change(function() {
 
 
 
-  /*
-================================================================================
-LOKACIJE POVEĆAJ LIJEVU ILI DESNU STRANU
-================================================================================
-*/
-
-function resizeLeftRight() {
-
-
-/* POVEĆAJ LIJEVU/DESNU STRANU ON HOVER*/
-const wrap = document.querySelector(".options-sec");
-const lft = document.querySelector(".moveleft");
-const rgt = document.querySelector(".moveright");
-
-  gsap.set(lft, { width: "50%" });
-  gsap.set(rgt, { width: "50%" });
-
-lft.addEventListener("mouseenter", () => {
-  gsap.to(lft, {width: "60%" });
-  gsap.to(rgt, {width: "40%" });
-  
-});
-
-
-rgt.addEventListener("mouseenter", () => { 
-  gsap.to(rgt, {width: "60%" });
-  gsap.to(lft, {width: "40%" });
-
-});
-
-wrap.addEventListener("mouseleave", () => {
-  gsap.to(lft, {width: "50%" });
-  gsap.to(rgt, {width: "50%" });
- 
-});
-
-}
