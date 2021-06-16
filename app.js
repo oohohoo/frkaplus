@@ -2791,6 +2791,69 @@ console.log("SHUFFLE DESTROYED"); */
 	this._bindEventListeners();
 };
 
+/* S O R T  ODAVDE*/
+
+
+  /**
+   * Sorting
+   */
+   Demo.prototype.addSorting = function () {
+    document.querySelector('.sort-order').addEventListener('change', this._handleSortChange.bind(this));
+    document.querySelector('.sort-options').addEventListener('change', this._handleSortChange.bind(this));
+  };
+  
+  Demo.prototype._handleSortChange = function (event) {
+    //var value = event.target.value;
+    var value = document.querySelector('.sort-options').value;
+  
+    function reverseOrder() {
+      if (document.querySelector('.sort-order').checked) {
+        return true;
+      } 
+      return false;
+    }
+    reverseOrder();
+    
+    function sortByShape(element) {
+      return element.getAttribute('data-shape');
+    }
+  
+    function sortByColor(element) {
+      return element.getAttribute('data-color');
+    }
+     function sortByTitle(element) {
+      return element.getAttribute('data-title');
+    }
+  
+  
+    var options;
+    if (value === 'shape') {
+      options = {
+        reverse: reverseOrder(),
+        by: sortByShape,
+      };
+    } else if (value === 'color') {
+      options = {
+        reverse: !reverseOrder(),
+        by: sortByColor,
+      };
+      } else if (value === 'title') {
+      options = {
+        reverse: !reverseOrder(),
+        by: sortByTitle,
+      };
+    } else {
+      options = {};
+    }
+    this.shuffle.sort(options);
+  };
+  
+
+
+/* DOVDE */
+
+
+
 
 
 /**
@@ -2852,10 +2915,12 @@ Demo.prototype._handleregionChange = function (evt) {
 	}
 };
 
+/*
 /**
  * A category button was clicked. Update filters and display.
  * @param {Event} evt Click event object.
  */
+/*
 Demo.prototype._handlecategoryChange = function (evt) {
 	var button = evt.currentTarget;
 	if(button.dataset.value!='all') {
@@ -2883,7 +2948,7 @@ Demo.prototype._handlecategoryChange = function (evt) {
 		this.filter();
 	}
 };
-
+*/
 /**
  * Filter shuffle based on the current state of filters.
  */
