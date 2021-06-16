@@ -2978,7 +2978,10 @@ Demo.prototype.filter = function () {
 
   if(this.shuffle.visibleItems == 0){
     this.message.innerHTML = (this.shuffle.visibleItems) + " items";
-
+    setTimeout(()=>{
+      locoScroll.update();
+       console.log("Locoscrollupdated 3");
+        },200)  
   
 } else{
 this.message.innerHTML = "";
@@ -3021,11 +3024,11 @@ Demo.prototype.itemPassesFilters = function (element) {
 	var region = element.getAttribute('data-region');
 	var category = element.getAttribute('data-category');
 	// If there are active region filters and this region is not in that array.
-	if (regions.length > 0 && !regions.includes(region)) {
+	if (regions.length > 0 && !regions.includes(regions, region)) {
 		return false;
 	}
 	// If there are active category filters and this category is not in that array.
-	if (categories.length > 0 && !categories.includes(category)) {
+	if (categories.length > 0 && !categories.includes(categories, category)) {
 		return false;
 	}
 	return true;
