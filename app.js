@@ -3160,7 +3160,7 @@ $('.switch-layout').click(function() {
 /*   shuffleUpdate();
  console.log("SHUFFLE UPDATED"); */
 /* },200)  */
-
+}
 
 
  /*  this.shuffle.update();
