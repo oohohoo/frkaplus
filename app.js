@@ -3368,6 +3368,16 @@ $('.linkos').hover(function() {
  /*  $(this).closest('.linkos').toggleClass('selected-toggle'); */
 });
 
+
+
+/* SWITCH LAYOUT LOKACIJE ITEMS*/
+
+$('.switch-layout').click(function() {
+  $('.webinar-posts__event-item').toggleClass('full');
+   });
+
+   
+
 /* 
 $('.field').focus(function() {
 	$(this).closest('.field_parent').find('.field_line').click();
