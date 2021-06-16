@@ -1699,6 +1699,27 @@ background: transparent;
  /*   overflow: hidden;
    position: relative; */
  }
+
+
+ .newsimgwrap.full {
+   width:100%;
+   height:100%
+ }
+
+
+.newsminigrid.full {
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+
+.newsminigrid.full {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
  
  .webinar-posts__event-filter .btn.activex {
   /*  background-color: #E83316;
