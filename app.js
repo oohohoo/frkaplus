@@ -3176,7 +3176,7 @@ $('.switch-layout').click(function() {
  $('.newsminigrid').toggleClass('full');
   $('.newsimgwrap').toggleClass('full'); 
 setTimeout(()=>{
- this.shuffle.update();
+ $(this).shuffle.update();
   locoScroll.update();
  ScrollTrigger.refresh(true); 
  console.log("EVERYTHING FRESHHHHHHH");
@@ -3187,7 +3187,7 @@ setTimeout(()=>{
   });
 
 
-  
+
 /**
  * Bind event listeners for when the filters change.
  */
