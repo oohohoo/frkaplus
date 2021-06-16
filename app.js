@@ -159,7 +159,7 @@ console.log("refresh init mamicu mu AJMOOOO");
 window.addEventListener('resize', function(){
   locoScroll.update();
   ScrollTrigger.refresh();
-  console.log("RESIZE REFRESH of LOCO + SCROLLTRIG");
+  console.log("RESIZE REFRESHHHHHH ST+LS");
 });
 
 
