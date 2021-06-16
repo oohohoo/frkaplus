@@ -3344,7 +3344,7 @@ setTimeout(()=>{
 
 /* Shuffle.destroy();
 this.shuffle.update(); */
-window.Shuffle.destroy();
+Shuffle.destroy();
 console.log("SHUFFLE DESTROYED");
 /* setTimeout(function () {
   shuffleItems.shuffle('destroy').shuffle();
