@@ -3365,9 +3365,8 @@ setTimeout(()=>{
   /*document.addEventListener("DOMContentLoaded", function() { */
     window.demo = new Demo(document.querySelector(".js-shuffle"));
        },200)  
-
        setTimeout(()=>{  
-       locoScroll.update();
+     /*   locoScroll.update(); */
        ScrollTrigger.refresh(true);
        console.log("NAKRAJU RIFREEEŠŠŠŠ");
       },500) 
