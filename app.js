@@ -3135,8 +3135,14 @@ var Demo = function (element) {
   this.message = document.querySelector('.js-message');
 
 	this.shuffle = new Shuffle(element, {
+    buffer: 1,
 		easing: 'cubic-bezier(0.165, 0.840, 0.440, 1.000)', // easeOutQuart
 		sizer: '.the-sizer',
+    staggerAmount: 15, // Transition delay offset for each item in milliseconds.
+    staggerAmountMax: 150, // Maximum stagger delay in milliseconds.
+    throttle: throttle, // By default, shuffle will throttle resize events. This can be changed or removed.
+    throttleTime: 300,
+
 	});
 
 	this.filters = {
