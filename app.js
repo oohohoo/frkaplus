@@ -3335,7 +3335,16 @@ setTimeout(()=>{
        console.log("NAKRAJU RIFREEEŠŠŠŠ");
       },5000) 
       
+
+
+      function shuffleUpdate() {
+      this.shuffle.update();
+      console.log("SHUFFLE UPDATED");
+      }
+
 }
+
+
 
 
 
@@ -3377,7 +3386,7 @@ $('.switch-layout').click(function() {
   $('.newsminigrid').toggleClass('full');
 /*   $('.newsimgwrap').toggleClass('full'); */
 setTimeout(()=>{
-  this.shuffle.update();
+  shuffleUpdate();
   locoScroll.update();
   ScrollTrigger.refresh(true);
 },500) 
