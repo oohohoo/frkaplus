@@ -3147,14 +3147,16 @@ var Demo = function (element) {
 
 
 
- /*  this.shuffle.update();
-console.log("SHUFFLE UPDATED"); */
-shufleupdate();
+
 
 function shufleupdate() {
   this.shuffle.update();
-console.log("SHUFFLE UPDATED FROM CALL");
 }
+
+ /*  this.shuffle.update();
+console.log("SHUFFLE UPDATED"); */
+shufleupdate();
+console.log("SHUFFLE UPDATED FROM CALL");
 
 /* this.shuffle.destroy();
 console.log("SHUFFLE DESTROYED"); */
