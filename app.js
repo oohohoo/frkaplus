@@ -3146,23 +3146,7 @@ var Demo = function (element) {
 	});
 
 
-    /* SWITCH LAYOUT LOKACIJE ITEMS*/
-
-    $('.switch-layout').click(function() {
-      $('.webinar-posts__event-item').toggleClass('full'); 
-     $('.newsminigrid').toggleClass('full');
-      $('.newsimgwrap').toggleClass('full'); 
-    setTimeout(()=>{
-     shuffle.update();
-      locoScroll.update();
-     ScrollTrigger.refresh(true); 
-     console.log("EVERYTHING FRESHHHHHHH");
-    /*   shuffleUpdate();
-     console.log("SHUFFLE UPDATED"); */
-    },200) 
-        
-      });
-
+    
 
 
 
@@ -3183,6 +3167,27 @@ console.log("SHUFFLE DESTROYED"); */
 	this._bindEventListeners();
 };
 
+
+
+/* SWITCH LAYOUT LOKACIJE ITEMS*/
+
+$('.switch-layout').click(function() {
+  $('.webinar-posts__event-item').toggleClass('full'); 
+ $('.newsminigrid').toggleClass('full');
+  $('.newsimgwrap').toggleClass('full'); 
+setTimeout(()=>{
+ this.shuffle.update();
+  locoScroll.update();
+ ScrollTrigger.refresh(true); 
+ console.log("EVERYTHING FRESHHHHHHH");
+/*   shuffleUpdate();
+ console.log("SHUFFLE UPDATED"); */
+},200) 
+    
+  });
+
+
+  
 /**
  * Bind event listeners for when the filters change.
  */
