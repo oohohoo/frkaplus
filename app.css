@@ -1664,6 +1664,12 @@ display:none!important;
  /* OVO KONTROLIRA ŠIRINU ITEM COLUMNI 100% */
 
 
+ .btn {
+width: 100%;
+height: 100%;
+
+
+ }
 
  .webinar-posts__event-wrapper {
   width: 100%;
