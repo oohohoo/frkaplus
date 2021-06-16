@@ -2750,10 +2750,11 @@ function toArray(thing) {
 
 
 var Demo = function (element) {
-
+/* UBAČENO*/ 
   this.element = element;
 /*   this.gridItems = this.element.querySelectorAll('.webinar-posts__event-item); */
-	this.regions = Array.from(document.querySelectorAll('.js-regions input'));
+	
+this.regions = Array.from(document.querySelectorAll('.js-regions input'));
 	this.categories = Array.from(document.querySelectorAll('.js-categories button'));
   this.message = document.querySelector('.js-message');
 
@@ -2762,7 +2763,7 @@ var Demo = function (element) {
 		easing: 'cubic-bezier(0.165, 0.840, 0.440, 1.000)', // easeOutQuart
 		sizer: '.the-sizer',
     buffer:1,
-    itemSelector: '.webinar-posts__event-item',
+    itemSelector: '.webinar-posts__event-items',
    /* staggerAmount: 15, // Transition delay offset for each item in milliseconds.
     staggerAmountMax: 150, // Maximum stagger delay in milliseconds.
     throttle: throttle, // By default, shuffle will throttle resize events. This can be changed or removed.
