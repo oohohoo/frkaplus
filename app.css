@@ -1688,11 +1688,7 @@ background: transparent;
  .webinar-posts__event-list li {
    margin: 0 20px 40px;
  }
- .webinar-posts__event-item {
-  width: calc(50% - 40px);
- /*   overflow: hidden;
-   position: relative; */
- }
+
 
  .webinar-posts__event-item.full {
   width: 100%;
@@ -1707,12 +1703,12 @@ background: transparent;
  }
 
 
-.newsminigrid.full {
+/* .newsminigrid.full {
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
-}
+} */
 
 .newsminigrid.full {
   grid-template-columns: 1fr 1fr;
