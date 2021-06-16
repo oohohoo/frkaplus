@@ -3361,9 +3361,11 @@ $( ".options .linkos input" ).change(function() {
 
 /*  $( ".check .linkos input" ).change(function() { */
  
- /*  $('.linkos').click(function() {
-  $(this).closest('.linkos').toggleClass('selected-toggle');
-}); */
+  $('.linkos').click(function() {
+    $(".linkos").removeClass("selected-toggle");
+    $(this).addClass("selected-toggle");
+ /*  $(this).closest('.linkos').toggleClass('selected-toggle'); */
+});
 
 /* 
 $('.field').focus(function() {
