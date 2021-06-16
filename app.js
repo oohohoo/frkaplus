@@ -3376,8 +3376,13 @@ $('.switch-layout').click(function() {
 /*   $('.webinar-posts__event-item').toggleClass('full'); */
   $('.newsminigrid').toggleClass('full');
 /*   $('.newsimgwrap').toggleClass('full'); */
+setTimeout(()=>{
   this.shuffle.update();
-      console.log("ŠAFLE APDEJTID");
+  locoScroll.update();
+  ScrollTrigger.refresh(true);
+},200) 
+ 
+      console.log("ŠAFLE LOCO STRIGER APDEJTID");
    });
 
 
