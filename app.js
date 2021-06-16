@@ -2750,7 +2750,7 @@ CUSTOM SELECT BUTTON - LOKACIJE
 */
 
 function customSelect() {
-/*
+
   $(document).ready(function() { // use jQuery lib
 
     var $select = $("select"),
@@ -2842,7 +2842,7 @@ function customSelect() {
   });
 
 console.log("OHOHOHOHOHOHO BOTUNI");
-*/
+
 }
 
 
