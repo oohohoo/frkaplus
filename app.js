@@ -3447,26 +3447,24 @@ $('.field').change(function() {
 
     /* SWITCH LAYOUT LOKACIJE ITEMS*/
 
-    $('.switch-layout').click(function() {
-      $('.webinar-posts__event-item').toggleClass('full'); 
-     $('.newsminigrid').toggleClass('full');
-      $('.newsimgwrap').toggleClass('full'); 
-    setTimeout(()=>{ 
-     /* this.shuffle.update(); */
-      locoScroll.update();
-     ScrollTrigger.refresh(true); 
-     
-    /*   shuffleUpdate();
-     console.log("SHUFFLE UPDATED"); */
-    }, 3000);
-    
-    console.log("EVERYTHING FRESHHHHHHH");
+$('.switch-layout').click(function() {
+  $('.webinar-posts__event-item').toggleClass('full'); 
+ $('.newsminigrid').toggleClass('full');
+  $('.newsimgwrap').toggleClass('full'); 
+/* setTimeout(()=>{ */
+  this.shuffle.update(); 
+  locoScroll.update();
+ ScrollTrigger.refresh(true); 
+ console.log("EVERYTHING FRESHHHHHHH");
+/*   shuffleUpdate();
+ console.log("SHUFFLE UPDATED"); */
+});
 
 
   
 
     
-});
+}
 
 
 
