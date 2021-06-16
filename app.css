@@ -1713,7 +1713,7 @@ background: transparent;
  
 
 
- .link_container:nth-of-type(1) {
+ .link_container:nth-child(1) {
   padding: 0.8em 0em;
 }
 
