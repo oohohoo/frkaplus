@@ -3148,15 +3148,29 @@ var Demo = function (element) {
 
 
 
+  /* SWITCH LAYOUT LOKACIJE ITEMS*/
 
-function shufleupdate() {
+$('.switch-layout').click(function() {
+  $('.webinar-posts__event-item').toggleClass('full'); 
+ $('.newsminigrid').toggleClass('full');
+  $('.newsimgwrap').toggleClass('full'); 
+setTimeout(()=>{
   this.shuffle.update();
-}
+  locoScroll.update();
+ ScrollTrigger.refresh(true); 
+ console.log("EVERYTHING FRESHHHHHHH");
+/*   shuffleUpdate();
+ console.log("SHUFFLE UPDATED"); */
+},200) 
+    
+  });
+
+
 
  /*  this.shuffle.update();
 console.log("SHUFFLE UPDATED"); */
-shufleupdate();
-console.log("SHUFFLE UPDATED FROM CALL");
+/* shufleupdate();
+console.log("SHUFFLE UPDATED FROM CALL"); */
 
 /* this.shuffle.destroy();
 console.log("SHUFFLE DESTROYED"); */
