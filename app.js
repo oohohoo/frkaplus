@@ -3329,7 +3329,6 @@ Demo.prototype.itemPassesFilters = function (element) {
 });
  */
 
-
 setTimeout(()=>{  
   /*document.addEventListener("DOMContentLoaded", function() { */
     window.demo = new Demo(document.querySelector(".js-shuffle"));
@@ -3339,15 +3338,26 @@ setTimeout(()=>{
        locoScroll.update();
        ScrollTrigger.refresh(true);
        console.log("NAKRAJU RIFREEEŠŠŠŠ");
-      },5000) 
+      },500) 
       
 
+
+/* Shuffle.destroy();
+this.shuffle.update(); */
+window.Shuffle.destroy();
+console.log("SHUFFLE DESTROYED");
+/* setTimeout(function () {
+  shuffleItems.shuffle('destroy').shuffle();
+}, 100);
+ */
+
+/*
 
       function shuffleUpdate() {
       this.shuffle.update();
       console.log("SHUFFLE UPDATED");
       }
-
+*/
 }
 
 
@@ -3385,6 +3395,7 @@ $('.linkos').hover(function() {
 
 
 
+
 /* SWITCH LAYOUT LOKACIJE ITEMS*/
 
 $('.switch-layout').click(function() {
@@ -3397,7 +3408,7 @@ setTimeout(()=>{
   console.log("FRESHHHHHHH");
 /*   shuffleUpdate();
   console.log("SHUFFLE UPDATED"); */
-},3000) 
+},200) 
  
        
    });
