@@ -3394,11 +3394,12 @@ $('.switch-layout').click(function() {
 setTimeout(()=>{
    locoScroll.update();
   ScrollTrigger.refresh(true); 
+  console.log("FRESHHHHHHH");
 /*   shuffleUpdate();
   console.log("SHUFFLE UPDATED"); */
-},300) 
+},3000) 
  
-       console.log("UOPUPUPUP");
+       
    });
 
 
