@@ -2752,7 +2752,7 @@ function toArray(thing) {
 var Demo = function (element) {
 
   this.element = element;
-  this.gridItems = this.element.querySelectorAll('.webinar-posts__event-item);
+/*   this.gridItems = this.element.querySelectorAll('.webinar-posts__event-item); */
 	this.regions = Array.from(document.querySelectorAll('.js-regions input'));
 	this.categories = Array.from(document.querySelectorAll('.js-categories button'));
   this.message = document.querySelector('.js-message');
