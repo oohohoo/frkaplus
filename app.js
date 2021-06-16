@@ -3159,7 +3159,7 @@ $('.switch-layout').click(function() {
  console.log("EVERYTHING FRESHHHHHHH");
 /*   shuffleUpdate();
  console.log("SHUFFLE UPDATED"); */
-}) 
+});
 
 
 
