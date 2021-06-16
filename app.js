@@ -3396,7 +3396,7 @@ setTimeout(()=>{
 /*   ScrollTrigger.refresh(true); */
 /*   shuffleUpdate();
   console.log("SHUFFLE UPDATED"); */
-}5r00) 
+}500) 
  
        console.log("UOPUPUPUP");
    });
