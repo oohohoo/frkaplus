@@ -2920,7 +2920,7 @@ Demo.prototype._handleregionChange = function (evt) {
  * A category button was clicked. Update filters and display.
  * @param {Event} evt Click event object.
  */
-/*
+
 Demo.prototype._handlecategoryChange = function (evt) {
 	var button = evt.currentTarget;
 	if(button.dataset.value!='all') {
@@ -2948,7 +2948,7 @@ Demo.prototype._handlecategoryChange = function (evt) {
 		this.filter();
 	}
 };
-*/
+
 /**
  * Filter shuffle based on the current state of filters.
  */
@@ -2978,10 +2978,7 @@ Demo.prototype.filter = function () {
 
   if(this.shuffle.visibleItems == 0){
     this.message.innerHTML = (this.shuffle.visibleItems) + " items";
-    setTimeout(()=>{
-      locoScroll.update();
-       console.log("Locoscrollupdated 3");
-        },200)  
+
   
 } else{
 this.message.innerHTML = "";
