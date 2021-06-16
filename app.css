@@ -1714,17 +1714,16 @@ background: transparent;
   grid-template-rows: auto;
 }
 
-
 .newsminigrid.full {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
 }
 
  
- .webinar-posts__event-filter .btn.activex {
-  /*  background-color: #E83316;
-   color: #fff; */
- }
+ /* .webinar-posts__event-filter .btn.activex {
+   background-color: #E83316;
+   color: #fff; 
+ } */
  
  .webinar-posts__event-filter .btn:hover, .webinar-posts__event-filter .btn:active, .webinar-posts__event-filter .btn:focus {
    outline: none;
