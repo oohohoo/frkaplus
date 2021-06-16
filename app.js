@@ -3354,11 +3354,11 @@ $('.linkos').hover(function() {
   $(this).find('.link_text.is--2').text(textOne);
 });
 
-$( ".options .linkos input" ).change(function() {
+/* $( ".options .linkos input" ).change(function() {
 	$(this).closest('.shapeso').find('.selected-toggle').removeClass('selected-toggle');
   $(this).closest('.linkos').addClass('selected-toggle');
 });
-
+ */
 /*  $( ".check .linkos input" ).change(function() { */
  
   $('.linkos').click(function() {
