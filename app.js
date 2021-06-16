@@ -710,7 +710,7 @@ LOCATION MAP
 ================================================================================
 */
 
-function locationMap() {
+function locationMap() { 
 
  /*  setTimeout(()=>{
     myMap = createMapbox(data.next.container);
@@ -721,7 +721,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZm9nc2VsbGVyIiwiYSI6ImNrN2VpbXlpbjAwNDIzbnM1N
 
 var map = new mapboxgl.Map({
  /*  width: 1280,
-  height: 800,  */
+  height: 800,  */  
 container: 'map', // container ID
 style: 'mapbox://styles/fogseller/cknip0h0j0oqm17mgvd8wwi8y?optimize=true', // style URL / dodano optimize=true
 center: [16.527, 44.663], // starting position [lng, lat]
@@ -753,8 +753,8 @@ map.on('click', function(e) {
       '<p>' + feature.properties.title + '<p>' +
       '<p>' + feature.properties.description + '</p>'
       ) */
-      .setHTML("<h1>Hello World!</h1>")
-      .setMaxWidth("300px")
+      .setHTML("<h3>Hello World!</h3>")
+      .setMaxWidth("14.06em")
     .addTo(map);
     console.log("POPUP on MAP");
 });
