@@ -3024,11 +3024,11 @@ Demo.prototype.itemPassesFilters = function (element) {
 	var region = element.getAttribute('data-region');
 	var category = element.getAttribute('data-category');
 	// If there are active region filters and this region is not in that array.
-	if (regions.length > 0 && !regions.includes(regions, region)) {
+	if (regions.length > 0 && !regions.includes(region)) {
 		return false;
 	}
 	// If there are active category filters and this category is not in that array.
-	if (categories.length > 0 && !categories.includes(categories, category)) {
+	if (categories.length > 0 && !categories.includes(category)) {
 		return false;
 	}
 	return true;
