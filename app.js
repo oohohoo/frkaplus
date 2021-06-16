@@ -3147,8 +3147,8 @@ var Demo = function (element) {
 
 
 
-  this.shuffle.destroy();
-console.log("SHUFFLE DESTROYED");
+  this.shuffle.update();
+console.log("SHUFFLE UPDATED");
 
 
 	this.filters = {
