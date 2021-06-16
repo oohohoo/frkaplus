@@ -3153,7 +3153,7 @@ var Demo = function (element) {
      $('.newsminigrid').toggleClass('full');
       $('.newsimgwrap').toggleClass('full'); 
     setTimeout(()=>{
-      Demo.shuffle.update();
+     shuffle.update();
       locoScroll.update();
      ScrollTrigger.refresh(true); 
      console.log("EVERYTHING FRESHHHHHHH");
