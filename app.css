@@ -1708,6 +1708,20 @@ background: transparent;
    height:100%
  }
 
+ .newsminigrid {
+  position: relative;
+  height: 100%;
+  padding-top: 1.25em;
+  padding-bottom: 1em;
+  grid-column-gap: 1em;
+  grid-row-gap: 1.25em;
+  grid-template-areas: ".";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto minmax(8em, auto);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: black;
+}
  .newsminigrid.full {
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
