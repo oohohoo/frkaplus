@@ -3455,12 +3455,12 @@ $('.field').change(function() {
      /* this.shuffle.update(); */
       locoScroll.update();
      ScrollTrigger.refresh(true); 
-     console.log("EVERYTHING FRESHHHHHHH");
+     
     /*   shuffleUpdate();
      console.log("SHUFFLE UPDATED"); */
     }, 3000);
     
-
+    console.log("EVERYTHING FRESHHHHHHH");
 
 
   
