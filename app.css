@@ -1694,7 +1694,7 @@ background: transparent;
    position: relative;
  }
  
- .webinar-posts__event-filter .btn.active {
+ .webinar-posts__event-filter .btn.activex {
    background-color: #E83316;
    color: #fff;
  }
