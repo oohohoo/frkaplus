@@ -3153,14 +3153,14 @@ $('.switch-layout').click(function() {
  $('.newsminigrid').toggleClass('full');
   $('.newsimgwrap').toggleClass('full'); 
 /* setTimeout(()=>{ */
-  this.shuffle.update();
-/*   locoScroll.update();
- ScrollTrigger.refresh(true);  */
+ this.shuffle.update();
+  locoScroll.update();
+ ScrollTrigger.refresh(true); 
  console.log("EVERYTHING FRESHHHHHHH");
 /*   shuffleUpdate();
  console.log("SHUFFLE UPDATED"); */
-/* },200)  */
-});
+}) 
+
 
 
  /*  this.shuffle.update();
