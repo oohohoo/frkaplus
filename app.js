@@ -709,7 +709,7 @@ LOCATION MAP
 ================================================================================
 */
 
-function locationMapx() {
+function locationMap() {
 
  /*  setTimeout(()=>{
     myMap = createMapbox(data.next.container);
@@ -869,40 +869,6 @@ document.getElementById('zadar').addEventListener('change', function () {
 
 
 
-/* map.on('load', function(e) { */
-
-/*
-================================================================================
-CREATE POPUP
-================================================================================
-*/
- /*  var popup = new mapboxgl.Popup({
-    closeButton: false,
-    closeOnClick: false
-  });
-
-  function showPopup(e) {
-    // Change the cursor
-    map.getCanvas().style.cursor = 'pointer';
-
-    // Show the popup
-    popup.setLngLat(e.features[0].geometry.coordinates)
-      .setHTML(checkEmpty(e.features[0].properties.name))
-      .addTo(map);
-  }
-
-  function hidePopup() {
-    map.getCanvas().style.cursor = '';
-    popup.remove();
-  }
-
-  function checkEmpty(info) {
-    return (info) ? info : "No data";
-  }
-
-  map.on('mouseenter', 'places', showPopup);
-  map.on('mouseleave', 'places', hidePopup);
-  }); */
 
   /*
 ================================================================================
@@ -931,6 +897,8 @@ FADE IN MAP
     myMap = createMapbox(data.next.container);
   */
 /* setTimeout(()=>{ */
+
+  /*
 var fadein = gsap.timeline({defaults:{ease:'none'}})
 .to('.loader-icon', {autoAlpha:1})
 .to('.loader-wrap', {rotate: 360, repeat: -1, duration:2}, "<")
