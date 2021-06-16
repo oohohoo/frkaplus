@@ -161,7 +161,7 @@ window.addEventListener('resize', function(){
   locoScroll.update();
   ScrollTrigger.refresh(true);
 },200) 
-  console.log("RESIZE REFRESHHHHHH ST+LS");
+  console.log("RESIZE ST+LS");
 });
 
 
