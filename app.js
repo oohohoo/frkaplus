@@ -2734,6 +2734,21 @@ function newSort() {
 
 var Shuffle = window.Shuffle;
 
+/* UBAČENO*/ 
+ // ES7 will have Array.prototype.includes.
+ function arrayIncludes(array, value) {
+  return array.indexOf(value) !== -1;
+}
+
+// Convert an array-like object to a real array.
+function toArray(thing) {
+  return Array.prototype.slice.call(thing);
+}
+
+/*DO TU*/
+
+
+
 var Demo = function (element) {
 	this.regions = Array.from(document.querySelectorAll('.js-regions input'));
 	this.categories = Array.from(document.querySelectorAll('.js-categories button'));
@@ -2743,6 +2758,8 @@ var Demo = function (element) {
   //  buffer: 0,
 		easing: 'cubic-bezier(0.165, 0.840, 0.440, 1.000)', // easeOutQuart
 		sizer: '.the-sizer',
+    buffer:1,
+    itemSelector: '.picture-item',
    /* staggerAmount: 15, // Transition delay offset for each item in milliseconds.
     staggerAmountMax: 150, // Maximum stagger delay in milliseconds.
     throttle: throttle, // By default, shuffle will throttle resize events. This can be changed or removed.
