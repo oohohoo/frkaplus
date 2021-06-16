@@ -3173,7 +3173,7 @@ console.log("SHUFFLE DESTROYED"); */
      $('.newsminigrid').toggleClass('full');
       $('.newsimgwrap').toggleClass('full'); 
     /* setTimeout(()=>{ */
-      Demo.this.shuffle.update(); 
+     /*  Demo.this.shuffle.update();  */
       locoScroll.update();
      ScrollTrigger.refresh(true); 
      console.log("EVERYTHING FRESHHHHHHH");
