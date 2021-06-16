@@ -709,7 +709,7 @@ LOCATION MAP
 ================================================================================
 */
 
-function locationMap() {
+function locationMapx() {
 
  /*  setTimeout(()=>{
     myMap = createMapbox(data.next.container);
