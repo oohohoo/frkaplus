@@ -107,7 +107,7 @@ function initScroll(container) {
     multiplier: 1.0, // body sroll speed / object speed values are multiplied
     touchMultiplier: 3.0,
     useKeyboard: true,
-    inertia: .75,
+    inertia: .85,
     smartphone: {
       smooth: true,
     },
@@ -3153,7 +3153,7 @@ $('.switch-layout').click(function() {
  $('.newsminigrid').toggleClass('full');
   $('.newsimgwrap').toggleClass('full'); 
 /* setTimeout(()=>{ */
- this.shuffle.update();
+ /* this.shuffle.update(); */
   locoScroll.update();
  ScrollTrigger.refresh(true); 
  console.log("EVERYTHING FRESHHHHHHH");
