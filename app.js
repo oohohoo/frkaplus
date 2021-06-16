@@ -3393,10 +3393,10 @@ $('.switch-layout').click(function() {
    $('.newsimgwrap').toggleClass('full'); 
 setTimeout(()=>{
    locoScroll.update();
-/*   ScrollTrigger.refresh(true); */
+  ScrollTrigger.refresh(true); 
 /*   shuffleUpdate();
   console.log("SHUFFLE UPDATED"); */
-},500) 
+},300) 
  
        console.log("UOPUPUPUP");
    });
