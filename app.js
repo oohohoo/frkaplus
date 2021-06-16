@@ -3387,11 +3387,12 @@ $('.switch-layout').click(function() {
 /*   $('.newsimgwrap').toggleClass('full'); */
 setTimeout(()=>{
   shuffleUpdate();
+  console.log("SHUFFLE UPDATED");
   locoScroll.update();
   ScrollTrigger.refresh(true);
 },500) 
  
-      console.log("ŠAFLE LOCO STRIGER APDEJTID");
+     /*  console.log("ŠAFLE LOCO STRIGER APDEJTID"); */
    });
 
 
