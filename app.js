@@ -2698,7 +2698,7 @@ function newSort() {
 
 
 'use strict';
-
+/*
 //select2 start
 	if ($("select").length) {
 		setTimeout(function () {
@@ -2730,7 +2730,7 @@ function newSort() {
   $('select.combobox').select2({ width: 'style' });
 
 
-
+*/
 
 var Shuffle = window.Shuffle;
 
