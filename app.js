@@ -734,10 +734,6 @@ map.addControl(new mapboxgl.NavigationControl());
 Add an event listener that runs
   when a user clicks on the map element.
 */
-/* 
-Add an event listener that runs
-  when a user clicks on the map element.
-*/
 map.on('click', function(e) {
   // If the user clicked on one of your markers, get its information.
   var features = map.queryRenderedFeatures(e.point, {
@@ -748,40 +744,23 @@ map.on('click', function(e) {
   }
   var feature = features[0];
 
-  // Code from the next step will go here.
-
-
    /* 
     Create a popup, specify its options 
     and properties, and add it to the map.
   */
-
-    map.on('click', function (e) {
-      var features = map.queryRenderedFeatures(e.point, {
-      layers: ['frkaplus']
-      });
-      if (!features.length) {
-      return;
-      }
-      var feature = features[0];
-       
     var popup = new mapboxgl.Popup({ offset: [0, -15], className: 'popup-style' })
-      .setLngLat(feature.geometry.coordinates)
-      .setHTML(
-      '<h3>' +
-      feature.properties.title +
-      '</h3>' +
-      '<p>' +
-      feature.properties.description +
-      '</p>'
-      )
-        /* .setHTML("<h3>Hello World!</h3>") */
-        /* .setMaxWidth("300px") */
-      .addTo(map);
-      });
-    
+    .setLngLat(feature.geometry.coordinates)
+     .setHTML(
+      '<p>' + feature.properties.title + '<p>' +
+      '<p>' + feature.properties.description + '</p>'
+      ) 
+      /* .setHTML("<h3>Hello World!</h3>") */
+      .setMaxWidth("300px")
+    .addTo(map);
+    console.log("POPUP on MAP");
+});
 
-    });
+
 
 
 
