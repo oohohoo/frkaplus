@@ -727,7 +727,7 @@ style: 'mapbox://styles/fogseller/cknip0h0j0oqm17mgvd8wwi8y?optimize=true', // s
 center: [16.527, 44.663], // starting position [lng, lat]
 zoom: 6.64 // starting zoom
 });
-
+/* DODANO ALI NE RADI*/
 map.addControl(new mapboxgl.NavigationControl());
 
 /* 
@@ -759,6 +759,15 @@ map.on('click', function(e) {
     .addTo(map);
     console.log("POPUP on MAP");
 });
+
+/*DODANO*/
+map.on('mouseenter', 'markers', function() {
+  map.getCanvas().style.cursor = 'pointer';
+  });
+map.on('mouseleave', 'markers', function() {
+  map.getCanvas().style.cursor = '';
+  });
+
 
 
 map.doubleClickZoom.enable();
