@@ -765,7 +765,7 @@ map.on('click', function(e) {
       }
       var feature = features[0];
        
-      var popup = new mapboxgl.Popup({ offset: [0, -15] })
+    var popup = new mapboxgl.Popup({ offset: [0, -15] /*, className: 'popup-style'*/ })
       .setLngLat(feature.geometry.coordinates)
       .setHTML(
       '<h3>' +
@@ -775,20 +775,12 @@ map.on('click', function(e) {
       feature.properties.description +
       '</p>'
       )
+        /* .setHTML("<h3>Hello World!</h3>") */
+        /* .setMaxWidth("300px") */
       .addTo(map);
       });
-    /* var popup = new mapboxgl.Popup({ offset: [0, -15],  })
-    .setLngLat(feature.geometry.coordinates)
-     .setHTML(
-      '<p>' + feature.properties.title + '<p>' +
-      '<p>' + feature.properties.description + '</p>'
-      ) 
-      /* .setHTML("<h3>Hello World!</h3>") */
-     /*  .setMaxWidth("300px")
-    .addTo(map);
-    console.log("POPUP on MAP");
-}); */
- 
+    
+
 
 
 
