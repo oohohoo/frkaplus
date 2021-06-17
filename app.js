@@ -761,10 +761,10 @@ map.on('click', function(e) {
 });
 
 /*DODANO*/
-map.on('mouseenter', 'markers', function() {
+map.on('mouseenter', 'frkaplus', function() {
   map.getCanvas().style.cursor = 'pointer';
   });
-map.on('mouseleave', 'markers', function() {
+map.on('mouseleave', 'frkaplus', function() {
   map.getCanvas().style.cursor = '';
   });
 
