@@ -2758,7 +2758,9 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
 	this.categories = Array.from(document.querySelectorAll('.js-categories button'));
   this.message = document.querySelector('.js-message');
 
-	this.shuffle = new Shuffle(element, {
+
+  
+	var shuffleInstance = new Shuffle(element, {
   //  buffer: 0,
 		easing: 'cubic-bezier(0.165, 0.840, 0.440, 1.000)', // easeOutQuart
 		sizer: '.sizer', 
@@ -2775,7 +2777,7 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
 	});
 
   $(document).on('click', '.location-switcher_wrap', function () {
-		this.shuffle.update(); 
+		shuffleInstance.update(); 
      console.log("SHUFFLE APDEJT FROM FUNCTION");
 	})
   /* $(document).ready(function(){ */
@@ -2788,38 +2790,38 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
        $('.pin-button-link').toggleClass('full'); 
        $('.location-switcher_column').toggleClass('hide');
        $('.location-switcher_full').toggleClass('hide');  
-     /*  this.shuffle.update(); */
+     /*  shuffleInstance.update(); */
    
     /* }); */
 
  /*  }); */
 
-  this.shuffle.layout();
+  shuffleInstance.layout();
   console.log("SHUFFLE LAYOUT");
   
   /*
   
    $('#exampleModal').modal('show')
    setTimeout(function () {
-    this.shuffle.layout()
+    shuffleInstance.layout()
    }, 2000)
 })
 */
 
 
 function shuffleupdate() {
-  this.shuffle.update();
+  shuffleInstance.update();
   console.log("Shuffle updated");
 }
 
 
 /*
-this.shuffle.update();
+shuffleInstance.update();
 console.log("SHUFFLE UPDATED XXX"); 
 /* shufleupdate();
 console.log("SHUFFLE UPDATED FROM CALL"); */
 
-/* this.shuffle.destroy();
+/* shuffleInstance.destroy();
 console.log("SHUFFLE DESTROYED"); */
 
 
@@ -2894,10 +2896,10 @@ console.log("SHUFFLE DESTROYED"); */
     } else {
       options = {};
     }
-    this.shuffle.sort(options);
+    shuffleInstance.sort(options);
 
     setTimeout(()=>{
-      this.shuffle.update();
+      shuffleInstance.update();
       locoScroll.update();
       ScrollTrigger.refresh(true);
        console.log("Locoscrollupdated + SCROLLTRIGGER NAKON SORTA");
@@ -3009,10 +3011,10 @@ Demo.prototype._handlecategoryChange = function (evt) {
  */
 Demo.prototype.filter = function () {
 	if (this.hasActiveFilters()) {
-		this.shuffle.filter(this.itemPassesFilters.bind(this));
+		shuffleInstance.filter(this.itemPassesFilters.bind(this));
     
     setTimeout(()=>{
-      this.shuffle.update();
+      shuffleInstance.update();
       console.log("SHUFFLE UPDATED1");
       locoScroll.update();
       ScrollTrigger.refresh(true);
@@ -3021,9 +3023,9 @@ Demo.prototype.filter = function () {
 
 
   } else {
-    this.shuffle.filter(Shuffle.ALL_ITEMS);
+    shuffleInstance.filter(Shuffle.ALL_ITEMS);
      setTimeout(()=>{
-      this.shuffle.update();
+      shuffleInstance.update();
       console.log("SHUFFLE UPDATED2");
       locoScroll.update();
       ScrollTrigger.refresh(true);
@@ -3031,8 +3033,8 @@ Demo.prototype.filter = function () {
     },200)  
   }
 
-  if(this.shuffle.visibleItems == 0){
-    this.message.innerHTML = (this.shuffle.visibleItems) + " items";
+  if(shuffleInstance.visibleItems == 0){
+    this.message.innerHTML = (shuffleInstance.visibleItems) + " items";
 
     
 
@@ -3114,7 +3116,7 @@ setTimeout(()=>{
 
 
 /* Shuffle.destroy();
-this.shuffle.update(); */
+shuffleInstance.update(); */
 
 /* setTimeout(function () {
   shuffleItems.shuffle('destroy').shuffle();
@@ -3124,7 +3126,7 @@ this.shuffle.update(); */
 /*
 
       function shuffleUpdate() {
-      this.shuffle.update();
+      shuffleInstance.update();
       console.log("SHUFFLE UPDATED");
       }
 */
@@ -3208,15 +3210,15 @@ $('.field').change(function() {
         $('.location-switcher_column').toggleClass('hide');
         $('.location-switcher_full').toggleClass('hide');
      
-       /*  Demo.this.shuffle.update();  */
+       /*  Demo.shuffleInstance.update();  */
       /*  shuffleupdate(); */
 
 
-   /*     this.shuffle.layout(); */
+   /*     shuffleInstance.layout(); */
        
 
-  /*  this.shuffle.on(Shuffle.EventType.LAYOUT, (data) => {
-    const visibleItems = this.shuffle.visibleItems;
+  /*  shuffleInstance.on(Shuffle.EventType.LAYOUT, (data) => {
+    const visibleItems = shuffleInstance.visibleItems;
     requestAnimationFrame(() => {
       // class toggle logic
      
@@ -3225,7 +3227,7 @@ $('.field').change(function() {
   }); */
 
       /*  setTimeout(function () {
-        this.shuffle.layout()
+        shuffleInstance.layout()
        }, 2000) */
        /*  locoScroll.update();
        ScrollTrigger.refresh(true);  */
