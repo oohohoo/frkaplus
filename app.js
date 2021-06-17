@@ -756,7 +756,11 @@ map.on('click', function(e) {
       ) 
       /* .setHTML("<h3>Hello World!</h3>") */
       /* .setMaxWidth("300px") */
-    .addTo(map);
+
+      setTimeout(function () {
+        this.shuffle.layout()
+           .addTo(map);
+          }, 2000)
     console.log("POPUP on MAP");
 });
 
