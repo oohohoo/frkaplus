@@ -2811,13 +2811,16 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
 };
 
 
-/* S O R T  ODAVDE*/
+
 Demo.prototype.addUpdate = function () {
   $(document).on('click', '.location-switcher_wrap', function () {
 		this.shuffle.update(); 
-     console.log("SHUFFLE APDEJT FROM FUNCTION");
+     console.log("SHUFFLE APDEJT FROM GALAXY");
 	})
 };
+
+/* S O R T  ODAVDE*/
+
 
 
   /**
