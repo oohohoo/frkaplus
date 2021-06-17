@@ -3183,7 +3183,9 @@ $('.field').change(function() {
         $('.location-switcher_full').toggleClass('hide');
         setTimeout(()=>{ 
        /*  Demo.this.shuffle.update();  */
-       shuffleupdate();
+      /*  shuffleupdate(); */
+
+       this.shuffle.layout();
        
       /*  setTimeout(function () {
         this.shuffle.layout()
