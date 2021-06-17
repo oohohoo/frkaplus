@@ -2795,12 +2795,16 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
   $('.location-switcher_full').toggleClass('hide');
   /* setTimeout(()=>{ */
  /*  Demo.this.shuffle.update();  */
+
+ /*
  setTimeout(function () {
   this.shuffle.layout()
  }, 2000)
   locoScroll.update();
  ScrollTrigger.refresh(true); 
  console.log("SHUFFLE LAYOUT AFTER");
+
+ */
 /*   shuffleUpdate();
  console.log("SHUFFLE UPDATED"); */
 });
