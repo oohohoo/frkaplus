@@ -1708,6 +1708,12 @@ background: transparent;
    height:100%
  }
 
+
+ .pin-button-link.full {
+  right: 1em;
+}
+
+
  .newsminigrid {
   position: relative;
   height: 100%;
