@@ -2695,7 +2695,7 @@ NOVI SORT MOŽDA FINALEEEE
 function newSort() {
 
 
-  $(document).ready(function(){
+/*   $(document).ready(function(){ */
 
 'use strict';
 
@@ -3090,21 +3090,23 @@ Demo.prototype.itemPassesFilters = function (element) {
 	window.demo = new Demo(document.querySelector('.js-shuffle'));
 });
  */
+document.addEventListener("DOMContentLoaded", function() {
+  window.demo = new Demo(document.querySelector(".js-shuffle"));
+});
 
+/*
 setTimeout(()=>{  
-  /*document.addEventListener("DOMContentLoaded", function() { */
     window.demo = new Demo(document.querySelector(".js-shuffle"));
     console.log("SHUFFLE UČITAN");
        },200)  
 
        setTimeout(()=>{  
-     /*   locoScroll.update(); */
        ScrollTrigger.refresh(true);
        console.log("NAKRAJU RIFREEEŠŠŠŠ");
       },500) 
-      
-
-    });
+      */
+/* document load*/
+   /*  }); */
 
 
 /* Shuffle.destroy();
