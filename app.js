@@ -2814,12 +2814,12 @@ console.log("SHUFFLE DESTROYED"); */
     }
     reverseOrder();
     
-    function sortByShape(element) {
-      return element.getAttribute('data-shape');
+    function sortByRegion(element) {
+      return element.getAttribute('data-region');
     }
   
-    function sortByColor(element) {
-      return element.getAttribute('data-color');
+    function sortByCategory(element) {
+      return element.getAttribute('data-category');
     }
      function sortByTitle(element) {
       return element.getAttribute('data-title');
@@ -2827,15 +2827,15 @@ console.log("SHUFFLE DESTROYED"); */
   
   
     var options;
-    if (value === 'shape') {
+    if (value === 'region') {
       options = {
         reverse: reverseOrder(),
-        by: sortByShape,
+        by: sortByRegion,
       };
-    } else if (value === 'color') {
+    } else if (value === 'category') {
       options = {
         reverse: !reverseOrder(),
-        by: sortByColor,
+        by: sortByCategory,
       };
       } else if (value === 'title') {
       options = {
