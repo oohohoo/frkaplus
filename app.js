@@ -2788,7 +2788,7 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
       console.log("SHUFFLE APDEJT FROM FUNCTION");
     });
 
-  }
+  });
 
   this.shuffle.layout();
   console.log("SHUFFLE LAYOUT");
