@@ -3180,29 +3180,29 @@ $('location-switcher_wrap').click(function() {
 
        /* SWITCH LAYOUT LOKACIJE ITEMS*/
 
-       $('.location-switcher_wrap').click(function() {
+       $('.location-switcher_wrapx').click(function() {
         $('.webinar-posts__event-item').toggleClass('full'); 
        $('.newsminigrid').toggleClass('full');
         $('.newsimgwrap').toggleClass('full'); 
         $('.pin-button-link').toggleClass('full'); 
         $('.location-switcher_column').toggleClass('hide');
-        $('.location-switcher_full').toggleClass('hide');
+        $('.location-switcher_full').toggleClass('hide');getComputedStyle
      
        /*  Demo.this.shuffle.update();  */
       /*  shuffleupdate(); */
 
-      
+
    /*     this.shuffle.layout(); */
        
 
-   this.shuffle.on(Shuffle.EventType.LAYOUT, (data) => {
+  /*  this.shuffle.on(Shuffle.EventType.LAYOUT, (data) => {
     const visibleItems = this.shuffle.visibleItems;
     requestAnimationFrame(() => {
       // class toggle logic
      
       console.log("SHUFFLE APDEJT FROM FUNCTION");
     });
-  });
+  }); */
 
       /*  setTimeout(function () {
         this.shuffle.layout()
