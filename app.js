@@ -2802,7 +2802,7 @@ console.log("SHUFFLE DESTROYED"); */
 
    Demo.prototype.addSorting = function () {
     document.querySelector('.sort-order').addEventListener('change', this._handleSortChange.bind(this));
-    document.querySelector('.sort-options').addEventListener('change', this._handleSortChange.bind(this));
+    document.querySelector('.sort-options').addEventListener('input', this._handleSortChange.bind(this));
   };
   
   Demo.prototype._handleSortChange = function (event) {
