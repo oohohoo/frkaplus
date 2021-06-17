@@ -728,6 +728,7 @@ center: [16.527, 44.663], // starting position [lng, lat]
 zoom: 6.64 // starting zoom
 });
 
+map.addControl(new mapboxgl.NavigationControl());
 
 /* 
 Add an event listener that runs
