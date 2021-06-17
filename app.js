@@ -3172,14 +3172,14 @@ $('.field').change(function() {
 
 
 
-$('location-switcher_wrap').click(function() {
-  $('.webinar-posts__event-item').toggleClass('full');
+$('.location-switcher_wrap').click(function() {
+/*   $('.webinar-posts__event-item').toggleClass('full');
   $('.webinar-posts__event-item').toggleClass('full'); 
   $('.newsminigrid').toggleClass('full');
    $('.newsimgwrap').toggleClass('full'); 
    $('.pin-button-link').toggleClass('full'); 
    $('.location-switcher_column').toggleClass('hide');
-   $('.location-switcher_full').toggleClass('hide'); 
+   $('.location-switcher_full').toggleClass('hide');  */
   this.shuffle.update();
   console.log("SHUFFLE APDEJT FROM FUNCTION");
 });
