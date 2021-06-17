@@ -3191,6 +3191,7 @@ $('location-switcher_wrap').click(function() {
        /*  Demo.this.shuffle.update();  */
       /*  shuffleupdate(); */
 
+      
    /*     this.shuffle.layout(); */
        
 
