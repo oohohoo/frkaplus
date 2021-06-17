@@ -3173,6 +3173,7 @@ $('.field').change(function() {
 
 
 $('location-switcher_wrap').click(function() {
+  $('.webinar-posts__event-item').toggleClass('full'); 
   this.shuffle.update();
   console.log("SHUFFLE APDEJT FROM FUNCTION");
 });
