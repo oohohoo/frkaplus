@@ -2775,7 +2775,7 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
 	});
 
 
-  $(function() {
+  $(document).ready(function(){
   $('.location-switcher_wrap').click(function() {
     /*   $('.webinar-posts__event-item').toggleClass('full');
       $('.webinar-posts__event-item').toggleClass('full'); 
@@ -2788,7 +2788,8 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
       console.log("SHUFFLE APDEJT FROM FUNCTION");
     });
 
-  });
+  }
+
   this.shuffle.layout();
   console.log("SHUFFLE LAYOUT");
   
