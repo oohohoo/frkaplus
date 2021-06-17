@@ -1888,12 +1888,17 @@ background: transparent;
   */
 
 /* MAPBOX */
-.popup-style {
-width:270px;
-height: 100px;
-/* background-color: whitesmoke; */
-color: var(--bcg-lightblue);
+
+.mapboxgl-popup-content {
+  position: relative;
+  background: #fff;
+  color: #231f20;
+  border-radius: 0.5px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+  padding: 10px 10px 15px;
+  pointer-events: auto;
 }
+
 
 /* 
 .mapboxgl-popup-close-button {
