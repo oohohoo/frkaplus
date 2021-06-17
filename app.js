@@ -2751,7 +2751,7 @@ function toArray(thing) {
 
 var Demo = function (element) {
 /* UBAČENO*/ 
-  this.element = element;
+ /*  this.element = element; */
 /*   this.gridItems = this.element.querySelectorAll('.webinar-posts__event-item); */
 	
 this.regions = Array.from(document.querySelectorAll('.js-regions input'));
