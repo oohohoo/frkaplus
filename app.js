@@ -3100,7 +3100,7 @@ setTimeout(()=>{
        },200)  
 
        setTimeout(()=>{  
-        this.shuffle.update();
+      /*   this.shuffle.update(); */
         locoScroll.update();
        ScrollTrigger.refresh(true);
        console.log("SHUFFLE+LOCO+SCROLLTRIGGER updated");
