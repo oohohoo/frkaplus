@@ -2851,7 +2851,7 @@ console.log("SHUFFLE DESTROYED"); */
     this.shuffle.sort(options);
   };
   
-*/
+
 
 /* DOVDE */
 
