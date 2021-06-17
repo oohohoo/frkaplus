@@ -2792,7 +2792,7 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
   this.shuffle.layout();
   console.log("SHUFFLE LAYOUT");
 
-
+  $('.js-shuffle').shuffle('layout');
 
 	this.filters = {
 		regions: [],
@@ -2811,7 +2811,7 @@ Demo.prototype.addUpdate = function () {
   $(document).on('click', '.location-switcher_wrap', function () {
 	/* 	this.shuffle.update();  */
 
-    $('.js-shuffle').shuffle('layout');
+  
     
      console.log("SHUFFLE APDEJT FROM GALAXY");
 	})
