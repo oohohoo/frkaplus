@@ -762,7 +762,7 @@ map.on('click', function(e) {
            .addTo(map);
           }, 2000)
     console.log("POPUP on MAP");
-});
+/* }); */
 
 
 
