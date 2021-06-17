@@ -2751,16 +2751,14 @@ function toArray(thing) {
 
 var Demo = function (element) {
 /* UBAČENO*/ 
- /*  this.element = element; */
+  this.element = element;
 /*   this.gridItems = this.element.querySelectorAll('.webinar-posts__event-item); */
 	
 this.regions = Array.from(document.querySelectorAll('.js-regions input'));
 	this.categories = Array.from(document.querySelectorAll('.js-categories button'));
   this.message = document.querySelector('.js-message');
 
-
-  
-	var shuffleInstance = new Shuffle(element, {
+	this.shuffle = new Shuffle(element, {
   //  buffer: 0,
 		easing: 'cubic-bezier(0.165, 0.840, 0.440, 1.000)', // easeOutQuart
 		sizer: '.sizer', 
@@ -2777,15 +2775,8 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
 	});
 
   $(document).on('click', '.location-switcher_wrap', function () {
-    $('.webinar-posts__event-item').toggleClass('full');
-    $('.webinar-posts__event-item').toggleClass('full'); 
-    $('.newsminigrid').toggleClass('full');
-     $('.newsimgwrap').toggleClass('full'); 
-     $('.pin-button-link').toggleClass('full'); 
-     $('.location-switcher_column').toggleClass('hide');
-     $('.location-switcher_full').toggleClass('hide');  
-		shuffleInstance.update(); 
-     console.log("SHUFFLE APDEJT FROM FUNCTIONNNNN");
+		this.shuffle.update(); 
+     console.log("SHUFFLE APDEJT FROM FUNCTION");
 	})
   /* $(document).ready(function(){ */
 /*
@@ -2797,38 +2788,38 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
        $('.pin-button-link').toggleClass('full'); 
        $('.location-switcher_column').toggleClass('hide');
        $('.location-switcher_full').toggleClass('hide');  
-     /*  shuffleInstance.update(); */
+     /*  this.shuffle.update(); */
    
     /* }); */
 
  /*  }); */
 
-  shuffleInstance.layout();
+  this.shuffle.layout();
   console.log("SHUFFLE LAYOUT");
   
   /*
   
    $('#exampleModal').modal('show')
    setTimeout(function () {
-    shuffleInstance.layout()
+    this.shuffle.layout()
    }, 2000)
 })
 */
 
 
 function shuffleupdate() {
-  shuffleInstance.update();
+  this.shuffle.update();
   console.log("Shuffle updated");
 }
 
 
 /*
-shuffleInstance.update();
+this.shuffle.update();
 console.log("SHUFFLE UPDATED XXX"); 
 /* shufleupdate();
 console.log("SHUFFLE UPDATED FROM CALL"); */
 
-/* shuffleInstance.destroy();
+/* this.shuffle.destroy();
 console.log("SHUFFLE DESTROYED"); */
 
 
@@ -2903,10 +2894,10 @@ console.log("SHUFFLE DESTROYED"); */
     } else {
       options = {};
     }
-    shuffleInstance.sort(options);
+    this.shuffle.sort(options);
 
     setTimeout(()=>{
-      shuffleInstance.update();
+      this.shuffle.update();
       locoScroll.update();
       ScrollTrigger.refresh(true);
        console.log("Locoscrollupdated + SCROLLTRIGGER NAKON SORTA");
@@ -3018,10 +3009,10 @@ Demo.prototype._handlecategoryChange = function (evt) {
  */
 Demo.prototype.filter = function () {
 	if (this.hasActiveFilters()) {
-		shuffleInstance.filter(this.itemPassesFilters.bind(this));
+		this.shuffle.filter(this.itemPassesFilters.bind(this));
     
     setTimeout(()=>{
-      shuffleInstance.update();
+      this.shuffle.update();
       console.log("SHUFFLE UPDATED1");
       locoScroll.update();
       ScrollTrigger.refresh(true);
@@ -3030,9 +3021,9 @@ Demo.prototype.filter = function () {
 
 
   } else {
-    shuffleInstance.filter(Shuffle.ALL_ITEMS);
+    this.shuffle.filter(Shuffle.ALL_ITEMS);
      setTimeout(()=>{
-      shuffleInstance.update();
+      this.shuffle.update();
       console.log("SHUFFLE UPDATED2");
       locoScroll.update();
       ScrollTrigger.refresh(true);
@@ -3040,8 +3031,8 @@ Demo.prototype.filter = function () {
     },200)  
   }
 
-  if(shuffleInstance.visibleItems == 0){
-    this.message.innerHTML = (shuffleInstance.visibleItems) + " items";
+  if(this.shuffle.visibleItems == 0){
+    this.message.innerHTML = (this.shuffle.visibleItems) + " items";
 
     
 
@@ -3123,7 +3114,7 @@ setTimeout(()=>{
 
 
 /* Shuffle.destroy();
-shuffleInstance.update(); */
+this.shuffle.update(); */
 
 /* setTimeout(function () {
   shuffleItems.shuffle('destroy').shuffle();
@@ -3133,7 +3124,7 @@ shuffleInstance.update(); */
 /*
 
       function shuffleUpdate() {
-      shuffleInstance.update();
+      this.shuffle.update();
       console.log("SHUFFLE UPDATED");
       }
 */
@@ -3217,15 +3208,15 @@ $('.field').change(function() {
         $('.location-switcher_column').toggleClass('hide');
         $('.location-switcher_full').toggleClass('hide');
      
-       /*  Demo.shuffleInstance.update();  */
+       /*  Demo.this.shuffle.update();  */
       /*  shuffleupdate(); */
 
 
-   /*     shuffleInstance.layout(); */
+   /*     this.shuffle.layout(); */
        
 
-  /*  shuffleInstance.on(Shuffle.EventType.LAYOUT, (data) => {
-    const visibleItems = shuffleInstance.visibleItems;
+  /*  this.shuffle.on(Shuffle.EventType.LAYOUT, (data) => {
+    const visibleItems = this.shuffle.visibleItems;
     requestAnimationFrame(() => {
       // class toggle logic
      
@@ -3234,7 +3225,7 @@ $('.field').change(function() {
   }); */
 
       /*  setTimeout(function () {
-        shuffleInstance.layout()
+        this.shuffle.layout()
        }, 2000) */
        /*  locoScroll.update();
        ScrollTrigger.refresh(true);  */
