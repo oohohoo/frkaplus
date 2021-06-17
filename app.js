@@ -748,20 +748,20 @@ map.on('click', function(e) {
     Create a popup, specify its options 
     and properties, and add it to the map.
   */
-    var popup = new mapboxgl.Popup({ offset: [0, -15], className: 'popup-style' })
+    var popup = new mapboxgl.Popup({ offset: [0, -15] /*, className: 'popup-style' */})
     .setLngLat(feature.geometry.coordinates)
      .setHTML(
-      '<p>' + feature.properties.title + '<p>' +
+      '<h3>' + feature.properties.title + '</h3>' +
       '<p>' + feature.properties.description + '</p>'
       ) 
       /* .setHTML("<h3>Hello World!</h3>") */
-      .setMaxWidth("300px")
-    
+      /* .setMaxWidth("300px") */
+    .addTo(map);
     console.log("POPUP on MAP");
 });
 
 
-.addTo(map);
+
 
 
 map.doubleClickZoom.enable();
