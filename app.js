@@ -2696,7 +2696,7 @@ function newSort() {
 
 
 
-
+/*
 'use strict';
 
 $("#d").select2();
@@ -2730,7 +2730,7 @@ $("#d").select2();
 
   $('select.combobox').select2({ width: 'style' });
 
-
+*/
 
 var Shuffle = window.Shuffle;
 
