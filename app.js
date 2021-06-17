@@ -2799,7 +2799,7 @@ console.log("SHUFFLE DESTROYED"); */
   /**
    * Sorting
    */
-  /*
+
    Demo.prototype.addSorting = function () {
     document.querySelector('.sort-order').addEventListener('change', this._handleSortChange.bind(this));
     document.querySelector('.sort-options').addEventListener('change', this._handleSortChange.bind(this));
@@ -2855,50 +2855,6 @@ console.log("SHUFFLE DESTROYED"); */
 
 /* DOVDE */
 
-
-addSorting() {
-  const buttonGroup = document.querySelector('.sort-options');
-  if (!buttonGroup) {
-    return;
-  }
-  buttonGroup.addEventListener('change', this._handleSortChange.bind(this));
-}
-
-_handleSortChange(evt) {
-  // Add and remove `active` class from buttons.
-  const buttons = Array.from(evt.currentTarget.children);
-  buttons.forEach((button) => {
-    if (button.querySelector('input').value === evt.target.value) {
-      button.classList.add('active');
-    } else {
-      button.classList.remove('active');
-    }
-  });
-  
-  // Create the sort options to give to Shuffle.
-  const { value } = evt.target;
-  let options = {};
-  
-  function sortByDate(element) {
-    return element.getAttribute('data-created');
-  }
-  
-  function sortByTitle(element) {
-    return element.getAttribute('data-title').toLowerCase();
-  }
-  
-  if (value === 'date-created') {
-    options = {
-      reverse: true,
-      by: sortByDate,
-    };
-  } else if (value === 'title') {
-    options = {
-      by: sortByTitle,
-    };
-  }
-  this.shuffle.sort(options);
-}
 
 
 /**
