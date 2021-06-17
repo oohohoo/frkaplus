@@ -2784,7 +2784,7 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
        $('.pin-button-link').toggleClass('full'); 
        $('.location-switcher_column').toggleClass('hide');
        $('.location-switcher_full').toggleClass('hide');  */
-      this.shuffle.update();
+     /*  this.shuffle.update(); */
       console.log("SHUFFLE APDEJT FROM FUNCTION");
     });
 
@@ -3101,7 +3101,7 @@ setTimeout(()=>{
 
        setTimeout(()=>{  
       /*   this.shuffle.update(); */
-      
+
         locoScroll.update();
        ScrollTrigger.refresh(true);
        console.log("SHUFFLE+LOCO+SCROLLTRIGGER updated");
