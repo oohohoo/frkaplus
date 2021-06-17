@@ -3196,7 +3196,7 @@ $('.field').change(function() {
        }); 
 
   
-      }
+      })
     
 }
 
