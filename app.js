@@ -2787,28 +2787,7 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
 })
 */
 
- /* SWITCH LAYOUT LOKACIJE ITEMS*/
 
- $('.location-switcher_wrap').click(function() {
-  $('.webinar-posts__event-item').toggleClass('full'); 
- $('.newsminigrid').toggleClass('full');
-  $('.newsimgwrap').toggleClass('full'); 
-  $('.pin-button-link').toggleClass('full'); 
-  $('.location-switcher_column').toggleClass('hide');
-  $('.location-switcher_full').toggleClass('hide');
-  /* setTimeout(()=>{ */
- /*  Demo.this.shuffle.update();  */
-/*
- 
- setTimeout(function () {
-  this.shuffle.layout()
- }, 2000)
-  locoScroll.update();
- ScrollTrigger.refresh(true); 
- console.log("SHUFFLE LAYOUT AFTER");
-/*   shuffleUpdate();
- console.log("SHUFFLE UPDATED"); */
- }); 
 
 
 
@@ -2832,6 +2811,32 @@ console.log("SHUFFLE DESTROYED"); */
 	this._bindEventListeners();
 };
 
+
+
+ /* SWITCH LAYOUT LOKACIJE ITEMS*/
+
+ $('.location-switcher_wrap').click(function() {
+  $('.webinar-posts__event-item').toggleClass('full'); 
+ $('.newsminigrid').toggleClass('full');
+  $('.newsimgwrap').toggleClass('full'); 
+  $('.pin-button-link').toggleClass('full'); 
+  $('.location-switcher_column').toggleClass('hide');
+  $('.location-switcher_full').toggleClass('hide');
+  /* setTimeout(()=>{ */
+ /*  Demo.this.shuffle.update();  */
+/*
+ 
+ setTimeout(function () {
+  this.shuffle.layout()
+ }, 2000)
+  locoScroll.update();
+ ScrollTrigger.refresh(true); 
+ console.log("SHUFFLE LAYOUT AFTER");
+/*   shuffleUpdate();
+ console.log("SHUFFLE UPDATED"); */
+ }); 
+
+ 
 /* S O R T  ODAVDE*/
 
 
