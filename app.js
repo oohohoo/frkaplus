@@ -2788,7 +2788,10 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
 */
 
 
-
+function shuffleupdate() {
+  this.shuffle.update();
+  console.log("Shuffle updated");
+}
 
 
 /*
@@ -3178,16 +3181,16 @@ $('.field').change(function() {
         $('.pin-button-link').toggleClass('full'); 
         $('.location-switcher_column').toggleClass('hide');
         $('.location-switcher_full').toggleClass('hide');
-        /* setTimeout(()=>{ */
+        setTimeout(()=>{ 
        /*  Demo.this.shuffle.update();  */
-      /*
+       shuffleupdate();
        
-       setTimeout(function () {
+      /*  setTimeout(function () {
         this.shuffle.layout()
-       }, 2000)
-        locoScroll.update();
-       ScrollTrigger.refresh(true); 
-       console.log("SHUFFLE LAYOUT AFTER");
+       }, 2000) */
+       /*  locoScroll.update();
+       ScrollTrigger.refresh(true);  */
+       console.log("SHUFFLE APDEJT FROM FUNCTION");
       /*   shuffleUpdate();
        console.log("SHUFFLE UPDATED"); */
        }); 
