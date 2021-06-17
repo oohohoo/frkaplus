@@ -1894,3 +1894,17 @@ height: 100px;
 /* background-color: whitesmoke; */
 color: var(--bcg-lightblue);
 }
+
+
+.mapboxgl-popup-close-button {
+display:none;
+}
+
+.mapboxgl-popup-content {
+padding: 10px;
+width: 180px;
+}
+
+.mapbox-popup-content-wrapper {
+  padding: 1%;
+}
