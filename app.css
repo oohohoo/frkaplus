@@ -1889,7 +1889,7 @@ background: transparent;
 
 /* MAPBOX */
 
-.mapboxgl-popup-content {
+/* .mapboxgl-popup-content {
   position: relative;
   background: #fff;
   color: #231f20;
@@ -1898,7 +1898,7 @@ background: transparent;
   padding: 10px 10px 15px;
   pointer-events: auto;
 }
-
+ */
 
 /* 
 .mapboxgl-popup-close-button {
