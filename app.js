@@ -2700,9 +2700,9 @@ function newSort() {
 'use strict';
 
 //select2 start
-	if ($(".specselect").length) {
+	if ($("select").length) {
 		setTimeout(function () {
-			$(".specselect").each(function (index, item) {
+			$("select").each(function (index, item) {
 				var text = $(item).data("placeholder");
 				$(item).select2({
 					placeholder: text,
@@ -2712,7 +2712,7 @@ function newSort() {
 		}, 100);
 	}
 
-  $(".specselect").each(function (index, item) {
+  $("select").each(function (index, item) {
 		$(item).select2({
 			minimumResultsForSearch: -1
 		});
@@ -2789,7 +2789,7 @@ console.log("SHUFFLE DESTROYED"); */
 	};
 
   this.addSorting();
-
+  
 	this._bindEventListeners();
 };
 
