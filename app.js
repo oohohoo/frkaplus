@@ -734,6 +734,7 @@ map.addControl(new mapboxgl.NavigationControl());
 Add an event listener that runs
   when a user clicks on the map element.
 */
+/*
 map.on('click', function(e) {
   // If the user clicked on one of your markers, get its information.
   var features = map.queryRenderedFeatures(e.point, {
@@ -748,19 +749,39 @@ map.on('click', function(e) {
     Create a popup, specify its options 
     and properties, and add it to the map.
   */
+ /*
     var popup = new mapboxgl.Popup({ offset: [0, -15], className: 'popup-style' })
     .setLngLat(feature.geometry.coordinates)
      .setHTML(
-      '<p>' + marker.feature.properties.title + '<p>' +
-      '<p>' + marker.feature.properties.description + '</p>'
+      '<p>' + feature.properties.title + '<p>' +
+      '<p>' + feature.properties.description + '</p>'
       ) 
       /* .setHTML("<h3>Hello World!</h3>") */
-      .setMaxWidth("300px")
+     /* .setMaxWidth("300px")
     .addTo(map);
     console.log("POPUP on MAP");
 });
 
+*/
 
+var bounds = new mapboxgl.LngLatBounds();
+for ( var i=0; i < markersArray.length; ++i ){
+
+    markersArray[i].features.forEach(function(marker) {
+
+        // create a HTML element for each feature
+        var el = document.createElement('div');
+        el.className = 'marker';
+
+        // make a marker for each feature and add it to the map
+        new mapboxgl.Marker(el)
+            .setLngLat(marker.geometry.coordinates)
+            .setPopup(new mapboxgl.Popup({offset: 25}) // add popups
+                .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'))
+            .addTo(map);
+    });
+}
+map.fitBounds(bounds);
 
 
 
