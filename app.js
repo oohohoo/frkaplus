@@ -2774,10 +2774,10 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
 
 	});
 
-  $(document).on('click', '.location-switcher_wrap', function () {
-		this.shuffle.update(); 
-     console.log("SHUFFLE APDEJT FROM FUNCTION");
-	})
+
+
+
+ /*  $('#my-shuffle').shuffle('layout'); */
   /* $(document).ready(function(){ */
 /*
   $('.location-switcher_wrap').click(function() {
@@ -2796,31 +2796,7 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
 
   this.shuffle.layout();
   console.log("SHUFFLE LAYOUT");
-  
-  /*
-  
-   $('#exampleModal').modal('show')
-   setTimeout(function () {
-    this.shuffle.layout()
-   }, 2000)
-})
-*/
 
-
-function shuffleupdate() {
-  this.shuffle.update();
-  console.log("Shuffle updated");
-}
-
-
-/*
-this.shuffle.update();
-console.log("SHUFFLE UPDATED XXX"); 
-/* shufleupdate();
-console.log("SHUFFLE UPDATED FROM CALL"); */
-
-/* this.shuffle.destroy();
-console.log("SHUFFLE DESTROYED"); */
 
 
 	this.filters = {
@@ -2828,17 +2804,20 @@ console.log("SHUFFLE DESTROYED"); */
 		categories: [],
 	};
 
+  this.addUpdate();
   this.addSorting();
   
 	this._bindEventListeners();
 };
 
 
-
-
-
-
 /* S O R T  ODAVDE*/
+Demo.prototype.addUpdate = function () {
+  $(document).on('click', '.location-switcher_wrap', function () {
+		this.shuffle.update(); 
+     console.log("SHUFFLE APDEJT FROM FUNCTION");
+	})
+};
 
 
   /**
