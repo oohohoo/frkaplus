@@ -2761,7 +2761,7 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
 	this.shuffle = new Shuffle(element, {
   //  buffer: 0,
 		easing: 'cubic-bezier(0.165, 0.840, 0.440, 1.000)', // easeOutQuart
-		/* sizer: '.sizer', */
+		sizer: '.sizer', 
     buffer:1,
     gutterWidth: 30,
     roundTransforms: true,
