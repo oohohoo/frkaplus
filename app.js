@@ -2789,13 +2789,13 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
 
  /* SWITCH LAYOUT LOKACIJE ITEMS*/
 
- $('.location-switcher_wrap').click(function() {
+/*  $('.location-switcher_wrap').click(function() {
   $('.webinar-posts__event-item').toggleClass('full'); 
  $('.newsminigrid').toggleClass('full');
   $('.newsimgwrap').toggleClass('full'); 
   $('.pin-button-link').toggleClass('full'); 
   $('.location-switcher_column').toggleClass('hide');
-  $('.location-switcher_full').toggleClass('hide');
+  $('.location-switcher_full').toggleClass('hide'); */
   /* setTimeout(()=>{ */
  /*  Demo.this.shuffle.update();  */
 /*
