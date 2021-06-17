@@ -734,7 +734,6 @@ map.addControl(new mapboxgl.NavigationControl());
 Add an event listener that runs
   when a user clicks on the map element.
 */
-
 map.on('click', function(e) {
   // If the user clicked on one of your markers, get its information.
   var features = map.queryRenderedFeatures(e.point, {
