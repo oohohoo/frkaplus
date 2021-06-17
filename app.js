@@ -2772,9 +2772,44 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
 	});
 
 
+  this.shuffle.layout();
+  console.log("SHUFFLE LAYOUT");
+  
+  /*
+  
+   $('#exampleModal').modal('show')
+   setTimeout(function () {
+    this.shuffle.layout()
+   }, 2000)
+})
+*/
+
+ /* SWITCH LAYOUT LOKACIJE ITEMS*/
+
+ $('.location-switcher_wrap').click(function() {
+  $('.webinar-posts__event-item').toggleClass('full'); 
+ $('.newsminigrid').toggleClass('full');
+  $('.newsimgwrap').toggleClass('full'); 
+  $('.pin-button-link').toggleClass('full'); 
+  $('.location-switcher_column').toggleClass('hide');
+  $('.location-switcher_full').toggleClass('hide');
+  /* setTimeout(()=>{ */
+ /*  Demo.this.shuffle.update();  */
+ setTimeout(function () {
+  this.shuffle.layout()
+ }, 2000)
+  locoScroll.update();
+ ScrollTrigger.refresh(true); 
+ console.log("SHUFFLE LAYOUT AFTER");
+/*   shuffleUpdate();
+ console.log("SHUFFLE UPDATED"); */
+});
 
 
 
+/*
+this.shuffle.update();
+console.log("SHUFFLE UPDATED XXX"); 
 /* shufleupdate();
 console.log("SHUFFLE UPDATED FROM CALL"); */
 
@@ -2792,9 +2827,6 @@ console.log("SHUFFLE DESTROYED"); */
 	this._bindEventListeners();
 };
 
-
-this.shuffle.update();
-console.log("SHUFFLE UPDATED YYY"); 
 /* S O R T  ODAVDE*/
 
 
@@ -3143,23 +3175,6 @@ $('.field').change(function() {
 }); */
 
 
- /* SWITCH LAYOUT LOKACIJE ITEMS*/
-
- $('.location-switcher_wrap').click(function() {
-  $('.webinar-posts__event-item').toggleClass('full'); 
- $('.newsminigrid').toggleClass('full');
-  $('.newsimgwrap').toggleClass('full'); 
-  $('.pin-button-link').toggleClass('full'); 
-  $('.location-switcher_column').toggleClass('hide');
-  $('.location-switcher_full').toggleClass('hide');
-  /* setTimeout(()=>{ */
- /*  Demo.this.shuffle.update();  */
-  locoScroll.update();
- ScrollTrigger.refresh(true); 
- console.log("EVERYTHING FRESHHHHHHH");
-/*   shuffleUpdate();
- console.log("SHUFFLE UPDATED"); */
-});
 
 
 
