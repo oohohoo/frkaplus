@@ -3094,8 +3094,9 @@ Demo.prototype.itemPassesFilters = function (element) {
 setTimeout(()=>{  
   /*document.addEventListener("DOMContentLoaded", function() { */
     window.demo = new Demo(document.querySelector(".js-shuffle"));
+    console.log("SHUFFLE UČITAN");
        },200)  
-       
+
        setTimeout(()=>{  
      /*   locoScroll.update(); */
        ScrollTrigger.refresh(true);
