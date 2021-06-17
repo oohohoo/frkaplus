@@ -758,7 +758,7 @@ map.on('click', function(e) {
 
     map.on('click', function (e) {
       var features = map.queryRenderedFeatures(e.point, {
-      layers: ['chicago-parks']
+      layers: ['frkaplus']
       });
       if (!features.length) {
       return;
