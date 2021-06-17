@@ -2697,7 +2697,7 @@ function newSort() {
 
  /*  $(document).ready(function(){ */
 
-'use strict';
+/* 'use strict'; */
 
 $("#d").select2();
 //select2 start
