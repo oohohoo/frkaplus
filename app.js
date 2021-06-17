@@ -2701,9 +2701,9 @@ function newSort() {
 
 $("#d").select2();
 //select2 start
-	if ($("select").length) {
+	if ($("#d").length) {
 		setTimeout(function () {
-			$("select").each(function (index, item) {
+			$("#d").each(function (index, item) {
 				var text = $(item).data("placeholder");
 				$(item).select2({
 					placeholder: text,
@@ -2713,7 +2713,7 @@ $("#d").select2();
 		}, 100);
 	}
 
-  $("select").each(function (index, item) {
+  $("#d").each(function (index, item) {
 		$(item).select2({
 			minimumResultsForSearch: -1
 		});
