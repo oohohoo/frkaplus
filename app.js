@@ -758,7 +758,7 @@ map.on('click', function(e) {
       /* .setMaxWidth("300px") */
 
       setTimeout(function () {
-        this.shuffle.layout()
+       
            .addTo(map);
           }, 2000)
     console.log("POPUP on MAP");
