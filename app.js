@@ -2788,6 +2788,8 @@ console.log("SHUFFLE DESTROYED"); */
 		categories: [],
 	};
 
+  this.addSorting();
+  
 	this._bindEventListeners();
 };
 
