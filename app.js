@@ -2853,7 +2853,6 @@ console.log("SHUFFLE DESTROYED"); */
 
     setTimeout(()=>{
       this.shuffle.update();
-      console.log("SHUFFLE UPDATED NAKON SORTA");
       locoScroll.update();
       ScrollTrigger.refresh(true);
        console.log("Locoscrollupdated + SCROLLTRIGGER NAKON SORTA");
