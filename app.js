@@ -2353,7 +2353,7 @@ function underlineLink() {
 CUSTOM SELECT BUTTON - LOKACIJE
 ================================================================================
 */
-
+/*
 function customSelect() {
 
   $(document).ready(function() { // use jQuery lib
@@ -2449,7 +2449,7 @@ function customSelect() {
 console.log("OHOHOHOHOHOHO BOTUNI");
 
 }
-
+*/
 
 
 /*
