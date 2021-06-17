@@ -3181,7 +3181,7 @@ $('.field').change(function() {
         $('.pin-button-link').toggleClass('full'); 
         $('.location-switcher_column').toggleClass('hide');
         $('.location-switcher_full').toggleClass('hide');
-        setTimeout(()=>{ 
+     
        /*  Demo.this.shuffle.update();  */
       /*  shuffleupdate(); */
 
@@ -3197,8 +3197,8 @@ $('.field').change(function() {
        console.log("SHUFFLE UPDATED"); */
        }); 
 
-  
-      })
+  /* 
+      }) */
     
 }
 
