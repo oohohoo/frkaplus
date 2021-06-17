@@ -3219,7 +3219,7 @@ $('location-switcher_wrap').click(function() {
        
       /*   shuffleUpdate();
        console.log("SHUFFLE UPDATED"); */
-       }); 
+       /* });  */
 
   /* 
       }) */
