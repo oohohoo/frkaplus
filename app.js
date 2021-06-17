@@ -2788,7 +2788,7 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
 */
 
  /* SWITCH LAYOUT LOKACIJE ITEMS*/
-/*
+
  $('.location-switcher_wrap').click(function() {
   $('.webinar-posts__event-item').toggleClass('full'); 
  $('.newsminigrid').toggleClass('full');
