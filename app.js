@@ -728,7 +728,7 @@ center: [16.527, 44.663], // starting position [lng, lat]
 zoom: 6.64 // starting zoom
 });
 /* DODANO ALI NE RADI*/
-map.addControl(new mapboxgl.NavigationControl());
+/* map.addControl(new mapboxgl.NavigationControl()); */
 
 /* 
 Add an event listener that runs
@@ -756,12 +756,12 @@ map.on('click', function(e) {
       ) 
       /* .setHTML("<h3>Hello World!</h3>") */
       .setMaxWidth("300px")
-    .addTo(map);
+    
     console.log("POPUP on MAP");
 });
 
 
-
+.addTo(map);
 
 
 map.doubleClickZoom.enable();
