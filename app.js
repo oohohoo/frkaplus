@@ -2695,7 +2695,7 @@ NOVI SORT MOŽDA FINALEEEE
 function newSort() {
 
 
- /*  $(document).ready(function(){ */
+
 
 'use strict';
 
@@ -2767,58 +2767,72 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
     roundTransforms: true,
     useTransforms: true,
     itemSelector: '.webinar-posts__event-item',
+   /* staggerAmount: 15, // Transition delay offset for each item in milliseconds.
+    staggerAmountMax: 150, // Maximum stagger delay in milliseconds.
+    throttle: throttle, // By default, shuffle will throttle resize events. This can be changed or removed.
+    throttleTime: 300,*/
+
 	});
 
 
-
-
- /*  $('#my-shuffle').shuffle('layout'); */
-  /* $(document).ready(function(){ */
-/*
-  $('.location-switcher_wrap').click(function() {
-      $('.webinar-posts__event-item').toggleClass('full');
-      $('.webinar-posts__event-item').toggleClass('full'); 
-      $('.newsminigrid').toggleClass('full');
-       $('.newsimgwrap').toggleClass('full'); 
-       $('.pin-button-link').toggleClass('full'); 
-       $('.location-switcher_column').toggleClass('hide');
-       $('.location-switcher_full').toggleClass('hide');  
-     /*  this.shuffle.update(); */
-   
-    /* }); */
-
- /*  }); */
-
   this.shuffle.layout();
   console.log("SHUFFLE LAYOUT");
+  
+  /*
+  
+   $('#exampleModal').modal('show')
+   setTimeout(function () {
+    this.shuffle.layout()
+   }, 2000)
+})
+*/
 
-  $('.js-shuffle').shuffle('layout');
+ /* SWITCH LAYOUT LOKACIJE ITEMS*/
+
+ $('.location-switcher_wrap').click(function() {
+  $('.webinar-posts__event-item').toggleClass('full'); 
+ $('.newsminigrid').toggleClass('full');
+  $('.newsimgwrap').toggleClass('full'); 
+  $('.pin-button-link').toggleClass('full'); 
+  $('.location-switcher_column').toggleClass('hide');
+  $('.location-switcher_full').toggleClass('hide');
+  /* setTimeout(()=>{ */
+ /*  Demo.this.shuffle.update();  */
+/*
+ 
+ setTimeout(function () {
+  this.shuffle.layout()
+ }, 2000)
+  locoScroll.update();
+ ScrollTrigger.refresh(true); 
+ console.log("SHUFFLE LAYOUT AFTER");
+/*   shuffleUpdate();
+ console.log("SHUFFLE UPDATED"); */
+/* }); */
+
+
+
+/*
+this.shuffle.update();
+console.log("SHUFFLE UPDATED XXX"); 
+/* shufleupdate();
+console.log("SHUFFLE UPDATED FROM CALL"); */
+
+/* this.shuffle.destroy();
+console.log("SHUFFLE DESTROYED"); */
+
 
 	this.filters = {
 		regions: [],
 		categories: [],
 	};
 
-  this.addUpdate();
   this.addSorting();
   
 	this._bindEventListeners();
 };
 
-
-
-Demo.prototype.addUpdate = function () {
-  $(document).on('click', '.location-switcher_wrap', function () {
-	/* 	this.shuffle.update();  */
-
-  
-    
-     console.log("SHUFFLE APDEJT FROM GALAXY");
-	})
-};
-
 /* S O R T  ODAVDE*/
-
 
 
   /**
@@ -3036,8 +3050,6 @@ setTimeout(()=>{
 
 };
 
-
-
 /**
  * If any of the arrays in the `filters` property have a length of more than zero,
  * that means there is an active filter.
@@ -3070,27 +3082,21 @@ Demo.prototype.itemPassesFilters = function (element) {
 	return true;
 };
 
-
-/* document.addEventListener("DOMContentLoaded", function() {
-  window.demo = new Demo(document.querySelector(".js-shuffle"));
-}); */
-
-/* }); */
-
+/* document.addEventListener('DOMContentLoaded', function () {
+	window.demo = new Demo(document.querySelector('.js-shuffle'));
+});
+ */
 
 setTimeout(()=>{  
+  /*document.addEventListener("DOMContentLoaded", function() { */
     window.demo = new Demo(document.querySelector(".js-shuffle"));
-    console.log("SHUFFLE UČITAN");
        },200)  
-
        setTimeout(()=>{  
-           /*  locoScroll.update(); */
+     /*   locoScroll.update(); */
        ScrollTrigger.refresh(true);
-       console.log("SHUFFLE+LOCO+SCROLLTRIGGER updated");
-      },200) 
+       console.log("NAKRAJU RIFREEEŠŠŠŠ");
+      },500) 
       
-/* document load*/
-   /*  }); */
 
 
 /* Shuffle.destroy();
@@ -3177,45 +3183,8 @@ $('.field').change(function() {
 
 
 
+  
 
-       /* SWITCH LAYOUT LOKACIJE ITEMS*/
-/*
-       $('.location-switcher_wrapx').click(function() {
-        $('.webinar-posts__event-item').toggleClass('full'); 
-       $('.newsminigrid').toggleClass('full');
-        $('.newsimgwrap').toggleClass('full'); 
-        $('.pin-button-link').toggleClass('full'); 
-        $('.location-switcher_column').toggleClass('hide');
-        $('.location-switcher_full').toggleClass('hide');
-     
-       /*  Demo.this.shuffle.update();  */
-      /*  shuffleupdate(); */
-
-
-   /*     this.shuffle.layout(); */
-       
-
-  /*  this.shuffle.on(Shuffle.EventType.LAYOUT, (data) => {
-    const visibleItems = this.shuffle.visibleItems;
-    requestAnimationFrame(() => {
-      // class toggle logic
-     
-      console.log("SHUFFLE APDEJT FROM FUNCTION");
-    });
-  }); */
-
-      /*  setTimeout(function () {
-        this.shuffle.layout()
-       }, 2000) */
-       /*  locoScroll.update();
-       ScrollTrigger.refresh(true);  */
-       
-      /*   shuffleUpdate();
-       console.log("SHUFFLE UPDATED"); */
-       /* });  */
-
-  /* 
-      }) */
     
 }
 
