@@ -750,14 +750,10 @@ map.on('click', function(e) {
   */
     var popup = new mapboxgl.Popup({ offset: [0, -15], className: 'popup-style' })
     .setLngLat(feature.geometry.coordinates)
-     /* .setHTML(
-      '<p>' + feature.properties.title + '<p>' +
-      '<p>' + feature.properties.description + '</p>'
-      )  */
-
-      .setHTML('<h3 class="h3map">' + feature.properties.title + '</h3><p>' + feature.properties.description + '</p>')
-
-      
+     .setHTML(
+      '<p>' + frkaplus.feature.properties.title + '<p>' +
+      '<p>' + frkaplus.feature.properties.description + '</p>'
+      ) 
       /* .setHTML("<h3>Hello World!</h3>") */
       .setMaxWidth("300px")
     .addTo(map);
