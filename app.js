@@ -2774,8 +2774,8 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
 
 
 
- /*  this.shuffle.update();
-console.log("SHUFFLE UPDATED"); */
+this.shuffle.update();
+console.log("SHUFFLE UPDATED"); 
 /* shufleupdate();
 console.log("SHUFFLE UPDATED FROM CALL"); */
 
