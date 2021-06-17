@@ -3144,7 +3144,7 @@ $('.field').change(function() {
   $('.webinar-posts__event-item').toggleClass('full'); 
  $('.newsminigrid').toggleClass('full');
   $('.newsimgwrap').toggleClass('full'); 
-  $('..pin-button-link').toggleClass('full'); 
+  $('.pin-button-link').toggleClass('full'); 
   $('.location-switcher_column').toggleClass('hide');
   $('.location-switcher_full').toggleClass('hide');
   /* setTimeout(()=>{ */
