@@ -2749,7 +2749,7 @@ function toArray(thing) {
 
 
 
-var Demo = function (element) {
+const Demo = function (element) {
 /* UBAČENO*/ 
   this.element = element;
 /*   this.gridItems = this.element.querySelectorAll('.webinar-posts__event-item); */
