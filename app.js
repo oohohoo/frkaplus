@@ -2834,6 +2834,7 @@ console.log("SHUFFLE DESTROYED"); */
       options = {
         reverse: reverseOrder(),
         by: sortByRegion,
+        
       };
     } else if (value === 'category') {
       options = {
@@ -2849,6 +2850,15 @@ console.log("SHUFFLE DESTROYED"); */
       options = {};
     }
     this.shuffle.sort(options);
+
+    setTimeout(()=>{
+      this.shuffle.update();
+      console.log("SHUFFLE UPDATED NAKON SORTA");
+      locoScroll.update();
+      ScrollTrigger.refresh(true);
+       console.log("Locoscrollupdated + SCROLLTRIGGER NAKON SORTA");
+   },200) 
+
   };
   
 
@@ -2963,7 +2973,7 @@ Demo.prototype.filter = function () {
       locoScroll.update();
       ScrollTrigger.refresh(true);
        console.log("Locoscrollupdated + SCROLLTRIGGER REFRESHHHHH 1");
-   },400)  
+   },200)  
 
 
   } else {
@@ -2974,19 +2984,13 @@ Demo.prototype.filter = function () {
       locoScroll.update();
       ScrollTrigger.refresh(true);
     console.log("Locoscrollupdated + SCROLLTRIGGER REFRESHHHHH 2");
-    },400)  
+    },200)  
   }
 
   if(this.shuffle.visibleItems == 0){
     this.message.innerHTML = (this.shuffle.visibleItems) + " items";
 
-    setTimeout(()=>{
-      this.shuffle.update();
-      console.log("SHUFFLE UPDATED1");
-      locoScroll.update();
-      ScrollTrigger.refresh(true);
-       console.log("Locoscrollupdated + SCROLLTRIGGER REFRESHHHHH 1");
-   },400) 
+    
 
   
 } else{
