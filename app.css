@@ -1687,12 +1687,12 @@ background: transparent;
  } */
 
  .webinar-posts__event-list li {
-  margin: 0 20px 40px;
+  margin: 0 1px 20px;
 }
 
 
  .webinar-posts__event-item {
-  width: calc(50% - 40px);
+  width: calc(50% - 22px);
  /*   overflow: hidden;
    position: relative; */
  }
