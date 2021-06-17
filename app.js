@@ -3185,14 +3185,23 @@ $('.field').change(function() {
        /*  Demo.this.shuffle.update();  */
       /*  shuffleupdate(); */
 
-       this.shuffle.layout();
+   /*     this.shuffle.layout(); */
        
+   this.shuffle.on(Shuffle.EventType.LAYOUT, (data) => {
+    const visibleItems = this.shuffle.visibleItems;
+    requestAnimationFrame(() => {
+      // class toggle logic
+      this.shuffle.update();
+      console.log("SHUFFLE APDEJT FROM FUNCTION");
+    });
+  });
+
       /*  setTimeout(function () {
         this.shuffle.layout()
        }, 2000) */
        /*  locoScroll.update();
        ScrollTrigger.refresh(true);  */
-       console.log("SHUFFLE APDEJT FROM FUNCTION");
+       
       /*   shuffleUpdate();
        console.log("SHUFFLE UPDATED"); */
        }); 
