@@ -2697,7 +2697,7 @@ function newSort() {
 
  /*  $(document).ready(function(){ */
 
-/* 'use strict'; */
+'use strict';
 
 $("#d").select2();
 //select2 start
@@ -2767,11 +2767,6 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
     roundTransforms: true,
     useTransforms: true,
     itemSelector: '.webinar-posts__event-item',
-   /* staggerAmount: 15, // Transition delay offset for each item in milliseconds.
-    staggerAmountMax: 150, // Maximum stagger delay in milliseconds.
-    throttle: throttle, // By default, shuffle will throttle resize events. This can be changed or removed.
-    throttleTime: 300,*/
-
 	});
 
 
@@ -2814,7 +2809,10 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
 
 Demo.prototype.addUpdate = function () {
   $(document).on('click', '.location-switcher_wrap', function () {
-		this.shuffle.update(); 
+	/* 	this.shuffle.update();  */
+
+    $('.js-shuffle').shuffle('layout');
+    
      console.log("SHUFFLE APDEJT FROM GALAXY");
 	})
 };
