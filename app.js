@@ -2695,7 +2695,7 @@ NOVI SORT MOŽDA FINALEEEE
 function newSort() {
 
 
-
+  $(document).ready(function(){
 
 'use strict';
 
@@ -2775,8 +2775,8 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
 	});
 
 
-/*   $(document).ready(function(){
-  $('.location-switcher_wrap').click(function() { */
+  /* $(document).ready(function(){ */
+  $('.location-switcher_wrap').click(function() {
     /*   $('.webinar-posts__event-item').toggleClass('full');
       $('.webinar-posts__event-item').toggleClass('full'); 
       $('.newsminigrid').toggleClass('full');
@@ -2786,9 +2786,9 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
        $('.location-switcher_full').toggleClass('hide');  */
       this.shuffle.update();
       console.log("SHUFFLE APDEJT FROM FUNCTION");
-  /*   });
+    });
 
-  }); */
+ /*  }); */
 
   this.shuffle.layout();
   console.log("SHUFFLE LAYOUT");
@@ -3095,6 +3095,7 @@ setTimeout(()=>{
   /*document.addEventListener("DOMContentLoaded", function() { */
     window.demo = new Demo(document.querySelector(".js-shuffle"));
        },200)  
+       
        setTimeout(()=>{  
      /*   locoScroll.update(); */
        ScrollTrigger.refresh(true);
@@ -3102,7 +3103,7 @@ setTimeout(()=>{
       },500) 
       
 
-
+    });
 
 
 /* Shuffle.destroy();
