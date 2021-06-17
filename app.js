@@ -3172,6 +3172,12 @@ $('.field').change(function() {
 
 
 
+$('location-switcher_wrap').click(function() {
+  this.shuffle.update();
+  console.log("SHUFFLE APDEJT FROM FUNCTION");
+});
+
+
        /* SWITCH LAYOUT LOKACIJE ITEMS*/
 
        $('.location-switcher_wrap').click(function() {
@@ -3187,11 +3193,12 @@ $('.field').change(function() {
 
    /*     this.shuffle.layout(); */
        
+
    this.shuffle.on(Shuffle.EventType.LAYOUT, (data) => {
     const visibleItems = this.shuffle.visibleItems;
     requestAnimationFrame(() => {
       // class toggle logic
-      this.shuffle.update();
+     
       console.log("SHUFFLE APDEJT FROM FUNCTION");
     });
   });
