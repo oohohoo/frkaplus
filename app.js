@@ -764,6 +764,7 @@ map.on('click', function(e) {
 
 
 
+
 map.doubleClickZoom.enable();
 console.log("MAP DOUBLECLICK!"); 
 
