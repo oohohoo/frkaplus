@@ -751,8 +751,8 @@ map.on('click', function(e) {
     var popup = new mapboxgl.Popup({ offset: [0, -15], className: 'popup-style' })
     .setLngLat(feature.geometry.coordinates)
      .setHTML(
-      '<p>' + frkaplus.feature.properties.title + '<p>' +
-      '<p>' + frkaplus.feature.properties.description + '</p>'
+      '<p>' + marker.feature.properties.title + '<p>' +
+      '<p>' + marker.feature.properties.description + '</p>'
       ) 
       /* .setHTML("<h3>Hello World!</h3>") */
       .setMaxWidth("300px")
