@@ -2763,7 +2763,7 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
 		easing: 'cubic-bezier(0.165, 0.840, 0.440, 1.000)', // easeOutQuart
 		/* sizer: '.sizer', */
     buffer:1,
-    gutterWidth: 20,
+    gutterWidth: 30,
     roundTransforms: true,
     useTransforms: true,
     itemSelector: '.webinar-posts__event-item',
