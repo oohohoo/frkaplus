@@ -2774,10 +2774,10 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
 
 	});
 
-/*   $(el).on("mouseenter",function(){ */
+
   /* $(document).ready(function(){ */
-  $('.location-switcher_wrap').on("click") function() {
-       $('.webinar-posts__event-item').toggleClass('full');
+  $('.location-switcher_wrap').click(function() {
+      $('.webinar-posts__event-item').toggleClass('full');
       $('.webinar-posts__event-item').toggleClass('full'); 
       $('.newsminigrid').toggleClass('full');
        $('.newsimgwrap').toggleClass('full'); 
