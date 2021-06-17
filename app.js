@@ -2774,8 +2774,12 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
 
 	});
 
-
+  $(document).on('click', '.location-switcher_wrap', function () {
+		this.shuffle.update(); 
+     console.log("SHUFFLE APDEJT FROM FUNCTION");
+	})
   /* $(document).ready(function(){ */
+/*
   $('.location-switcher_wrap').click(function() {
       $('.webinar-posts__event-item').toggleClass('full');
       $('.webinar-posts__event-item').toggleClass('full'); 
@@ -2785,8 +2789,8 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
        $('.location-switcher_column').toggleClass('hide');
        $('.location-switcher_full').toggleClass('hide');  
      /*  this.shuffle.update(); */
-      console.log("SHUFFLE APDEJT FROM FUNCTION");
-    });
+   
+    /* }); */
 
  /*  }); */
 
