@@ -749,11 +749,11 @@ map.on('click', function(e) {
   */
     var popup = new mapboxgl.Popup({ offset: [0, -15], className: 'popup-style' })
     .setLngLat(feature.geometry.coordinates)
-   /*  .setHTML(
+     .setHTML(
       '<p>' + feature.properties.title + '<p>' +
       '<p>' + feature.properties.description + '</p>'
-      ) */
-      .setHTML("<h3>Hello World!</h3>")
+      ) 
+      /* .setHTML("<h3>Hello World!</h3>") */
       .setMaxWidth("300px")
     .addTo(map);
     console.log("POPUP on MAP");
@@ -2693,8 +2693,6 @@ NOVI SORT MOŽDA FINALEEEE
 */
 
 function newSort() {
-
-
 
 
 'use strict';

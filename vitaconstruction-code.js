@@ -578,3 +578,17 @@ swup.on('contentReplaced', init);
 console.log("content replaced");
 
 </script>
+
+
+
+ /* SWITCH LAYOUT LOKACIJE ITEMS*/
+
+ $('.button').click(function() {
+    this.shuffle.update();
+ 
+ /* setTimeout(function () { */
+ 
+ /* }, 200) */
+
+ console.log("SHUFFLE UPDATED"); 
+ }); 
