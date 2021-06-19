@@ -2781,18 +2781,19 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
     throttleTime: 300,*/
 
 	});
-  function updatio(){
+  
+  updatio: function(updation) {
   this.shuffle.update();
 }
 
-this.shuffle.updatio();
+this.shuffle.updation();
 console.log("UPDATED KROZ UPDATION FUNCTION");
 /* } */
 
-
+/*
   this.shuffle.layout();
   console.log("SHUFFLE LAYOUT");
-  
+  */
   /*
   
    $('#exampleModal').modal('show')
