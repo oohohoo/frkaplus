@@ -4,8 +4,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 let locoScroll;
 
-//Splitting();
-
 /*
 ================================================================================
 PRELOADER
@@ -20,12 +18,12 @@ const loaderInner = select('.inner-loader');
 const progressBar = select('.progress');
 const loaderMask = select('.loader__mask');
 
-
 /*
 ================================================================================
 IMAGES LOADED
 ================================================================================
 */
+
 function init() {
   // show loader on page load
   gsap.set(loader, {
@@ -95,6 +93,7 @@ init();
 MAIN JS + LOCOMOTIVE SCROLL + SCROLL TRIGGER
 ================================================================================
 */
+
 function initScroll(container) {
 
   locoScroll = new LocomotiveScroll({
@@ -102,8 +101,6 @@ function initScroll(container) {
     smooth: true, 
     offset: [0, 0],
     getDirection: true,
-   /*  scrollbarContainer: false, */
-   /*  scrollbarContainer: document.querySelector('.main-wrapper'), */
     scrollFromAnywhere: true,
     multiplier: 1.0, // body sroll speed / object speed values are multiplied
     touchMultiplier: 3.0,
@@ -114,7 +111,6 @@ function initScroll(container) {
     },
     tablet: {
       smooth: true,
-
     }
   });
 // data direction ubačeno naknadno
@@ -136,20 +132,9 @@ function initScroll(container) {
 
     // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, 
     // we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
-    // 
-   //
-
-   /*OVO NE RADI SA DATA_SCROLL_SECTION
+    /*OVO NE RADI SA DATA_SCROLL_SECTION
    /* pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed"  */
   });
-
-
-/* OVO JE UBAČENO NAKNADNO
-
-ScrollTrigger.addEventListener("refreshInit", resize);
-console.log("refresh init mamicu mu AJMOOOO");
-*/
-///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
 
   // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
   ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
@@ -158,7 +143,11 @@ console.log("refresh init mamicu mu AJMOOOO");
   ScrollTrigger.refresh();
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
 
-
+/*
+================================================================================
+ON WINDOW RESIZE
+================================================================================
+*/
 window.addEventListener('resize', function(){
   setTimeout(()=>{
   locoScroll.update();
@@ -167,16 +156,12 @@ window.addEventListener('resize', function(){
   console.log("RESIZE ST+LS");
 });
 
-
- 
-
-
-
 /*
 ================================================================================
-RELOAD ON MOBILE ORIENTATION CHANGE
+RELOAD ON MOBILE ORIENTATION CHANGE // OVO TESTIRAJ DA LI TREBA
 ================================================================================
 */
+
 (function(w){
 
   var ua = navigator.userAgent;
@@ -247,17 +232,14 @@ function initLoader() {
   const loaderInner = select('.inner-loader');
   const progress = select('.progress');
  
-  
-
   tlLoaderIn
-  .set(".imageloadicon", {autoAlpha: 0})
-.set(loaderContent, {autoAlpha: 1})
+    .set(".imageloadicon", {autoAlpha: 0})
+    .set(loaderContent, {autoAlpha: 1})
     .set(".txt", {yPercent: 100})
     .set(".imageloadicon", {autoAlpha: 0})
     .set(".l1, .l3", {scaleX: 0})
     .set(".freveal", {yPercent: 100})
     .set(mask, {yPercent: 0})
-    //.set(image, {yPercent: 100})
     .set("#main", {y: 80})
 
     /* OVO JE DODANO ZA PREZENTACIJU*/
@@ -269,8 +251,6 @@ function initLoader() {
     .to(".l1", {scaleX: 1, transformOrigin: 'left', duration: 0.6}, 'revealImage+=0.1')
     .to(".l3", {scaleX: 1, transformOrigin: 'left', duration: 0.6}, 'revealImage+=0.3')
     .to(".freveal", {yPercent: 0, stagger: 0.05}, 'revealImage+=0.8')
-    //.to(image, {yPercent: 0}, 'revealImage-=0.5')
-    //.to(".txt", {yPercent: 0, stagger: 0.2}, 'revealImage-=0.4');
 
   // LOADER OUT
   const tlLoaderOut = gsap.timeline({
@@ -279,7 +259,6 @@ function initLoader() {
 
   tlLoaderOut
 
-//.to(lines, {yPercent: -500, stagger: 0.2}, 0)
     .to([loader, loaderContent], {yPercent: -100}, 0.2)
     .to('#main', {y: 0}, 0);
 
@@ -295,8 +274,6 @@ INIT CONTENT --> vodi na --> INIT SCROLL
 ================================================================================
 */
 function initContent() {
-  /* $(document).ready(function(){  */
-
 
   select('body').classList.remove('is-loading');
  /* ORIGINAL*/
@@ -304,17 +281,13 @@ function initContent() {
   webflowInteractions();
   customCursor();
   underlineLink();
- /*  locoScroll.update();
-  console.log("INIT LOCO SCROLL UPDATED"); */
-/* DODANE*/
   scrollTotop();
   hideMenu();
-  /* multilinereveal(); */
-  console.log("SCRIPTS SCROLLTRIGGER LOADED");
-  // LOAD ON ONAMA
+  console.log("initial scripts loaded...");
+ 
   if (document.querySelector('#home')) {
     homevideo();
-    console.log("HOME SCRIPTS -- loaded");
+    console.log("home scripts loaded...");
   }
 
   if (document.querySelector('#onama')) {
@@ -324,32 +297,26 @@ function initContent() {
     horizpin();
     playpausevideo();
     smallCounteronama();
-    console.log("O NAMA SCRIPTS PLAYPAUSE -- loaded");
+    console.log("o nama scripts loaded...");
 
   }
   if (document.querySelector('#lokacije')) {
     newSort();
     lokacijeBotuni();
     locationMap();
-    console.log("LOKACIJE SCRIPTS -- loaded");
+    console.log("lokacije scripts loaded...");
   }
 
   if (document.querySelector('#lokacijesolo')) {
-   
     openTestYourDesign();
     uploadCrop();
-    console.log("UPLOAD CROP");
     splidesolo();
     saveaspdf();
     locationMap(); 
-      
-    /* appendmore(); */
-    console.log("LOKACIJE SOLO SCRIPTS -- loaded");
+    console.log("lokacijesolo scripts loaded...");
   }
-/* });  */
- 
- 
-  
+
+   
 //DRUKČIJE SE PONAŠA AKO UBACIMO UNUTAR document ready/ 
 
   ScrollTrigger.refresh(true); // ScrollTrigger Refresh
@@ -422,15 +389,15 @@ function initPageTransitions() {
   //kill scrolltrigger
   barba.hooks.beforeLeave(() => {
    locoScroll.destroy(); 
-     //KILL SCROLLTRIGGERRRRR PREBAČEN
-
+   console.log("locoscroll killed...");
      if (ScrollTrigger.getAll().length > 0) {
       ScrollTrigger.getAll().forEach((trigger) => {
           trigger.kill()
+          console.log("scrolltrigger killed...");
       });
   }
-  
-  Webflow.destroy();
+    Webflow.destroy();
+    console.log("lwebflow interactions killed...");
 
   /* NEW JACK SCROLLTRIGGER DESTROY*/
 /*
@@ -440,19 +407,11 @@ function initPageTransitions() {
     window.dispatchEvent(new Event("resize"));
   };
 */
-  console.log("LOCO*SCROLLTRIGGER NEW KILLED");
   
   });
   //init scrolltrigger
   barba.hooks.afterEnter(() => {
 
- /*    ScrollTrigger.refresh(true); // ScrollTrigger Refresh
-  console.log("scrolltrigger refreshed ON HOOKS"); */
-            
-   /*
-    ScrollTrigger.refresh(true); // ScrollTrigger Refresh
-    console.log("scrolltrigger refreshed after enter");
-    */
   });
 
   /*
@@ -461,60 +420,48 @@ function initPageTransitions() {
   ================================================================================
   */
   barba.use(barbaPrefetch);
+
   /*
   ================================================================================
   BARBA INIT 
   ================================================================================
   */
 
-  barba.init({
-          timeout: 7000, 
-        debug: true,
-        prefetch: true,
-        /*
-================================================================================
-BARBA VIEWS
-================================================================================
-*/
+barba.init({
+      timeout: 7000,
+      debug: true,
+      prefetch: true,
+/*
+  ================================================================================
+  BARBA VIEWS
+  ================================================================================
+  */
         views: [{
               namespace: 'home',
 
               beforeEnter(data) {
                 heroApeli();
-                  /* homevideo();  */  
-                
                 document.getElementById('homevid').play();
-
               },
-              afterEnter(data) {
-              
-            
-
-            }}, {
+             
+            }, {
 
               namespace: 'onama',
+              
               beforeEnter(data) {
                 playpausevideo();
-                
-
-                 onamacounter();
-                console.log("NOVI O NAMA COUNTER"); 
+                onamacounter();
                 simpleaccordion();
                 zoomimage();
                 accordionhover();
                 customSelect();
                 smallCounteronama();
               },
-
-              once(data) {
-              
-              }
+             
             }, {
 
               namespace: 'lokacije',
-              once() {
-               
-              },
+
               beforeEnter(data) {
                 newSort();
                 stopScrollMap();
@@ -522,45 +469,27 @@ BARBA VIEWS
               },
               beforeLeave({current}) {
                 map.remove();
-                console.log("Mapremoooooooooveeedddddd");
-              }
-            }, {
-
-              namespace: 'sort',
-              beforeEnter({
-                next
-              }) {
-
-              }
+                console.log("map removed...");
+              },
             }, {
 
               namespace: 'lokacijesolo',
-              once(data) {
 
-              },
               beforeEnter(data) {
-                /* DA LI OVDJE UČITATI MAPU??*/
                 locationMap();
                 splidesolo();
-               
-                /* swiperlocation(); */
                 scrolltriggerupdate();
                 openTestYourDesign();
-                console.log("TEST YOUR DESIGN SOLOOO");
                 uploadCrop();
                 saveaspdf();
-                
+            
               },
                 beforeLeave(data) {
-
-                 /*  splide.on( 'destroy', function() { */
-                    splide.destroy(completely = true);
-                    /* console.log("SPLIDE ODJEBAN"); */
+           /*   splide.on( 'destroy', function() { */
+                splide.destroy(completely = true);
+                /* console.log("SPLIDE ODJEBAN"); */
                 /*   }); */
 
-
-                  
-                  
              },
             }, {
 
@@ -582,6 +511,7 @@ BARBA VIEWS
               }
             }, {
               namespace: 'privatnost',
+              
               beforeEnter(data) {
                 simpleaccordion();
                 accordionhover();
@@ -590,6 +520,7 @@ BARBA VIEWS
             }, {
 
               namespace: 'reference',
+              
               beforeEnter(data) {
                 logohover();
               }
