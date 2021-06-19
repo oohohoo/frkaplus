@@ -2995,6 +2995,10 @@ Demo.prototype._handleregionChange = function (evt) {
 		});
 		this.filters.regions = [];
 		this.filter();
+    this.shuffle.update();
+    locoScroll.update();
+    ScrollTrigger.refresh(true);
+     console.log("Locoscrollupdated + SCROLLTRIGGER AFTER BUTN KLIK");
 	}
 };
 
