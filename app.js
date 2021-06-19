@@ -743,7 +743,7 @@ map.on('click', function(e) {
      .setHTML(
       '<h3>' + feature.properties.title + '</h3>' +
       '<p>' + feature.properties.description + '</p>'+ 
-      '<p><img src="'feature.properties.image'" alt="'An Image of feature.properties.title'"></p>') 
+      '<p><img src="'feature.properties.image'" alt="'An Image of feature.properties.title'"></p>')) 
       /* .setHTML("<h3>Hello World!</h3>") */
       /* .setMaxWidth("300px") */
       
