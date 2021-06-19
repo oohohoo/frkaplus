@@ -896,8 +896,8 @@ console.log("MAP RESIZE!");
 /*  },5000)    */
  console.log("MAP LOADDDDDDD!"); 
 
-mapboxgl.clearStorage();
-console.log("STORAGE CLEARED"); 
+/* mapboxgl.clearStorage();
+console.log("STORAGE CLEARED");  */
 
 
 
