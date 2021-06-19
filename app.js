@@ -2870,7 +2870,7 @@ console.log("SHUFFLE DESTROYED"); */
    Demo.prototype.addSorting = function () {
     document.querySelector('.sort-order').addEventListener('change', this._handleSortChange.bind(this));
     document.querySelector('.sort-options').addEventListener('input', this._handleSortChange.bind(this));
-    document.querySelector('.location-switcher_wrap').addEventListener('click', this.shuffle.update());
+    //document.querySelector('.location-switcher_wrap').addEventListener('click', this.shuffle.update());
   };
   
 
