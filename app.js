@@ -2871,7 +2871,7 @@ console.log("SHUFFLE DESTROYED"); */
 
 /* this.shuffle.update(); */
 this.shuffle.layout();
-    console.log("SHUFFLE UPDATED ON CLICKSSS");
+    console.log("SHUFFLE UPDATED LAYOUT");
 
   };
 
