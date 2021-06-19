@@ -2705,7 +2705,7 @@ NOVI SORT MOŽDA FINALEEEE
 function newSort() {
 
 
-/* 'use strict'; */
+'use strict';
 
 $("#d").select2();
 //select2 start
@@ -2781,12 +2781,12 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
     throttleTime: 300,*/
 
 	});
-  var updatio = function() {
+/*   var updatio = function() {
     this.shuffle.update();
 }
 
 updatio();
-console.log("UPDATED KROZ UPDATION FUNCTION");
+console.log("UPDATED KROZ UPDATION FUNCTION"); */
 /* } */
 
 /*
@@ -2870,8 +2870,11 @@ console.log("SHUFFLE DESTROYED"); */
    Demo.prototype.addSorting = function () {
     document.querySelector('.sort-order').addEventListener('change', this._handleSortChange.bind(this));
     document.querySelector('.sort-options').addEventListener('input', this._handleSortChange.bind(this));
+    document.querySelector('.location-switcher_wrap').addEventListener('click', this.shuffle.update());
   };
   
+
+
   Demo.prototype._handleSortChange = function (event) {
     //var value = event.target.value;
     var value = document.querySelector('.sort-options').value;
