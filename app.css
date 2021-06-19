@@ -1693,7 +1693,7 @@ background: transparent;
 
 
  .webinar-posts__event-item {
-  width: calc(50% - 13px);
+  width: calc(50% - 22px);
  /*   overflow: hidden;
    position: relative; */
  }
