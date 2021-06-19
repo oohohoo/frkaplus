@@ -301,6 +301,7 @@ function initContent() {
   }
   if (document.querySelector('#lokacije')) {
     newSort();
+    sortChangeLayout();
     lokacijeBotuni();
     locationMap();
     console.log("lokacije scripts loaded...");
@@ -1968,7 +1969,7 @@ $('.trigger').click(function() {
 SORT BUTTONS
 ================================================================================
 */  
-
+/*
 function sortButtons() {
 
   $('.linky').hover(function() {
@@ -1987,7 +1988,7 @@ function sortButtons() {
   });
 
 }
-
+*/
 /*
 ================================================================================
 GSAP UNDERLINE
@@ -2568,6 +2569,8 @@ setTimeout(()=>{
 SHUFFLE.JS - CHANGE LAYOUT ICON
 ================================================================================
 */
+function sortChangeLayout() {
+
 $('.location-switcher_wrap').click(function () {
   $('.webinar-posts__event-item').toggleClass('full');
   $('.newsminigrid').toggleClass('full');
@@ -2576,7 +2579,7 @@ $('.location-switcher_wrap').click(function () {
   $('.location-switcher_column').toggleClass('hide');
   $('.location-switcher_full').toggleClass('hide');
 });
-
+}
   
 /*
 ================================================================================
