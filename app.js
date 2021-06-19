@@ -730,7 +730,7 @@ Add an event listener that runs
 map.on('click', function(e) {
   // If the user clicked on one of your markers, get its information.
   var features = map.queryRenderedFeatures(e.point, {
-    layers: ['chicago-parks'] // replace with your layer name
+    layers: ['frkaplus'] // replace with your layer name
   });
   if (!features.length) {
     return;
