@@ -741,10 +741,10 @@ map.on('click', function(e) {
     and properties, and add it to the map.
   */
     var popup = new mapboxgl.Popup({ offset: [0, -15] /*, className: 'popup-style' */})
-    .setLngLat(features.geometry.coordinates)
+    .setLngLat(feature.geometry.coordinates)
      .setHTML(
-      '<h3>' + features.properties.title + '</h3>' +
-      '<p>' + features.properties.description + '</p>' 
+      '<h3>' + feature.properties.title + '</h3>' +
+      '<p>' + feature.properties.description + '</p>' 
      /*  '<p><img src="'feature.properties.image'"></p>') */
       )
       /* .setHTML("<h3>Hello World!</h3>") */
