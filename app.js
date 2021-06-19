@@ -2785,7 +2785,7 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
     this.shuffle.update();
 }
 
-this.shuffle.updatio();
+updatio();
 console.log("UPDATED KROZ UPDATION FUNCTION");
 /* } */
 
