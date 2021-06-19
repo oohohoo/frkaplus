@@ -2871,8 +2871,12 @@ console.log("SHUFFLE DESTROYED"); */
       /* SWITCH LAYOUT LOKACIJE ITEMS*/
 
 /* this.shuffle.update(); */
-this.shuffle.layout();
-    console.log("SHUFFLE UPDATED LAYOUT");
+setTimeout(()=>{
+  this.shuffle.update();
+  locoScroll.update();
+  ScrollTrigger.refresh(true);
+   console.log("Locoscrollupdated + SCROLLTRIGGER NAKON LAYOUT CHANGE");
+},200) 
 
   };
 
