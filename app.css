@@ -544,7 +544,7 @@ transition: all 0.3s cubic-bezier(.4,0,0,1);
 }
 
 .item a:hover {
-color: var(--frkayellow);
+color: #ffdc52;
 background-image: 
 linear-gradient(to top, #231F20 51%, transparent 50%);
 background-position: 0 100%;
