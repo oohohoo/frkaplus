@@ -812,12 +812,6 @@ FADE IN MAP
 ================================================================================
 */
  
-
-    myMap = createMapbox(data.next.container);
-  
-/* setTimeout(()=>{ */
-/*
-  
 var fadein = gsap.timeline({defaults:{ease:'none'}})
 .to('.loader-icon', {autoAlpha:1})
 .to('.loader-wrap', {rotate: 360, repeat: -1, duration:2}, "<")
@@ -825,21 +819,8 @@ var fadein = gsap.timeline({defaults:{ease:'none'}})
 .to('.lokacije-mapbox-container', {autoAlpha:1, duration:1.5, delay:2})
 .to('.loader-icon', {autoAlpha:0}, "-=1.5")
 .to('.loader-txt', {autoAlpha:0}, "<")
-*/
-/* .to('.fadeheader', {autoAlpha:0, stagger:5}, 4) */
-/* },1500) */
-
-
-
-
 
 }
-
-
-
-/* } */
-
-
 
  /* OVO MOŽDA KORISTITI ZA LOADANJE SKRIPTI*/
 
@@ -851,80 +832,11 @@ var fadein = gsap.timeline({defaults:{ease:'none'}})
   project.createViewslider(1) 
 }); */
 
-
-
 /*  mapboxgl.prewarm(); */
 
 /*
 ================================================================================
-SWIPER LOCATION
-================================================================================
-*/
-
-function swiperlocation() {
-
-
-var menu = ['', '', '', '', '', '']  
-  var mySwiper = new Swiper ('.swiper-container', {
-   loop: true,
-		speed: 1000,
-   // spaceBetween: 100,
-   // initialSlide: 0,
-    //truewrapper adoptsheight of active slide
-    autoHeight: false,
-    updateOnWindowResize: true,
-    // Optional parameters
-  //  direction: 'vertical',
-      // delay between transitions in ms
-    	/* autoplay: {
-				delay: 5000,
-				disableOnInteraction: false,
-}, */
-   // autoplayStopOnLast: false, // loop false also
-    // If we need paginationg
- 
-    
-    
-    // Navigation arrows
-/*    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev', */
-    
-    // And if we need scrollbar
-    //scrollbar: '.swiper-scrollbar',
-    // "slide", "fade", "cube", "coverflow" or "flip"
-   // effect: 'slide',
-    
-    /*   pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
-				type: "progressbar", */
-				/*renderBullet: function (index, className) {
-					return '<span class="' + className + '">' + (menu[index]) + '</span>';
-},*/
-    // Distance between slides in px.
-  //  spaceBetween: 60,
-    //
-    slidesPerView: 1,
-    observer: true,
-  observeParents: true,
-  observeSlideChildren: true,
-  longSwipes: false,
-  
-    //
-   // centeredSlides: true,
-    //
-   // slidesOffsetBefore: 0,
-    //
-    grabCursor: true,
- /*  } */
-  })        
-  
-}
-
-
-/*
-================================================================================
-PREVENT SCROLL UNDER FS MENU
+PREVENT SCROLL UNDER FS MENU // PODESI
 ================================================================================
 */
 function stopScrollMap() {
@@ -979,8 +891,8 @@ sections.forEach((section, index) => {
           ease: 'power2.out',
           onComplete:function() {
            locoScroll.update();
-           console.log("donedonedonedonedonedonedonedonedone")
-          }
+           console.log("locoscroll updated after accordion...");
+                    }
         })
       }
     })
@@ -992,7 +904,8 @@ sections.forEach((section, index) => {
         ease: 'power2.out',
         onComplete:function() {
           locoScroll.update();
-          console.log("donedonedonedonedonedonedonedonedone")
+          console.log("locoscroll updated after accordion...");
+          
          }
       })
     } else {
@@ -1005,7 +918,7 @@ sections.forEach((section, index) => {
         ease: 'power2.out',
         onComplete:function() {
           locoScroll.update();
-          console.log("donedonedonedonedonedonedonedonedone")
+          console.log("locoscroll updated after accordion...");
          }
       })
     }
@@ -1014,11 +927,11 @@ sections.forEach((section, index) => {
 
 }
 
-
-/* 
-=============================================
+/*
+================================================================================
 HERO - APELI
-================================================ */
+================================================================================
+*/
 
 function heroApeli() {
 
@@ -1028,34 +941,23 @@ var action = gsap.timeline({repeat:-1, defaults:{duration:0.8, ease:'none'}})
 
 }
 
-
-/* 
-=============================================
-Dynamic Copyright Year
-================================================ 
+/*
+================================================================================
+DYNAMIC YEAR
+================================================================================
 */
+
 function yearupdate() {
 
   var date = new Date().getFullYear();
   document.getElementById("year").innerHTML = date;
-  
-  }
 
-  
-/* 
-=============================================
-SCROLLTRIGGER UPDATE možda out
-================================================ 
-*/
+}
 
-function scrolltriggerupdate() {
-  ScrollTrigger.update();
-  }
-  
-/* 
-=============================================
+/*
+================================================================================
 DOWNLOAD AS PDF *** TESTNA STRANICA *** NIJE PRODUKCIJA
-================================================ 
+================================================================================
 */
 
 function saveaspdf() {
@@ -1154,10 +1056,12 @@ btn.addEventListener('click', function(){
 
 }
 
-/* 
-=============================================
+
+/*
+================================================================================
 REFERENCE LOGOTIP HOVER 
-================================================ */
+================================================================================
+*/
 
 function logohover() {
 
@@ -1181,11 +1085,11 @@ function logohover() {
 
 }
 
-
-/* 
-=============================================
-ACCORDION HOVER 
-================================================ */
+/*
+================================================================================
+ACCORDION HOVER
+================================================================================
+*/
 
 function accordionhover() {
 
@@ -1214,14 +1118,12 @@ function accordionhover() {
 
 }
 
-
-
-
-/* 
-=============================================
+/*
+================================================================================
 TEST YOUR DESIGN MODUL
-================================================ 
+================================================================================
 */
+
 function openTestYourDesign() {
   gsap.set('#tweenbox', {
     scaleY: 0,
@@ -1231,13 +1133,10 @@ function openTestYourDesign() {
   let forwards = true;
   document.querySelector("#tweenbutton").addEventListener("click", ev => {
     if (forwards) {
-
       const tl = gsap.timeline({})
-
 
         .to('#tweenbox', {
           scaleY: 1,
-          /* rotate:0, */
           duration: 0.64,
           ease: 'power2.inOut',
           overwrite: "auto"
@@ -1245,9 +1144,6 @@ function openTestYourDesign() {
 
         .to('.test-content', {
           autoAlpha: 1,
-          /* scaleY: 1.3, */
-          /* rotate: 360, */
-          /* rotate:0, */
           duration: 0.64,
           ease: 'power2.inOut',
           overwrite: "auto"
@@ -1262,17 +1158,12 @@ function openTestYourDesign() {
           overwrite: "auto"
         }, "<")
 
-
     } else {
 
       const tl2 = gsap.timeline({})
 
         .to('.test-content', {
           autoAlpha: 0,
-          /* scaleY: 1, */
-          /* rotate: -360, */
-          /*  transformOrigin: 'top', */
-          /* rotate:30, */
           duration: 0.64,
           ease: 'power2.inOut',
           overwrite: "auto"
@@ -1282,8 +1173,6 @@ function openTestYourDesign() {
         .to('#tweenbox', {
 
           scaleY: 0,
-          /*  transformOrigin: 'top', */
-          /* rotate:30, */
           duration: 0.64,
           ease: 'power2.inOut',
           overwrite: "auto",
@@ -1300,7 +1189,6 @@ function openTestYourDesign() {
         }, "<")
 
     }
-    /* tl.reverse(); */
     forwards = !forwards;
   });
 
@@ -1311,13 +1199,10 @@ function openTestYourDesign() {
 
 }
 
-
-
-
-/* 
-=============================================
+/*
+================================================================================
 TRANSFORM MATRIX 3d GENERATOR
-================================================ 
+================================================================================
 */
 
 function matrixtransform() {
@@ -1503,11 +1388,10 @@ function matrixtransform() {
 
 }
 
-
-/* 
-=============================================
+/*
+================================================================================
 ZOOM IMAGE
-================================================ 
+================================================================================
 */
 
 function zoomimage() {
@@ -1516,45 +1400,38 @@ function zoomimage() {
     var elements = document.querySelectorAll( '.demo-image' );
     Intense( elements );
     }); 
-     
-    console.log("imagezoom loaded");
-
 }
 
-
-
-/* SPLIDE */
+/*
+================================================================================
+SPLIDE
+================================================================================
+*/
 
 function splidesolo() {
 
-  const splide = new Splide ( ".splide", {
+  const splide = new Splide(".splide", {
+      perPage: 1,
+      perMove: 1,
+      type: 'loop',
+      focus: 'center',
+      breakpoints: {
+        767: {
+          perPage: 1,
+        }
+      }
+    })
+    .mount();
 
-/* new Splide( '.splide', { */
-	perPage: 1,
-	perMove: 1,
-  type   : 'loop',
-	focus  : 'center',
-  breakpoints: {
-		767: {
-			perPage: 1,
-		}
-	}
-})
-.mount();
+  $('.next-splide').click(function () {
+    $('.splide__arrow.splide__arrow--next').click();
+  });
 
-$('.next-splide').click(function() {
-	$('.splide__arrow.splide__arrow--next').click();
-});
-
-$('.prev-splide').click(function() {
-	$('.splide__arrow.splide__arrow--prev').click();
-});
-
-
+  $('.prev-splide').click(function () {
+    $('.splide__arrow.splide__arrow--prev').click();
+  });
 
 }
-
-
 
 
 /* 
@@ -1565,20 +1442,13 @@ SCROLLTRIGGERS
 ============================================================================================================================================= 
 */
 
-
-/* 
-=============================================
+/*
+================================================================================
 O NAMA // OUTLINE HERO
-================================================ 
+================================================================================
 */
 
 function outlinehero() {
-
-  /*OUTLINE TEXT OVER IMAGE MASK */
-  
-  /*$(document).ready(function(){ */
-   /*  ScrollTrigger.refresh();
-    console.log("FUCKER IS REFRESHED"); */
   /* gsap.set('.filled-text, .outline-text', {x:-500}); */
   gsap.to(".filled-text, .outline-text", {
     scrollTrigger:{
@@ -1602,228 +1472,210 @@ function outlinehero() {
     },
     x: -500
   });
-  
-  /*
-  }) */
-  }
+}
 
-  
-/* 
-=============================================
+/*
+================================================================================
 O NAMA // HORIZONTAL PIN
-================================================ 
+================================================================================
 */
 
 function horizpin() {
 
-let horizontalSections = document.querySelectorAll(".horizontal-scroll");
+  let horizontalSections = document.querySelectorAll(".horizontal-scroll");
 
-horizontalSections.forEach(horizontalSection => {
-   let pinWrap = document.querySelector(".pin-wrap");
-   let pinWrapWidth = pinWrap.offsetWidth;
-   let horizontalScrollLength = pinWrapWidth - window.innerWidth;
-   gsap.to(pinWrap, {
-     scrollTrigger: {
-      scroller: ".smooth-scroll",
-       scrub: 2,
-       trigger: ".horizontal-scroll",
-       pin: ".stophor",
-       /* anticipatePin: 1, */
-       //markers: true,
-       start: "top top",
-       
-       end: () => `+=${pinWrapWidth}`,
-       invalidateOnRefresh: true 
-       },
-
-     x: -horizontalScrollLength,
-     ease: "none" });
-
- });
-
+  horizontalSections.forEach(horizontalSection => {
+    let pinWrap = document.querySelector(".pin-wrap");
+    let pinWrapWidth = pinWrap.offsetWidth;
+    let horizontalScrollLength = pinWrapWidth - window.innerWidth;
+    gsap.to(pinWrap, {
+      scrollTrigger: {
+        scroller: ".smooth-scroll",
+        scrub: 2,
+        trigger: ".horizontal-scroll",
+        pin: ".stophor",
+        /* anticipatePin: 1, */
+        //markers: true,
+        start: "top top",
+        end: () => `+=${pinWrapWidth}`,
+        invalidateOnRefresh: true
+      },
+      x: -horizontalScrollLength,
+      ease: "none"
+    });
+  });
 }
 
-/* 
-=============================================
+/*
+================================================================================
 SCROLLTRIGGER INNER IMAGE PARALLAX 
-================================================ 
+================================================================================
 */
 
 function imageparallax() {
 
-gsap.utils.toArray(".grid").forEach(section => {
-	const pimages = section.querySelectorAll(".img__background");
+  gsap.utils.toArray(".grid").forEach(section => {
+    const pimages = section.querySelectorAll(".img__background");
 
-var inparallax = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".img__wrapper",
-    scroller: ".smooth-scroll",
-    scrub: true,
-    pin: false,
-  },
-}); 
-inparallax.from(pimages, {
-  yPercent: -20,
-  ease: "none",
-}).to(pimages, {
-  yPercent: 20,
-  ease: "none",
-}); 
-
-});
-
+    var inparallax = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".img__wrapper",
+        scroller: ".smooth-scroll",
+        scrub: true,
+        pin: false,
+      },
+    });
+    inparallax.from(pimages, {
+      yPercent: -20,
+      ease: "none",
+    }).to(pimages, {
+      yPercent: 20,
+      ease: "none",
+    });
+  });
 }
 
-
-/* 
-============================================================================
+/*
+================================================================================
 HOME // VIDEO
-================================================================================ 
+================================================================================
 */
 
 function homevideo() {
 
-let videoroll = gsap.timeline()
+  let videoroll = gsap.timeline()
 
-let cover = document.querySelector('.bgvideo')
-let firstSection = document.querySelector('.big-logo')
-let apelTrigger = document.querySelector('.apeli--hero-wrap')
-/* .set(".apeli--hero-wrap", {autoAlpha: 0}) */
-videoroll.to(".bgvideo", {
-  scrollTrigger: {
-    scroller: ".smooth-scroll",
-    trigger: firstSection,    
-    start: 'top 20%',
-    end: "+=30%",    
-    scrub: 2,
-  },
-  /*clipPath: 'inset(60%)',*/
-  scale:1.15,
-  rotate:0,
-  yPercent:-30
-})
+  let cover = document.querySelector('.bgvideo')
+  let firstSection = document.querySelector('.big-logo')
+  let apelTrigger = document.querySelector('.apeli--hero-wrap')
+  /* .set(".apeli--hero-wrap", {autoAlpha: 0}) */
+  videoroll.to(".bgvideo", {
+      scrollTrigger: {
+        scroller: ".smooth-scroll",
+        trigger: firstSection,
+        start: 'top 20%',
+        end: "+=30%",
+        scrub: 2,
+      },
+      /*clipPath: 'inset(60%)',*/
+      scale: 1.15,
+      rotate: 0,
+      yPercent: -30
+    })
 
-.from(".apeli--hero-wrap", {
-  scrollTrigger: {
-    scroller: ".smooth-scroll",
-    trigger: firstSection,    
-    start: 'top 20%',
-    end: "+=30%",  
-    /* toggleActions: "restart none none reset" */  
-    /* scrub: 2, */
-  },
- /*  clipPath: 'inset(0%)', */
-  duration: 0.4,
-  autoAlpha:0,
-})
+    .from(".apeli--hero-wrap", {
+      scrollTrigger: {
+        scroller: ".smooth-scroll",
+        trigger: firstSection,
+        start: 'top 20%',
+        end: "+=30%",
+        /* toggleActions: "restart none none reset" */
+        /* scrub: 2, */
+      },
+      duration: 0.4,
+      autoAlpha: 0,
+    })
 
 }
 
-/* 
-============================================================================
+/*
+================================================================================
 O NAMA // 14/15 ROLL
-================================================================================ 
+================================================================================
 */
+
 function numberoll() {
-gsap.to(".roll-number-wrap", {
-  scrollTrigger:{
-  scroller: ".smooth-scroll",
-    trigger: ".gi--num--wrap", 
-    start: "top 85%", 
-    end: "bottom top", 
-   scrub: 1,
-  },
-  y: -700,
-  //duration:2
-});
+  gsap.to(".roll-number-wrap", {
+    scrollTrigger: {
+      scroller: ".smooth-scroll",
+      trigger: ".gi--num--wrap",
+      start: "top 85%",
+      end: "bottom top",
+      scrub: 1,
+    },
+    y: -700,
+  });
 }
 
-
-/* 
-============================================================================
+/*
+================================================================================
 SHOW HIDE HEADER ON SCROLL + CUSTOM ANIMATION + CHANGE COLOR ON DIFF BACKGROUNDS
-================================================================================ 
+================================================================================
 */
 
 function hideMenu() {
-const showAnim = gsap.timeline({
-  paused: true,
-  defaults: { // children inherit these defaults
-    duration: 0.5,
-    ease: "power1.inOut", 
-   /* ease: CustomEase.create("custom", "M0,0 C0.425,0.005 0,1 1,1 "), */
-  },
-  scrollTrigger: {
+  const showAnim = gsap.timeline({
+    paused: true,
+    defaults: {
+      duration: 0.5,
+      ease: "power1.inOut",
+    },
+    scrollTrigger: {
       scroller: ".smooth-scroll",
-     /*  toggleClass: {
-        targets: '.logofrka, .navstyle, .kontakt',
-        className: 'mrak'
-      },  */
+      /*  toggleClass: {
+         targets: '.logofrka, .navstyle, .kontakt',
+         className: 'mrak'
+       },  */
       start: "top top",
       end: 99999,
       /* onEnter: () => myfunction(), */
-     /*  onLeaveBack: () => myfunction(), */
+      /*  onLeaveBack: () => myfunction(), */
 
       onUpdate: (self) => {
         self.direction === 1 ? showAnim.play() : showAnim.reverse()
       }
-}
-});
+    }
+  });
 
 showAnim
 //.to(".logofade", {autoAlpha:0 }, 0)
 .to(".nav", {yPercent: -50, autoAlpha:0, stagger: 0.05},"<0.1")
 .to(".header-contact--button", {scale:0.7, /*x:"3.1em"*/},"<0.2")
-/* .addLabel('revealImage') */
-
 .to(".freveal", {y: 100, duration: 0.6, stagger: 0.02}, "<0.1")
 .to(".l2", {scaleY: 0, transformOrigin: 'bottom', duration: 0.3}, "<0.2")
 .to(".l3", {scaleX: 0, transformOrigin: 'left', duration: 0.3}, "<0.2")
 .to(".l1", {scaleX: 0, transformOrigin: 'left', duration: 0.3}, "<0.2")
 
-    
-   
-//.to(".kont-color", {color: "black", duration:0.2},"<0.2");
-
 }
 
-
-
-/* 
-=============================================
-BATCH MULTILINE TXT
-================================================ 
+/*
+================================================================================
+BATCH MULTILINE TXT // OVO NIJE SPOJENO
+================================================================================
 */
 
 function multilinereveal() {
-gsap.set('.reveal', {autoAlpha: 0, yPercent: 200});
+  gsap.set('.reveal', {
+    autoAlpha: 0,
+    yPercent: 200
+  });
 
-ScrollTrigger.batch(".batch-text", {
-scroller: ".smooth-scroll",
-  onEnter: batch => {
-    batch.forEach((section, i) => {
-      gsap.to(section.querySelectorAll(".reveal"), {
-        autoAlpha: 1,
-        yPercent: 0,
-        duration: 0.8,
-        ease: "power1.inOut", 
-        stagger: 0.1,
-        delay: i * 0.3,
-        toggleActions: "restart none none reset"
+  ScrollTrigger.batch(".batch-text", {
+    scroller: ".smooth-scroll",
+    onEnter: batch => {
+      batch.forEach((section, i) => {
+        gsap.to(section.querySelectorAll(".reveal"), {
+          autoAlpha: 1,
+          yPercent: 0,
+          duration: 0.8,
+          ease: "power1.inOut",
+          stagger: 0.1,
+          delay: i * 0.3,
+          toggleActions: "restart none none reset"
+        });
       });
-    });
-  },
-  start: "top 95%"
-});
+    },
+    start: "top 95%"
+  });
 
 }
 
-
-/* 
-=============================================
+/*
+================================================================================
 O NAMA - COUNTER
-================================================ 
+================================================================================
 */
+
 function onamacounter() {
 
   $(".counts").each(function() {
