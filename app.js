@@ -3029,12 +3029,7 @@ Demo.prototype._handlecategoryChange = function (evt) {
     console.log("active added");
 		this.filters.categories = [];
 		this.filter();
-    setTimeout(()=>{
-      this.shuffle.update();
-      locoScroll.update();
-      ScrollTrigger.refresh(true);
-       console.log("Locoscrollupdated + SCROLLTRIGGER + SHUFFLE after category change");
-   },200)  
+ 
 	}
 };
 
@@ -3046,7 +3041,7 @@ Demo.prototype.filter = function () {
 		this.shuffle.filter(this.itemPassesFilters.bind(this));
     
     setTimeout(()=>{
-      this.shuffle.update();
+      this.shuffle.layout();
       locoScroll.update();
       ScrollTrigger.refresh(true);
        console.log("Locoscrollupdated + SCROLLTRIGGER 01");
@@ -3056,7 +3051,7 @@ Demo.prototype.filter = function () {
   } else {
     this.shuffle.filter(Shuffle.ALL_ITEMS);
      setTimeout(()=>{
-      this.shuffle.update();
+      this.shuffle.layout();
       locoScroll.update();
       ScrollTrigger.refresh(true);
        console.log("Locoscrollupdated + SCROLLTRIGGER 2");
@@ -3065,7 +3060,7 @@ Demo.prototype.filter = function () {
 
   if(this.shuffle.visibleItems == 0){
     this.message.innerHTML = (this.shuffle.visibleItems) + " items";
-    this.shuffle.update();
+    this.shuffle.layout();
     locoScroll.update();
     ScrollTrigger.refresh(true);
      console.log("Locoscrollupdated + SCROLLTRIGGER 3");
