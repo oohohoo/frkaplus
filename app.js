@@ -453,7 +453,6 @@ barba.init({
                 simpleaccordion();
                 zoomimage();
                 accordionhover();
-                customSelect();
                 smallCounteronama();
               },
              
