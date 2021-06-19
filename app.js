@@ -3012,20 +3012,12 @@ Demo.prototype._handlecategoryChange = function (evt) {
 		if (button.classList.contains('active')) {
 			button.classList.remove('active');
       console.log("active removed");
-      this.shuffle.update();
-    locoScroll.update();
-    ScrollTrigger.refresh(true);
-     console.log("Locoscrollupdated + SCROLLTRIGGER AFTER BUTN KLIK01");
 		} else {
 			this.categories.forEach(function (btn) {
 				btn.classList.remove('active');
       });
 			button.classList.add('active');
       console.log("active added");
-      this.shuffle.update();
-    locoScroll.update();
-    ScrollTrigger.refresh(true);
-     console.log("Locoscrollupdated + SCROLLTRIGGER AFTER BUTN KLIK03");
 		}
 		this.filters.categories = this._getCurrentcategoryFilters();
 		this.filter();
@@ -3040,10 +3032,6 @@ Demo.prototype._handlecategoryChange = function (evt) {
 		});
 		button.classList.add('active');
     console.log("active added");
-    this.shuffle.update();
-    locoScroll.update();
-    ScrollTrigger.refresh(true);
-     console.log("Locoscrollupdated + SCROLLTRIGGER AFTER BUTN KLIK06");
 
 		this.filters.categories = [];
 		this.filter();
