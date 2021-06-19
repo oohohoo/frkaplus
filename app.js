@@ -2867,23 +2867,24 @@ console.log("SHUFFLE DESTROYED"); */
 
 
   Demo.prototype._handleupdate = function (evt) {
-    this.shuffle.update();
-    console.log("SHUFFLE UPDATED ON CLICKSSS");
-  /*   this.filters.regions = this._getCurrentregionFilters(); */
-  
-  };
+      /* SWITCH LAYOUT LOKACIJE ITEMS*/
 
-  /* SWITCH LAYOUT LOKACIJE ITEMS*/
-
-/*  $('.location-switcher_wrap').click(function() {
+ $('.location-switcher_wrap').click(function() {
   $('.webinar-posts__event-item').toggleClass('full'); 
  $('.newsminigrid').toggleClass('full');
   $('.newsimgwrap').toggleClass('full'); 
   $('.pin-button-link').toggleClass('full'); 
   $('.location-switcher_column').toggleClass('hide');
   $('.location-switcher_full').toggleClass('hide'); 
- */
-  /*  */
+    this.shuffle.update();
+    console.log("SHUFFLE UPDATED ON CLICKSSS");
+  /*   this.filters.regions = this._getCurrentregionFilters(); */
+  
+  };
+
+
+
+
 
 
   Demo.prototype._handleSortChange = function (event) {
