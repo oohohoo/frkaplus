@@ -105,6 +105,7 @@ function initScroll(container) {
     scrollbarContainer: true,
     scrollbarContainer: document.querySelector('.main-wrapper'),
     scrollFromAnywhere: true,
+    z-index:20;
     multiplier: 1.0, // body sroll speed / object speed values are multiplied
     touchMultiplier: 3.0,
     useKeyboard: true,
