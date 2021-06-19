@@ -2781,8 +2781,7 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
     throttleTime: 300,*/
 
 	});
-
- updatio: function(){
+  function updatio(){
   this.shuffle.update();
 }
 
