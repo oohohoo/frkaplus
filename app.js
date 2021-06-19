@@ -1877,7 +1877,7 @@ GSAP TICKER -- NE ZNAM DETALJE
 // ************
 var cursor = document.querySelector('.cursor__dot1');
 var buttonText = document.querySelector('.cursor__text');
-var followArea = document.querySelectorAll('.botun--is--master');
+var followArea = document.querySelectorAll('.button-link');
 /* var page = document.querySelector('.posts'); */
 
 
