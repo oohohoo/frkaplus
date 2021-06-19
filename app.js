@@ -812,7 +812,7 @@ FADE IN MAP
 ================================================================================
 */
  
-setTimeout(()=>{
+
     myMap = createMapbox(data.next.container);
   
 /* setTimeout(()=>{ */
@@ -830,7 +830,7 @@ var fadein = gsap.timeline({defaults:{ease:'none'}})
 /* },1500) */
 
 
- }
+
 
 
 }
