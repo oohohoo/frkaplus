@@ -727,7 +727,7 @@ Add an event listener that runs
 
 
 /* $(document).ready(function(){  */
-   map.once("load", () => { 
+   map.on('load', () => { 
 /*   setTimeout(()=>{ */
 map.on('click', function(e) {
   // If the user clicked on one of your markers, get its information.
