@@ -316,8 +316,8 @@ html.has-scroll-smooth {
     background-color: #231f20;
     opacity: 1;
     width: 8px;
-    height 20px;
     margin: 2px;
+    z-index:10000;
     cursor: -webkit-grab;
     cursor: grab; }
     .has-scroll-dragging .c-scrollbar_thumb {
