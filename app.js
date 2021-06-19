@@ -2843,12 +2843,12 @@ console.log("SHUFFLE DESTROYED"); */
   $('.pin-button-link').toggleClass('full'); 
   $('.location-switcher_column').toggleClass('hide');
   $('.location-switcher_full').toggleClass('hide'); 
-  this.shuffle.update();
+  this.shuffle.update(this);
   console.log("SHUFFLE UPDATED ON CLICK");
   }); 
 
 
-  
+
 
 
 
