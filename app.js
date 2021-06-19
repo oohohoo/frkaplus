@@ -735,7 +735,7 @@ function init() {
       maxzoom: 16
   });
 
-
+}
 /* $(document).ready(function(){  */
 map.once('style.load', function (e) {
       init();
