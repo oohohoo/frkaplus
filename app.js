@@ -299,6 +299,7 @@ function initContent() {
   select('body').classList.remove('is-loading');
  /* ORIGINAL*/
   initScroll();
+  webflowInteractions();
   customCursor();
   underlineLink();
  /*  locoScroll.update();
@@ -421,13 +422,13 @@ function initPageTransitions() {
    locoScroll.destroy(); 
      //KILL SCROLLTRIGGERRRRR PREBAČEN
 
-     
      if (ScrollTrigger.getAll().length > 0) {
       ScrollTrigger.getAll().forEach((trigger) => {
           trigger.kill()
       });
   }
   
+  Webflow.destroy();
 
   /* NEW JACK SCROLLTRIGGER DESTROY*/
 /*
@@ -515,6 +516,7 @@ BARBA VIEWS
               beforeEnter(data) {
                 newSort();
                 stopScrollMap();
+                webflowInteractions();
               },
               beforeLeave({current}) {
                 map.remove();
@@ -3228,3 +3230,16 @@ $('.field').change(function() {
 
 
 
+  /*
+================================================================================
+LOKACIJE BOTUNI // PROČISTI
+================================================================================
+*/
+
+function webflowInteractions() {
+// Reinitialize webflow modules
+Webflow.ready();
+Webflow.require('ix2').init();  
+console.log("WEBFLOW RELOAD");
+
+}
