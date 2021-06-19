@@ -752,7 +752,7 @@ map.on('click', function(e) {
       /* .setHTML("<h3>Hello World!</h3>") */
       /* .setMaxWidth("300px") */
         setTimeout(()=>{
-      .addTo(map);
+   
       console.log("POPUP on MAP");
   },3000)  
     
