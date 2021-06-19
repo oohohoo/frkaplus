@@ -2995,7 +2995,6 @@ Demo.prototype._handleregionChange = function (evt) {
 		});
 		this.filters.regions = [];
 		this.filter();
-   
 	}
 };
 
@@ -3015,16 +3014,12 @@ Demo.prototype._handlecategoryChange = function (evt) {
 		} else {
 			this.categories.forEach(function (btn) {
 				btn.classList.remove('active');
-      });
+			});
 			button.classList.add('active');
       console.log("active added");
 		}
 		this.filters.categories = this._getCurrentcategoryFilters();
 		this.filter();
-    this.shuffle.update();
-    locoScroll.update();
-    ScrollTrigger.refresh(true);
-     console.log("Locoscrollupdated + SCROLLTRIGGER AFTER BUTN KLIK04");
 	} else {
 		this.categories.forEach(function (btn) {
 			btn.classList.remove('active');
@@ -3032,13 +3027,14 @@ Demo.prototype._handlecategoryChange = function (evt) {
 		});
 		button.classList.add('active');
     console.log("active added");
-
 		this.filters.categories = [];
 		this.filter();
-    this.shuffle.update();
-    locoScroll.update();
-    ScrollTrigger.refresh(true);
-     console.log("Locoscrollupdated + SCROLLTRIGGER AFTER BUTN KLIK07");
+    setTimeout(()=>{
+      this.shuffle.update();
+      locoScroll.update();
+      ScrollTrigger.refresh(true);
+       console.log("Locoscrollupdated + SCROLLTRIGGER + SHUFFLE after category change");
+   },200)  
 	}
 };
 
