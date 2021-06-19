@@ -715,7 +715,7 @@ style: 'mapbox://styles/fogseller/cknip0h0j0oqm17mgvd8wwi8y?optimize=true', // s
 center: [16.527, 44.663], // starting position [lng, lat]
 zoom: 6.64, // starting zoom
 minZoom: 6.64, // note the camel-case
-     maxZoom: 15
+     maxZoom: 12
 });
 /* DODANO ALI NE RADI*/
 /* map.addControl(new mapboxgl.NavigationControl()); */
