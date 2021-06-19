@@ -742,12 +742,13 @@ map.on('click', function(e) {
   */
     var popup = new mapboxgl.Popup({ offset: [0, -15] /*, className: 'popup-style' */})
     .setLngLat(feature.geometry.coordinates)
-     .setHTML(
+  /*    .setHTML(
       '<h3>' + feature.properties.title + '</h3>' +
       '<p>' + feature.properties.description + '</p>' +
       '<img>' + feature.properties.image + '</img>' 
-     /*  '<p><img src="'feature.properties.image'"></p>') */
-      )
+          ) */
+          .setHTML(e.features[0].properties.title)
+
       /* .setHTML("<h3>Hello World!</h3>") */
       /* .setMaxWidth("300px") */
       
