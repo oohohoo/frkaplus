@@ -734,7 +734,7 @@ map.on('click', function(e) {
   if (!features.length) {
     return;
   }
-  var feature = features[0];
+  var feature = f[0];
 
    /* 
     Create a popup, specify its options 
