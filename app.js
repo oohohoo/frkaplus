@@ -805,6 +805,7 @@ console.log("MAP RESIZE!");
 /* mapboxgl.clearStorage();
 console.log("STORAGE CLEARED");  */
 
+
 /*
 ================================================================================
 FADE IN MAP
@@ -812,7 +813,10 @@ FADE IN MAP
 */
  
 setTimeout(()=>{
-  myMap = createMapbox(data.next.container);
+    myMap = createMapbox(data.next.container);
+  
+/* setTimeout(()=>{ */
+/*
   
 var fadein = gsap.timeline({defaults:{ease:'none'}})
 .to('.loader-icon', {autoAlpha:1})
@@ -821,8 +825,12 @@ var fadein = gsap.timeline({defaults:{ease:'none'}})
 .to('.lokacije-mapbox-container', {autoAlpha:1, duration:1.5, delay:2})
 .to('.loader-icon', {autoAlpha:0}, "-=1.5")
 .to('.loader-txt', {autoAlpha:0}, "<")
+*/
+/* .to('.fadeheader', {autoAlpha:0, stagger:5}, 4) */
+/* },1500) */
 
-}
+
+ }
 
 
 
