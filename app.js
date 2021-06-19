@@ -743,7 +743,7 @@ map.on('click', function(e) {
   */
     var popup = new mapboxgl.Popup({ offset: [0, -15] /*, className: 'popup-style' */})
     .setLngLat(feature.geometry.coordinates)
-    
+
      .setHTML(
       '<h3>' + feature.properties.title + '</h3>' +
       '<p>' + feature.properties.description + '</p>' +
@@ -2768,7 +2768,7 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
 	this.shuffle = new Shuffle(element, {
   //  buffer: 0,
 		easing: 'cubic-bezier(0.165, 0.840, 0.440, 1.000)', // easeOutQuart
-		sizer: '.sizer', 
+		/* sizer: '.sizer', */ 
     buffer:1,
     gutterWidth: 30,
     roundTransforms: true,
