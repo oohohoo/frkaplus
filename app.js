@@ -714,8 +714,8 @@ var bounds = [
   [13.109302076751561, 42.167215037402855],
   [19.821668059258826, 46.816119904050964]
 ];
-(async () => {
-const map = new mapboxgl.Map({
+
+var map = new mapboxgl.Map({
 container: 'map', // container ID
 style: 'mapbox://styles/fogseller/cknip0h0j0oqm17mgvd8wwi8y?optimize=true', // style URL / dodano optimize=true
 center: [16.527, 44.663], // starting position [lng, lat]
@@ -725,46 +725,35 @@ maxZoom: 19,
 maxBounds: bounds
 });
 
-await map.once('load');
-  map.addLayer(...);
-  await map.once('idle');
-})();
+
+/* DODANO ALI NE RADI*/
+/* map.addControl(new mapboxgl.NavigationControl()); */
+
+/* 
+Add an event listener that runs
+  when a user clicks on the map element.
+*/
+
+/* map.addSource('frka', {
+  type: 'geojson',
+  data: 'https://frkaplus.netlify.app/frka.geojson'
+});
+ */
 
 
-(async () => {
-  const map = new mapboxgl.Map(...);
-  await map.once('load');
-  map.addLayer(...);
-  await map.once('idle');
-})();
-/* function mapLoad(map) {
-  return new Promise((resolve, reject) => {
-      map.on('load', () => resolve())
-  })
-} */
 
-/* function init() {
-  map.addSource('frka', {
-      type: 'geojson',
-      data: 'https://frkaplus.netlify.app/frka.geojson',
-      buffer: 0,
-      maxzoom: 16
-  });
-
-} */
 /* $(document).ready(function(){  */
-map.once('style.load', function (e) {
-     /*  init(); */
-      /* map.addControl(new mapboxgl.NavigationControl()); */
-      map.on('click', function (e) {
-            // If the user clicked on one of your markers, get its information.
-            var features = map.queryRenderedFeatures(e.point, {
-              layers: ['frka'] // replace with your layer name
-            });
-            if (!features.length) {
-              return;
-            }
-            var feature = features[0];
+  map.on('idle', function(e) {
+/*   setTimeout(()=>{ */
+map.on('click', function(e) {
+  // If the user clicked on one of your markers, get its information.
+  var features = map.queryRenderedFeatures(e.point, {
+    layers: ['frka'] // replace with your layer name
+  });
+  if (!features.length) {
+    return;
+  }
+  var feature = features[0];
 
    /* 
     Create a popup, specify its options 
