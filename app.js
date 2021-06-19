@@ -2869,19 +2869,9 @@ console.log("SHUFFLE DESTROYED"); */
   Demo.prototype._handleupdate = function (evt) {
       /* SWITCH LAYOUT LOKACIJE ITEMS*/
 
- $('.location-switcher_wrap').click(function() {
-  $('.webinar-posts__event-item').toggleClass('full'); 
- $('.newsminigrid').toggleClass('full');
-  $('.newsimgwrap').toggleClass('full'); 
-  $('.pin-button-link').toggleClass('full'); 
-  $('.location-switcher_column').toggleClass('hide');
-  $('.location-switcher_full').toggleClass('hide'); 
-      /*   this.filters.regions = this._getCurrentregionFilters(); */
-});
-
 this.shuffle.update();
     console.log("SHUFFLE UPDATED ON CLICKSSS");
-    
+
   };
 
 
@@ -3159,7 +3149,15 @@ this.shuffle.update(); */
 */
 }
 
-
+$('.location-switcher_wrap').click(function() {
+  $('.webinar-posts__event-item').toggleClass('full'); 
+ $('.newsminigrid').toggleClass('full');
+  $('.newsimgwrap').toggleClass('full'); 
+  $('.pin-button-link').toggleClass('full'); 
+  $('.location-switcher_column').toggleClass('hide');
+  $('.location-switcher_full').toggleClass('hide'); 
+      /*   this.filters.regions = this._getCurrentregionFilters(); */
+});
 
   
 
