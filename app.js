@@ -138,6 +138,8 @@ function initScroll(container) {
     // we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
     // 
    //
+
+   /*OVO NE RADI SA DATA_SCROLL_SECTION
    /* pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed"  */
   });
 
@@ -722,34 +724,31 @@ minZoom: 6.64, // note the camel-case
 maxZoom: 19,
 maxBounds: bounds
 });
-/* DODANO ALI NE RADI*/
-/* map.addControl(new mapboxgl.NavigationControl()); */
 
-/* 
-Add an event listener that runs
-  when a user clicks on the map element.
-*/
 
-/* map.addSource('frka', {
-  type: 'geojson',
-  data: 'https://frkaplus.netlify.app/frka.geojson'
-});
- */
 
+function init() {
+  map.addSource('frka', {
+      type: 'geojson',
+      data: 'https://frkaplus.netlify.app/frka.geojson',
+      buffer: 0,
+      maxzoom: 16
+  });
 
 
 /* $(document).ready(function(){  */
-  map.on('load', function(e) {
-/*   setTimeout(()=>{ */
-map.on('click', function(e) {
-  // If the user clicked on one of your markers, get its information.
-  var features = map.queryRenderedFeatures(e.point, {
-    layers: ['frka'] // replace with your layer name
-  });
-  if (!features.length) {
-    return;
-  }
-  var feature = features[0];
+map.once('style.load', function (e) {
+      init();
+      map.addControl(new mapboxgl.NavigationControl());
+      map.on('click', function (e) {
+            // If the user clicked on one of your markers, get its information.
+            var features = map.queryRenderedFeatures(e.point, {
+              layers: ['frka'] // replace with your layer name
+            });
+            if (!features.length) {
+              return;
+            }
+            var feature = features[0];
 
    /* 
     Create a popup, specify its options 
