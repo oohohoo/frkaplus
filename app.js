@@ -102,8 +102,8 @@ function initScroll(container) {
     smooth: true, 
     offset: [0, 0],
     getDirection: true,
-    scrollbarContainer: false,
-    scrollbarContainer: document.querySelector('.main-wrapper'),
+   /*  scrollbarContainer: false, */
+   /*  scrollbarContainer: document.querySelector('.main-wrapper'), */
     scrollFromAnywhere: true,
     multiplier: 1.0, // body sroll speed / object speed values are multiplied
     touchMultiplier: 3.0,
