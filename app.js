@@ -2995,10 +2995,7 @@ Demo.prototype._handleregionChange = function (evt) {
 		});
 		this.filters.regions = [];
 		this.filter();
-    this.shuffle.update();
-    locoScroll.update();
-    ScrollTrigger.refresh(true);
-     console.log("Locoscrollupdated + SCROLLTRIGGER AFTER BUTN KLIK");
+   
 	}
 };
 
@@ -3031,6 +3028,11 @@ Demo.prototype._handlecategoryChange = function (evt) {
 		});
 		button.classList.add('active');
     console.log("active added");
+    this.shuffle.update();
+    locoScroll.update();
+    ScrollTrigger.refresh(true);
+     console.log("Locoscrollupdated + SCROLLTRIGGER AFTER BUTN KLIK");
+     
 		this.filters.categories = [];
 		this.filter();
 	}
