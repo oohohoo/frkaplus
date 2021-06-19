@@ -2860,10 +2860,18 @@ console.log("SHUFFLE DESTROYED"); */
    Demo.prototype.addSorting = function () {
     document.querySelector('.sort-order').addEventListener('change', this._handleSortChange.bind(this));
     document.querySelector('.sort-options').addEventListener('input', this._handleSortChange.bind(this));
-  document.querySelector('.location-switcher_wrap').addEventListener('click', this.shuffle.update());
-  console.log("SHUFFLE UPDATED ON CLICKSSS");
+  document.querySelector('.location-switcher_wrap').addEventListener('click', this._handleupdate.bind(this));
+
   };
   
+
+
+  Demo.prototype._handleupdate = function (evt) {
+    this.shuffle.update();
+    console.log("SHUFFLE UPDATED ON CLICKSSS");
+  /*   this.filters.regions = this._getCurrentregionFilters(); */
+  
+  };
 
   /* SWITCH LAYOUT LOKACIJE ITEMS*/
 
