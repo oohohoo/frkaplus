@@ -836,6 +836,19 @@ var fadein = gsap.timeline({defaults:{ease:'none'}})
 
 /*
 ================================================================================
+WEBFLOW INTERACTIONS REINIT
+================================================================================
+*/
+
+function webflowInteractions() {
+  Webflow.ready();
+  Webflow.require('ix2').init();
+  console.log("WEBFLOW RELOAD");
+
+}
+
+/*
+================================================================================
 PREVENT SCROLL UNDER FS MENU // PODESI
 ================================================================================
 */
@@ -1678,55 +1691,33 @@ O NAMA - COUNTER
 
 function onamacounter() {
 
-  $(".counts").each(function() {
+  $(".counts").each(function () {
     var count = $(this),
-        zero = {val:990},
-        num = count.data("number"),
-        split = (num + "").split("."),
-        decimals = split.length > 1 ? split[1].length : 0;
+      zero = {
+        val: 990
+      },
+      num = count.data("number"),
+      split = (num + "").split("."),
+      decimals = split.length > 1 ? split[1].length : 0;
 
-      gsap.to(zero, {
-        scrollTrigger:{
-          scroller: ".smooth-scroll",
-            trigger: ".tisucuwrap",
-            start: "top 100%", 
-            end: "bottom top", 
-            toggleActions: "restart none none reset",
-            //scrub: 1,
-            
-          },
-        val: num,
-        duration: 2,
-        onUpdate: function() {
-          count.text(zero.val.toFixed(decimals));
-        }
-      });
-});
-
-  /*
-var cont={val:990} , newval = 1000 ;
-
-gsap.to(cont,2,{
-scrollTrigger:{
-      scroller: ".smooth-scroll",
-				trigger: ".tisucu",
-				start: "top 100%", 
-				end: "bottom top", 
+    gsap.to(zero, {
+      scrollTrigger: {
+        scroller: ".smooth-scroll",
+        trigger: ".tisucuwrap",
+        start: "top 100%",
+        end: "bottom top",
         toggleActions: "restart none none reset",
-				//scrub: 1,
-				
-			},
-val:newval,
-roundProps:"val",
-onUpdate:function(){
-  document.getElementById("counternew").innerHTML=cont.val
-  
-}});
+        //scrub: 1,
 
-*/
+      },
+      val: num,
+      duration: 2,
+      onUpdate: function () {
+        count.text(zero.val.toFixed(decimals));
+      }
+    });
+  });
 }
-
-
 
 /*
 ================================================================================
@@ -1734,87 +1725,24 @@ PLAY/PAUSE VIDEO ON SCROLL TRIGGER
 ================================================================================
 */
 function playpausevideo() {
-let allVideoDivs = gsap.utils.toArray('.vid');
+  let allVideoDivs = gsap.utils.toArray('.vid');
 
-allVideoDivs.forEach((videoDiv, i) => {
-  
-  let videoElem = videoDiv.querySelector('video')
-  
-  ScrollTrigger.create({
-    trigger: videoElem,
-    start: 'top 80%',
-    end: 'bottom 20%',
-    /* markers: true, */
-    scroller:".smooth-scroll",
-    onEnter: () => videoElem.play(),
-    onEnterBack: () => videoElem.play(),
-    onLeave: () => videoElem.pause(),
-    onLeaveBack: () => videoElem.pause(),
+  allVideoDivs.forEach((videoDiv, i) => {
+
+    let videoElem = videoDiv.querySelector('video')
+
+    ScrollTrigger.create({
+      trigger: videoElem,
+      start: 'top 80%',
+      end: 'bottom 20%',
+      scroller: ".smooth-scroll",
+      onEnter: () => videoElem.play(),
+      onEnterBack: () => videoElem.play(),
+      onLeave: () => videoElem.pause(),
+      onLeaveBack: () => videoElem.pause(),
     });
-  
-  console.log("PLAY PAUSE VIDEO");
-});
-}
-
-
-
-
-
-/* 
-================================================================================
-LOCATION / APPEND LOAD MORE
-================================================================================ */
-
-function appendmore() {
-
-  /*
-// Show the given batch
-function show(batch) {
-  gsap.set(batch, {opacity: 0, y:80});
-  
-  batch.forEach((item, i) => {
-    // Do whatever you want with each item in the batch
-    gsap.timeline().to(item, {opacity: 1, y: 0, overwrite: true, duration: 0.75, delay: i * 0.15});
-  })
-}
-
-// Hide the given batch
-function hide(batch) {
-  gsap.set(batch, {opacity: 0, y: -80, overwrite: true});
-}
-
-// Create a new batch
-function createBatch(target) {
-  ScrollTrigger.batch(target, {
-		//interval: 0.15,
-		onEnter: show,
-		onLeave: show,
-		onEnterBack: show,
-		onLeaveBack: show
-	});
-}
-
-var ajaxitem = '<div class="picture-item"></div><div class="picture-item"></div><div class="picture-item"></div><div class="picture-item"></div><div class="picture-item"></div><div class="picture-item"></div>';
-
-function init() {
-  createBatch(".picture-item");
-  
-  jQuery("#append").click(function(i) {
-    const newContent = $.parseHTML(ajaxitem);
-    jQuery(".js-shuffle").append(newContent);
-    
-    // Create a new batch just for the new content
-    createBatch(newContent);
-    ScrollTrigger.refresh(true);
-    console.log("scrolltrigger after batch");
   });
 }
-
-init();
-*/
-}
-
-
 
 /*
 ================================================================================
@@ -1823,37 +1751,30 @@ LOCOMOTIVE 4 SCROLL TO TOP
 */
 function scrollTotop() {
 
-$( "#tomain" ).on( "click", function() {
-  locoScroll.scrollTo( '#top', {
-    'offset': 0,
-    'duration': 1500,
-    'easing': [0.25, 0.00, 0.35, 1.00],
-    'disableLerp': true
-  });
-  
-});
-$( "#tomainipad" ).on( "click", function() {
-  locoScroll.scrollTo( '#top', {
-    'offset': 0,
-    'duration': 1500,
-    'easing': [0.25, 0.00, 0.35, 1.00],
-    'disableLerp': true
-  });
-  
-});
+  $("#tomain").on("click", function () {
+    locoScroll.scrollTo('#top', {
+      'offset': 0,
+      'duration': 1500,
+      'easing': [0.25, 0.00, 0.35, 1.00],
+      'disableLerp': true
+    });
 
+  });
+  $("#tomainipad").on("click", function () {
+    locoScroll.scrollTo('#top', {
+      'offset': 0,
+      'duration': 1500,
+      'easing': [0.25, 0.00, 0.35, 1.00],
+      'disableLerp': true
+    });
+  });
 }
-
-
-
-
 
 /*
 ================================================================================
 CUSTOM CURSOR QUICK SETTER BLAKE + AKAPOWL GSAP CSS
 ================================================================================
 */
-
 
 /*
 ================================================================================
@@ -1963,57 +1884,44 @@ var followArea = document.querySelectorAll('.botun--is--master');
 // Event Listeners
 // ************
 
-followArea.forEach(function(el) {
+followArea.forEach(function (el) {
 
-  gsap.set(cursor, {autoAlpha: 1, backgroundColor: "#231f20", scale:1});
-  
-  
+  gsap.set(cursor, {autoAlpha: 1, backgroundColor: "#231f20", scale: 1});
+
   el.addEventListener('mouseover', () => {
-    gsap.to(cursor, 0.25, {
-      scale: 10,
-      backgroundColor: "#ffdc52",
-      /* autoAlpha: 1 */
-    });
-
-/*     page.addEventListener('mousemove', moveCircle);*/
-  }); 
-
-  
-  
-  
-  
-  el.addEventListener('mouseout', () => {
-    gsap.to(cursor, 0.25, {
-      scale: 1,
-      backgroundColor: "#231f20",
-      /* autoAlpha: 0 */
-    });
+    gsap.to(cursor, 0.25, {scale: 10, backgroundColor: "#ffdc52", /* autoAlpha: 1 */});
+    /*     page.addEventListener('mousemove', moveCircle);*/
   });
 
-  
-  
+  el.addEventListener('mouseout', () => {
+    gsap.to(cursor, 0.25, {scale: 1,backgroundColor: "#231f20", /* autoAlpha: 0 */});
+  });
 
   el.addEventListener('mousedown', () => {
-
     gsap.to(cursor, 0.5, {
-      css: { transform: `translate(-50%, -50%) scale(0.75)` }
+      css: {
+      transform: 'translate(-50%, -50%) scale(0.75)'}
     });
+
     $('.cursor__text').text('OPEN');
     gsap.to(buttonText, 0.25, {
-      css: { opacity: 1  }
+      css: {
+        opacity: 1
+      }
     });
   });
 
-  
-  
-  
   el.addEventListener('mouseup', () => {
     gsap.to(cursor, 1, {
-      css: { background: `transparent` }
+      css: {
+        background: 'transparent'
+      }
     });
 
     gsap.to(cursor, 0.5, {
-      css: { transform: `translate(-50%, -50%) scale(1)` }
+      css: {
+        transform: 'translate(-50%, -50%) scale(1)'      
+      }
     });
 
     gsap.to(buttonText, 0.25, {
@@ -2022,13 +1930,7 @@ followArea.forEach(function(el) {
       }
     });
   });
-  
-  
-
-
 })
-
-
 
 /* OLD*/
 /*
@@ -2086,10 +1988,8 @@ function sortButtons() {
   $( ".check .linky input" ).change(function() {
     $(this).closest('.linky').toggleClass('selected-toggle');
   });
-  
 
 }
-
 
 /*
 ================================================================================
@@ -2115,171 +2015,6 @@ function underlineLink() {
   });
  */
 }
-
-
-
-/*
-================================================================================
-CUSTOM SELECT BUTTON - LOKACIJE
-================================================================================
-*/
-/*
-function customSelect() {
-
-  $(document).ready(function() { // use jQuery lib
-
-    var $select = $("select"),
-      $speed = "fast";
-  
-    $select.each(function() {
-      // Allow default browser styling
-      if ($(this).hasClass("default")) {
-        return;
-      }
-      $(this).css("display", "none");
-      // Generate fancy select box
-      $(this).after('<ul class="fancy-select" style="display: none;"></ul>');
-      var $current = $(this),
-        $fancy = $current.next(".fancy-select");
-  
-      // Get options
-      var $options = $(this).find("option");
-      $options.each(function(index) {
-        var $val = $(this).val(),
-          $text = $(this).text(),
-          $disabled = "";
-        // Add class for disabled options
-        if ($(this).attr("disabled")) $disabled = " disabled";
-  
-        if (index == 0) {
-          // Create clickable object from first option
-          $fancy.before('<span class="selected" data-val="' + $val + '">' + $text + "</span>");
-        }
-        // Load all options into fake dropdown
-        $fancy.append('<li class="fancy-option' + $disabled + '" data-val="' + $val + '">' + $text + "</li>");
-        // Update fake select box if this option is selected
-        if ($(this).attr("selected")) {
-          $(this).parent("select").val($val);
-          $(this).parent("select").next(".selected").attr("data-val", $val).text($text);
-        }
-      });
-    });
-  
-    // Show/hide options on click
-    $(".selected").click(function(target) {
-      var $box = $(this).next(".fancy-select"),
-        $target = target,
-        $object = $(this);
-  
-      // Prevent multiple open select boxes
-      if ($box.is(":visible")) {
-        $box.slideUp($speed);
-        return;
-      } else {
-        $(".fancy-select").slideUp();
-        $box.slideDown($speed);
-      }
-  
-      // Click outside select box closes it
-      $target.stopPropagation();
-      if ($box.css("display") !== "none") {
-        $(document).click(function() {
-          $box.slideUp($speed);
-        });
-      }
-    });
-  
-    // Make selection
-    $(".fancy-option").click(function() {
-      var $val = $(this).attr("data-val"),
-        $text = $(this).text(),
-        $box = $(this).parent(".fancy-select"),
-        $selected = $box.prev(".selected"),
-        $disabled = $(this).hasClass("disabled");
-  
-      // Basic disabled option functionality
-      if ($disabled) {
-        return;
-      }
-  
-      $box.slideUp($speed);
-  
-      // Update select object's value
-      // and the fake box's "value"
-      $selected.prev("select").val($val);
-      $selected.attr("data-val", $val).text($text);
-  
-      // Get Output
-      var $what = $("#what").val(),
-        $when = $("#when").val();
-      console.log($what);
-    });
-  });
-
-console.log("OHOHOHOHOHOHO BOTUNI");
-
-}
-*/
-
-
-/*
-================================================================================
-CUSTOM SELECT BUTTON - LOKACIJE
-================================================================================
-*/
-
-function locationDropdownSelect() {
-
-/*
-
-  $('.placeholder select').each(function(){
-    var $this = $(this), numberOfOptions = $(this).children('option').length;
-  
-    $this.addClass('select-hidden'); 
-    $this.wrap('<div class="select"></div>');
-    $this.after('<div class="select-styled"></div>');
-
-    var $styledSelect = $this.next('div.select-styled');
-    $styledSelect.text($this.children('option').eq(0).text());
-  
-    var $list = $('<ul />', {
-        'class': 'select-options'
-    }).insertAfter($styledSelect);
-  
-    for (var i = 0; i < numberOfOptions; i++) {
-        $('<li />', {
-            text: $this.children('option').eq(i).text(),
-            rel: $this.children('option').eq(i).val()
-        }).appendTo($list);
-    }
-  
-    var $listItems = $list.children('li');
-  
-    $styledSelect.click(function(e) {
-        e.stopPropagation();
-        $('div.select-styled.active').not(this).each(function(){
-            $(this).removeClass('active').next('ul.select-options').hide();
-        });
-        $(this).toggleClass('active').next('ul.select-options').toggle();
-    });
-  
-    $listItems.click(function(e) {
-        e.stopPropagation();
-        $styledSelect.text($(this).text()).removeClass('active');
-        $this.val($(this).attr('rel'));
-        $list.hide();
-        //console.log($this.val());
-    });
-  
-    $(document).click(function() {
-        $styledSelect.removeClass('active');
-        $list.hide();
-    });
-
-});
-*/
-}
-
 
 /*
 ================================================================================
@@ -2408,8 +2143,6 @@ onclick = function(){ botun.appendChild(".filepond--media-preview"); }
 
 }
 
-
-
 /*
 ================================================================================
 O NAMA MALI BROJEVI COUNTER - LOKACIJE
@@ -2418,91 +2151,86 @@ O NAMA MALI BROJEVI COUNTER - LOKACIJE
 
 function smallCounteronama() {
 
+  // adds commas and forces 2 decimal places.
+  function formatNumber(value) {
+    let s = (+value).toLocaleString('en-US').split(".");
+    return s[0] + "." + ((s[1] || "") + "00").substr(0, 2);
+  }
 
-// adds commas and forces 2 decimal places.
-function formatNumber(value) {
-  let s = (+value).toLocaleString('en-US').split(".");
-  return s[0] + "." + ((s[1] || "") + "00").substr(0, 2);
-}
 
-
-$(".counter").each(function() {
+  $(".counter").each(function () {
     var count = $(this),
-        zero = {val:0},
-        num = count.data("number"),
-        split = (num + "").split("."),
-        decimals = split.length > 1 ? split[1].length : 0;
+      zero = {
+        val: 0
+      },
+      num = count.data("number"),
+      split = (num + "").split("."),
+      decimals = split.length > 1 ? split[1].length : 0;
 
-    /* $(".animate").on("click", function() { */
-      gsap.to(zero, {
-        scrollTrigger:{
-          scroller: ".smooth-scroll",
-            trigger: ".counter",
-            start: "top 100%", 
-            end: "bottom top", 
-            toggleActions: "restart none none reset",
-            //scrub: 1,
-            
-          },
-        val: num,
-        duration: 2,
-        onUpdate: function() {
-          count.text(zero.val.toFixed(decimals));
-        }
-      });
-   /*  }); */
-});
+    gsap.to(zero, {
+      scrollTrigger: {
+        scroller: ".smooth-scroll",
+        trigger: ".counter",
+        start: "top 100%",
+        end: "bottom top",
+        toggleActions: "restart none none reset",
+
+      },
+      val: num,
+      duration: 2,
+      onUpdate: function () {
+        count.text(zero.val.toFixed(decimals));
+      }
+    });
+   
+  });
 
 }
 
 
-  /*
+/*
 ================================================================================
-NOVI SORT MOŽDA FINALEEEE
+LOKACIJE - SHUFFLE.JS
 ================================================================================
 */
 
 function newSort() {
 
-
 'use strict';
 
 $("#d").select2();
 //select2 start
-	if ($("#d").length) {
-		setTimeout(function () {
-			$("#d").each(function (index, item) {
-				var text = $(item).data("placeholder");
-				$(item).select2({
-					placeholder: text,
-					minimumResultsForSearch: -1
-				});
-			});
-		}, 100);
-	}
+if ($("#d").length) {
+  setTimeout(function () {
+    $("#d").each(function (index, item) {
+      var text = $(item).data("placeholder");
+      $(item).select2({
+        placeholder: text,
+        minimumResultsForSearch: -1
+      });
+    });
+  }, 100);
+}
 
-  $("#d").each(function (index, item) {
-		$(item).select2({
-			minimumResultsForSearch: -1
-		});
-		$(item).on("change", function (e) {
-			var current = $(item).val();
-			if($(item).closest(".filter-group").length>0) {
-				$(item).closest(".filter-group").find(".checkboxes input").prop( "checked", false );
-				$(item).closest(".filter-group").find("[data-value='" + current + "']").trigger("click");
-			}
-		});
-	});
-	//select2 end
+$("#d").each(function (index, item) {
+  $(item).select2({
+    minimumResultsForSearch: -1
+  });
+  $(item).on("change", function (e) {
+    var current = $(item).val();
+    if ($(item).closest(".filter-group").length > 0) {
+      $(item).closest(".filter-group").find(".checkboxes input").prop("checked", false);
+      $(item).closest(".filter-group").find("[data-value='" + current + "']").trigger("click");
+    }
+  });
+});
+//select2 end
 
-
-  $('select.combobox').select2({ width: 'style' });
-
+$('select.combobox').select2({ width: 'style' });
 
 
 var Shuffle = window.Shuffle;
 
-/* UBAČENO*/ 
  // ES7 will have Array.prototype.includes.
  function arrayIncludes(array, value) {
   return array.indexOf(value) !== -1;
@@ -2513,16 +2241,10 @@ function toArray(thing) {
   return Array.prototype.slice.call(thing);
 }
 
-/*DO TU*/
-
-
 
 var Demo = function (element) {
-/* UBAČENO*/ 
   this.element = element;
-/*   this.gridItems = this.element.querySelectorAll('.webinar-posts__event-item); */
-	
-this.regions = Array.from(document.querySelectorAll('.js-regions input'));
+  this.regions = Array.from(document.querySelectorAll('.js-regions input'));
 	this.categories = Array.from(document.querySelectorAll('.js-categories button'));
   this.message = document.querySelector('.js-message');
 
@@ -2540,53 +2262,7 @@ this.regions = Array.from(document.querySelectorAll('.js-regions input'));
     throttle: throttle, // By default, shuffle will throttle resize events. This can be changed or removed.
     throttleTime: 300,*/
 
-	});
-/*   var updatio = function() {
-    this.shuffle.update();
-}
-
-updatio();
-console.log("UPDATED KROZ UPDATION FUNCTION"); */
-/* } */
-
-/*
-  this.shuffle.layout();
-  console.log("SHUFFLE LAYOUT");
-  */
-  /*
-  
-   $('#exampleModal').modal('show')
-   setTimeout(function () {
-    this.shuffle.layout()
-   }, 2000)
-})
-*/
-
-
-
-/*
- 
- setTimeout(function () {
-  this.shuffle.layout()
- }, 2000)
-  locoScroll.update();
- ScrollTrigger.refresh(true); 
- console.log("SHUFFLE LAYOUT AFTER");
-/*   shuffleUpdate();
- console.log("SHUFFLE UPDATED"); */
-/* }); */
-
-
-
-/*
-this.shuffle.update();
-console.log("SHUFFLE UPDATED XXX"); 
-/* shufleupdate();
-console.log("SHUFFLE UPDATED FROM CALL"); */
-
-/* this.shuffle.destroy();
-console.log("SHUFFLE DESTROYED"); */
-
+  });
 
 	this.filters = {
 		regions: [],
@@ -2594,79 +2270,64 @@ console.log("SHUFFLE DESTROYED"); */
 	};
 
   this.addSorting();
-  
-	this._bindEventListeners();
+  	this._bindEventListeners();
 };
 
 
-/* DOVDE */
-
- 
-/*   });  */
-
-
-
-
-
-
-/* S O R T  ODAVDE*/
-
-
-
-  /**
-   * Sorting
-   */
-
-   Demo.prototype.addSorting = function () {
-    document.querySelector('.sort-order').addEventListener('change', this._handleSortChange.bind(this));
-    document.querySelector('.sort-options').addEventListener('input', this._handleSortChange.bind(this));
+/*
+================================================================================
+SHUFFLE.JS - SORT 
+================================================================================
+*/
+Demo.prototype.addSorting = function () {
+  document.querySelector('.sort-order').addEventListener('change', this._handleSortChange.bind(this));
+  document.querySelector('.sort-options').addEventListener('input', this._handleSortChange.bind(this));
   document.querySelector('.location-switcher_wrap').addEventListener('click', this._handleupdate.bind(this));
 
-  };
-  
+};
 
-
-  Demo.prototype._handleupdate = function (evt) {
-      /* SWITCH LAYOUT LOKACIJE ITEMS*/
-
-/* this.shuffle.update(); */
+/*
+================================================================================
+SHUFFLE.JS - SWITCH LAYOUT LOKACIJE ITEMS
+================================================================================
+*/
+Demo.prototype._handleupdate = function (evt) {
   this.shuffle.update();
   locoScroll.update();
   ScrollTrigger.refresh(true);
    console.log("Locoscrollupdated + SCROLLTRIGGER NAKON LAYOUT CHANGE");
+};
 
+/*
+================================================================================
+SHUFFLE.JS - SORTING
+================================================================================
+*/
 
-  };
-
-
-
-
-
-
-  Demo.prototype._handleSortChange = function (event) {
+Demo.prototype._handleSortChange = function (event) {
     //var value = event.target.value;
     var value = document.querySelector('.sort-options').value;
-  
+
     function reverseOrder() {
       if (document.querySelector('.sort-order').checked) {
         return true;
-      } 
+      }
       return false;
     }
     reverseOrder();
-    
+
     function sortByRegion(element) {
       return element.getAttribute('data-region');
     }
-  
+
     function sortByCategory(element) {
       return element.getAttribute('data-category');
     }
-     function sortByTitle(element) {
+
+    function sortByTitle(element) {
       return element.getAttribute('data-title');
     }
-  
-  
+    
     var options;
     if (value === 'region') {
       options = {
@@ -2696,13 +2357,12 @@ console.log("SHUFFLE DESTROYED"); */
 
   };
   
+/*
+================================================================================
+SHUFFLE.JS - Bind event listeners for when the filters change.
+================================================================================
+*/
 
-
-
-
-/**
- * Bind event listeners for when the filters change.
- */
 Demo.prototype._bindEventListeners = function () {
 	this._onregionChange = this._handleregionChange.bind(this);
 	this._oncategoryChange = this._handlecategoryChange.bind(this);
@@ -2716,6 +2376,11 @@ Demo.prototype._bindEventListeners = function () {
 	}, this);
 };
 
+/*
+================================================================================
+SHUFFLE.JS - Get the values of each checked input.
+================================================================================
+*/
 /**
  * Get the values of each checked input.
  * @return {Array.<string>}
@@ -2728,8 +2393,13 @@ Demo.prototype._getCurrentregionFilters = function () {
 	});
 };
 
+/*
+================================================================================
+SHUFFLE.JS - Get the values of each `active` button.
+================================================================================
+*/
 /**
- * Get the values of each `active` button.
+ * 
  * @return {Array.<string>}
  */
 Demo.prototype._getCurrentcategoryFilters = function () {
@@ -2740,11 +2410,13 @@ Demo.prototype._getCurrentcategoryFilters = function () {
 	});
 };
 
+/*
+================================================================================
+SHUFFLE.JS - OVDJE SE DEŠAVA KLIKANJE NA CHECKBOX
+A region input check state changed, update the current filters and filter
+================================================================================
+*/
 
-/* OVDJE SE DEŠAVA KLIKANJE NA CHECKBOX*/
-/**
- * A region input check state changed, update the current filters and filte.r
- */
 Demo.prototype._handleregionChange = function (evt) {
 	this.filters.regions = this._getCurrentregionFilters();
 	if(this.filters.regions[0]!='all') {
@@ -2760,96 +2432,90 @@ Demo.prototype._handleregionChange = function (evt) {
 };
 
 /*
+================================================================================
+SHUFFLE.JS - A category button was clicked. Update filters and display.
+================================================================================
+*/
 /**
- * A category button was clicked. Update filters and display.
+ * 
  * @param {Event} evt Click event object.
  */
 
 Demo.prototype._handlecategoryChange = function (evt) {
-	var button = evt.currentTarget;
-	if(button.dataset.value!='all') {
-		// Treat these buttons like radio buttons where only 1 can be selected.
-		if (button.classList.contains('active')) {
-			button.classList.remove('active');
+  var button = evt.currentTarget;
+  if (button.dataset.value != 'all') {
+    // Treat these buttons like radio buttons where only 1 can be selected.
+    if (button.classList.contains('active')) {
+      button.classList.remove('active');
       console.log("active removed");
-		} else {
-			this.categories.forEach(function (btn) {
-				btn.classList.remove('active');
-			});
-			button.classList.add('active');
+    } else {
+      this.categories.forEach(function (btn) {
+        btn.classList.remove('active');
+      });
+      button.classList.add('active');
       console.log("active added");
-		}
-		this.filters.categories = this._getCurrentcategoryFilters();
-		this.filter();
-	} else {
-		this.categories.forEach(function (btn) {
-			btn.classList.remove('active');
-      console.log("active removed");
-		});
-		button.classList.add('active');
-    console.log("active added");
-		this.filters.categories = [];
-		this.filter();
- 
-	}
-};
-
-/**
- * Filter shuffle based on the current state of filters.
- */
-Demo.prototype.filter = function () {
-	if (this.hasActiveFilters()) {
-		this.shuffle.filter(this.itemPassesFilters.bind(this));
-    
-    setTimeout(()=>{
-      this.shuffle.layout();
-      locoScroll.update();
-      ScrollTrigger.refresh(true);
-       console.log("Locoscrollupdated + SCROLLTRIGGER 01");
-   },200)  
-
-
+    }
+    this.filters.categories = this._getCurrentcategoryFilters();
+    this.filter();
   } else {
-    this.shuffle.filter(Shuffle.ALL_ITEMS);
-     setTimeout(()=>{
+    this.categories.forEach(function (btn) {
+      btn.classList.remove('active');
+      console.log("active removed");
+    });
+    button.classList.add('active');
+    console.log("active added");
+    this.filters.categories = [];
+    this.filter();
+
+  }
+};
+
+/*
+================================================================================
+SHUFFLE.JS - Filter shuffle based on the current state of filters.
+================================================================================
+*/
+
+Demo.prototype.filter = function () {
+    if (this.hasActiveFilters()) {
+      this.shuffle.filter(this.itemPassesFilters.bind(this));
+
+      setTimeout(() => {
+        this.shuffle.layout();
+        locoScroll.update();
+        ScrollTrigger.refresh(true);
+        console.log("Locoscrollupdated + SCROLLTRIGGER 01");
+      }, 200)
+
+    } else {
+      this.shuffle.filter(Shuffle.ALL_ITEMS);
+      setTimeout(() => {
+        this.shuffle.layout();
+        locoScroll.update();
+        ScrollTrigger.refresh(true);
+        console.log("Locoscrollupdated + SCROLLTRIGGER 2");
+      }, 200)
+    }
+
+    if (this.shuffle.visibleItems == 0) {
+      this.message.innerHTML = (this.shuffle.visibleItems) + " items";
       this.shuffle.layout();
       locoScroll.update();
       ScrollTrigger.refresh(true);
-       console.log("Locoscrollupdated + SCROLLTRIGGER 2");
-    },200)  
-  }
+      console.log("Locoscrollupdated + SCROLLTRIGGER 3");
 
-  if(this.shuffle.visibleItems == 0){
-    this.message.innerHTML = (this.shuffle.visibleItems) + " items";
-    this.shuffle.layout();
-    locoScroll.update();
-    ScrollTrigger.refresh(true);
-     console.log("Locoscrollupdated + SCROLLTRIGGER 3");
-    
-
-  
-} else{
-this.message.innerHTML = "";
-/*
-setTimeout(()=>{
-  locoScroll.update();
-  ScrollTrigger.refresh(true);
-   console.log("Locoscrollupdated + SCROLLTRIGGER REFRESHHHHH 3");
-    },200)  
-    */
-
-
-
+    } else {
+      this.message.innerHTML = "";
  }
-
-
-
-
 };
-
+/*
+================================================================================
+SHUFFLE.JS - If any of the arrays in the `filters` property have a length of 
+more than zero,that means there is an active filter.
+================================================================================
+*/
 /**
- * If any of the arrays in the `filters` property have a length of more than zero,
- * that means there is an active filter.
+
  * @return {boolean}
  */
 Demo.prototype.hasActiveFilters = function () {
@@ -2858,8 +2524,13 @@ Demo.prototype.hasActiveFilters = function () {
 	}, this);
 };
 
+/*
+================================================================================
+SHUFFLE.JS - Determine whether an element passes the current filters.
+================================================================================
+*/
 /**
- * Determine whether an element passes the current filters.
+ * 
  * @param {Element} element Element to test.
  * @return {boolean} Whether it satisfies all current filters.
  */
@@ -2885,57 +2556,40 @@ Demo.prototype.itemPassesFilters = function (element) {
  */
 
 setTimeout(()=>{  
-  /*document.addEventListener("DOMContentLoaded", function() { */
-    window.demo = new Demo(document.querySelector(".js-shuffle"));
+      window.demo = new Demo(document.querySelector(".js-shuffle"));
        },200)  
        setTimeout(()=>{  
      /*   locoScroll.update(); */
        ScrollTrigger.refresh(true);
        console.log("NAKRAJU RIFREEEŠŠŠŠ");
       },500) 
-      
 
-
-/* Shuffle.destroy();
-this.shuffle.update(); */
-
-/* setTimeout(function () {
-  shuffleItems.shuffle('destroy').shuffle();
-}, 100);
- */
-
-/*
-
-      function shuffleUpdate() {
-      this.shuffle.update();
-      console.log("SHUFFLE UPDATED");
-      }
-*/
 }
 
-/* */
-$('.location-switcher_wrap').click(function() {
-  $('.webinar-posts__event-item').toggleClass('full'); 
- $('.newsminigrid').toggleClass('full');
-  $('.newsimgwrap').toggleClass('full'); 
-  $('.pin-button-link').toggleClass('full'); 
+/*
+================================================================================
+SHUFFLE.JS - CHANGE LAYOUT ICON
+================================================================================
+*/
+$('.location-switcher_wrap').click(function () {
+  $('.webinar-posts__event-item').toggleClass('full');
+  $('.newsminigrid').toggleClass('full');
+  $('.newsimgwrap').toggleClass('full');
+  $('.pin-button-link').toggleClass('full');
   $('.location-switcher_column').toggleClass('hide');
-  $('.location-switcher_full').toggleClass('hide'); 
-      /*   this.filters.regions = this._getCurrentregionFilters(); */
+  $('.location-switcher_full').toggleClass('hide');
 });
 
   
-
-  /*
+/*
 ================================================================================
 LOKACIJE BOTUNI // PROČISTI
 ================================================================================
 */
 
 function lokacijeBotuni() {
-  
 
-$('.linkos').hover(function() {
+  $('.linkos').hover(function() {
 	/* $('.cursor').toggleClass('link-hover'); */
   
 	let textOne = $(this).find('.link_text').eq(0).text();
@@ -2955,58 +2609,6 @@ $('.linkos').hover(function() {
  /*  $(this).closest('.linkos').toggleClass('selected-toggle'); */
 });
 
-
-
-
-
-
-
-/* 
-$('.field').focus(function() {
-	$(this).closest('.field_parent').find('.field_line').click();
-});
-$('.field').focusout(function() {
-	$(this).closest('.field_parent').find('.field_line').click();
-});
-
-$('.field').change(function() {
-	if ( $(this).val().length > 0 ) {
-  	$(this).closest('.field_parent').find('.field_line').addClass('full-opacity');
-  } else {
-  	$(this).closest('.field_parent').find('.field_line').removeClass('full-opacity');
-  }
-}); */
-
-/* $('.your-name, .your-email').keyup(function() {
-	if ( $('.your-name').val().length && $('.your-email').val().length > 0 ) {
-  	$('.link_container.is--submit').removeClass('disable');
-  } else {
-  	$('.link_container.is--submit').addClass('disable');
-  }
-}); */
-
-
-
-
-
-  
-
     
 }
 
-
-
-
-  /*
-================================================================================
-LOKACIJE BOTUNI // PROČISTI
-================================================================================
-*/
-
-function webflowInteractions() {
-// Reinitialize webflow modules
-Webflow.ready();
-Webflow.require('ix2').init();  
-console.log("WEBFLOW RELOAD");
-
-}
