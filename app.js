@@ -734,17 +734,17 @@ map.on('click', function(e) {
   if (!features.length) {
     return;
   }
-  var feature = f[0];
+  var feature = features[0];
 
    /* 
     Create a popup, specify its options 
     and properties, and add it to the map.
   */
     var popup = new mapboxgl.Popup({ offset: [0, -15] /*, className: 'popup-style' */})
-    .setLngLat(feature.geometry.coordinates)
+    .setLngLat(features.geometry.coordinates)
      .setHTML(
-      '<h3>' + feature.properties.title + '</h3>' +
-      '<p>' + feature.properties.description + '</p>' 
+      '<h3>' + features.properties.title + '</h3>' +
+      '<p>' + features.properties.description + '</p>' 
      /*  '<p><img src="'feature.properties.image'"></p>') */
       )
       /* .setHTML("<h3>Hello World!</h3>") */
