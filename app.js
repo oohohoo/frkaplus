@@ -103,7 +103,7 @@ function initScroll(container) {
     offset: [0, 0],
     getDirection: true,
     scrollbarContainer: true,
-    scrollbarContainer: document.querySelector('.lokacije-header'),
+    scrollbarContainer: document.querySelector('.main-wrapper'),
     scrollFromAnywhere: true,
     multiplier: 1.0, // body sroll speed / object speed values are multiplied
     touchMultiplier: 3.0,
