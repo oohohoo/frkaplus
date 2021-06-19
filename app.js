@@ -1,5 +1,3 @@
-// OVA VERZIJA RADI BARBA
-
 gsap.registerPlugin(ScrollTrigger);
 
 let locoScroll;
