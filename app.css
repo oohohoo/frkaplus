@@ -18,7 +18,6 @@ body {
   user-select: none;          /* Likely future */      
 }
 
-
 /*
 ================================================================================
 DEFINE ROOT VARIABLES / definiraj svoje
@@ -26,10 +25,9 @@ DEFINE ROOT VARIABLES / definiraj svoje
 */
 :root {
   /*BILA JE ŽUTA*/
-  --bcg-lightblue:#231f20;
-  --bcg-loaderblue: #231f20;
+  --frkayellow:#231f20;
+  --frkablack: #231f20;
   /*BILA JE ŽUTA*/
-  --bcg-loaderbluedark: #231f20;
   --loader-width: 50vw;
   --loader-height: 5em;
 
@@ -37,24 +35,6 @@ DEFINE ROOT VARIABLES / definiraj svoje
   --bg-color: #231F20;
  */
 }
-
-
-/* 
-body {
-   overscroll-behavior: none;
-}
- */
-/* section:not(.horizontal-scroll) {
-  min-height: 100vh;
-  width: 100%;
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 2rem;
-  padding: 50px 10vw;
-  margin: auto;
-
- */
 
 /*
 ================================================================================
@@ -72,7 +52,7 @@ IS LOADING BACKGROUND COLOR
 ================================================================================
 */
 .is-loading {
-  background-color: var(--bcg-loaderblue);
+  background-color: var(--frkablack);
 }
 /*
 ================================================================================
@@ -133,7 +113,7 @@ LOADER
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: var(--bcg-loaderblue);
+  background-color: var(--frkablack);
   overflow: hidden;
 }
 
@@ -143,7 +123,7 @@ LOADER
 }
 
 .inner-loader {
-  background-color: var(--bcg-loaderbluedark);
+  background-color: var(--frkablack);
 }
 .loader__content {
   visibility: hidden;
@@ -204,7 +184,7 @@ LOADER
 
 .progress {
   /*OVO JE UGAŠENO ZA PREZENTACIJU*/
-  /* background-color: var(--bcg-lightblue); */
+  /* background-color: var(--frkablack); */
   position: absolute;
   left: 0;
   top: 0;
@@ -487,22 +467,22 @@ OUTLINE
 */
 
     .outlajn {
-      color: #231F20; /* Fallback */
-      -webkit-text-fill-color: #231F20;
+      color: var(--frkablack); /* Fallback */
+      -webkit-text-fill-color: var(--frkablack);
       -webkit-text-stroke-width: 2px;
-      -webkit-text-stroke-color: #FFDC52;
+      -webkit-text-stroke-color: var(--frkayellow);;
       letter-spacing: 3px;
-      text-stroke: 2px #FFDC52; /* Future-proofing */
+      text-stroke: 2px var(--frkayellow);; /* Future-proofing */
     }
 
 
     .outlajn--black {
-      color: #FFDC52; /* Fallback */
-      -webkit-text-fill-color: #FFDC52; 
+      color: var(--frkayellow);; /* Fallback */
+      -webkit-text-fill-color: var(--frkayellow);; 
       -webkit-text-stroke-width: 2px;
-      -webkit-text-stroke-color: #231F20;
+      -webkit-text-stroke-color: var(--frkablack);
       letter-spacing: 3px;
-      text-stroke: 2px #231F20; /* Future-proofing */
+      text-stroke: 2px var(--frkablack); /* Future-proofing */
     }
 
 
@@ -555,8 +535,8 @@ display: flex;
 flex-grow: 1;
 text-decoration: none;
 padding: 35px 0;
-border-bottom: 1px solid #231F20;
-color: #231F20;
+border-bottom: 1px solid var(--frkablack);
+color: var(--frkablack);
 background-size: 200% 200%;
 background-image: 
 linear-gradient(to top, #231F20 50%, transparent 50%);
@@ -564,7 +544,7 @@ transition: all 0.3s cubic-bezier(.4,0,0,1);
 }
 
 .item a:hover {
-color: #FFDC52;
+color: var(--frkayellow);;
 background-image: 
 linear-gradient(to top, #231F20 51%, transparent 50%);
 background-position: 0 100%;
@@ -656,13 +636,13 @@ TXT SELECT
 */
 
 ::selection {
-  background: #231f20; 
-  color: #F4DD54; 
+  background: var(--frkablack); 
+  color: var(--frkayellow);; 
   text-shadow: none;}
   
   ::-moz-selection {
-     background: #231f20;
-     color: #F4DD54;
+     background: var(--frkablack);
+     color: var(--frkayellow);;
   }
   
 
@@ -981,7 +961,7 @@ input::-webkit-search-cancel-button {
   width: 100%;
   border: none;
   border-radius: 0;
-  color: #231f20;
+  color: var(--frkablack);
   background: none;
   box-shadow: none;
   -webkit-appearance: auto; 
@@ -1006,7 +986,7 @@ input::-webkit-search-cancel-button {
   padding: 0;
   width: 100%;
   height: calc(100% - 1em);
-  color: #231f20;
+  color: var(--frkablack);
   font-size: 1em;
   text-align: left;
   pointer-events: none;
@@ -1022,7 +1002,7 @@ input::-webkit-search-cancel-button {
   left: 0;
   width: 100%;
   height: calc(100% - 0.52em);
-  border-bottom: 1px solid #231f20;
+  border-bottom: 1px solid var(--frkablack);
 }
 .input_label:after {
   content: "";
@@ -1031,7 +1011,7 @@ input::-webkit-search-cancel-button {
   left: 0;
   width: 100%;
   height: calc(100% - 0.52em);
-  border-bottom: 3px solid #231f20;
+  border-bottom: 3px solid var(--frkablack);
   transform: translate3d(-100%, 0, 0);
   transition: transform 0.3s;
 }
@@ -1153,7 +1133,7 @@ input::-webkit-search-cancel-button {
   }
   
   .linky.selected-toggle {
-    color: #ffdc52;
+    color: var(--frkayellow);;
   }
   .link_circle, .radio-button, .field_line {
     pointer-events: none;
@@ -1334,17 +1314,17 @@ FILEPOND STYLING
 
 /* the text color of the drop label*/
 .filepond--drop-label {
-  color: #232021!important;
+  color: var(--frkablack)!important;
 }
 
 /* underline color for "Browse" button */
 .filepond--label-action {
-  text-decoration-color: #F4DD54!important;
+  text-decoration-color: var(--frkayellow)!important;
 }
 
 /* the background color of the filepond drop area */
 .filepond--panel-root {
-  background-color: #232021!important;
+  background-color: var(--frkablack)!important;
  
 }
 
@@ -1355,23 +1335,23 @@ FILEPOND STYLING
 
 /* the background color of the file and file panel (used when dropping an image) */
 .filepond--item-panel {
-  background-color: #F4DD54!important;
+  background-color: var(--frkayellow)!important;
  
 }
 
 /* the background color of the drop circle */
 .filepond--drip-blob {
-  background-color: #232021!important;
+  background-color: var(--frkablack)!important;
 }
 
 /* the background color of the black action buttons */
 .filepond--file-action-button {
-  background-color: #232021!important;
+  background-color: var(--frkablack)!important;
 }
 
 /* the icon color of the black action buttons */
 .filepond--file-action-button {
-  color: #F4DD54!important;
+  color: var(--frkayellow)!important;
 }
 
 /* the color of the focus ring */
@@ -1382,14 +1362,14 @@ FILEPOND STYLING
 
 /* the text color of the file status and info labels */
 .filepond--file {
-  color: #232021!important;
+  color: var(--frkablack)!important;
 }
 
 
 /* error state color */
 [data-filepond-item-state*='error'] .filepond--item-panel,
 [data-filepond-item-state*='invalid'] .filepond--item-panel {
-  background-color: #F4DD54!important;
+  background-color: var(--frkayellow)!important;
 }
 
 [data-filepond-item-state='processing-complete'] .filepond--item-panel {
@@ -1400,8 +1380,8 @@ FILEPOND STYLING
 
 .filepond--panel-root {
   background-color: transparent!important;
-  border: 2px solid #232021!important;
-  color: #232021!important;
+  border: 2px solid var(--frkablack)!important;
+  color: var(--frkablack)!important;
 }
 
 .filepond--file-status {
@@ -1627,7 +1607,7 @@ display:none!important;
   }
   
   .linkos.selected-toggle {
-    color: #F4DD54;
+    color: var(--frkayellow);;
   }
   .link_circle, .radio-button, .field_line {
     pointer-events: none;
@@ -1727,7 +1707,7 @@ background: transparent;
   grid-template-rows: auto minmax(8em, auto);
   border-bottom-style: solid;
   border-bottom-width: 2px;
-  border-bottom-color: black;
+  border-bottom-color: var(--frkablack);
 }
  .newsminigrid.full {
   -ms-grid-columns: 1fr 1fr;
@@ -1893,7 +1873,7 @@ background: transparent;
  .mapboxgl-popup-content {
   position: relative;
   background: #fff;
-  color: #231f20;
+  color: var(--frkablack);
   border-radius: 0.5px;
   box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
   padding: 10px 10px 15px;
