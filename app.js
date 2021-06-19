@@ -730,11 +730,11 @@ Add an event listener that runs
   when a user clicks on the map element.
 */
 
-map.addSource('frka', {
+/* map.addSource('frka', {
   type: 'geojson',
   data: 'https://frkaplus.netlify.app/frka.geojson'
 });
-
+ */
 
 
 
