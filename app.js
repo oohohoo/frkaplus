@@ -2869,7 +2869,8 @@ console.log("SHUFFLE DESTROYED"); */
   Demo.prototype._handleupdate = function (evt) {
       /* SWITCH LAYOUT LOKACIJE ITEMS*/
 
-this.shuffle.update();
+/* this.shuffle.update(); */
+this.shuffle.layout();
     console.log("SHUFFLE UPDATED ON CLICKSSS");
 
   };
@@ -3149,6 +3150,7 @@ this.shuffle.update(); */
 */
 }
 
+/* */
 $('.location-switcher_wrap').click(function() {
   $('.webinar-posts__event-item').toggleClass('full'); 
  $('.newsminigrid').toggleClass('full');
