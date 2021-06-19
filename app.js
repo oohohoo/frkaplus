@@ -2928,12 +2928,10 @@ console.log("SHUFFLE DESTROYED"); */
     }
     this.shuffle.sort(options);
 
-    setTimeout(()=>{
-      this.shuffle.update();
-      locoScroll.update();
-      ScrollTrigger.refresh(true);
-       console.log("Locoscrollupdated + SCROLLTRIGGER NAKON SORTA");
-   },200) 
+    this.shuffle.update();
+    locoScroll.update();
+    ScrollTrigger.refresh(true);
+     console.log("Locoscrollupdated + SCROLLTRIGGER NAKON SORTA");
 
   };
   
@@ -3043,10 +3041,9 @@ Demo.prototype.filter = function () {
     
     setTimeout(()=>{
       this.shuffle.update();
-      console.log("SHUFFLE UPDATED1");
       locoScroll.update();
       ScrollTrigger.refresh(true);
-       console.log("Locoscrollupdated + SCROLLTRIGGER REFRESHHHHH 1");
+       console.log("Locoscrollupdated + SCROLLTRIGGER 01");
    },200)  
 
 
@@ -3054,16 +3051,18 @@ Demo.prototype.filter = function () {
     this.shuffle.filter(Shuffle.ALL_ITEMS);
      setTimeout(()=>{
       this.shuffle.update();
-      console.log("SHUFFLE UPDATED2");
       locoScroll.update();
       ScrollTrigger.refresh(true);
-    console.log("Locoscrollupdated + SCROLLTRIGGER REFRESHHHHH 2");
+       console.log("Locoscrollupdated + SCROLLTRIGGER 2");
     },200)  
   }
 
   if(this.shuffle.visibleItems == 0){
     this.message.innerHTML = (this.shuffle.visibleItems) + " items";
-
+    this.shuffle.update();
+    locoScroll.update();
+    ScrollTrigger.refresh(true);
+     console.log("Locoscrollupdated + SCROLLTRIGGER 3");
     
 
   
