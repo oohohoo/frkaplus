@@ -833,7 +833,7 @@ var fadein = gsap.timeline({defaults:{ease:'none'}})
  }
 
 
-
+}
 
 
 
