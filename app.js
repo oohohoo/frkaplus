@@ -2879,7 +2879,7 @@ console.log("SHUFFLE DESTROYED"); */
     this.shuffle.update();
     console.log("SHUFFLE UPDATED ON CLICKSSS");
   /*   this.filters.regions = this._getCurrentregionFilters(); */
-  
+});
   };
 
 
