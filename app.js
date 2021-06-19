@@ -645,7 +645,7 @@ function locationMap() {
 
 
 /* DODANO ALI NE RADI*/
-/* map.addControl(new mapboxgl.NavigationControl()); */
+ map.addControl(new mapboxgl.NavigationControl()); 
 
 
 

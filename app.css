@@ -24,16 +24,10 @@ DEFINE ROOT VARIABLES / definiraj svoje
 ================================================================================
 */
 :root {
-  /*BILA JE ŽUTA*/
   --frkayellow:#ffdc52;
   --frkablack: #231f20;
-  /*BILA JE ŽUTA*/
   --loader-width: 50vw;
   --loader-height: 5em;
-
-  /* --text-color: #FFDC52;
-  --bg-color: #231F20;
- */
 }
 
 /*
@@ -68,25 +62,9 @@ IS TRANSITIONING / BLUE PROGRESS CURSOR & POINTER EVENTS
 LINK COLOR
 ================================================================================
 */
-
 a {
 	color: inherit;
 }
-
-/*
-================================================================================
-WIZARDRY -- MOŽDA NE!
-================================================================================
-
-@media only screen and (min-width: 1560px) {
-	body {font-size: 15.6px;}
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1200px)  {
-     p {font-size: 12.48px;}
-}
-*/
-
 
 /*
 ================================================================================
@@ -234,8 +212,6 @@ O NAMA HORIZONTAL SCROLL // sredi
   padding: 0 5vw;
 }
 
-
-
 /*
 ================================================================================
 LOCOMOTIVE SCROLL 4.1.1
@@ -307,8 +283,6 @@ html.has-scroll-smooth {
       right: auto;
       bottom: 0; }
 
-
-
 /*
 ================================================================================
 GSAP PERFORMANCE FIX
@@ -319,7 +293,6 @@ GSAP PERFORMANCE FIX
   will-change: transform;
   /*backface-visibility: hidden;*/
 }   
-
 
 #main {
   will-change: transform;
@@ -337,7 +310,6 @@ DISABLE SELECTION
   user-select: none;          /* Likely future */      
 }
 
-
 /*
 ================================================================================
 COUNTER / BROJAČ O NAMA
@@ -348,107 +320,7 @@ COUNTER / BROJAČ O NAMA
   font-variant-numeric: tabular-nums;
 }
 
-
 /*
-================================================================================
-IMAGE OVERLAY CURSOR
-================================================================================
-*/
-
-/*
-.cursor {
-  position: fixed;
-  width: 31.25em;
-  height: 20.83em;
-  top: 50%;
-  left: 50%;
-  margin: -100px 0 0 -100px;
-  background: url(https://i.pinimg.com/564x/85/24/d7/8524d785a8427617d475bf02d51710fc.jpg) no-repeat 50% 50%;
-  background-size: contain;
-  z-index: 1;
-} 
-
-.project-overlay{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-
-*/
-
-/*
-================================================================================
-SWIPER STUFF
-================================================================================
-*/
-
-.swiper-container {
-  aspect-ratio: 16/11; 
-  width: 100%;
-   height: 100%;
-   overflow: hidden;
- }
- 
-   .d-container {
-     position: relative;
-     width: 100%;
-     padding-top: 68.75%; /* 16:9 Aspect Ratio */
-  }
-  .d-inner {
-     position: absolute;
-     top: 0;
-     left: 0;
-     bottom: 0;
-     right: 0;
-  }
-
-  
-
-
-    
-    .swiper-container .swiper-wrapper .swiper-slide-active .up {
-      animation-name: fade-in;
-      animation-duration: 1s;
-      animation-fill-mode: both;
-    }
-    
-    
-    .swiper-container .swiper-wrapper .swiper-slide-active .up:nth-child(2) {
-      animation-delay: 0.4s;
-    }
-    .swiper-container .swiper-wrapper .swiper-slide-active .up__link:nth-child(1) {
-      animation-delay: 0.2s;
-    }
-    
-    
-    @keyframes fade-in {
-      from {
-        opacity: 0;
-       /* transform: translateY(100px);*/
-      }
-      to {
-        opacity: 1;
-      /*  transform: translateY(0); */
-      }
-    }
-  
-
-
-    .swiper-pagination {
-      z-index: 1 !important;
-  }
-
-
-  /*new location home swiper*/
-  .swiper-wrapper {
-    transition: transform 0.7s ease-out!important;
-  }
-
-  
-  /*
 ================================================================================
 OKOMITI TXT
 ================================================================================
@@ -460,25 +332,24 @@ OKOMITI TXT
     }
 
 
-  /*
+/*
 ================================================================================
 OUTLINE
 ================================================================================
 */
-
-    .outlajn {
+  .outlajn {
       color: var(--frkablack); /* Fallback */
       -webkit-text-fill-color: var(--frkablack);
       -webkit-text-stroke-width: 2px;
-      -webkit-text-stroke-color: var(--frkayellow);;
+      -webkit-text-stroke-color: var(--frkayellow);
       letter-spacing: 3px;
-      text-stroke: 2px var(--frkayellow);; /* Future-proofing */
+      text-stroke: 2px var(--frkayellow); /* Future-proofing */
     }
 
 
     .outlajn--black {
-      color: var(--frkayellow);; /* Fallback */
-      -webkit-text-fill-color: var(--frkayellow);; 
+      color: var(--frkayellow); /* Fallback */
+      -webkit-text-fill-color: var(--frkayellow); 
       -webkit-text-stroke-width: 2px;
       -webkit-text-stroke-color: var(--frkablack);
       letter-spacing: 3px;
@@ -486,36 +357,12 @@ OUTLINE
     }
 
 
-  /*
+/*
 ================================================================================
-SWIPER STUFF
+SIMPLE FADE IN / FADE OUT / AUTOALPHA 023
 ================================================================================
 */
 
-.reference--logo--outline{
-  aspect-ratio: 1/1; 
-  width: 100%;
-   height: 100%;
-   overflow: hidden;
- }
- 
-   .ref-logo-container {
-     position: relative;
-     width: 100%;
-     padding-top: 100%; /* 1:1 Aspect Ratio */
-  }
-  .ref-logo-inner {
-     position: absolute;
-     top: 0;
-     left: 0;
-     bottom: 0;
-     right: 0;
-  }
-
-
-  /*  
-  SIMPLE FADE IN / FADE OUT / AUTOALPHA 023 simple fadein fadeout 
-  */
 .fadeheader{
   visibility:hidden;
 }
@@ -525,7 +372,6 @@ SWIPER STUFF
 BUTTON HOVER LOCO
 ================================================================================
 */
-
 
 /* *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } */
 /* body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;} */
@@ -544,7 +390,7 @@ transition: all 0.3s cubic-bezier(.4,0,0,1);
 }
 
 .item a:hover {
-color: #ffdc52;
+color: var(--frkayellow);
 background-image: 
 linear-gradient(to top, #231F20 51%, transparent 50%);
 background-position: 0 100%;
@@ -556,145 +402,22 @@ cursor: pointer;
   flex: 1;
 }
 
-
-  /*
-================================================================================
-LOCOMOTIVE FIX
-================================================================================
-*/
-/* .smooth-scroll {
-  overflow-y: hidden !important;
-} */
-
-
-
-  /*
-================================================================================
-KONTAKT BUTTON MARQUEE
-================================================================================
-*/
-
-/*   .button--atlas > span {
-    display: inline-block;
-  }
-  
-  .button--atlas:hover > span {
-    opacity: 0;
-  }
-  /*
-  .marquee {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    pointer-events: none;
-  }
-  */
-  /*
-  .marquee__inner {
-    width: fit-content;
-    display: flex;
-    position: relative;
-    --offset: 1rem;
-    --move-initial: calc(-25% + var(--offset));
-    --move-final: calc(-50% + var(--offset));
-    transform: translate3d(var(--move-initial), 0, 0);
-    animation: marquee 1s linear infinite;
-    animation-play-state: paused;
-    opacity: 0;
-  }
-  
-  .button--atlas:hover .marquee__inner {
-    animation-play-state: running;
-    opacity: 1;
-    transition-duration: 0.4s;
-  }
-  
-  .marquee span {
-    text-align: center;
-    white-space: nowrap;
-    font-style: italic;
-    padding: 1.5rem 0.5rem;
-  }
-  
-  @keyframes marquee {
-    0% {
-      transform: translate3d(var(--move-initial), 0, 0);
-    }
-  
-    100% {
-      transform: translate3d(var(--move-final), 0, 0);
-    }
-  } 
-*/
-
-  /*
+/*
 ================================================================================
 TXT SELECT
 ================================================================================
 */
-
 ::selection {
-  background: var(--frkablack); 
-  color: var(--frkayellow);; 
-  text-shadow: none;}
-  
-  ::-moz-selection {
-     background: var(--frkablack);
-     color: var(--frkayellow);;
-  }
-  
-
-
-
-/*
-================================================================================
-karta full format
-================================================================================
-*/
-/*
-.mapboxgl-canvas {
-  width:100%!important;
-  height: auto!important;
-
+  background: var(--frkablack);
+  color: var(--frkayellow);
+  text-shadow: none;
 }
-/*
-================================================================================
-SHOW HIDE MENU
-================================================================================
-/*
-#header {
-   transform: translate3d(0,0,0);
-   transition: transform .4s ease-in-out;
- }
- 
- html[data-direction="down"] #header {
-   transform: translate3d(0,-100%,0);
- }
-*/
-/*
-================================================================================
-ROTATE OVERTEXT
-================================================================================
 
-.is--rotate {
-  transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
- filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); 
-  -webkit-transform: translateY(-90deg);
-  -webkit-transform: rotate(-90deg);
-  -webkit-transform-origin:left bottom;
-  -moz-transform: translateY(-90deg);
-  -moz-transform-origin: left bottom; 
-  -ms-transform: translateY(-90deg);
- -ms-transform-origin:left bottom; 
-  -o-transform: translateY(-90deg);
-  transform: translateY(-90deg);
-  transform: rotate(-90deg);
-  transform-origin: left bottom;
+::-moz-selection {
+  background: var(--frkablack);
+  color: var(--frkayellow);
 }
-*/
+
 /*
 ================================================================================
 OHOHO ANIMACIJA
@@ -731,20 +454,17 @@ ONAMA--KARTA--PULSING BUTTONS
 ================================================================================
 */
 
-
 .pulse-button {
- 
   box-shadow: 0 0 0 0 rgba(255, 189, 0, 0.5);
   -webkit-animation: pulse 3.5s infinite;
-
 }
 
 .pulse-button:hover {
   -webkit-animation: none;
-      -moz-transform: scale(2);
-    -ms-transform: scale(2);
-    -webkit-transform: scale(2);
-    transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -webkit-transform: scale(2);
+  transform: scale(2);
 }
 
 @-webkit-keyframes pulse {
@@ -754,6 +474,7 @@ ONAMA--KARTA--PULSING BUTTONS
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
   }
+
   30% {
     -moz-transform: scale(1.5);
     -ms-transform: scale(1.5);
@@ -761,6 +482,7 @@ ONAMA--KARTA--PULSING BUTTONS
     transform: scale(1.5);
     box-shadow: 0 0 0 20px rgba(255, 189, 0, 0);
   }
+
   50% {
     -moz-transform: scale(0.9);
     -ms-transform: scale(0.9);
@@ -768,6 +490,7 @@ ONAMA--KARTA--PULSING BUTTONS
     transform: scale(0.9);
     box-shadow: 0 0 0 0 rgba(255, 189, 0, 0);
   }
+
   100% {
     -moz-transform: scale(0.9);
     -ms-transform: scale(0.9);
@@ -776,11 +499,6 @@ ONAMA--KARTA--PULSING BUTTONS
     box-shadow: 0 0 0 0 rgba(255, 189, 0, 0);
   }
 }
-
-
-
-
-
 
 /*
 ================================================================================
@@ -791,12 +509,15 @@ WIZARDRY 1920
      body {font-size: 19.2px;}
 }
 
-
 /* @media only screen and (min-width: 992px) and (max-width: 1200px)  {
      body {font-size: 14px;}
 } */
 
-
+/*
+================================================================================
+MAPBOX
+================================================================================
+*/
 
 #map {
    width: 100%;
@@ -804,11 +525,11 @@ WIZARDRY 1920
    /* visibility: hidden; */
 }
 
-.mapboxgl-ctrl, .mapboxgl-ctrl-attrib-inner {
+/* .mapboxgl-ctrl, .mapboxgl-ctrl-attrib-inner {
 
 display:none!important;
 
-}
+} */
 
 
 /*
@@ -816,7 +537,6 @@ display:none!important;
 SPLIDE CSS
 ================================================================================
 */
-
 
 .nav-link__contain, .sublink__contain {
 	opacity: 0;
@@ -1133,7 +853,7 @@ input::-webkit-search-cancel-button {
   }
   
   .linky.selected-toggle {
-    color: var(--frkayellow);;
+    color: var(--frkayellow);
   }
   .link_circle, .radio-button, .field_line {
     pointer-events: none;
@@ -1607,7 +1327,7 @@ display:none!important;
   }
   
   .linkos.selected-toggle {
-    color: var(--frkayellow);;
+    color: var(--frkayellow);
   }
   .link_circle, .radio-button, .field_line {
     pointer-events: none;
