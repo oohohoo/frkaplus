@@ -707,13 +707,20 @@ function locationMap() {
     /* setTimeout(()=>{   */
 mapboxgl.accessToken = 'pk.eyJ1IjoiZm9nc2VsbGVyIiwiYSI6ImNrN2VpbXlpbjAwNDIzbnM1N2ZhMW9laGkifQ.DUf-8r1jXF4o7ApMUcKVXQ';
 
+
+var bounds = [
+  [-75.04728500751165, 39.68392799015035],
+  [-72.91058699000139, 41.87764500765852]
+];
+
 var map = new mapboxgl.Map({
 container: 'map', // container ID
 style: 'mapbox://styles/fogseller/cknip0h0j0oqm17mgvd8wwi8y?optimize=true', // style URL / dodano optimize=true
 center: [16.527, 44.663], // starting position [lng, lat]
 zoom: 6.64, // starting zoom
 minZoom: 6.64, // note the camel-case
-maxZoom: 19
+maxZoom: 19,
+maxBounds: bounds
 });
 /* DODANO ALI NE RADI*/
 /* map.addControl(new mapboxgl.NavigationControl()); */
@@ -723,7 +730,7 @@ Add an event listener that runs
   when a user clicks on the map element.
 */
 
-map.addSource('frkax', {
+map.addSource('frka', {
   type: 'geojson',
   data: 'https://frkaplus.netlify.app/frka.geojson'
 });
