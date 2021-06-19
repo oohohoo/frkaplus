@@ -283,6 +283,7 @@ function initContent() {
   underlineLink();
   scrollTotop();
   hideMenu();
+  yearupdate();
   console.log("initial scripts loaded...");
  
   if (document.querySelector('#home')) {
@@ -549,8 +550,6 @@ barba.init({
        
         // do something once on the initial page load
         initLoader();
-        
-        console.log("SCROLLTO TOP INIT");
       },
 
       async leave({current}) {
@@ -569,9 +568,7 @@ barba.init({
       },
 
       beforeEnter({next}) {
-        yearupdate();
-       
-     
+                   
      },
 
     }],
@@ -611,59 +608,46 @@ barba.init({
     }
   });
 
+/*
+================================================================================
+UPDATE ACTIVE CLASS ON THE MENU - BASED ON THE GIVEN URL
+================================================================================
+*/
 
-  /*
-  ================================================================================
-  UPDATE ACTIVE CLASS ON THE MENU - BASED ON THE GIVEN URL
-  ================================================================================
-  */
-
-  function init() {
-    initLoader();
+function init() {
+  initLoader();
   }
-
 }
-
 
 /*
 ================================================================================
 LOCATION MAP
 ================================================================================
 */
+function locationMap() {
 
-function locationMap() { 
+  mapboxgl.accessToken = 'pk.eyJ1IjoiZm9nc2VsbGVyIiwiYSI6ImNrN2VpbXlpbjAwNDIzbnM1N2ZhMW9laGkifQ.DUf-8r1jXF4o7ApMUcKVXQ';
 
- /*  setTimeout(()=>{
-    myMap = createMapbox(data.next.container);
-},3000)  */
+  var bounds = [
+    [13.109302076751561, 42.167215037402855],
+    [19.821668059258826, 46.816119904050964]
+  ];
 
-    /* setTimeout(()=>{   */
-mapboxgl.accessToken = 'pk.eyJ1IjoiZm9nc2VsbGVyIiwiYSI6ImNrN2VpbXlpbjAwNDIzbnM1N2ZhMW9laGkifQ.DUf-8r1jXF4o7ApMUcKVXQ';
-
-
-var bounds = [
-  [13.109302076751561, 42.167215037402855],
-  [19.821668059258826, 46.816119904050964]
-];
-
-var map = new mapboxgl.Map({
-container: 'map', // container ID
-style: 'mapbox://styles/fogseller/cknip0h0j0oqm17mgvd8wwi8y?optimize=true', // style URL / dodano optimize=true
-center: [16.527, 44.663], // starting position [lng, lat]
-zoom: 6.64, // starting zoom
-minZoom: 6.64, // note the camel-case
-maxZoom: 19,
-maxBounds: bounds
-});
+  var map = new mapboxgl.Map({
+    container: 'map', // container ID
+    style: 'mapbox://styles/fogseller/cknip0h0j0oqm17mgvd8wwi8y?optimize=true', // style URL / dodano optimize=true
+    center: [16.527, 44.663], // starting position [lng, lat]
+    zoom: 6.64, // starting zoom
+    minZoom: 6.64, // note the camel-case
+    maxZoom: 19,
+    maxBounds: bounds
+  });
 
 
 /* DODANO ALI NE RADI*/
 /* map.addControl(new mapboxgl.NavigationControl()); */
 
-/* 
-Add an event listener that runs
-  when a user clicks on the map element.
-*/
+
 
 /* map.addSource('frka', {
   type: 'geojson',
@@ -674,54 +658,46 @@ Add an event listener that runs
 
 
 /* $(document).ready(function(){  */
-  map.on('idle', function(e) {
-/*   setTimeout(()=>{ */
-map.on('click', function(e) {
-  // If the user clicked on one of your markers, get its information.
-  var features = map.queryRenderedFeatures(e.point, {
-    layers: ['frka'] // replace with your layer name
-  });
-  if (!features.length) {
-    return;
-  }
-  var feature = features[0];
+map.on('idle', function (e) {
+  /*   setTimeout(()=>{ */
+  map.on('click', function (e) {
+    // If the user clicked on one of your markers, get its information.
+    var features = map.queryRenderedFeatures(e.point, {
+      layers: ['frka'] // replace with your layer name
+    });
+    if (!features.length) {
+      return;
+    }
+    var feature = features[0];
 
-   /* 
+    /* 
     Create a popup, specify its options 
     and properties, and add it to the map.
   */
-    var popup = new mapboxgl.Popup({ offset: [0, -15] /*, className: 'popup-style' */})
-    .setLngLat(feature.geometry.coordinates)
+    var popup = new mapboxgl.Popup({
+        offset: [0, -15] /*, className: 'popup-style' */
+      })
+      .setLngLat(feature.geometry.coordinates)
 
-     .setHTML(
-      '<h3>' + feature.properties.title + '</h3>' +
-      '<p>' + feature.properties.description + '</p>' +
-      '<img>' + feature.properties.image + '</img>' 
-          ) 
-          /* .setHTML(feature.properties.title) */
+      .setHTML(
+        '<h3>' + feature.properties.title + '</h3>' +
+        '<p>' + feature.properties.description + '</p>' +
+        '<img>' + feature.properties.image + '</img>'
+      )
+      /* .setHTML(feature.properties.title) */
 
       /* .setHTML("<h3>Hello World!</h3>") */
       /* .setMaxWidth("300px") */
-        
-          .addTo(map);
-      console.log("POPUP on MAP");
 
-    
-})
-/* },3000)   */
+      .addTo(map);
+    console.log("POPUP on MAP");
 
-}); 
-
-
-/* }); */
-
-
+  })
+});
 
 
 map.doubleClickZoom.enable();
 console.log("MAP DOUBLECLICK!"); 
-
-
 
 
 /*
@@ -757,79 +733,62 @@ document.getElementById('all').addEventListener('change', function () {
 });
 
 document.getElementById('zagreb').addEventListener('change', function () {
-  // Fly to a random location by offsetting the point -74.50, 40
-  // by up to 5 degrees.
   map.flyTo({
     center: [15.969, 45.802],
-    zoom: 11, // starting zoom
-    essential: true // this animation is considered essential with respect to prefers-reduced-motion
+    zoom: 11, 
+    essential: true 
   });
 });
 
 document.getElementById('sibenik').addEventListener('change', function () {
-  // Fly to a random location by offsetting the point -74.50, 40
-  // by up to 5 degrees.
   map.flyTo({
     center: [15.900, 43.725],
-    zoom: 10, // starting zoom
-    essential: true // this animation is considered essential with respect to prefers-reduced-motion
+    zoom: 10,
+    essential: true 
   });
 });
 
 document.getElementById('osijek').addEventListener('change', function () {
-  // Fly to a random location by offsetting the point -74.50, 40
-  // by up to 5 degrees.
   map.flyTo({
     center: [18.711, 45.570],
-    zoom: 10, // starting zoom
-    essential: true // this animation is considered essential with respect to prefers-reduced-motion
+    zoom: 10, 
+    essential: true 
   });
 });
 
 document.getElementById('koprivnica').addEventListener('change', function () {
-  // Fly to a random location by offsetting the point -74.50, 40
-  // by up to 5 degrees.
   map.flyTo({
     center: [16.828, 46.137],
-    zoom: 10, // starting zoom
-    essential: true // this animation is considered essential with respect to prefers-reduced-motion
+    zoom: 10,
+    essential: true 
   });
 });
 
 document.getElementById('varazdin').addEventListener('change', function () {
-  // Fly to a random location by offsetting the point -74.50, 40
-  // by up to 5 degrees.
   map.flyTo({
     center: [16.352, 46.302],
-    zoom: 10, // starting zoom
-    essential: true // this animation is considered essential with respect to prefers-reduced-motion
+    zoom: 10,
+    essential: true
   });
 });
 
 document.getElementById('karlovac').addEventListener('change', function () {
-  // Fly to a random location by offsetting the point -74.50, 40
-  // by up to 5 degrees.
   map.flyTo({
     center: [15.554, 45.471],
-    zoom: 10, // starting zoom
-    essential: true // this animation is considered essential with respect to prefers-reduced-motion
+    zoom: 10, 
+    essential: true 
   });
 });
 
 document.getElementById('zadar').addEventListener('change', function () {
-  // Fly to a random location by offsetting the point -74.50, 40
-  // by up to 5 degrees.
   map.flyTo({
     center: [15.243, 44.114],
-    zoom: 10, // starting zoom
-    essential: true // this animation is considered essential with respect to prefers-reduced-motion
+    zoom: 10,
+    essential: true
   });
 });
 
-
-
-
-  /*
+/*
 ================================================================================
 MAP RESIZE
 ================================================================================
@@ -846,17 +805,14 @@ console.log("MAP RESIZE!");
 /* mapboxgl.clearStorage();
 console.log("STORAGE CLEARED");  */
 
-
-
- /* 
-=============================================
-FADE IN MAP
-================================================ */
- /*  setTimeout(()=>{
-    myMap = createMapbox(data.next.container);
-  */
-/* setTimeout(()=>{ */
 /*
+================================================================================
+FADE IN MAP
+================================================================================
+*/
+ 
+setTimeout(()=>{
+  myMap = createMapbox(data.next.container);
   
 var fadein = gsap.timeline({defaults:{ease:'none'}})
 .to('.loader-icon', {autoAlpha:1})
@@ -865,12 +821,8 @@ var fadein = gsap.timeline({defaults:{ease:'none'}})
 .to('.lokacije-mapbox-container', {autoAlpha:1, duration:1.5, delay:2})
 .to('.loader-icon', {autoAlpha:0}, "-=1.5")
 .to('.loader-txt', {autoAlpha:0}, "<")
-*/
-/* .to('.fadeheader', {autoAlpha:0, stagger:5}, 4) */
-/* },1500) */
 
-
- }
+}
 
 
 
