@@ -2705,7 +2705,7 @@ NOVI SORT MOŽDA FINALEEEE
 function newSort() {
 
 
-'use strict';
+/* 'use strict'; */
 
 $("#d").select2();
 //select2 start
