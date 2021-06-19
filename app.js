@@ -726,7 +726,7 @@ Add an event listener that runs
 
 /* $(document).ready(function(){  */
 /*   map.once("load", () => { */
-  setTimeout(()=>{
+/*   setTimeout(()=>{ */
 map.on('click', function(e) {
   // If the user clicked on one of your markers, get its information.
   var features = map.queryRenderedFeatures(e.point, {
@@ -742,6 +742,8 @@ map.on('click', function(e) {
     and properties, and add it to the map.
   */
     var popup = new mapboxgl.Popup({ offset: [0, -15] /*, className: 'popup-style' */})
+    .addTo(map);
+      console.log("POPUP on MAP");
     .setLngLat(feature.geometry.coordinates)
   /*    .setHTML(
       '<h3>' + feature.properties.title + '</h3>' +
@@ -753,12 +755,11 @@ map.on('click', function(e) {
       /* .setHTML("<h3>Hello World!</h3>") */
       /* .setMaxWidth("300px") */
         
-          .addTo(map);
-      console.log("POPUP on MAP");
+          
 
     
 });
-},3000)  
+/* },3000)   */
 
 /* }); */
 
