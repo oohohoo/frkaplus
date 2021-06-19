@@ -709,10 +709,9 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZm9nc2VsbGVyIiwiYSI6ImNrN2VpbXlpbjAwNDIzbnM1N
 
 
 var bounds = [
-  [13.340499637020969, 42.7644802526531],
-  [19.670188122275135, 46.64893220558815]
+  [13.109302076751561, 42.167215037402855],
+  [19.821668059258826, 46.816119904050964]
 ];
-
 
 var map = new mapboxgl.Map({
 container: 'map', // container ID
