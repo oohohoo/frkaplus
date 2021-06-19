@@ -325,17 +325,9 @@ function initContent() {
 
   }
   if (document.querySelector('#lokacije')) {
-    
-    newSort();
+    /*newSort();*/
     lokacijeBotuni();
-       locationMap();
-    console.log("NEW SORT LOADED DIRECTLY");
-   /*  sorting(); */
-    /* sortButtons(); */
-    /* customSelect(); */
-    /* locationDropdownSelect(); */
-    
-    /* appendmore(); */
+    locationMap();
     console.log("LOKACIJE SCRIPTS -- loaded");
   }
 
@@ -521,15 +513,8 @@ BARBA VIEWS
                
               },
               beforeEnter(data) {
-                /* locationMap(); */
-                newSort();
-    console.log("NEW SORT LOADED BEFORE ENTER LOCALY");
-               /*  sorting();
-                sortButtons(); */
+                /*newSort(); */
                 stopScrollMap();
-               /*  locationDropdownSelect(); */
-               /*  customSelect(); */
-                console.log("CUSTOM SELECT LOADED");
               },
               beforeLeave({current}) {
                 map.remove();
