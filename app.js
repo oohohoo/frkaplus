@@ -726,23 +726,15 @@ maxBounds: bounds
 });
 
 await map.once('load');
-  map.addLayer(...);
-  await map.once('idle');
-})();
-
-
-(async () => {
-  const map = new mapboxgl.Map(...);
-  await map.once('load');
-  map.on('click', function (e) {
-    // If the user clicked on one of your markers, get its information.
-    var features = map.queryRenderedFeatures(e.point, {
-      layers: ['frka'] // replace with your layer name
-    });
-    if (!features.length) {
-      return;
-    }
-    var feature = features[0];
+map.on('click', function (e) {
+  // If the user clicked on one of your markers, get its information.
+  var features = map.queryRenderedFeatures(e.point, {
+    layers: ['frka'] // replace with your layer name
+  });
+  if (!features.length) {
+    return;
+  }
+  var feature = features[0];
 
 /* 
 Create a popup, specify its options 
@@ -755,19 +747,22 @@ var popup = new mapboxgl.Popup({ offset: [0, -15] /*, className: 'popup-style' *
 '<h3>' + feature.properties.title + '</h3>' +
 '<p>' + feature.properties.description + '</p>' +
 '<img>' + feature.properties.image + '</img>' 
-  ) 
-  /* .setHTML(feature.properties.title) */
+) 
+/* .setHTML(feature.properties.title) */
 
 /* .setHTML("<h3>Hello World!</h3>") */
 /* .setMaxWidth("300px") */
 
-  .addTo(map);
+.addTo(map);
 console.log("POPUP on MAP");
 
 
 })
   await map.once('idle');
 })();
+
+
+
 /* function mapLoad(map) {
   return new Promise((resolve, reject) => {
       map.on('load', () => resolve())
