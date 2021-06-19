@@ -1886,7 +1886,7 @@ followArea.forEach(function (el) {
   gsap.set(cursor, {autoAlpha: 1, backgroundColor: "#231f20", scale: 1});
 
   el.addEventListener('mouseover', () => {
-    gsap.to(cursor, 0.25, {scale: 10, backgroundColor: "#ffdc52", /* autoAlpha: 1 */});
+    gsap.to(cursor, 0.25, {scale: 3, backgroundColor: "#ffdc52", /* autoAlpha: 1 */});
     /*     page.addEventListener('mousemove', moveCircle);*/
   });
 
