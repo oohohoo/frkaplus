@@ -708,14 +708,12 @@ function locationMap() {
 mapboxgl.accessToken = 'pk.eyJ1IjoiZm9nc2VsbGVyIiwiYSI6ImNrN2VpbXlpbjAwNDIzbnM1N2ZhMW9laGkifQ.DUf-8r1jXF4o7ApMUcKVXQ';
 
 var map = new mapboxgl.Map({
- /*  width: 1280,
-  height: 800,  */  
 container: 'map', // container ID
 style: 'mapbox://styles/fogseller/cknip0h0j0oqm17mgvd8wwi8y?optimize=true', // style URL / dodano optimize=true
 center: [16.527, 44.663], // starting position [lng, lat]
 zoom: 6.64, // starting zoom
 minZoom: 6.64, // note the camel-case
-     maxZoom: 19
+maxZoom: 19
 });
 /* DODANO ALI NE RADI*/
 /* map.addControl(new mapboxgl.NavigationControl()); */
@@ -760,7 +758,7 @@ map.on('click', function(e) {
       console.log("POPUP on MAP");
 
     
-});
+})
 /* },3000)   */
 
 }); 
