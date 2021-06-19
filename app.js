@@ -2844,7 +2844,7 @@ console.log("SHUFFLE DESTROYED"); */
   $('.location-switcher_column').toggleClass('hide');
   $('.location-switcher_full').toggleClass('hide'); 
   this.shuffle.update(this);
-  console.log("SHUFFLE UPDATED ON CLICK");
+  console.log("SHUFFLE UPDATED ON CLICKYfe");
   }); 
 
 
