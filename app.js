@@ -3019,11 +3019,7 @@ Demo.prototype._handlecategoryChange = function (evt) {
 		} else {
 			this.categories.forEach(function (btn) {
 				btn.classList.remove('active');
-        this.shuffle.update();
-    locoScroll.update();
-    ScrollTrigger.refresh(true);
-     console.log("Locoscrollupdated + SCROLLTRIGGER AFTER BUTN KLIK02");
-			});
+      });
 			button.classList.add('active');
       console.log("active added");
       this.shuffle.update();
