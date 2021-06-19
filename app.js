@@ -325,7 +325,7 @@ function initContent() {
 
   }
   if (document.querySelector('#lokacije')) {
-    /*newSort();*/
+    newSort();
     lokacijeBotuni();
     locationMap();
     console.log("LOKACIJE SCRIPTS -- loaded");
@@ -513,7 +513,7 @@ BARBA VIEWS
                
               },
               beforeEnter(data) {
-                /*newSort(); */
+                newSort();
                 stopScrollMap();
               },
               beforeLeave({current}) {
@@ -722,7 +722,7 @@ Add an event listener that runs
 */
 
 
-$(document).ready(function(){ 
+/* $(document).ready(function(){  */
 
 map.on('click', function(e) {
   // If the user clicked on one of your markers, get its information.
@@ -751,7 +751,7 @@ map.on('click', function(e) {
     console.log("POPUP on MAP");
 });
 
-});
+/* }); */
 
 
 
