@@ -723,7 +723,7 @@ Add an event listener that runs
 
 
 /* $(document).ready(function(){  */
-
+  map.once("load", () => {
 map.on('click', function(e) {
   // If the user clicked on one of your markers, get its information.
   var features = map.queryRenderedFeatures(e.point, {
@@ -750,6 +750,10 @@ map.on('click', function(e) {
     .addTo(map);
     console.log("POPUP on MAP");
 });
+
+
+});
+
 
 /* }); */
 
