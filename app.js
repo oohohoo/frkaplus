@@ -3041,10 +3041,6 @@ Demo.prototype._handlecategoryChange = function (evt) {
 		this.categories.forEach(function (btn) {
 			btn.classList.remove('active');
       console.log("active removed");
-      this.shuffle.update();
-    locoScroll.update();
-    ScrollTrigger.refresh(true);
-     console.log("Locoscrollupdated + SCROLLTRIGGER AFTER BUTN KLIK05");
 		});
 		button.classList.add('active');
     console.log("active added");
