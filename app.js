@@ -2876,10 +2876,12 @@ console.log("SHUFFLE DESTROYED"); */
   $('.pin-button-link').toggleClass('full'); 
   $('.location-switcher_column').toggleClass('hide');
   $('.location-switcher_full').toggleClass('hide'); 
-    this.shuffle.update();
-    console.log("SHUFFLE UPDATED ON CLICKSSS");
-  /*   this.filters.regions = this._getCurrentregionFilters(); */
+      /*   this.filters.regions = this._getCurrentregionFilters(); */
 });
+
+this.shuffle.update();
+    console.log("SHUFFLE UPDATED ON CLICKSSS");
+    
   };
 
 
