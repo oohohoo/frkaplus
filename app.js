@@ -985,14 +985,16 @@ btn.addEventListener('click', function(){
       background: '#fff',
       
     },
-    html2canvas: {
-      width: 3000;
-       imageTimeout: 15000,
+    html2canvas(document.body, {
+         imageTimeout: 15000,
      logging: true, 
       useCORS: true,
       backgroundColor:	"#ffffff",
       onrendered: function(canvas) {
-
+        document.body.appendChild(canvas);
+      },
+      width: 2482,
+      height: 3508,
         /* doc.addPage(newWidth, newHeight); */
         
         var imgData = canvas.toDataURL('image/jpeg');
@@ -1006,10 +1008,10 @@ btn.addEventListener('click', function(){
         alert('did it');
      },  
 
-      scrollX: 0,
-  scrollY: -window.scrollY, 
+      /* scrollX: 0,
+  scrollY: -window.scrollY,  */
 
-    },
+   /*  }, */
     imageType: 'image/jpeg',
     imageQuality: 100,
     margin: {
