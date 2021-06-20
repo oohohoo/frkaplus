@@ -2036,7 +2036,7 @@ $.fn.filepond.registerPlugin(
 // $('.upload-photo').filepond({
 FilePond.create(
   document.querySelector('.upload-photo'), {
-    labelIdle: '<div class="uploading-frame">Drag&drop fotku ili <span class="filepond--label-action fontDarkOrange"> Click za upload </span></div>',
+    labelIdle: '<div class="uploading-frame">DRAG&DROP OR CLICK</div>',
     checkValidity: true,
     dropValidation: true,
     dropOnPage:true,
