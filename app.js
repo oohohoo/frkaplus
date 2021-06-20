@@ -981,7 +981,7 @@ btn.addEventListener('click', function(){
   html2PDF(page, {
     jsPDF: {
       format: 'a4',
-      orientation: "landscape",
+      orientation: "portrait",
       background: '#fff',
       
     },
