@@ -2042,7 +2042,8 @@ FilePond.create(
     dropOnPage:true,
     acceptedFileTypes: ['image/png', 'image/jpeg', 'video/quicktime', 'video/mp4'],
     imageValidateSizeMinWidth: 1200,
-    imageValidateSizeMinHeight: 300,
+   /*  imageValidateSizeMinHeight: 300, */
+    imageValidateSizeMaxHeight: 300,
     maxFileSize: '11MB',
     labelMaxFileSize: 'Maksimalna dozvoljena težina datoteke je {filesize}',
     labelFileProcessing: 'Pripremam za crop',
