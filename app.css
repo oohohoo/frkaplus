@@ -835,14 +835,17 @@ TEST YOUR DESIGN
 
   .photo-crop-container .crop-preview-cont #crop_img {
     position: absolute;
-    bottom: 0;
+    bottom: 0.52em;
+    width: 2.5em;
+    height: 2.5em;
     z-index: 1;
-    color: #fff;
-    text-decoration: underline;
-    right: 0;
+    color: var(--frkayellow)!important;
+    text-decoration: none;
+    right: 0.52em;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.30196078431372547);
+    background-color: var(--frkablack)!important;
     padding: 2px 10px;
+    border-radius: 100%;
   }
 
   .photo-crop-container.show-result .crop-preview-cont .img_container {
@@ -1018,6 +1021,15 @@ CROPPER STYLING
   opacity: .5
 }
 
+/*
+================================================================================
+PRINTTHIS PLUGIN STYLING
+================================================================================
+*/
+
+.butonio.hide {
+  display: none;  
+}
 
 /*
 .filepond--root {
