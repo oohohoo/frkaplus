@@ -985,16 +985,14 @@ btn.addEventListener('click', function(){
       background: '#fff',
       
     },
-    html2canvas(document.body, {
-         imageTimeout: 15000,
+    html2canvas: {
+     
+       imageTimeout: 15000,
      logging: true, 
       useCORS: true,
       backgroundColor:	"#ffffff",
       onrendered: function(canvas) {
-        document.body.appendChild(canvas);
-      },
-      width: 2482,
-      height: 3508,
+
         /* doc.addPage(newWidth, newHeight); */
         
         var imgData = canvas.toDataURL('image/jpeg');
@@ -1007,11 +1005,12 @@ btn.addEventListener('click', function(){
         doc.save('Spec_Sheet.pdf');
         alert('did it');
      },  
+     width: 3508,
+     height: 2482,
+      scrollX: 0,
+  scrollY: -window.scrollY, 
 
-      /* scrollX: 0,
-  scrollY: -window.scrollY,  */
-
-   /*  }, */
+    },
     imageType: 'image/jpeg',
     imageQuality: 100,
     margin: {
