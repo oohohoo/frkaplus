@@ -480,7 +480,7 @@ barba.init({
                 openTestYourDesign();
                 uploadCrop();
                 saveaspdf();
-            
+                lokacijesoloPrintButton();
               },
                 beforeLeave(data) {
            /*   splide.on( 'destroy', function() { */
@@ -2625,7 +2625,11 @@ LOKACIJE BOTUNI // PROČISTI
 
 function lokacijesoloPrintButton() {
 
-
+  $('.turnonpdf').click(function() {
+    $('.butonio').toggleClass('hide');
+    });
+    
+    
 
 }
 
