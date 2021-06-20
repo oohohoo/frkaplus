@@ -992,6 +992,27 @@ display:none!important;
 }
 
 /*
+================================================================================
+CROPPER STYLING
+================================================================================
+*/
+
+cropper-view-box {
+  outline: 1px solid var(--frkablack)!important;
+  outline-color: var(--frkablack)!important;
+}
+
+.cropper-line {
+  background-color: var(--frkablack)!important;
+}
+
+.cropper-point {
+  background-color: var(--frkablack)!important;
+  height: 8px;
+ /*  opacity: .75; */
+  width: 8px;
+}
+/*
 .filepond--root {
   height: 20em;
 }
