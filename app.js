@@ -313,7 +313,6 @@ function initContent() {
     splidesolo();
     saveaspdf();
     locationMap(); 
-    lokacijesoloPrintButton();
     console.log("lokacijesolo scripts loaded...");
   }
 
@@ -481,7 +480,6 @@ barba.init({
                 openTestYourDesign();
                 uploadCrop();
                 saveaspdf();
-                lokacijesoloPrintButton();
               },
                 beforeLeave(data) {
            /*   splide.on( 'destroy', function() { */
@@ -2121,6 +2119,12 @@ pond.addEventListener('FilePond:removefile', function (e) {
   filepond_img_Container.html('');
 });
   
+// Show PDF Button
+$('.turnonpdf').click(function() {
+  $('.butonio').toggleClass('hide');
+  console.log("SHOW PDF");
+  });
+
 /* VIDEJO UPLOADER
 */
 /*
@@ -2616,24 +2620,6 @@ function lokacijeBotuni() {
     
 }
 
-
-
-/*
-================================================================================
-LOKACIJE BOTUNI // PROČISTI
-================================================================================
-*/
-
-function lokacijesoloPrintButton() {
-
-  $('.turnonpdf').click(function() {
-    $('.butonio').toggleClass('hide');
-    console.log("SHOW PDF");
-    });
-    
-    
-
-}
 
 
 
