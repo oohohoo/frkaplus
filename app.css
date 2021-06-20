@@ -997,7 +997,7 @@ CROPPER STYLING
 ================================================================================
 */
 
-cropper-view-box {
+.cropper-view-box {
   outline: 1px solid var(--frkablack)!important;
   outline-color: var(--frkablack)!important;
 }
@@ -1012,6 +1012,13 @@ cropper-view-box {
  /*  opacity: .75; */
   width: 8px;
 }
+
+.cropper-modal {
+  background-color: var(--frkayellow)!important;
+  opacity: .5
+}
+
+
 /*
 .filepond--root {
   height: 20em;
