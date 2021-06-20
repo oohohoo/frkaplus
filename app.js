@@ -986,8 +986,9 @@ btn.addEventListener('click', function(){
       
     },
     html2canvas: {
+      width: 3000;
        imageTimeout: 15000,
-     /*logging: true, */
+     logging: true, 
       useCORS: true,
       backgroundColor:	"#ffffff",
       onrendered: function(canvas) {
