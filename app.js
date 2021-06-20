@@ -313,6 +313,7 @@ function initContent() {
     splidesolo();
     saveaspdf();
     locationMap(); 
+    lokacijesoloPrintButton();
     console.log("lokacijesolo scripts loaded...");
   }
 
@@ -2627,6 +2628,7 @@ function lokacijesoloPrintButton() {
 
   $('.turnonpdf').click(function() {
     $('.butonio').toggleClass('hide');
+    console.log("SHOW PDF");
     });
     
     
