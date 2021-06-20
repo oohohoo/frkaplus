@@ -316,7 +316,6 @@ function initContent() {
     console.log("lokacijesolo scripts loaded...");
   }
 
-   
 //DRUKČIJE SE PONAŠA AKO UBACIMO UNUTAR document ready/ 
 
   ScrollTrigger.refresh(true); // ScrollTrigger Refresh
@@ -2092,7 +2091,7 @@ pond.addEventListener('FilePond:processfile', function (e, file) {
     
       width: 677,
       height: 158,
-      imageSmoothingEnabled: false,
+      imageSmoothingEnabled: true,
       imageSmoothingQuality: 'high',
     }).toDataURL('image/png');
 //       "cropped_img" use this for reteriving cropped image data for further processing like saving in datase, etc.
