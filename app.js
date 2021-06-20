@@ -308,12 +308,11 @@ function initContent() {
   }
 
   if (document.querySelector('#lokacijesolo')) {
-    locationMap(); 
     openTestYourDesign();
     uploadCrop();
     splidesolo();
     saveaspdf();
-    lokacijesoloPrintButton();
+    locationMap(); 
     console.log("lokacijesolo scripts loaded...");
   }
 
@@ -481,7 +480,6 @@ barba.init({
                 openTestYourDesign();
                 uploadCrop();
                 saveaspdf();
-                lokacijesoloPrintButton();
             
               },
                 beforeLeave(data) {
@@ -2627,9 +2625,7 @@ LOKACIJE BOTUNI // PROČISTI
 
 function lokacijesoloPrintButton() {
 
-$('.turnonpdf').click(function() {
-  $('.butonio').toggleClass('hide');
-});
+
 
 }
 
