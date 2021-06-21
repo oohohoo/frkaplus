@@ -833,6 +833,7 @@ TEST YOUR DESIGN
     display: none;
   }
 
+
   .photo-crop-container .crop-preview-cont #crop_img {
     position: absolute;
     bottom: 0.52em;
@@ -846,6 +847,9 @@ TEST YOUR DESIGN
     background-color: var(--frkablack)!important;
     padding: 2px 10px;
     border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .photo-crop-container.show-result .crop-preview-cont .img_container {
