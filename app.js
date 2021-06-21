@@ -1214,7 +1214,7 @@ function openTestYourDesign() {
     console.log("LOCO STOP");
   });
   
-  $("#tweenbox").hoverout(function () {
+  $("#tweenbox").mouseout(function () {
     locoScroll.start();
     console.log("LOCO START");
   
