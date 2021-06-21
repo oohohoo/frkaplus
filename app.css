@@ -999,6 +999,12 @@ FILEPOND STYLING
 display:none!important;
 }
 
+.crop-para {
+margin-bottom: 2em;
+
+}
+
+
 /*
 ================================================================================
 CROPPER STYLING
@@ -1026,6 +1032,8 @@ CROPPER STYLING
   opacity: .5
 }
 
+
+
 /*
 ================================================================================
 PRINTTHIS PLUGIN STYLING
@@ -1035,6 +1043,7 @@ PRINTTHIS PLUGIN STYLING
 .butonio.hide {
   opacity: 1;  
 }
+
 
 /*
 .filepond--root {
