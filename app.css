@@ -1033,7 +1033,7 @@ PRINTTHIS PLUGIN STYLING
 */
 
 .butonio.hide {
-  display: none;  
+  opacity: 1;  
 }
 
 /*
