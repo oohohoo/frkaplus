@@ -1208,6 +1208,17 @@ function openTestYourDesign() {
     window.print()
   });
 
+/* DISABLE LOCO WHEN SIMULATOR OPEN*/
+  $(".testyour--container").hover(function () {
+    locoScroll.stop();
+  });
+  
+  $(".testyour--container").mouseout(function () {
+    locoScroll.start();
+  
+  });
+
+
 }
 
 /*
