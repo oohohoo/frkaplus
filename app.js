@@ -2135,7 +2135,7 @@ pond.addEventListener('FilePond:removefile', function (e) {
 $('.turnonpdf').click(function() {
   setTimeout(()=>{
   $('.butonio').toggleClass('hide');
-  console.log("SHOW PDF");
+  console.log("SHOW PDFio*");
     },200) 
   });
 
