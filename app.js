@@ -1219,8 +1219,7 @@ function openTestYourDesign() {
     console.log("LOCO START");
   
   });
-
-
+  
 }
 
 /*
@@ -2134,9 +2133,21 @@ pond.addEventListener('FilePond:removefile', function (e) {
   
 // Show PDF Button
 $('.turnonpdf').click(function() {
+  setTimeout(()=>{
   $('.butonio').toggleClass('hide');
   console.log("SHOW PDF");
+    },200) 
   });
+
+
+  // Hide PDF Button
+$('.filepond--file-action-button').click(function() {
+  setTimeout(()=>{
+  $('.butonio').toggleClass('hide');
+  console.log("SHOW PDF");
+    },200) 
+  });
+  
 
 /* VIDEJO UPLOADER
 */
