@@ -1209,12 +1209,12 @@ function openTestYourDesign() {
   });
 
 /* DISABLE LOCO WHEN SIMULATOR OPEN*/
-  $("#tweenbox").mouseenter(function () {
+  $("#tweenbox, .testbutton").mouseenter(function () {
     locoScroll.stop();
     console.log("LOCO STOP");
   });
   
-  $("#tweenbox").mouseleave(function () {
+  $("#tweenbox, .testbutton").mouseleave(function () {
     locoScroll.start();
     console.log("LOCO START");
   
