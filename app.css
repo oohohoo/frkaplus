@@ -840,6 +840,7 @@ TEST YOUR DESIGN
     width: 2.5em;
     height: 2.5em;
     z-index: 1;
+    font-size: 1.04em;
     color: var(--frkayellow)!important;
     text-decoration: none;
     right: 0.52em;
