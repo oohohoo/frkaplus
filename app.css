@@ -1030,6 +1030,10 @@ CROPPER STYLING
   background-color: var(--frkayellow)!important;
   opacity: .8!important;
 }
+.cropper-point.point-ne {
+  right: -4px!important;
+  top: -4px!important;
+}
 
 .cropper-point.point-nw {
   left: -4px!important;
