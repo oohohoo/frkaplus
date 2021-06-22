@@ -311,6 +311,7 @@ function initContent() {
   if (document.querySelector('#lokacijesolo')) {
     openTestYourDesign();
     uploadCrop();
+    lokacijeBotuni();
     splidesolo();
     saveaspdf();
     locationMap(); 
