@@ -2149,7 +2149,7 @@ $('.turnonpdf').click(function() {
   setTimeout(()=>{
   $('.linkos.opacity').toggleClass('hide');
   console.log("SHOW PDFio*");
-    },200) 
+    },1000) 
   });
 
 
