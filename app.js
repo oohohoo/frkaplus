@@ -2168,6 +2168,12 @@ pond.addEventListener('FilePond:removefile', function (e) {
   img_cropping.cropper('destroy').html('');
   photo_preview_container.html('');
   filepond_img_Container.html('');
+
+  $('#mobile').children().filter("video").each(function(){
+    this.pause(); // can't hurt
+    delete this; // @sparkey reports that this did the trick (even though it makes no sense!)
+    $(this).remove(); // this is probably what actually does the trick
+  });
  
   
   
