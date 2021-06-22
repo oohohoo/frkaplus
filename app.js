@@ -2242,12 +2242,12 @@ $(document).ready(function()
       delete this; // @sparkey reports that this did the trick (even though it makes no sense!)
       $(this).remove(); // this is probably what actually does the trick
     });
-    $('#mobile').empty();
+   // $('#mobile').empty();
 
     
 /*       var item = $('#destination');
       $('.mobile').remove(item); */
-      console.log("VIDEO AJDEEEE");
+      console.log("VIDEO TRALALALAL");
 });
 
 
