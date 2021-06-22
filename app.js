@@ -2055,12 +2055,11 @@ FilePond.create(
     labelIdle: '<div class="uploading-frame">DRAG&DROP OR CLICK</div>',
     checkValidity: true,
     dropValidation: true,
-    dropOnPage:true,
     acceptedFileTypes: ['image/png', 'image/jpeg', 'video/quicktime', 'video/mp4'],
     imageValidateSizeMinWidth: 1200,
   /*   imageValidateSizeMaxHeight: 800,  */
     imageValidateSizeMinHeight: 300,
-    maxFileSize: '11MB',
+    maxFileSize: '1MB',
     labelMaxFileSize: 'Maksimalna dozvoljena težina datoteke je {filesize}',
 /*     labelMaxHeight: 'Maksimalna dozvoljena visina datoteke je {filesize}',
  */    labelFileProcessing: 'Pripremam za crop',
