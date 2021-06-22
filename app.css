@@ -1021,9 +1021,9 @@ CROPPER STYLING
 
 .cropper-point {
   background-color: var(--frkablack)!important;
-  height: 8px;
- /*  opacity: .75; */
-  width: 8px;
+  height: 8px!important;
+  opacity: 1; 
+  width: 8px!important;
 }
 
 .cropper-modal {
