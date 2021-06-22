@@ -1031,6 +1031,40 @@ CROPPER STYLING
   opacity: .8
 }
 
+.cropper-point.point-nw {
+  left: -4px;
+  top: -4px;
+}
+
+.cropper-point.point-sw {
+  bottom: -4px;
+  left: -4px;
+}
+
+.cropper-point.point-se {
+  bottom: -4px;
+  right: -4px;
+}
+
+.cropper-point.point-s {
+  bottom: -4px;
+  margin-left: -4px;
+}
+
+.cropper-point.point-w {
+  left: -4px;
+  margin-top: -4px;
+}
+
+.cropper-point.point-n {
+  margin-left: -4px;
+  top: -4px;
+}
+
+.cropper-point.point-e {
+  margin-top: -4px;
+  right: -4px;
+}
 
 
 /*
