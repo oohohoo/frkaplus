@@ -2082,6 +2082,7 @@ var photo_crop_container = $('.photo-crop-container');
 var crop_preview_cont = photo_crop_container.find('.crop-preview-cont');
 var filepond_img_Container = $('.img_container')
 var photo_preview_container = $('#user_cropped_img');
+var pdfbutton = $('.butonio')
 var img_cropping = '';
 
 // pond.getFile();
@@ -2130,14 +2131,19 @@ pond.addEventListener('FilePond:processfile', function (e, file) {
 pond.addEventListener('FilePond:removefile', function (e) {
   setTimeout(function () {
     photo_crop_container.removeClass('show-result');
+    pdfbutton.toggleClass('hide');
+    console.log("HIDE PDF");
   }, 1000);
   crop_preview_cont.slideUp();
   // crop_preview_cont.html('');
   img_cropping.cropper('destroy').html('');
   photo_preview_container.html('');
   filepond_img_Container.html('');
-});
+ 
   
+  
+});
+
 // Show PDF Button
 $('.turnonpdf').click(function() {
   setTimeout(()=>{
