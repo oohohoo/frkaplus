@@ -2147,10 +2147,10 @@ $('.turnonpdf').click(function() {
 
   // Hide PDF Button
 $('.filepond--file-action-button:focus').click(function() {
-  setTimeout(()=>{
+/*   setTimeout(()=>{ */
   $('.butonio').toggleClass('hide');
   console.log("HIDE PDF");
-    },100) 
+   /*  },100)  */
   });
   
 
