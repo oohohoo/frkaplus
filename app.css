@@ -1004,6 +1004,11 @@ margin-bottom: 2em;
 }
 
 
+.filepond--file-action-button.filepond--file-action-button svg {
+  margin-left: 0.3em!important;
+  margin-top: 0.3em!important;
+}
+
 /*
 ================================================================================
 CROPPER STYLING
