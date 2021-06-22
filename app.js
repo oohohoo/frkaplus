@@ -2162,27 +2162,44 @@ $('.turnonpdf').click(function() {
  // });
   
 
+
+
+
 /* VIDEJO UPLOADER
 */
-/*
-const videoupload = document.querySelector('.video-uploader');
+
+/* const videoupload = document.querySelector('.video-uploader');
 const videoplace = document.querySelector('.filepond--media-preview-wrapper');
-const botun = document.querySelector('.botun');
+const botun = document.querySelector('.botun'); */
 
 const pondvideo = FilePond.create({
   name: 'filepondvideo',
-          acceptedFileTypes: ['image/png', 'image/jpeg', 'video/quicktime', 'video/mp4'],
+          acceptedFileTypes: ['video/quicktime', 'video/mp4'],
           checkValidity: true,
           dropValidation: true,
-          dropOnPage:true,
-});
+          });
 
 // Add it to the DOM
-videoupload.appendChild(pondvideo.element);
+//videoupload.appendChild(pondvideo.element);
 
 
-onclick = function(){ botun.appendChild(".filepond--media-preview"); }
-*/
+//onclick = function(){ botun.appendChild(".filepond--media-preview"); }
+$(document).ready(function()
+  {    
+  $('#movevideo').click(function(){
+
+          //  var toAdd = $('input[name=checkListItem]').val();
+            var item = $('.filepond--media-preview video');
+            $('.mobile').append(item);
+            //  document.querySelector('.filepond--media-preview video').play();
+           // document.getElementById('homevid').play();
+           video.play();
+            console.log("APPEND");
+       
+   });
+  });
+
+  
 
 }
 
