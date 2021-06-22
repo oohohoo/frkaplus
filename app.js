@@ -2223,10 +2223,10 @@ $(document).ready(function()
             //  document.querySelector('.filepond--media-preview video').play();
            // document.getElementById('destination').play();
           $('video').trigger('play');
-         //  $('video').attr({'autoplay':'true'});
+           $('video').attr({'autoplay':'true', 'loop':'true'});
            // $('#destination').get(0).play();
            //video.play();
-            console.log("APPEND AND PLAY");
+            console.log("APPEND AND PLAY & LOOP");
        
    });
   });
