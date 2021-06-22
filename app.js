@@ -303,7 +303,7 @@ function initContent() {
     newSort();
     sortChangeLayout();
     lokacijeBotuni();
-    locationMap();
+    // locationMap();
     stopScrollMap();
     console.log("lokacije scripts loaded...");
   }
@@ -314,7 +314,7 @@ function initContent() {
     lokacijeBotuni();
     splidesolo();
     saveaspdf();
-    locationMap(); 
+    //locationMap(); 
     stopScrollMap();
     console.log("lokacijesolo scripts loaded...");
   }
@@ -477,7 +477,7 @@ barba.init({
               namespace: 'lokacijesolo',
 
               beforeEnter(data) {
-                locationMap();
+                //locationMap();
                 splidesolo();
                 scrolltriggerupdate();
                 openTestYourDesign();
