@@ -2694,15 +2694,15 @@ function doCoolStuff() {
     // animate bubble slider to clicked target
     animation.to(".slider", {x:targets[activeTab].offsetLeft, width:targets[activeTab].offsetWidth});
     // change text color on old and new tab targets
-    animation.to(targets[old], {color:"#1bb1a5", ease:"none"}, 0);
-    animation.to(targets[activeTab], {color:"#1bb1a5", ease:"none"}, 0);
+    animation.to(targets[old], {color:"#231f20", ease:"none"}, 0);
+    animation.to(targets[activeTab], {color:"#231f20", ease:"none"}, 0);
     // slide current article down out of view and then set it to starting position at top
-    animation.to(articles[old], {y:heights[old], ease:"back.in" }, 0);
+    animation.to(articles[old], {y:heights[old], ease: 'power1.out' }, 0);
     animation.set(articles[old], {y:-heights[old]});
     // resize article block to accommodate new content
     animation.to(".article-block", {height:heights[activeTab]});
     // slide in new article
-    animation.to(articles[activeTab], {duration: 1, y:0, ease: "elastic"}, "-=0.25");
+    animation.to(articles[activeTab], {duration: 1, y:0, ease: 'power1.out'}, "-=0.25");
   }
 }
 
