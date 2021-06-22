@@ -304,6 +304,7 @@ function initContent() {
     sortChangeLayout();
     lokacijeBotuni();
     locationMap();
+    stopScrollMap();
     console.log("lokacije scripts loaded...");
   }
 
@@ -313,6 +314,7 @@ function initContent() {
     splidesolo();
     saveaspdf();
     locationMap(); 
+    stopScrollMap();
     console.log("lokacijesolo scripts loaded...");
   }
 
