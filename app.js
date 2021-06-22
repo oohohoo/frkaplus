@@ -2086,7 +2086,7 @@ FilePond.create(
       imageValidateSizeMinWidth: 1200,
     /*   imageValidateSizeMaxHeight: 800,  */
       imageValidateSizeMinHeight: 300,
-      maxFileSize: '1MB',
+      maxFileSize: '11MB',
       labelMaxFileSize: 'Maksimalna dozvoljena težina datoteke je {filesize}',
   /*     labelMaxHeight: 'Maksimalna dozvoljena visina datoteke je {filesize}',
    */    labelFileProcessing: 'Pripremam za crop',
