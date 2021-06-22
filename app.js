@@ -2090,10 +2090,10 @@ pond.addEventListener('FilePond:processfile', function (e, file) {
   img_cropping = filepond_img_Container.find('img');
   img_cropping.attr('src', image.src);
   img_cropping.cropper({
-    viewMode: 1,
+    viewMode: 3,
     dragMode: 'move',
     aspectRatio: 6.77 / 1.58,
-    guides: false,
+    guides: true,
     modal:true,
     highlight:true,
     cropBoxResizable: true,
