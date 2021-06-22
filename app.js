@@ -2236,7 +2236,7 @@ $(document).ready(function()
     //  var toAdd = $('input[name=checkListItem]').val();
       var item = $('.mobile video');
       $('.mobile').remove(item);
-      console.log("VIDEO ćao");
+      console.log("VIDEO bonđorno");
 });
 
 
