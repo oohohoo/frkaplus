@@ -2232,6 +2232,16 @@ $(document).ready(function()
   });
 
 
+  $('#removevideo').click(function(){
+    //  var toAdd = $('input[name=checkListItem]').val();
+      var item = $('.filepond--media-preview video');
+      $('.mobile').prepend(item);
+      console.log("VIDEO REMOVED");
+});
+
+
+  
+
 
 }
 
