@@ -1066,7 +1066,10 @@ CROPPER STYLING
   right: -4px;
 }
 
+.img_container {
+  max-height: 13.5em;
 
+}
 /*
 ================================================================================
 PRINTTHIS PLUGIN STYLING
