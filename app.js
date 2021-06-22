@@ -2150,7 +2150,7 @@ $('.filepond--file-action-button').click(function() {
   setTimeout(()=>{
   $('.butonio').toggleClass('hide');
   console.log("HIDE PDF");
-    },200) 
+    },100) 
   });
   
 
