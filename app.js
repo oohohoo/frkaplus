@@ -2129,11 +2129,11 @@ pond.addEventListener('FilePond:processfile', function (e, file) {
 
 // Empty the photo preivew containers once the user remove the image from the uploader
 pond.addEventListener('FilePond:removefile', function (e) {
+  pdfbutton.toggleClass('hide');
+  console.log("HIDE PDF");
   setTimeout(function () {
     photo_crop_container.removeClass('show-result');
-    pdfbutton.toggleClass('hide');
-    console.log("HIDE PDF");
-  }, 1000);
+    }, 1000);
   crop_preview_cont.slideUp();
   // crop_preview_cont.html('');
   img_cropping.cropper('destroy').html('');
