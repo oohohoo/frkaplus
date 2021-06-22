@@ -1003,10 +1003,6 @@ display:none!important;
 margin-bottom: 2em;
 }
 
-.filepond--root {
-  max-height: 13em;
-}
-
 
 /*
 ================================================================================
@@ -1074,10 +1070,10 @@ CROPPER STYLING
   right: -4px!important;
 }
 
-/* .img_container {
+ .img_container {
   max-height: 13.5em!important;
 
-} */
+} 
 /*
 ================================================================================
 PRINTTHIS PLUGIN STYLING
