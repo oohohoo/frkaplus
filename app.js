@@ -2678,7 +2678,7 @@ for (let i = 0; i < targets.length; i++) {
 // set initial article and position bubble slider on first tab 
 gsap.set(articles[0], {y:0});
 gsap.set(".slider", {x:targets[0].offsetLeft, width:targets[0].offsetWidth});
-gsap.set(targets[0], {color:"#1bb1a5"});
+gsap.set(targets[0], {color:"#231f20"});
 gsap.set(".article-block", {height:heights[0]});
 
 function doCoolStuff() {
@@ -2694,7 +2694,7 @@ function doCoolStuff() {
     // animate bubble slider to clicked target
     animation.to(".slider", {x:targets[activeTab].offsetLeft, width:targets[activeTab].offsetWidth});
     // change text color on old and new tab targets
-    animation.to(targets[old], {color:"#1bb1a5", ease:"none"}, 0);
+    animation.to(targets[old], {color:"#231f20", ease:"none"}, 0);
     animation.to(targets[activeTab], {color:"#231f20", ease:"none"}, 0);
     // slide current article down out of view and then set it to starting position at top
     animation.to(articles[old], {y:heights[old], ease:"back.in" }, 0);
