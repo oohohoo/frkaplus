@@ -2146,7 +2146,7 @@ $('.turnonpdf').click(function() {
 
 
   // Hide PDF Button
-$('.pdfoff').click(function() {
+$('.filepond--file-action-button:focus').click(function() {
   setTimeout(()=>{
   $('.butonio').toggleClass('hide');
   console.log("HIDE PDF");
