@@ -2234,8 +2234,8 @@ $(document).ready(function()
 
   $('#removevideo').click(function(){
     //  var toAdd = $('input[name=checkListItem]').val();
-      var item = $('.filepond--media-preview video');
-      $('.mobile').remove(item);
+      var item = $('.video-preview video');
+      $('.video-preview').remove(item);
       console.log("VIDEO ćao");
 });
 
