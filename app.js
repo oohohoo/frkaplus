@@ -2055,6 +2055,9 @@ FilePond.create(
     labelIdle: '<div class="uploading-frame">DRAG&DROP OR CLICK</div>',
     checkValidity: true,
     dropValidation: true,
+    iconRemove: '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.89468 9.20147L13.9565 15.2633L15.3708 13.8491L9.3089 7.78726L15.3948 1.70132L13.9806 0.287109L7.89468 6.37305L1.80874 0.287109L0.394531 1.70132L6.48047 7.78726L0.418607 13.8491L1.83282 15.2633L7.89468 9.20147Z" fill="#231F20"/>
+    </svg>',
     acceptedFileTypes: ['image/png', 'image/jpeg', 'video/quicktime', 'video/mp4'],
     imageValidateSizeMinWidth: 1200,
   /*   imageValidateSizeMaxHeight: 800,  */
