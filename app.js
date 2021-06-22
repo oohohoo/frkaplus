@@ -2678,7 +2678,7 @@ for (let i = 0; i < targets.length; i++) {
 // set initial article and position bubble slider on first tab 
 gsap.set(articles[0], {y:0});
 gsap.set(".slider", {x:targets[0].offsetLeft, width:targets[0].offsetWidth});
-gsap.set(targets[0], {color:"#1bb1a5"});
+gsap.set(targets[0], {color:"#231f20"});
 gsap.set(".article-block", {height:heights[0]});
 
 function doCoolStuff() {
