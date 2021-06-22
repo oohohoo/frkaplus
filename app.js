@@ -2234,7 +2234,7 @@ $(document).ready(function()
 
   $('#removevideo').click(function(){
     //  var toAdd = $('input[name=checkListItem]').val();
-      var item = $('video');
+      var item = $('#destination');
       $('.mobile').remove(item);
       console.log("VIDEO adio");
 });
