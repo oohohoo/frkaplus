@@ -2247,7 +2247,7 @@ $(document).ready(function()
     
 /*       var item = $('#destination');
       $('.mobile').remove(item); */
-      console.log("VIDEO baj");
+      console.log("VIDEO AJDEEEE");
 });
 
 
