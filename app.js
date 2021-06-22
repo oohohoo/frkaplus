@@ -2154,12 +2154,12 @@ $('.turnonpdf').click(function() {
 
 
   // Hide PDF Button
-$('.filepond--file-action-button:hover, .filepond--file-action-button:focus').click(function() {
+//$('.filepond--file-action-button:hover, .filepond--file-action-button:focus').click(function() {
 /*   setTimeout(()=>{ */
-  $('.butonio').toggleClass('hide');
-  console.log("HIDE PDF");
+  //$('.butonio').toggleClass('hide');
+  //console.log("HIDE PDF");
    /*  },100)  */
-  });
+ // });
   
 
 /* VIDEJO UPLOADER
