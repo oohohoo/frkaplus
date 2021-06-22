@@ -2224,6 +2224,9 @@ $(document).ready(function()
            // document.getElementById('destination').play();
           $('video').trigger('play');
            $('video').attr({'autoplay':'true', 'loop':'true'});
+           setTimeout(function () {
+            photo_crop_container.removeClass('show-result');
+            }, 1000);
            // $('#destination').get(0).play();
            //video.play();
             console.log("APPEND AND PLAY & LOOP");
@@ -2240,7 +2243,7 @@ $(document).ready(function()
 });
 
 
-  
+
 
 
 }
