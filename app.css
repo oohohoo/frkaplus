@@ -803,8 +803,9 @@ TEST YOUR DESIGN
   }
 
   .photo-crop-container.show-loader:before {
-    content: 'Cropping...';
+    content: ' ';
     opacity: 1;
+    background-color: transparent;
     height: calc(100% - 80px);
   }
 
