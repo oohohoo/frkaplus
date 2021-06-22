@@ -2700,7 +2700,7 @@ function doCoolStuff() {
     animation.to(articles[old], {y:heights[old], ease: 'power1.out' }, 0);
     animation.set(articles[old], {y:-heights[old]});
     // resize article block to accommodate new content
-    //animation.to(".article-block", {height:heights[activeTab]});
+    animation.to(".article-block", {height:heights[activeTab]});
     // slide in new article
     animation.to(articles[activeTab], {duration: 1, y:0, ease: 'power1.out'}, "-=0.25");
   }
