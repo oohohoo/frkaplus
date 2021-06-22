@@ -974,7 +974,7 @@ FILEPOND STYLING
 
 /* the text color of the file status and info labels */
 .filepond--file {
-  color: var(--frkablack)!important;
+  color: var(--frkayellow)!important;
 }
 
 /* error state color */
@@ -984,7 +984,7 @@ FILEPOND STYLING
 }
 
 [data-filepond-item-state='processing-complete'] .filepond--item-panel {
-  background-color: white!important;
+  background-color: var(--frkablack)!important;
 }
 
 /* bordered drop area */
