@@ -2222,8 +2222,8 @@ $(document).ready(function()
             $('.mobile').append(item);
             //  document.querySelector('.filepond--media-preview video').play();
            // document.getElementById('destination').play();
-          // $('video').trigger('play');
-           $('video').attr({'autoplay':'true'});
+          $('video').trigger('play');
+         //  $('video').attr({'autoplay':'true'});
            // $('#destination').get(0).play();
            //video.play();
             console.log("APPEND AND PLAY");
