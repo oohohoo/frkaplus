@@ -2221,9 +2221,9 @@ $(document).ready(function()
             var item = $('.filepond--media-preview video');
             $('.mobile').append(item);
             //  document.querySelector('.filepond--media-preview video').play();
-           // document.getElementById('homevid').play();
-           video.play();
-            console.log("APPEND");
+            document.getElementById('destination').play();
+           //video.play();
+            console.log("APPEND AND PLAY");
        
    });
   });
