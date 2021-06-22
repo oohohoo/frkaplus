@@ -2236,11 +2236,20 @@ $(document).ready(function()
 
 
   $('#removevideo').click(function(){
-    //  var toAdd = $('input[name=checkListItem]').val();
-      var item = $('#destination');
-      $('.mobile').remove(item);
+
+    $('#mobile').children().filter("video").each(function(){
+      this.pause(); // can't hurt
+      delete this; // @sparkey reports that this did the trick (even though it makes no sense!)
+      $(this).remove(); // this is probably what actually does the trick
+    });
+    $('#mobile').empty();
+
+    
+/*       var item = $('#destination');
+      $('.mobile').remove(item); */
       console.log("VIDEO baj");
 });
+
 
 
 
