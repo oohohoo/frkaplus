@@ -2235,7 +2235,7 @@ $(document).ready(function()
   $('#removevideo').click(function(){
     //  var toAdd = $('input[name=checkListItem]').val();
       var item = $('video');
-      $('.mobile').prepend(item);
+      $('.mobile').remove(item);
       console.log("VIDEO ODJEBO");
 });
 
