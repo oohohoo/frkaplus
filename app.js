@@ -2234,9 +2234,9 @@ $(document).ready(function()
 
   $('#removevideo').click(function(){
     //  var toAdd = $('input[name=checkListItem]').val();
-      var item = $('.mobile video');
+      var item = $('video');
       $('.mobile').remove(item);
-      console.log("VIDEO bonđorno");
+      console.log("VIDEO adio");
 });
 
 
