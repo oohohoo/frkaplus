@@ -1445,6 +1445,7 @@ function splidesolo() {
       perMove: 1,
       type: 'loop',
       focus: 'center',
+      easing: 'cubic-bezier(.42,.65,.27,.99)'
       pagination: true,
       gap: '2em', 
       updateOnMove : true,
