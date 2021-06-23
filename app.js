@@ -1457,7 +1457,7 @@ function splidesolo() {
       }
     })
     .mount();
-
+/*
   $('.next-splide').click(function () {
     $('.splide__arrow.splide__arrow--next').click();
   });
@@ -1465,7 +1465,7 @@ function splidesolo() {
   $('.prev-splide').click(function () {
     $('.splide__arrow.splide__arrow--prev').click();
   });
-
+*/
 }
 
 
