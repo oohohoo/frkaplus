@@ -1475,9 +1475,9 @@ function splidesolo() {
 		}
 	}
 } ).mount();
-}
 
-}
+
+
 slider1();
 
 /*
