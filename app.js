@@ -1446,7 +1446,7 @@ function splidesolo() {
       type: 'loop',
       focus: 'center',
       easing: 'cubic-bezier(.42,.65,.27,.99)'
-      pagination: true,
+      pagination: 'slider',
       gap: '2em', 
       updateOnMove : true,
       breakpoints: {
