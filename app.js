@@ -1447,7 +1447,7 @@ function splidesolo() {
       //focus: 'center',
       arrows: 'slider',
       easing: 'cubic-bezier(.42,.65,.27,.99)',
-      pagination: 'slider',
+      pagination: true,
       //gap: '2em', 
       updateOnMove : true,
       breakpoints: {
