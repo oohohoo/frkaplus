@@ -1452,7 +1452,7 @@ function splidesolo() {
       type: 'slide', // 'loop' or 'slide'
       gap: '2em', // space between slides
       arrows: 'slider', // 'slider' or false
-      pagination: 'slider', // 'slider' or false
+      pagination: true // 'slider' or false
       speed : 600, // transition speed in miliseconds
       dragAngleThreshold: 60, // default is 30
       autoWidth: false, // for cards with differing widths
