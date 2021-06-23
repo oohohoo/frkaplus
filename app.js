@@ -1483,7 +1483,7 @@ function splidesolo() {
     
     }
     slider1();
-
+  }
 /*
   const splide = new Splide(".splide", {
       perPage: 1,
