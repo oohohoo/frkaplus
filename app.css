@@ -18,6 +18,10 @@ body {
   user-select: none;          /* Likely future */      
 }
 
+.smooth-scroll {
+  overflow-y: hidden !important;
+}
+
 /*
 ================================================================================
 DEFINE ROOT VARIABLES / definiraj svoje
