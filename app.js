@@ -1444,11 +1444,13 @@ function splidesolo() {
       perPage: 1,
       perMove: 1,
       type: 'loop',
-      focus: 'center',
-      arrows: 'slider',
+      //focus: 'center',
+      arrows: true,
+      //arrows: 'slider',
       easing: 'cubic-bezier(.42,.65,.27,.99)',
-      pagination: 'slider',
-      gap: '2em', 
+      //pagination: 'slider',
+      pagination: true,
+      //gap: '2em', 
       updateOnMove : true,
       breakpoints: {
         767: {
