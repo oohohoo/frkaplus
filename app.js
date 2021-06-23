@@ -1442,11 +1442,11 @@ function splidesolo() {
 
   const splide = new Splide(".splide", {
        // Desktop on down
-	perPage: 3,
+	perPage: 1,
 	perMove: 1,
   focus: 0, // 0 = left and 'center' = center
   type: 'slide', // 'loop' or 'slide'
-  gap: '2em', // space between slides
+ // gap: '2em', // space between slides
   arrows: 'slider', // 'slider' or false
   pagination: 'slider', // 'slider' or false
   speed : 600, // transition speed in miliseconds
@@ -1457,7 +1457,7 @@ function splidesolo() {
   waitForTransition : false,
   updateOnMove : true,
   trimSpace: false, // true removes empty space from end of list
-  breakpoints: {
+ /*  breakpoints: {
 		991: {
     	// Tablet
 			perPage: 2,
@@ -1473,12 +1473,12 @@ function splidesolo() {
 			perPage: 1,
       gap: '3vw',
 		}
-	}
+	} */
 } ).mount();
 
 
 
-slider1();
+
 
 /*
   $('.next-splide').click(function () {
