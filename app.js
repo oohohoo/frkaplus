@@ -1445,6 +1445,9 @@ function splidesolo() {
       perMove: 1,
       type: 'loop',
       focus: 'center',
+      pagination: 'slider',
+      gap: '2em', 
+      updateOnMove : true,
       breakpoints: {
         767: {
           perPage: 1,
