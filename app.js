@@ -1672,11 +1672,9 @@ function simulatorButton() {
       trigger: ".testbutton",
       start: "top 50%",
        end: '+=1200', 
-       //end: 'bottom bottom', 
-      //end: innerHeight * 2,
       pin: true,
       //anticipatePin: true,
-       markers: true, 
+       /* markers: true,  */
       toggleActions: "restart none none reset"
 
     },
