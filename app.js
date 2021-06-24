@@ -1665,22 +1665,17 @@ TEST YOUR BUTTON PIN
 */
 
 function simulatorButton() {
-  gsap.to(".testbutton", {
-    scrollTrigger: {
-      scroller: ".smooth-scroll",
-      trigger: ".is--sololokacije",
-      start: "top top",
-      end: 'bottom 10000000',
-      scrub: 1,
-      pin: true,
-      anticipatePin: true,
-      markers: true
+  const alwaysPin = document.querySelector(".testbutton");
+  ScrollTrigger.create({
+    trigger: alwaysPin,
+    scroller: ".smooth-scroll",
+    pin: true,
+    pinSpacing: false,
+    start: "center center",
+    end: innerHeight * 6
+  })
 
 
-    },
-    rotate: 360,
-    repeat: -1
-  });
 }
 
 
