@@ -1676,7 +1676,7 @@ function simulatorButton() {
       //end: innerHeight * 2,
       pin: true,
       //anticipatePin: true,
-      markers: true,
+      /* markers: true, */
       toggleActions: "restart none none reset"
 
     },
