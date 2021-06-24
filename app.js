@@ -1669,9 +1669,9 @@ function simulatorButton() {
   gsap.to(".testbutton", {
     scrollTrigger: {
       scroller: ".smooth-scroll",
-      trigger: ".vizualbutton",
+      trigger: ".testbutton",
       start: "top 30%",
-       end: 'bottom 10%', 
+       end: '+=500', 
        //end: 'bottom bottom', 
       //end: innerHeight * 2,
       pin: true,
