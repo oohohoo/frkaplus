@@ -1671,7 +1671,7 @@ function simulatorButton() {
       scroller: ".smooth-scroll",
       trigger: ".is--sololokacije",
       start: "top top",
-      end: 'bottom 10000000',
+      /* end: 'bottom 10000000', */
       end: innerHeight * 2,
       pin: true,
       //anticipatePin: true,
