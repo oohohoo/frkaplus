@@ -1670,17 +1670,18 @@ function simulatorButton() {
     scrollTrigger: {
       scroller: ".smooth-scroll",
       trigger: ".testbutton",
-      start: "top 60%",
+      start: "top 20em",
        end: '+=1000', 
        //end: 'bottom bottom', 
       //end: innerHeight * 2,
       pin: true,
       //anticipatePin: true,
-      /* markers: true, */
+       markers: true, 
       toggleActions: "restart none none reset"
 
     },
     rotate: 360,
+    duration:10, 
     repeat: -1
   });
 }
