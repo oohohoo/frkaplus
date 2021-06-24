@@ -315,6 +315,7 @@ function initContent() {
     splidesolo();
     saveaspdf();
     lokacijeTabs(); 
+    simulatorButton();
     //locationMap(); 
     stopScrollMap();
     console.log("lokacijesolo scripts loaded...");
@@ -485,6 +486,7 @@ barba.init({
                 uploadCrop();
                 saveaspdf();
                 lokacijeTabs(); 
+                simulatorButton();
               },
                 beforeLeave(data) {
            /*   splide.on( 'destroy', function() { */
@@ -1654,6 +1656,34 @@ function numberoll() {
     y: -700,
   });
 }
+
+
+/*
+================================================================================
+TEST YOUR BUTTON PIN
+================================================================================
+*/
+
+function simulatorButton() {
+  gsap.to(".testbutton", {
+    scrollTrigger: {
+      scroller: ".smooth-scroll",
+      trigger: ".vizualbutton",
+      start: "top 85%",
+      end: '+=${innerHeight * 1.8}',
+      scrub: 1,
+      pin: true,
+      anticipatePin: true,
+      markers: true
+
+
+    },
+    rotate: 360,
+    repeat: -1
+  });
+}
+
+
 
 /*
 ================================================================================
