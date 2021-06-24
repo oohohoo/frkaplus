@@ -1671,7 +1671,7 @@ function simulatorButton() {
       scroller: ".smooth-scroll",
       trigger: ".testbutton",
       start: "top 60%",
-       end: '+=500', 
+       end: '+=1000', 
        //end: 'bottom bottom', 
       //end: innerHeight * 2,
       pin: true,
