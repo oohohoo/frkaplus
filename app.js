@@ -1681,7 +1681,7 @@ function simulatorButton() {
 
     },
     rotate: 360,
-    duration:10, 
+    duration:15, 
     repeat: -1
   });
 }
