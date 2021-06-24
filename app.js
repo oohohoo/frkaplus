@@ -1665,21 +1665,35 @@ TEST YOUR BUTTON PIN
 */
 
 function simulatorButton() {
-  const alwaysPin = document.querySelector(".testbutton");
-  ScrollTrigger.create({
-    trigger: alwaysPin,
-    scroller: ".smooth-scroll",
-    pin: true,
-    pinSpacing: false,
-    start: "center center",
-    end: innerHeight * 6
-  })
+  
+  gsap.to(".testbutton", {
+    scrollTrigger: {
+      scroller: ".smooth-scroll",
+      trigger: ".is--sololokacije",
+      start: "top top",
+      end: 'bottom 10000000',
+      end: innerHeight * 2,
+      pin: true,
+      //anticipatePin: true,
+      markers: true
 
 
+    },
+    rotate: 360,
+    repeat: -1
+  });
 }
 
-
-
+/*
+const alwaysPin = document.querySelector(".always-center");
+ScrollTrigger.create({
+  trigger: alwaysPin,
+  pin: true,
+  pinSpacing: false,
+  start: "center center",
+  end: innerHeight * 2
+})
+*/
 /*
 ================================================================================
 SHOW HIDE HEADER ON SCROLL + CUSTOM ANIMATION + CHANGE COLOR ON DIFF BACKGROUNDS
