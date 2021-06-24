@@ -1668,7 +1668,7 @@ function simulatorButton() {
   gsap.to(".testbutton", {
     scrollTrigger: {
       scroller: ".smooth-scroll",
-      trigger: ".vizualbutton",
+      trigger: ".is--sololokacije",
       start: "top 85%",
       end: '+=${innerHeight * 1.8}',
       scrub: 1,
