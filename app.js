@@ -1670,7 +1670,7 @@ function simulatorButton() {
       scroller: ".smooth-scroll",
       trigger: ".is--sololokacije",
       start: "top top",
-      end: 'bottom bottom',
+      end: 'bottom 10000000',
       scrub: 1,
       pin: true,
       anticipatePin: true,
