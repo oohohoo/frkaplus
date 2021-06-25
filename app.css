@@ -75,14 +75,8 @@ a {
 DISABLE MOBILE LANDSCAPE
 ================================================================================
 */
-@media only screen and (orientation:landscape){
-  body {
-    height: 100vw;
-    transform: rotate(-90deg);
-  }
-}
 
-/* @media only screen and (orientation:landscape){
+/*  @media only screen and (orientation:landscape){
   .hidden{ display:block; }
   .show{ display:none; }
 }
