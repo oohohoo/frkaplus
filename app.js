@@ -159,7 +159,7 @@ window.addEventListener('resize', function(){
 RELOAD ON MOBILE ORIENTATION CHANGE // OVO TESTIRAJ DA LI TREBA
 ================================================================================
 */
-/*
+
 (function(w){
 
   var ua = navigator.userAgent;
@@ -207,7 +207,7 @@ RELOAD ON MOBILE ORIENTATION CHANGE // OVO TESTIRAJ DA LI TREBA
 
 })( this );
 }
-*/
+
 /*
 ================================================================================
 PRELOADER --> vodi na --> INIT CONTENT
