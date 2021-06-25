@@ -77,12 +77,12 @@ DISABLE MOBILE LANDSCAPE
 */
 
 @media only screen and (orientation:landscape){
-  #hidden{ display:block; }
-  #show{ display:none; }
+  .hidden{ display:block; }
+  .show{ display:none; }
 }
 @media only screen and (orientation:portrait){
-  #hidden{ display:none; }
-  #show{ display:block; }
+  .hidden{ display:none; }
+  .show{ display:block; }
 }
 
 
