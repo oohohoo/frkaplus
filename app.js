@@ -1286,7 +1286,7 @@ function openMobileMenu() {
         })
 
 
-        .to('#openmobile', {
+        .to('#mobilemenu, {
 
           scaleY: 0,
           duration: 0.64,
