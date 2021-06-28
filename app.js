@@ -1120,7 +1120,7 @@ function logohover() {
         tl.to(logoitem, {
           color: "#ffdc52",
           backgroundColor: "#231f20",
-          duration: 0.2,
+          duration: 0.64,
           ease: 'power1.inOut',
         });
 
