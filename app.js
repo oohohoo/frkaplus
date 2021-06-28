@@ -2489,7 +2489,7 @@ function newSort() {
 
 /* $("#d").select2(); */
 //select2 start
-if ($("select").length) {
+/* if ($("select").length) {
   setTimeout(function () {
     $("select").each(function (index, item) {
       var text = $(item).data("placeholder");
@@ -2512,7 +2512,7 @@ $("select").each(function (index, item) {
       $(item).closest(".filter-group").find("[data-value='" + current + "']").trigger("click");
     }
   });
-});
+}); */
 //select2 end
 
 $('select.combobox').select2({ width: 'style' });
