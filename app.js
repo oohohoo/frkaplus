@@ -1258,12 +1258,12 @@ function openMobileMenu() {
           overwrite: "auto"
         })
 
-        .to('.test-content', {
+        /* .to('.test-content', {
           autoAlpha: 1,
           duration: 0.64,
           ease: 'power2.inOut',
           overwrite: "auto"
-        })
+        }) */
 
         .to('#openmobile', {
           rotate: 20,
@@ -1278,13 +1278,13 @@ function openMobileMenu() {
 
       const tl2 = gsap.timeline({})
 
-        .to('.test-content', {
+        /* .to('.test-content', {
           autoAlpha: 0,
           duration: 0.64,
           ease: 'power2.inOut',
           overwrite: "auto"
         })
-
+ */
 
         .to('#mobilemenu, {
 
