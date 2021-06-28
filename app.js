@@ -544,6 +544,7 @@ barba.init({
               
               beforeEnter(data) {
                 openMobileMenu();
+                console.log("KONTAKT OPEN MOBILE MENU LOADED");
               }
             }, {
 
