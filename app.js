@@ -2487,11 +2487,11 @@ function newSort() {
 
 'use strict';
 
-/* $("#d").select2(); */
+ $("#selectone").select2(); */
 //select2 start
-/* if ($("select").length) {
+if ($("#selectone").length) {
   setTimeout(function () {
-    $("select").each(function (index, item) {
+    $("#selectone").each(function (index, item) {
       var text = $(item).data("placeholder");
       $(item).select2({
         placeholder: text,
@@ -2501,7 +2501,7 @@ function newSort() {
   }, 100);
 }
 
-$("select").each(function (index, item) {
+$("#selectone").each(function (index, item) {
   $(item).select2({
     minimumResultsForSearch: -1
   });
@@ -2512,7 +2512,7 @@ $("select").each(function (index, item) {
       $(item).closest(".filter-group").find("[data-value='" + current + "']").trigger("click");
     }
   });
-}); */
+});
 //select2 end
 
 $('select.combobox').select2({ width: 'style' });
