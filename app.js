@@ -2661,7 +2661,7 @@ Demo.prototype._bindEventListeners = function () {
 	}, this);
 
 	this.categories.forEach(function (input) {
-		button.addEventListener('change', this._oncategoryChange);
+		input.addEventListener('change', this._oncategoryChange);
 	}, this);
 };
 
