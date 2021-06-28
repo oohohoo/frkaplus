@@ -2501,6 +2501,7 @@ if ($("#selectone, #selecttwo, #sorto").length) {
   }, 100);
 }
 
+
 $("#selectone, #selecttwo, #sorto").each(function (index, item) {
   $(item).select2({
     minimumResultsForSearch: -1
