@@ -1283,10 +1283,17 @@ function openMobileMenu() {
           overwrite: "auto"
         })
  */
-        .to('#openmobile', {
-          rotate: 20,
-          scale: 0.7,
-          backgroundColor: "#ff0000",
+        .to('.hamb-icon', {
+          /* scale: 0.1, */
+          autoAlpha: 0,
+          duration: 0.64,
+          ease: 'power2.inOut',
+          overwrite: "auto"
+        }, "<")
+
+        .to('.x-icon', {
+         /*  scale: 1, */
+          autoAlpha: 1,
           duration: 0.64,
           ease: 'power2.inOut',
           overwrite: "auto"
@@ -1302,6 +1309,21 @@ function openMobileMenu() {
           ease: 'power2.inOut',
           overwrite: "auto",
         }) */
+        .to('.hamb-icon', {
+          /* scale: 0.1, */
+          autoAlpha: 1,
+          duration: 0.64,
+          ease: 'power2.inOut',
+          overwrite: "auto"
+        }, "<")
+
+        .to('.x-icon', {
+         /*  scale: 1, */
+          autoAlpha: 0,
+          duration: 0.64,
+          ease: 'power2.inOut',
+          overwrite: "auto"
+        }, "<")
 
 
         .to('#mobilemenu', {
