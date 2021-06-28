@@ -2487,11 +2487,11 @@ function newSort() {
 
 'use strict';
 
- $("#selectone, #selecttwo").select2(); 
+ $("#selectone, #selecttwo, #sorto").select2(); 
 //select2 start
-if ($("#selectone, #selecttwo").length) {
+if ($("#selectone, #selecttwo, #sorto").length) {
   setTimeout(function () {
-    $("#selectone, #selecttwo").each(function (index, item) {
+    $("#selectone, #selecttwo, #sorto").each(function (index, item) {
       var text = $(item).data("placeholder");
       $(item).select2({
         placeholder: text,
@@ -2501,7 +2501,7 @@ if ($("#selectone, #selecttwo").length) {
   }, 100);
 }
 
-$("#selectone, #selecttwo").each(function (index, item) {
+$("#selectone, #selecttwo, #sorto").each(function (index, item) {
   $(item).select2({
     minimumResultsForSearch: -1
   });
