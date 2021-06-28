@@ -2517,7 +2517,6 @@ function newSort() {
 
  $("#selectone, #selecttwo, #sorto").select2(); 
  dropdownParent: $('.select2-container'),
- width: "100%", 
 //select2 start
 if ($("#selectone, #selecttwo, #sorto").length) {
   setTimeout(function () {
