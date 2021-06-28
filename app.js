@@ -1281,10 +1281,7 @@ function openMobileMenu() {
         })
 
 
-        animation = gsap.timeline({defaults:{duration:0.4}});
-
-
-        .to('.hamb-icon', {
+       .to('.hamb-icon', {
           autoAlpha: 0,
           overwrite: "auto"
         }, "<")
