@@ -326,6 +326,11 @@ function initContent() {
     console.log("lokacijesolo scripts loaded...");
   }
 
+  if (document.querySelector('#kontakt')) {
+      openMobileMenu();
+    console.log("kontakt scripts loaded...");
+  }
+
 //DRUKČIJE SE PONAŠA AKO UBACIMO UNUTAR document ready/ 
 
   ScrollTrigger.refresh(true); // ScrollTrigger Refresh
