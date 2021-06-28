@@ -1267,35 +1267,30 @@ function openMobileMenu() {
   let forwards = true;
   document.querySelector("#openmobile").addEventListener("click", ev => {
     if (forwards) {
-      const tl = gsap.timeline({})
+      const tl = gsap.timeline({defaults:{duration:0.64, ease: 'power2.inOut'}})
 
         .to('#mobilemenu', {
           scaleY: 1,
-          duration: 0.4,
-          ease: 'power2.inOut',
           overwrite: "auto"
         })
 
-        /* .to('.test-content', {
+       .to('.stagger', {
           autoAlpha: 1,
-          duration: 0.64,
-          ease: 'power2.inOut',
+          stagger: 0.02,
           overwrite: "auto"
         })
- */
+
+
+        animation = gsap.timeline({defaults:{duration:0.4}});
+
+
         .to('.hamb-icon', {
-          /* scale: 0.1, */
           autoAlpha: 0,
-          duration: 0.4,
-          ease: 'power2.inOut',
           overwrite: "auto"
         }, "<")
 
         .to('.x-icon', {
-         /*  scale: 1, */
           autoAlpha: 1,
-          duration: 0.4,
-          ease: 'power2.inOut',
           overwrite: "auto"
         }, "<")
 
@@ -1304,26 +1299,18 @@ function openMobileMenu() {
       const tl2 = gsap.timeline({})
 
          .to('.hamb-icon', {
-          /* scale: 0.1, */
           autoAlpha: 1,
-          duration: 0.4,
-          ease: 'power2.inOut',
           overwrite: "auto"
         }, "<")
 
         .to('.x-icon', {
-         /*  scale: 1, */
           autoAlpha: 0,
-          duration: 0.4,
-          ease: 'power2.inOut',
           overwrite: "auto"
         }, "<")
 
 
         .to('#mobilemenu', {
           scaleY: 0,
-          duration: 0.4,
-          ease: 'power2.inOut',
           overwrite: "auto",
 
         }, "<")
