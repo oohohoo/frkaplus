@@ -1334,14 +1334,12 @@ function openMobileMenu() {
 
         })
 
-        .to('#openmobile', {
-          rotate: 0,
+        /* .to('#openmobile', {
           scale: 1,
-          backgroundColor: "#ffffff",
-          duration: 0.64,
+           duration: 0.64,
           ease: 'power2.inOut',
           overwrite: "auto"
-        }, "<")
+        }, "<") */
 
     }
     forwards = !forwards;
