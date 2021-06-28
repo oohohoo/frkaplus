@@ -1278,7 +1278,7 @@ function openMobileMenu() {
           autoAlpha: 1,
           stagger: 0.1,
           overwrite: "auto"
-        }, "<0.2")
+        }, "-=0.1")
 
 
        .to('.hamb-icon', {
@@ -1315,7 +1315,7 @@ function openMobileMenu() {
           scaleY: 0,
           overwrite: "auto",
 
-        }, "<")
+        }, "-=0.1")
 
         /* .to('#openmobile', {
           scale: 1,
