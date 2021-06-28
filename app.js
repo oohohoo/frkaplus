@@ -1271,7 +1271,7 @@ function openMobileMenu() {
 
         .to('#mobilemenu', {
           scaleY: 1,
-          duration: 0.64,
+          duration: 0.4,
           ease: 'power2.inOut',
           overwrite: "auto"
         })
@@ -1286,7 +1286,7 @@ function openMobileMenu() {
         .to('.hamb-icon', {
           /* scale: 0.1, */
           autoAlpha: 0,
-          duration: 0.64,
+          duration: 0.4,
           ease: 'power2.inOut',
           overwrite: "auto"
         }, "<")
@@ -1294,7 +1294,7 @@ function openMobileMenu() {
         .to('.x-icon', {
          /*  scale: 1, */
           autoAlpha: 1,
-          duration: 0.64,
+          duration: 0.4,
           ease: 'power2.inOut',
           overwrite: "auto"
         }, "<")
@@ -1306,7 +1306,7 @@ function openMobileMenu() {
          .to('.hamb-icon', {
           /* scale: 0.1, */
           autoAlpha: 1,
-          duration: 0.64,
+          duration: 0.4,
           ease: 'power2.inOut',
           overwrite: "auto"
         }, "<")
@@ -1314,7 +1314,7 @@ function openMobileMenu() {
         .to('.x-icon', {
          /*  scale: 1, */
           autoAlpha: 0,
-          duration: 0.64,
+          duration: 0.4,
           ease: 'power2.inOut',
           overwrite: "auto"
         }, "<")
@@ -1322,7 +1322,7 @@ function openMobileMenu() {
 
         .to('#mobilemenu', {
           scaleY: 0,
-          duration: 0.64,
+          duration: 0.4,
           ease: 'power2.inOut',
           overwrite: "auto",
 
