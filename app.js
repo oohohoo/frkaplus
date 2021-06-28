@@ -2534,7 +2534,7 @@ function toArray(thing) {
 var Demo = function (element) {
   this.element = element;
   this.regions = Array.from(document.querySelectorAll('.js-regions input'));
-	this.categories = Array.from(document.querySelectorAll('.js-categories button'));
+	this.categories = Array.from(document.querySelectorAll('.js-categories input'));
   this.message = document.querySelector('.js-message');
 
 	this.shuffle = new Shuffle(element, {
@@ -2559,7 +2559,7 @@ var Demo = function (element) {
 	};
 
   this.addSorting();
-  	this._bindEventListeners();
+  this._bindEventListeners();
 };
 
 
@@ -2660,8 +2660,8 @@ Demo.prototype._bindEventListeners = function () {
 		input.addEventListener('change', this._onregionChange);
 	}, this);
 
-	this.categories.forEach(function (button) {
-		button.addEventListener('click', this._oncategoryChange);
+	this.categories.forEach(function (input) {
+		button.addEventListener('change', this._oncategoryChange);
 	}, this);
 };
 
@@ -2720,6 +2720,23 @@ Demo.prototype._handleregionChange = function (evt) {
 	}
 };
 
+Demo.prototype._handlecategoryChange = function (evt) {
+	this.filters.categories = this._getCurrentcategoryFilters();
+	if(this.filters.categories[0]!='all') {
+		this.filter();
+	} else {
+		var regionArray = Array.from(document.querySelectorAll('.js-categories .checkboxes input'));
+		regionArray.forEach(function (input) {
+			input.checked = true;
+		});
+		this.filters.categories = [];
+		this.filter();
+	}
+};
+
+
+
+
 /*
 ================================================================================
 SHUFFLE.JS - A category button was clicked. Update filters and display.
@@ -2729,7 +2746,7 @@ SHUFFLE.JS - A category button was clicked. Update filters and display.
  * 
  * @param {Event} evt Click event object.
  */
-
+/*
 Demo.prototype._handlecategoryChange = function (evt) {
   var button = evt.currentTarget;
   if (button.dataset.value != 'all') {
@@ -2758,7 +2775,7 @@ Demo.prototype._handlecategoryChange = function (evt) {
 
   }
 };
-
+*/
 /*
 ================================================================================
 SHUFFLE.JS - Filter shuffle based on the current state of filters.
