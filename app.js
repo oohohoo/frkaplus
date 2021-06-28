@@ -535,6 +535,13 @@ barba.init({
               }
             }, {
 
+              namespace: 'kontakt',
+              
+              beforeEnter(data) {
+                openMobileMenu();
+              }
+            }, {
+
               namespace: 'topdftest',
 
               beforeEnter(data) {
