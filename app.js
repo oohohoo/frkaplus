@@ -147,23 +147,23 @@ function initScroll(container) {
 locoScroll.on('scroll', (instance) => {
   $(".select2-container.select2-dropdown-open").select2('close');
    // $(".select2-container.select2-dropdown-open").not($(this)).select2('positionDropdown');
-  console.log("Dropdown Close");
+  console.log("Dropdown Closeeeeeeeeeee");
 
 });
 
    /**
      * Closes any opened Select2s when the window is resized
      */
-    $(window).resize(debounce(100, function() {
-      $(".select2-container.select2-dropdown-open").select2('close');
-  }));
+  //  $(window).resize(debounce(100, function() {
+   //   $(".select2-container.select2-dropdown-open").select2('close');
+ // }));
 
   /**
    * Closes any opened Select2s when the window is scrolled
    */
-  $(window).scroll(debounce(100, function() {
-      $(".select2-container.select2-dropdown-open").select2('close');
-  }));
+ // $(window).scroll(debounce(100, function() {
+    //  $(".select2-container.select2-dropdown-open").select2('close');
+  //}));
 
 
 
