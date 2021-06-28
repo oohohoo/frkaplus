@@ -145,12 +145,14 @@ function initScroll(container) {
 // CLOSE DROPDOWN ON SCROLL
 
 locoScroll.on('scroll', (instance) => {
-  $(".select2-container.select2-dropdown-open").select2('close');
+ // $(".select2-container.select2-dropdown-open").select2('close');
+  $('.webinar-posts__event-item').toggleClass('full');
    // $(".select2-container.select2-dropdown-open").not($(this)).select2('positionDropdown');
   console.log("Dropdown Closeeeeeeeeeee");
 
 });
 
+//select2-container--closed
    /**
      * Closes any opened Select2s when the window is resized
      */
