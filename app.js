@@ -2071,6 +2071,7 @@ GSAP TICKER -- NE ZNAM DETALJE
 var cursor = document.querySelector('.cursor__dot1');
 var buttonText = document.querySelector('.cursor__text');
 var followArea = document.querySelectorAll('.button-link');
+var reference = document.querySelectorAll('.reference-box');
 /* var page = document.querySelector('.posts'); */
 
 
@@ -2124,6 +2125,52 @@ followArea.forEach(function (el) {
     });
   });
 })
+
+
+/**/
+
+reference.forEach(function (el) {
+
+  gsap.set(cursor, {autoAlpha: 1, backgroundColor: "#231f20", scale: 1});
+
+  el.addEventListener('mouseover', () => {
+    gsap.to(cursor, 0.25, {scale: 3, backgroundColor: "#FFFCF0", /* autoAlpha: 1 */});
+    /*     page.addEventListener('mousemove', moveCircle);*/
+  });
+
+  el.addEventListener('mouseout', () => {
+    gsap.to(cursor, 0.25, {scale: 1,backgroundColor: "#231f20", /* autoAlpha: 0 */});
+  });
+
+  el.addEventListener('mousedown', () => {
+    gsap.to(cursor, 0.5, {
+      css: {
+      transform: 'translate(-50%, -50%) scale(0.75)'}
+    });
+
+  });
+
+  el.addEventListener('mouseup', () => {
+    gsap.to(cursor, 1, {
+      css: {
+        background: 'transparent'
+      }
+    });
+
+    gsap.to(cursor, 0.5, {
+      css: {
+        transform: 'translate(-50%, -50%) scale(1)'      
+      }
+    });
+
+    gsap.to(buttonText, 0.25, {
+      css: {
+        opacity: 1
+      }
+    });
+  });
+})
+
 
 /* OLD*/
 /*
