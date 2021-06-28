@@ -1313,6 +1313,7 @@ function openMobileMenu() {
 
         .to('#mobilemenu', {
           scaleY: 0,
+          duration: 0.4,
           overwrite: "auto",
 
         }, "-=0.1")
