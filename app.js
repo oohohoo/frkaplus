@@ -306,7 +306,7 @@ function initContent() {
     newSort();
     sortChangeLayout();
     lokacijeBotuni();
-    // locationMap();
+     locationMap();
     stopScrollMap();
     openMobileMenu();
     console.log("lokacije scripts loaded...");
@@ -321,7 +321,7 @@ function initContent() {
     lokacijeTabs(); 
     simulatorButton();
     openMobileMenu();
-    //locationMap(); 
+    locationMap(); 
     stopScrollMap();
     console.log("lokacijesolo scripts loaded...");
   }
@@ -489,7 +489,7 @@ barba.init({
               namespace: 'lokacijesolo',
 
               beforeEnter(data) {
-                //locationMap();
+                locationMap();
                 splidesolo();
                 scrolltriggerupdate();
                 openTestYourDesign();
