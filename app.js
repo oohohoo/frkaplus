@@ -2487,11 +2487,11 @@ function newSort() {
 
 'use strict';
 
-$("#d").select2();
+/* $("#d").select2(); */
 //select2 start
-if ($("#d").length) {
+if ($("select").length) {
   setTimeout(function () {
-    $("#d").each(function (index, item) {
+    $("select").each(function (index, item) {
       var text = $(item).data("placeholder");
       $(item).select2({
         placeholder: text,
@@ -2501,14 +2501,14 @@ if ($("#d").length) {
   }, 100);
 }
 
-$("#d").each(function (index, item) {
+$("select").each(function (index, item) {
   $(item).select2({
     minimumResultsForSearch: -1
   });
   $(item).on("change", function (e) {
     var current = $(item).val();
-    if ($(item).closest(".filter-group").length > 0) {
-      $(item).closest(".filter-group").find(".checkboxes input").prop("checked", false);
+    if($(item).closest(".filter-group").length>0) {
+      $(item).closest(".filter-group").find(".checkboxes input").prop( "checked", false );
       $(item).closest(".filter-group").find("[data-value='" + current + "']").trigger("click");
     }
   });
