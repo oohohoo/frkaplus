@@ -2487,7 +2487,7 @@ function newSort() {
 
 'use strict';
 
- $("#selectone").select2(); */
+ $("#selectone").select2(); 
 //select2 start
 if ($("#selectone").length) {
   setTimeout(function () {
