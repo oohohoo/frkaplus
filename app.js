@@ -141,6 +141,17 @@ function initScroll(container) {
   ScrollTrigger.refresh();
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
 
+
+// CLOSE DROPDOWN ON SCROLL
+
+locoScroll.on('scroll', (instance) => {
+    $(".select2-container.select2-dropdown-open").not($(this)).select2('positionDropdown');
+  console.log("Dropdown Close");
+
+});
+
+
+
 /*
 ================================================================================
 ON WINDOW RESIZE
@@ -2517,12 +2528,7 @@ $("#selectone, #selecttwo, #sorto").each(function (index, item) {
 
 $('select.combobox').select2({ width: 'style' });
 
-// CLOSE DROPDOWN ON SCROLL
 
-$("document").on( 'scroll', function(){
-  $(".select2-container.select2-dropdown-open").not($(this)).select2('positionDropdown');
-  console.log("Dropdown Close");
-});
 
 
 /* $(':scrollable').scroll(function() {
