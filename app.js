@@ -2802,7 +2802,7 @@ Demo.prototype._handlecategoryChange = function (evt) {
   }
   */
 };
-*/
+
 /*
 ================================================================================
 SHUFFLE.JS - Filter shuffle based on the current state of filters.
