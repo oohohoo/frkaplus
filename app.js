@@ -282,6 +282,7 @@ function initContent() {
   scrollTotop();
   hideMenu();
   yearupdate();
+  openMobileMenu();
   console.log("initial scripts loaded...");
  
   if (document.querySelector('#home')) {
