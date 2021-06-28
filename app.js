@@ -145,11 +145,14 @@ function initScroll(container) {
 // CLOSE DROPDOWN ON SCROLL
 
 locoScroll.on('scroll', (instance) => {
- // $(".select2-container.select2-dropdown-open").select2('close');
-  $("#select2_element").select2("close"); }, true;
+ $("#selectone, #selecttwo, #sorto").select2('close');
+ // $("#select2_element").select2("close"); }, true;
+
+ // $("#selectone, #selecttwo, #sorto").select2(); 
+  
  // $('.webinar-posts__event-item').toggleClass('full');
    // $(".select2-container.select2-dropdown-open").not($(this)).select2('positionDropdown');
-  console.log("Dropdown AJAJAJAJ");
+  console.log("Dropdown JOJOJO");
 
 });
 
@@ -2517,7 +2520,7 @@ function newSort() {
 'use strict';
 
  $("#selectone, #selecttwo, #sorto").select2(); 
- dropdownParent: $('.select2-container')
+ //dropdownParent: $('.select2-container')
 //select2 start
 if ($("#selectone, #selecttwo, #sorto").length) {
   setTimeout(function () {
