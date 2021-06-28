@@ -2519,7 +2519,7 @@ $('select.combobox').select2({ width: 'style' });
 
 // CLOSE DROPDOWN ON SCROLL
 
-$(".smooth-scroll").on( 'scroll', function(){
+$("document").on( 'scroll', function(){
   $(".select2-container.select2-dropdown-open").not($(this)).select2('positionDropdown');
   console.log("Dropdown Close");
 });
