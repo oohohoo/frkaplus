@@ -2516,7 +2516,7 @@ function newSort() {
 'use strict';
 
  $("#selectone, #selecttwo, #sorto").select2(); 
- dropdownParent: $('.select2-container'),
+ dropdownParent: $('.select2-container')
 //select2 start
 if ($("#selectone, #selecttwo, #sorto").length) {
   setTimeout(function () {
