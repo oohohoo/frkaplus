@@ -1276,9 +1276,9 @@ function openMobileMenu() {
 
        .to('.stagger', {
           autoAlpha: 1,
-          stagger: 0.02,
+          stagger: 0.1,
           overwrite: "auto"
-        })
+        }"<0.1")
 
 
        .to('.hamb-icon', {
@@ -1305,6 +1305,11 @@ function openMobileMenu() {
           overwrite: "auto"
         }, "<")
 
+        .to('.stagger', {
+          autoAlpha: 0,
+          stagger: 0.1,
+          overwrite: "auto"
+        })
 
         .to('#mobilemenu', {
           scaleY: 0,
