@@ -176,14 +176,14 @@
 }
 
 .select2-container--default .select2-selection--single {
-    background-color: #ffdc52;
+    background-color: #231f20;
     margin-top: 0.9em;
-     border: 1px solid #231f20; 
+    /* border: 1px solid #aaa; */
     border-radius: 0.5px
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
-    color: #231f20;
+    color: #ffdc52;
         outline: none;
      
    /*  line-height: 28px */
@@ -226,8 +226,8 @@
     width: 3em;
     height: 100%;
     border-left-style: solid;
-    border-left-width: 1px;
-    border-left-color: #231f20;
+    border-left-width: 2px;
+    border-left-color: #F4DD54;
     background: url("https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60c7101c907ce3e5f5b7cdad_arrow_down.svg") no-repeat;
     background-size: 0.79em; 
     background-position: 1.17em 2em;
