@@ -1231,6 +1231,87 @@ function openTestYourDesign() {
   
 }
 
+
+
+/*
+================================================================================
+TEST YOUR DESIGN MODUL
+================================================================================
+*/
+
+function openMobileMenu() {
+  gsap.set('#mobilemenu', {
+    scaleY: 0,
+    transformOrigin: 'top',
+
+  })
+  let forwards = true;
+  document.querySelector("#openmobile").addEventListener("click", ev => {
+    if (forwards) {
+      const tl = gsap.timeline({})
+
+        .to('#mobilemenu', {
+          scaleY: 1,
+          duration: 0.64,
+          ease: 'power2.inOut',
+          overwrite: "auto"
+        })
+
+        .to('.test-content', {
+          autoAlpha: 1,
+          duration: 0.64,
+          ease: 'power2.inOut',
+          overwrite: "auto"
+        })
+
+        .to('#openmobile', {
+          rotate: 20,
+          scale: 0.7,
+          backgroundColor: "#ff0000",
+          duration: 0.64,
+          ease: 'power2.inOut',
+          overwrite: "auto"
+        }, "<")
+
+    } else {
+
+      const tl2 = gsap.timeline({})
+
+        .to('.test-content', {
+          autoAlpha: 0,
+          duration: 0.64,
+          ease: 'power2.inOut',
+          overwrite: "auto"
+        })
+
+
+        .to('#openmobile', {
+
+          scaleY: 0,
+          duration: 0.64,
+          ease: 'power2.inOut',
+          overwrite: "auto",
+
+        })
+
+        .to('#openmobile', {
+          rotate: 0,
+          scale: 1,
+          backgroundColor: "#ffffff",
+          duration: 0.64,
+          ease: 'power2.inOut',
+          overwrite: "auto"
+        }, "<")
+
+    }
+    forwards = !forwards;
+  });
+
+ 
+}
+
+
+
 /*
 ================================================================================
 TRANSFORM MATRIX 3d GENERATOR
