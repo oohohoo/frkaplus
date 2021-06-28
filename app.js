@@ -240,7 +240,8 @@ function initLoader() {
     .set(loaderContent, {autoAlpha: 1})
     .set(".txt", {yPercent: 100})
     .set(".imageloadicon", {autoAlpha: 0})
-    .set(".l1, .l2, .l3", {scaleX: 0})
+    .set(".l1,.l3", {scaleX: 0})
+    .set(".l2", {scaleY: 0})
     .set(".freveal", {yPercent: 100})
     .set(mask, {yPercent: 0})
     .set("#main", {y: 80})
@@ -250,17 +251,18 @@ function initLoader() {
     //.to(loaderInner, {scaleY: 1, transformOrigin: 'bottom', ease: 'power1.inOut'})
 
     
-
-
-    /* .addLabel('revealImage') */
-
-    .to(".freveal", {y: 100, duration: 0.6, stagger: 0.02}, "<0.1")
+/* 
+.to(".freveal", {y: 100, duration: 0.6, stagger: 0.02}, "<0.1")
 .to(".l2", {scaleY: 0, transformOrigin: 'bottom', duration: 0.3}, "<0.2")
 .to(".l3", {scaleX: 0, transformOrigin: 'left', duration: 0.3}, "<0.2")
-.to(".l1", {scaleX: 0, transformOrigin: 'left', duration: 0.3}, "<0.2")
-   /*  .to(".l1", {scaleX: 1, transformOrigin: 'left', duration: 0.6}, 'revealImage+=0.1')
-    .to(".l3", {scaleX: 1, transformOrigin: 'left', duration: 0.6}, 'revealImage+=0.3')
-    .to(".freveal", {yPercent: 0, stagger: 0.05}, 'revealImage+=0.8') */
+.to(".l1", {scaleX: 0, transformOrigin: 'left', duration: 0.3}, "<0.2") */
+
+
+    .addLabel('revealImage')
+    .to(".l2", {scaleY: 1, transformOrigin: 'bottom', duration: 0.6}, 'revealImage+=0.1')
+    .to(".l3", {scaleX: 1, transformOrigin: 'left', duration: 0.6}, 'revealImage+=0.1')
+    .to(".l1", {scaleX: 1, transformOrigin: 'left', duration: 0.6}, 'revealImage+=0.3')
+    .to(".freveal", {yPercent: 0, stagger: 0.05}, 'revealImage+=0.8')
 
   // LOADER OUT
   const tlLoaderOut = gsap.timeline({
