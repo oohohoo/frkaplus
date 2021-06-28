@@ -1316,7 +1316,7 @@ function openMobileMenu() {
           duration: 0.4,
           overwrite: "auto",
 
-        }, "-=0.1")
+        }, "-=0.2")
 
         /* .to('#openmobile', {
           scale: 1,
