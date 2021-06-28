@@ -145,7 +145,8 @@ function initScroll(container) {
 // CLOSE DROPDOWN ON SCROLL
 
 locoScroll.on('scroll', (instance) => {
-    $(".select2-container.select2-dropdown-open").not($(this)).select2('positionDropdown');
+  $(".select2-container.select2-dropdown-open").select2('close');
+   // $(".select2-container.select2-dropdown-open").not($(this)).select2('positionDropdown');
   console.log("Dropdown Close");
 
 });
