@@ -146,8 +146,8 @@ function initScroll(container) {
 
 locoScroll.on('scroll', (instance) => {
  // $(".select2-container.select2-dropdown-open").select2('close');
-  $('.webinar-posts__event-item').toggleClass('full');
-   // $(".select2-container.select2-dropdown-open").not($(this)).select2('positionDropdown');
+ // $('.webinar-posts__event-item').toggleClass('full');
+    $(".select2-container.select2-dropdown-open").not($(this)).select2('positionDropdown');
   console.log("Dropdown ZATVROI");
 
 });
