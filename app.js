@@ -146,7 +146,7 @@ function initScroll(container) {
 
 locoScroll.on('scroll', (instance) => {
  // $(".select2-container.select2-dropdown-open").select2('close');
-  $("#select2_element").select2("close"); }, true);
+  $("#select2_element").select2("close"); }, true;
  // $('.webinar-posts__event-item').toggleClass('full');
    // $(".select2-container.select2-dropdown-open").not($(this)).select2('positionDropdown');
   console.log("Dropdown AJAJAJAJ");
