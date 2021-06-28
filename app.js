@@ -263,7 +263,7 @@ function initLoader() {
     .to(".l2", {scaleY: 1, transformOrigin: 'bottom', duration: 0.6}, 'revealImage+=0.1')
     .to(".l3", {scaleX: 1, transformOrigin: 'left', duration: 0.6}, 'revealImage+=0.1')
     
-    .to(".freveal", {yPercent: 0, stagger: 0.05}, 'revealImage+=0.6')
+    .to(".freveal", {yPercent: 0, stagger: 0.03}, 'revealImage+=0.6')
 
   // LOADER OUT
   const tlLoaderOut = gsap.timeline({
