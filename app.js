@@ -2520,6 +2520,7 @@ $('select.combobox').select2({ width: 'style' });
 // CLOSE DROPDOWN ON SCROLL
 $(':scrollable').scroll(function() {
   $(".select2-container.select2-dropdown-open").not($(this)).select2('positionDropdown');
+  console.log("Dropdown CloseDDDD");
 });
 
 var Shuffle = window.Shuffle;
