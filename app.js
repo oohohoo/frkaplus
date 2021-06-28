@@ -259,9 +259,10 @@ function initLoader() {
 
 
     .addLabel('revealImage')
+    .to(".l1", {scaleX: 1, transformOrigin: 'left', duration: 0.6}, 'revealImage+=0.1')
     .to(".l2", {scaleY: 1, transformOrigin: 'bottom', duration: 0.6}, 'revealImage+=0.1')
     .to(".l3", {scaleX: 1, transformOrigin: 'left', duration: 0.6}, 'revealImage+=0.1')
-    .to(".l1", {scaleX: 1, transformOrigin: 'left', duration: 0.6}, 'revealImage+=0.3')
+    
     .to(".freveal", {yPercent: 0, stagger: 0.05}, 'revealImage+=0.8')
 
   // LOADER OUT
