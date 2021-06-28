@@ -2691,13 +2691,14 @@ SHUFFLE.JS - Get the values of each `active` button.
  * 
  * @return {Array.<string>}
  */
-Demo.prototype._getCurrentcategoryFilters = function () {
-	return this.categories.filter(function (button) {
-		return button.classList.contains('active');
-	}).map(function (button) {
-		return button.getAttribute('data-value');
+ Demo.prototype._getCurrentcategoryFilters = function () {
+	return this.categories.filter(function (input) {
+		return input.checked;
+	}).map(function (input) {
+		return input.value;
 	});
 };
+
 
 /*
 ================================================================================
@@ -2732,6 +2733,31 @@ Demo.prototype._handlecategoryChange = function (evt) {
 		this.filters.categories = [];
 		this.filter();
 	}
+
+  var button = evt.currentTarget;
+	if(button.dataset.value!='all') {
+		// Treat these buttons like radio buttons where only 1 can be selected.
+		if (button.classList.contains('active')) {
+			button.classList.remove('active');
+		} else {
+			this.categories.forEach(function (btn) {
+				btn.classList.remove('active');
+			});
+			button.classList.add('active');
+		}
+		this.filters.categories = this._getCurrentcategoryFilters();
+		this.filter();
+	} else {
+		this.categories.forEach(function (btn) {
+			btn.classList.remove('active');
+		});
+		button.classList.add('active');
+		this.filters.categories = [];
+		this.filter();
+	}
+  
+
+
 };
 
 
@@ -2774,6 +2800,7 @@ Demo.prototype._handlecategoryChange = function (evt) {
     this.filter();
 
   }
+  */
 };
 */
 /*
