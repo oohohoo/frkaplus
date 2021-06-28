@@ -1242,6 +1242,7 @@ TEST YOUR DESIGN MODUL
 
 function openMobileMenu() {
   gsap.set('#mobilemenu', {
+    autoAlpha: 1,
     scaleY: 0,
     transformOrigin: 'top',
 
