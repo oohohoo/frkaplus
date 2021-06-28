@@ -150,6 +150,20 @@ locoScroll.on('scroll', (instance) => {
 
 });
 
+   /**
+     * Closes any opened Select2s when the window is resized
+     */
+    $(window).resize(debounce(100, function() {
+      $(".select2-container.select2-dropdown-open").select2('close');
+  }));
+
+  /**
+   * Closes any opened Select2s when the window is scrolled
+   */
+  $(window).scroll(debounce(100, function() {
+      $(".select2-container.select2-dropdown-open").select2('close');
+  }));
+
 
 
 /*
