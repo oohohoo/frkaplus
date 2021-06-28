@@ -1307,9 +1307,8 @@ function openMobileMenu() {
 
         .to('.stagger', {
           autoAlpha: 0,
-          stagger: 0.1,
           overwrite: "auto"
-        })
+        }, "<")
 
         .to('#mobilemenu', {
           scaleY: 0,
