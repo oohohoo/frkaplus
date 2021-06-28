@@ -287,6 +287,7 @@ function initContent() {
  
   if (document.querySelector('#home')) {
     homevideo();
+    openMobileMenu();
     console.log("home scripts loaded...");
   }
 
@@ -297,6 +298,7 @@ function initContent() {
     horizpin();
     playpausevideo();
     smallCounteronama();
+    openMobileMenu();
     console.log("o nama scripts loaded...");
 
   }
@@ -306,6 +308,7 @@ function initContent() {
     lokacijeBotuni();
     // locationMap();
     stopScrollMap();
+    openMobileMenu();
     console.log("lokacije scripts loaded...");
   }
 
@@ -317,6 +320,7 @@ function initContent() {
     saveaspdf();
     lokacijeTabs(); 
     simulatorButton();
+    openMobileMenu();
     //locationMap(); 
     stopScrollMap();
     console.log("lokacijesolo scripts loaded...");
