@@ -1303,13 +1303,7 @@ function openMobileMenu() {
 
       const tl2 = gsap.timeline({})
 
-        /* .to('.test-content', {
-          autoAlpha: 0,
-          duration: 0.64,
-          ease: 'power2.inOut',
-          overwrite: "auto",
-        }) */
-        .to('.hamb-icon', {
+         .to('.hamb-icon', {
           /* scale: 0.1, */
           autoAlpha: 1,
           duration: 0.64,
@@ -1332,7 +1326,7 @@ function openMobileMenu() {
           ease: 'power2.inOut',
           overwrite: "auto",
 
-        })
+        }, "<")
 
         /* .to('#openmobile', {
           scale: 1,
