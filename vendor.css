@@ -176,14 +176,14 @@
 }
 
 .select2-container--default .select2-selection--single {
-    background-color: #231f20;
+    background-color: #ffdc52;
     margin-top: 0.9em;
     /* border: 1px solid #aaa; */
     border-radius: 0.5px
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
-    color: #ffdc52;
+    color: #231f20;
         outline: none;
      
    /*  line-height: 28px */
