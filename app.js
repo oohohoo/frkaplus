@@ -1211,7 +1211,13 @@ function openTestYourDesign() {
           overwrite: "auto"
         }, "<")
 
+        .to('.close-x-icon', {
+          autoAlpha: 1,
+          duration: 0.64,
+          overwrite: "auto"
+        }, "<")
 
+       
         
 
 
@@ -1244,6 +1250,12 @@ function openTestYourDesign() {
 
         .to('.vizsim-txt', {
           autoAlpha: 1,
+          duration: 0.64,
+          overwrite: "auto"
+        }, "<")
+
+        .to('.close-x-icon', {
+          autoAlpha: 0,
           duration: 0.64,
           overwrite: "auto"
         }, "<")
