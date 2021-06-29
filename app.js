@@ -2367,7 +2367,7 @@ var img_cropping = '';
 
 // pond.getFile();
 pond.addEventListener('FilePond:processfile', function (e, file) {
-  crop_preview_cont.slideDown('slow');
+  //crop_preview_cont.slideDown('slow');
   const image = new Image();
   image.src = URL.createObjectURL(e.detail.file.file);
   filepond_img_Container.append(image);
@@ -2385,10 +2385,10 @@ pond.addEventListener('FilePond:processfile', function (e, file) {
   });
   var cropped_img = '';
   $('#crop_img').on('click', function (ev) {
-    $('html,body').animate({
+   /* $('html,body').animate({
         scrollTop: $(".photo-crop-container").offset().top - 80
       },
-      'slow');
+      'slow');*/
     photo_crop_container.addClass('show-loader show-result');
     cropped_img = img_cropping.cropper('getCroppedCanvas', {
     
