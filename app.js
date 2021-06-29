@@ -2411,8 +2411,8 @@ pond.addEventListener('FilePond:processfile', function (e, file) {
 
 // Empty the photo preivew containers once the user remove the image from the uploader
 pond.addEventListener('FilePond:removefile', function (e) {
-  //// pdfbutton.toggleClass('hide');
- ////  console.log("HIDE PDF");
+   pdfbutton.toggleClass('hide');
+   console.log("HIDE PDF");
   setTimeout(function () {
     photo_crop_container.removeClass('show-result');
     }, 1000);
