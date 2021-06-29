@@ -1254,6 +1254,7 @@ function openTestYourDesign() {
           overwrite: "auto"
         }, "<")
 
+     
         .to('.close-x-icon', {
           autoAlpha: 0,
           duration: 0.64,
