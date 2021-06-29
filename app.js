@@ -1204,6 +1204,16 @@ function openTestYourDesign() {
           ease: 'power2.inOut',
           overwrite: "auto"
         }, "<")
+        
+        .to('#vizsim-txt', {
+          autoAlpha: 0,
+          duration: 0.64,
+          overwrite: "auto"
+        }, "<")
+
+
+        
+
 
     } else {
 
@@ -1231,6 +1241,13 @@ function openTestYourDesign() {
           ease: 'power2.inOut',
           overwrite: "auto"
         }, "<")
+
+        .to('#vizsim-txt', {
+          autoAlpha: 1,
+          duration: 0.64,
+          overwrite: "auto"
+        }, "<")
+
 
     }
     forwards = !forwards;
