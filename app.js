@@ -325,8 +325,8 @@ function initContent() {
     lokacijeBotuni();
     splidesolo();
     saveaspdf();
-    //lokacijeTabs(); 
-    mockupSimulatorProportions();
+    lokacijeTabs(); 
+    //mockupSimulatorProportions();
     simulatorButton();
     openMobileMenu();
     locationMap(); 
