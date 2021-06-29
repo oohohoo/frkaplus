@@ -2453,7 +2453,7 @@ $('.turnonpdf').click(function() {
 
   $('.vizual-header').click(function(){
 
-    $('.upload-video).filepond('removeFile');
+    $('.upload-video').filepond('removeFile');
 
     console.log("VIDEO CLEARED");
 });
