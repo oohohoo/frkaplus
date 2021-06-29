@@ -2354,8 +2354,7 @@ FilePond.create(
      
     });
 
-    $('.movevideo').toggleClass('hide');
-    console.log("show video button!");
+  
 
 
 const pond = document.querySelector('.filepond--root');
@@ -2450,6 +2449,16 @@ $('.turnonpdf').click(function() {
   console.log("SHOW PDFio*");
     },1000) 
   });
+
+
+  $('.vizual-header').click(function(){
+
+    $('.upload-video).filepond('removeFile');
+
+    console.log("VIDEO CLEARED");
+});
+
+  
 
 
   // Hide PDF Button
