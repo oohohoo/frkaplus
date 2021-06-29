@@ -1216,7 +1216,6 @@ function openTestYourDesign() {
           overwrite: "auto"
         })
 
-
         .to('#tweenbox', {
           scaleY: 0,
          //autoAlpha: 0,
@@ -1226,7 +1225,6 @@ function openTestYourDesign() {
 
         })
 
-        
         .to('#tweenbutton', {
           scale: 1,
           duration: 0.64,
