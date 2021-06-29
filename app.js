@@ -2368,6 +2368,7 @@ var img_cropping = '';
 // pond.getFile();
 pond.addEventListener('FilePond:processfile', function (e, file) {
   crop_preview_cont.slideDown('slow');
+  console.log("01 slide down");
   const image = new Image();
   image.src = URL.createObjectURL(e.detail.file.file);
   filepond_img_Container.append(image);
@@ -2387,6 +2388,7 @@ pond.addEventListener('FilePond:processfile', function (e, file) {
   $('#crop_img').on('click', function (ev) {
     $('html,body').animate({
         scrollTop: $(".photo-crop-container").offset().top - 80
+        console.log("02 crop slide down");
       },
       'slow');
     photo_crop_container.addClass('show-loader show-result');
@@ -2414,7 +2416,8 @@ pond.addEventListener('FilePond:removefile', function (e) {
   setTimeout(function () {
     photo_crop_container.removeClass('show-result');
     }, 1000);
- //crop_preview_cont.slideUp();
+crop_preview_cont.slideUp();
+console.log("03 slide up");
   // crop_preview_cont.html('');
   img_cropping.cropper('destroy').html('');
   photo_preview_container.html('');
