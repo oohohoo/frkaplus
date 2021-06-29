@@ -2385,10 +2385,10 @@ pond.addEventListener('FilePond:processfile', function (e, file) {
   });
   var cropped_img = '';
   $('#crop_img').on('click', function (ev) {
-   /* $('html,body').animate({
+    $('html,body').animate({
         scrollTop: $(".photo-crop-container").offset().top - 80
       },
-      'slow');*/
+      'slow');
     photo_crop_container.addClass('show-loader show-result');
     cropped_img = img_cropping.cropper('getCroppedCanvas', {
     
@@ -2414,7 +2414,7 @@ pond.addEventListener('FilePond:removefile', function (e) {
   setTimeout(function () {
     photo_crop_container.removeClass('show-result');
     }, 1000);
- //crop_preview_cont.slideUp();
+ crop_preview_cont.slideUp();
   // crop_preview_cont.html('');
   img_cropping.cropper('destroy').html('');
   photo_preview_container.html('');
