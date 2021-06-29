@@ -290,6 +290,7 @@ function initContent() {
   hideMenu();
   yearupdate();
   openMobileMenu();
+  splidesolo();
   console.log("initial scripts loaded...");
  
   if (document.querySelector('#home')) {
