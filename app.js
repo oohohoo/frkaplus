@@ -2438,8 +2438,7 @@ console.log("03 slide up");
 pond.addEventListener('FilePond:addfile', function (e) {
   $('.movevideo').toggleClass('hide');
   console.log("SHOW BUTTON ON ADD FILE");
- 
-  
+   
   
 });
 
