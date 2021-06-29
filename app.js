@@ -2388,9 +2388,9 @@ pond.addEventListener('FilePond:processfile', function (e, file) {
   $('#crop_img').on('click', function (ev) {
     $('html,body').animate({
         scrollTop: $(".photo-crop-container").offset().top - 80
-        console.log("02 crop slide down");
-      },
+         },
       'slow');
+      console.log("02 crop slide down");
     photo_crop_container.addClass('show-loader show-result');
     cropped_img = img_cropping.cropper('getCroppedCanvas', {
     
