@@ -503,6 +503,7 @@ barba.init({
                 uploadCrop();
                 saveaspdf();
                 lokacijeTabs(); 
+                console.log("Lokacije tabs loaded before enter");
                 simulatorButton();
               },
                 beforeLeave(data) {
