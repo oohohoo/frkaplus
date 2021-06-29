@@ -2451,11 +2451,11 @@ $('.turnonpdf').click(function() {
   });
 
 
-  $('.vizual-header').click(function(){
-
+  $('.closetrigger').click(function(){
+    $('.upload-upload-photo').filepond('removeFile');
     $('.upload-video').filepond('removeFile');
-
-    console.log("VIDEO CLEARED");
+   
+    console.log("BOTH FILEPOND cleared on exit...");
 });
 
   
