@@ -2412,6 +2412,7 @@ pond.addEventListener('FilePond:processfile', function (e, file) {
 // Empty the photo preivew containers once the user remove the image from the uploader
 pond.addEventListener('FilePond:removefile', function (e) {
   $('.linkos.opacity').toggleClass('hide');
+  console.log("HIDE ON REMOVE FILE");
   /* pdfbutton.toggleClass('hide');
    console.log("HIDE PDF");*/
   setTimeout(function () {
