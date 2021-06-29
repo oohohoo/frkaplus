@@ -2411,8 +2411,8 @@ pond.addEventListener('FilePond:processfile', function (e, file) {
 
 // Empty the photo preivew containers once the user remove the image from the uploader
 pond.addEventListener('FilePond:removefile', function (e) {
-   pdfbutton.toggleClass('hide');
-   console.log("HIDE PDF");
+  /* pdfbutton.toggleClass('hide');
+   console.log("HIDE PDF");*/
   setTimeout(function () {
     photo_crop_container.removeClass('show-result');
     }, 1000);
@@ -2439,14 +2439,14 @@ console.log("03 slide up");
 });
 
 // Show PDF Button
-/*
+
 $('.turnonpdf').click(function() {
   setTimeout(()=>{
   $('.linkos.opacity').toggleClass('hide');
   console.log("SHOW PDFio*");
     },1000) 
   });
-*/
+
 
   // Hide PDF Button
 //$('.filepond--file-action-button:hover, .filepond--file-action-button:focus').click(function() {
