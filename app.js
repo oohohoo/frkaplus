@@ -2414,7 +2414,7 @@ pond.addEventListener('FilePond:removefile', function (e) {
   setTimeout(function () {
     photo_crop_container.removeClass('show-result');
     }, 1000);
- crop_preview_cont.slideUp();
+ //crop_preview_cont.slideUp();
   // crop_preview_cont.html('');
   img_cropping.cropper('destroy').html('');
   photo_preview_container.html('');
