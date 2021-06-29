@@ -2339,10 +2339,10 @@ FilePond.create(
       imageValidateSizeMinWidth: 1200,
     /*   imageValidateSizeMaxHeight: 800,  */
       imageValidateSizeMinHeight: 300,
-      maxFileSize: '11MB',
+      maxFileSize: '30MB',
       labelMaxFileSize: 'Maksimalna dozvoljena težina datoteke je {filesize}',
   /*     labelMaxHeight: 'Maksimalna dozvoljena visina datoteke je {filesize}',
-   */    labelFileProcessing: 'Pripremam za crop',
+   */   // labelFileProcessing: 'Pripremam za crop',
       labelFileProcessingComplete: '',
       server: {
         process: function (fieldName, file, metadata, load, error, progress, abort) {
@@ -2351,6 +2351,8 @@ FilePond.create(
         fetch: null,
         revert: null
       }
+      $('.movevideo').toggleClass('hide');
+      console.log("show video button!");
     });
 
 
@@ -2368,7 +2370,7 @@ var img_cropping = '';
 // pond.getFile();
 pond.addEventListener('FilePond:processfile', function (e, file) {
   crop_preview_cont.slideDown('slow');
-  console.log("01 slide down");
+
   const image = new Image();
   image.src = URL.createObjectURL(e.detail.file.file);
   filepond_img_Container.append(image);
@@ -2434,7 +2436,7 @@ console.log("03 slide up");
 
 
 
-
+  
 
   
   
