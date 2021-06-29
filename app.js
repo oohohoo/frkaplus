@@ -888,8 +888,8 @@ function soloMap() {
   var map = new mapboxgl.Map({
     container: 'map', // container ID
     style: 'mapbox://styles/fogseller/cknip0h0j0oqm17mgvd8wwi8y?optimize=true', // style URL / dodano optimize=true
-    center: [16.527, 44.663], // starting position [lng, lat]
-    zoom: 6.64, // starting zoom
+    center: [16.013, 45.812], // starting position [lng, lat]
+    zoom: 17.42, // starting zoom
     minZoom: 6.64, // note the camel-case
     maxZoom: 19,
     maxBounds: bounds,
