@@ -2460,6 +2460,7 @@ $('.turnonpdf').click(function() {
   $('.closetrigger, .tabs-li').click(function(){
    $('.upload-photo').filepond('removeFile');
     $('.upload-video').filepond('removeFile');
+    $('.linkos.opacity').addClass('hide');
    
     console.log("BOTH FILEPOND cleared on exit and tabs...");
 });
