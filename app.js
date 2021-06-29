@@ -504,7 +504,7 @@ barba.init({
                 uploadCrop();
                 saveaspdf();
                 lokacijeTabs(); 
-                mockupSimulatorProportions();
+                //mockupSimulatorProportions();
                 console.log("Lokacije tabs loaded before enter");
                 simulatorButton();
               },
