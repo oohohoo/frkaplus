@@ -1782,7 +1782,7 @@ function simulatorButton() {
       scroller: ".smooth-scroll",
       trigger: ".vizualbutton",
       start: "top top",
-       end: 'bottom bottom', 
+       end: 'bottom 80%', 
       pin: true,
       //anticipatePin: true,
        /* markers: true,  */
