@@ -2409,12 +2409,12 @@ pond.addEventListener('FilePond:processfile', function (e, file) {
 
 // Empty the photo preivew containers once the user remove the image from the uploader
 pond.addEventListener('FilePond:removefile', function (e) {
-  pdfbutton.toggleClass('hide');
-  console.log("HIDE PDF");
+  //// pdfbutton.toggleClass('hide');
+ ////  console.log("HIDE PDF");
   setTimeout(function () {
     photo_crop_container.removeClass('show-result');
     }, 1000);
-  //crop_preview_cont.slideUp();
+ crop_preview_cont.slideUp();
   // crop_preview_cont.html('');
   img_cropping.cropper('destroy').html('');
   photo_preview_container.html('');
@@ -2426,18 +2426,22 @@ pond.addEventListener('FilePond:removefile', function (e) {
     $(this).remove(); // this is probably what actually does the trick
   });
  
+
+
+
   
   
 });
 
 // Show PDF Button
+/*
 $('.turnonpdf').click(function() {
   setTimeout(()=>{
   $('.linkos.opacity').toggleClass('hide');
   console.log("SHOW PDFio*");
     },1000) 
   });
-
+*/
 
   // Hide PDF Button
 //$('.filepond--file-action-button:hover, .filepond--file-action-button:focus').click(function() {
