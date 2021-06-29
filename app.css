@@ -1405,3 +1405,9 @@ SHUFFLE.js
      }
   }
 
+  .removevideo.hide, .movevideo.hide {
+    opacity: 0;
+ 
+  }
+
+ 
