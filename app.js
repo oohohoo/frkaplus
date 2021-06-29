@@ -1585,7 +1585,7 @@ function splidesolo() {
 	perPage: 1,
 	perMove: 1,
   focus: 0, // 0 = left and 'center' = center
-  type: 'slide', // 'loop' or 'slide'
+  type: 'loop', // 'loop' or 'slide'
  // gap: '2em', // space between slides
   arrows: 'slider', // 'slider' or false
   pagination: 'slider', // 'slider' or false
@@ -2431,8 +2431,14 @@ console.log("03 slide up");
   
 });
 
-pond.addEventListener('FilePond:addfile', function (e) {
+document.querySelector('button').addEventListener('click', () => {
+  pond.browse();
+});
+
+
+document.querySelector('.upload-video').pond.addEventListener('FilePond:addfile', function (e) {
   $('.movevideo').toggleClass('hide');
+  
   console.log("SHOW BUTTON ON ADD FILE");
    
   
