@@ -2457,11 +2457,11 @@ $('.turnonpdf').click(function() {
   });
 
 
-  $('.closetrigger').click(function(){
+  $('.closetrigger, .tabs-li').click(function(){
    $('.upload-photo').filepond('removeFile');
     $('.upload-video').filepond('removeFile');
    
-    console.log("BOTH FILEPOND cleared on exit...");
+    console.log("BOTH FILEPOND cleared on exit and tabs...");
 });
 
   
