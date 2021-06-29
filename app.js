@@ -291,6 +291,7 @@ function initContent() {
   yearupdate();
   openMobileMenu();
   splidesolo();
+  simulatorButton();
   console.log("initial scripts loaded...");
  
   if (document.querySelector('#home')) {
