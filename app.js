@@ -2452,7 +2452,7 @@ $('.turnonpdf').click(function() {
 
 
   $('.closetrigger').click(function(){
-    $('.upload-upload-photo').filepond('removeFile');
+   // $('.upload-upload-photo').filepond('removeFile');
     $('.upload-video').filepond('removeFile');
    
     console.log("BOTH FILEPOND cleared on exit...");
