@@ -1211,7 +1211,7 @@ function openTestYourDesign() {
           overwrite: "auto"
         }, "<")
 
-        .to('.close-x-icon', {
+        .to('.closetrigger', {
           autoAlpha: 1,
           duration: 0.64,
           overwrite: "auto"
@@ -1255,7 +1255,7 @@ function openTestYourDesign() {
         }, "<")
 
      
-        .to('.close-x-icon', {
+        .to('.closetrigger', {
           autoAlpha: 0,
           duration: 0.64,
           overwrite: "auto"
