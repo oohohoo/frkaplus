@@ -1205,7 +1205,7 @@ function openTestYourDesign() {
           overwrite: "auto"
         }, "<")
         
-        .to('#vizsim-txt', {
+        .to('.vizsim-txt', {
           autoAlpha: 0,
           duration: 0.64,
           overwrite: "auto"
@@ -1242,7 +1242,7 @@ function openTestYourDesign() {
           overwrite: "auto"
         }, "<")
 
-        .to('#vizsim-txt', {
+        .to('.vizsim-txt', {
           autoAlpha: 1,
           duration: 0.64,
           overwrite: "auto"
