@@ -1200,6 +1200,7 @@ function openTestYourDesign() {
 
         .to('#tweenbutton', {
           scale: 0.7,
+          rotate: 30,
           duration: 0.64,
           ease: 'power2.inOut',
           overwrite: "auto"
