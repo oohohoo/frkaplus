@@ -290,7 +290,7 @@ function initContent() {
   hideMenu();
   yearupdate();
   openMobileMenu();
-  splidesolo();
+ // splidesolo();
   simulatorButton();
   console.log("initial scripts loaded...");
  
@@ -325,7 +325,7 @@ function initContent() {
     openTestYourDesign();
     uploadCrop();
     lokacijeBotuni();
-    //splidesolo();
+    splidesolo();
     saveaspdf();
     lokacijeTabs(); 
     //mockupSimulatorProportions();
@@ -512,7 +512,7 @@ barba.init({
               },
                 beforeLeave(data) {
            /*   splide.on( 'destroy', function() { */
-                splide.destroy(completely = true);
+                //splide.destroy(completely = true);
                 /* console.log("SPLIDE ODJEBAN"); */
                 /*   }); */
 
@@ -1691,19 +1691,6 @@ function splidesolo() {
 	} */
 } ).mount();
 
-
-
-
-
-/*
-  $('.next-splide').click(function () {
-    $('.splide__arrow.splide__arrow--next').click();
-  });
-
-  $('.prev-splide').click(function () {
-    $('.splide__arrow.splide__arrow--prev').click();
-  });
-*/
 }
 
 
