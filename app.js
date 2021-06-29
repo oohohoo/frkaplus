@@ -2351,11 +2351,11 @@ FilePond.create(
         fetch: null,
         revert: null
       }
-      $('.movevideo').toggleClass('hide');
-      console.log("show video button!");
+     
     });
 
-
+    $('.movevideo').toggleClass('hide');
+    console.log("show video button!");
 
 
 const pond = document.querySelector('.filepond--root');
