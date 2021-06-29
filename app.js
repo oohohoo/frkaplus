@@ -1789,8 +1789,8 @@ function simulatorButton() {
       toggleActions: "restart none none reset"
 
     },
-    rotate: 360,
-    repeat: -1
+    autoAlpha:0,
+   
   });
 }
 
