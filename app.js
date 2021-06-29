@@ -2432,14 +2432,20 @@ console.log("03 slide up");
     $(this).remove(); // this is probably what actually does the trick
   });
  
-
-
-
   
+});
 
+pond.addEventListener('FilePond:addfile', function (e) {
+  $('.movevideo').toggleClass('hide');
+  console.log("HIDE ON REMOVE FILE");
+ 
   
   
 });
+
+
+
+
 
 // Show PDF Button
 
