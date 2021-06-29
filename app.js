@@ -1192,7 +1192,7 @@ function openTestYourDesign() {
         })
 
         .to('.test-content', {
-          autoAlpha: 1,
+        //  autoAlpha: 1,
           duration: 0.64,
           ease: 'power2.inOut',
           overwrite: "auto"
@@ -1210,7 +1210,7 @@ function openTestYourDesign() {
       const tl2 = gsap.timeline({})
 
         .to('.test-content', {
-          autoAlpha: 0,
+         // autoAlpha: 0,
           duration: 0.64,
           ease: 'power2.inOut',
           overwrite: "auto"
