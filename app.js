@@ -1174,6 +1174,7 @@ TEST YOUR DESIGN MODUL
 
 function openTestYourDesign() {
   gsap.set('#tweenbox', {
+    autoAlpha:1,
     scaleY: 0,
     transformOrigin: 'top',
 
@@ -1221,6 +1222,7 @@ function openTestYourDesign() {
         .to('#tweenbox', {
 
           scaleY: 0,
+          autoAlpha: 0,
           duration: 0.64,
           ease: 'power2.inOut',
           overwrite: "auto",
