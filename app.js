@@ -1780,9 +1780,9 @@ function simulatorButton() {
   gsap.to(".testbutton", {
     scrollTrigger: {
       scroller: ".smooth-scroll",
-      trigger: ".testbutton",
-      start: "top 80vh",
-       end: '+=1200', 
+      trigger: ".is--sololokacije",
+      start: "top top",
+       end: 'bottom bottom', 
       pin: true,
       //anticipatePin: true,
        /* markers: true,  */
@@ -1790,7 +1790,6 @@ function simulatorButton() {
 
     },
     rotate: 360,
-    duration:15, 
     repeat: -1
   });
 }
