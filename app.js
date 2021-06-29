@@ -290,7 +290,7 @@ function initContent() {
   hideMenu();
   yearupdate();
   openMobileMenu();
-  //splidesolo();
+  splidesolo();
   console.log("initial scripts loaded...");
  
   if (document.querySelector('#home')) {
@@ -324,7 +324,7 @@ function initContent() {
     openTestYourDesign();
     uploadCrop();
     lokacijeBotuni();
-    splidesolo();
+    //splidesolo();
     saveaspdf();
     lokacijeTabs(); 
     //mockupSimulatorProportions();
@@ -499,7 +499,7 @@ barba.init({
 
               beforeEnter(data) {
                 soloMap();
-                splidesolo();
+                //splidesolo();
                 scrolltriggerupdate();
                 openTestYourDesign();
                 uploadCrop();
