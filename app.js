@@ -330,7 +330,7 @@ function initContent() {
     //mockupSimulatorProportions();
     simulatorButton();
     openMobileMenu();
-    locationMap(); 
+    //locationMap(); 
     stopScrollMap();
     console.log("lokacijesolo scripts loaded...");
   }
@@ -498,7 +498,7 @@ barba.init({
               namespace: 'lokacijesolo',
 
               beforeEnter(data) {
-                locationMap();
+               // locationMap();
                 splidesolo();
                 scrolltriggerupdate();
                 openTestYourDesign();
