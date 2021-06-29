@@ -330,7 +330,7 @@ function initContent() {
     //mockupSimulatorProportions();
     simulatorButton();
     openMobileMenu();
-    //locationMap(); 
+    locationMap(); 
     stopScrollMap();
     console.log("lokacijesolo scripts loaded...");
   }
@@ -498,7 +498,7 @@ barba.init({
               namespace: 'lokacijesolo',
 
               beforeEnter(data) {
-               // locationMap();
+                locationMap();
                 splidesolo();
                 scrolltriggerupdate();
                 openTestYourDesign();
@@ -512,7 +512,7 @@ barba.init({
                 beforeLeave(data) {
            /*   splide.on( 'destroy', function() { */
                 splide.destroy(completely = true);
-                console.log("SPLIDE ODJEBAN");
+                /* console.log("SPLIDE ODJEBAN"); */
                 /*   }); */
 
              },
