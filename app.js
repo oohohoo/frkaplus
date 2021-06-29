@@ -330,7 +330,7 @@ function initContent() {
     //mockupSimulatorProportions();
     simulatorButton();
     openMobileMenu();
-    //locationMap(); 
+    soloMap();
     stopScrollMap();
     console.log("lokacijesolo scripts loaded...");
   }
@@ -498,7 +498,7 @@ barba.init({
               namespace: 'lokacijesolo',
 
               beforeEnter(data) {
-                //locationMap();
+                soloMap();
                 splidesolo();
                 scrolltriggerupdate();
                 openTestYourDesign();
@@ -827,12 +827,12 @@ document.getElementById('zadar').addEventListener('change', function () {
 MAP RESIZE
 ================================================================================
 */
-/*
+
  map.once('load', () => {
 map.resize();
 });
 console.log("MAP RESIZE!"); 
-*/
+
 /*  },5000)    */
  console.log("MAP LOADDDDDDD!"); 
 
@@ -867,6 +867,79 @@ var fadein = gsap.timeline({defaults:{ease:'none'}})
 }); */
 
 /*  mapboxgl.prewarm(); */
+
+
+
+
+/*
+================================================================================
+LOCATION MAP
+================================================================================
+*/
+function soloMap() {
+
+  mapboxgl.accessToken = 'pk.eyJ1IjoiZm9nc2VsbGVyIiwiYSI6ImNrN2VpbXlpbjAwNDIzbnM1N2ZhMW9laGkifQ.DUf-8r1jXF4o7ApMUcKVXQ';
+
+  var bounds = [
+    [13.109302076751561, 42.167215037402855],
+    [19.821668059258826, 46.816119904050964]
+  ];
+
+  var map = new mapboxgl.Map({
+    container: 'map', // container ID
+    style: 'mapbox://styles/fogseller/cknip0h0j0oqm17mgvd8wwi8y?optimize=true', // style URL / dodano optimize=true
+    center: [16.527, 44.663], // starting position [lng, lat]
+    zoom: 6.64, // starting zoom
+    minZoom: 6.64, // note the camel-case
+    maxZoom: 19,
+    maxBounds: bounds,
+/*     bearing: 27,
+    pitch: 45 */
+  });
+
+
+/* DODANO ALI NE RADI*/
+ map.addControl(new mapboxgl.NavigationControl()); 
+
+
+
+
+
+map.doubleClickZoom.enable();
+console.log("MAP DOUBLECLICK!"); 
+
+
+
+/*
+================================================================================
+MAP RESIZE
+================================================================================
+*/
+
+ map.once('load', () => {
+map.resize();
+});
+console.log("MAP RESIZE!"); 
+
+/*
+================================================================================
+FADE IN MAP
+================================================================================
+*/
+ 
+var fadein = gsap.timeline({defaults:{ease:'none'}})
+.to('.loader-icon', {autoAlpha:1})
+.to('.loader-wrap', {rotate: 360, repeat: -1, duration:2}, "<")
+.to('.loader-txt', {autoAlpha:1, repeat: -1, duration:0.5}, "<")
+.to('.lokacije-mapbox-container', {autoAlpha:1, duration:1.5, delay:2})
+.to('.loader-icon', {autoAlpha:0}, "-=1.5")
+.to('.loader-txt', {autoAlpha:0}, "<")
+
+}
+
+
+
+
 
 /*
 ================================================================================
