@@ -325,7 +325,6 @@ function initContent() {
     openTestYourDesign();
     uploadCrop();
     lokacijeBotuni();
-    splidesolo();
     saveaspdf();
     lokacijeTabs(); 
     //mockupSimulatorProportions();
@@ -333,6 +332,7 @@ function initContent() {
     openMobileMenu();
     soloMap();
     stopScrollMap();
+    splidesolo();
     console.log("lokacijesolo scripts loaded...");
   }
 
@@ -500,7 +500,7 @@ barba.init({
 
               beforeEnter(data) {
                 soloMap();
-                //splidesolo();
+                splidesolo();
                 scrolltriggerupdate();
                 openTestYourDesign();
                 uploadCrop();
