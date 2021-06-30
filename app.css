@@ -409,7 +409,7 @@ BUTTON HOVER LOCO
 display: flex;
 flex-grow: 1;
 text-decoration: none;
-padding: 35px 0;
+padding: 1.82em 0;
 border-bottom: 1px solid var(--frkablack);
 color: var(--frkablack);
 background-size: 200% 200%;
@@ -423,16 +423,16 @@ color: var(--frkayellow);
 background-image: 
 linear-gradient(to top, #231F20 51%, transparent 50%);
 background-position: 0 100%;
-padding: 35px;
+padding: 1.82em;
 cursor: pointer;
 }
 
-.item a:active {
+.item a:pressed {
   color: var(--frkayellow);
   background-image: 
   linear-gradient(to top, #ff0000 51%, transparent 50%);
   background-position: 0 100%;
-  padding: 35px;
+  padding: 1.82em;
   cursor: pointer;
   }
 
