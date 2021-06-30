@@ -1991,7 +1991,7 @@ onUpdate:changeNumber,
 ease:Linear.easeNone,
 scrollTrigger: {
   scroller: ".smooth-scroll",
-  trigger: ".mogucnosti",
+  trigger: "#countrig",
   start: "top 100%",
 end: "bottom bottom",
   toggleActions: "restart none none reset",
