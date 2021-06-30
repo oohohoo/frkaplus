@@ -469,7 +469,7 @@ ACCORDION HOVER LOCO
   cursor: pointer;
   }
   
-  .accord a:pressed {
+  .accord a:active {
     color: var(--frkayellow);
     background-image: 
     linear-gradient(to top, #ff0000 51%, transparent 50%);
