@@ -2441,7 +2441,7 @@ function(global,factory){"object"==typeof exports&&"undefined"!=typeof module?mo
             }
           }
         
-          
+
           function start() { 
             loop();
           }
@@ -2504,7 +2504,7 @@ function(global,factory){"object"==typeof exports&&"undefined"!=typeof module?mo
               'position': 'fixed',
               'bottom': '0px',
               'left': '0px',
-              'padding': '20px',
+              'padding': '40px',
               'color': '#ffdc52',
               'wordSpacing': '0.2px',
               'webkitFontSmoothing': 'antialiased',
