@@ -469,14 +469,6 @@ ACCORDION HOVER LOCO
   cursor: pointer;
   }
   
-  .accord a:active {
-    color: var(--frkayellow);
-    background-image: 
-    linear-gradient(to top, #ff0000 51%, transparent 50%);
-    background-position: 0 100%;
-    padding: 3em 2em 1.5em 2em;
-    cursor: pointer;
-    }
   
  
 
