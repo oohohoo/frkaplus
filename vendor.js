@@ -2504,6 +2504,7 @@ function(global,factory){"object"==typeof exports&&"undefined"!=typeof module?mo
               'position': 'fixed',
               'bottom': '0px',
               'left': '0px',
+              'fontSize': '1.04em',
               'padding': '40px',
               'color': '#ffdc52',
               'wordSpacing': '0.2px',
@@ -2521,9 +2522,9 @@ function(global,factory){"object"==typeof exports&&"undefined"!=typeof module?mo
                 'margin': '0px',
                 'padding': '0px',
                 'fontWeight': 'normal',
-                'fontSize': '12vw',
+                'fontSize': '2em',
                 'color': '#ffdc52',
-                'letterSpacing': '0.5px',
+                'letterSpacing': '-0.018em',
                 'lineHeight': '35px',
                 'textAlign': 'left'
               }
