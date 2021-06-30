@@ -2499,12 +2499,12 @@ function(global,factory){"object"==typeof exports&&"undefined"!=typeof module?mo
              *  Caption Container
              */
             var captionContainerProperties = {
-              'fontFamily': 'Georgia, Times, "Times New Roman", serif',
+              'fontFamily': 'Hkspec, sans',
               'position': 'fixed',
               'bottom': '0px',
               'left': '0px',
               'padding': '20px',
-              'color': '#fff',
+              'color': '#ffdc52',
               'wordSpacing': '0.2px',
               'webkitFontSmoothing': 'antialiased',
               'textShadow': '-1px 0px 1px rgba(0,0,0,0.4)'
