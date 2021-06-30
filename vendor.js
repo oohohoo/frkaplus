@@ -2441,6 +2441,7 @@ function(global,factory){"object"==typeof exports&&"undefined"!=typeof module?mo
             }
           }
         
+          
           function start() { 
             loop();
           }
