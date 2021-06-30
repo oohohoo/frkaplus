@@ -1974,6 +1974,41 @@ O NAMA - COUNTER
 
 function onamacounter() {
 
+  var startCount = 990,
+  endCount,
+  activeIndex = 1,
+  tm = 2,
+  num = { var: startCount },
+  numbers = document.getElementById("numbers");
+ 
+  
+function countIt() {
+activeIndex == 1 ? endCount = 1000 : endCount = 1000;
+
+gsap.to(num, tm, {
+var: endCount, 
+onUpdate:changeNumber, 
+ease:Linear.easeNone
+scrollTrigger: {
+  scroller: ".smooth-scroll",
+  trigger: ".mogucnosti",
+  start: "top 85%",
+end: "bottom bottom",
+  toggleActions: "restart none none reset",
+  //scrub: 1,
+
+},
+
+});
+}
+
+function changeNumber() {
+numbers.innerHTML = (num.var).toFixed();  
+}
+
+countIt();
+
+  /*
   $(".counts").each(function () {
     var count = $(this),
       zero = {
@@ -2000,6 +2035,8 @@ function onamacounter() {
       }
     });
   });
+
+  */
 }
 
 /*
@@ -2016,7 +2053,7 @@ function playpausevideo() {
 
     ScrollTrigger.create({
       trigger: videoElem,
-      start: 'top 80%',
+      start: 'top 90%',
       end: 'bottom 20%',
       scroller: ".smooth-scroll",
       onEnter: () => videoElem.play(),
