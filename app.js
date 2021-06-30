@@ -1996,7 +1996,7 @@ scrollTrigger: {
 end: "bottom bottom",
   toggleActions: "restart none none reset",
   //scrub: 1,
-
+  console.log("COUNTER TRIGGERED");
 },
 
 });
