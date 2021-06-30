@@ -2491,7 +2491,7 @@ function(global,factory){"object"==typeof exports&&"undefined"!=typeof module?mo
             applyProperties( container, containerProperties );
       
             var imageProperties = {
-              'cursor': 'url( "data:image/png;base64,PHN2ZyB3aWR0aD0iNjUiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NSA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMzIuMjU2OCIgY3k9IjMyIiByPSIzMiIgZmlsbD0iIzIzMUYyMCIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTM4LjMyNDQgMjQuNzM3M0MzOC4yODUzIDI0LjY5ODIgMzguMjIyIDI0LjY5ODIgMzguMTgyOSAyNC43MzczTDMyLjI1NjYgMzAuNjYzN0wyNi4zMzEyIDI0LjczODNDMjYuMjkyMSAyNC42OTkyIDI2LjIyODggMjQuNjk5MiAyNi4xODk4IDI0LjczODNMMjQuOTk0OCAyNS45MzMzQzI0Ljk1NTcgMjUuOTcyMyAyNC45NTU3IDI2LjAzNTcgMjQuOTk0OCAyNi4wNzQ3TDMwLjkyMDEgMzIuMDAwMUwyNC45OTQxIDM3LjkyNjFDMjQuOTU1MSAzNy45NjUxIDI0Ljk1NTEgMzguMDI4NSAyNC45OTQxIDM4LjA2NzVMMjYuMTg5MSAzOS4yNjI1QzI2LjIyODIgMzkuMzAxNiAyNi4yOTE1IDM5LjMwMTYgMjYuMzMwNiAzOS4yNjI1TDMyLjI1NjYgMzMuMzM2NUwzOC4xODIyIDM5LjI2MjFDMzguMjIxMyAzOS4zMDEyIDM4LjI4NDYgMzkuMzAxMiAzOC4zMjM2IDM5LjI2MjFMMzkuNTE4NiAzOC4wNjcxQzM5LjU1NzcgMzguMDI4MSAzOS41NTc3IDM3Ljk2NDggMzkuNTE4NiAzNy45MjU3TDMzLjU5MyAzMi4wMDAxTDM5LjUxOTQgMjYuMDczN0MzOS41NTg0IDI2LjAzNDcgMzkuNTU4NCAyNS45NzE0IDM5LjUxOTQgMjUuOTMyM0wzOC4zMjQ0IDI0LjczNzNaIiBmaWxsPSIjRkZEQzUyIi8+Cjwvc3ZnPgo=" ) 64 64, auto'
+              'cursor': 'url( "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAwCAYAAAC4wJK5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQqSURBVHgB1Zo7bNNAGMf/PqMugOKUgVYUsHhJTLQbAgRBAgYWEBMCCcrExkMwA61YeQ4IGKBFMDAgWhgQAqntgICtrJSqV0RVxEBdtSwVyfF95zg4aVInfqTJT2oS25f0fr777mkDMWDbtmVmkVEGMoaBjQroNAAL7p+Gzkk6J+mjQwfDIouRsSk5ihgwEBIv4xA4T4cZhEPS31DWQK8kEJKaJTjzIofzdMcvwHenY+BxWJmaJDavt48qgVv0JRvJUbNMVRK66ig8po9HUQcoUxNKoWf8u+yvJr0ZlIAEbKHwkX54J+pHmkyOpFOWmpl1RoISLymx1bY7DVegDfXHoLjb32pZG0lkcKmEFSVYIKcwhHiDNwxdQSJlJbgKUVv+ZplKoBxdVLVSJPK23MVFEroJdauQjQaCqtZOEpklkU+l18SiEzlcbTSBPBwjV3QtKaFIQgey24k1Kmlq6h+VniySyCq8ROOT2dJhZ/wnChLUG3c3aDUqxVAmbvpPFCQMdyDXLHT6S0NLcCzw8BnNA5fGFe9AS+Ry0YN59crAEUyk9GXIcHfAH7QETWb2IQLnTrfj9cPtWLe2per0rx5Un74SNJ/RA1LB7W7kgKa62NHWgmc3twVmjAXOnWp3h8+hp2Rwvy2wlz8IsokcC3efTONu/3SgiCfwY3oBJy9/xdTPBUQkwy+CqlIsAR0kkoAAY/OLaaWsbiMmkc9f5vX7wT0WDu628O6Dg7k/2aQENKm01W+usSzuH2zERKlIR3sLzh5vS0SAoZrUb9JYvRsx99R+kc7tKxMTYCimnwskha/lUYWXZGAJBzHjxQDf+b4Xv7CeqtTTG9si9wuVEDQFnUWM+AVOXPqK6/d+6FYrKZG/KyDN1pTFc4gMYqBUwIsBL0YOUYwc2GXhfb7VioOJSXlR0GpGLOuhlQQ8vH4k5hLReRdZM7pEkIBHAiKuBC8XKndhNzz0A0ECHp5IDGMnRd8fKfzMpg32bYqLSJOi1atMzM1XX89rTV8GRWu2m7gQdD8hBAYQkVozFFGAGfQWnbXENymH6W0YzQOXQp938H+ObaAHzQMXQmFZsyDRRKXBAV10w4vGTk1SGgPjsnjfomi2/ttxJPXgvDdQz72IWpihWDjmEP6Ti0axWYFrkfuNZFCiwjbYIglK4+RocwMJjG4joGh41Dsm5e1yFyv2mQ20ycKh3Ef7d2cqXV6y428IkQABZsmZHRXfKAVS1zLFCFehniABJnAtkVsCWlEYpN0jbrXqtV47Q//rxPikvF9N4qoWRFmEtpkGWtPWpO+5jaTgzfjDE7L65z5CDYY323Y3bZbHvS02RJ1tb37kUBORRvQsQ4F3GuEfUHEo43coEwNjMvwTN9GmJXn0YxMkonL6UaEdVOWsfCkVPSoEN9Oc2VFqUUaiZNzPPztqywqIcf43AAAAAElFTkSuQmCC" ) 64 64, auto'
             }
             applyProperties( target, imageProperties );
       
@@ -2499,7 +2499,7 @@ function(global,factory){"object"==typeof exports&&"undefined"!=typeof module?mo
              *  Caption Container
              */
             var captionContainerProperties = {
-              'fontFamily': 'Hkspec, sans',
+              'fontFamily': 'Georgia, Times, "Times New Roman", serif',
               'position': 'fixed',
               'bottom': '0px',
               'left': '0px',
