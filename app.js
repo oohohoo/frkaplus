@@ -560,6 +560,14 @@ barba.init({
               }
             }, {
 
+              namespace: '404',
+              
+              beforeEnter(data) {
+                backToPrev();
+                console.log("back to prev page loaded");
+              }
+            }, {
+
               namespace: 'topdftest',
 
               beforeEnter(data) {
@@ -3319,7 +3327,21 @@ function mockupSimulatorProportions() {
 }
 
 
+/*
+================================================================================
+BACK TO PREV PAGE
+================================================================================
+*/
 
+function backToPrev() {
+
+$( document ).ready(function() {
+  $( ".goback" ).click(function() {
+    window.history.back();
+  });
+});
+
+}
 
  
  
