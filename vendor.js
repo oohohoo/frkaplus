@@ -2521,7 +2521,7 @@ function(global,factory){"object"==typeof exports&&"undefined"!=typeof module?mo
                 'margin': '0px',
                 'padding': '0px',
                 'fontWeight': 'normal',
-                'fontSize': '60px',
+                'fontSize': '12vw',
                 'color': '#ffdc52',
                 'letterSpacing': '0.5px',
                 'lineHeight': '35px',
