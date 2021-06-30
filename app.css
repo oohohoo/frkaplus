@@ -451,7 +451,7 @@ ACCORDION HOVER LOCO
   display: flex;
   flex-grow: 1;
   text-decoration: none;
-  padding: 2em 0 1em;
+  padding: 2em 0 1.5em;
   border-bottom: 1px solid var(--frkablack);
   color: var(--frkablack);
   background-size: 200% 200%;
@@ -465,7 +465,7 @@ ACCORDION HOVER LOCO
   background-image: 
   linear-gradient(to top, #231F20 51%, transparent 50%);
   background-position: 0 100%;
-  padding: 1.82em;
+  padding: 2em 2em 1.5em 2em;
   cursor: pointer;
   }
   
