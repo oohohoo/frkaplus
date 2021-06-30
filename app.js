@@ -1987,8 +1987,8 @@ function onamacounter() {
       scrollTrigger: {
         scroller: ".smooth-scroll",
         trigger: ".tisucuwrap",
-        start: "top 100%",
-        end: "bottom top",
+        start: "top 80%",
+        end: "bottom bottom",
         toggleActions: "restart none none reset",
         //scrub: 1,
 
