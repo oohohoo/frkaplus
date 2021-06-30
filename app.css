@@ -427,6 +427,15 @@ padding: 35px;
 cursor: pointer;
 }
 
+.item a:active {
+  color: var(--frkayellow);
+  background-image: 
+  linear-gradient(to top, #ff0000 51%, transparent 50%);
+  background-position: 0 100%;
+  padding: 35px;
+  cursor: pointer;
+  }
+
 .arrow--right {
   flex: 1;
 }
