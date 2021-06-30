@@ -452,7 +452,7 @@ ACCORDION HOVER LOCO
   flex-grow: 1;
   text-decoration: none;
   padding: 3em 0em 1.5em 0em;
-  border-bottom: 1px solid var(--frkablack);
+ /*  border-bottom: 1px solid var(--frkablack); */
   color: var(--frkablack);
   background-size: 200% 200%;
   background-image: 
