@@ -1364,7 +1364,7 @@ function openTestYourDesign() {
 
 /*
 ================================================================================
-TEST YOUR DESIGN MODUL
+MOBILE MENU
 ================================================================================
 */
 
@@ -2398,12 +2398,12 @@ workLinks.forEach((link, index, value) => {
   {width: "0%", left: "100%", duration: 0.3, ease: "power1.in", immediateRender: false});
 
   // Mouseenter
-  link.addEventListener("mouseenter", (e) => {
+  link.addEventListener("mouseover", (e) => {
     enterAnimation(link, e, index);
   });
 
   // Mouseleave
-  link.addEventListener("mouseleave", (e) => {
+  link.addEventListener("mouseout", (e) => {
     leaveAnimation(link, e);
   });
 
