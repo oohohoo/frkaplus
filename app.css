@@ -470,6 +470,35 @@ ACCORDION HOVER LOCO
   }
   
   
+
+/*
+================================================================================
+ACCORDION HOVER LOCO
+================================================================================
+*/
+
+.resto a {
+  display: flex;
+  flex-grow: 1;
+  text-decoration: none;
+  padding: 2em 0em 1.5em 0em;
+ /*  border-bottom: 1px solid var(--frkablack); */
+  color: var(--frkablack);
+  background-size: 200% 200%;
+  background-image: 
+  linear-gradient(to top, #231F20 50%, transparent 50%);
+  transition: all 0.3s cubic-bezier(.4,0,0,1);
+  }
+  
+  .resto a:hover {
+  color: var(--frkayellow);
+  background-image: 
+  linear-gradient(to top, #231F20 51%, transparent 50%);
+  background-position: 0 100%;
+  padding: 2em 3em 1.5em 2em;
+  cursor: pointer;
+  }
+  
  
 
   
