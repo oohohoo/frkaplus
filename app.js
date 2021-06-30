@@ -1992,7 +1992,7 @@ ease:Linear.easeNone,
 scrollTrigger: {
   scroller: ".smooth-scroll",
   trigger: ".mogucnosti",
-  start: "top 120%",
+  start: "top 100%",
 end: "bottom bottom",
   toggleActions: "restart none none reset",
   //scrub: 1,
