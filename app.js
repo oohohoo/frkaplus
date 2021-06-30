@@ -1988,7 +1988,7 @@ activeIndex == 1 ? endCount = 1000 : endCount = 1000;
 gsap.to(num, tm, {
 var: endCount, 
 onUpdate:changeNumber, 
-ease:Linear.easeNone
+ease:Linear.easeNone,
 scrollTrigger: {
   scroller: ".smooth-scroll",
   trigger: ".mogucnosti",
