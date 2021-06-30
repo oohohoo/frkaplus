@@ -1986,9 +1986,9 @@ function onamacounter() {
     gsap.to(zero, {
       scrollTrigger: {
         scroller: ".smooth-scroll",
-        trigger: ".counts",
-        start: "top 50%",
-        end: "bottom 50%",
+        trigger: ".mogucnosti",
+        start: "top 85%",
+      end: "bottom top",
         toggleActions: "restart none none reset",
         //scrub: 1,
 
