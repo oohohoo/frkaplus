@@ -302,7 +302,7 @@ function initContent() {
 
   if (document.querySelector('#onama')) {
     outlinehero();
-    onamacounter();
+    //onamacounter();
     numberoll();
     horizpin();
     playpausevideo();
