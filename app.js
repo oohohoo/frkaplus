@@ -676,7 +676,7 @@ function locationMap() {
 
   var map = new mapboxgl.Map({
     container: 'map', // container ID
-    style: 'mapbox://styles/fogseller/cknip0h0j0oqm17mgvd8wwi8y?optimize=true', // style URL / dodano optimize=true
+    style: 'mapbox://styles/fogseller/ckqkw1hr4091g17sgan3bwjzp?optimize=true', // style URL / dodano optimize=true
     center: [16.527, 44.663], // starting position [lng, lat]
     zoom: 6.64, // starting zoom
     minZoom: 6.64, // note the camel-case
@@ -688,7 +688,7 @@ function locationMap() {
 
 
 /* DODANO ALI NE RADI*/
- map.addControl(new mapboxgl.NavigationControl()); 
+// map.addControl(new mapboxgl.NavigationControl()); 
 
 
 
