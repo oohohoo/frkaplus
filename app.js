@@ -682,8 +682,8 @@ function locationMap() {
     minZoom: 6.64, // note the camel-case
     maxZoom: 19,
     maxBounds: bounds,
-    bearing: 27,
-    pitch: 45
+    //bearing: 27,
+   // pitch: 45
   });
 
 
