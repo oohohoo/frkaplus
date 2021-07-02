@@ -662,6 +662,7 @@ MAPBOX
   .mapboxgl-popup {
   max-width: 200px;
   }
+
   .mapboxgl-popup-content {
   text-align: left;
   position: relative;
@@ -673,6 +674,10 @@ MAPBOX
   pointer-events: auto;
   }
 
+
+  .mapboxgl-popup-content h3 {
+    text-transform: uppercase;
+}
   
 
 
