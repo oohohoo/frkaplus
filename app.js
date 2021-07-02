@@ -290,6 +290,7 @@ function initContent() {
   hideMenu();
   yearupdate();
   openMobileMenu();
+  lokacijeTabs();
  // splidesolo();
   simulatorButton();
   console.log("initial scripts loaded...");
