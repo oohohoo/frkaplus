@@ -235,7 +235,7 @@
     border-left-style: solid;
     border-left-width: 1px;
     border-left-color: #231f20;
-    background: url("https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60c7101c907ce3e5f5b7cdad_arrow_down.svg") no-repeat;
+    background: url("https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60df408c62e8260415047fc1_arrow--down.svg") no-repeat;
     background-size: 0.79em; 
     background-position: 1.17em 2em;
     background-repeat: no-repeat;
@@ -271,7 +271,7 @@
 
 .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
     
-    background: url("https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60c712f5640a9b37a36b19ea_arrow_up.svg") no-repeat;
+    background: url("https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60df408d005bf78185cb2ee6_arrow--up.svg") no-repeat;
     /* border-color: transparent transparent #888 transparent; */
     position: absolute;
     right: 0.16em;
