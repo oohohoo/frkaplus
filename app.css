@@ -1457,6 +1457,24 @@ VIZUAL SIMULATOR CSS
 }
 
 
+.mobile {
+  filter:blur(.6px);
+	overflow: hidden;
+	position: absolute;
+	z-index: 100;
+ 	outline: 1px solid transparent;
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0);
+  will-change: transform; 
+  box-shadow: 0 0 1px rgba(255,255,255,0);
+  -webkit-transform-style: preserve-3d; 
+  -webkit-transform: rotateZ(2deg);
+  -webkit-perspective: 1000;
+	-webkit-transform-origin: 0 0 0;
+	transform-origin: 0 0 0;
+
+}
+
 
 /*
 ================================================================================
