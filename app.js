@@ -2636,7 +2636,7 @@ $('.turnonpdf').click(function() {
    $('.upload-photo').filepond('removeFile');
     $('.upload-video').filepond('removeFile');
     $('.linkos.opacity').addClass('hide');
-    $('.movevideo').toggleClass('hide');
+    //$('.movevideo').toggleClass('hide');
     $('#mobile').children().filter("video").each(function(){
       this.pause(); // can't hurt
       delete this; // @sparkey reports that this did the trick (even though it makes no sense!)
@@ -2691,9 +2691,9 @@ $(document).ready(function()
            // document.getElementById('destination').play();
           $('video').trigger('play');
            $('video').attr({'autoplay':'true', 'loop':'true'});
-           setTimeout(function () {
-            photo_crop_container.removeClass('show-result');
-            }, 1000);
+           //setTimeout(function () {
+          //  photo_crop_container.removeClass('show-result');
+          //  }, 1000);
            // $('#destination').get(0).play();
            //video.play();
             console.log("APPEND AND PLAY & LOOP");
