@@ -3338,5 +3338,32 @@ $( document ).ready(function() {
 
 
 
+mapboxgl.accessToken = 'pk.eyJ1IjoiZm9nc2VsbGVyIiwiYSI6ImNrN2VpbXlpbjAwNDIzbnM1N2ZhMW9laGkifQ.DUf-8r1jXF4o7ApMUcKVXQ';
+    
+var map = new mapboxgl.Map({
+container: 'map', // container ID
+  style: 'mapbox://styles/fogseller/ckqkw1hr4091g17sgan3bwjzp?optimize=true', // style URL / dodano optimize=true
+  center: [16.527, 44.663], // starting position [lng, lat]
+  zoom: 6.64, // starting zoom
+  minZoom: 6.64, // note the camel-case
+  maxZoom: 19,
+ // maxBounds: bounds,
+  bearing: 27,
+  pitch: 45
+});
 
+ $.getJSON('https://raw.githubusercontent.com/oohohoo/frkaplus/main/frka.geojson', function (geojson) {
+  geojson.features.forEach(function(marker) {
+    // create a HTML element for each feature
+    var el = document.createElement('div');
+    el.className = 'marker';
+    new mapboxgl.Marker(el)
+        .setLngLat(marker.geometry.coordinates)
+        .setPopup(new mapboxgl.Popup({ offset: 25 })
+       .setHTML(marker.properties.title)) 
+      
+        .addTo(map);        
+});
+
+});
 
