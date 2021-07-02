@@ -686,6 +686,9 @@ MAPBOX
    text-transform: uppercase!important;
 }
 
+.mapboxgl-popup-tip {
+  margin-top: -1px!important;
+}
 
 /* .mapboxgl-ctrl, .mapboxgl-ctrl-attrib-inner {
 display:none!important;
