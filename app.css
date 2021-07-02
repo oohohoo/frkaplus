@@ -660,7 +660,7 @@ MAPBOX
   cursor: pointer;
   }
   .mapboxgl-popup {
-  max-width: 200px;
+  max-width: auto!important;
   }
  
   .mapboxgl-popup-content {
