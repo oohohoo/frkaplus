@@ -212,7 +212,7 @@
 
     /* height: 2.5em; */
     position: absolute;
-    top: 1px;
+    top: 0.52em;
     right: 1px;
     /* width: 2.5em; */
     height: 100%;
@@ -230,7 +230,7 @@
     /* top: -3px; */
     right: 0.16em;
     width: 3em;
-    height: 2.5em;
+    height: 2.8em;
     border-left-style: solid;
     border-left-width: 2px;
     border-left-color: #231f20;
