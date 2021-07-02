@@ -669,14 +669,15 @@ MAPBOX
   background: #fff;
   color: var(--frkablack);
   border-radius: 0.5px!important;
-  box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+  box-shadow: 0 20px 27px rgb(0 0 0 / 20%)!important;
   padding: 1em 1em 1.5em!important;
   pointer-events: auto;
   }
 
 
   .mapboxgl-popup-content h3 {
-    font-size: 1.04em!important;
+    font-size: 1.41em!important;
+    margin-bottom: 0.2em;
 
 }
   
