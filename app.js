@@ -3367,3 +3367,28 @@ container: 'map', // container ID
 
 });
 
+
+
+new mapboxgl.Marker(el)
+  .setLngLat(marker.geometry.coordinates)
+  .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+  .setHTML(
+    '<h3>' +
+    marker.properties.title +
+    '</h3>' +
+    '<p>' +
+    marker.properties.description +
+    '</p>' 
+    '<p> <img src="'marker.properties.image'" alt="'An Image of marker.properties.title'"></p>' 
+
+    ))
+
+
+  .setHTML(
+  '<h3>' + marker.properties.title + '</h3> <p>' + marker.properties.description + '</p>' + 
+  
+  '<p> <img src="'marker.properties.image'" alt="'An Image of marker.properties.title'"></p>'))
+  
+  
+  
+  .addTo(map);
