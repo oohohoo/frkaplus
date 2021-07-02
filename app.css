@@ -652,7 +652,18 @@ MAPBOX
    /* visibility: hidden; */
 }
 
-.mapboxgl-popup-content {
+.marker {
+  background-image: url('https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60dece2a43a86be3aa2f9c68_marker-fat.svg');
+  background-size: cover;
+  width: 1.09em;
+  height: 1.67em;
+  cursor: pointer;
+  }
+  .mapboxgl-popup {
+  max-width: 200px;
+  }
+  .mapboxgl-popup-content {
+  text-align: left;
   position: relative;
   background: #fff;
   color: var(--frkablack);
@@ -660,24 +671,6 @@ MAPBOX
   box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
   padding: 10px 10px 15px;
   pointer-events: auto;
-}
-
-/* OVO SU PRAVI MARKERI*/
-
-.marker {
-  background-image: url('https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60dece2a43a86be3aa2f9c68_marker-fat.svg');
-  background-size: cover;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  cursor: pointer;
-  }
-  .mapboxgl-popup {
-  max-width: 200px;
-  }
-  .mapboxgl-popup-content {
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
   }
 
   
