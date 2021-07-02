@@ -677,7 +677,8 @@ MAPBOX
 
   .mapboxgl-popup-content h3 {
     font-size: 1.41em!important;
-    margin-bottom: 0.2em;
+    margin-bottom: 0.25em;
+    line-height: 1.1;
 
 }
   
