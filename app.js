@@ -692,12 +692,6 @@ function locationMap() {
 
 
 
-/* map.addSource('frka', {
-  type: 'geojson',
-  data: 'https://frkaplus.netlify.app/frka.geojson'
-});
- */
-
 
 
 /* $(document).ready(function(){  */
@@ -727,10 +721,6 @@ map.on('idle', function (e) {
         '<p>' + feature.properties.description + '</p>' +
         '<img>' + feature.properties.image + '</img>'
       )
-      /* .setHTML(feature.properties.title) */
-
-      /* .setHTML("<h3>Hello World!</h3>") */
-      /* .setMaxWidth("300px") */
 
       .addTo(map);
     console.log("POPUP on MAP");
@@ -3346,4 +3336,7 @@ $( document ).ready(function() {
  
  
 
- 
+
+
+
+
