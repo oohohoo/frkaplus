@@ -303,8 +303,8 @@ function initContent() {
     homevideo();
     openMobileMenu();
     console.log("home scripts loaded...");
-    ScrollTrigger.refresh(true); // ScrollTrigger Refresh
-    console.log("scrolltrigger refreshed script load");
+    //ScrollTrigger.refresh(true); // ScrollTrigger Refresh
+    //console.log("scrolltrigger refreshed script load");
   }
 
   if (document.querySelector('#onama')) {
@@ -316,8 +316,8 @@ function initContent() {
     smallCounteronama();
     openMobileMenu();
     console.log("o nama scripts loaded...");
-    ScrollTrigger.refresh(true); // ScrollTrigger Refresh
-    console.log("scrolltrigger refreshed script load");
+   // ScrollTrigger.refresh(true); // ScrollTrigger Refresh
+   // console.log("scrolltrigger refreshed script load");
 
   }
   if (document.querySelector('#lokacije')) {
@@ -328,8 +328,8 @@ function initContent() {
     stopScrollMap();
     openMobileMenu();
     console.log("lokacije scripts loaded...");
-    ScrollTrigger.refresh(true); // ScrollTrigger Refresh
-    console.log("scrolltrigger refreshed script load");
+   // ScrollTrigger.refresh(true); // ScrollTrigger Refresh
+  //  console.log("scrolltrigger refreshed script load");
   }
 
   if (document.querySelector('#lokacijesolo')) {
@@ -345,15 +345,15 @@ function initContent() {
     stopScrollMap();
     splidesolo();
     console.log("lokacijesolo scripts loaded...");
-    ScrollTrigger.refresh(true); // ScrollTrigger Refresh
-    console.log("scrolltrigger refreshed script load");
+   // ScrollTrigger.refresh(true); // ScrollTrigger Refresh
+    //console.log("scrolltrigger refreshed script load");
   }
 
   if (document.querySelector('#kontakt')) {
       openMobileMenu();
     console.log("kontakt scripts loaded...");
-    ScrollTrigger.refresh(true); // ScrollTrigger Refresh
-    console.log("scrolltrigger refreshed script load");
+  //  ScrollTrigger.refresh(true); // ScrollTrigger Refresh
+   // console.log("scrolltrigger refreshed script load");
   }
 
 //DRUKČIJE SE PONAŠA AKO UBACIMO UNUTAR document ready/ 
