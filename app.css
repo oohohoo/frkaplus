@@ -655,8 +655,8 @@ MAPBOX
 .marker {
   background-image: url('https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60dece2a43a86be3aa2f9c68_marker-fat.svg');
   background-size: cover;
-  width: 1.09em;
-  height: 1.67em;
+  width: 2.19em;
+  height: 3.33em;
   cursor: pointer;
   }
   .mapboxgl-popup {
