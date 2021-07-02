@@ -2682,7 +2682,7 @@ const pondvideo = FilePond.create({
 //onclick = function(){ botun.appendChild(".filepond--media-preview"); }
 $(document).ready(function()
   {    
-  $('#movevideo').click(function(){
+  $('#movevideox').click(function(){
 
           //  var toAdd = $('input[name=checkListItem]').val();
             var item = $('.filepond--media-preview video');
@@ -2702,7 +2702,7 @@ $(document).ready(function()
   });
 
 
-  $('#removevideo').click(function(){
+  $('#removevideox').click(function(){
 
     $('#mobile').children().filter("video").each(function(){
       this.pause(); // can't hurt
