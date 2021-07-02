@@ -2613,10 +2613,10 @@ console.log("03 slide up");
 /* document.querySelector('.upload-video').pond.addEventListener('FilePond:addfile', function (e) {
   $('.movevideo').toggleClass('hide'); */
   
-  console.log("SHOW BUTTON ON ADD FILE");
+  //console.log("SHOW BUTTON ON ADD FILE");
    
   
-});
+//});
 
 
 
