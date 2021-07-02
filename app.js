@@ -745,8 +745,8 @@ $.getJSON('https://raw.githubusercontent.com/oohohoo/frkaplus/main/frka.geojson'
       .addTo(map);
     console.log("POPUP on MAP");
 
-  }) */
-}
+  }) 
+}*/
 
 
 map.doubleClickZoom.enable();
