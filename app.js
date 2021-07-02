@@ -3360,7 +3360,7 @@ container: 'map', // container ID
     new mapboxgl.Marker(el)
         .setLngLat(marker.geometry.coordinates)
         .setPopup(new mapboxgl.Popup({ offset: 25 })
-       .setHTML(marker.properties.title)) 
+       .setHTML(marker.properties.title)) */
       
         .addTo(map);        
 });

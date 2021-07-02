@@ -5,7 +5,6 @@
       "properties": {
         "title": "Avenija Dubrovnik – Rotor",
         "description": "Smjer istok",
-        "image: 'https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60db62b1192ab926461ef7ae_ad-test2.jpg'"
       },
       "geometry": {
         "coordinates": [15.95866, 45.77693],
