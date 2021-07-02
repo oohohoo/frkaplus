@@ -291,6 +291,7 @@ function initContent() {
   yearupdate();
   openMobileMenu();
   lokacijeTabs();
+  uploadCrop();
  // splidesolo();
   simulatorButton();
   console.log("initial scripts loaded...");
