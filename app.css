@@ -659,10 +659,10 @@ MAPBOX
   height: 3.33em;
   cursor: pointer;
   }
-  .mapboxgl-popup {
+ /*  .mapboxgl-popup {
   max-width: 200px;
   }
-
+ */
   .mapboxgl-popup-content {
   text-align: left!important;
   position: relative;
