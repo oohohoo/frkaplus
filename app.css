@@ -676,9 +676,13 @@ MAPBOX
 
 
   .mapboxgl-popup-content h3 {
+    font-size: 1.04em!important;
     text-transform: uppercase!important;
 }
   
+.mapboxgl-popup-content p {
+   text-transform: uppercase!important;
+}
 
 
 /* .mapboxgl-ctrl, .mapboxgl-ctrl-attrib-inner {
