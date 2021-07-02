@@ -275,11 +275,11 @@
     /* border-color: transparent transparent #888 transparent; */
     position: absolute;
     right: 0.16em;
-    /* width: 2.5em; */
+    width: 3em;
     height: 2.8em;
     border-left-style: solid;
-    border-left-width: 21px;
-    border-left-color: #ffdc52;
+    border-left-width: 1px;
+    border-left-color: #231f20;
     background-size: 0.79em; 
     height: 100%;
     background-position: 1.17em 2em;
