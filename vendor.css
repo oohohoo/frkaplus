@@ -228,6 +228,7 @@
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
     position: absolute;
     /* top: -3px; */
+    color: #231f20;
     right: 0.16em;
     width: 3em;
     height: 2.8em;
