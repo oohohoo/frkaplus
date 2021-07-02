@@ -231,7 +231,7 @@
     color: #231f20;
     right: 0.16em;
     width: 3em;
-    height: 2.8em;
+    height: 3em;
     border-left-style: solid;
     border-left-width: 1px;
     border-left-color: #231f20;
@@ -277,7 +277,7 @@
     right: 0.16em;
     width: 3em;
     color: #231f20;
-    height: 2.8em;
+    height: 3em;
     border-left-style: solid;
     border-left-width: 1px;
     border-left-color: #231f20;
@@ -286,7 +286,6 @@
     background-position: 1.17em 2em;
     background-repeat: no-repeat;
 }
-
 
 .select2-container--default .select2-selection--multiple {
     background-color: #ffdc52;
