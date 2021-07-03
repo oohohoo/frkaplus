@@ -2939,6 +2939,10 @@ Demo.prototype._handleSortChange = function (event) {
     }
     this.shuffle.sort(options);
 
+
+    this.filter();
+
+    
     this.shuffle.update();
     locoScroll.update();
     ScrollTrigger.refresh(true);
@@ -3033,6 +3037,24 @@ Demo.prototype._handlecategoryChange = function (evt) {
 		this.filters.categories = [];
 		this.filter();
 	}
+
+  /*
+  Demo.prototype._handlecategoryChange = function (evt) {
+    this.filters.categories = this._getCurrentcategoryFilters();
+    if(this.filters.categories[0]!='all') {
+      this.filter();
+    } else {
+      var regionArray = Array.from(document.querySelectorAll('.js-sort .checkboxes input'));
+      regionArray.forEach(function (input) {
+        input.checked = true;
+      });
+      this.filters.categories = [];
+      this.filter();
+    }
+
+*/
+
+/* BUTTON*/
 
   var button = evt.currentTarget;
 	if(button.dataset.value!='all') {
