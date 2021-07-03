@@ -3037,15 +3037,15 @@ Demo.prototype._handlecategoryChange = function (evt) {
 
   
   Demo.prototype._handleSortChange = function (evt) {
-   /* this.filters.categories = this._getCurrentcategoryFilters();
+   this.filters.categories = this._getCurrentcategoryFilters();
     if(this.filters.categories[0]!='all') {
       this.filter();
     } else {
-     */ var regionArray = Array.from(document.querySelectorAll('.js-sort .checkboxes input'));
+      var regionArray = Array.from(document.querySelectorAll('.js-sort .checkboxes input'));
       regionArray.forEach(function (input) {
         input.checked = true;
       });
-   //   this.filters.categories = [];
+      this.filters.categories = [];
       this.filter();
     }
 
