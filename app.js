@@ -2956,6 +2956,7 @@ SHUFFLE.JS - Bind event listeners for when the filters change.
 Demo.prototype._bindEventListeners = function () {
 	this._onregionChange = this._handleregionChange.bind(this);
 	this._oncategoryChange = this._handlecategoryChange.bind(this);
+  this._onsortChange = this._handlesortChange.bind(this);
 
 	this.regions.forEach(function (input) {
 		input.addEventListener('change', this._onregionChange);
@@ -2964,6 +2965,11 @@ Demo.prototype._bindEventListeners = function () {
 	this.categories.forEach(function (input) {
 		input.addEventListener('change', this._oncategoryChange);
 	}, this);
+};
+
+this.sort.forEach(function (input) {
+  input.addEventListener('change', this._onsortChange);
+}, this);
 };
 
 /*
@@ -2994,6 +3000,23 @@ SHUFFLE.JS - Get the values of each `active` button.
  */
  Demo.prototype._getCurrentcategoryFilters = function () {
 	return this.categories.filter(function (input) {
+		return input.checked;
+	}).map(function (input) {
+		return input.value;
+	});
+};
+
+/*
+================================================================================
+SHUFFLE.JS - Get the values of each `active` button.
+================================================================================
+*/
+/**
+ * 
+ * @return {Array.<string>}
+ */
+ Demo.prototype._getCurrentsortFilters = function () {
+	return this.sort.filter(function (input) {
 		return input.checked;
 	}).map(function (input) {
 		return input.value;
@@ -3036,8 +3059,8 @@ Demo.prototype._handlecategoryChange = function (evt) {
 	}
 
   
-  Demo.prototype._handleSortChange = function (evt) {
-   this.filters.categories = this._getCurrentcategoryFilters();
+  Demo.prototype._handlesortChange = function (evt) {
+   this.filters.categories = this._getCurrentsortFilters();
     if(this.filters.categories[0]!='all') {
       this.filter();
     } else {
