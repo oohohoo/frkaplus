@@ -2815,10 +2815,9 @@ $('select.combobox').select2({ width: 'style' });
 
 
 
-$('select').select2({
+$("#sorto).select2({
   dropdownParent: $('.upad'),
-  minimumInputLength: 2,
-  });
+   });
 
 
 
