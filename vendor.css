@@ -20,7 +20,7 @@
 
 .select2-container .select2-selection--single .select2-selection__rendered {
     display: block;
-    padding-top: 0.9em;
+    padding-top: 0.92em;
     padding-bottom: 1.04em; 
     padding-left: 1em;
    padding-bottom: 1.25em; 
@@ -191,7 +191,7 @@ width: 6em !important;
 .sortewrap .select2-container .selection .select2-selection.select2-selection--single {
    /*  width: 7em !important; */ 
     background-color: #ffdc52;
-    margin-top: 0.9em;
+    margin-top: 1.3em;
     border: 0px solid #231f20!important;
     }
 
