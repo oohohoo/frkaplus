@@ -2813,14 +2813,7 @@ $("#selectone, #selecttwo, #sorto").each(function (index, item) {
 $('select.combobox').select2({ width: 'style' });
 
 
-  $('.select2-container .select2-dropdown').select2({
-    dropdownParent: $('.sortewrap')
-        });
-        console.log("SORTEWRAP");
-/* var secondo = $('#sorto').select2(); 
-$(secondo).css("background-color", "red"); 
 
- */
 
 $("#sorto").select2({
   dropdownParent: $('.upad'),
