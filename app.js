@@ -2790,7 +2790,7 @@ if ($("#selectone, #selecttwo, #sorto").length) {
       $(item).select2({
         placeholder: text,
         minimumResultsForSearch: -1,
-        dropdownParent: $('#my_amazing_modal')
+        
       });
     });
   }, 100);
@@ -2810,14 +2810,14 @@ $("#selectone, #selecttwo, #sorto").each(function (index, item) {
 });
 //select2 end
 
-/* $('select.combobox').select2({ width: 'style' });
-
- */
+$('select.combobox').select2({ width: 'style' });
 
 
-/* $('select').select2({
+
+
+$('#selectone').select2({
   dropdownParent: $('#my_amazing_modal')
-  }); */
+  });
   
   
 /* var secondo = $('#sorto').select2(); 
