@@ -204,12 +204,10 @@ width: 6em !important;
     .sortewrap  .select2-container .select2-dropdown {
         background-color: #ffdc52!important;
         border: 0px solid #231f20!important;
-        width: 6em !important;
+       /*  width: 6em !important; */
     }
 
-    .select2-sorto-result-tgd9-title {
-        width: 6em !important;
-    }
+    
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
     color: #231f20;
