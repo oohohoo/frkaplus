@@ -2781,7 +2781,7 @@ function newSort() {
 'use strict';
 
  $("#selectone, #selecttwo, #sorto").select2(); 
- dropdownAutoWidth: true,
+
  //dropdownParent: $('.select2-container')
 //select2 start
 if ($("#selectone, #selecttwo, #sorto").length) {
@@ -2790,6 +2790,7 @@ if ($("#selectone, #selecttwo, #sorto").length) {
       var text = $(item).data("placeholder");
       $(item).select2({
         placeholder: text,
+        dropdownAutoWidth: true,
         minimumResultsForSearch: -1,
         
       });
