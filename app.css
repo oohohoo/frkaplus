@@ -1493,7 +1493,7 @@ SHUFFLE.js
 }
 
 .webinar-posts__event-item {
-  width: calc(50% - 22px);
+  width: calc(51% - 20px);
   /*   overflow: hidden;
    position: relative; */
 }
