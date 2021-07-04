@@ -2822,6 +2822,12 @@ $(secondo).css("background-color", "red");
 
  */
 
+$("#sorto").select2({
+  dropdownParent: $('.upad'),
+  placeholder: "00000",
+  minimumInputLength: 2,
+  });
+
 
 
 
