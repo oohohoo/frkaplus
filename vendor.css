@@ -2,7 +2,7 @@
 .select2-container {
     box-sizing: border-box;
     margin-top: 0.9em;
-   width: 21em!important;
+   width: 13.85em!important;
     display: inline-block;
     margin: 0;
     position: relative;
@@ -13,7 +13,7 @@
     box-sizing: border-box;
     cursor: pointer;
     display: block;
-    height: 4em; 
+    height: 3.33em; 
     user-select: none;
     -webkit-user-select: none
 }
@@ -79,7 +79,7 @@
     display: block;
     position: absolute;
     left: -100000px;
-    width: 21em!important;
+    width: 13.85em!important;
     z-index: 1051
 }
 
@@ -265,8 +265,8 @@ width: 6em !important;
     /* top: -3px; */
     color: #231f20;
     right: 0.16em;
-    width: 3em;
-    height: 3em;
+    width: 3.33em;
+    height: 3.33em;
     border-left-style: solid;
     border-left-width: 1px;
     border-left-color: #231f20;
@@ -310,9 +310,9 @@ width: 6em !important;
     /* border-color: transparent transparent #888 transparent; */
     position: absolute;
     right: 0.16em;
-    width: 3em;
+    width: 3.33em;
     color: #231f20;
-    height: 3em;
+    height: 3.33em;
     border-left-style: solid;
     border-left-width: 1px;
     border-left-color: #231f20;
