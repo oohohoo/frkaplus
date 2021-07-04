@@ -195,6 +195,10 @@ width: 6em !important;
     border: 0px solid #231f20!important;
     }
 
+.sortewrap .select2-container--default .select2-selection--single .select2-selection__arrow b {
+     border-left-width: 0px!important;
+    }
+
 
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
