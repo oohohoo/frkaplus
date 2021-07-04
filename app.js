@@ -2813,8 +2813,12 @@ $('select.combobox').select2({ width: 'style' });
 
 
 
-$("#sorto").select2({ dropdownParent: "#modal-containery" });
 
+$('#sorto').select2({
+  dropdownParent: $('#my_amazing_modal')
+  });
+  
+  
 /* var secondo = $('#sorto').select2(); 
 $(secondo).css("background-color", "red"); 
 
