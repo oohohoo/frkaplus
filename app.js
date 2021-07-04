@@ -2781,6 +2781,7 @@ function newSort() {
 'use strict';
 
  $("#selectone, #selecttwo, #sorto").select2(); 
+ dropdownAutoWidth: true,
  //dropdownParent: $('.select2-container')
 //select2 start
 if ($("#selectone, #selecttwo, #sorto").length) {
@@ -2815,12 +2816,12 @@ $('select.combobox').select2({ width: 'style' });
 
 
 
-$("#sorto").select2({
-  /* dropdownParent: $('.upad'), */
+/* $("#sorto").select2({
+  // dropdownParent: $('.upad'), 
   dropdownAutoWidth: true,
   adaptDropdownCssClass: function(c) { if (c.indexOf("s2-dropdown")===0) return c; }
    });
-
+ */
    
 
 
