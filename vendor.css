@@ -182,7 +182,7 @@
     border-radius: 0.5px
 }
 
-.select2-container--default .select2-selection--single .sorte {
+.select2-container--default .select2-selection--single #sorto {
     background-color: #ffdc52;
     margin-top: 0.9em;
     border: 3px solid #231f20!important;
