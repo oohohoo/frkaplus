@@ -2816,8 +2816,8 @@ $($('#sorto').data('select2')).css('background-color', 'red');
 console.log("RED BACK"); */
 
 
-/* $('#select2-'#sorto'-container').parent().css('background-color', 'red'); */
 
+ $('#select2-'+sorto+'-container').parent().css('background-color', 'red');
 
 
 /* .select2-container--default .select2-selection--single {
