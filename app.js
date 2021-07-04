@@ -2817,6 +2817,7 @@ $('select.combobox').select2({ width: 'style' });
 
 $("#sorto").select2({
   dropdownParent: $('.upad'),
+  dropdownAutoWidth: true
    });
 
 
