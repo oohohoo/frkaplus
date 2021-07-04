@@ -2812,7 +2812,7 @@ $("#selectone, #selecttwo, #sorto").each(function (index, item) {
 $('select.combobox').select2({ width: 'style' });
 
 
-$($('select2-'#sorto'-container').data('select2')).css('background-color', 'red');
+$($('#sorto').data('select2')).css('background-color', 'red');
 console.log("RED BACK"); 
 
 
