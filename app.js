@@ -2813,11 +2813,15 @@ $("#selectone, #selecttwo, #sorto").each(function (index, item) {
 $('select.combobox').select2({ width: 'style' });
 
 
-
-
+$('select:not(.normal)').each(function () {
+  $(this).select2({
+      dropdownParent: $(this).parent()
+  });
+});
+/* 
 $('#selectone').select2({
   dropdownParent: $('#my_amazing_modal')
-  });
+  }); */
   
   
 /* var secondo = $('#sorto').select2(); 
