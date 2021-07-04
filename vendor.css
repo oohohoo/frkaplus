@@ -217,8 +217,8 @@ width: 6em !important;
 }
 
 /********/
-.select2-sorto-result-8u11-title {
-background-color: yellowgreen;
+#select2-sorto-result-8u11-title {
+background-color: yellowgreen!important;
 
 }
 
