@@ -184,9 +184,15 @@
 
 
 
-.sortewrap .select2-container .select2-selection--single {
+.sortewrap .select2-container  {
 width: 2em !important;
 }
+
+.sortewrap .select2-container .selection .select2-selection .select2-selection--single {
+    width: 2em !important;
+    background-color: #ff0000;
+    }
+
 
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
