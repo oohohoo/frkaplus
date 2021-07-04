@@ -2815,9 +2815,9 @@ $("#selectone, #selecttwo, #sorto").each(function (index, item) {
  */
 
 
-$('select').select2({
+/* $('select').select2({
   dropdownParent: $('#my_amazing_modal')
-  });
+  }); */
   
   
 /* var secondo = $('#sorto').select2(); 
