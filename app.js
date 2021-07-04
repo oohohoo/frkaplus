@@ -2815,9 +2815,8 @@ $('select.combobox').select2({ width: 'style' });
 
 
 
-$("#sorto").select2({
+$('select').select2({
   dropdownParent: $('.upad'),
-  placeholder: "00000",
   minimumInputLength: 2,
   });
 
