@@ -2,7 +2,7 @@
 .select2-container {
     box-sizing: border-box;
     margin-top: 0.9em;
-   width: 13.96em!important;
+   width: 21em!important;
     display: inline-block;
     margin: 0;
     position: relative;
@@ -13,7 +13,7 @@
     box-sizing: border-box;
     cursor: pointer;
     display: block;
-    height: 3em; 
+    height: 5em; 
     user-select: none;
     -webkit-user-select: none
 }
