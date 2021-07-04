@@ -201,8 +201,8 @@ width: 6em !important;
     }
 
     
-    .select2-container .select2-container--default .select2-container--open .select2-dropdown {
-        background-color: #ffdc52!important;
+    .select2-container .select2-dropdown {
+        background-color: #ff0000!important;
         border: 0px solid #231f20!important;
         width: 6em !important;
     }
