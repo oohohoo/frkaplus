@@ -216,6 +216,14 @@ width: 6em !important;
    /*  line-height: 28px */
 }
 
+/********/
+.select2-sorto-result-8u11-title {
+background-color: yellowgreen;
+
+}
+
+
+
 .select2-container--default:focus {outline:0;}
 
 .select2-container--default .select2-selection--single .select2-selection__clear {
