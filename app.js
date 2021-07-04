@@ -2836,6 +2836,7 @@ var Demo = function (element) {
   this.element = element;
   this.regions = Array.from(document.querySelectorAll('.js-regions input'));
 	this.categories = Array.from(document.querySelectorAll('.js-categories input'));
+  this.sorte = Array.from(document.querySelectorAll('.js-sort input'));
   this.message = document.querySelector('.js-message');
 
 	this.shuffle = new Shuffle(element, {
@@ -2871,7 +2872,7 @@ SHUFFLE.JS - SORT
 */
 Demo.prototype.addSorting = function () {
   document.querySelector('.sort-order').addEventListener('change', this._handleSortChange.bind(this));
-  document.querySelector('.sort-options').addEventListener('input', this._handleSortChange.bind(this));
+  //document.querySelector('.sort-options').addEventListener('input', this._handleSortChange.bind(this));
   document.querySelector('.location-switcher_wrap').addEventListener('click', this._handleupdate.bind(this));
 
 };
@@ -2956,6 +2957,7 @@ SHUFFLE.JS - Bind event listeners for when the filters change.
 Demo.prototype._bindEventListeners = function () {
 	this._onregionChange = this._handleregionChange.bind(this);
 	this._oncategoryChange = this._handlecategoryChange.bind(this);
+  this._onsortChange = this._handleSortChange.bind(this);
 
 	this.regions.forEach(function (input) {
 		input.addEventListener('change', this._onregionChange);
@@ -2963,6 +2965,10 @@ Demo.prototype._bindEventListeners = function () {
 
 	this.categories.forEach(function (input) {
 		input.addEventListener('change', this._oncategoryChange);
+	}, this);
+  
+  this.sorte.forEach(function (input) {
+		input.addEventListener('change', this._onsortChange);
 	}, this);
 };
 
