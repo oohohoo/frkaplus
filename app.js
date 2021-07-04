@@ -2870,7 +2870,7 @@ SHUFFLE.JS - SORT
 */
 Demo.prototype.addSorting = function () {
   document.querySelector('.sort-order').addEventListener('change', this._handleSortChange.bind(this));
-  document.querySelector('.sort-options').addEventListener('change', this._handleSortChange.bind(this));
+  document.querySelector('.sort-options').addEventListener('input', this._handleSortChange.bind(this));
   document.querySelector('.location-switcher_wrap').addEventListener('click', this._handleupdate.bind(this));
 
 };
