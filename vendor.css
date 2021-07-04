@@ -200,6 +200,12 @@ width: 6em !important;
      background-position: 1.17em 1.2em!important;
     }
 
+    .sortewrap .select2-dropdown {
+        background-color: #ffdc52!important;
+        border: 0px solid #231f20!important;
+        width: 6em!important;
+    }
+
 
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
