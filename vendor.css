@@ -255,7 +255,7 @@ width: 6em !important;
   /*   background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%238C98F2'><polygon points='0,0 100,0 50,50'/></svg>") no-repeat; */
     /* background: url("https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60c7101c907ce3e5f5b7cdad_arrow_down.svg") no-repeat; */
     /* background-size: 20px; */
-    background-position: 1.25em 1.55em;
+    background-position: 1.25em 0.9em;
     background-repeat: no-repeat;
     /* background-color: #efefef; */
 }
@@ -266,7 +266,7 @@ width: 6em !important;
     color: #231f20;
     right: 0.16em;
     width: 3.33em;
-    height: 2.33em;
+    height: 1.77em;
     border-left-style: solid;
     border-left-width: 1px;
     border-left-color: #231f20;
@@ -312,7 +312,7 @@ width: 6em !important;
     right: 0.16em;
     width: 3.33em;
     color: #231f20;
-    height: 3.33em;
+    height: 1.77em;
     border-left-style: solid;
     border-left-width: 1px;
     border-left-color: #231f20;
