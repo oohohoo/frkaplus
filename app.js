@@ -2814,6 +2814,19 @@ $('select.combobox').select2({ width: 'style' });
 
 $($('#sorto').data('select2')).css('background-color', 'red');
 console.log("RED BACK");
+
+
+$('#select2-'#sorto'-container').parent().css('background-color', 'red');
+
+
+
+/* .select2-container--default .select2-selection--single {
+  background-color: #ffdc52;
+  margin-top: 0.9em;
+  border: 1px solid #231f20;
+  border-radius: 0.5px;
+} */
+
 /* $(':scrollable').scroll(function() {
   $(".select2-container.select2-dropdown-open").not($(this)).select2('positionDropdown');
   console.log("Dropdown Close");
