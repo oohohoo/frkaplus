@@ -182,13 +182,11 @@
     border-radius: 0.5px
 }
 
-.select2-container--default .select2-selection--single #sorto {
-    background-color: #ffdc52;
-    margin-top: 0.9em;
-    border: 3px solid #231f20!important;
-    border-radius: 0.5px;
-}
 
+
+.sortewrap .select2-container .select2-selection--single {
+width: 2em !important;
+}
 
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {

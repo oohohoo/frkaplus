@@ -2812,6 +2812,7 @@ $("#selectone, #selecttwo, #sorto").each(function (index, item) {
 $('select.combobox').select2({ width: 'style' });
 
 
+
 var secondo = $('#sorto').select2(); 
 $(secondo).css("background-color", "red"); 
 
