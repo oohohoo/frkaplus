@@ -290,6 +290,7 @@ function initContent() {
   hideMenu();
   yearupdate();
   openMobileMenu();
+  stopScrollMap();
   //lokacijeTabs();
   //uploadCrop();
  // splidesolo();
