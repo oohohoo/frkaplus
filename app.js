@@ -2812,8 +2812,8 @@ $("#selectone, #selecttwo, #sorto").each(function (index, item) {
 $('select.combobox').select2({ width: 'style' });
 
 
-
-
+$($('#sorto').data('select2')).css('background-color', 'red');
+console.log("RED BACK");
 /* $(':scrollable').scroll(function() {
   $(".select2-container.select2-dropdown-open").not($(this)).select2('positionDropdown');
   console.log("Dropdown Close");
@@ -2966,7 +2966,7 @@ Demo.prototype._bindEventListeners = function () {
 	this.categories.forEach(function (input) {
 		input.addEventListener('change', this._oncategoryChange);
 	}, this);
-  
+
   this.sorte.forEach(function (input) {
 		input.addEventListener('change', this._onsortChange);
 	}, this);
