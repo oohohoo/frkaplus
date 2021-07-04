@@ -2816,7 +2816,7 @@ $('select.combobox').select2({ width: 'style' });
 
 
 $('#sorto').select2({
-  dropdownParent: $('.sortewrap')
+  dropdownParent: $('.sortewrap');
   console.log("SORTEWRAP");
   }); 
   
