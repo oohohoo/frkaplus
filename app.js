@@ -2811,15 +2811,14 @@ $("#selectone, #selecttwo, #sorto").each(function (index, item) {
 
 $('select.combobox').select2({ width: 'style' });
 
-$('select').select2({
-  dropdownParent: $('#sortoparent')
-});
 
 
-var secondo = $('#sorto').select2(); 
+$("#sorto").select2({ dropdownParent: "#modal-containery" });
+
+/* var secondo = $('#sorto').select2(); 
 $(secondo).css("background-color", "red"); 
 
-
+ */
 
 
 
