@@ -324,24 +324,6 @@ width: 6em !important;
 }
 
 
-.sortewrap .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
-    
-    background: url("https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60df408d005bf78185cb2ee6_arrow--up.svg") no-repeat;
-    /* border-color: transparent transparent #888 transparent; */
-    position: absolute;
-    top: 0.5em;
-    right: 0.16em;
-    width: 3.33em;
-    color: #231f20;
-    height: 2.33em;
-    border-left-style: solid;
-    border-left-width: 1px;
-    border-left-color: #231f20;
-    background-size: 0.79em; 
-    height: 100%;
-    background-position: 1.25em 0.9em;
-    background-repeat: no-repeat;
-}
 
 
 .select2-container--default .select2-selection--multiple {
