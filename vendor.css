@@ -247,7 +247,7 @@ width: 6em !important;
 
     height: 2.3em; 
     position: absolute;
-    top: 0.5em;
+    top: 0.92em;
     right: 1px;
     /* width: 2.5em; */
    
@@ -323,8 +323,7 @@ width: 6em !important;
     background-repeat: no-repeat;
 }
 
-
-
+t
 
 .select2-container--default .select2-selection--multiple {
     background-color: #ffdc52;
