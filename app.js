@@ -2817,8 +2817,11 @@ var secondo = $('#sorto').select2();
 $(secondo).css("background-color", "red"); 
 
 
+select2-dropdown 
 
-
+$('#sorto').select2({
+  dropdownParent: $('#sortoparent')
+});
 
 
 /*
