@@ -73,13 +73,13 @@
 
 .select2-dropdown {
     background-color: #ffdc52;
-    border: 2px solid #231f20;
+    border: 0px solid #231f20;
     border-radius: 0.5px;
     box-sizing: border-box;
     display: block;
     position: absolute;
     left: -100000px;
-    width: 13.85em!important;
+    width: auto!important;
     z-index: 1051
 }
 
@@ -237,9 +237,9 @@ width: 6em !important;
 }
 
 
-#sorto {
+/* #sorto {
     height:10px;
-}
+} */
 
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
