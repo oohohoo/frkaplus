@@ -2812,12 +2812,11 @@ $("#selectone, #selecttwo, #sorto").each(function (index, item) {
 
 $('select.combobox').select2({ width: 'style' });
 
+$("#sorto").select2({
+  width: "500px",
+ // dropdownAdapter: CustomAdapter
+});  
 
-$('select').each(function () {
-  $(this).select2({
-      dropdownParent: $(this).parent()
-  });
-});
 /* 
 $('#selectone').select2({
   dropdownParent: $('#my_amazing_modal')
