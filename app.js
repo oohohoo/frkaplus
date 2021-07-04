@@ -2817,10 +2817,11 @@ $('select.combobox').select2({ width: 'style' });
 
 $("#sorto").select2({
   /* dropdownParent: $('.upad'), */
-  dropdownAutoWidth: true
+  dropdownAutoWidth: true,
+  adaptDropdownCssClass: function(c) { if (c.indexOf("s2-dropdown")===0) return c; }
    });
 
-
+   
 
 
 /*
