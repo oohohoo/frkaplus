@@ -329,6 +329,7 @@ function initContent() {
      locationMap();
     stopScrollMap();
     openMobileMenu();
+    pinHover();
     console.log("lokacije scripts loaded...");
    // ScrollTrigger.refresh(true); // ScrollTrigger Refresh
   //  console.log("scrolltrigger refreshed script load");
@@ -506,6 +507,7 @@ barba.init({
                 newSort();
                 stopScrollMap();
                 webflowInteractions();
+                pinHover();
               },
               beforeLeave({current}) {
                 map.remove();
@@ -3403,6 +3405,20 @@ $( document ).ready(function() {
 
 }
 
- 
+/*
+================================================================================
+BACK TO PREV PAGE
+================================================================================
+*/
+
+function pinHover() {
+
+$('.pin-button-link').hover(function() {
+
+  $('.pinicon').toggleClass('off');
+  $('.piniconblack').toggleClass('off');
+  });
+
+}
  
 
