@@ -3415,7 +3415,6 @@ BACK TO PREV PAGE
 function pinHover() {
 
 $('.newsimgwrap').hover(function() {
-
   $('.pinicon').toggleClass('off');
   $('.piniconblack').toggleClass('off');
   });
