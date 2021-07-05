@@ -283,7 +283,6 @@ function initContent() {
   select('body').classList.remove('is-loading');
  /* ORIGINAL*/
   initScroll();
-  //splidesolo();
   webflowInteractions();
   customCursor();
   underlineLink();
@@ -294,7 +293,7 @@ function initContent() {
   stopScrollMap();
   //lokacijeTabs();
   //uploadCrop();
-  
+ // splidesolo();
   simulatorButton();
   console.log("initial scripts loaded...");
   ScrollTrigger.refresh(true); // ScrollTrigger Refresh
@@ -345,7 +344,7 @@ function initContent() {
     openMobileMenu();
     soloMap();
     stopScrollMap();
-    //splidesolo();
+    splidesolo();
     console.log("lokacijesolo scripts loaded...");
    // ScrollTrigger.refresh(true); // ScrollTrigger Refresh
     //console.log("scrolltrigger refreshed script load");
@@ -517,7 +516,7 @@ barba.init({
 
               beforeEnter(data) {
                 soloMap();
-               // splidesolo();
+                splidesolo();
                 openTestYourDesign();
                 uploadCrop();
                 saveaspdf();
