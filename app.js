@@ -330,6 +330,7 @@ function initContent() {
     stopScrollMap();
     openMobileMenu();
     pinHover();
+    console.log("Pin hover loaded");
     console.log("lokacije scripts loaded...");
    // ScrollTrigger.refresh(true); // ScrollTrigger Refresh
   //  console.log("scrolltrigger refreshed script load");
