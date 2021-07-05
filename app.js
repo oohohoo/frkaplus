@@ -3420,15 +3420,16 @@ function pinHover() {
         paused: true
       });
 
-  pinhover.set(officon, {autoAlpha: 0});
+  //pinhover.set(officon, {autoAlpha: 0});
 
   pinhover.to(onicon, {
     autoAlpha:0, 
+    duration: 0.2,
       ease: 'power1.inOut',
     });
 
   pinhover.to(officon, {
-    autoAlpha:1,
+    autoAlpha: 1,
       ease: 'power1.inOut',
     },"<" );
 
