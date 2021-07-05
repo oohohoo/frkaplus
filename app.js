@@ -3413,7 +3413,7 @@ PIN HOVER
 */
 
 function pinHover() {
-  gsap.utils.toArray(".lokacije-small-header").forEach(container => {
+  gsap.utils.toArray(".pin-button-link").forEach(container => {
     let onicon = container.querySelector(".pinicon"),
      officon = container.querySelector(".piniconblack"),
       pinhover = gsap.timeline({
