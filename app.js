@@ -3420,7 +3420,7 @@ function pinHover() {
         paused: true
       });
 
-  pinhover.set(officon, {autoAlpha: 0})
+  pinhover.set(officon, {autoAlpha: 0});
 
   pinhover.to(onicon, {
     autoAlpha:0, 
