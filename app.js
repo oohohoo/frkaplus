@@ -3408,17 +3408,36 @@ $( document ).ready(function() {
 
 /*
 ================================================================================
-BACK TO PREV PAGE
+PIN HOVER
 ================================================================================
 */
 
 function pinHover() {
+  gsap.utils.toArray(".pin-button-link").forEach(container => {
+    let onicon = container.querySelector(".pinicon"),
+     officon = container.querySelector(".piniconblack"),
+      pinhover = gsap.timeline({
+        paused: true
+      });
 
-$('.newsimgwrap').hover(function() {
-  $('.pinicon').toggleClass('off');
-  $('.piniconblack').toggleClass('off');
-  });
+  pinhover.set(officon, {autoAlpha: 0})
 
-}
+  pinhover.to(onicon, {
+    autoAlpha:0;
+      ease: 'power1.inOut',
+    });
+
+  pinhover.to(officon, {
+    autoAlpha:1;
+      ease: 'power1.inOut',
+    },"<" );
+
+  container.addEventListener("mouseenter", () => pinhover.play());
+  container.addEventListener("mouseleave", () => pinhover.reverse());
+});
+
+
+
+
  
 
