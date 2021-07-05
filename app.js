@@ -3424,12 +3424,13 @@ function pinHover() {
 
   pinhover.to(onicon, {
     autoAlpha:0, 
-    duration: 0.2,
+    duration: 0,
       ease: 'power1.inOut',
     });
 
   pinhover.to(officon, {
     autoAlpha: 1,
+    duration: 0,
       ease: 'power1.inOut',
     },"<" );
 
