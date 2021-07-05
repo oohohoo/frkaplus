@@ -3436,7 +3436,7 @@ function pinHover() {
   container.addEventListener("mouseleave", () => pinhover.reverse());
 });
 
-
+}
 
 
  
