@@ -516,7 +516,7 @@ barba.init({
 
               beforeEnter(data) {
                 soloMap();
-               splidesolo();
+               // splidesolo();
                 openTestYourDesign();
                 uploadCrop();
                 saveaspdf();
