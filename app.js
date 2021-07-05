@@ -293,7 +293,7 @@ function initContent() {
   stopScrollMap();
   //lokacijeTabs();
   //uploadCrop();
-  splidesolo();
+  //splidesolo();
   simulatorButton();
   console.log("initial scripts loaded...");
   ScrollTrigger.refresh(true); // ScrollTrigger Refresh
@@ -344,7 +344,7 @@ function initContent() {
     openMobileMenu();
     soloMap();
     stopScrollMap();
-    splidesolo();
+   // splidesolo();
     console.log("lokacijesolo scripts loaded...");
    // ScrollTrigger.refresh(true); // ScrollTrigger Refresh
     //console.log("scrolltrigger refreshed script load");
