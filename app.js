@@ -3427,12 +3427,14 @@ function pinHover() {
     duration: 0,
       ease: 'power1.inOut',
     });
+    console.log("ON icon ");
 
   pinhover.to(officon, {
     autoAlpha: 1,
     duration: 0,
       ease: 'power1.inOut',
     },"<" );
+    console.log("OFF icon ");
 
   container.addEventListener("mouseenter", () => pinhover.play());
   container.addEventListener("mouseleave", () => pinhover.reverse());
