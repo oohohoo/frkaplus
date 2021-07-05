@@ -300,6 +300,7 @@ function initContent() {
   console.log("scrolltrigger refreshed script load");
  
  
+  
   if (document.querySelector('#home')) {
     homevideo();
     openMobileMenu();
