@@ -283,6 +283,7 @@ function initContent() {
   select('body').classList.remove('is-loading');
  /* ORIGINAL*/
   initScroll();
+  splidesolo();
   webflowInteractions();
   customCursor();
   underlineLink();
@@ -293,7 +294,7 @@ function initContent() {
   stopScrollMap();
   //lokacijeTabs();
   //uploadCrop();
-  splidesolo();
+  
   simulatorButton();
   console.log("initial scripts loaded...");
   ScrollTrigger.refresh(true); // ScrollTrigger Refresh
