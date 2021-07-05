@@ -3413,7 +3413,7 @@ BACK TO PREV PAGE
 
 function pinHover() {
 
-$('.pin-button-link').hover(function() {
+$('.newsimgwrap').hover(function() {
 
   $('.pinicon').toggleClass('off');
   $('.piniconblack').toggleClass('off');
