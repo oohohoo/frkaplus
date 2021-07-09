@@ -345,7 +345,7 @@ function initContent() {
     //mockupSimulatorProportions();
     simulatorButton();
     openMobileMenu();
-    soloMap();
+    //soloMap();
     stopScrollMap();
     splidesolo();
     console.log("SPLIDESOLO LOADDDEEEDDD");
@@ -520,7 +520,7 @@ barba.init({
               namespace: 'lokacijesolo',
 
               beforeEnter(data) {
-                soloMap();
+                //soloMap();
                 splidesolo();
                 console.log("SPLIDE before enter loaded!!!");
                 openTestYourDesign();
