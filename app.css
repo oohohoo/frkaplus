@@ -1575,3 +1575,17 @@ ZOOM IMAGE CURSOR
   .demo-image h1 {
 color: var(--frkayellow)!important;  
   }
+
+
+  /*
+================================================================================
+ČESTA PITANJA NTH CHILD
+================================================================================
+*/
+  .acc-section:nth-child(1) {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #ff0000;
+  }
+
+ 
