@@ -427,9 +427,20 @@ function initPageTransitions() {
    
   });
   // scroll to the top of the page
-  barba.hooks.enter(() => {
+/*   barba.hooks.enter(() => {
     window.scrollTo(0, 0);
+
+  }); */
+
+  barba.hooks.enter((data) => {
+    window.scrollTo(0, 0);
+    let parser = new DOMParser();
+    let dom = parser.parseFromString(data.next.html, 'text/html');
+    let nextHeader = parser.parseFromString(datar');
+    document.querySelector('.header').innerHTML = nextHeader.innerHTML;
+    console.log("HEADER SCRIPT");
   });
+
   //kill scrolltrigger
   barba.hooks.beforeLeave(() => {
    locoScroll.destroy(); 
