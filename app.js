@@ -323,7 +323,7 @@ function initContent() {
 
   }
   if (document.querySelector('#lokacije')) {
-    //-------------------------------------newSort();
+    newSort();
     sortChangeLayout();
     lokacijeBotuni();
      locationMap();
@@ -506,7 +506,7 @@ barba.init({
               namespace: 'lokacije',
 
               beforeEnter(data) {
-                //-----------------newSort();
+                newSort();
                 stopScrollMap();
                 webflowInteractions();
                 pinHover();
