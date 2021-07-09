@@ -1585,7 +1585,7 @@ color: var(--frkayellow)!important;
   .acc-section:nth-child(1) {
     border-top-style: solid;
     border-top-width: 1px;
-    border-top-color: #ff0000;
+    border-top-color: var(--frkablack);
   }
 
  
