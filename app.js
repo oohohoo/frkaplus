@@ -438,9 +438,8 @@ function initPageTransitions() {
     let dom = parser.parseFromString(data.next.html, 'text/html');
     let nextHeader = parser.parseFromString(datar');
     document.querySelector('.header').innerHTML = nextHeader.innerHTML;
-    console.log("HEADER SCRIPT");
-  });
-
+     });
+     console.log("HEADER SCRIPT");
   //kill scrolltrigger
   barba.hooks.beforeLeave(() => {
    locoScroll.destroy(); 
