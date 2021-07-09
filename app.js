@@ -348,6 +348,7 @@ function initContent() {
     soloMap();
     stopScrollMap();
     splidesolo();
+    console.log("SPLIDESOLO LOADDDEEEDDD");
     console.log("lokacijesolo scripts loaded...");
    // ScrollTrigger.refresh(true); // ScrollTrigger Refresh
     //console.log("scrolltrigger refreshed script load");
