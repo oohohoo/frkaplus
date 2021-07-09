@@ -347,7 +347,7 @@ function initContent() {
     openMobileMenu();
     soloMap();
     stopScrollMap();
-    //splidesolo();
+    splidesolo();
     console.log("lokacijesolo scripts loaded...");
    // ScrollTrigger.refresh(true); // ScrollTrigger Refresh
     //console.log("scrolltrigger refreshed script load");
