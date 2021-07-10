@@ -1839,7 +1839,8 @@ function splidesolo() {
 		}
 	} */
 } ).mount();
-
+ScrollTrigger.refresh(true); // ScrollTrigger Refresh
+console.log("scrolltrigger refreshed after SPLIDE");
 }
 
 
