@@ -313,7 +313,7 @@ function initContent() {
            // console.log('from app.js | archive');
         }
     };
-  
+  });
 
 
   select('body').classList.remove('is-loading');
