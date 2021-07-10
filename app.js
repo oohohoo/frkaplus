@@ -313,7 +313,7 @@ function initContent() {
            // console.log('from app.js | archive');
         }
     };
-  });
+ 
 
 
   select('body').classList.remove('is-loading');
@@ -322,7 +322,7 @@ function initContent() {
     // call this when dom is ready
     myscripts.init();
 
-
+  });
 
   webflowInteractions();
   customCursor();
