@@ -328,7 +328,6 @@ function initContent() {
           console.log('from app.js | lokacije');
         },
         sololokacije: function () {
-          
           uploadCrop();
           lokacijeBotuni();
           saveaspdf();
@@ -340,7 +339,8 @@ function initContent() {
           stopScrollMap();
           splidesolo();
           mockupImageResizer();
-          console.log("MOCKUP RESIZER LOADED");
+          openTestYourDesign();
+         
           
           console.log('from app.js | solo lokacije');
         },
@@ -366,7 +366,7 @@ function initContent() {
   hideMenu();
   yearupdate();
   openMobileMenu();
-  openTestYourDesign();
+  //openTestYourDesign();
   simulatorButton();
   //stopScrollMap();
   //lokacijeTabs();
