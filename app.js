@@ -328,7 +328,7 @@ function initContent() {
           console.log('from app.js | lokacije');
         },
         sololokacije: function () {
-          openTestYourDesign();
+          
           uploadCrop();
           lokacijeBotuni();
           saveaspdf();
@@ -365,6 +365,7 @@ function initContent() {
   hideMenu();
   yearupdate();
   openMobileMenu();
+  openTestYourDesign();
   //stopScrollMap();
   //lokacijeTabs();
   //uploadCrop();
