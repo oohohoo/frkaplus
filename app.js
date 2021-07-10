@@ -624,7 +624,7 @@ barba.init({
                 //soloMap();
                 //splidesolo();
                // console.log("SPLIDE before enter loaded!!!");
-                openTestYourDesign();
+               // openTestYourDesign();
                 uploadCrop();
                 saveaspdf();
                 lokacijeTabs(); 
