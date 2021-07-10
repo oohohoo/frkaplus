@@ -298,6 +298,9 @@ function initContent() {
         else if ($('body').hasClass('single-lokacije')) {
           this.sololokacije();
         }
+        else if ($('body').hasClass('page-template-kontakt')) {
+          this.kontakt();
+        }
         },
         home: function () {
             homevideo();
@@ -340,6 +343,10 @@ function initContent() {
           console.log("lokacijesolo scripts loaded...");
           console.log('from app.js | solo lokacije');
         },
+        kontakt: function () {
+          openMobileMenu();
+          console.log('from app.js | kontakt');
+        },
 
     };
   //});
@@ -364,12 +371,12 @@ function initContent() {
  // splidesolo();
   simulatorButton();
   console.log("initial scripts loaded...");
-  ScrollTrigger.refresh(true); // ScrollTrigger Refresh
-  console.log("scrolltrigger refreshed script load");
+
 
   myscripts.init();
 
-
+  ScrollTrigger.refresh(true); // ScrollTrigger Refresh
+  console.log("scrolltrigger refreshed AFTER all script load");
  
  
  
@@ -427,17 +434,16 @@ function initContent() {
     //console.log("scrolltrigger refreshed script load");
   } */
 
-  if (document.querySelector('#kontakt')) {
+ /*  if (document.querySelector('#kontakt')) {
       openMobileMenu();
     console.log("kontakt scripts loaded...");
   //  ScrollTrigger.refresh(true); // ScrollTrigger Refresh
    // console.log("scrolltrigger refreshed script load");
-  }
+  } */
 
 //DRUKČIJE SE PONAŠA AKO UBACIMO UNUTAR document ready/ 
 
-  ScrollTrigger.refresh(true); // ScrollTrigger Refresh
-  console.log("scrolltrigger refreshed after enter");
+ 
 /* locoScroll.update();
 console.log("locoscroll refreshed after enter"); */
 
