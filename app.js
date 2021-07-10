@@ -542,7 +542,7 @@ function initPageTransitions() {
       });
   }
     Webflow.destroy();
-    console.log("lwebflow interactions killed...");
+    console.log("webflow interactions killed...");
 
   /* NEW JACK SCROLLTRIGGER DESTROY*/
 /*
