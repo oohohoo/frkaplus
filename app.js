@@ -332,10 +332,7 @@ function initContent() {
   select('body').classList.remove('is-loading');
  /* ORIGINAL*/
   initScroll();
-  
-  myscripts.init();
-
-/* 
+  /* LOAD ON EVERY PAGE ---- edit*/
   webflowInteractions();
   customCursor();
   underlineLink();
@@ -351,7 +348,12 @@ function initContent() {
   console.log("initial scripts loaded...");
   ScrollTrigger.refresh(true); // ScrollTrigger Refresh
   console.log("scrolltrigger refreshed script load");
-  */
+
+  myscripts.init();
+
+
+ 
+ 
  
   
  /*  if (document.querySelector('#home')) {
