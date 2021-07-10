@@ -238,12 +238,12 @@ function initLoader() {
   tlLoaderIn
     .set(".imageloadicon", {autoAlpha: 0})
     .set(loaderContent, {autoAlpha: 1})
-    //.set(".txt", {yPercent: 100})
+    .set(".txt", {yPercent: 100})
     .set(".imageloadicon", {autoAlpha: 0})
     .set(".l1,.l3", {scaleX: 0})
     .set(".l2", {scaleY: 0})
     .set(".freveal", {yPercent: 100})
-    //.set(mask, {yPercent: 0})
+    .set(mask, {yPercent: 0})
     .set("#main", {y: 80})
 
     /* OVO JE DODANO ZA PREZENTACIJU*/
@@ -340,10 +340,8 @@ function initContent() {
           stopScrollMap();
           splidesolo();
           console.log("SPLIDESOLO LOADDDEEEDDD");
-          ScrollTrigger.refresh(true); // ScrollTrigger Refresh
-          console.log("scrolltrigger refreshed AFTER all script load");
-         /*  console.log("lokacijesolo scripts loaded...");
-          console.log('from app.js | solo lokacije'); */
+          console.log("lokacijesolo scripts loaded...");
+          console.log('from app.js | solo lokacije');
         },
        /*  kontakt: function () {
           openMobileMenu();
@@ -1841,8 +1839,7 @@ function splidesolo() {
 		}
 	} */
 } ).mount();
-/* ScrollTrigger.refresh(true); // ScrollTrigger Refresh
-console.log("scrolltrigger refreshed after SPLIDE"); */
+
 }
 
 
