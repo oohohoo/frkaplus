@@ -616,8 +616,8 @@ barba.init({
 
               beforeEnter(data) {
                 //soloMap();
-                splidesolo();
-                console.log("SPLIDE before enter loaded!!!");
+                //splidesolo();
+               // console.log("SPLIDE before enter loaded!!!");
                 openTestYourDesign();
                 uploadCrop();
                 saveaspdf();
