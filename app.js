@@ -411,7 +411,6 @@ function pageTransitionOut({
     return tl;
 }
 
-
 /*
 ================================================================================
 ♥️ BARBA GLOBAL HOOKS + PREFETCH + INIT + VIEWS + TRANSITIONS
@@ -1629,7 +1628,7 @@ function matrixtransform() {
         return results;
       })();
       
-      
+
       // Transform `element` to match the new positions of the dots whenever dragged
       $(controlPoints).draggable({
         start: () => {
