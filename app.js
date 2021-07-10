@@ -291,7 +291,7 @@ function initContent() {
             this.home();
         } else if ($('body').hasClass('page-template-onama')) {
             this.onama();
-        } 
+        }, 
         else if ($('body').hasClass('page-template-lokacije')) {
           this.lokacije();
         },
