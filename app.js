@@ -340,8 +340,10 @@ function initContent() {
           stopScrollMap();
           splidesolo();
           console.log("SPLIDESOLO LOADDDEEEDDD");
-          console.log("lokacijesolo scripts loaded...");
-          console.log('from app.js | solo lokacije');
+          ScrollTrigger.refresh(true); // ScrollTrigger Refresh
+          console.log("scrolltrigger refreshed AFTER all script load");
+         /*  console.log("lokacijesolo scripts loaded...");
+          console.log('from app.js | solo lokacije'); */
         },
        /*  kontakt: function () {
           openMobileMenu();
@@ -1839,8 +1841,8 @@ function splidesolo() {
 		}
 	} */
 } ).mount();
-ScrollTrigger.refresh(true); // ScrollTrigger Refresh
-console.log("scrolltrigger refreshed after SPLIDE");
+/* ScrollTrigger.refresh(true); // ScrollTrigger Refresh
+console.log("scrolltrigger refreshed after SPLIDE"); */
 }
 
 
