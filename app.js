@@ -238,7 +238,7 @@ function initLoader() {
   tlLoaderIn
     .set(".imageloadicon", {autoAlpha: 0})
     .set(loaderContent, {autoAlpha: 1})
-    .set(".txt", {yPercent: 100})
+    //.set(".txt", {yPercent: 100})
     .set(".imageloadicon", {autoAlpha: 0})
     .set(".l1,.l3", {scaleX: 0})
     .set(".l2", {scaleY: 0})
