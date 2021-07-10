@@ -346,7 +346,7 @@ function initContent() {
         kontakt: function () {
           openMobileMenu();
           console.log('from app.js | kontakt');
-        },
+        }
 
     };
   //});
