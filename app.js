@@ -343,10 +343,10 @@ function initContent() {
           console.log("lokacijesolo scripts loaded...");
           console.log('from app.js | solo lokacije');
         },
-        kontakt: function () {
+       /*  kontakt: function () {
           openMobileMenu();
           console.log('from app.js | kontakt');
-        }
+        } */
 
     };
   //});
