@@ -377,11 +377,11 @@ function initContent() {
 
 
   myscripts.init();
-
+/*
   ScrollTrigger.refresh(true); // ScrollTrigger Refresh
   console.log("scrolltrigger refreshed AFTER all script load");
  
- 
+ */
  
   
  /*  if (document.querySelector('#home')) {
