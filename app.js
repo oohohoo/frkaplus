@@ -613,8 +613,8 @@ barba.init({
                 pinHover();
               },
               beforeLeave({current}) {
-                map.remove();
-                console.log("map removed...");
+                //map.remove();
+               // console.log("map removed...");
               },
             }, {
 
