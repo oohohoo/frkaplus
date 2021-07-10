@@ -433,14 +433,14 @@ function initPageTransitions() {
     window.scrollTo(0, 0);
 
   }); */
-  barba.hooks.afterLeave((data) => {
+  /* barba.hooks.afterLeave((data) => {
     // Set <body> classes for "next" page
     var nextHtml = data.next.html;
     var response = nextHtml.replace(/(<\/?)body( .+?)?>/gi, '$1notbody$2>', nextHtml)
     var bodyClasses = $(response).filter('notbody').attr('class')
     $("body").attr("class", bodyClasses);
-  });
-  
+  }); */
+
   barba.hooks.enter((data) => {
     window.scrollTo(0, 0);
     let parser = new DOMParser();
