@@ -273,6 +273,7 @@ function initLoader() {
     .add(tlLoaderOut);
 }
 
+PRIJE DRKANJA PO SKRIPTAMA
 /*
 ================================================================================
 INIT CONTENT --> vodi na --> INIT SCROLL
@@ -283,6 +284,7 @@ function initContent() {
   select('body').classList.remove('is-loading');
  /* ORIGINAL*/
   initScroll();
+
   webflowInteractions();
   customCursor();
   underlineLink();
