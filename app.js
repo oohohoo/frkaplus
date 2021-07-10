@@ -273,7 +273,7 @@ function initLoader() {
     .add(tlLoaderOut);
 }
 
-PRIJE DRKANJA PO SKRIPTAMA
+
 /*
 ================================================================================
 INIT CONTENT --> vodi na --> INIT SCROLL
@@ -281,9 +281,48 @@ INIT CONTENT --> vodi na --> INIT SCROLL
 */
 function initContent() {
 
+
+  (function($) {
+
+    // your custom script
+    var myscripts = {
+        init: function () {
+            if ($('body').hasClass('home')) {
+            this.home();
+        } else if ($('body').hasClass('page-template-onama')) {
+            this.onama();
+        }
+        },
+        home: function () {
+            // home scripts
+            homevideo();
+            openMobileMenu();
+            console.log("home scripts YES");
+           // console.log('from app.js | singular');
+        },
+        onama: function () {
+            // archive script
+            outlinehero();
+            //onamacounter();
+           numberoll();
+            horizpin();
+            playpausevideo();
+            smallCounteronama();
+            openMobileMenu();
+            console.log("o nama scripts YES");
+           // console.log('from app.js | archive');
+        }
+    };
+  
+
+
   select('body').classList.remove('is-loading');
  /* ORIGINAL*/
   initScroll();
+    // call this when dom is ready
+    myscripts.init();
+
+
 
   webflowInteractions();
   customCursor();
@@ -303,15 +342,15 @@ function initContent() {
  
  
   
-  if (document.querySelector('#home')) {
+ /*  if (document.querySelector('#home')) {
     homevideo();
     openMobileMenu();
     console.log("home scripts loaded...");
     //ScrollTrigger.refresh(true); // ScrollTrigger Refresh
     //console.log("scrolltrigger refreshed script load");
-  }
+  } */
 
-  if (document.querySelector('#onama')) {
+  /* if (document.querySelector('#onama')) {
     outlinehero();
     //onamacounter();
     numberoll();
@@ -323,7 +362,7 @@ function initContent() {
    // ScrollTrigger.refresh(true); // ScrollTrigger Refresh
    // console.log("scrolltrigger refreshed script load");
 
-  }
+  } */
   if (document.querySelector('#lokacije')) {
     newSort();
     sortChangeLayout();
@@ -441,6 +480,7 @@ function initPageTransitions() {
     var response = nextHtml.replace(/(<\/?)body( .+?)?>/gi, '$1notbody$2>', nextHtml)
     var bodyClasses = $(response).filter('notbody').attr('class')
     $("body").attr("class", bodyClasses);
+    myscripts.init();
     console.log("BODY CLASSES UPDATED");
   });
   
@@ -452,6 +492,7 @@ function initPageTransitions() {
     document.querySelector('.header').innerHTML = nextHeader.innerHTML;
      });
      console.log("HEADER SCRIPT");
+
   //kill scrolltrigger
   barba.hooks.beforeLeave(() => {
    locoScroll.destroy(); 
