@@ -295,6 +295,9 @@ function initContent() {
         else if ($('body').hasClass('page-template-lokacije')) {
           this.lokacije();
         }
+        else if ($('body').hasClass('single-lokacije')) {
+          this.sololokacije();
+        }
         },
         home: function () {
             homevideo();
@@ -320,8 +323,23 @@ function initContent() {
           openMobileMenu();
           pinHover();
           console.log('from app.js | lokacije');
-   
-      }
+        },
+        sololokacije: function () {
+          openTestYourDesign();
+          uploadCrop();
+          lokacijeBotuni();
+          saveaspdf();
+          lokacijeTabs(); 
+          //mockupSimulatorProportions();
+          simulatorButton();
+          openMobileMenu();
+          //soloMap();
+          stopScrollMap();
+          splidesolo();
+          console.log("SPLIDESOLO LOADDDEEEDDD");
+          console.log("lokacijesolo scripts loaded...");
+          console.log('from app.js | solo lokacije');
+        },
 
     };
   //});
@@ -391,7 +409,7 @@ function initContent() {
   //  console.log("scrolltrigger refreshed script load");
   } */
 
-  if (document.querySelector('#lokacijesolo')) {
+/*   if (document.querySelector('#lokacijesolo')) {
     openTestYourDesign();
     uploadCrop();
     lokacijeBotuni();
@@ -407,7 +425,7 @@ function initContent() {
     console.log("lokacijesolo scripts loaded...");
    // ScrollTrigger.refresh(true); // ScrollTrigger Refresh
     //console.log("scrolltrigger refreshed script load");
-  }
+  } */
 
   if (document.querySelector('#kontakt')) {
       openMobileMenu();
