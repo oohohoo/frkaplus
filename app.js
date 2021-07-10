@@ -2311,12 +2311,12 @@ OUT OF WINDOW LISTENER
 */  
   document.addEventListener("mouseleave", e => {
     showAnimation.reverse();
-      console.log("Mouse Leave");
+     
   });
   
   document.addEventListener("mouseenter", e => {
     showAnimation.play();
-    console.log("Mouse Enter");
+   
   
 /*
 ================================================================================
