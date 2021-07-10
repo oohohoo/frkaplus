@@ -322,7 +322,7 @@ function initContent() {
  /* ORIGINAL*/
   initScroll();
   
-
+  myscripts.init();
 
 /* 
   webflowInteractions();
@@ -481,7 +481,7 @@ function initPageTransitions() {
     var response = nextHtml.replace(/(<\/?)body( .+?)?>/gi, '$1notbody$2>', nextHtml)
     var bodyClasses = $(response).filter('notbody').attr('class')
     $("body").attr("class", bodyClasses);
-    myscripts.init();
+    
     console.log("BODY CLASSES UPDATED");
   });
   
