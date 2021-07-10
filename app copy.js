@@ -273,6 +273,7 @@ function initLoader() {
     .add(tlLoaderOut);
 }
 
+
 /*
 ================================================================================
 INIT CONTENT --> vodi na --> INIT SCROLL
@@ -280,36 +281,118 @@ INIT CONTENT --> vodi na --> INIT SCROLL
 */
 function initContent() {
 
+
+ // (function($) {
+
+    // your custom script
+    var myscripts = {
+        init: function () {
+            if ($('body').hasClass('home')) {
+            this.home();
+        } else if ($('body').hasClass('page-template-onama')) {
+            this.onama();
+        } 
+        else if ($('body').hasClass('page-template-lokacije')) {
+          this.lokacije();
+        }
+        else if ($('body').hasClass('single-lokacije')) {
+          this.sololokacije();
+        }
+        else if ($('body').hasClass('page-template-kontakt')) {
+          this.kontakt();
+        }
+        },
+        home: function () {
+            homevideo();
+            openMobileMenu();
+            console.log('from app.js | home');
+        },
+        onama: function () {
+            outlinehero();
+            //onamacounter();
+            numberoll();
+            horizpin();
+            playpausevideo();
+            smallCounteronama();
+            openMobileMenu();
+            console.log('from app.js | o nama');
+        },
+        lokacije: function () {
+          newSort();
+          sortChangeLayout();
+          lokacijeBotuni();
+           locationMap();
+          stopScrollMap();
+          openMobileMenu();
+          pinHover();
+          console.log('from app.js | lokacije');
+        },
+        sololokacije: function () {
+          uploadCrop();
+          lokacijeBotuni();
+          saveaspdf();
+          lokacijeTabs(); 
+          //mockupSimulatorProportions();
+          simulatorButton();
+          openMobileMenu();
+          //soloMap();
+          stopScrollMap();
+          splidesolo();
+          mockupImageResizer();
+          openTestYourDesign();
+         
+          
+          console.log('from app.js | solo lokacije');
+        },
+       /*  kontakt: function () {
+          openMobileMenu();
+          console.log('from app.js | kontakt');
+        } */
+
+    };
+  //});
+
+  
+
+
   select('body').classList.remove('is-loading');
  /* ORIGINAL*/
   initScroll();
+  /* LOAD ON EVERY PAGE ---- edit*/
   webflowInteractions();
   customCursor();
-  underlineLink();
+  //underlineLink();
   scrollTotop();
   hideMenu();
   yearupdate();
   openMobileMenu();
-  stopScrollMap();
+  //openTestYourDesign();
+  simulatorButton();
+  //stopScrollMap();
   //lokacijeTabs();
   //uploadCrop();
  // splidesolo();
-  simulatorButton();
+  //simulatorButton();
   console.log("initial scripts loaded...");
+
+
+  myscripts.init();
+/*
   ScrollTrigger.refresh(true); // ScrollTrigger Refresh
-  console.log("scrolltrigger refreshed script load");
+  console.log("scrolltrigger refreshed AFTER all script load");
  
+ */
  
   
-  if (document.querySelector('#home')) {
+ /*  if (document.querySelector('#home')) {
     homevideo();
     openMobileMenu();
     console.log("home scripts loaded...");
     //ScrollTrigger.refresh(true); // ScrollTrigger Refresh
     //console.log("scrolltrigger refreshed script load");
-  }
+  } */
 
-  if (document.querySelector('#onama')) {
+  /* if (document.querySelector('#onama')) {
     outlinehero();
     //onamacounter();
     numberoll();
@@ -321,8 +404,8 @@ function initContent() {
    // ScrollTrigger.refresh(true); // ScrollTrigger Refresh
    // console.log("scrolltrigger refreshed script load");
 
-  }
-  if (document.querySelector('#lokacije')) {
+  } */
+/*   if (document.querySelector('#lokacije')) {
     newSort();
     sortChangeLayout();
     lokacijeBotuni();
@@ -334,9 +417,9 @@ function initContent() {
     console.log("lokacije scripts loaded...");
    // ScrollTrigger.refresh(true); // ScrollTrigger Refresh
   //  console.log("scrolltrigger refreshed script load");
-  }
+  } */
 
-  if (document.querySelector('#lokacijesolo')) {
+/*   if (document.querySelector('#lokacijesolo')) {
     openTestYourDesign();
     uploadCrop();
     lokacijeBotuni();
@@ -345,26 +428,25 @@ function initContent() {
     //mockupSimulatorProportions();
     simulatorButton();
     openMobileMenu();
-    soloMap();
+    //soloMap();
     stopScrollMap();
     splidesolo();
     console.log("SPLIDESOLO LOADDDEEEDDD");
     console.log("lokacijesolo scripts loaded...");
    // ScrollTrigger.refresh(true); // ScrollTrigger Refresh
     //console.log("scrolltrigger refreshed script load");
-  }
+  } */
 
-  if (document.querySelector('#kontakt')) {
+ /*  if (document.querySelector('#kontakt')) {
       openMobileMenu();
     console.log("kontakt scripts loaded...");
   //  ScrollTrigger.refresh(true); // ScrollTrigger Refresh
    // console.log("scrolltrigger refreshed script load");
-  }
+  } */
 
 //DRUKČIJE SE PONAŠA AKO UBACIMO UNUTAR document ready/ 
 
-  ScrollTrigger.refresh(true); // ScrollTrigger Refresh
-  console.log("scrolltrigger refreshed after enter");
+ 
 /* locoScroll.update();
 console.log("locoscroll refreshed after enter"); */
 
@@ -411,6 +493,8 @@ function pageTransitionOut({
     return tl;
 }
 
+/**/
+
 /*
 ================================================================================
 ♥️ BARBA GLOBAL HOOKS + PREFETCH + INIT + VIEWS + TRANSITIONS
@@ -427,9 +511,29 @@ function initPageTransitions() {
    
   });
   // scroll to the top of the page
-  barba.hooks.enter(() => {
+/*   barba.hooks.enter(() => {
     window.scrollTo(0, 0);
+
+  }); */
+  barba.hooks.afterLeave((data) => {
+    // Set <body> classes for "next" page
+    var nextHtml = data.next.html;
+    var response = nextHtml.replace(/(<\/?)body( .+?)?>/gi, '$1notbody$2>', nextHtml)
+    var bodyClasses = $(response).filter('notbody').attr('class')
+    $("body").attr("class", bodyClasses);
+    
+    console.log("BODY CLASSES UPDATED");
   });
+  
+  barba.hooks.enter((data) => {
+    window.scrollTo(0, 0);
+    let parser = new DOMParser();
+    let dom = parser.parseFromString(data.next.html, 'text/html');
+    //let nextHeader = parser.parseFromString(data);
+    //document.querySelector('.header').innerHTML = nextHeader.innerHTML;
+     });
+     console.log("HEADER SCRIPT");
+
   //kill scrolltrigger
   barba.hooks.beforeLeave(() => {
    locoScroll.destroy(); 
@@ -441,7 +545,7 @@ function initPageTransitions() {
       });
   }
     Webflow.destroy();
-    console.log("lwebflow interactions killed...");
+    console.log("webflow interactions killed...");
 
   /* NEW JACK SCROLLTRIGGER DESTROY*/
 /*
@@ -512,18 +616,18 @@ barba.init({
                 pinHover();
               },
               beforeLeave({current}) {
-                map.remove();
-                console.log("map removed...");
+                //map.remove();
+               // console.log("map removed...");
               },
             }, {
 
               namespace: 'lokacijesolo',
 
               beforeEnter(data) {
-                soloMap();
-                splidesolo();
-                console.log("SPLIDE before enter loaded!!!");
-                openTestYourDesign();
+                //soloMap();
+                //splidesolo();
+               // console.log("SPLIDE before enter loaded!!!");
+               // openTestYourDesign();
                 uploadCrop();
                 saveaspdf();
                 lokacijeTabs(); 
@@ -625,10 +729,18 @@ barba.init({
         
       },
 
-      afterEnter({next}) {
-      
-      },
+   /*    	after(data) {
+			let parser = new DOMParser();
+			let htmlDoc = parser.parseFromString(data.next.html.replace(/(<\/?)body( .+?)?>/gi, '$1notbody$2>', data.next.html), 'text/html');
+			let bodyClasses = htmlDoc.querySelector('notbody').getAttribute('class');
+			body.setAttribute('class', bodyClasses);
+      console.log("BODY CLASSES UPDATED");
+		//	scripts.init();
+		//	borderOut(); 
+		}, */
 
+    
+ 
       beforeEnter({next}) {
                    
      },
@@ -1613,6 +1725,7 @@ function matrixtransform() {
         return results;
       })();
       
+
       // Transform `element` to match the new positions of the dots whenever dragged
       $(controlPoints).draggable({
         start: () => {
@@ -1965,7 +2078,7 @@ function hideMenu() {
 showAnim
 //.to(".logofade", {autoAlpha:0 }, 0)
 .to(".header-nav-list", {yPercent: -50, autoAlpha:0, stagger: 0.05},"<0.1")
-.to(".header-contact--button", {scale:0.7, /*x:"3.1em"*/},"<0.2")
+//.to(".header-contact--button", {scale:0.7, /*x:"3.1em"*/},"<0.2")
 .to(".freveal", {y: 100, duration: 0.6, stagger: 0.02}, "<0.1")
 .to(".l2", {scaleY: 0, transformOrigin: 'bottom', duration: 0.3}, "<0.2")
 .to(".l3", {scaleX: 0, transformOrigin: 'left', duration: 0.3}, "<0.2")
@@ -2201,12 +2314,12 @@ OUT OF WINDOW LISTENER
 */  
   document.addEventListener("mouseleave", e => {
     showAnimation.reverse();
-      console.log("Mouse Leave");
+     
   });
   
   document.addEventListener("mouseenter", e => {
     showAnimation.play();
-    console.log("Mouse Enter");
+   
   
 /*
 ================================================================================
@@ -3445,5 +3558,49 @@ function pinHover() {
 }
 
 
- 
+/*
+================================================================================
+SIMULATOR IMAGE + MOCKUP RESIZER
+================================================================================
+*/
+
+function mockupImageResizer() {
+
+(function() {
+  //new Slideshow( document.getElementById( 'slideshow' ) );
+
+  /* Mockup responsiveness */
+  var body = docElem = window.document.documentElement,
+    wrap = document.getElementById( 'wrap' ),
+    mockup = wrap.querySelector( '.mockup' ),
+    mockupWidth = mockup.offsetWidth;
+
+  scaleMockup();
+
+  function scaleMockup() {
+    var wrapWidth = wrap.offsetWidth,
+      val = wrapWidth / mockupWidth;
+
+    mockup.style.transform = 'scale3d(' + val + ', ' + val + ', 1)';
+  }
+  
+  window.addEventListener( 'resize', resizeHandler );
+
+  function resizeHandler() {
+    function delayed() {
+      resize();
+      resizeTimeout = null;
+    }
+    if ( typeof resizeTimeout != 'undefined' ) {
+      clearTimeout( resizeTimeout );
+    }
+    resizeTimeout = setTimeout( delayed, 50 );
+  }
+
+  function resize() {
+    scaleMockup();
+  }
+})();
+
+}
 
