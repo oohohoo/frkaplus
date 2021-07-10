@@ -243,7 +243,7 @@ function initLoader() {
     .set(".l1,.l3", {scaleX: 0})
     .set(".l2", {scaleY: 0})
     .set(".freveal", {yPercent: 100})
-    .set(mask, {yPercent: 0})
+    //.set(mask, {yPercent: 0})
     .set("#main", {y: 80})
 
     /* OVO JE DODANO ZA PREZENTACIJU*/
