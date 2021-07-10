@@ -315,8 +315,7 @@ function initContent() {
     };
   //});
 
-  // call this when dom is ready
-  myscripts.init();
+  
 
 
   select('body').classList.remove('is-loading');
