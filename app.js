@@ -297,8 +297,8 @@ function initContent() {
             // home scripts
             homevideo();
             openMobileMenu();
-            console.log("home scripts YES");
-           // console.log('from app.js | singular');
+          //  console.log("home scripts YES");
+            console.log('from app.js | home');
         },
         onama: function () {
             // archive script
@@ -310,20 +310,22 @@ function initContent() {
             smallCounteronama();
             openMobileMenu();
             console.log("o nama scripts YES");
-           // console.log('from app.js | archive');
+            console.log('from app.js | o nama');
         }
     };
   //});
+
+  // call this when dom is ready
+  myscripts.init();
 
 
   select('body').classList.remove('is-loading');
  /* ORIGINAL*/
   initScroll();
-    // call this when dom is ready
-    myscripts.init();
+  
 
 
-
+/* 
   webflowInteractions();
   customCursor();
   underlineLink();
@@ -339,7 +341,7 @@ function initContent() {
   console.log("initial scripts loaded...");
   ScrollTrigger.refresh(true); // ScrollTrigger Refresh
   console.log("scrolltrigger refreshed script load");
- 
+  */
  
   
  /*  if (document.querySelector('#home')) {
