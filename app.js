@@ -360,7 +360,7 @@ function initContent() {
   /* LOAD ON EVERY PAGE ---- edit*/
   webflowInteractions();
   customCursor();
-  underlineLink();
+  //underlineLink();
   scrollTotop();
   hideMenu();
   yearupdate();
