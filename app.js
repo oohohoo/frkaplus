@@ -295,6 +295,7 @@ function initContent() {
         else if ($('body').hasClass('page-template-lokacije')) {
           this.lokacije();
         }
+        },
         home: function () {
             homevideo();
             openMobileMenu();
