@@ -637,7 +637,7 @@ barba.init({
         
       },
 
-      	after(data) {
+     /*  	after(data) {
 			let parser = new DOMParser();
 			let htmlDoc = parser.parseFromString(data.next.html.replace(/(<\/?)body( .+?)?>/gi, '$1notbody$2>', data.next.html), 'text/html');
 			let bodyClasses = htmlDoc.querySelector('notbody').getAttribute('class');
@@ -645,7 +645,7 @@ barba.init({
 		//	scripts.init();
 		//	borderOut(); 
 		},
-
+ */
       beforeEnter({next}) {
                    
      },
