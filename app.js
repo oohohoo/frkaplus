@@ -339,8 +339,9 @@ function initContent() {
           //soloMap();
           stopScrollMap();
           splidesolo();
-          console.log("SPLIDESOLO LOADDDEEEDDD");
-          console.log("lokacijesolo scripts loaded...");
+          mockupImageResizer();
+          console.log("MOCKUP RESIZER LOADED");
+          
           console.log('from app.js | solo lokacije');
         },
        /*  kontakt: function () {
@@ -3557,5 +3558,49 @@ function pinHover() {
 }
 
 
- 
+/*
+================================================================================
+SIMULATOR IMAGE + MOCKUP RESIZER
+================================================================================
+*/
+
+function mockupImageResizer() {
+
+(function() {
+  //new Slideshow( document.getElementById( 'slideshow' ) );
+
+  /* Mockup responsiveness */
+  var body = docElem = window.document.documentElement,
+    wrap = document.getElementById( 'wrap' ),
+    mockup = wrap.querySelector( '.mockup' ),
+    mockupWidth = mockup.offsetWidth;
+
+  scaleMockup();
+
+  function scaleMockup() {
+    var wrapWidth = wrap.offsetWidth,
+      val = wrapWidth / mockupWidth;
+
+    mockup.style.transform = 'scale3d(' + val + ', ' + val + ', 1)';
+  }
+  
+  window.addEventListener( 'resize', resizeHandler );
+
+  function resizeHandler() {
+    function delayed() {
+      resize();
+      resizeTimeout = null;
+    }
+    if ( typeof resizeTimeout != 'undefined' ) {
+      clearTimeout( resizeTimeout );
+    }
+    resizeTimeout = setTimeout( delayed, 50 );
+  }
+
+  function resize() {
+    scaleMockup();
+  }
+})();
+
+}
 
