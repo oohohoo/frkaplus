@@ -365,11 +365,11 @@ function initContent() {
   hideMenu();
   yearupdate();
   openMobileMenu();
-  stopScrollMap();
+  //stopScrollMap();
   //lokacijeTabs();
   //uploadCrop();
  // splidesolo();
-  simulatorButton();
+  //simulatorButton();
   console.log("initial scripts loaded...");
 
 
