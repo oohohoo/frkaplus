@@ -328,7 +328,6 @@ function initContent() {
           console.log('from app.js | lokacije');
         },
         sololokacije: function () {
-          /*
           uploadCrop();
           lokacijeBotuni();
           saveaspdf();
@@ -341,7 +340,7 @@ function initContent() {
           splidesolo();
           mockupImageResizer();
           openTestYourDesign();
-         */
+         
           
           console.log('from app.js | solo lokacije');
         },
@@ -360,7 +359,6 @@ function initContent() {
  /* ORIGINAL*/
   initScroll();
   /* LOAD ON EVERY PAGE ---- edit*/
-
   webflowInteractions();
   customCursor();
   underlineLink();
@@ -370,7 +368,6 @@ function initContent() {
   openMobileMenu();
   openTestYourDesign();
   simulatorButton();
-  
   //stopScrollMap();
   //lokacijeTabs();
   //uploadCrop();
@@ -619,7 +616,7 @@ barba.init({
                 pinHover();
               },
               beforeLeave({current}) {
-               // map.remove();
+                map.remove();
                // console.log("map removed...");
               },
             }, {
@@ -631,15 +628,12 @@ barba.init({
                 //splidesolo();
                // console.log("SPLIDE before enter loaded!!!");
                // openTestYourDesign();
-
-/*
                 uploadCrop();
                 saveaspdf();
                 lokacijeTabs(); 
                 //mockupSimulatorProportions();
+                console.log("Lokacije tabs loaded before enter");
                 simulatorButton();
-*/
-
               },
                 beforeLeave(data) {
            /*   splide.on( 'destroy', function() { */
