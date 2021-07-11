@@ -616,7 +616,7 @@ barba.init({
                 pinHover();
               },
               beforeLeave({current}) {
-                //map.remove();
+                map.remove();
                // console.log("map removed...");
               },
             }, {
@@ -2757,7 +2757,7 @@ $('.turnonpdf').click(function() {
     $('.upload-video').filepond('removeFile');
     $('.linkos.opacity').addClass('hide');
     //$('.movevideo').toggleClass('hide');
-    $('#mobile').children().filter("video").each(function(){
+    $('.videjos').children().filter("video").each(function(){
       this.pause(); // can't hurt
       delete this; // @sparkey reports that this did the trick (even though it makes no sense!)
       $(this).remove(); // this is probably what actually does the trick
