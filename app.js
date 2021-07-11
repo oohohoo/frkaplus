@@ -631,12 +631,15 @@ barba.init({
                 //splidesolo();
                // console.log("SPLIDE before enter loaded!!!");
                // openTestYourDesign();
+
+/*
                 uploadCrop();
                 saveaspdf();
                 lokacijeTabs(); 
                 //mockupSimulatorProportions();
-                console.log("Lokacije tabs loaded before enter");
                 simulatorButton();
+*/
+
               },
                 beforeLeave(data) {
            /*   splide.on( 'destroy', function() { */
