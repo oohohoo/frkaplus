@@ -1464,7 +1464,7 @@ VIZUAL SIMULATOR CSS
 .mobile {
   filter:blur(.5px);
 	overflow: hidden;
-	position: absolute;
+/*position: absolute;*/
 	z-index: 100;
  	outline: 1px solid transparent;
   -webkit-backface-visibility: hidden;
