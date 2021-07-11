@@ -359,6 +359,7 @@ function initContent() {
  /* ORIGINAL*/
   initScroll();
   /* LOAD ON EVERY PAGE ---- edit*/
+/*
   webflowInteractions();
   customCursor();
   underlineLink();
@@ -368,6 +369,7 @@ function initContent() {
   openMobileMenu();
   openTestYourDesign();
   simulatorButton();
+*/
   //stopScrollMap();
   //lokacijeTabs();
   //uploadCrop();
