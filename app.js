@@ -328,6 +328,7 @@ function initContent() {
           console.log('from app.js | lokacije');
         },
         sololokacije: function () {
+          /*
           uploadCrop();
           lokacijeBotuni();
           saveaspdf();
@@ -340,7 +341,7 @@ function initContent() {
           splidesolo();
           mockupImageResizer();
           openTestYourDesign();
-         
+         */
           
           console.log('from app.js | solo lokacije');
         },
@@ -359,7 +360,7 @@ function initContent() {
  /* ORIGINAL*/
   initScroll();
   /* LOAD ON EVERY PAGE ---- edit*/
-/*
+
   webflowInteractions();
   customCursor();
   underlineLink();
@@ -369,7 +370,7 @@ function initContent() {
   openMobileMenu();
   openTestYourDesign();
   simulatorButton();
-*/
+  
   //stopScrollMap();
   //lokacijeTabs();
   //uploadCrop();
