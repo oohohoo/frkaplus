@@ -1597,6 +1597,6 @@ color: var(--frkayellow)!important;
 VIZUAL SIMULATOR - VIDEO TAB ON/OFF
 =========================r=======================================================
 */
-.tabs-li.video.off {
+.tabs-li .video .off {
   display:none;
 }
