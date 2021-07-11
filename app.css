@@ -1592,4 +1592,11 @@ color: var(--frkayellow)!important;
     border-top-color: var(--frkablack);
   }
 
- 
+ /*
+================================================================================
+VIZUAL SIMULATOR - VIDEO TAB ON/OFF
+================================================================================
+*/
+.tabs-li:nth-child(2) {
+  display:none;
+}
