@@ -1056,7 +1056,11 @@ TEST YOUR DESIGN
   }
 
   .photo-crop-container #user_cropped_img img {
-    width: 100%;
+    width: 100%!important;
+  }
+
+  #mobile #slideshow #user_cropped_img img {
+    width: 100%!important;
   }
 
   .photo-crop-container #user_cropped_img img {
