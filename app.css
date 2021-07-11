@@ -1056,7 +1056,7 @@ TEST YOUR DESIGN
   }
 
   .photo-crop-container #user_cropped_img img {
-    max-width: 300px;
+    width: 100%;
   }
 
   .photo-crop-container #user_cropped_img img {
