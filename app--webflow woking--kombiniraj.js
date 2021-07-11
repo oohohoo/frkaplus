@@ -2693,7 +2693,7 @@ $(document).ready(function()
 
           //  var toAdd = $('input[name=checkListItem]').val();
             var item = $('.filepond--media-preview video');
-            $('.mobile').append(item);
+            $('.videjos').append(item);
             //  document.querySelector('.filepond--media-preview video').play();
            // document.getElementById('destination').play();
           $('video').trigger('play');
