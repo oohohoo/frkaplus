@@ -361,18 +361,18 @@ function initContent() {
   /* LOAD ON EVERY PAGE ---- edit*/
   webflowInteractions();
   customCursor();
-  //underlineLink();
+  underlineLink();
   scrollTotop();
   hideMenu();
   yearupdate();
   openMobileMenu();
-  //openTestYourDesign();
+  openTestYourDesign();
   simulatorButton();
   //stopScrollMap();
   //lokacijeTabs();
   //uploadCrop();
  // splidesolo();
-  //simulatorButton();
+
   console.log("initial scripts loaded...");
 
 
