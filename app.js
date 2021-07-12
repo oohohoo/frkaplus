@@ -449,7 +449,7 @@ function initContent() {
 
  
  locoScroll.update();
-console.log("locoscroll refreshed after enter"); */
+console.log("LOCO FRESHH"); */
 
 }
 
