@@ -1402,6 +1402,7 @@ TEST YOUR DESIGN MODUL
 */
 
 function openTestYourDesign() {
+  if('#tweenbox' != null)
   gsap.set('#tweenbox', {
     //autoAlpha:0,
     scaleY: 0,
