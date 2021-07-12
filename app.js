@@ -1026,7 +1026,19 @@ var fadein = gsap.timeline({defaults:{ease:'none'}})
 
 }
 
-$('.mapboxgl-ctrl-attrib').addClass('mapboxgl-compact');
+
+ /* OVO MOŽDA KORISTITI ZA LOADANJE SKRIPTI*/
+
+/*  document.body.contains(document.getElementById("map")) && $(document).ready(function() {
+  map = new map,
+ mapView.createMaps(),
+  mapView.showFilters(),
+  mapView.addSlider(),
+  project.createViewslider(1) 
+}); */
+
+/*  mapboxgl.prewarm(); */
+
 
 
 
