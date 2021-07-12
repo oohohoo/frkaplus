@@ -1034,7 +1034,23 @@ LOCATION MAP
 */
 function soloMap() {
 
-  mapboxgl.accessToken = 'pk.eyJ1IjoiZm9nc2VsbGVyIiwiYSI6ImNrN2VpbXlpbjAwNDIzbnM1N2ZhMW9laGkifQ.DUf-8r1jXF4o7ApMUcKVXQ';
+
+  <?php 
+
+  // global $my_variable;
+  // wp_localize_script('script_name','send_var', array( $my_variable ) );
+   //wp_enqueue_script('script_name');
+                       wp_enqueue_script( '/js/solomap.js', get_template_directory_uri().'/js/solomap.js'/*, array('mapboxgl')*/);
+   wp_add_inline_script( '/js/solomap.js', 'const script_vars = ' . json_encode( array(
+        'mapzoom' => get_field("solo-map-zoom"),
+        //'banner_link' => get_field("banner_link")
+        ) ), 'before' );
+  
+  ?>
+
+  console.log("SOLOO SKRIPTA ENKJU LOADED");
+
+ /*  mapboxgl.accessToken = 'pk.eyJ1IjoiZm9nc2VsbGVyIiwiYSI6ImNrN2VpbXlpbjAwNDIzbnM1N2ZhMW9laGkifQ.DUf-8r1jXF4o7ApMUcKVXQ';
 
   var bounds = [
     [13.109302076751561, 42.167215037402855],
@@ -1049,20 +1065,18 @@ function soloMap() {
     minZoom: 6.64, // note the camel-case
     maxZoom: 19,
     maxBounds: bounds,
-/*     bearing: 27,
-    pitch: 45 */
   });
-
+ */
 
 /* DODANO ALI NE RADI*/
- map.addControl(new mapboxgl.NavigationControl()); 
+/*  map.addControl(new mapboxgl.NavigationControl());  */
 
 
 
 
 
-map.doubleClickZoom.enable();
-console.log("MAP DOUBLECLICK!"); 
+/* map.doubleClickZoom.enable(); */
+/* console.log("MAP DOUBLECLICK!");  */
 
 
 
@@ -1072,10 +1086,10 @@ MAP RESIZE
 ================================================================================
 */
 
- map.once('load', () => {
+ /* map.once('load', () => {
 map.resize();
 });
-console.log("MAP RESIZE!"); 
+console.log("MAP RESIZE!");  */
 
 /*
 ================================================================================
@@ -1083,7 +1097,7 @@ FADE IN MAP
 ================================================================================
 */
  
-var fadein = gsap.timeline({defaults:{ease:'none'}})
+/* var fadein = gsap.timeline({defaults:{ease:'none'}})
 .to('.loader-icon', {autoAlpha:1})
 .to('.loader-wrap', {rotate: 360, repeat: -1, duration:2}, "<")
 .to('.loader-txt', {autoAlpha:1, repeat: -1, duration:0.5}, "<")
@@ -1091,7 +1105,7 @@ var fadein = gsap.timeline({defaults:{ease:'none'}})
 .to('.loader-icon', {autoAlpha:0}, "-=1.5")
 .to('.loader-txt', {autoAlpha:0}, "<")
 
-}
+} */
 
 
 
