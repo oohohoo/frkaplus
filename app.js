@@ -328,7 +328,7 @@ function initContent() {
           console.log('from app.js | lokacije');
         },
         sololokacije: function () {
-          soloMap();
+         // soloMap();
           console.log("SOLO MAP DIREKT");
           uploadCrop();
           lokacijeBotuni();
@@ -627,7 +627,7 @@ barba.init({
               beforeEnter(data) {
               
                 
-               soloMap();
+             //  soloMap();
                console.log("Solo map BEFORE ENTER");
                 //splidesolo();
                // console.log("SPLIDE before enter loaded!!!");
