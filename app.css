@@ -1572,7 +1572,7 @@ ZOOM IMAGE CURSOR
 ================================================================================
 */
   .demo-image {
-    cursor: url("/images/close-fullscreenn.svg") 64 64, auto; 
+    cursor: "/images/close-fullscreenn.svg" 64 64, auto; 
   
   }
 
