@@ -624,7 +624,9 @@ barba.init({
               namespace: 'lokacijesolo',
 
               beforeEnter(data) {
-
+                map.once('load', () => {
+                  map.resize();
+                  });
                 
                 //soloMap();
                 //splidesolo();
