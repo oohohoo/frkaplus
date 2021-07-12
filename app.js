@@ -624,6 +624,8 @@ barba.init({
               namespace: 'lokacijesolo',
 
               beforeEnter(data) {
+
+                
                 //soloMap();
                 //splidesolo();
                // console.log("SPLIDE before enter loaded!!!");
