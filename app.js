@@ -1035,7 +1035,7 @@ LOCATION MAP
 function soloMap() {
 
 
-  <?php 
+  
 
   // global $my_variable;
   // wp_localize_script('script_name','send_var', array( $my_variable ) );
@@ -1046,7 +1046,7 @@ function soloMap() {
         //'banner_link' => get_field("banner_link")
         ) ), 'before' );
   
-  ?>
+
 
   console.log("SOLOO SKRIPTA ENKJU LOADED");
 
