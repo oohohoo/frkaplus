@@ -449,7 +449,8 @@ function initContent() {
 
  
  locoScroll.update();
-console.log("LOCO FRESHH"); */
+console.log("LOCO FRESHH"); 
+
 
 }
 
