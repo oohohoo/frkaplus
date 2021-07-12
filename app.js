@@ -328,6 +328,8 @@ function initContent() {
           console.log('from app.js | lokacije');
         },
         sololokacije: function () {
+          soloMap();
+          console.log("SOLO MAP DIREKT");
           uploadCrop();
           lokacijeBotuni();
           saveaspdf();
@@ -335,7 +337,6 @@ function initContent() {
           //mockupSimulatorProportions();
           simulatorButton();
           openMobileMenu();
-          //soloMap();
           stopScrollMap();
           splidesolo();
           mockupImageResizer();
@@ -626,7 +627,8 @@ barba.init({
               beforeEnter(data) {
               
                 
-                //soloMap();
+               soloMap();
+               console.log("Solo map BEFORE ENTER");
                 //splidesolo();
                // console.log("SPLIDE before enter loaded!!!");
                // openTestYourDesign();
@@ -1041,7 +1043,7 @@ function soloMap() {
 
   var map = new mapboxgl.Map({
     container: 'map', // container ID
-    style: 'mapbox://styles/fogseller/cknip0h0j0oqm17mgvd8wwi8y?optimize=true', // style URL / dodano optimize=true
+    style: 'mapbox://styles/fogseller/ckqkw1hr4091g17sgan3bwjzp?optimize=true', // style URL / dodano optimize=true
     center: [16.013, 45.812], // starting position [lng, lat]
     zoom: 17.42, // starting zoom
     minZoom: 6.64, // note the camel-case
