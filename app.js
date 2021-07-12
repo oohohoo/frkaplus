@@ -3472,6 +3472,7 @@ LOKACIJE SOLO // TABS
 */
 
 function mockupSimulatorProportions() {
+  if(document.querySelector('#tweenbox')) {
 (function() {
 
   
@@ -3508,6 +3509,7 @@ function mockupSimulatorProportions() {
   }
 })();
 
+}
 }
 
 
