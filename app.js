@@ -332,7 +332,7 @@ function initContent() {
           lokacijeBotuni();
           saveaspdf();
           lokacijeTabs(); 
-          //mockupSimulatorProportions();
+          mockupSimulatorProportions();
           simulatorButton();
           openMobileMenu();
           //soloMap();
@@ -634,7 +634,7 @@ barba.init({
                 uploadCrop();
                 saveaspdf();
                 lokacijeTabs(); 
-                //mockupSimulatorProportions();
+                mockupSimulatorProportions();
                 console.log("Lokacije tabs loaded before enter");
                 simulatorButton();
               },
@@ -3474,6 +3474,7 @@ LOKACIJE SOLO // TABS
 function mockupSimulatorProportions() {
 (function() {
 
+  
   /* Mockup responsiveness */
   var body = docElem = window.document.documentElement,
     wrap = document.getElementById( 'wrap' ),
