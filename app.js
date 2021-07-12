@@ -328,8 +328,6 @@ function initContent() {
           console.log('from app.js | lokacije');
         },
         sololokacije: function () {
-         // soloMap();
-          console.log("SOLO MAP DIREKT");
           uploadCrop();
           lokacijeBotuni();
           saveaspdf();
@@ -337,8 +335,9 @@ function initContent() {
           //mockupSimulatorProportions();
           simulatorButton();
           openMobileMenu();
+          //soloMap();
           stopScrollMap();
-          splidesolo();
+          
           mockupImageResizer();
           openTestYourDesign();
          
@@ -367,8 +366,9 @@ function initContent() {
   hideMenu();
   yearupdate();
   openMobileMenu();
- //openTestYourDesign();
-  //simulatorButton();
+  openTestYourDesign();
+  simulatorButton();
+  splidesolo();
   //stopScrollMap();
   //lokacijeTabs();
   //uploadCrop();
@@ -611,14 +611,13 @@ barba.init({
               namespace: 'lokacije',
 
               beforeEnter(data) {
-                locationMap();
                 newSort();
                 stopScrollMap();
                 webflowInteractions();
                 pinHover();
               },
               beforeLeave({current}) {
-              //  map.remove();
+                map.remove();
                // console.log("map removed...");
               },
             }, {
@@ -626,11 +625,10 @@ barba.init({
               namespace: 'lokacijesolo',
 
               beforeEnter(data) {
-              
+
                 
-             //  soloMap();
-               console.log("Solo map BEFORE ENTER");
-                splidesolo();
+                //soloMap();
+                //splidesolo();
                // console.log("SPLIDE before enter loaded!!!");
                // openTestYourDesign();
                 uploadCrop();
@@ -1044,9 +1042,9 @@ function soloMap() {
 
   var map = new mapboxgl.Map({
     container: 'map', // container ID
-    style: 'mapbox://styles/fogseller/ckqkw1hr4091g17sgan3bwjzp?optimize=true', // style URL / dodano optimize=true
+    style: 'mapbox://styles/fogseller/cknip0h0j0oqm17mgvd8wwi8y?optimize=true', // style URL / dodano optimize=true
     center: [16.013, 45.812], // starting position [lng, lat]
-    zoom: 6, // starting zoom
+    zoom: 17.42, // starting zoom
     minZoom: 6.64, // note the camel-case
     maxZoom: 19,
     maxBounds: bounds,
