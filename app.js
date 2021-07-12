@@ -448,7 +448,7 @@ function initContent() {
 //DRUKČIJE SE PONAŠA AKO UBACIMO UNUTAR document ready/ 
 
  
-/* locoScroll.update();
+ locoScroll.update();
 console.log("locoscroll refreshed after enter"); */
 
 }
