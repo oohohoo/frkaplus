@@ -1402,7 +1402,8 @@ TEST YOUR DESIGN MODUL
 */
 
 function openTestYourDesign() {
-  if('#tweenbox' != null)
+  if(document.querySelector('#tweenbox')) {
+    
   gsap.set('#tweenbox', {
     //autoAlpha:0,
     scaleY: 0,
@@ -1515,7 +1516,7 @@ function openTestYourDesign() {
   
 }
 
-
+}
 
 /*
 ================================================================================
