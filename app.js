@@ -617,7 +617,7 @@ barba.init({
                 pinHover();
               },
               beforeLeave({current}) {
-                map.remove();
+              //  map.remove();
                // console.log("map removed...");
               },
             }, {
