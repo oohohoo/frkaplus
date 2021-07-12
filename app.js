@@ -2523,7 +2523,7 @@ GSAP UNDERLINE
 */
 
 function underlineLink() {
-
+  if(document.querySelector('.underline')) {
   // --- 022 - MENU ANIMATION - TL - UNDERLINE ------------------------------------------------------------------
 
 // Mouseenter function
@@ -2581,6 +2581,7 @@ workLinks.forEach((link, index, value) => {
     container.addEventListener("mouseleave", () => tl.reverse());
   });
  */
+  }
 }
 
 /*
