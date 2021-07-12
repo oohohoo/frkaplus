@@ -1571,6 +1571,10 @@ SHUFFLE.js
 ZOOM IMAGE CURSOR
 ================================================================================
 */
+  .demo-image {
+    cursor: url("/images/close-fullscreenn.svg") 64 64, auto; 
+  
+  }
 
   .demo-image h1 {
 color: var(--frkayellow)!important;  
