@@ -1811,7 +1811,7 @@ SPLIDE
 */
 
 function splidesolo() {
-
+  if(document.querySelector('.splide')) {
   const splide = new Splide(".splide", {
        // Desktop on down
 	perPage: 1,
@@ -1847,7 +1847,7 @@ function splidesolo() {
 		}
 	} */
 } ).mount();
-
+  }
 }
 
 
