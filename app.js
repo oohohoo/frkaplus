@@ -611,6 +611,7 @@ barba.init({
               namespace: 'lokacije',
 
               beforeEnter(data) {
+                locationMap();
                 newSort();
                 stopScrollMap();
                 webflowInteractions();
