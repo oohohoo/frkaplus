@@ -1045,7 +1045,7 @@ function soloMap() {
     container: 'map', // container ID
     style: 'mapbox://styles/fogseller/ckqkw1hr4091g17sgan3bwjzp?optimize=true', // style URL / dodano optimize=true
     center: [16.013, 45.812], // starting position [lng, lat]
-    zoom: 17.42, // starting zoom
+    zoom: script_vars.mapzoom, // starting zoom
     minZoom: 6.64, // note the camel-case
     maxZoom: 19,
     maxBounds: bounds,
