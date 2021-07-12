@@ -630,7 +630,7 @@ barba.init({
                 
              //  soloMap();
                console.log("Solo map BEFORE ENTER");
-                //splidesolo();
+                splidesolo();
                // console.log("SPLIDE before enter loaded!!!");
                // openTestYourDesign();
                 uploadCrop();
