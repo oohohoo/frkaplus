@@ -902,7 +902,6 @@ map.doubleClickZoom.enable();
 console.log("MAP DOUBLECLICK!"); 
 
 
-$('.mapboxgl-ctrl-attrib').addClass('mapboxgl-compact');
 
 
 /*
@@ -1026,6 +1025,8 @@ var fadein = gsap.timeline({defaults:{ease:'none'}})
 .to('.loader-txt', {autoAlpha:0}, "<")
 
 }
+
+$('.mapboxgl-ctrl-attrib').addClass('mapboxgl-compact');
 
  /* OVO MOŽDA KORISTITI ZA LOADANJE SKRIPTI*/
 
