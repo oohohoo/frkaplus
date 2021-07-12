@@ -3507,6 +3507,7 @@ function mockupSimulatorProportions() {
   function resize() {
     scaleMockup();
   }
+  console.log("P R O P O R T I O N S");
 })();
 
 }
