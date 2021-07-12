@@ -568,7 +568,7 @@ function initPageTransitions() {
   BARBA PREFETCH
   ================================================================================
   */
-  //barba.use(barbaPrefetch);
+  barba.use(barbaPrefetch);
 
   /*
   ================================================================================
@@ -577,9 +577,9 @@ function initPageTransitions() {
   */
 
 barba.init({
-      timeout: 5000,
+      timeout: 7000,
       debug: true,
-     // prefetch: true,
+      prefetch: true,
 /*
   ================================================================================
   BARBA VIEWS
