@@ -2022,7 +2022,7 @@ TEST YOUR BUTTON PIN
 */
 
 function simulatorButton() {
-  
+  if(document.querySelector('.testbutton')) {
   gsap.to(".testbutton", {
     scrollTrigger: {
       scroller: ".smooth-scroll",
@@ -2038,6 +2038,7 @@ function simulatorButton() {
     autoAlpha:0,
    
   });
+}
 }
 
 /*
