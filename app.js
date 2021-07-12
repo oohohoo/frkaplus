@@ -1036,6 +1036,7 @@ function soloMap() {
 
 
   
+  function pw_load_scripts() {
 
   // global $my_variable;
   // wp_localize_script('script_name','send_var', array( $my_variable ) );
@@ -1046,7 +1047,10 @@ function soloMap() {
         //'banner_link' => get_field("banner_link")
         ) ), 'before' );
   
-
+ 
+         
+        }
+        add_action('wp_enqueue_scripts', 'pw_load_scripts');
 
   console.log("SOLOO SKRIPTA ENKJU LOADED");
 
