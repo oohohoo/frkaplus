@@ -367,8 +367,8 @@ function initContent() {
   hideMenu();
   yearupdate();
   openMobileMenu();
-  openTestYourDesign();
-  simulatorButton();
+ //openTestYourDesign();
+  //simulatorButton();
   //stopScrollMap();
   //lokacijeTabs();
   //uploadCrop();
