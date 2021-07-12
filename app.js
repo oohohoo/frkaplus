@@ -902,6 +902,9 @@ map.doubleClickZoom.enable();
 console.log("MAP DOUBLECLICK!"); 
 
 
+$('.mapboxgl-ctrl-attrib').addClass('mapboxgl-compact');
+
+
 /*
 ================================================================================
 FLY TO LOCATION
