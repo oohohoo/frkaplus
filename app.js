@@ -940,7 +940,7 @@ document.getElementById('zagreb').addEventListener('change', function () {
   map.flyTo({
     center: [15.969, 45.802],
     zoom: 11, 
-    essential: true 
+    essential: false 
   });
 });
 
