@@ -1572,7 +1572,7 @@ ZOOM IMAGE CURSOR
 ================================================================================
 */
   .demo-image {
-    cursor: "/images/close-fullscreenn.svg" 64 64, auto; 
+    cursor: url("https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60dc69289d7b776bb9ec5ab0_close-fullscreenn.svg") 64 64, auto; 
   
   }
 
