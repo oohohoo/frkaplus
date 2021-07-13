@@ -1873,9 +1873,9 @@ function homevideo() {
     gsap.to(".apeli--hero-wrap", {
       scrollTrigger: {
         scroller: ".smooth-scroll",
-        trigger: firstSection,
+        trigger: apelTrigger,
         start: "top 20%",
-        end: "+=30%",
+        end: "+=50%",
         toggleActions: "restart none none reset",  
      
       },
