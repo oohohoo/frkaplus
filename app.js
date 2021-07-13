@@ -3384,16 +3384,16 @@ function doCoolStuff() {
     // slide in new article
     animation.to(articles[activeTab], {duration: 0.5, y:0, autoAlpha:1, ease: "none"}, "-=0.25");
 
+    window.addEventListener('resize', function(){
+ 
+      animation.to(".slider", {x:targets[activeTab].offsetLeft, width:targets[activeTab].offsetWidth});
+    
+    });
+
+    
   }
-
-
 }
 
-window.addEventListener('resize', function(){
- 
-  animation.to(".slider", {x:targets[activeTab].offsetLeft, width:targets[activeTab].offsetWidth});
-  console.log("Hello world!");
-});
 
 
 
