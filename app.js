@@ -2648,14 +2648,14 @@ $('.turnonpdf').click(function() {
   setTimeout(()=>{
   $('.linkos.opacity').toggleClass('hide');
   console.log("SHOW PDFio*");
-    },1000) 
+    },200) 
   });
 
 
   $('.closetrigger, .tabs-li').click(function(){
    $('.upload-photo').filepond('removeFile');
     $('.upload-video').filepond('removeFile');
-    $('.linkos.opacity').addClass('hide');
+    //$('.linkos.opacity').addClass('hide');
     //$('.movevideo').toggleClass('hide');
     $('.videjos').children().filter("video").each(function(){
       this.pause(); // can't hurt
