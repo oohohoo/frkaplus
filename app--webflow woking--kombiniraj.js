@@ -1880,7 +1880,7 @@ function homevideo() {
      
       },
       duration: 1,
-      autoAlpha: 1,
+      autoAlpha: 0,
       rotate:300,
     });
 
