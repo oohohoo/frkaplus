@@ -1867,7 +1867,7 @@ function homevideo() {
       scale: 1.15,
       rotate: 0,
       yPercent: -30
-      marker: true,
+      markers: true,
     })
 
     .from(".apeli--hero-wrap", {
