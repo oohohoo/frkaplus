@@ -1875,12 +1875,12 @@ function homevideo() {
       scrollTrigger: {
         scroller: ".smooth-scroll",
         trigger: apelTrigger,
-        start: "top 50%",
+        start: "top 40%",
         end: "+=50%",
         toggleActions: "restart none none reset",  
      
       },
-      duration: 1,
+      duration: 6,
       autoAlpha: 1,
       
     });
