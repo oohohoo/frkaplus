@@ -2002,7 +2002,7 @@ function homevideo() {
       yPercent: -30,
        });
 
-    gsap.set(".apeli--hero-wrap", {autoAlpha: 0})
+ /*    gsap.set(".apeli--hero-wrap", {autoAlpha: 0})
     gsap.to(".apeli--hero-wrap", {
       scrollTrigger: {
         scroller: ".smooth-scroll",
@@ -2010,7 +2010,7 @@ function homevideo() {
         start: "top 60%",
         end: "bottom 20%",
          toggleActions: "restart none none resume",  
-        /* toggleActions: "restart none none resume", */ 
+       
           
       },
       duration: 2,
@@ -2018,7 +2018,7 @@ function homevideo() {
       autoAlpha: 1,
       yPercent: -30,
       
-    });
+    }); */
 
 
 }
