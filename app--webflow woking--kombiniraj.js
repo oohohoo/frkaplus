@@ -1846,11 +1846,14 @@ HOME // VIDEO
 
 function homevideo() {
 
+ 
   let videoroll = gsap.timeline()
 
   let cover = document.querySelector('.bgvideo')
   let firstSection = document.querySelector('.big-logo')
-  let apelTrigger = document.querySelector('.apeli--hero-wrap')
+  let apelTrigger = document.querySelector('.hero-video--container')
+
+  hero-video--container
   /* .set(".apeli--hero-wrap", {autoAlpha: 0}) */
   videoroll.to(".bgvideo", {
       scrollTrigger: {
@@ -1869,18 +1872,18 @@ function homevideo() {
     .from(".apeli--hero-wrap", {
       scrollTrigger: {
         scroller: ".smooth-scroll",
-        trigger: firstSection,
+        trigger: apelTrigger,
         start: 'top 20%',
         end: "+=30%",
-        /* toggleActions: "restart none none reset" */
+         toggleActions: "restart none none reset" 
         /* scrub: 2, */
       },
       duration: 0.4,
       autoAlpha: 0,
+      yPercent: -30,
     })
 
 }
-
 /*
 ================================================================================
 O NAMA // 14/15 ROLL
