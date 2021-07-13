@@ -3384,12 +3384,8 @@ function doCoolStuff() {
     // slide in new article
     animation.to(articles[activeTab], {duration: 0.5, y:0, autoAlpha:1, ease: "none"}, "-=0.25");
 
-   
-
-
   }
 
- 
 
 }
 
