@@ -2008,15 +2008,15 @@ function homevideo() {
         scroller: ".smooth-scroll",
         trigger: apelTrigger,
         start: "top 60%",
-        end: "bottom center",
+        end: "bottom 20%",
          toggleActions: "restart none none resume",  
         /* toggleActions: "restart none none resume", */ 
-        scrub: 1,
-        markers:true,
+          
       },
       duration: 2,
       rotate:30,
       autoAlpha: 1,
+      yPercent: -30,
       
     });
 
