@@ -1985,7 +1985,7 @@ function homevideo() {
 
   let cover = document.querySelector('.bgvideo')
   let firstSection = document.querySelector('.big-logo')
-  let apelTrigger = document.querySelector('.apeli--hero-wrap')
+  let apelTrigger = document.querySelector('.hero--header--wrapper')
 
     /* .set(".apeli--hero-wrap", {autoAlpha: 0}) */
     videoroll.to(cover, {
@@ -2007,8 +2007,8 @@ function homevideo() {
       scrollTrigger: {
         scroller: ".smooth-scroll",
         trigger: apelTrigger,
-        start: "top 50%",
-        end: "+=10%",
+        start: "top 60%",
+        end: "+=30%",
          toggleActions: "restart none none resume",  
         /* toggleActions: "restart none none resume", */ 
         scrub: 1,
