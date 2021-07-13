@@ -1012,7 +1012,7 @@ console.log("STORAGE CLEARED");  */
 map.on("load", function (e) {
   const mapContainerEl = document.getElementById("map");
   mapContainerEl.style.visibility = "visible";
-  mapContainerEl.style.opacity = "1";
+  //mapContainerEl.style.opacity = "1";
 });
 
 /*
