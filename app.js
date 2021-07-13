@@ -3386,7 +3386,7 @@ function doCoolStuff() {
 
     window.addEventListener('resize', function(){
  
-      animation.to(".slider", {x:targets[activeTab].offsetLeft, width:targets[activeTab].offsetWidth});
+      animation.to(".slider", {duration:0.1, x:targets[activeTab].offsetLeft, width:targets[activeTab].offsetWidth});
     
     });
 
