@@ -1876,7 +1876,7 @@ function homevideo() {
         trigger: apelTrigger,
         start: "top 60%",
         end: "+=30%",
-         toggleActions: "restart none none reset",  
+         toggleActions: "restart none none resume",  
         /* toggleActions: "restart none none resume", */ 
      
       },
