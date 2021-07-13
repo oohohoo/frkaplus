@@ -2014,6 +2014,7 @@ function homevideo() {
         
       },
       duration: 2,
+      rotate:30,
       autoAlpha: 1,
       
     });
