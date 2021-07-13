@@ -2671,7 +2671,7 @@ $('.upload-video').on('FilePond:removefile', function () {
 });
 
   
-
+/*
   $('.closetrigger, .tabs-li').click(function(){
    $('.upload-photo').filepond('removeFile');
     $('.upload-video').filepond('removeFile');
@@ -2686,7 +2686,7 @@ $('.upload-video').on('FilePond:removefile', function () {
    
     console.log("BOTH FILEPOND and Video slot cleared on exit and tabs...");
 });
-
+*/
   
 
 
