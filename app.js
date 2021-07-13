@@ -2651,18 +2651,18 @@ $('#crop_img').click(function() {
      },1500)  
   });
 
-
+/*
   $('.filepond--file-action-button.filepond--file-action-button::after').click(function() {
     setTimeout(()=>{ 
    $('.movevideo').addClass('hide');
    console.log("SHOW PDFio*");
       },1500)  
    });
- 
+ */
 
 /* VIDEO BUTTOINs*/
-$('.upload-video').on('FilePond:addfile', function (e) {
-  console.log('file added event YOYO', e);
+$('.upload-video').on('FilePond:addfile', function () {
+  $('.movevideo').addClass('hide');
 });
    
 
