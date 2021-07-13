@@ -1868,22 +1868,22 @@ function homevideo() {
       rotate: 0,
       yPercent: -30,
       markers: true,
-    })
+    });
 
-    .from(".apeli--hero-wrap", {
-      /* scrollTrigger: {
+    gsap.to(".apeli--hero-wrap", {
+      scrollTrigger: {
         scroller: ".smooth-scroll",
         trigger: firstSection,
-        start: 'top 30%',
-        end: "+=60%",
-         toggleActions: "restart none none reset",  
-        /* scrub: 2, */
-      /* },  */
+        start: "top 20%",
+        end: "+=30%",
+        toggleActions: "restart none none reset",  
+     
+      },
       duration: 0.4,
       autoAlpha: 0,
       rotate:300,
-     // yPercent: -30,
-    })
+    });
+
 
 }
 /*
