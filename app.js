@@ -2816,12 +2816,12 @@ $('.turnonpdf').click(function() {
 const videoplace = document.querySelector('.filepond--media-preview-wrapper');
 const botun = document.querySelector('.botun'); */
 
-const pondvideo = FilePond.create({
+/* const pondvideo = FilePond.create({
   name: 'filepondvideo',
           acceptedFileTypes: ['video/quicktime', 'video/mp4'],
           checkValidity: true,
           dropValidation: true,
-          });
+          }); */
 
 // Add it to the DOM
 //videoupload.appendChild(pondvideo.element);
