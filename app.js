@@ -2654,7 +2654,7 @@ $('#crop_img').click(function() {
 
   $('.filepond--file-action-button.filepond--file-action-button::after').click(function() {
     setTimeout(()=>{ 
-   $('.linkos.opacity').removeClass('hide');
+   $('.linkos.opacity').addClass('hide');
    console.log("SHOW PDFio*");
       },1500)  
    });
