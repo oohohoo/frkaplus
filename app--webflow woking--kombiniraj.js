@@ -1877,7 +1877,7 @@ function homevideo() {
         start: "top 60%",
         end: "+=50%",
         /* toggleActions: "restart none none reset",  */
-        toggleActions: "restart pause resume pause", 
+        toggleActions: "restart none none resume", 
      
       },
       duration: 2,
