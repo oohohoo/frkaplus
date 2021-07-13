@@ -2644,7 +2644,7 @@ function uploadCrop() {
 
 // Show PDF Button
 
-$('.turnonpdf').click(function() {
+$('#crop_img').click(function() {
  /*  setTimeout(()=>{ */
   $('.linkos.opacity').removeClass('hide');
   console.log("SHOW PDFio*");
