@@ -1988,7 +1988,7 @@ function homevideo() {
   let apelTrigger = document.querySelector('.hero--header--wrapper')
 
     /* .set(".apeli--hero-wrap", {autoAlpha: 0}) */
-    videoroll.to(cover, {
+  /*   videoroll.to(cover, {
       scrollTrigger: {
         scroller: ".smooth-scroll",
         trigger: firstSection,
@@ -1996,11 +1996,11 @@ function homevideo() {
         end: "+=30%",
         scrub: 2,
       },
-      /*clipPath: 'inset(60%)',*/
+     
       scale: 1.15,
       rotate: 0,
       yPercent: -30,
-       });
+       }); */
 
  /*    gsap.set(".apeli--hero-wrap", {autoAlpha: 0})
     gsap.to(".apeli--hero-wrap", {
