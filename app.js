@@ -2011,7 +2011,7 @@ function homevideo() {
         end: "+=30%",
          toggleActions: "restart none none resume",  
         /* toggleActions: "restart none none resume", */ 
-        scrub: 1,
+        
       },
       duration: 2,
       autoAlpha: 1,
