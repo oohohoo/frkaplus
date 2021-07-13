@@ -2645,12 +2645,12 @@ function uploadCrop() {
 // Show PDF Button
 
 $('.turnonpdf').click(function() {
-  setTimeout(()=>{
-  $('.linkos.opacity').toggleClass('hide');
+ /*  setTimeout(()=>{ */
+  $('.linkos.opacity').removeClass('hide');
   console.log("SHOW PDFio*");
-    },200) 
+   /*  },200)  */
   });
-
+/*
 
   $('.closetrigger, .tabs-li').click(function(){
    $('.upload-photo').filepond('removeFile');
@@ -2667,6 +2667,9 @@ $('.turnonpdf').click(function() {
 });
 
   
+
+
+*/
 
 
   // Hide PDF Button
