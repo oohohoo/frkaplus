@@ -1855,7 +1855,7 @@ function homevideo() {
 
 
   /* .set(".apeli--hero-wrap", {autoAlpha: 0}) */
-  videoroll.to(".bgvideo", {
+  videoroll.to(cover, {
       scrollTrigger: {
         scroller: ".smooth-scroll",
         trigger: firstSection,
@@ -1867,6 +1867,7 @@ function homevideo() {
       scale: 1.15,
       rotate: 0,
       yPercent: -30
+      marker: true,
     })
 
     .from(".apeli--hero-wrap", {
