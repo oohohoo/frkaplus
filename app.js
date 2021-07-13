@@ -2667,7 +2667,7 @@ $('#crop_img').click(function() {
    $('.upload-photo').filepond('removeFile');
     $('.upload-video').filepond('removeFile');
     $('.linkos.opacity').addClass('hide');
-    $('.movevideo').addClass('hide');
+    $('.movevideo').removeClass('hide');
     //$('.movevideo').toggleClass('hide');
     $('.videjos').children().filter("video").each(function(){
       this.pause(); // can't hurt
