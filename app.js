@@ -2677,22 +2677,22 @@ $('.upload-video').on('FilePond:removefile', function () {
 });
 
   
-/*
+
   $('.closetrigger, .tabs-li').click(function(){
    $('.upload-photo').filepond('removeFile');
     $('.upload-video').filepond('removeFile');
-    $('.linkos.opacity').addClass('hide');
+  //  $('.linkos.opacity').addClass('hide');
     //$('.movevideo').removeClass('hide');
     //$('.movevideo').toggleClass('hide');
-    $('.videjos').children().filter("video").each(function(){
+   /*  $('.videjos').children().filter("video").each(function(){
       this.pause(); // can't hurt
       delete this; // @sparkey reports that this did the trick (even though it makes no sense!)
       $(this).remove(); // this is probably what actually does the trick
-    });
+    }); */
    
     console.log("BOTH FILEPOND and Video slot cleared on exit and tabs...");
 });
-*/
+
   
 
 
