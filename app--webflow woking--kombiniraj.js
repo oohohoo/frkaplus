@@ -1871,17 +1871,17 @@ function homevideo() {
     })
 
     .from(".apeli--hero-wrap", {
-      scrollTrigger: {
+      /* scrollTrigger: {
         scroller: ".smooth-scroll",
         trigger: firstSection,
         start: 'top 30%',
         end: "+=60%",
-         /* toggleActions: "restart none none reset",  */
+         toggleActions: "restart none none reset",  
         /* scrub: 2, */
-      },
+      /* },  */
       duration: 0.4,
       autoAlpha: 0,
-      marker: true,
+      rotate:300,
      // yPercent: -30,
     })
 
