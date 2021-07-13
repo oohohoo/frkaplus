@@ -890,7 +890,7 @@ var fadein = gsap.timeline({defaults:{ease:'none'}})
 .to('.loader-icon', {autoAlpha:1})
 .to('.loader-wrap', {rotate: 360, repeat: -1, duration:1}, "<")
 .to('.loader-txt', {autoAlpha:1, repeat: -1, duration:0.5}, "<")
-.to('.static', {autoAlpha:0, duration:1.5, delay:0.5})
+.to('.static', {autoAlpha:0, duration:1.5, delay:3})
 .to('.loader-icon', {autoAlpha:0}, "-=1.5")
 .to('.loader-txt', {autoAlpha:0}, "<")
 
