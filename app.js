@@ -2660,7 +2660,12 @@ $('#crop_img').click(function() {
    });
  
 
- 
+/* VIDEO BUTTOINs*/
+$('.upload-video').on('FilePond:addfile', function (e) {
+  console.log('file added event YOYO', e);
+});
+   
+
   
 
   $('.closetrigger, .tabs-li').click(function(){
