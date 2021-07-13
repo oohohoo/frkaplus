@@ -2665,6 +2665,10 @@ $('.upload-video').on('FilePond:addfile', function () {
   $('.movevideo').removeClass('hide');
 });
    
+/* VIDEO BUTTOINs*/
+$('.upload-video').on('FilePond:removefile', function () {
+  $('.movevideo').addClass('hide');
+});
 
   
 
