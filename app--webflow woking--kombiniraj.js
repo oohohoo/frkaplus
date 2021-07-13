@@ -1870,7 +1870,7 @@ function homevideo() {
       markers: true,
     });
 
-    .set(".apeli--hero-wrap", {autoAlpha: 0})
+    gsap.set(".apeli--hero-wrap", {autoAlpha: 0})
     gsap.to(".apeli--hero-wrap", {
       scrollTrigger: {
         scroller: ".smooth-scroll",
