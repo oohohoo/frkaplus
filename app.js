@@ -2650,12 +2650,12 @@ $('#crop_img').click(function() {
   console.log("SHOW PDFio*");
    /*  },200)  */
   });
-/*
+
 
   $('.closetrigger, .tabs-li').click(function(){
    $('.upload-photo').filepond('removeFile');
     $('.upload-video').filepond('removeFile');
-    //$('.linkos.opacity').addClass('hide');
+    $('.linkos.opacity').addClass('hide');
     //$('.movevideo').toggleClass('hide');
     $('.videjos').children().filter("video").each(function(){
       this.pause(); // can't hurt
@@ -2669,7 +2669,7 @@ $('#crop_img').click(function() {
   
 
 
-*/
+
 
 
   // Hide PDF Button
