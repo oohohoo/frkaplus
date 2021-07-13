@@ -2645,7 +2645,7 @@ function uploadCrop() {
 // Show PDF Button
 
 $('#crop_img').click(function() {
-   setTimeout(()=>{ */
+   setTimeout(()=>{ 
   $('.linkos.opacity').removeClass('hide');
   console.log("SHOW PDFio*");
      },200)  
