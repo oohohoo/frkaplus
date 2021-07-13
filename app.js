@@ -2008,7 +2008,7 @@ function homevideo() {
         scroller: ".smooth-scroll",
         trigger: apelTrigger,
         start: "top 50%",
-        end: "+=30%",
+        end: "+=10%",
          toggleActions: "restart none none resume",  
         /* toggleActions: "restart none none resume", */ 
         scrub: 1,
