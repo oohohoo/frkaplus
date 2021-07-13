@@ -1853,7 +1853,7 @@ function homevideo() {
   let firstSection = document.querySelector('.big-logo')
   let apelTrigger = document.querySelector('.hero-video--container')
 
-  hero-video--container
+
   /* .set(".apeli--hero-wrap", {autoAlpha: 0}) */
   videoroll.to(".bgvideo", {
       scrollTrigger: {
