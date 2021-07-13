@@ -3389,15 +3389,15 @@ function doCoolStuff() {
 
   }
 
-  window.addEventListener('resize', function(){
  
-    animation.to(".slider", {x:targets[activeTab].offsetLeft, width:targets[activeTab].offsetWidth});
-    console.log("Hello world!");
-  });
-
 
 }
 
+window.addEventListener('resize', function(){
+ 
+  animation.to(".slider", {x:targets[activeTab].offsetLeft, width:targets[activeTab].offsetWidth});
+  console.log("Hello world!");
+});
 
 
 
