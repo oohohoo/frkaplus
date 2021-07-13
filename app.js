@@ -1985,11 +1985,10 @@ function homevideo() {
 
   let cover = document.querySelector('.bgvideo')
   let firstSection = document.querySelector('.big-logo')
-  let apelTrigger = document.querySelector('.hero-video--container')
+  let apelTrigger = document.querySelector('.apeli--hero-wrap')
 
-  hero-video--container
-  /* .set(".apeli--hero-wrap", {autoAlpha: 0}) */
-  videoroll.to(".bgvideo", {
+    /* .set(".apeli--hero-wrap", {autoAlpha: 0}) */
+    videoroll.to(cover, {
       scrollTrigger: {
         scroller: ".smooth-scroll",
         trigger: firstSection,
@@ -2000,22 +1999,25 @@ function homevideo() {
       /*clipPath: 'inset(60%)',*/
       scale: 1.15,
       rotate: 0,
-      yPercent: -30
-    })
+      yPercent: -30,
+       });
 
-    .from(".apeli--hero-wrap", {
+    gsap.set(".apeli--hero-wrap", {autoAlpha: 0})
+    gsap.to(".apeli--hero-wrap", {
       scrollTrigger: {
         scroller: ".smooth-scroll",
         trigger: apelTrigger,
-        start: 'top 20%',
+        start: "top 60%",
         end: "+=30%",
-         toggleActions: "restart none none reset" 
-        /* scrub: 2, */
+         toggleActions: "restart none none resume",  
+        /* toggleActions: "restart none none resume", */ 
+        scrub: 1,
       },
-      duration: 0.4,
-      autoAlpha: 0,
-      yPercent: -30,
-    })
+      duration: 2,
+      autoAlpha: 1,
+      
+    });
+
 
 }
 
