@@ -1851,11 +1851,10 @@ function homevideo() {
 
   let cover = document.querySelector('.bgvideo')
   let firstSection = document.querySelector('.big-logo')
-  let apelTrigger = document.querySelector('.apeli--hero-wrap')
+  let apelTrigger = document.querySelector('.hero--header--wrapper')
 
-
-  /* .set(".apeli--hero-wrap", {autoAlpha: 0}) */
-  videoroll.to(cover, {
+    /* .set(".apeli--hero-wrap", {autoAlpha: 0}) */
+    videoroll.to(cover, {
       scrollTrigger: {
         scroller: ".smooth-scroll",
         trigger: firstSection,
@@ -1875,16 +1874,17 @@ function homevideo() {
         scroller: ".smooth-scroll",
         trigger: apelTrigger,
         start: "top 60%",
-        end: "+=30%",
+        end: "bottom 20%",
          toggleActions: "restart none none resume",  
         /* toggleActions: "restart none none resume", */ 
-        scrub: 1,
+          
       },
       duration: 2,
+      rotate:30,
       autoAlpha: 1,
+      yPercent: -30,
       
     });
-
 
 }
 /*
