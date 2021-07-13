@@ -1867,8 +1867,7 @@ function homevideo() {
       scale: 1.15,
       rotate: 0,
       yPercent: -30,
-      markers: true,
-    });
+       });
 
     gsap.set(".apeli--hero-wrap", {autoAlpha: 0})
     gsap.to(".apeli--hero-wrap", {
