@@ -2668,6 +2668,12 @@ $('.upload-video').on('FilePond:addfile', function () {
 /* VIDEO BUTTOINs*/
 $('.upload-video').on('FilePond:removefile', function () {
   $('.movevideo').addClass('hide');
+  $('.videjos').children().filter("video").each(function(){
+    this.pause(); // can't hurt
+    delete this; // @sparkey reports that this did the trick (even though it makes no sense!)
+    $(this).remove(); // this is probably what actually does the trick
+  });
+ 
 });
 
   
