@@ -1616,5 +1616,5 @@ STATIC IMAGE ZA MAPU
 
 
 #map {
-  visibility: hidden;
+  opacity: 0;
 }
