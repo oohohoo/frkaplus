@@ -1851,7 +1851,7 @@ function homevideo() {
 
   let cover = document.querySelector('.bgvideo')
   let firstSection = document.querySelector('.big-logo')
-  let apelTrigger = document.querySelector('.hero-video--container')
+  let apelTrigger = document.querySelector('.apeli--hero-wrap')
 
 
   /* .set(".apeli--hero-wrap", {autoAlpha: 0}) */
@@ -1874,13 +1874,13 @@ function homevideo() {
       scrollTrigger: {
         scroller: ".smooth-scroll",
         trigger: apelTrigger,
-        start: "top 20%",
+        start: "top 30%",
         end: "+=50%",
         toggleActions: "restart none none reset",  
      
       },
-      duration: 0.4,
-      autoAlpha: 0,
+      duration: 1,
+      autoAlpha: 1,
       rotate:300,
     });
 
