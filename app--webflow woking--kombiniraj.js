@@ -1864,7 +1864,7 @@ function homevideo() {
       },
       /*clipPath: 'inset(60%)',*/
       scale: 1.15,
-      rotate: 0,
+      rotate: 30,
       yPercent: -30,
        });
 
