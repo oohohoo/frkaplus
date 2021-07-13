@@ -1881,6 +1881,7 @@ function homevideo() {
       },
       duration: 0.4,
       autoAlpha: 0,
+      marker: true,
      // yPercent: -30,
     })
 
