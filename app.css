@@ -1480,6 +1480,14 @@ VIZUAL SIMULATOR CSS
 }
 
 
+/* BOTUNI VIDEO UPLOAD*/
+
+.movevideo.hide {
+  display:none;
+}
+
+
+
 /*
 ================================================================================
 SHUFFLE.js
