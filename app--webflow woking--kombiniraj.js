@@ -1875,7 +1875,7 @@ function homevideo() {
         scroller: ".smooth-scroll",
         trigger: apelTrigger,
         start: "top 60%",
-        end: "bottom 30%",
+        end: "+=30%",
          toggleActions: "restart none none reset",  
         /* toggleActions: "restart none none resume", */ 
      
