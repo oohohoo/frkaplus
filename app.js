@@ -1451,21 +1451,18 @@ function openTestYourDesign() {
         })
 
         .to('#tweenbutton', {
-          scale: 0.7,
-          duration: 0.64,
+          scale: 0.9,
           ease: 'power2.inOut',
           overwrite: "auto"
         }, "<")
         
         .to('.vizsim-txt', {
           autoAlpha: 0,
-          duration: 0.64,
           overwrite: "auto"
         }, "<")
 
         .to('.closetrigger', {
           autoAlpha: 1,
-          duration: 0.64,
           overwrite: "auto"
         }, "<")
 
