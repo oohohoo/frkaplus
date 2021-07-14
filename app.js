@@ -3474,12 +3474,12 @@ PIN HOVER
 */
 
 function pinHover() {
-  $('.pin-button-link').on('mouseenter', function() {
+  $('.pin-button-link').eq(0).on('mouseenter', function() {
     $('.pinicon').eq(0).addClass('hide');
     $('.piniconblack').eq(0).removeClass('hide');
   });
 
-  $('.pin-button-link').on('mouseleave', function() {
+  $('.pin-button-link').eq(0).on('mouseleave', function() {
     $('.piniconblack').eq(0).addClass('hide');
     $('.pinicon').eq(0).removeClass('hide');
   });
