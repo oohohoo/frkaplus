@@ -3474,15 +3474,19 @@ PIN HOVER
 */
 
 function pinHover() {
-  $('.pin-button-link').eq(0).on('mouseenter', function() {
-    $('.pinicon').eq(0).addClass('hide');
-    $('.piniconblack').eq(0).removeClass('hide');
+  $('.pin-button-link').on('hover', function() {
+    $( ".pinicon" ).each(function() {
+      $( this ).toggleClass( "hide" );
+    });
+
+    $( ".piniconblack" ).each(function() {
+      $( this ).toggleClass( "hide" );
+    });
+
+
   });
 
-  $('.pin-button-link').eq(0).on('mouseleave', function() {
-    $('.piniconblack').eq(0).addClass('hide');
-    $('.pinicon').eq(0).removeClass('hide');
-  });
+
 
 
 }
