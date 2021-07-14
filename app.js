@@ -3475,13 +3475,13 @@ PIN HOVER
 
 function pinHover() {
   $('.pin-button-link').on('mouseenter', function() {
-    $('.pinicon').addClass('hide');
-    $('.piniconblack').removeClass('hide');
+    $('.pinicon').eq(0).addClass('hide');
+    $('.piniconblack').eq(0).removeClass('hide');
   });
 
   $('.pin-button-link').on('mouseleave', function() {
-    $('.piniconblack').addClass('hide');
-    $('.pinicon').removeClass('hide');
+    $('.piniconblack').eq(0).addClass('hide');
+    $('.pinicon').eq(0).removeClass('hide');
   });
 
 
