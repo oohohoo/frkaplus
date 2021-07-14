@@ -1451,7 +1451,7 @@ function openTestYourDesign() {
         })
 
         .to('#tweenbutton', {
-          scale: 0.9,
+          scale: 0.8,
           ease: 'power2.inOut',
           overwrite: "auto"
         }, "<")
