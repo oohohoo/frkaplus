@@ -3486,6 +3486,18 @@ function pinHover() {
 
   });
 
+  $('.pin-button-link').on('mouseout', function() {
+    $( ".pinicon" ).each(function() {
+      $( this ).removeClass( "hide" );
+    });
+
+    $( ".piniconblack" ).each(function() {
+      $( this ).addClass( "hide" );
+    });
+
+
+  });
+
 
 
 
