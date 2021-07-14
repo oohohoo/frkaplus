@@ -1485,7 +1485,7 @@ VIZUAL SIMULATOR CSS
 .movevideo.hide {
   display:none;
 }
-.pdf .butonio {
+.pdf.butonio {
 position: relative;
 top: -5em;
 }
