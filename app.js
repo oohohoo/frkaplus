@@ -2673,7 +2673,10 @@ $('.upload-video').on('FilePond:removefile', function () {
  
 });
 
-  
+$('.movevideo').click(function(){
+  $('.movevideo').addClass('hide');
+});
+
 
   $('.closetrigger, .tabs-li').click(function(){
    $('.upload-photo').filepond('removeFile');
