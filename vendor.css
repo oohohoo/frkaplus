@@ -178,7 +178,7 @@
 .select2-container--default .select2-selection--single {
     background-color: #ffdc52;
     margin-top: 0.9em;
-    border: 2px solid #231f20; 
+    border: 1px solid #231f20; 
     border-radius: 0.5px
 }
 
