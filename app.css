@@ -1485,7 +1485,10 @@ VIZUAL SIMULATOR CSS
 .movevideo.hide {
   display:none;
 }
-
+.pdf .butonio {
+position: relative;
+top: -0.5em;
+}
 
 
 /*
