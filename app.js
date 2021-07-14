@@ -3474,32 +3474,16 @@ PIN HOVER
 */
 
 function pinHover() {
-  gsap.utils.toArray(".pin-button-link").forEach(container => {
-    let onicon = container.querySelector(".pinicon"),
-     officon = container.querySelector(".piniconblack"),
-      pinhover = gsap.timeline({
-        paused: true
-      });
+  $('.pin-button-link').on('mouseenter', function() {
+    $('.pinicon').addClass('hide');
+    $('.piniconblack').removeClass('hide');
+  });
 
-  pinhover.set(officon, {autoAlpha: 0, rotate:320});
+  $('.pin-button-link').on('mouseleave', function() {
+    $('.piniconblack').addClass('hide');
+    $('.pinicon').removeClass('hide');
+  });
 
-  pinhover.to(onicon, {
-    autoAlpha:0, 
-    duration: 0,
-      ease: 'power1.inOut',
-    });
-    console.log("ON icon ");
-
-  pinhover.to(officon, {
-    autoAlpha: 1,
-    duration: 0,
-      ease: 'power1.inOut',
-    },"<" );
-    console.log("OFF icon ");
-
-  container.addEventListener("mouseenter", () => pinhover.play());
-  container.addEventListener("mouseleave", () => pinhover.reverse());
-});
 
 }
 
