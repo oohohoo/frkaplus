@@ -1194,7 +1194,6 @@ sections.forEach((section, index) => {
 
         gsap.to(ikona, 1, {
           rotate: -360,
-          x: 60,
           ease: 'power2.out',
           onComplete:function() {
             locoScroll.update();
@@ -1220,7 +1219,6 @@ sections.forEach((section, index) => {
       })
       gsap.to(ikona, 1, {
         rotate: 360,
-        x: 60,
         ease: 'power2.out',
         onComplete:function() {
           locoScroll.update();
@@ -1424,7 +1422,7 @@ function accordionhover() {
           });
 
         tlhover.to(naslov, {
-          x: 2,
+          x: 5,
           duration: 0.2,
           ease: 'power1.inOut',
         });
