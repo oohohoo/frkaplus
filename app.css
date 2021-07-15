@@ -1546,9 +1546,9 @@ SHUFFLE.js
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
-  padding-top: 1.25em;
+  padding-top: 0em;
   padding-bottom: 1em;
-  grid-column-gap: 1em;
+  grid-column-gap: 1.5em;
 }
 
 .webinar-posts__event-filter .btn:hover,
