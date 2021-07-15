@@ -1420,7 +1420,7 @@ function accordionhover() {
   
 
 
-    $(".acc-header-wrapper").each(function() {
+    $(".resto").each(function() {
       $(this).on("click", function() {
         $(".iconright", this).toggleClass("hide");
         //$(".piniconblack", this).removeClass("hide");
