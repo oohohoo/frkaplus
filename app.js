@@ -2170,7 +2170,7 @@ O NAMA - COUNTER
 
 function onamacounter() {
 
-  var startCount = 990,
+  var startCount = 0990,
   endCount,
   activeIndex = 1,
   tm = 2,
