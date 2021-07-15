@@ -1170,7 +1170,7 @@ function simpleaccordion() {
 
 const sections = document.querySelectorAll('.acc-section')
 const texts = document.querySelectorAll('.text')
-const icona = document.querySelectorAll('.text')
+const icona = document.querySelectorAll('.iconright')
 
 gsap.set(texts, {
   height: 0
