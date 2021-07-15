@@ -1186,10 +1186,10 @@ sections.forEach((section, index) => {
         gsap.to(el, 1, {
           height: 0,
           ease: 'power2.out',
-          onComplete:function() {
+         /*  onComplete:function() {
            locoScroll.update();
            console.log("locoscroll updated after accordion...");
-                    }
+                    } */
         })
 
         gsap.to(ikona, 1, {
@@ -1197,7 +1197,7 @@ sections.forEach((section, index) => {
           ease: 'power2.out',
           onComplete:function() {
             locoScroll.update();
-            console.log("ICON RIGHT...");
+            console.log("ICON RIGHT CLICKED...");
             
            }
         })
@@ -1217,7 +1217,7 @@ sections.forEach((section, index) => {
           
          } */
       })
-      gsap.to(ikona, 1, {
+      /* gsap.to(ikona, 1, {
         rotate: 360,
         ease: 'power2.out',
         onComplete:function() {
@@ -1225,7 +1225,7 @@ sections.forEach((section, index) => {
           console.log("ICON RIGHT...");
           
          }
-      })
+      }) */
 
     } else {
       text.classList.add('is-active')
@@ -1240,6 +1240,17 @@ sections.forEach((section, index) => {
           console.log("locoscroll updated after accordion...");
          }
       })
+
+    /*   gsap.to(ikona, 1, {
+        rotate: 360,
+        ease: 'power2.out',
+        onComplete:function() {
+          locoScroll.update();
+          console.log("ICON RIGHT...");
+          
+         }
+      }) */
+
     }
   })
 })
