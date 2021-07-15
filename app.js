@@ -1440,7 +1440,7 @@ function accordionhover() {
         $('.resto, .accord').find('.plusicon').removeClass('hide');
         $(this).find('.plusicon').addClass('hide');
       }
-      else {
+      else if {
         $('.resto, .accord').find('.minusicon').removeClass('hide');
         $(this).find('.minusicon').addClass('hide');
       }
