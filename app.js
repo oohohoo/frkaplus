@@ -1191,6 +1191,18 @@ sections.forEach((section, index) => {
            console.log("locoscroll updated after accordion...");
                     }
         })
+
+        gsap.to(icona, 1, {
+          rotate: -360,
+          ease: 'power2.out',
+          onComplete:function() {
+            locoScroll.update();
+            console.log("ICON RIGHT...");
+            
+           }
+        })
+
+
       }
     })
    
