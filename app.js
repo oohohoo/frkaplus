@@ -2594,12 +2594,12 @@ workLinks.forEach((link, index, value) => {
   {width: "0%", left: "100%", duration: 0.3, ease: "power1.in", immediateRender: false});
 
   // Mouseenter
-  link.addEventListener("mouseover", (e) => {
+  link.addEventListener("mouseenter", (e) => {
     enterAnimation(link, e, index);
   });
 
   // Mouseleave
-  link.addEventListener("mouseout", (e) => {
+  link.addEventListener("mouseleave", (e) => {
     leaveAnimation(link, e);
   });
 
