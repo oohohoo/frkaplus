@@ -2599,7 +2599,7 @@ workLinks.forEach((link, index, value) => {
   });
 
   // Mouseleave
-  link.addEventListener("mouseleavex", (e) => {
+  link.addEventListener("mouseleave", (e) => {
     leaveAnimation(link, e);
   });
 
