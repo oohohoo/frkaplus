@@ -2175,7 +2175,7 @@ function onamacounter() {
   activeIndex = 1,
   tm = 2,
   num = { var: startCount },
-  triggeraj = ".is--tisucu",
+  triggeraj = ".tisucuwrap",
   numbers = document.getElementById("numbers");
  
   
