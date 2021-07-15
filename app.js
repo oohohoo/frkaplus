@@ -1170,7 +1170,6 @@ function simpleaccordion() {
 
 const sections = document.querySelectorAll('.acc-section')
 const texts = document.querySelectorAll('.text')
-const ikona = document.querySelectorAll('.iconright')
 
 gsap.set(texts, {
   height: 0
@@ -1186,25 +1185,11 @@ sections.forEach((section, index) => {
         gsap.to(el, 1, {
           height: 0,
           ease: 'power2.out',
-         /*  onComplete:function() {
+          onComplete:function() {
            locoScroll.update();
            console.log("locoscroll updated after accordion...");
-                    } */
+                    }
         })
-
-        gsap.to(ikona, 1, {
-          
-          /* autoalpha: 0, */
-          color: '#DD985E',
-          ease: 'power2.out',
-          onComplete:function() {
-            locoScroll.update();
-            console.log("ICON RIGHT CLICKED AAA...");
-            
-           }
-        })
-
-
       }
     })
    
@@ -1213,22 +1198,13 @@ sections.forEach((section, index) => {
       gsap.to(text, 1, {
         height: 0,
         ease: 'power2.out',
-       /*  onComplete:function() {
+        onComplete:function() {
           locoScroll.update();
           console.log("locoscroll updated after accordion...");
           
-         } */
-      })
-      /* gsap.to(ikona, 1, {
-        rotate: 360,
-        ease: 'power2.out',
-        onComplete:function() {
-          locoScroll.update();
-          console.log("ICON RIGHT...");
-          
          }
-      }) */
-
+      })
+      
     } else {
       text.classList.add('is-active')
       gsap.set(text, {
@@ -1242,18 +1218,6 @@ sections.forEach((section, index) => {
           console.log("locoscroll updated after accordion...");
          }
       })
-
-       gsap.to(ikona, 1, {
-        
-        color: '#C33818',
-        ease: 'power2.out',
-        onComplete:function() {
-          locoScroll.update();
-          console.log("ICON RIGHT...");
-          
-         }
-      })  
-
     }
   })
 })
@@ -1436,7 +1400,7 @@ function accordionhover() {
           });
 
         tlhover.to(naslov, {
-          x: 5,
+          x: 30,
           duration: 0.2,
           ease: 'power1.inOut',
         });
