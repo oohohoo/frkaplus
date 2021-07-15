@@ -2175,6 +2175,7 @@ function onamacounter() {
   activeIndex = 1,
   tm = 2,
   num = { var: startCount },
+  triggeraj = ".is--tisucu",
   numbers = document.getElementById("numbers");
  
   
@@ -2187,12 +2188,12 @@ onUpdate:changeNumber,
 ease:Linear.easeNone,
 scrollTrigger: {
   scroller: ".smooth-scroll",
-  /* trigger: "#numbers", */
+   trigger: triggeraj, 
   start: "top 50%",
   markers:true,
 /* end: "bottom bottom", */
   toggleActions: "restart none none reset",
-  //scrub: 1,
+ scrub: 1,
   },
 
 });
