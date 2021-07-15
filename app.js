@@ -1194,6 +1194,7 @@ sections.forEach((section, index) => {
 
         gsap.to(ikona, 1, {
           rotate: -360,
+          autoalpha: 0,
           ease: 'power2.out',
           onComplete:function() {
             locoScroll.update();
@@ -1241,15 +1242,16 @@ sections.forEach((section, index) => {
          }
       })
 
-    /*   gsap.to(ikona, 1, {
+      gsap.to(ikona, 1, {
         rotate: 360,
+        autoalpha: 1,
         ease: 'power2.out',
         onComplete:function() {
           locoScroll.update();
           console.log("ICON RIGHT...");
           
          }
-      }) */
+      }) 
 
     }
   })
