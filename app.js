@@ -2006,7 +2006,7 @@ function homevideo() {
         trigger: apelTrigger,
         start: "top 60%",
         end: "100px",
-         toggleActions: "restart none none resume",  
+         toggleActions: "restart none none reverse",  
          markers: true,
         /* toggleActions: "restart none none resume", */ 
           
