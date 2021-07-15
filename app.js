@@ -309,7 +309,7 @@ function initContent() {
         },
         onama: function () {
             outlinehero();
-            //onamacounter();
+            onamacounter();
             numberoll();
             horizpin();
             playpausevideo();
@@ -612,7 +612,7 @@ barba.init({
               
               beforeEnter(data) {
                 playpausevideo();
-                onamacounter();
+                //onamacounter();
                 simpleaccordion();
                 zoomimage();
                 accordionhover();
@@ -2188,8 +2188,9 @@ ease:Linear.easeNone,
 scrollTrigger: {
   scroller: ".smooth-scroll",
   trigger: "#countrig",
-  start: "top 100%",
-end: "bottom bottom",
+  start: "top 50%",
+  markers:true,
+/* end: "bottom bottom", */
   toggleActions: "restart none none reset",
   //scrub: 1,
   },
