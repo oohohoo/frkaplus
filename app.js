@@ -1439,11 +1439,10 @@ function accordionhover() {
       else {
         $('.resto, .accord').find('.plusicon').removeClass('hide');
         $(this).find('.plusicon').addClass('hide');
-      }
-      else if {
         $('.resto, .accord').find('.minusicon').removeClass('hide');
         $(this).find('.minusicon').addClass('hide');
       }
+     
     });
 
 
