@@ -1170,6 +1170,7 @@ function simpleaccordion() {
 
 const sections = document.querySelectorAll('.acc-section')
 const texts = document.querySelectorAll('.text')
+const icona = document.querySelectorAll('.text')
 
 gsap.set(texts, {
   height: 0
@@ -1204,7 +1205,7 @@ sections.forEach((section, index) => {
           
          } */
       })
-      gsap.to(".iconright", 1, {
+      gsap.to(icona, 1, {
         rotate: 360,
         ease: 'power2.out',
         onComplete:function() {
