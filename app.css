@@ -1657,3 +1657,9 @@ STATIC IMAGE ZA MAPU
     position: relative;
   left: 0.2em;
 }
+
+.onama-h1.fix {
+  position: relative;
+  left: 0.05em;
+
+}
