@@ -1652,3 +1652,9 @@ STATIC IMAGE ZA MAPU
   top: -0.13em;
   left: 0.05em;
 }
+
+.spanwhitex {
+  color: #fffcf0;
+  position: relative;
+  left: 0.2em;
+}
