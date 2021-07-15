@@ -1170,7 +1170,7 @@ function simpleaccordion() {
 
 const sections = document.querySelectorAll('.acc-section')
 const texts = document.querySelectorAll('.text')
-const icona = document.querySelectorAll('.iconright')
+const ikona = document.querySelectorAll('.iconright')
 
 gsap.set(texts, {
   height: 0
@@ -1192,7 +1192,7 @@ sections.forEach((section, index) => {
                     }
         })
 
-        gsap.to(icona, 1, {
+        gsap.to(ikona, 1, {
           rotate: -360,
           x: 60,
           ease: 'power2.out',
@@ -1218,7 +1218,7 @@ sections.forEach((section, index) => {
           
          } */
       })
-      gsap.to(icona, 1, {
+      gsap.to(ikona, 1, {
         rotate: 360,
         x: 60,
         ease: 'power2.out',
@@ -1424,7 +1424,7 @@ function accordionhover() {
           });
 
         tlhover.to(naslov, {
-          x: 30,
+          x: 10,
           duration: 0.2,
           ease: 'power1.inOut',
         });
