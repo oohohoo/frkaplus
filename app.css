@@ -1648,4 +1648,7 @@ STATIC IMAGE ZA MAPU
 
 .spanwhite {
   color: #fffcf0;
+  position: relative;
+  top: -0.13em;
+  left: 0.05em;
 }
