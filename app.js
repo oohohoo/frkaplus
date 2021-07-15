@@ -1195,6 +1195,7 @@ sections.forEach((section, index) => {
         gsap.to(ikona, 1, {
           
           autoalpha: 0,
+          color: '#DD985E',
           ease: 'power2.out',
           onComplete:function() {
             locoScroll.update();
@@ -1244,7 +1245,7 @@ sections.forEach((section, index) => {
 
       gsap.to(ikona, 1, {
         
-        autoalpha: 1,
+        color: '#ff0000',
         ease: 'power2.out',
         onComplete:function() {
           locoScroll.update();
