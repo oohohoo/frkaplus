@@ -2005,7 +2005,7 @@ function homevideo() {
         scroller: ".smooth-scroll",
         trigger: apelTrigger,
         start: "top 60%",
-        end: "+=30%",
+        end: "+=5%",
          toggleActions: "restart none none resume",  
         /* toggleActions: "restart none none resume", */ 
           
