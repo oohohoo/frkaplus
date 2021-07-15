@@ -1453,6 +1453,7 @@ function accordionhover() {
       else {
         $('.resto, .accord').find('.plusicon').removeClass('hide');
         $(this).find('.plusicon').addClass('hide');
+        $(this).find('.minusicon').addClass('hide');
       }
     });
 
