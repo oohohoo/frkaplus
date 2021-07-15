@@ -337,6 +337,8 @@ function initContent() {
           openMobileMenu();
           //soloMap();
           stopScrollMap();
+
+          
           
           mockupImageResizer();
           openTestYourDesign();
@@ -650,6 +652,10 @@ barba.init({
                 mockupSimulatorProportions();
                 console.log("Lokacije tabs loaded before enter");
                 simulatorButton();
+
+                $('singlevideo').trigger('play');
+           $('singlevideo').attr({'autoplay':'true', 'loop':'true'});
+           
               },
                 beforeLeave(data) {
            /*   splide.on( 'destroy', function() { */
