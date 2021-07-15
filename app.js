@@ -1400,7 +1400,7 @@ function accordionhover() {
           });
 
         tlhover.to(naslov, {
-          x: 30,
+          x: 5,
           duration: 0.2,
           ease: 'power1.inOut',
         });
