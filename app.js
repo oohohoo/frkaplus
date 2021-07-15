@@ -2188,7 +2188,7 @@ onUpdate:changeNumber,
 ease:Linear.easeNone,
 scrollTrigger: {
   scroller: ".smooth-scroll",
-   trigger: triggeraj, 
+   /* trigger: triggeraj,  */
   start: "top 50%",
   markers:true,
 /* end: "bottom bottom", */
