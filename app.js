@@ -1454,8 +1454,8 @@ function accordionhover() {
         $('.resto, .accord').find('.minusicon').addClass('hide');
         $(this).find('.plusicon').removeClass('hide');
         /* $(this).find('.minusicon').addClass('hide'); */
-      }
-    }); */
+  /*     }
+    });  */
 
   
 
