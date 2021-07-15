@@ -2005,19 +2005,12 @@ function homevideo() {
         scroller: ".smooth-scroll",
         trigger: apelTrigger,
         start: "top 60%",
-        end: "200px",
-         toggleActions: "restart none none reverse",  
-         markers: true,
-        /* toggleActions: "restart none none resume", */ 
-          
+        toggleActions: "restart none none reverse",  
+        markers: true,
       },
       duration: 2,
-      /* rotate:30, */
       autoAlpha: 1,
-      /* yPercent: -30, */
-      
     });
-
 
 }
 
