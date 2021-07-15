@@ -1637,6 +1637,9 @@ STATIC IMAGE ZA MAPU
 /* .current-menu-item>a::before, .nav-link.w-inline-block.w--current:before, .underline::before {
     border-bottom: solid 3px #9b2557;
 } */
-.current-menu-item>a {
+.current-menu-item .underline {
   color: #5fe014;
+  left: 0%;
+  width: 100%;
+
 }
