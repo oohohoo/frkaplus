@@ -514,12 +514,12 @@ function initPageTransitions() {
   });
 
   barba.hooks.after((data) => {
-   /* let js = data.next.container.querySelectorAll('main script');
+    let js = data.next.container.querySelectorAll('main script');
     if(js != null){
             js.forEach((item) => {
                 console.log(js)
                 eval(item.innerHTML);
-            });*/
+            });
     }
 
     console.log("SCRIPTS EVALUATED");
