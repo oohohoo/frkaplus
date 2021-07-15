@@ -1417,18 +1417,8 @@ function accordionhover() {
 
   
   
-  /* ACCORDION PLUS*/
+  /* ACCORDION PLUS */
 
-
-   /*  $(".resto").each(function() {
-      $(this).on("click", function() {
-        $(".iconright", this).toggleClass("hide");
-        //$(".piniconblack", this).removeClass("hide");
-       
-      })
-    });
-   */
- 
 
     $('.resto, .accord').click(function(){
       // If the clicked element has the rotate class, remove the rotate class from EVERY .panel-title>.state element
@@ -1444,38 +1434,6 @@ function accordionhover() {
       }
      
     });
-
-
-  /*   $('.resto, .accord').click(function(){
-      // If the clicked element has the rotate class, remove the rotate class from EVERY .panel-title>.state element
-      if ($(this).find('.plusicon').hasClass('hide')){
-        $('.iconright').find('.minusicon').removeClass('hide');
-        $('.iconright').find('.plusicon').addClass('hide');
-      }
-      // Else, the element doesn't have the rotate class, so we remove it from every element before applying it to the element that was clicked
-      else {
-        $('.resto, .accord').find('.minusicon').addClass('hide');
-        $(this).find('.plusicon').removeClass('hide');
-        /* $(this).find('.minusicon').addClass('hide'); */
-  /*     }
-    });  */
-
-  
-
-  /*   $('.resto, .accord').click(function(){
-      // If the clicked element has the rotate class, remove the rotate class from EVERY .panel-title>.state element
-      if ($(this).find('.minusicon').hasClass('hide')){
-        $('.panel-title').find('.minusicon').removeClass('hide');
-        $('.panel-title').find('.plusicon').addClass('hide');
-      }
-      // Else, the element doesn't have the rotate class, so we remove it from every element before applying it to the element that was clicked
-      else {
-        $('.resto, .accord').find('.plusicon').removeClass('hide');
-        $(this).find('.plusicon').addClass('hide');
-      }
-    });
- */
-
 
 
 }
