@@ -1633,12 +1633,14 @@ STATIC IMAGE ZA MAPU
 }
 
 
-
-/* .current-menu-item>a::before, .nav-link.w-inline-block.w--current:before, .underline::before {
-    border-bottom: solid 3px #9b2557;
-} */
+/* CURRENT MENU WORDPRESS*/
 .current-menu-item .underline {
   left: 0%!important;
   width: 100%!important;
 
+}
+
+
+.right-icon.hide {
+  visibility:none;
 }
