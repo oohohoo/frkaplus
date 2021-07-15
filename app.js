@@ -1420,15 +1420,27 @@ function accordionhover() {
   /* ACCORDION PLUS*/
 
 
-    $(".resto").each(function() {
+   /*  $(".resto").each(function() {
       $(this).on("click", function() {
         $(".iconright", this).toggleClass("hide");
         //$(".piniconblack", this).removeClass("hide");
        
       })
     });
-  
+   */
  
+
+    $('.resto').click(function(){
+      // If the clicked element has the rotate class, remove the rotate class from EVERY .panel-title>.state element
+      if ($(this).find('.iconright').hasClass('hide')){
+        $('.panel-title').find('.iconright').removeClass('hide');
+      }
+      // Else, the element doesn't have the rotate class, so we remove it from every element before applying it to the element that was clicked
+      else {
+        $('.resto').find('.iconright').removeClass('hide');
+        $(this).find('.iconright').addClass('hide');
+      }
+    });
 
   
 
