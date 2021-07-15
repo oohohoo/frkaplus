@@ -1638,8 +1638,7 @@ STATIC IMAGE ZA MAPU
     border-bottom: solid 3px #9b2557;
 } */
 .current-menu-item .underline {
-  color: #5fe014;
-  left: 0%;
-  width: 100%;
+  left: 0%!important;
+  width: 100%!important;
 
 }
