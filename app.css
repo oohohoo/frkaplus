@@ -1641,6 +1641,7 @@ STATIC IMAGE ZA MAPU
 }
 
 
-.right-icon.hide {
+.iconright.hide {
+ 
   visibility:hidden;
 }
