@@ -2189,11 +2189,11 @@ ease:Linear.easeNone,
 scrollTrigger: {
   scroller: ".smooth-scroll",
    trigger: triggeraj,  
-  start: "top 50%",
+  start: "top 100%",
   markers:true,
 /* end: "bottom bottom", */
   toggleActions: "restart none none reset",
- scrub: 1,
+/*  scrub: 1, */
  refreshPriority: 1,
   },
 
