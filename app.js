@@ -1209,7 +1209,7 @@ sections.forEach((section, index) => {
         ease: 'power2.out',
         onComplete:function() {
           locoScroll.update();
-          console.log("locoscroll updated after accordion...");
+          console.log("ICON RIGHT...");
           
          }
       })
