@@ -1654,7 +1654,6 @@ STATIC IMAGE ZA MAPU
 }
 
 .spanwhitex {
-  color: #fffcf0;
-  position: relative;
+    position: relative;
   left: 0.2em;
 }
