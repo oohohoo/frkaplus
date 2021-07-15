@@ -1198,7 +1198,7 @@ sections.forEach((section, index) => {
           ease: 'power2.out',
           onComplete:function() {
             locoScroll.update();
-            console.log("ICON RIGHT CLICKED...");
+            console.log("ICON RIGHT CLICKED AAA...");
             
            }
         })
