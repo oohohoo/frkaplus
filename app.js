@@ -1198,12 +1198,22 @@ sections.forEach((section, index) => {
       gsap.to(text, 1, {
         height: 0,
         ease: 'power2.out',
+       /*  onComplete:function() {
+          locoScroll.update();
+          console.log("locoscroll updated after accordion...");
+          
+         } */
+      })
+      gsap.to(".iconright", 1, {
+        rotate: 360,
+        ease: 'power2.out',
         onComplete:function() {
           locoScroll.update();
           console.log("locoscroll updated after accordion...");
           
          }
       })
+
     } else {
       text.classList.add('is-active')
       gsap.set(text, {
