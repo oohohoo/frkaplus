@@ -1995,7 +1995,7 @@ function homevideo() {
       },
       /*clipPath: 'inset(60%)',*/
       scale: 1.15,
-      rotate: 0,
+      /* rotate: 0, */
       yPercent: -30,
        });
 
@@ -2011,7 +2011,7 @@ function homevideo() {
           
       },
       duration: 2,
-      rotate:30,
+      /* rotate:30, */
       autoAlpha: 1,
       yPercent: -30,
       
