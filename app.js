@@ -1418,8 +1418,6 @@ function accordionhover() {
   
   
   /* ACCORDION PLUS */
-
-
     $('.resto, .accord').click(function(){
       // If the clicked element has the rotate class, remove the rotate class from EVERY .panel-title>.state element
       if ($(this).find('.plusicon').hasClass('hide')){
@@ -1436,8 +1434,6 @@ function accordionhover() {
       }
      
     });
-
-
 }
 
 /*
