@@ -1422,7 +1422,7 @@ function accordionhover() {
 
     $(".resto").each(function() {
       $(this).on("click", function() {
-        $(".iconright", this).addClass("hide");
+        $(".iconright", this).toggleClass("hide");
         //$(".piniconblack", this).removeClass("hide");
        
       })
