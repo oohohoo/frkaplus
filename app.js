@@ -1243,16 +1243,16 @@ sections.forEach((section, index) => {
          }
       })
 
-     /*  gsap.to(ikona, 1, {
+       gsap.to(ikona, 1, {
         
-        color: '#231f20',
+        color: '#C33818',
         ease: 'power2.out',
         onComplete:function() {
           locoScroll.update();
           console.log("ICON RIGHT...");
           
          }
-      })  */
+      })  
 
     }
   })
