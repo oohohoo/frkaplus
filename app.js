@@ -1946,7 +1946,7 @@ function horizpin() {
     gsap.to(pinWrap, {
       scrollTrigger: {
         scroller: ".smooth-scroll",
-        scrub: 2,
+        scrub: 1,
         trigger: ".horizontal-scroll",
         pin: ".stophor",
         /* anticipatePin: 1, */
