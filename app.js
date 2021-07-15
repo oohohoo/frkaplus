@@ -1445,7 +1445,7 @@ function accordionhover() {
 
     $('.resto, .accord').click(function(){
       // If the clicked element has the rotate class, remove the rotate class from EVERY .panel-title>.state element
-      if ($(this).find('.minusicon').hasClass('hide')){
+      if ($(this).find('.plusicon').hasClass('hide')){
         $('.iconright').find('.minusicon').removeClass('hide');
         $('.iconright').find('.plusicon').addClass('hide');
       }
