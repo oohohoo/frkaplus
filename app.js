@@ -1417,12 +1417,12 @@ function accordionhover() {
 
   
   
-  
+  /* ACCORDION PLUS*/
 
 
     $(".resto").each(function() {
       $(this).on("click", function() {
-        $(".iconright", this).toggleClass("hide");
+        $(".iconright", this).addClass("hide");
         //$(".piniconblack", this).removeClass("hide");
        
       })
