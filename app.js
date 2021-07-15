@@ -1194,6 +1194,7 @@ sections.forEach((section, index) => {
 
         gsap.to(icona, 1, {
           rotate: -360,
+          x: 60,
           ease: 'power2.out',
           onComplete:function() {
             locoScroll.update();
@@ -1219,6 +1220,7 @@ sections.forEach((section, index) => {
       })
       gsap.to(icona, 1, {
         rotate: 360,
+        x: 60,
         ease: 'power2.out',
         onComplete:function() {
           locoScroll.update();
