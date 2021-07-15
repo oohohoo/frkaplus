@@ -1429,7 +1429,7 @@ function accordionhover() {
     });
    */
  
-/* 
+
     $('.resto, .accord').click(function(){
       // If the clicked element has the rotate class, remove the rotate class from EVERY .panel-title>.state element
       if ($(this).find('.iconright').hasClass('hide')){
@@ -1441,10 +1441,10 @@ function accordionhover() {
         $(this).find('.iconright').addClass('hide');
       }
     });
- */
+
   
 
-    $('.resto, .accord').click(function(){
+  /*   $('.resto, .accord').click(function(){
       // If the clicked element has the rotate class, remove the rotate class from EVERY .panel-title>.state element
       if ($(this).find('.minusicon').hasClass('hide')){
         $('.panel-title').find('.minusicon').removeClass('hide');
@@ -1456,7 +1456,7 @@ function accordionhover() {
         $(this).find('.plusicon').addClass('hide');
       }
     });
-
+ */
 
 
 
