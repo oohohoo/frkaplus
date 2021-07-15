@@ -1451,8 +1451,8 @@ function accordionhover() {
       }
       // Else, the element doesn't have the rotate class, so we remove it from every element before applying it to the element that was clicked
       else {
-        $('.resto, .accord').find('.plusicon').addClass('hide');
-        $(this).find('.plusicon').removeClass('hide');
+        $('.resto, .accord').find('.plusicon').removeClass('hide');
+       /*  $(this).find('.plusicon').removeClass('hide'); */
         $(this).find('.minusicon').addClass('hide');
       }
     });
