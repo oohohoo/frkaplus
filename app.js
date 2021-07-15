@@ -1415,6 +1415,23 @@ function accordionhover() {
         container.addEventListener("mouseleave", () => tlhover.reverse());
   });
 
+  
+  
+  
+
+
+    $(".acc-header-wrapper").each(function() {
+      $(this).on("click", function() {
+        $(".right-icon", this).toggleClass("hide");
+        //$(".piniconblack", this).removeClass("hide");
+       
+      })
+    });
+  
+ 
+
+  
+
 }
 
 /*
