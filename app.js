@@ -1429,7 +1429,7 @@ function accordionhover() {
     });
    */
  
-
+/* 
     $('.resto, .accord').click(function(){
       // If the clicked element has the rotate class, remove the rotate class from EVERY .panel-title>.state element
       if ($(this).find('.iconright').hasClass('hide')){
@@ -1441,8 +1441,24 @@ function accordionhover() {
         $(this).find('.iconright').addClass('hide');
       }
     });
-
+ */
   
+
+    $('.resto, .accord').click(function(){
+      // If the clicked element has the rotate class, remove the rotate class from EVERY .panel-title>.state element
+      if ($(this).find('.minusicon').hasClass('hide')){
+        $('.panel-title').find('.minusicon').removeClass('hide');
+        $('.panel-title').find('.plusicon').addClass('hide');
+      }
+      // Else, the element doesn't have the rotate class, so we remove it from every element before applying it to the element that was clicked
+      else {
+        $('.resto, .accord').find('.plusicon').removeClass('hide');
+        $(this).find('.plusicon').addClass('hide');
+      }
+    });
+
+
+
 
 }
 
