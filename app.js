@@ -1243,7 +1243,7 @@ sections.forEach((section, index) => {
          }
       })
 
-      gsap.to(ikona, 1, {
+     /*  gsap.to(ikona, 1, {
         
         color: '#231f20',
         ease: 'power2.out',
@@ -1252,7 +1252,7 @@ sections.forEach((section, index) => {
           console.log("ICON RIGHT...");
           
          }
-      }) 
+      })  */
 
     }
   })
