@@ -3474,16 +3474,6 @@ PIN HOVER
 */
 
 function pinHover() {
-  /* $('.pin-button-link').on('mouseenter', function() {
-    $( ".pinicon" ).each(function() {
-      $( this ).addClass( "hide" );
-    });
-
-    $( ".piniconblack" ).each(function() {
-      $( this ).removeClass( "hide" );
-    });
-  }); */
-
   $(".pin-button-link").each(function() {
     $(this).on("mouseover", function() {
       $(".pinicon", this).addClass("hide");
@@ -3494,41 +3484,6 @@ function pinHover() {
       $(".pinicon", this).removeClass("hide");
     });
   });
-
-
-
-
-
-/* 
-
-
-
-  $('.pin-button-link').on('mouseenter', function() {
-    $(".shirt__overlay__pattern").css(
-      "background-image",
-      "url(" + pattern + ")"
-    );
-  });
-
- */
-
-
-
-
- /*  $('.pin-button-link').on('mouseout', function() {
-    $( ".pinicon" ).each(function() {
-      $( this ).removeClass( "hide" );
-    });
-
-    $( ".piniconblack" ).each(function() {
-      $( this ).addClass( "hide" );
-    });
-
-
-  });
- */
-
-
 
 }
 

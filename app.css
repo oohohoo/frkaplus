@@ -1525,9 +1525,6 @@ SHUFFLE.js
   height: 100%
 }
 
-.pin-button-link.full {
-  right: -0.4em;
-}
 
 .newsminigrid {
   position: relative;
@@ -1549,6 +1546,9 @@ SHUFFLE.js
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
+  padding-top: 1.25em;
+  padding-bottom: 1em;
+  grid-column-gap: 1em;
 }
 
 .webinar-posts__event-filter .btn:hover,
