@@ -1439,8 +1439,8 @@ function accordionhover() {
       else {
         $('.resto, .accord').find('.plusicon').removeClass('hide');
         $(this).find('.plusicon').addClass('hide');
-        $('.resto, .accord').find('.minusicon').removeClass('hide');
-        $(this).find('.minusicon').addClass('hide');
+        $('.resto, .accord').find('.minusicon').addClass('hide');
+        $(this).find('.minusicon').removeClass('hide');
       }
      
     });
