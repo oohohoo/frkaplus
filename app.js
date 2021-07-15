@@ -3486,14 +3486,16 @@ function pinHover() {
 
   $(".pin-button-link").each(function() {
     $(this).on("mouseover", function() {
-      $(".pinicon").addClass("hide");
-      $(".piniconblack").removeClass("hide");
+      $(".pinicon", this).addClass("hide");
+      $(".piniconblack", this).removeClass("hide");
      
     }).on("mouseleave", function() {
-      $(".piniconblack").addClass("hide");
-      $(".pinicon").removeClass("hide");
+      $(".piniconblack", this).addClass("hide");
+      $(".pinicon", this).removeClass("hide");
     });
   });
+
+
 
 
 
