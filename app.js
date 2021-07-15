@@ -2007,7 +2007,7 @@ function homevideo() {
         start: "top 60%",
         end: "100px",
          toggleActions: "restart none none resume",  
-         markers: true;
+         markers: true,
         /* toggleActions: "restart none none resume", */ 
           
       },
