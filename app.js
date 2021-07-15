@@ -2006,7 +2006,6 @@ function homevideo() {
         trigger: apelTrigger,
         start: "top 60%",
         toggleActions: "restart none none reverse",  
-        markers: true,
       },
       duration: 2,
       autoAlpha: 1,
