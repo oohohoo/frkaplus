@@ -471,13 +471,13 @@
       "type": "Feature",
       "properties": {
         "title": "Kneza Trpimira",
-        "description": "Smjer jusjeverg"
+        "description": "Smjer sjever"
       },
       "geometry": {
         "coordinates": [18.69477, 45.55342],
         "type": "Point"
       }
-    },
+    }
 
 
 
