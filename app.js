@@ -337,7 +337,7 @@ function initContent() {
           openMobileMenu();
           //soloMap();
           stopScrollMap();
-          inlineScripts();
+          /* inlineScripts(); */
           
           
           mockupImageResizer();
