@@ -4,10 +4,10 @@
       "type": "Feature",
       "properties": {
         "title": "Avenija Dubrovnik – Rotor",
-        "description": "Smjer istok"
+        "description": "Smjer istok backlight"
       },
       "geometry": {
-        "coordinates": [15.95866, 45.77693],
+        "coordinates": [15.95896, 45.77705],
         "type": "Point"
       }
     },
@@ -30,7 +30,7 @@
         "description": "Smjer istok"
       },
       "geometry": {
-        "coordinates": [15.95917, 45.77716],
+        "coordinates": [15.95976, 45.77704],
         "type": "Point"
       }
     },
@@ -52,7 +52,7 @@
         "description": "Smjer sjever"
       },
       "geometry": {
-        "coordinates": [16.01367, 45.81135],
+        "coordinates": [16.01357, 45.81135],
         "type": "Point"
       }
     },
@@ -63,7 +63,7 @@
         "description": "Smjer jug"
       },
       "geometry": {
-        "coordinates": [16.01361, 45.81185],
+        "coordinates": [16.01365, 45.81153],
         "type": "Point"
       }
     },
@@ -74,7 +74,7 @@
         "description": "Smjer jug"
       },
       "geometry": {
-        "coordinates": [16.00331, 45.80897],
+        "coordinates": [16.00368, 45.80883],
         "type": "Point"
       }
     },
@@ -86,7 +86,7 @@
         "description": "Smjer sjever"
       },
       "geometry": {
-        "coordinates": [16.00404, 45.8086],
+        "coordinates": [16.00404, 45.80868],
         "type": "Point"
       }
     },
@@ -117,7 +117,7 @@
       "type": "Feature",
       "properties": {
         "title": "Zavrtnica",
-        "description": "Smjer jug"
+        "description": "Smjer jug - Razdvojeni"
       },
       "geometry": {
         "coordinates": [15.99292, 45.80574],
@@ -139,21 +139,21 @@
       "type": "Feature",
       "properties": {
         "title": "Branimirova - Divke Budaka",
-        "description": "Smjer jug"
+        "description": "Smjer ?"
       },
       "geometry": {
-        "coordinates": [15.99955, 45.80756],
+        "coordinates": [16.01968, 45.81320],
         "type": "Point"
       }
     },
         {
       "type": "Feature",
       "properties": {
-        "title": "Čulinečka - Billa",
+        "title": "Čulinečka",
         "description": "Smjer sjever"
       },
       "geometry": {
-        "coordinates": [16.06397, 45.82069],
+        "coordinates": [16.06388, 45.82088],
         "type": "Point"
       }
     },
@@ -164,7 +164,7 @@
         "description": "Smjer jug"
       },
       "geometry": {
-        "coordinates": [15.99134, 45.80586],
+        "coordinates": [15.99140, 45.80561],
         "type": "Point"
       }
     },
@@ -183,13 +183,25 @@
       "type": "Feature",
       "properties": {
         "title": "Slavonska - Žitnjak",
-        "description": "Smjer zapad"
+        "description": "Smjer istok"
       },
       "geometry": {
         "coordinates": [15.99146, 45.80548],
         "type": "Point"
       }
     },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Slavonska - Žitnjak",
+        "description": "Smjer zapad"
+      },
+      "geometry": {
+        "coordinates": [16.06299, 45.80208],
+        "type": "Point"
+      }
+    },
+
    {
       "type": "Feature",
       "properties": {
@@ -197,7 +209,7 @@
         "description": "Smjer jug"
       },
       "geometry": {
-        "coordinates": [15.96413, 45.80213],
+        "coordinates": [15.96428, 45.80237],
         "type": "Point"
       }
     },
@@ -219,7 +231,7 @@
         "description": "Smjer jug"
       },
       "geometry": {
-        "coordinates": [15.95436, 45.78793],
+        "coordinates": [15.95461, 45.78821],
         "type": "Point"
       }
     },
@@ -238,7 +250,7 @@
       "type": "Feature",
       "properties": {
         "title": "Savska - Jukićeva",
-        "description": "Smjer jug"
+        "description": "Smjer jug - Backlight"
       },
       "geometry": {
         "coordinates": [15.96578, 45.80460],
@@ -249,10 +261,10 @@
       "type": "Feature",
       "properties": {
         "title": "Savska - Jukićeva",
-        "description": "Smjer sjever"
+        "description": "Smjer sjever - Backlight"
       },
       "geometry": {
-        "coordinates": [15.96578, 45.80460],
+        "coordinates": [15.96586, 45.80479],
         "type": "Point"
       }
     },
@@ -318,7 +330,7 @@
         "description": "Smjer zapad"
       },
       "geometry": {
-        "coordinates": [15.96108, 45.79944],
+        "coordinates": [15.96063, 45.79933],
         "type": "Point"
       }
     },
@@ -369,11 +381,11 @@
     {
       "type": "Feature",
       "properties": {
-        "title": "Škorpikova - Aleja Bologna NEVALJA",
+        "title": "Škorpikova - Aleja Bologna",
         "description": "Smjer sjever"
       },
       "geometry": {
-        "coordinates": [15.86353, 45.81380],
+        "coordinates": [15.86348, 45.81406],
         "type": "Point"
       }
     },
@@ -429,6 +441,39 @@
       },
       "geometry": {
         "coordinates": [16.06620, 45.80783],
+        "type": "Point"
+      }
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "title": "Resnik - Čulinečka",
+        "description": "Smjer sjever"
+      },
+      "geometry": {
+        "coordinates": [16.06600, 45.80723],
+        "type": "Point"
+      }
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "title": "Cara Hadrijana",
+        "description": "Smjer istok"
+      },
+      "geometry": {
+        "coordinates": [18.70376, 45.55904],
+        "type": "Point"
+      }
+    },
+  {
+      "type": "Feature",
+      "properties": {
+        "title": "Cara Hadrijana",
+        "description": "Smjer zapad"
+      },
+      "geometry": {
+        "coordinates": [18.70302, 45.55894],
         "type": "Point"
       }
     }
