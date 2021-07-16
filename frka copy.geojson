@@ -455,29 +455,7 @@
         "coordinates": [18.70374, 45.55900],
         "type": "Point"
       }
-    },
-     {
-      "type": "Feature",
-      "properties": {
-        "title": "Kneza Trpimira",
-        "description": "Smjer jug"
-      },
-      "geometry": {
-        "coordinates": [18.69479, 45.55344],
-        "type": "Point"
-      }
-    },
-      {
-      "type": "Feature",
-      "properties": {
-        "title": "Kneza Trpimira",
-        "description": "Smjer jusjeverg"
-      },
-      "geometry": {
-        "coordinates": [18.69477, 45.55342],
-        "type": "Point"
-      }
-    },
+    }
 
 
 
