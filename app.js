@@ -1871,7 +1871,7 @@ function splidesolo() {
   rewindSpeed : 400,
   waitForTransition : false,
   updateOnMove : true,
-  fixedHeight: '10em',
+  /* fixedHeight: '10em', */
   trimSpace: false, // true removes empty space from end of list
  /*  breakpoints: {
 		991: {
