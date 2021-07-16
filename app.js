@@ -650,7 +650,10 @@ barba.init({
                 lokacijeTabs(); 
                 mockupSimulatorProportions();
                 simulatorButton();
+
+                if (document.querySelector('#solovid')) {
                 document.getElementById('solovid').play();
+                }
               },
                 beforeLeave(data) {
            /*   splide.on( 'destroy', function() { */
