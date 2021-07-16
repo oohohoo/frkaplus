@@ -112,7 +112,7 @@
         "type": "Point"
       }
     },
-     
+   
       {
       "type": "Feature",
       "properties": {
@@ -139,7 +139,7 @@
       "type": "Feature",
       "properties": {
         "title": "Branimirova - Divke Budaka",
-        "description": "Smjer ?"
+        "description": "Smjer jug"
       },
       "geometry": {
         "coordinates": [16.01968, 45.81320],
