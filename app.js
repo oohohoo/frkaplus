@@ -1252,8 +1252,8 @@ DYNAMIC YEAR
 
 function yearupdate() {
 
-  var date = new Date().getFullYear();
-  document.getElementById("year").innerHTML = date;
+  /* var date = new Date().getFullYear();
+  document.getElementById("year").innerHTML = date; */
 
 }
 
