@@ -653,8 +653,8 @@ barba.init({
                 simulatorButton();
 
                 $('solovid').trigger('play');
-           /* $('solovid').attr({'autoplay':'true', 'loop':'true'}); */
-           console.log("SOLO VIDEO AUTOPLAY");
+           $('solovid').attr({'autoplay':'true', 'loop':'true'});
+           console.log("SOLO VIDEO AUTOPLAYEAH");
               },
                 beforeLeave(data) {
            /*   splide.on( 'destroy', function() { */
