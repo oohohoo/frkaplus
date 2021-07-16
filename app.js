@@ -654,7 +654,7 @@ barba.init({
 
                 $('solovid').trigger('play');
            $('solovid').attr({'autoplay':'true', 'loop':'true'});
-           
+           console.log("SOLO VIDEO AUTOPLAY");
               },
                 beforeLeave(data) {
            /*   splide.on( 'destroy', function() { */
