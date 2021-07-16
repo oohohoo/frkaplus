@@ -521,6 +521,171 @@
         "coordinates": [18.63509, 45.55866],
         "type": "Point"
       }
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "title": "Varaždinska ulica",
+        "description": "Smjer zapad"
+      },
+      "geometry": {
+        "coordinates": [16.81930, 46.16869],
+        "type": "Point"
+      }
+    },
+      {
+      "type": "Feature",
+      "properties": {
+        "title": "Varaždinska ulica",
+        "description": "Smjer istok"
+      },
+      "geometry": {
+        "coordinates": [16.81932, 46.16867],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "T. Smićiklasa",
+        "description": "Smjer jug"
+      },
+      "geometry": {
+        "coordinates": [15.55043, 45.48693],
+        "type": "Point"
+      }
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "title": "Slavonska Avenija",
+        "description": "Smjer zapad"
+      },
+      "geometry": {
+        "coordinates": [15.97155, 45.79493],
+        "type": "Point"
+      }
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "title": "Slavonska Avenija",
+        "description": "Smjer istok"
+      },
+      "geometry": {
+        "coordinates": [15.97157, 45.79491],
+        "type": "Point"
+      }
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "title": "Kvaternikov trg",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [15.99729, 45.81527],
+        "type": "Point"
+      }
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "title": "Put Murvice 6",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [15.23969, 44.10907],
+        "type": "Point"
+      }
+    },
+        {
+      "type": "Feature",
+      "properties": {
+        "title": "Slavonska Avenija",
+        "description": "Smjer zapad"
+      },
+      "geometry": {
+        "coordinates": [15.97447, 45.79496],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Slavonska Avenija",
+        "description": "Smjer istok"
+      },
+      "geometry": {
+        "coordinates": [15.97445, 45.79494],
+        "type": "Point"
+      }
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "title": "Radnička cesta 220",
+        "description": "Smjer jug"
+      },
+      "geometry": {
+        "coordinates": [16.03934, 45.78590],
+        "type": "Point"
+      }
+    },
+      {
+      "type": "Feature",
+      "properties": {
+        "title": "Radnička cesta 220",
+        "description": "Smjer sjever"
+      },
+      "geometry": {
+        "coordinates": [16.03932, 45.78588],
+        "type": "Point"
+      }
+    },
+      {
+      "type": "Feature",
+      "properties": {
+        "title": "Radnička cesta 171a",
+        "description": "Smjer jug"
+      },
+      "geometry": {
+        "coordinates": [16.03404, 45.78916],
+        "type": "Point"
+      }
+    },
+        {
+      "type": "Feature",
+      "properties": {
+        "title": "Radnička cesta 171a",
+        "description": "Smjer sjever"
+      },
+      "geometry": {
+        "coordinates": [16.03402, 45.78914],
+        "type": "Point"
+      }
+    },
+        {
+      "type": "Feature",
+      "properties": {
+        "title": "Most Mladosti",
+        "description": "Smjer sjever"
+      },
+      "geometry": {
+        "coordinates": [16.00172, 45.78337],
+        "type": "Point"
+      }
+    },
+       {
+      "type": "Feature",
+      "properties": {
+        "title": "Zagrebačka avenija",
+        "description": "Smjer zapad"
+      },
+      "geometry": {
+        "coordinates": [15.94786, 45.79406],
+        "type": "Point"
+      }
     }
 
 
