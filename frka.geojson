@@ -477,7 +477,52 @@
         "coordinates": [18.69477, 45.55342],
         "type": "Point"
       }
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "title": "Obilaznica Beli Manastir",
+        "description": "Smjer jug"
+      },
+      "geometry": {
+        "coordinates": [18.63124, 45.55921],
+        "type": "Point"
+      }
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "title": "Obilaznica Beli Manastir",
+        "description": "Smjer sjever"
+      },
+      "geometry": {
+        "coordinates": [18.63122, 45.55923],
+        "type": "Point"
+      }
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "title": "Svilajska ulica",
+        "description": "Smjer jug razdvojeni"
+      },
+      "geometry": {
+        "coordinates": [18.63507, 45.55864],
+        "type": "Point"
+      }
+    },
+      {
+      "type": "Feature",
+      "properties": {
+        "title": "Svilajska ulica",
+        "description": "Smjer sjever razdvojeni"
+      },
+      "geometry": {
+        "coordinates": [18.63509, 45.55866],
+        "type": "Point"
+      }
     }
+
 
 
 
