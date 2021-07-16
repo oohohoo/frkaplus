@@ -522,6 +522,7 @@ function initPageTransitions() {
                 eval(item.innerHTML);
             });
     }
+
     console.log("SCRIPTS EVALUATED");
 });
   // scroll to the top of the page
@@ -654,15 +655,7 @@ barba.init({
                 document.getElementById('solovid').play();
                 }
               },
-                once(data) {
-                  let js = data.next.container.querySelectorAll('main script');
-                  if(js != null){
-                          js.forEach((item) => {
-                              console.log(js)
-                              eval(item.innerHTML);
-                          });
-                  }
-                  console.log("SCRIPTS EVALUATED ON ONCE LOAD SOLO");
+                beforeLeave(data) {
            /*   splide.on( 'destroy', function() { */
                 //splide.destroy(completely = true);
                 /* console.log("SPLIDE ODJEBAN"); */
