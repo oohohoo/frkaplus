@@ -434,7 +434,17 @@
       
     },
 
- 
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Cara Hadrijana",
+        "description": "Smjer zapad"
+      },
+      "geometry": {
+        "coordinates": [18.70376, 45.55904],
+        "type": "Point"
+      }
+    },
       {
       "type": "Feature",
       "properties": {
