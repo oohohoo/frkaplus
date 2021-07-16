@@ -649,12 +649,8 @@ barba.init({
                 saveaspdf();
                 lokacijeTabs(); 
                 mockupSimulatorProportions();
-                console.log("Lokacije tabs loaded before enter");
                 simulatorButton();
                 document.getElementById('solovid').play();
-               /*  $('solovid').trigger('play');
-           $('solovid').attr({'autoplay':'true', 'loop':'true'}); */
-           console.log("YEA YEA AUTOPLAY VIDEO");
               },
                 beforeLeave(data) {
            /*   splide.on( 'destroy', function() { */
