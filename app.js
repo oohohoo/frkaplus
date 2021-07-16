@@ -337,7 +337,7 @@ function initContent() {
           openMobileMenu();
           //soloMap();
           stopScrollMap();
-          /* inlineScripts(); */
+        
           
           
           mockupImageResizer();
@@ -515,9 +515,14 @@ function initPageTransitions() {
   });
 
   barba.hooks.after((data) => {
-   
-    inlineScripts();
-
+    let js = data.next.container.querySelectorAll('main script');
+    if(js != null){
+            js.forEach((item) => {
+                console.log(js)
+                eval(item.innerHTML);
+            });
+    }
+    console.log("SCRIPTS EVALUATED");
 });
   // scroll to the top of the page
 /*   barba.hooks.enter(() => {
@@ -3549,22 +3554,3 @@ function mockupImageResizer() {
 
 }
 
-
-
-/*
-================================================================================
-EVALUATE INLINE SCRIPTS
-================================================================================
-*/
-
-function inlineScripts() {
-
-let js = data.next.container.querySelectorAll('main script');
-if(js != null){
-        js.forEach((item) => {
-            console.log(js)
-            eval(item.innerHTML);
-        });
-}
-console.log("SCRIPTS EVALUATED YEAH!!!");
-}
