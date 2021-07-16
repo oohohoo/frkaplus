@@ -652,8 +652,8 @@ barba.init({
                 console.log("Lokacije tabs loaded before enter");
                 simulatorButton();
 
-                $('singlevideo').trigger('play');
-           $('singlevideo').attr({'autoplay':'true', 'loop':'true'});
+                $('solovid').trigger('play');
+           $('solovid').attr({'autoplay':'true', 'loop':'true'});
            
               },
                 beforeLeave(data) {
