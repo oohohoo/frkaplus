@@ -547,7 +547,7 @@
     {
       "type": "Feature",
       "properties": {
-        "title": "T. Smićiklasa",
+        "title": "T. Smičiklasa",
         "description": "Smjer jug"
       },
       "geometry": {
@@ -686,7 +686,195 @@
         "coordinates": [15.94786, 45.79406],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Bosiljevo",
+        "description": "Smjer Dalmacija"
+      },
+      "geometry": {
+        "coordinates": [15.31180, 45.42878],
+        "type": "Point"
+      }
+    },
+      {
+      "type": "Feature",
+      "properties": {
+        "title": "Bosiljevo",
+        "description": "Smjer Zagreb"
+      },
+      "geometry": {
+        "coordinates": [15.31182, 45.42880],
+        "type": "Point"
+      }
+    },
+       {
+      "type": "Feature",
+      "properties": {
+        "title": "Modruš",
+        "description": "Smjer Dalmacija"
+      },
+      "geometry": {
+        "coordinates": [15.24310, 45.12777],
+        "type": "Point"
+      }
+    },
+      {
+      "type": "Feature",
+      "properties": {
+        "title": "Modruš",
+        "description": "Smjer Zagreb"
+      },
+      "geometry": {
+        "coordinates": [15.24312, 45.12779],
+        "type": "Point"
+      }
+    },
+      {
+      "type": "Feature",
+      "properties": {
+        "title": "Mitrović",
+        "description": "A"
+      },
+      "geometry": {
+        "coordinates": [15.26624, 44.11681],
+        "type": "Point"
+      }
+    },
+       {
+      "type": "Feature",
+      "properties": {
+        "title": "Mitrović",
+        "description": "B"
+      },
+      "geometry": {
+        "coordinates": [15.26626, 44.11683],
+        "type": "Point"
+      }
+    },
+      {
+      "type": "Feature",
+      "properties": {
+        "title": "Intermod",
+        "description": "A"
+      },
+      "geometry": {
+        "coordinates": [15.26349, 44.10357],
+        "type": "Point"
+      }
+    },
+       {
+      "type": "Feature",
+      "properties": {
+        "title": "Intermod",
+        "description": "B"
+      },
+      "geometry": {
+        "coordinates": [15.26347, 44.10355],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Od Dalmare prema gradu",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [15.91320, 43.71509],
+        "type": "Point"
+      }
+    },
+       {
+      "type": "Feature",
+      "properties": {
+        "title": "Od Autoputa prema gradu",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [15.91322, 43.71511],
+        "type": "Point"
+      }
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "title": "Od grada prema Dalmare",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [15.91318, 43.71507],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Lanište",
+        "description": "Smjer istok - Backlight"
+      },
+      "geometry": {
+        "coordinates": [15.94609, 45.77499],
+        "type": "Point"
+      }
+    },
+      {
+      "type": "Feature",
+      "properties": {
+        "title": "Lanište",
+        "description": "Smjer zapad - Backlight"
+      },
+      "geometry": {
+        "coordinates": [15.94607, 45.77497],
+        "type": "Point"
+      }
+    },
+      {
+      "type": "Feature",
+      "properties": {
+        "title": "Most Slobode",
+        "description": "Smjer jug"
+      },
+      "geometry": {
+        "coordinates": [15.97900, 45.79404],
+        "type": "Point"
+      }
+    },
+       {
+      "type": "Feature",
+      "properties": {
+        "title": "Most Mladosti",
+        "description": "Smjer jug"
+      },
+      "geometry": {
+        "coordinates": [16.00172, 45.78337],
+        "type": "Point"
+      }
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "title": "Zagrebačka Avenija",
+        "description": "Smjer istok"
+      },
+      "geometry": {
+        "coordinates": [15.94786, 45.79406],
+        "type": "Point"
+      }
+    },
+       {
+      "type": "Feature",
+      "properties": {
+        "title": "Zagrebačka Avenija",
+        "description": "Smjer istok"
+      },
+      "geometry": {
+        "coordinates": [15.89397, 43.73458],
+        "type": "Point"
+      }
     }
+    
 
 
 
