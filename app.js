@@ -337,7 +337,7 @@ function initContent() {
           openMobileMenu();
           //soloMap();
           stopScrollMap();
-
+        
           
           
           mockupImageResizer();
@@ -366,7 +366,6 @@ function initContent() {
   underlineLink();
   scrollTotop();
   hideMenu();
-  yearupdate();
   openMobileMenu();
   openTestYourDesign();
   simulatorButton();
@@ -1250,12 +1249,12 @@ DYNAMIC YEAR
 ================================================================================
 */
 
-function yearupdate() {
+/* function yearupdate() {
 
-  /* var date = new Date().getFullYear();
-  document.getElementById("year").innerHTML = date; */
+  var date = new Date().getFullYear();
+  document.getElementById("year").innerHTML = date;
 
-}
+} */
 
 /*
 ================================================================================
