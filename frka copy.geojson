@@ -4,10 +4,10 @@
       "type": "Feature",
       "properties": {
         "title": "Avenija Dubrovnik – Rotor",
-        "description": "Smjer istok backlight"
+        "description": "Smjer istok"
       },
       "geometry": {
-        "coordinates": [15.95896, 45.77705],
+        "coordinates": [15.95866, 45.77693],
         "type": "Point"
       }
     },
@@ -30,7 +30,7 @@
         "description": "Smjer istok"
       },
       "geometry": {
-        "coordinates": [15.95976, 45.77704],
+        "coordinates": [15.95917, 45.77716],
         "type": "Point"
       }
     },
@@ -52,7 +52,7 @@
         "description": "Smjer sjever"
       },
       "geometry": {
-        "coordinates": [16.01357, 45.81135],
+        "coordinates": [16.01367, 45.81135],
         "type": "Point"
       }
     },
@@ -63,7 +63,7 @@
         "description": "Smjer jug"
       },
       "geometry": {
-        "coordinates": [16.01365, 45.81153],
+        "coordinates": [16.01361, 45.81185],
         "type": "Point"
       }
     },
@@ -74,7 +74,7 @@
         "description": "Smjer jug"
       },
       "geometry": {
-        "coordinates": [16.00368, 45.80883],
+        "coordinates": [16.00331, 45.80897],
         "type": "Point"
       }
     },
@@ -86,7 +86,7 @@
         "description": "Smjer sjever"
       },
       "geometry": {
-        "coordinates": [16.00404, 45.80868],
+        "coordinates": [16.00404, 45.8086],
         "type": "Point"
       }
     },
