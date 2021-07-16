@@ -866,8 +866,8 @@
        {
       "type": "Feature",
       "properties": {
-        "title": "Zagrebačka Avenija",
-        "description": "Smjer istok"
+        "title": "Poljana 4",
+        "description": ""
       },
       "geometry": {
         "coordinates": [15.89397, 43.73458],
