@@ -2928,10 +2928,10 @@ Demo.prototype._handleSortChange = function (event) {
     var value = document.querySelector('.sort-options').value;
 
     function reverseOrder() {
-      if (document.querySelector('.sort-order').unchecked) {
-        return true;
+      if (document.querySelector('.sort-order').checked) {
+        return false;
       }
-      return false;
+      return true;
     }
     reverseOrder();
 
