@@ -3223,14 +3223,15 @@ Demo.prototype.itemPassesFilters = function (element) {
 });
  */
 
-/* setTimeout(()=>{  
+/* setTimeout(()=>{   */
       window.demo = new Demo(document.querySelector(".js-shuffle"));
-       },200)  
+      /*  },200)   */
+
        setTimeout(()=>{  
      //   locoScroll.update(); 
        ScrollTrigger.refresh(true);
-       console.log("NAKRAJU RIFREEEŠŠŠŠ");
-      },500)  */
+       console.log("DELAY SORT REFRESH");
+      },1000) 
 
 }
 
