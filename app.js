@@ -3231,7 +3231,7 @@ Demo.prototype.itemPassesFilters = function (element) {
      //   locoScroll.update(); 
        ScrollTrigger.refresh(true);
        console.log("DELAY SORT REFRESH");
-      },5000) 
+      },1000) 
 
 }
 
