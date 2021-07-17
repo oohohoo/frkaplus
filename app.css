@@ -1668,3 +1668,29 @@ STATIC IMAGE ZA MAPU
 .w-inline-block {
   width: 100%;
 }
+
+/*TOGGLE SORT*/
+.togpapa {
+  position: relative;
+  top: 0.55em;
+  right: 0.85em;
+  }
+  .control-me::after {
+      content: "A — Z";
+      font-size: 1.04em—;
+  }
+  #toggle:checked ~ .control-me::after {
+      content: "Z — A";
+  }
+  label {
+  position: absolute;
+  left:0;
+  top:0;
+      background: transparent;
+      padding: 0.5rem 1rem;
+     }
+  .visually-hidden {
+      position: absolute;
+      left: -100vw;
+      /* Note, you may want to position the checkbox over top the label and set the opacity to zero instead. It can be better for accessibilty on some touch devices for discoverability. */
+  }
