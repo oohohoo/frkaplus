@@ -82,11 +82,22 @@
  {
       "type": "Feature",
       "properties": {
-        "title": "Branimirova – Heinzelova",
+        "title": "Branimirova – Heinzelova A",
         "description": "Smjer sjever"
       },
       "geometry": {
         "coordinates": [16.00366, 45.80881],
+        "type": "Point"
+      }
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "title": "Branimirova – Heinzelova B",
+        "description": "Smjer sjever"
+      },
+      "geometry": {
+        "coordinates": [16.00364, 45.80879],
         "type": "Point"
       }
     },
@@ -104,11 +115,23 @@
  {
       "type": "Feature",
       "properties": {
-        "title": "Branimirova – Držićeva",
+        "title": "Branimirova – Držićeva A",
         "description": "Smjer sjever"
       },
       "geometry": {
         "coordinates": [15.99267, 45.80596],
+        "type": "Point"
+      }
+    },
+
+     {
+      "type": "Feature",
+      "properties": {
+        "title": "Branimirova – Držićeva B",
+        "description": "Smjer sjever"
+      },
+      "geometry": {
+        "coordinates": [15.99265, 45.80594],
         "type": "Point"
       }
     },

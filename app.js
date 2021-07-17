@@ -972,13 +972,6 @@ document.getElementById('koprivnica').addEventListener('change', function () {
   });
 });
 
-document.getElementById('varazdin').addEventListener('change', function () {
-  map.flyTo({
-    center: [16.352, 46.302],
-    zoom: 10,
-    essential: true
-  });
-});
 
 document.getElementById('karlovac').addEventListener('change', function () {
   map.flyTo({
