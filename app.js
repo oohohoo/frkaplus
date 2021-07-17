@@ -2188,8 +2188,8 @@ function playpausevideo() {
 
     ScrollTrigger.create({
       trigger: videoElem,
-      start: 'top 90%',
-      end: 'bottom 20%',
+      start: 'top 100%',
+      end: 'bottom top',
       scroller: ".smooth-scroll",
       onEnter: () => videoElem.play(),
       onEnterBack: () => videoElem.play(),
