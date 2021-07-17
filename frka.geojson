@@ -139,11 +139,22 @@
       {
       "type": "Feature",
       "properties": {
-        "title": "Zavrtnica",
-        "description": "Smjer jug - Razdvojeni"
+        "title": "Zavrtnica A",
+        "description": "Smjer jug"
       },
       "geometry": {
         "coordinates": [15.99954, 45.80770],
+        "type": "Point"
+      }
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "title": "Zavrtnica B",
+        "description": "Smjer jug"
+      },
+      "geometry": {
+        "coordinates": [15.99952, 45.80768],
         "type": "Point"
       }
     },
@@ -216,11 +227,22 @@
        {
       "type": "Feature",
       "properties": {
-        "title": "Slavonska - Žitnjak",
+        "title": "Slavonska - Žitnjak A",
         "description": "Smjer zapad"
       },
       "geometry": {
         "coordinates": [16.06297, 45.80206],
+        "type": "Point"
+      }
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "title": "Slavonska - Žitnjak B",
+        "description": "Smjer zapad"
+      },
+      "geometry": {
+        "coordinates": [16.06295, 45.80204],
         "type": "Point"
       }
     },
