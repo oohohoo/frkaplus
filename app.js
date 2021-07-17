@@ -369,8 +369,8 @@ function initContent() {
   openMobileMenu();
   openTestYourDesign();
   simulatorButton();
-  splidesolo();
-  //stopScrollMap();
+  //splidesolo();
+  stopScrollMap();
   //lokacijeTabs();
   //uploadCrop();
  // splidesolo();
@@ -385,67 +385,6 @@ function initContent() {
  
  */
  
-  
- /*  if (document.querySelector('#home')) {
-    homevideo();
-    openMobileMenu();
-    console.log("home scripts loaded...");
-    //ScrollTrigger.refresh(true); // ScrollTrigger Refresh
-    //console.log("scrolltrigger refreshed script load");
-  } */
-
-  /* if (document.querySelector('#onama')) {
-    outlinehero();
-    //onamacounter();
-    numberoll();
-    horizpin();
-    playpausevideo();
-    smallCounteronama();
-    openMobileMenu();
-    console.log("o nama scripts loaded...");
-   // ScrollTrigger.refresh(true); // ScrollTrigger Refresh
-   // console.log("scrolltrigger refreshed script load");
-
-  } */
-/*   if (document.querySelector('#lokacije')) {
-    newSort();
-    sortChangeLayout();
-    lokacijeBotuni();
-     locationMap();
-    stopScrollMap();
-    openMobileMenu();
-    pinHover();
-    console.log("Pin hover loaded");
-    console.log("lokacije scripts loaded...");
-   // ScrollTrigger.refresh(true); // ScrollTrigger Refresh
-  //  console.log("scrolltrigger refreshed script load");
-  } */
-
-/*   if (document.querySelector('#lokacijesolo')) {
-    openTestYourDesign();
-    uploadCrop();
-    lokacijeBotuni();
-    saveaspdf();
-    lokacijeTabs(); 
-    //mockupSimulatorProportions();
-    simulatorButton();
-    openMobileMenu();
-    //soloMap();
-    stopScrollMap();
-    splidesolo();
-    console.log("SPLIDESOLO LOADDDEEEDDD");
-    console.log("lokacijesolo scripts loaded...");
-   // ScrollTrigger.refresh(true); // ScrollTrigger Refresh
-    //console.log("scrolltrigger refreshed script load");
-  } */
-
- /*  if (document.querySelector('#kontakt')) {
-      openMobileMenu();
-    console.log("kontakt scripts loaded...");
-  //  ScrollTrigger.refresh(true); // ScrollTrigger Refresh
-   // console.log("scrolltrigger refreshed script load");
-  } */
-
 //DRUKČIJE SE PONAŠA AKO UBACIMO UNUTAR document ready/ 
 
  
@@ -915,8 +854,6 @@ FLY TO LOCATION
 */
 
 /* document.getElementById('fly').addEventListener('click', function () {
-  // Fly to a random location by offsetting the point -74.50, 40
-  // by up to 5 degrees.
   map.flyTo({
   center: [15.9595615, 45.7768948],
   zoom: 18, // starting zoom
