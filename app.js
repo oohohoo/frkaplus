@@ -462,7 +462,7 @@ function initPageTransitions() {
             });
     }
 
-    console.log("SCRIPTS EVALUATED");
+    console.log("SCRIPTS EVALUATED NO PROBLEM");
 });
   // scroll to the top of the page
 /*   barba.hooks.enter(() => {
