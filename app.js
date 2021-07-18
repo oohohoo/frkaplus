@@ -2896,12 +2896,12 @@ SHUFFLE.JS - SWITCH LAYOUT LOKACIJE ITEMS
 ================================================================================
 */
 Demo.prototype._handleupdate = function (evt) {
-  setTimeout(() => {
+  /* setTimeout(() => { */
     this.shuffle.layout();
     locoScroll.update();
     ScrollTrigger.refresh(true);
     console.log("Locoscrollupdated + SCROLLTRIGGER NUOVO");
-  }, 10)
+  /* }, 10) */
 };
 
 /*
