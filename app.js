@@ -1012,7 +1012,7 @@ function soloMap() {
 
 
 /* DODANO ALI NE RADI*/
- map.addControl(new mapboxgl.NavigationControl()); 
+/*  map.addControl(new mapboxgl.NavigationControl());  */
 
 
 
