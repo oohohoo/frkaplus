@@ -1201,6 +1201,10 @@ user-select:none;
 
 }
 
+.filepond--drop-label.filepond--drop-label label {
+  padding: 1.75em 0.5em 0.5em 0.5em!important;
+  width: 100%!important;
+}
 
 /*
 ================================================================================
