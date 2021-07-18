@@ -2642,7 +2642,7 @@ function uploadCrop() {
         img_cropping.cropper({
             viewMode: 3,
             dragMode: 'move',
-            aspectRatio: <?php echo get_field( 'pond-ar-w' ); ?>/<?php echo get_field( 'pond-ar-h' ); ?>, 
+            aspectRatio: <?php echo get_field( 'pond-ar-w' ); ?> / <?php echo get_field( 'pond-ar-h' ); ?>, 
             guides: true,
             modal: true,
             highlight: true,
