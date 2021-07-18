@@ -2900,8 +2900,8 @@ Demo.prototype._handleupdate = function (evt) {
     this.shuffle.layout();
     locoScroll.update();
     ScrollTrigger.refresh(true);
-    console.log("Locoscrollupdated + SCROLLTRIGGER NUOVO JEBOTE");
-  }, 200)
+    console.log("Locoscrollupdated + SCROLLTRIGGER NUOVO");
+  }, 50)
 };
 
 /*
@@ -3350,7 +3350,7 @@ function doCoolStuff() {
 
 /*
 ================================================================================
-LOKACIJE SOLO // TABS
+MOCKUP SIMULATOR PROPORTIONS
 ================================================================================
 */
 
