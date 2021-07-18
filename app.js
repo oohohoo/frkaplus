@@ -1783,7 +1783,7 @@ SPLIDE
 */
 
 function splidesolo() {
-  if(document.querySelector('.splide')) {
+/*   if(document.querySelector('.splide')) {
   const splide = new Splide(".splide", {
        // Desktop on down
 	perPage: 1,
@@ -1800,27 +1800,11 @@ function splidesolo() {
   rewindSpeed : 400,
   waitForTransition : false,
   updateOnMove : true,
-  /* fixedHeight: '10em', */
-  trimSpace: false, // true removes empty space from end of list
- /*  breakpoints: {
-		991: {
-    	// Tablet
-			perPage: 2,
-      gap: '3vw',
-		},
-    767: {
-    	// Mobile Landscape
-			perPage: 1,
-      gap: '3vw',
-		},
-    479: {
-    	// Mobile Portrait
-			perPage: 1,
-      gap: '3vw',
-		}
-	} */
+  // fixedHeight: '10em', 
+  trimSpace: false, 
+
 } ).mount();
-  }
+  } */
 }
 
 
