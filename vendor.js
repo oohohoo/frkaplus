@@ -34,7 +34,6 @@ function(e){"function"==typeof define&&define.amd?define(["jquery"],e):e(jQuery)
 
 
 
-
 /*!
  * FilePondPluginFileEncode 2.1.10
  * Licensed under MIT, https://opensource.org/licenses/MIT/
