@@ -1194,6 +1194,14 @@ video {
 user-select:none;
 }
 
+
+.filepond--root {
+  font-size: 1.04em!important;
+  font-family: Hkspec, sans-serif!important;
+
+}
+
+
 /*
 ================================================================================
 VIDEO PREVIEW CSS
