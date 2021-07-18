@@ -1995,7 +1995,7 @@ TEST YOUR BUTTON PIN
 */
 
 function simulatorButton() {
-  if(document.querySelector('.testbutton')) {
+  if(document.querySelector('#tweenbutton')) {
   gsap.to(".testbutton", {
     scrollTrigger: {
       scroller: ".smooth-scroll",
@@ -2012,6 +2012,7 @@ function simulatorButton() {
    
   });
 }
+console.log("TWEENBUTTON");
 }
 
 /*
