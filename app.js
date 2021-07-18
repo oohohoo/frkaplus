@@ -598,9 +598,9 @@ barba.init({
                 });
                 
 
-                if (document.querySelector('#solovid')) {
+               /*  if (document.querySelector('#solovid')) {
                 document.getElementById('solovid').play();
-                }
+                } */
               },
                 beforeLeave(data) {
               splide.on( 'destroy', function() { 
