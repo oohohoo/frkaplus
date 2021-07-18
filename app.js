@@ -589,14 +589,9 @@ barba.init({
                 lokacijeTabs(); 
                 mockupSimulatorProportions();
                 simulatorButton();
+                simulatorgsapset();
 
-                gsap.set('#tweenbox', {
-                  //autoAlpha:0,
-                  scaleY: 0,
-                  transformOrigin: 'top',
               
-                });
-                
 
                /*  if (document.querySelector('#solovid')) {
                 document.getElementById('solovid').play();
@@ -3480,3 +3475,19 @@ function mockupImageResizer() {
 
 }
 
+
+
+/*
+================================================================================
+SIMULATOR IMAGE + MOCKUP RESIZER
+================================================================================
+*/
+
+function simulatorgsapset() {
+
+gsap.set('#tweenbox', {
+scaleY: 0,
+transformOrigin: 'top',
+});
+}
+                
