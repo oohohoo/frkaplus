@@ -2569,7 +2569,7 @@ function uploadCrop() {
   //console.log("SHOW BUTTON ON ADD FILE");
    
   
-});
+///});
 
 
 
