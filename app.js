@@ -590,6 +590,14 @@ barba.init({
                 mockupSimulatorProportions();
                 simulatorButton();
 
+                gsap.set('#tweenbox', {
+                  //autoAlpha:0,
+                  scaleY: 0,
+                  transformOrigin: 'top',
+              
+                });
+                
+
                 if (document.querySelector('#solovid')) {
                 document.getElementById('solovid').play();
                 }
@@ -1379,12 +1387,7 @@ TEST YOUR DESIGN MODUL
 function openTestYourDesign() {
   if(document.querySelector('#tweenbox')) {
     
-  gsap.set('#tweenbox', {
-    //autoAlpha:0,
-    scaleY: 0.5,
-    transformOrigin: 'top',
 
-  })
   let forwards = true;
   document.querySelector("#tweenbutton").addEventListener("click", ev => {
     if (forwards) {
