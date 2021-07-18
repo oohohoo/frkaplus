@@ -595,10 +595,10 @@ barba.init({
                 }
               },
                 beforeLeave(data) {
-           /*   splide.on( 'destroy', function() { */
-                //splide.destroy(completely = true);
-                /* console.log("SPLIDE ODJEBAN"); */
-                /*   }); */
+              splide.on( 'destroy', function() { 
+                splide.destroy(completely = true);
+                 console.log("SPLIDE ODJEBAN"); 
+                   }); 
 
              },
             }, {
