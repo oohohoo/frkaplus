@@ -1381,7 +1381,7 @@ function openTestYourDesign() {
     
   gsap.set('#tweenbox', {
     //autoAlpha:0,
-    scaleY: 0,
+    scaleY: 0.5,
     transformOrigin: 'top',
 
   })
