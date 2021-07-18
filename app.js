@@ -2954,10 +2954,17 @@ Demo.prototype._handleSortChange = function (event) {
     }
     this.shuffle.sort(options);
 
-    this.shuffle.update();
+  /*   this.shuffle.update();
     locoScroll.update();
     ScrollTrigger.refresh(true);
-     console.log("Locoscrollupdated + SCROLLTRIGGER NAKON SORTA");
+     console.log("Locoscrollupdated + SCROLLTRIGGER NAKON SORTA"); */
+
+     setTimeout(() => {
+      this.shuffle.layout();
+      locoScroll.update();
+      ScrollTrigger.refresh(true);
+      console.log("Locoscrollupdated + SCROLLTRIGGER NUOVO");
+    }, 200)
 
   };
   
