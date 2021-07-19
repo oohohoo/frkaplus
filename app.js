@@ -325,6 +325,7 @@ function initContent() {
           stopScrollMap();
           openMobileMenu();
           pinHover();
+          lokacijehover();
           console.log('from app.js | lokacije');
         },
         sololokacije: function () {
@@ -568,6 +569,8 @@ barba.init({
                 stopScrollMap();
                 webflowInteractions();
                 pinHover();
+                lokacijehover();
+                console.log("Lokacija Hover");
               },
               beforeLeave({current}) {
               //  map.remove();
@@ -1372,6 +1375,37 @@ function accordionhover() {
      
     });
 }
+
+
+/*
+================================================================================
+LOKACIJE ITEM HOVER
+================================================================================
+*/
+
+function lokacijehover() {
+
+  gsap.utils.toArray(".newswrap").forEach(container => {
+        let lokacija = container.querySelector(".newsminigrid"),
+          // silhouette = container.querySelector(".silhouette .cover"), */
+          tl = gsap.timeline({
+            paused: true
+          });
+
+        tl.to(lokacija, {
+          color: "#ffdc52",
+          backgroundColor: "#231f20",
+          duration: 0.3,
+          ease: 'power1.inOut',
+        });
+
+        container.addEventListener("mouseenter", () => tl.play());
+        container.addEventListener("mouseleave", () => tl.reverse());
+  });
+
+}
+
+
 
 /*
 ================================================================================
