@@ -1706,3 +1706,15 @@ STATIC IMAGE ZA MAPU
       left: -100vw;
       /* Note, you may want to position the checkbox over top the label and set the opacity to zero instead. It can be better for accessibilty on some touch devices for discoverability. */
   }
+
+
+  /*SOLOMAPA image*/
+
+ .solomapa{
+    object-fit: cover!important;
+    width: 100%!important;
+}
+
+.hero--video {
+  overflow: hidden!important;
+}
