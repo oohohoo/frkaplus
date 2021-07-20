@@ -49,7 +49,7 @@ KILL OUTLINE ON ALL
 HIDE PAGE CONTENT BY DEFAULT
 ================================================================================
 */
-.is-loading,
+
 .is-loading #main,
 .is-loading .header-container,
 .is-loading .fill-background {
