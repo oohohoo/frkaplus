@@ -392,7 +392,7 @@ function initContent() {
  locoScroll.update();
 console.log("LOCO FRESHH"); 
 
-select('body').classList.remove('is-loading');
+//select('body').classList.remove('is-loading');
 
 }
 
