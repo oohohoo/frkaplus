@@ -358,7 +358,7 @@ function initContent() {
   
 
 
-  select('body').classList.remove('is-loading');
+ 
  /* ORIGINAL*/
   initScroll();
   /* LOAD ON EVERY PAGE ---- edit*/
@@ -392,6 +392,7 @@ function initContent() {
  locoScroll.update();
 console.log("LOCO FRESHH"); 
 
+select('body').classList.remove('is-loading');
 
 }
 
