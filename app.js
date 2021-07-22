@@ -318,7 +318,7 @@ function initContent() {
             console.log('from app.js | o nama');
         },
         lokacije: function () {
-          newSort();
+         // newSort();
           sortChangeLayout();
           lokacijeBotuni();
           locationMap();
@@ -565,7 +565,7 @@ barba.init({
               namespace: 'lokacije',
 
               beforeEnter(data) {
-                newSort();
+                //newSort();
                 stopScrollMap();
                 webflowInteractions();
                 pinHover();
