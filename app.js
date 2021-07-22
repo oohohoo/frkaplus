@@ -273,6 +273,7 @@ function initLoader() {
     .add(tlLoaderOut);
 }
 
+
 /*
 ================================================================================
 INIT CONTENT --> vodi na --> INIT SCROLL
@@ -280,93 +281,117 @@ INIT CONTENT --> vodi na --> INIT SCROLL
 */
 function initContent() {
 
+
+ // (function($) {
+
+    // your custom script
+    var myscripts = {
+        init: function () {
+            if ($('body').hasClass('home')) {
+            this.home();
+        } else if ($('body').hasClass('page-template-onama')) {
+            this.onama();
+        } 
+        else if ($('body').hasClass('page-template-lokacije')) {
+          this.lokacije();
+        }
+        else if ($('body').hasClass('single-lokacije')) {
+          this.sololokacije();
+        }
+        else if ($('body').hasClass('page-template-kontakt')) {
+          this.kontakt();
+        }
+        },
+        home: function () {
+            homevideo();
+            openMobileMenu();
+            console.log('from app.js | home');
+        },
+        onama: function () {
+            outlinehero();
+            numberoll();
+            horizpin();
+            playpausevideo();
+            smallCounteronama();
+            openMobileMenu();
+            onamacounter();
+            console.log('from app.js | o nama');
+        },
+        lokacije: function () {
+          newSort();
+          sortChangeLayout();
+          lokacijeBotuni();
+          locationMap();
+          stopScrollMap();
+          openMobileMenu();
+          pinHover();
+          lokacijehover();
+          console.log('from app.js | lokacije');
+        },
+        sololokacije: function () {
+          uploadCrop();
+          lokacijeBotuni();
+          saveaspdf();
+          lokacijeTabs(); 
+          mockupSimulatorProportions();
+          simulatorButton();
+          openMobileMenu();
+          //soloMap();
+          stopScrollMap();
+        
+          
+          
+          mockupImageResizer();
+          openTestYourDesign();
+         
+          
+          console.log('from app.js | solo lokacije');
+        },
+        kontakt: function () {
+          openMobileMenu();
+          console.log('from app.js | kontakt');
+        } 
+
+    };
+  //});
+
+  
+
+
   select('body').classList.remove('is-loading');
  /* ORIGINAL*/
   initScroll();
+  /* LOAD ON EVERY PAGE ---- edit*/
   webflowInteractions();
   customCursor();
   underlineLink();
   scrollTotop();
   hideMenu();
-  yearupdate();
   openMobileMenu();
+  openTestYourDesign();
+  simulatorButton();
+  //splidesolo();
   stopScrollMap();
   //lokacijeTabs();
   //uploadCrop();
  // splidesolo();
-  simulatorButton();
+
   console.log("initial scripts loaded...");
+
+
+  myscripts.init();
+
   ScrollTrigger.refresh(true); // ScrollTrigger Refresh
-  console.log("scrolltrigger refreshed script load");
+  console.log("scrolltrigger refreshed AFTER all script load");
  
  
-  
-  if (document.querySelector('#home')) {
-    homevideo();
-    openMobileMenu();
-    console.log("home scripts loaded...");
-    //ScrollTrigger.refresh(true); // ScrollTrigger Refresh
-    //console.log("scrolltrigger refreshed script load");
-  }
-
-  if (document.querySelector('#onama')) {
-    outlinehero();
-    //onamacounter();
-    numberoll();
-    horizpin();
-    playpausevideo();
-    smallCounteronama();
-    openMobileMenu();
-    console.log("o nama scripts loaded...");
-   // ScrollTrigger.refresh(true); // ScrollTrigger Refresh
-   // console.log("scrolltrigger refreshed script load");
-
-  }
-  if (document.querySelector('#lokacije')) {
-    newSort();
-    sortChangeLayout();
-    lokacijeBotuni();
-     locationMap();
-    stopScrollMap();
-    openMobileMenu();
-    pinHover();
-    console.log("Pin hover loaded");
-    console.log("lokacije scripts loaded...");
-   // ScrollTrigger.refresh(true); // ScrollTrigger Refresh
-  //  console.log("scrolltrigger refreshed script load");
-  }
-
-  if (document.querySelector('#lokacijesolo')) {
-    openTestYourDesign();
-    uploadCrop();
-    lokacijeBotuni();
-    saveaspdf();
-    lokacijeTabs(); 
-    //mockupSimulatorProportions();
-    simulatorButton();
-    openMobileMenu();
-    soloMap();
-    stopScrollMap();
-    splidesolo();
-    console.log("SPLIDESOLO LOADDDEEEDDD");
-    console.log("lokacijesolo scripts loaded...");
-   // ScrollTrigger.refresh(true); // ScrollTrigger Refresh
-    //console.log("scrolltrigger refreshed script load");
-  }
-
-  if (document.querySelector('#kontakt')) {
-      openMobileMenu();
-    console.log("kontakt scripts loaded...");
-  //  ScrollTrigger.refresh(true); // ScrollTrigger Refresh
-   // console.log("scrolltrigger refreshed script load");
-  }
-
+ 
 //DRUKČIJE SE PONAŠA AKO UBACIMO UNUTAR document ready/ 
 
-  ScrollTrigger.refresh(true); // ScrollTrigger Refresh
-  console.log("scrolltrigger refreshed after enter");
-/* locoScroll.update();
-console.log("locoscroll refreshed after enter"); */
+ 
+ /* locoScroll.update(); 
+console.log("LOCO FRESHH"); 
+*/
 
 }
 
@@ -411,6 +436,8 @@ function pageTransitionOut({
     return tl;
 }
 
+/**/
+
 /*
 ================================================================================
 ♥️ BARBA GLOBAL HOOKS + PREFETCH + INIT + VIEWS + TRANSITIONS
@@ -426,10 +453,42 @@ function initPageTransitions() {
     select('html').classList.remove('is-transitioning');
    
   });
+
+  barba.hooks.after((data) => {
+    let js = data.next.container.querySelectorAll('main script');
+    if(js != null){
+            js.forEach((item) => {
+                console.log(js)
+                eval(item.innerHTML);
+            });
+    }
+
+    console.log("SCRIPTS EVALUATED NO PROBLEM");
+});
   // scroll to the top of the page
-  barba.hooks.enter(() => {
+/*   barba.hooks.enter(() => {
     window.scrollTo(0, 0);
+
+  }); */
+  barba.hooks.afterLeave((data) => {
+    // Set <body> classes for "next" page
+    var nextHtml = data.next.html;
+    var response = nextHtml.replace(/(<\/?)body( .+?)?>/gi, '$1notbody$2>', nextHtml)
+    var bodyClasses = $(response).filter('notbody').attr('class')
+    $("body").attr("class", bodyClasses);
+    
+    console.log("BODY CLASSES UPDATED");
   });
+  
+  barba.hooks.enter((data) => {
+    window.scrollTo(0, 0);
+    let parser = new DOMParser();
+    let dom = parser.parseFromString(data.next.html, 'text/html');
+    //let nextHeader = parser.parseFromString(data);
+    //document.querySelector('.header').innerHTML = nextHeader.innerHTML;
+     });
+     console.log("HEADER SCRIPT");
+
   //kill scrolltrigger
   barba.hooks.beforeLeave(() => {
    locoScroll.destroy(); 
@@ -441,7 +500,7 @@ function initPageTransitions() {
       });
   }
     Webflow.destroy();
-    console.log("lwebflow interactions killed...");
+    console.log("webflow interactions killed...");
 
   /* NEW JACK SCROLLTRIGGER DESTROY*/
 /*
@@ -473,7 +532,7 @@ function initPageTransitions() {
 
 barba.init({
       timeout: 7000,
-      debug: true,
+      //debug: true,
       prefetch: true,
 /*
   ================================================================================
@@ -494,7 +553,7 @@ barba.init({
               
               beforeEnter(data) {
                 playpausevideo();
-                onamacounter();
+                //onamacounter();
                 simpleaccordion();
                 zoomimage();
                 accordionhover();
@@ -510,32 +569,42 @@ barba.init({
                 stopScrollMap();
                 webflowInteractions();
                 pinHover();
+                lokacijehover();
+                console.log("Lokacija Hover");
               },
               beforeLeave({current}) {
-                map.remove();
-                console.log("map removed...");
+              //  map.remove();
+               // console.log("map removed...");
               },
             }, {
 
               namespace: 'lokacijesolo',
 
               beforeEnter(data) {
-                soloMap();
-                splidesolo();
-                console.log("SPLIDE before enter loaded!!!");
-                openTestYourDesign();
+
+                
+                //soloMap();
+                //splidesolo();
+               // console.log("SPLIDE before enter loaded!!!");
+               // openTestYourDesign();
                 uploadCrop();
                 saveaspdf();
                 lokacijeTabs(); 
-                //mockupSimulatorProportions();
-                console.log("Lokacije tabs loaded before enter");
+                mockupSimulatorProportions();
                 simulatorButton();
+                simulatorgsapset();
+
+              
+
+               /*  if (document.querySelector('#solovid')) {
+                document.getElementById('solovid').play();
+                } */
               },
                 beforeLeave(data) {
-           /*   splide.on( 'destroy', function() { */
-                //splide.destroy(completely = true);
-                /* console.log("SPLIDE ODJEBAN"); */
-                /*   }); */
+              splide.on( 'destroy', function() { 
+                splide.destroy(completely = true);
+                 console.log("SPLIDE ODJEBAN"); 
+                   }); 
 
              },
             }, {
@@ -625,10 +694,18 @@ barba.init({
         
       },
 
-      afterEnter({next}) {
-      
-      },
+   /*    	after(data) {
+			let parser = new DOMParser();
+			let htmlDoc = parser.parseFromString(data.next.html.replace(/(<\/?)body( .+?)?>/gi, '$1notbody$2>', data.next.html), 'text/html');
+			let bodyClasses = htmlDoc.querySelector('notbody').getAttribute('class');
+			body.setAttribute('class', bodyClasses);
+      console.log("BODY CLASSES UPDATED");
+		//	scripts.init();
+		//	borderOut(); 
+		}, */
 
+    
+ 
       beforeEnter({next}) {
                    
      },
@@ -774,22 +851,22 @@ map.doubleClickZoom.enable();
 console.log("MAP DOUBLECLICK!"); 
 
 
+
+
 /*
 ================================================================================
 FLY TO LOCATION
 ================================================================================
 */
 
-document.getElementById('fly').addEventListener('click', function () {
-  // Fly to a random location by offsetting the point -74.50, 40
-  // by up to 5 degrees.
+/* document.getElementById('fly').addEventListener('click', function () {
   map.flyTo({
   center: [15.9595615, 45.7768948],
   zoom: 18, // starting zoom
   essential: true // this animation is considered essential with respect to prefers-reduced-motion
   });
   });
-
+ */
 
   /*
 ================================================================================
@@ -810,7 +887,7 @@ document.getElementById('zagreb').addEventListener('change', function () {
   map.flyTo({
     center: [15.969, 45.802],
     zoom: 11, 
-    essential: true 
+    essential: false 
   });
 });
 
@@ -838,13 +915,6 @@ document.getElementById('koprivnica').addEventListener('change', function () {
   });
 });
 
-document.getElementById('varazdin').addEventListener('change', function () {
-  map.flyTo({
-    center: [16.352, 46.302],
-    zoom: 10,
-    essential: true
-  });
-});
 
 document.getElementById('karlovac').addEventListener('change', function () {
   map.flyTo({
@@ -881,6 +951,7 @@ console.log("STORAGE CLEARED");  */
 
 map.on("load", function (e) {
   const mapContainerEl = document.getElementById("map");
+  //mapContainerEl.style.visibility = "visible";
   mapContainerEl.style.opacity = "1";
 });
 
@@ -892,13 +963,14 @@ FADE IN MAP
  
 var fadein = gsap.timeline({defaults:{ease:'none'}})
 .to('.loader-icon', {autoAlpha:1})
-.to('.loader-wrap', {rotate: 360, repeat: -1, duration:1}, "<")
-.to('.loader-txt', {autoAlpha:1, repeat: -1, duration:0.5}, "<")
-.to('.static', {autoAlpha:0, duration:1.5, delay:3})
+.to('.loader-wrap', {rotate: 360, repeat: -1, duration:5}, "<")
+//.to('.loader-txt', {autoAlpha:1, repeat: -1, duration:0.5}, "<")
+//.to('.static', {autoAlpha:0, duration:1.5, delay:0.5})
 .to('.loader-icon', {autoAlpha:0}, "-=1.5")
-.to('.loader-txt', {autoAlpha:0}, "<")
+//.to('.loader-txt', {autoAlpha:0}, "<")
 
 }
+
 
  /* OVO MOŽDA KORISTITI ZA LOADANJE SKRIPTI*/
 
@@ -917,7 +989,7 @@ var fadein = gsap.timeline({defaults:{ease:'none'}})
 
 /*
 ================================================================================
-LOCATION MAP
+SOLOMAP MAP
 ================================================================================
 */
 function soloMap() {
@@ -943,7 +1015,7 @@ function soloMap() {
 
 
 /* DODANO ALI NE RADI*/
- map.addControl(new mapboxgl.NavigationControl()); 
+/*  map.addControl(new mapboxgl.NavigationControl());  */
 
 
 
@@ -1072,6 +1144,7 @@ sections.forEach((section, index) => {
           
          }
       })
+      
     } else {
       text.classList.add('is-active')
       gsap.set(text, {
@@ -1111,12 +1184,12 @@ DYNAMIC YEAR
 ================================================================================
 */
 
-function yearupdate() {
+/* function yearupdate() {
 
   var date = new Date().getFullYear();
   document.getElementById("year").innerHTML = date;
 
-}
+} */
 
 /*
 ================================================================================
@@ -1267,7 +1340,7 @@ function accordionhover() {
           });
 
         tlhover.to(naslov, {
-          x: 30,
+          x: 5,
           duration: 0.2,
           ease: 'power1.inOut',
         });
@@ -1282,7 +1355,64 @@ function accordionhover() {
         container.addEventListener("mouseleave", () => tlhover.reverse());
   });
 
+  
+  
+  /* ACCORDION PLUS */
+    $('.resto, .accord').click(function(){
+      // If the clicked element has the rotate class, remove the rotate class from EVERY .panel-title>.state element
+      if ($(this).find('.plusicon').hasClass('hide')){
+        $('.panel-title').find('.plusicon').removeClass('hide');
+        $(this).find('.minusicon').addClass('hide');
+        $(this).find('.plusicon').removeClass('hide');
+      }
+           // Else, the element doesn't have the rotate class, so we remove it from every element before applying it to the element that was clicked
+      else {
+        $('.resto, .accord').find('.plusicon').removeClass('hide');
+        $(this).find('.plusicon').addClass('hide');
+        $('.resto, .accord').find('.minusicon').addClass('hide');
+        $(this).find('.minusicon').removeClass('hide');
+      }
+     
+    });
 }
+
+
+/*
+================================================================================
+LOKACIJE ITEM HOVER
+================================================================================
+*/
+
+function lokacijehover() {
+
+  gsap.set(".newsminigrid img", {scale:1})
+  gsap.utils.toArray(".newswrap").forEach(container => {
+        let lokacija = container.querySelector(".newsminigrid img"),
+           border = container.querySelector(".newsminigrid"), 
+          tl = gsap.timeline({
+            paused: true
+          });
+
+        tl.to(lokacija, {
+          scale:1.1,
+          duration: 0.3,
+          ease: 'power1.inOut',
+        })
+
+        .to(border, {
+          borderBottomWidth:3,
+          duration: 0.3,
+          ease: 'power1.inOut',
+        }, "<");
+
+        container.addEventListener("mouseenter", () => tl.play());
+        container.addEventListener("mouseleave", () => tl.reverse());
+  });
+
+}
+
+
+
 
 /*
 ================================================================================
@@ -1291,12 +1421,9 @@ TEST YOUR DESIGN MODUL
 */
 
 function openTestYourDesign() {
-  gsap.set('#tweenbox', {
-    //autoAlpha:0,
-    scaleY: 0,
-    transformOrigin: 'top',
+  if(document.querySelector('#tweenbox')) {
+    
 
-  })
   let forwards = true;
   document.querySelector("#tweenbutton").addEventListener("click", ev => {
     if (forwards) {
@@ -1317,21 +1444,18 @@ function openTestYourDesign() {
         })
 
         .to('#tweenbutton', {
-          scale: 0.7,
-          duration: 0.64,
+          scale: 0.6,
           ease: 'power2.inOut',
           overwrite: "auto"
         }, "<")
         
         .to('.vizsim-txt', {
           autoAlpha: 0,
-          duration: 0.64,
           overwrite: "auto"
         }, "<")
 
         .to('.closetrigger', {
           autoAlpha: 1,
-          duration: 0.64,
           overwrite: "auto"
         }, "<")
 
@@ -1403,7 +1527,7 @@ function openTestYourDesign() {
   
 }
 
-
+}
 
 /*
 ================================================================================
@@ -1617,6 +1741,7 @@ function matrixtransform() {
         return results;
       })();
       
+
       // Transform `element` to match the new positions of the dots whenever dragged
       $(controlPoints).draggable({
         start: () => {
@@ -1697,7 +1822,7 @@ SPLIDE
 */
 
 function splidesolo() {
-
+/*   if(document.querySelector('.splide')) {
   const splide = new Splide(".splide", {
        // Desktop on down
 	perPage: 1,
@@ -1714,26 +1839,11 @@ function splidesolo() {
   rewindSpeed : 400,
   waitForTransition : false,
   updateOnMove : true,
-  trimSpace: false, // true removes empty space from end of list
- /*  breakpoints: {
-		991: {
-    	// Tablet
-			perPage: 2,
-      gap: '3vw',
-		},
-    767: {
-    	// Mobile Landscape
-			perPage: 1,
-      gap: '3vw',
-		},
-    479: {
-    	// Mobile Portrait
-			perPage: 1,
-      gap: '3vw',
-		}
-	} */
-} ).mount();
+  // fixedHeight: '10em', 
+  trimSpace: false, 
 
+} ).mount();
+  } */
 }
 
 
@@ -1794,12 +1904,12 @@ function horizpin() {
     gsap.to(pinWrap, {
       scrollTrigger: {
         scroller: ".smooth-scroll",
-        scrub: 2,
+        scrub: 1,
         trigger: ".horizontal-scroll",
         pin: ".stophor",
         /* anticipatePin: 1, */
         //markers: true,
-        start: "top top",
+        start: "top 8%",
         end: () => `+=${pinWrapWidth}`,
         invalidateOnRefresh: true
       },
@@ -1846,7 +1956,6 @@ HOME // VIDEO
 
 function homevideo() {
 
- 
   let videoroll = gsap.timeline()
 
   let cover = document.querySelector('.bgvideo')
@@ -1864,7 +1973,7 @@ function homevideo() {
       },
       /*clipPath: 'inset(60%)',*/
       scale: 1.15,
-      rotate: 30,
+      /* rotate: 0, */
       yPercent: -30,
        });
 
@@ -1873,20 +1982,15 @@ function homevideo() {
       scrollTrigger: {
         scroller: ".smooth-scroll",
         trigger: apelTrigger,
-        start: "top 20%",
-        end: "bottom 20%",
-         toggleActions: "restart none none resume",  
-        /* toggleActions: "restart none none resume", */ 
-          
+        start: "top 60%",
+        toggleActions: "restart none none reverse",  
       },
       duration: 2,
-      rotate:30,
       autoAlpha: 1,
-      yPercent: -30,
-      
     });
 
 }
+
 /*
 ================================================================================
 O NAMA // 14/15 ROLL
@@ -1914,7 +2018,7 @@ TEST YOUR BUTTON PIN
 */
 
 function simulatorButton() {
-  
+  if(document.querySelector('#tweenbutton')) {
   gsap.to(".testbutton", {
     scrollTrigger: {
       scroller: ".smooth-scroll",
@@ -1930,6 +2034,12 @@ function simulatorButton() {
     autoAlpha:0,
    
   });
+}
+console.log("TWEENBUTTON");
+
+
+
+
 }
 
 /*
@@ -1974,8 +2084,8 @@ function hideMenu() {
 
 showAnim
 //.to(".logofade", {autoAlpha:0 }, 0)
-.to(".header-nav-list", {yPercent: -50, autoAlpha:0, stagger: 0.05},"<0.1")
-.to(".header-contact--button", {scale:0.7, /*x:"3.1em"*/},"<0.2")
+.to(".header-nav-list, .slogan", {yPercent: -50, autoAlpha:0, stagger: 0.05},"<0.1")
+//.to(".header-contact--button", {scale:0.7, /*x:"3.1em"*/},"<0.2")
 .to(".freveal", {y: 100, duration: 0.6, stagger: 0.02}, "<0.1")
 .to(".l2", {scaleY: 0, transformOrigin: 'bottom', duration: 0.3}, "<0.2")
 .to(".l3", {scaleX: 0, transformOrigin: 'left', duration: 0.3}, "<0.2")
@@ -2023,11 +2133,12 @@ O NAMA - COUNTER
 
 function onamacounter() {
 
-  var startCount = 990,
+  var startCount = 997,
   endCount,
   activeIndex = 1,
   tm = 2,
   num = { var: startCount },
+  triggeraj = ".tisucuwrap",
   numbers = document.getElementById("numbers");
  
   
@@ -2040,11 +2151,13 @@ onUpdate:changeNumber,
 ease:Linear.easeNone,
 scrollTrigger: {
   scroller: ".smooth-scroll",
-  trigger: "#countrig",
+   trigger: triggeraj,  
   start: "top 100%",
-end: "bottom bottom",
+  /* markers:true, */
+/* end: "bottom bottom", */
   toggleActions: "restart none none reset",
-  //scrub: 1,
+/*  scrub: 1, */
+ refreshPriority: 1,
   },
 
 });
@@ -2103,8 +2216,8 @@ function playpausevideo() {
 
     ScrollTrigger.create({
       trigger: videoElem,
-      start: 'top 90%',
-      end: 'bottom 20%',
+      start: 'top 100%',
+      end: 'bottom top',
       scroller: ".smooth-scroll",
       onEnter: () => videoElem.play(),
       onEnterBack: () => videoElem.play(),
@@ -2211,12 +2324,12 @@ OUT OF WINDOW LISTENER
 */  
   document.addEventListener("mouseleave", e => {
     showAnimation.reverse();
-      console.log("Mouse Leave");
+     
   });
   
   document.addEventListener("mouseenter", e => {
     showAnimation.play();
-    console.log("Mouse Enter");
+   
   
 /*
 ================================================================================
@@ -2415,7 +2528,7 @@ GSAP UNDERLINE
 */
 
 function underlineLink() {
-
+  if(document.querySelector('.underline')) {
   // --- 022 - MENU ANIMATION - TL - UNDERLINE ------------------------------------------------------------------
 
 // Mouseenter function
@@ -2447,12 +2560,12 @@ workLinks.forEach((link, index, value) => {
   {width: "0%", left: "100%", duration: 0.3, ease: "power1.in", immediateRender: false});
 
   // Mouseenter
-  link.addEventListener("mouseover", (e) => {
+  link.addEventListener("mouseenter", (e) => {
     enterAnimation(link, e, index);
   });
 
   // Mouseleave
-  link.addEventListener("mouseout", (e) => {
+  link.addEventListener("mouseleave", (e) => {
     leaveAnimation(link, e);
   });
 
@@ -2473,7 +2586,10 @@ workLinks.forEach((link, index, value) => {
     container.addEventListener("mouseleave", () => tl.reverse());
   });
  */
+  }
 }
+
+
 
 /*
 ================================================================================
@@ -2483,157 +2599,17 @@ UPLOAD CROP
 
 function uploadCrop() {
 
-// Register filepond plugins
-$.fn.filepond.registerPlugin(
-  FilePondPluginFileValidateSize,
-  FilePondPluginFileValidateType,
-  FilePondPluginImageValidateSize,
-  FilePondPluginFileEncode,
- FilePondPluginMediaPreview
-);
 
-// Initialise the filepond plugin with required options
-// $('.upload-photo').filepond({
-FilePond.create(
-  document.querySelector('.upload-photo'), {
-    labelIdle: '<div class="uploading-frame">DRAG&DROP OR CLICK</div>',
-    checkValidity: true,
-    dropValidation: true,
-    iconRemove: '<svg> class="pdfoff" width="0.83em" height="0.83em" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.89468 9.20147L13.9565 15.2633L15.3708 13.8491L9.3089 7.78726L15.3948 1.70132L13.9806 0.287109L7.89468 6.37305L1.80874 0.287109L0.394531 1.70132L6.48047 7.78726L0.418607 13.8491L1.83282 15.2633L7.89468 9.20147Z" fill="#ffdc52" </svg>',
-    acceptedFileTypes: ['image/png', 'image/jpeg'],
-    imageValidateSizeMinWidth: 1200,
-  /*   imageValidateSizeMaxHeight: 800,  */
-    imageValidateSizeMinHeight: 300,
-    maxFileSize: '1MB',
-    labelMaxFileSize: 'Maksimalna dozvoljena težina datoteke je {filesize}',
-/*     labelMaxHeight: 'Maksimalna dozvoljena visina datoteke je {filesize}',
- */    labelFileProcessing: 'Pripremam za crop',
-    labelFileProcessingComplete: '',
-    server: {
-      process: function (fieldName, file, metadata, load, error, progress, abort) {
-        load();
-      },
-      fetch: null,
-      revert: null
-    }
-  });
-  
-
-  /* VIDEOOOOOOOOOOOOO*/
-  FilePond.create(
-    document.querySelector('.upload-video'), {
-      labelIdle: '<div class="uploading-frame">DRAG&DROP OR CLICK</div>',
-      checkValidity: true,
-      dropValidation: true,
-      iconRemove: '<svg> class="pdfoff" width="0.83em" height="0.83em" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.89468 9.20147L13.9565 15.2633L15.3708 13.8491L9.3089 7.78726L15.3948 1.70132L13.9806 0.287109L7.89468 6.37305L1.80874 0.287109L0.394531 1.70132L6.48047 7.78726L0.418607 13.8491L1.83282 15.2633L7.89468 9.20147Z" fill="#ffdc52" </svg>',
-      acceptedFileTypes: ['video/quicktime', 'video/mp4'],
-      imageValidateSizeMinWidth: 1200,
-    /*   imageValidateSizeMaxHeight: 800,  */
-      imageValidateSizeMinHeight: 300,
-      maxFileSize: '30MB',
-      labelMaxFileSize: 'Maksimalna dozvoljena težina datoteke je {filesize}',
-  /*     labelMaxHeight: 'Maksimalna dozvoljena visina datoteke je {filesize}',
-   */   // labelFileProcessing: 'Pripremam za crop',
-      labelFileProcessingComplete: '',
-      server: {
-        process: function (fieldName, file, metadata, load, error, progress, abort) {
-          load();
-        },
-        fetch: null,
-        revert: null
-      }
-     
-    });
-
-  
-
-
-const pond = document.querySelector('.filepond--root');
-// Container to show the preview of uploaded image
-var photo_crop_container = $('.photo-crop-container');
-var crop_preview_cont = photo_crop_container.find('.crop-preview-cont');
-var filepond_img_Container = $('.img_container')
-var photo_preview_container = $('#user_cropped_img');
-var pdfbutton = $('.linkos.opacity')
-var img_cropping = '';
-
-// pond.getFile();
-pond.addEventListener('FilePond:processfile', function (e, file) {
-  crop_preview_cont.slideDown('slow');
-
-  const image = new Image();
-  image.src = URL.createObjectURL(e.detail.file.file);
-  filepond_img_Container.append(image);
-  img_cropping = filepond_img_Container.find('img');
-  img_cropping.attr('src', image.src);
-  img_cropping.cropper({
-    viewMode: 3,
-    dragMode: 'move',
-    //aspectRatio: 6.77 / 1.58,
-    guides: true,
-    modal:true,
-    highlight:true,
-    cropBoxResizable: true,
-
-  });
-  var cropped_img = '';
-  $('#crop_img').on('click', function (ev) {
-   /* $('html,body').animate({
-        scrollTop: $(".photo-crop-container").offset().top - 80
-         },
-      'slow');
-      console.log("02 crop slide down");*/
-    photo_crop_container.addClass('show-loader show-result');
-    cropped_img = img_cropping.cropper('getCroppedCanvas', {
-    
-      //width: 677,
-      //height: 158,
-      imageSmoothingEnabled: true,
-      imageSmoothingQuality: 'high',
-    }).toDataURL('image/png');
-//       "cropped_img" use this for reteriving cropped image data for further processing like saving in datase, etc.
-    photo_preview_container.html('').append('<img src=""/>');
-    photo_preview_container.find('img').attr('src', cropped_img);
-    setTimeout(function () {
-      photo_crop_container.removeClass('show-loader');
-    }, 1900);
-  });
-
-});
-
-// Empty the photo preivew containers once the user remove the image from the uploader
-pond.addEventListener('FilePond:removefile', function (e) {
-  $('.linkos.opacity').toggleClass('hide');
-  console.log("HIDE ON REMOVE FILE");
-  /* pdfbutton.toggleClass('hide');
-   console.log("HIDE PDF");*/
-  setTimeout(function () {
-    photo_crop_container.removeClass('show-result');
-    }, 1000);
-crop_preview_cont.slideUp();
-console.log("03 slide up");
-  // crop_preview_cont.html('');
-  img_cropping.cropper('destroy').html('');
-  photo_preview_container.html('');
-  filepond_img_Container.html('');
-
- 
- 
-  
-});
 
 /* document.querySelector('button').addEventListener('click', () => {
   pond.browse();
 }); */
 
-
 /* document.querySelector('.upload-video').pond.addEventListener('FilePond:addfile', function (e) {
-  $('.movevideo').toggleClass('hide'); */
-  
-  //console.log("SHOW BUTTON ON ADD FILE");
+  $('.movevideo').toggleClass('hide'); 
+    console.log("SHOW BUTTON ON ADD FILE");
    
-  
-//});
+}); */
 
 
 
@@ -2641,29 +2617,62 @@ console.log("03 slide up");
 
 // Show PDF Button
 
-$('.turnonpdf').click(function() {
-  setTimeout(()=>{
-  $('.linkos.opacity').toggleClass('hide');
+$('#crop_img').click(function() {
+   setTimeout(()=>{ 
+  $('.linkos.opacity').removeClass('hide');
   console.log("SHOW PDFio*");
-    },1000) 
+     },1500)  
   });
 
+/*
+  $('.filepond--file-action-button.filepond--file-action-button::after').click(function() {
+    setTimeout(()=>{ 
+   $('.movevideo').addClass('hide');
+   console.log("SHOW PDFio*");
+      },1500)  
+   });
+ */
 
-  $('.closetrigger, .tabs-li').click(function(){
-   $('.upload-photo').filepond('removeFile');
-    $('.upload-video').filepond('removeFile');
-    $('.linkos.opacity').addClass('hide');
-    //$('.movevideo').toggleClass('hide');
-    $('#mobile').children().filter("video").each(function(){
-      this.pause(); // can't hurt
-      delete this; // @sparkey reports that this did the trick (even though it makes no sense!)
-      $(this).remove(); // this is probably what actually does the trick
-    });
+/* VIDEO BUTTOINs*/
+$('.upload-video').on('FilePond:addfile', function () {
+  $('.movevideo').removeClass('hide');
+});
    
-    console.log("BOTH FILEPOND and Video slot cleared on exit and tabs...");
+/* VIDEO BUTTOINs*/
+$('.upload-video').on('FilePond:removefile', function () {
+  $('.movevideo').addClass('hide');
+  $('.videjos').children().filter("video").each(function(){
+    this.pause(); // can't hurt
+    delete this; // @sparkey reports that this did the trick (even though it makes no sense!)
+    $(this).remove(); // this is probably what actually does the trick
+  });
+ 
 });
 
-  
+
+$('.movevideo').click(function(){
+  $('.movevideo').addClass('hide');
+});
+
+
+  $('.closetrigger').click(function(){
+   $('.upload-photo').filepond('removeFile');
+    $('.upload-video').filepond('removeFile');
+        console.log("BOTH FILEPOND and Video slot cleared on exit...");
+});
+
+
+$('.tabs-li').click(function(){
+  $('.upload-photo').filepond('removeFile');
+   $('.upload-video').filepond('removeFile');
+       console.log("BOTH FILEPOND and Video slot cleared on tabs...");
+});
+
+
+
+
+
+
 
 
   // Hide PDF Button
@@ -2685,12 +2694,12 @@ $('.turnonpdf').click(function() {
 const videoplace = document.querySelector('.filepond--media-preview-wrapper');
 const botun = document.querySelector('.botun'); */
 
-const pondvideo = FilePond.create({
+/* const pondvideo = FilePond.create({
   name: 'filepondvideo',
           acceptedFileTypes: ['video/quicktime', 'video/mp4'],
           checkValidity: true,
           dropValidation: true,
-          });
+          }); */
 
 // Add it to the DOM
 //videoupload.appendChild(pondvideo.element);
@@ -2708,6 +2717,7 @@ $(document).ready(function()
            // document.getElementById('destination').play();
           $('video').trigger('play');
            $('video').attr({'autoplay':'true', 'loop':'true'});
+           
            //setTimeout(function () {
           //  photo_crop_container.removeClass('show-result');
           //  }, 1000);
@@ -2927,10 +2937,12 @@ SHUFFLE.JS - SWITCH LAYOUT LOKACIJE ITEMS
 ================================================================================
 */
 Demo.prototype._handleupdate = function (evt) {
-  this.shuffle.update();
-  locoScroll.update();
-  ScrollTrigger.refresh(true);
-   console.log("Locoscrollupdated + SCROLLTRIGGER NAKON LAYOUT CHANGE");
+  setTimeout(() => {
+    this.shuffle.layout();
+    locoScroll.update();
+    ScrollTrigger.refresh(true);
+    console.log("Locoscrollupdated + SCROLLTRIGGER NUOVO");
+  }, 1)
 };
 
 /*
@@ -2945,9 +2957,9 @@ Demo.prototype._handleSortChange = function (event) {
 
     function reverseOrder() {
       if (document.querySelector('.sort-order').checked) {
-        return true;
+        return false;
       }
-      return false;
+      return true;
     }
     reverseOrder();
 
@@ -2985,10 +2997,17 @@ Demo.prototype._handleSortChange = function (event) {
     }
     this.shuffle.sort(options);
 
-    this.shuffle.update();
+  /*   this.shuffle.update();
     locoScroll.update();
     ScrollTrigger.refresh(true);
-     console.log("Locoscrollupdated + SCROLLTRIGGER NAKON SORTA");
+     console.log("Locoscrollupdated + SCROLLTRIGGER NAKON SORTA"); */
+
+     setTimeout(() => {
+      this.shuffle.layout();
+      locoScroll.update();
+      ScrollTrigger.refresh(true);
+      console.log("Locoscrollupdated + SCROLLTRIGGER NUOVO");
+    }, 200)
 
   };
   
@@ -3239,14 +3258,15 @@ Demo.prototype.itemPassesFilters = function (element) {
 });
  */
 
-setTimeout(()=>{  
+/* setTimeout(()=>{   */
       window.demo = new Demo(document.querySelector(".js-shuffle"));
-       },200)  
+      /*  },200)   */
+
        setTimeout(()=>{  
-     /*   locoScroll.update(); */
+     //   locoScroll.update(); 
        ScrollTrigger.refresh(true);
-       console.log("NAKRAJU RIFREEEŠŠŠŠ");
-      },500) 
+       console.log("DELAY SORT REFRESH");
+      },1000) 
 
 }
 
@@ -3351,7 +3371,19 @@ function doCoolStuff() {
     // slide in new article
     animation.to(articles[activeTab], {duration: 0.5, y:0, autoAlpha:1, ease: "none"}, "-=0.25");
   }
+
+  window.addEventListener('resize', function(){
+ 
+    animation.to(".slider", {x:targets[activeTab].offsetLeft, width:targets[activeTab].offsetWidth});
+    
+  });
+
+
 }
+
+
+
+
 
 }
 
@@ -3359,12 +3391,100 @@ function doCoolStuff() {
 
 /*
 ================================================================================
-LOKACIJE SOLO // TABS
+MOCKUP SIMULATOR PROPORTIONS
 ================================================================================
 */
 
 function mockupSimulatorProportions() {
+  if(document.querySelector('#tweenbox')) {
 (function() {
+
+  
+  /* Mockup responsiveness */
+  var body = docElem = window.document.documentElement,
+    wrap = document.getElementById( 'wrap' ),
+    mockup = wrap.querySelector( '.mockup' ),
+    mockupWidth = mockup.offsetWidth;
+
+  scaleMockup();
+
+  function scaleMockup() {
+    var wrapWidth = wrap.offsetWidth,
+      val = wrapWidth / mockupWidth;
+
+    mockup.style.transform = 'scale3d(' + val + ', ' + val + ', 1)';
+  }
+  
+  window.addEventListener( 'resize', resizeHandler );
+
+  function resizeHandler() {
+    function delayed() {
+      resize();
+      resizeTimeout = null;
+    }
+    if ( typeof resizeTimeout != 'undefined' ) {
+      clearTimeout( resizeTimeout );
+    }
+    resizeTimeout = setTimeout( delayed, 50 );
+  }
+
+  function resize() {
+    scaleMockup();
+  }
+  console.log("P R O P O R T I O N S");
+})();
+
+}
+}
+
+
+/*
+================================================================================
+BACK TO PREV PAGE
+================================================================================
+*/
+
+function backToPrev() {
+
+$( document ).ready(function() {
+  $( ".goback" ).click(function() {
+    window.history.back();
+  });
+});
+
+}
+
+/*
+================================================================================
+PIN HOVER
+================================================================================
+*/
+
+function pinHover() {
+  $(".pin-button-link").each(function() {
+    $(this).on("mouseover", function() {
+      $(".pinicon", this).addClass("hide");
+      $(".piniconblack", this).removeClass("hide");
+     
+    }).on("mouseleave", function() {
+      $(".piniconblack", this).addClass("hide");
+      $(".pinicon", this).removeClass("hide");
+    });
+  });
+
+}
+
+
+/*
+================================================================================
+SIMULATOR IMAGE + MOCKUP RESIZER
+================================================================================
+*/
+
+function mockupImageResizer() {
+
+(function() {
+  //new Slideshow( document.getElementById( 'slideshow' ) );
 
   /* Mockup responsiveness */
   var body = docElem = window.document.documentElement,
@@ -3402,58 +3522,18 @@ function mockupSimulatorProportions() {
 }
 
 
-/*
-================================================================================
-BACK TO PREV PAGE
-================================================================================
-*/
-
-function backToPrev() {
-
-$( document ).ready(function() {
-  $( ".goback" ).click(function() {
-    window.history.back();
-  });
-});
-
-}
 
 /*
 ================================================================================
-PIN HOVER
+SIMULATOR IMAGE + MOCKUP RESIZER
 ================================================================================
 */
 
-function pinHover() {
-  gsap.utils.toArray(".pin-button-link").forEach(container => {
-    let onicon = container.querySelector(".pinicon"),
-     officon = container.querySelector(".piniconblack"),
-      pinhover = gsap.timeline({
-        paused: true
-      });
+function simulatorgsapset() {
 
-  pinhover.set(officon, {autoAlpha: 0, rotate:320});
-
-  pinhover.to(onicon, {
-    autoAlpha:0, 
-    duration: 0,
-      ease: 'power1.inOut',
-    });
-    console.log("ON icon ");
-
-  pinhover.to(officon, {
-    autoAlpha: 1,
-    duration: 0,
-      ease: 'power1.inOut',
-    },"<" );
-    console.log("OFF icon ");
-
-  container.addEventListener("mouseenter", () => pinhover.play());
-  container.addEventListener("mouseleave", () => pinhover.reverse());
+gsap.set('#tweenbox', {
+scaleY: 0,
+transformOrigin: 'top',
 });
-
 }
-
-
- 
-
+                
