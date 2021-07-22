@@ -1544,6 +1544,9 @@ SHUFFLE.js
   height: 100%
 }
 
+.newsimgwrap {
+  overflow: hidden;
+}
 
 .newsminigrid {
   position: relative;
