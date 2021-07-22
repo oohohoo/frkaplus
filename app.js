@@ -1399,8 +1399,8 @@ function lokacijehover() {
           
           color: "#F4DD54",
           backgroundColor: "#231f20",
-          duration: 0.3,
-          ease: 'power1.inOut',
+       /*    duration: 0.3,
+          ease: 'power1.inOut', */
         })
 
       .to(imgmask, {scale: 0.9, duration: 0.3, ease: 'power1.inOut'}, "<");
