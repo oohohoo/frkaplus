@@ -380,10 +380,10 @@ function initContent() {
 
 
   myscripts.init();
-/*
+
   ScrollTrigger.refresh(true); // ScrollTrigger Refresh
   console.log("scrolltrigger refreshed AFTER all script load");
- */
+ 
  
  
 //DRUKČIJE SE PONAŠA AKO UBACIMO UNUTAR document ready/ 
@@ -481,7 +481,11 @@ function initPageTransitions() {
   });
   
   barba.hooks.enter((data) => {
-  
+    window.scrollTo(0, 0);
+    let parser = new DOMParser();
+    let dom = parser.parseFromString(data.next.html, 'text/html');
+    //let nextHeader = parser.parseFromString(data);
+    //document.querySelector('.header').innerHTML = nextHeader.innerHTML;
      });
      console.log("HEADER SCRIPT");
 
