@@ -2651,18 +2651,16 @@ $('.movevideo').click(function(){
 
 
   $('.closetrigger').click(function(){
-    setTimeout(() => {
    $('.upload-photo').filepond('removeFile');
     $('.upload-video').filepond('removeFile');
-  }, 300)
-        console.log("BOTH FILEPOND and Video slot cleared on exit and tabs...");
+        console.log("BOTH FILEPOND and Video slot cleared on exit...");
 });
 
 
 $('.tabs-li').click(function(){
   $('.upload-photo').filepond('removeFile');
    $('.upload-video').filepond('removeFile');
-       console.log("BOTH FILEPOND and Video slot cleared on exit and tabs...");
+       console.log("BOTH FILEPOND and Video slot cleared on tabs...");
 });
 
 
