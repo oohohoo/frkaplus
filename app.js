@@ -358,7 +358,7 @@ function initContent() {
   
 
 
-  select('body').classList.remove('is-loading');
+  /* select('body').classList.remove('is-loading'); */
  /* ORIGINAL*/
   initScroll();
   /* LOAD ON EVERY PAGE ---- edit*/
