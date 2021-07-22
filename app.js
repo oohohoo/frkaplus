@@ -1385,15 +1385,17 @@ LOKACIJE ITEM HOVER
 
 function lokacijehover() {
 
-   gsap.set(".newsminigrid", {color: "#231f20",backgroundColor: "#ffdc52"}) 
+ 
   gsap.utils.toArray(".newswrap").forEach(container => {
         let lokacija = container.querySelector(".newsminigrid"),
+        imgmask = container.querySelector(".newsimgwrap"),
+      
           // silhouette = container.querySelector(".silhouette .cover"), */
-          tl = gsap.timeline({
+          tlx = gsap.timeline({
             paused: true
           });
 
-        tl.to(lokacija, {
+        tlx.to(lokacija, {
           
           color: "#ffdc52",
           backgroundColor: "#231f20",
@@ -1401,8 +1403,15 @@ function lokacijehover() {
           ease: 'power1.inOut',
         });
 
-        container.addEventListener("mouseenter", () => tl.play());
-        container.addEventListener("mouseleave", () => tl.reverse());
+      .to(imgmask, {
+          
+          scale: 0.7,
+          duration: 0.3,
+          ease: 'power1.inOut',
+        });
+
+        container.addEventListener("mouseenter", () => tlx.play());
+        container.addEventListener("mouseleave", () => tlx.reverse());
   });
 
 }
