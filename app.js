@@ -380,10 +380,10 @@ function initContent() {
 
 
   myscripts.init();
-
+/*
   ScrollTrigger.refresh(true); // ScrollTrigger Refresh
   console.log("scrolltrigger refreshed AFTER all script load");
- 
+ */
  
  
 //DRUKČIJE SE PONAŠA AKO UBACIMO UNUTAR document ready/ 
