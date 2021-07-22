@@ -1395,8 +1395,6 @@ function lokacijehover() {
 
         tl.to(lokacija, {
           scale:1.1,
-          /* color: "#ffdc52",
-          backgroundColor: "#231f20", */
           duration: 0.3,
           ease: 'power1.inOut',
         })
