@@ -282,16 +282,109 @@ INIT CONTENT --> vodi na --> INIT SCROLL
 function initContent() {
 
 
+ // (function($) {
+
+    // your custom script
+    var myscripts = {
+        init: function () {
+            if ($('body').hasClass('home')) {
+            this.home();
+        } else if ($('body').hasClass('page-template-onama')) {
+            this.onama();
+        } 
+        else if ($('body').hasClass('page-template-lokacije')) {
+          this.lokacije();
+        }
+        else if ($('body').hasClass('single-lokacije')) {
+          this.sololokacije();
+        }
+        else if ($('body').hasClass('page-template-kontakt')) {
+          this.kontakt();
+        }
+        },
+        home: function () {
+            homevideo();
+            openMobileMenu();
+            console.log('from app.js | home');
+        },
+        onama: function () {
+            outlinehero();
+            numberoll();
+            horizpin();
+            playpausevideo();
+            smallCounteronama();
+            openMobileMenu();
+            onamacounter();
+            console.log('from app.js | o nama');
+        },
+        lokacije: function () {
+          newSort();
+          sortChangeLayout();
+          lokacijeBotuni();
+          locationMap();
+          stopScrollMap();
+          openMobileMenu();
+          pinHover();
+          lokacijehover();
+          console.log('from app.js | lokacije');
+        },
+        sololokacije: function () {
+          uploadCrop();
+          lokacijeBotuni();
+          saveaspdf();
+          lokacijeTabs(); 
+          mockupSimulatorProportions();
+          simulatorButton();
+          openMobileMenu();
+          //soloMap();
+          stopScrollMap();
+        
+          
+          
+          mockupImageResizer();
+          openTestYourDesign();
+         
+          
+          console.log('from app.js | solo lokacije');
+        },
+       /*  kontakt: function () {
+          openMobileMenu();
+          console.log('from app.js | kontakt');
+        } */
+
+    };
+  //});
+
   
 
 
- select('body').classList.remove('is-loading'); 
+  select('body').classList.remove('is-loading');
  /* ORIGINAL*/
   initScroll();
+  /* LOAD ON EVERY PAGE ---- edit*/
+  webflowInteractions();
+  customCursor();
+  underlineLink();
+  scrollTotop();
+  hideMenu();
+  openMobileMenu();
+  openTestYourDesign();
+  simulatorButton();
+  //splidesolo();
+  stopScrollMap();
+  //lokacijeTabs();
+  //uploadCrop();
+ // splidesolo();
+
+  console.log("initial scripts loaded...");
+
+
+  myscripts.init();
+/*
   ScrollTrigger.refresh(true); // ScrollTrigger Refresh
   console.log("scrolltrigger refreshed AFTER all script load");
  
-
+ */
  
 //DRUKČIJE SE PONAŠA AKO UBACIMO UNUTAR document ready/ 
 
