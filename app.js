@@ -1401,7 +1401,7 @@ function lokacijehover() {
           ease: 'power1.inOut',
         });
 
-        tl.to(border, {
+        .to(border, {
           border-bottom-width:3,
           duration: 0.3,
           ease: 'power1.inOut',
