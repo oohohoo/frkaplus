@@ -1403,7 +1403,7 @@ function lokacijehover() {
           ease: 'power1.inOut',
         })
 
-      .to(imgmask, {scale: 0.7, duration: 0.3, ease: 'power1.inOut'}, "<");
+      .to(imgmask, {scale: 0.9, duration: 0.3, ease: 'power1.inOut'}, "<");
 
         container.addEventListener("mouseenter", () => tlx.play());
         container.addEventListener("mouseleave", () => tlx.reverse());
