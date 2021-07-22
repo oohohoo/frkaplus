@@ -337,7 +337,7 @@ function initContent() {
           simulatorButton();
           openMobileMenu();
           //soloMap();
-          stopScrollMap();
+          stopScrollMap();j
         
           
           
