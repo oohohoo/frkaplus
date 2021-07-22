@@ -2661,13 +2661,7 @@ $('.movevideo').click(function(){
       $(this).remove(); // this is probably what actually does the trick
     }); */
    
-    document.addEventListener('DOMContentLoaded', function() { 
-      document.querySelector('.upload-video').pond.addEventListener('FilePond:addfile', function (e) {
-        $('.movevideo').toggleClass('hide'); 
-          console.log("SHOW BUTTON ON ADD FILE");
-      });
-
-      
+    
     console.log("BOTH FILEPOND and Video slot cleared on exit and tabs...");
 });
 
