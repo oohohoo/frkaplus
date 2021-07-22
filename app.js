@@ -1385,7 +1385,7 @@ LOKACIJE ITEM HOVER
 
 function lokacijehover() {
 
-   gsap.set(".newsminigrid", {color: "#231f20",backgroundColor: "#231f20", }) 
+   gsap.set(".newsminigrid", {color: "#231f20",backgroundColor: "#ffdc52"}) 
   gsap.utils.toArray(".newswrap").forEach(container => {
         let lokacija = container.querySelector(".newsminigrid"),
           // silhouette = container.querySelector(".silhouette .cover"), */
