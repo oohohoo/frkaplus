@@ -2654,7 +2654,7 @@ $('.movevideo').click(function(){
     setTimeout(() => {
    $('.upload-photo').filepond('removeFile');
     $('.upload-video').filepond('removeFile');
-  }, 1000)
+  }, 300)
         console.log("BOTH FILEPOND and Video slot cleared on exit and tabs...");
 });
 
