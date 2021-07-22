@@ -2647,7 +2647,7 @@ $('.upload-video').on('FilePond:removefile', function () {
 
 $('h1').click(function(){
   $('.movevideo').addClass('hide');
-  $('video').addClass('<?php if( get_field('video-ver') ): ?> <?php echo 'vert'; ?><?php endif; ?>');
+//  $('video').addClass('<?php if( get_field('video-ver') ): ?> <?php echo 'vert'; ?><?php endif; ?>');
 });
 
 
