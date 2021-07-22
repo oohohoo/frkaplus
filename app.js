@@ -380,18 +380,18 @@ function initContent() {
 
 
   myscripts.init();
-/*
+
   ScrollTrigger.refresh(true); // ScrollTrigger Refresh
   console.log("scrolltrigger refreshed AFTER all script load");
  
- */
+ 
  
 //DRUKČIJE SE PONAŠA AKO UBACIMO UNUTAR document ready/ 
 
  
- locoScroll.update();
+ /* locoScroll.update(); 
 console.log("LOCO FRESHH"); 
-
+*/
 
 }
 
