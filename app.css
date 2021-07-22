@@ -1187,9 +1187,15 @@ margin-bottom: 2em;
 }
 
 
-video {
+video .vert {
   height: 100%;
 }
+
+video .hor {
+  width: 100%;
+}
+
+
 
 .vizsim-txt, .close-x-icon {
 user-select:none;

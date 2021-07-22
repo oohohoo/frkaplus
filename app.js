@@ -321,7 +321,7 @@ function initContent() {
           newSort();
           sortChangeLayout();
           lokacijeBotuni();
-          locationMap();
+         /*  locationMap(); */
           stopScrollMap();
           openMobileMenu();
           pinHover();
