@@ -1401,7 +1401,7 @@ function lokacijehover() {
           backgroundColor: "#231f20",
           duration: 0.3,
           ease: 'power1.inOut',
-        });
+        })
 
       .to(imgmask, {
           
