@@ -454,7 +454,7 @@ function initPageTransitions() {
    
   });
 
-  barba.hooks.after((data) => {
+/*   barba.hooks.after((data) => {
     let js = data.next.container.querySelectorAll('main script');
     if(js != null){
             js.forEach((item) => {
@@ -464,7 +464,7 @@ function initPageTransitions() {
     }
 
     console.log("SCRIPTS EVALUATED NO PROBLEM");
-});
+}); */
   // scroll to the top of the page
 /*   barba.hooks.enter(() => {
     window.scrollTo(0, 0);
