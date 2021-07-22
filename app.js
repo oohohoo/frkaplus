@@ -2661,6 +2661,13 @@ $('.movevideo').click(function(){
       $(this).remove(); // this is probably what actually does the trick
     }); */
    
+    document.addEventListener('DOMContentLoaded', function() { 
+      document.querySelector('.upload-video').pond.addEventListener('FilePond:addfile', function (e) {
+        $('.movevideo').toggleClass('hide'); 
+          console.log("SHOW BUTTON ON ADD FILE");
+      });
+
+      
     console.log("BOTH FILEPOND and Video slot cleared on exit and tabs...");
 });
 
@@ -2712,6 +2719,7 @@ $(document).ready(function()
            // document.getElementById('destination').play();
           $('video').trigger('play');
            $('video').attr({'autoplay':'true', 'loop':'true'});
+           
            //setTimeout(function () {
           //  photo_crop_container.removeClass('show-result');
           //  }, 1000);
