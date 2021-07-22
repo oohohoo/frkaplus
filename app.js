@@ -454,7 +454,7 @@ function initPageTransitions() {
    
   });
 
-/*   barba.hooks.after((data) => {
+  barba.hooks.after((data) => {
     let js = data.next.container.querySelectorAll('main script');
     if(js != null){
             js.forEach((item) => {
@@ -464,7 +464,7 @@ function initPageTransitions() {
     }
 
     console.log("SCRIPTS EVALUATED NO PROBLEM");
-}); */
+});
   // scroll to the top of the page
 /*   barba.hooks.enter(() => {
     window.scrollTo(0, 0);
@@ -472,12 +472,7 @@ function initPageTransitions() {
   }); */
   barba.hooks.afterLeave((data) => {
     // Set <body> classes for "next" page
-    var nextHtml = data.next.html;
-    var response = nextHtml.replace(/(<\/?)body( .+?)?>/gi, '$1notbody$2>', nextHtml)
-    var bodyClasses = $(response).filter('notbody').attr('class')
-    $("body").attr("class", bodyClasses);
-    
-    console.log("BODY CLASSES UPDATED");
+   
   });
   
   barba.hooks.enter((data) => {
