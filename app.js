@@ -2663,7 +2663,7 @@ $('.movevideo').click(function(){
       delete this; // @sparkey reports that this did the trick (even though it makes no sense!)
       $(this).remove(); // this is probably what actually does the trick
     }); */
-  }, 200)
+  }, 1000)
     
     console.log("BOTH FILEPOND and Video slot cleared on exit and tabs...");
 });
