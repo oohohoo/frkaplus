@@ -1732,7 +1732,7 @@ STATIC IMAGE ZA MAPU
 
 /* HOME video iphone*/
 
-@media (max-width: 699px) {
+@media (max-width: 479px) {
 .bgvideo video {
 width: 100%;
 height: 100%;
