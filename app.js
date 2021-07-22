@@ -1397,7 +1397,7 @@ function lokacijehover() {
 
         tlx.to(lokacija, {
           
-          color: "#ffdc52",
+          color: "#F4DD54",
           backgroundColor: "#231f20",
           duration: 0.3,
           ease: 'power1.inOut',
