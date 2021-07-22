@@ -1402,7 +1402,7 @@ function lokacijehover() {
         })
 
         .to(border, {
-          border-bottom-width:3,
+          borderBottomWidth:3,
           duration: 0.3,
           ease: 'power1.inOut',
         }, "<");
