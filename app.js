@@ -337,7 +337,7 @@ function initContent() {
           simulatorButton();
           openMobileMenu();
           //soloMap();
-          stopScrollMap();j
+          stopScrollMap();
         
           
           
@@ -2031,6 +2031,10 @@ function simulatorButton() {
   });
 }
 console.log("TWEENBUTTON");
+
+
+
+
 }
 
 /*
