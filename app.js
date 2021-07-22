@@ -318,14 +318,14 @@ function initContent() {
             console.log('from app.js | o nama');
         },
         lokacije: function () {
-          newSort();
+         /*  newSort();
           sortChangeLayout();
           lokacijeBotuni();
           locationMap();
           stopScrollMap();
           openMobileMenu();
           pinHover();
-          lokacijehover();
+          lokacijehover(); */
           console.log('from app.js | lokacije');
         },
         sololokacije: function () {
