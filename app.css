@@ -1728,3 +1728,14 @@ STATIC IMAGE ZA MAPU
 /* .hero--video {
   overflow: hidden!important;
 } */
+
+
+/* HOME video iphone*/
+
+@media (max-width: 699px) {
+.bgvideo video {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+}
