@@ -231,7 +231,7 @@ O NAMA HORIZONTAL SCROLL // sredi
 }
 
 .pin-wrap {
-  height: 100vh;
+ /*  height: 100vh; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
