@@ -1187,11 +1187,11 @@ margin-bottom: 2em;
 }
 
 
-video .vert {
+.vert {
   height: 100%;
 }
 
-video .hor {
+.hor {
   width: 100%;
 }
 
