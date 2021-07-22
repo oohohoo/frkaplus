@@ -224,7 +224,7 @@ O NAMA HORIZONTAL SCROLL // sredi
 */
 
 .horizontal-scroll {
-  height: 100vh;
+  /* height: 100vh; */
   overflow: hidden;
   display: flex;
   left: 0;
