@@ -1748,6 +1748,11 @@ object-fit: cover;
   91.8vw!important;
   }
 
+  /*SCROLLBAR THUMB*/
+  .c-scrollbar_thumb {
+    width: 4px!important;
+}
+
 }
 
 /*IPAD VERTICAL*/
