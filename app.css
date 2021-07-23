@@ -1771,6 +1771,10 @@ object-fit: cover;
   object-fit: contain;
 }
 
-  }
+.splide__track {
+  height: auto; 
+}
+
+}
  
 
