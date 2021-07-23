@@ -1744,13 +1744,12 @@ object-fit: cover;
   left: 0em;
 }
 .select2-container {
-  width: 
-  91.8vw!important;
+  width: 91.8vw!important;
   }
 
-  /*SCROLLBAR THUMB*/
+  /*SCROLLBAR*/
   .c-scrollbar_thumb {
-    width: 4px!important;
+    width: 2px!important;
 }
 
 }
