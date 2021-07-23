@@ -1750,7 +1750,7 @@ object-fit: cover;
 
   /*SCROLLBAR*/
   .c-scrollbar_thumb {
-    width: 2px!important;
+    width: 4px!important;
 }
 /*SPLIDE IMAGE*/
 .splide-img, .splide__track {
