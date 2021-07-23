@@ -224,14 +224,14 @@ O NAMA HORIZONTAL SCROLL // sredi
 */
 
 .horizontal-scroll {
- height: 60vh;  
+ height: 100vh;  
   overflow: hidden;
   display: flex;
   left: 0;
 }
 
 .pin-wrap {
-    height: 60vh;
+    height: 100vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -1760,10 +1760,26 @@ object-fit: cover;
 display: none;
 }
 
+/*TOP PADDING ACCORD*/
 .accord a {
   padding: 2em 0em 1.5em 0em;
 }
 
+.horizontal-scroll {
+  height: 75vh;  
+ }
+ 
+ .pin-wrap {
+  height: 75vh;
+  padding: 50px 10vw;
+ }
+ 
+ .pin-wrap > * {
+   min-width: 70vw;
+   padding: 0 5vw;
+ }
+
+ 
 
 
 }
