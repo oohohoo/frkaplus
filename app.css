@@ -1752,9 +1752,10 @@ object-fit: cover;
     width: 2px!important;
 }
 /*SPLIDE IMAGE*/
-.splide-img {
+.splide-img, .splide__track {
   height: auto;
 }
+
 
 }
 
