@@ -1741,8 +1741,9 @@ object-fit: cover;
 }
 
 @media (max-width: 991px) {
-
-    width: 15em!important;
+  .select2-container {
+ 
+        width: 15em!important;
    
   }
   }
