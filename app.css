@@ -1734,6 +1734,14 @@ STATIC IMAGE ZA MAPU
 /* HOME video iphone*/
 
 @media (max-width: 479px) {
+
+  /*OUTLINE TXT*/
+  .outline-text, .outlinetwo {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFDC52;
+}
+
+
 /*VIDEO HOME*/
 .bgvideo video {
 width: 100%;
