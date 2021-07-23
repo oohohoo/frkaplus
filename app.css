@@ -222,16 +222,16 @@ LOADER
 O NAMA HORIZONTAL SCROLL // sredi
 ================================================================================
 */
-/* 
+
 .horizontal-scroll {
- height: 100vh;  
+ height: 60vh;  
   overflow: hidden;
   display: flex;
   left: 0;
 }
 
 .pin-wrap {
-    height: 100vh;
+    height: 60vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -242,7 +242,7 @@ O NAMA HORIZONTAL SCROLL // sredi
   min-width: 60vw;
   padding: 0 5vw;
 }
- */
+
 /*
 ================================================================================
 LOCOMOTIVE SCROLL 4.1.1
