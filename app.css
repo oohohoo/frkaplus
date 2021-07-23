@@ -1766,6 +1766,10 @@ display: none;
   padding: 2em 0em 1.5em 0em;
 }
 
+.accord a:hover {
+  padding: 2em 0em 1.5em;
+}
+
 .horizontal-scroll {
   height: 75vh;  
  }
