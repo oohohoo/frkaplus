@@ -224,14 +224,14 @@ O NAMA HORIZONTAL SCROLL // sredi
 */
 
 .horizontal-scroll {
-  height: 100vh; 
+  /* height: 100vh;  */
   overflow: hidden;
   display: flex;
   left: 0;
 }
 
 .pin-wrap {
-   height: 100vh;
+   /* height: 100vh; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
