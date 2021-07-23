@@ -1756,6 +1756,9 @@ object-fit: cover;
   height: auto;
 }
 
+.splide__pagination {
+display: none;
+}
 
 }
 
