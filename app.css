@@ -1743,15 +1743,17 @@ object-fit: cover;
 .webinar-posts__event-filter.filter-group.js-sort {
   left: 0em;
 }
-
+.select2-container {
+  width: 100%!important;
+  }
 
 }
 
 
 @media (max-width: 991px) {
+  /*SELECT BOTUNI*/
   .select2-container {
   width: 15em!important;
-  
   }
   }
  
