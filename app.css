@@ -154,6 +154,8 @@ LOADER
 }
 
 @media (max-width: 991px) {
+
+
   .loader__title {
     transform: translate(-50%, -90%);
   }
@@ -385,6 +387,12 @@ OUTLINE
       -webkit-text-stroke-color: var(--frkablack);
       letter-spacing: 3px;
       text-stroke: 2px var(--frkablack); /* Future-proofing */
+    }
+
+    .outline-text, .outlinetwo  {
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: #FFDC52;
+      text-stroke: 2px var(--frkayellow); /* Future-proofing */
     }
 
 
