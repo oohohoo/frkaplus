@@ -1760,6 +1760,12 @@ object-fit: cover;
 display: none;
 }
 
+.accord a {
+  padding: 2em 0em 1.5em 0em;
+}
+
+
+
 }
 
 /*IPAD VERTICAL*/
