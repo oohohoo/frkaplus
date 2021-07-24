@@ -1583,6 +1583,12 @@ SHUFFLE.js
   grid-column-gap: 2em;
 }
 
+.item--flex__inner.full {
+   height: 100%;
+}
+
+
+
 .webinar-posts__event-filter .btn:hover,
 .webinar-posts__event-filter .btn:active,
 .webinar-posts__event-filter .btn:focus {
