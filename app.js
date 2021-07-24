@@ -531,9 +531,9 @@ function initPageTransitions() {
   */
 
 barba.init({
-      timeout: 7000,
+      timeout: 10000,
       //debug: true,
-      prefetch: true,
+      prefetch: false,
 /*
   ================================================================================
   BARBA VIEWS
@@ -3262,7 +3262,11 @@ Demo.prototype.itemPassesFilters = function (element) {
       window.demo = new Demo(document.querySelector(".js-shuffle"));
       /*  },200)   */
 
-      
+       setTimeout(()=>{  
+     //   locoScroll.update(); 
+       ScrollTrigger.refresh(true);
+       console.log("DELAY SORT REFRESH");
+      },1000) 
 
 }
 
