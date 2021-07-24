@@ -1749,6 +1749,14 @@ STATIC IMAGE ZA MAPU
  }
 
 
+ .outline-text {
+  left: -15em!important;
+  top: 1.8em!important;
+}
+
+
+
+
 /*VIDEO HOME*/
 .bgvideo video {
 width: 100%;
