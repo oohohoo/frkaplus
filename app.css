@@ -1587,6 +1587,9 @@ SHUFFLE.js
    height: 100%;
 }
 
+.pin-button-link.full {
+  bottom: 2.2em;
+}
 
 
 .webinar-posts__event-filter .btn:hover,

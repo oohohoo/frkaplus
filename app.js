@@ -3283,6 +3283,7 @@ $('.location-switcher_wrap').click(function () {
   $('.newsimgwrap').toggleClass('full');
   $('.item--flex__inner').toggleClass('full');
   $('.pin-button-link').toggleClass('full');
+   $('.pin-button-link').toggleClass('full');
   $('.location-switcher_column').toggleClass('hide');
   $('.location-switcher_full').toggleClass('hide');
 });
