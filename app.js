@@ -3201,7 +3201,7 @@ Demo.prototype.filter = function () {
     }
 
     if (this.shuffle.visibleItems == 0) {
-      this.message.innerHTML = (this.shuffle.visibleItems) + " items";
+      this.message.innerHTML = (this.shuffle.visibleItems) + " rezultata";
       this.shuffle.layout();
       locoScroll.update();
       ScrollTrigger.refresh(true);
