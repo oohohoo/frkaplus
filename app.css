@@ -1549,7 +1549,7 @@ SHUFFLE.js
 }
 
 .newsimgwrap.full {
-  width: 100%;
+  width: 20.65em;
   /* height: 100% */
 }
 
@@ -1577,9 +1577,9 @@ SHUFFLE.js
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
-  padding-top: 0em;
+  /* padding-top: 0em; */
   padding-bottom: 1.25em;
-  grid-column-gap: 1.2em;
+  grid-column-gap: 2em;
 }
 
 .webinar-posts__event-filter .btn:hover,
