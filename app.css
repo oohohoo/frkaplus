@@ -1745,9 +1745,8 @@ STATIC IMAGE ZA MAPU
 
   /*OUTLINE TXT*/
   .outline-text, .outlinetwo {
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #FFDC52;
-}
+    -webkit-text-stroke-width: 1px!important;
+ }
 
 
 /*VIDEO HOME*/
