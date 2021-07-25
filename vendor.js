@@ -2502,7 +2502,7 @@ function(global,factory){"object"==typeof exports&&"undefined"!=typeof module?mo
               'left': '0px',
               'fontSize': '1.04em',
               'padding': '40px',
-              'color': '#ffdc52',
+              'color': '#FFFCF0',
               'wordSpacing': '0.2px',
               'webkitFontSmoothing': 'antialiased',
               'textShadow': '-1px 0px 1px rgba(0,0,0,0.4)'
@@ -2519,7 +2519,7 @@ function(global,factory){"object"==typeof exports&&"undefined"!=typeof module?mo
                 'padding': '0px',
                 'fontWeight': 'normal',
                 'fontSize': '2em',
-                'color': '#ffdc52',
+                'color': '#FFFCF0',
                 'letterSpacing': '-0.018em',
                 'lineHeight': '35px',
                 'textAlign': 'left'
