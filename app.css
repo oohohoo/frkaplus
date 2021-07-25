@@ -1592,7 +1592,7 @@ SHUFFLE.js
 }
 
 .autowidth {
-  width:auto;
+  width:auto!important;
 }
 .webinar-posts__event-filter .btn:hover,
 .webinar-posts__event-filter .btn:active,
