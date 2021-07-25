@@ -1706,6 +1706,13 @@ STATIC IMAGE ZA MAPU
  /*  left: -0.5em; */
 
 }
+.leftfix {
+    
+   left: -2em;  
+  }
+
+}
+
 
 /* SORT ITEM */
 .w-inline-block {
