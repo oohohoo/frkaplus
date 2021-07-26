@@ -476,9 +476,9 @@ function initPageTransitions() {
     var nextHtml = data.next.html;
     var response = nextHtml.replace(/(<\/?)body( .+?)?>/gi, '$1notbody$2>', nextHtml)
     var bodyClasses = $(response).filter('notbody').attr('class')
-    $("body").attr("class", bodyClasses);
-    select('body').classList.remove('is-loading');
+      $("body").attr("class", bodyClasses);
     console.log("BODY CLASSES UPDATED");
+
   });
   
   barba.hooks.enter((data) => {
@@ -517,6 +517,7 @@ function initPageTransitions() {
   });
   //init scrolltrigger
   barba.hooks.afterEnter(() => {
+    select('body').classList.add('is-loading');
 
   });
 
