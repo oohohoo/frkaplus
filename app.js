@@ -142,9 +142,9 @@ function initScroll(container) {
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
 
 // CLOSE LOKACIJE SELECT DROPDOWN ON SCROLL
-locoScroll.on('scroll', (instance) => {
+/* locoScroll.on('scroll', (instance) => {
  $("#selectone, #selecttwo, #sorto").select2('close');
-});
+}); */
 
 /*
 ================================================================================
