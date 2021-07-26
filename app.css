@@ -20,8 +20,10 @@ body {
 
 .smooth-scroll {
   overflow-y: hidden;
-  will-change: transform, opacity;
-  transform: translate3d(0, 0, 0);
+ /*  will-change: transform, opacity; */
+  will-change: scroll-position;
+  
+ /*  transform: translate3d(0, 0, 0); */
 }
 
 /*
