@@ -45,7 +45,7 @@ function init() {
   // setup variables
   let loadedImageCount = 0,
     imageCount;
-  const container = select('#main');
+  const container = select('#mainx');
 
   // setup Images loaded
   const imgLoad = imagesLoaded(container);
