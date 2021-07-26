@@ -387,7 +387,7 @@ function initContent() {
   myscripts.init();
 
   setTimeout(() => {
-    /* this.shuffle.layout(); */
+    this.shuffle.layout(); 
     locoScroll.update();
     ScrollTrigger.refresh(true);
     console.log("FINAL LOCO + SCROLLTRIGGER REFRESHHHHHHH");
