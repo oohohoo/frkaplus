@@ -98,7 +98,7 @@ function initScroll(container) {
     el: document.querySelector(".smooth-scroll"),
     smooth: true, 
     /* offset: [0, 0], */
- /*    getDirection: true,
+    getDirection: true,
     scrollFromAnywhere: true,
    multiplier: 1.0, // body sroll speed / object speed values are multiplied
     touchMultiplier: 3.0,
@@ -109,17 +109,17 @@ function initScroll(container) {
     },
     tablet: {
       smooth: true,
-    } */
-  }); 
+    }
+  });
 // data direction ubačeno naknadno
   locoScroll.on("scroll", function (t) {
     document.documentElement.setAttribute("data-direction", t.direction);
   });
 
   // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
- /*  locoScroll.on("scroll", ScrollTrigger.update); */
-  locoScroll.on("scroll", () => ScrollTrigger.update());
-  console.log("LOCO UPDATED AJDEEE JEBEMTEUPIČKU");
+  locoScroll.on("scroll", ScrollTrigger.update);
+  /* locoScroll.on("scroll", () => ScrollTrigger.update()); */
+  console.log("LOCO UPDATED AJDEEE UFF");
   // tell ScrollTrigger to use these proxy methods for the ".smooth-scroll" element since Locomotive Scroll is hijacking things
   ScrollTrigger.scrollerProxy(".smooth-scroll", {
     scrollTop(value) {
