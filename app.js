@@ -281,7 +281,7 @@ INIT CONTENT --> vodi na --> INIT SCROLL
 */
 function initContent() {
 
-  select('.show').classList.add('is-loading');
+  select('.show').classList.remove('is-loading');
 
  // (function($) {
 
