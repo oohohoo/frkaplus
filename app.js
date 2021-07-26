@@ -294,7 +294,7 @@ function initContent() {
             this.onama();
         } 
         else if ($('body').hasClass('page-template-lokacije')) {
-        //  this.lokacije();
+         this.lokacije();
         }
         else if ($('body').hasClass('single-lokacije')) {
           this.sololokacije();
