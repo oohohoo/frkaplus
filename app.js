@@ -391,7 +391,7 @@ function initContent() {
     locoScroll.update();
     ScrollTrigger.refresh(true);
     console.log("FINAL LOCO + SCROLLTRIGGER REFRESH");
-  }, 1000)
+  }, 6000)
  /*  ScrollTrigger.refresh(true); // ScrollTrigger Refresh
   console.log("scrolltrigger refreshed AFTER all script load"); */
  
