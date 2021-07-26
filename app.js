@@ -386,8 +386,8 @@ function initContent() {
 
   myscripts.init();
 
-  ScrollTrigger.refresh(true); // ScrollTrigger Refresh
-  console.log("scrolltrigger refreshed AFTER all script load");
+ /*  ScrollTrigger.refresh(true); // ScrollTrigger Refresh
+  console.log("scrolltrigger refreshed AFTER all script load"); */
  
  
  
@@ -539,7 +539,7 @@ function initPageTransitions() {
 barba.init({
       timeout: 7000,
       //debug: true,
-      prefetch: true,
+      prefetch: false,
 /*
   ================================================================================
   BARBA VIEWS
@@ -574,7 +574,7 @@ barba.init({
                 newSort();
                 stopScrollMap();
                 webflowInteractions();
-                pinHover();
+               /*  pinHover(); */
                 lokacijehover();
                 console.log("Lokacija Hover");
               },
