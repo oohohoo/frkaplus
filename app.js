@@ -322,11 +322,14 @@ function initContent() {
           newSort();
           sortChangeLayout();
           lokacijeBotuni();
-          locationMap();
+                 
           stopScrollMap();
           openMobileMenu();
           pinHover();
           lokacijehover();
+          setTimeout(()=>{ 
+            locationMap();
+               },1500)  
           console.log('from app.js | lokacije');
         },
         sololokacije: function () {
