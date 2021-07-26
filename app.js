@@ -131,7 +131,7 @@ function initScroll(container) {
     // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, 
     // we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
     /*OVO NE RADI SA DATA_SCROLL_SECTION */
-   /*  pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed"   */
+    pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed"  
   });
 
   // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
@@ -222,7 +222,7 @@ function initLoader() {
 
   const tlLoaderIn = gsap.timeline({
     id: 'tlLoaderIn',
-    defaults: {duration: 1.1, ease: 'power2.out'},
+    defaults: {duration: 0.8, ease: 'power2.out'},
     onComplete: () => initContent()
   });
 
@@ -260,7 +260,7 @@ function initLoader() {
   // LOADER OUT
   const tlLoaderOut = gsap.timeline({
     id: 'tlLoaderOut',
-    defaults: {duration: 1.2, ease: 'power2.inOut'},delay: 0});
+    defaults: {duration: 0.8, ease: 'power2.inOut'},delay: 0});
 
   tlLoaderOut
 
@@ -281,6 +281,7 @@ INIT CONTENT --> vodi na --> INIT SCROLL
 */
 function initContent() {
 
+  select('body').classList.remove('is-loading');
 
  // (function($) {
 
@@ -358,7 +359,7 @@ function initContent() {
   
 
 
-  select('body').classList.remove('is-loading');
+  
  /* ORIGINAL*/
   initScroll();
   /* LOAD ON EVERY PAGE ---- edit*/
