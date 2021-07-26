@@ -281,7 +281,7 @@ INIT CONTENT --> vodi na --> INIT SCROLL
 */
 function initContent() {
 
-  select('body').classList.add('is-loading');
+  select('body').classList.remove('is-loading');
 
  // (function($) {
 
@@ -405,7 +405,7 @@ function pageTransitionIn({
   container
 }) {
   // timeline to stretch the loader over the whole screen
-  const tl = gsap.timeline({defaults: {duration: 0.8,ease: 'power3.out'}});
+  const tl = gsap.timeline({defaults: {duration: 0.6,ease: 'power3.out'}});
   tl
   .set(".imageloadicon", {autoAlpha: 1})
   .set(loaderInner, {autoAlpha: 0})
@@ -455,7 +455,7 @@ function initPageTransitions() {
    
   });
 
-  barba.hooks.after((data) => {
+/*   barba.hooks.after((data) => {
     let js = data.next.container.querySelectorAll('main script');
     if(js != null){
             js.forEach((item) => {
@@ -465,7 +465,7 @@ function initPageTransitions() {
     }
 
     console.log("SCRIPTS EVALUATED NO PROBLEM");
-});
+}); */
   // scroll to the top of the page
 /*   barba.hooks.enter(() => {
     window.scrollTo(0, 0);
