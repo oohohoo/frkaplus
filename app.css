@@ -330,7 +330,7 @@ GSAP PERFORMANCE FIX
 }   
 
 #main {
-  transform: rotate(1deg);
+ /* transform: rotate(1deg);
 /*   will-change: transform;
   backface-visibility: hidden; */
 }   
