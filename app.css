@@ -19,8 +19,9 @@ body {
 }
 
 .smooth-scroll {
-  overflow-y: hidden !important;
-  will-change: transform, opacity!important;
+  overflow-y: hidden;
+  will-change: transform, opacity;
+  transform: translate3d(0, 0, 0);
 }
 
 /*
