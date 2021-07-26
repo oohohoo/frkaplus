@@ -117,7 +117,8 @@ function initScroll(container) {
   });
 
   // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
-  locoScroll.on("scroll", ScrollTrigger.update);
+ /*  locoScroll.on("scroll", ScrollTrigger.update); */
+  locoScroll.on("scroll", () => ScrollTrigger.update());
 
   // tell ScrollTrigger to use these proxy methods for the ".smooth-scroll" element since Locomotive Scroll is hijacking things
   ScrollTrigger.scrollerProxy(".smooth-scroll", {
