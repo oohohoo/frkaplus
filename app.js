@@ -281,7 +281,7 @@ INIT CONTENT --> vodi na --> INIT SCROLL
 */
 function initContent() {
 
-  select('body').classList.remove('is-loading');
+  
 
  // (function($) {
 
@@ -477,7 +477,7 @@ function initPageTransitions() {
     var response = nextHtml.replace(/(<\/?)body( .+?)?>/gi, '$1notbody$2>', nextHtml)
     var bodyClasses = $(response).filter('notbody').attr('class')
     $("body").attr("class", bodyClasses);
-    
+    select('body').classList.remove('is-loading');
     console.log("BODY CLASSES UPDATED");
   });
   
