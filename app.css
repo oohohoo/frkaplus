@@ -20,6 +20,7 @@ body {
 
 .smooth-scroll {
   overflow-y: hidden !important;
+  will-change: transform, opacity;
 }
 
 /*
