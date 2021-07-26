@@ -18,9 +18,9 @@ body {
   user-select: none;          /* Likely future */      
 }
 
-.smooth-scroll {
+/* .smooth-scroll {
   overflow-y: hidden !important;
-}
+} */
 
 /*
 ================================================================================
