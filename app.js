@@ -281,7 +281,7 @@ INIT CONTENT --> vodi na --> INIT SCROLL
 */
 function initContent() {
 
-  select('.show').classList.remove('is-loading');
+  
 
  // (function($) {
 
@@ -448,6 +448,7 @@ function initPageTransitions() {
   // do something before the transition starts
   barba.hooks.before(() => {
     select('html').classList.add('is-transitioning');
+    select('.show').classList.remove('is-loading');
   });
   // do something after the transition finishes
   barba.hooks.after(() => {
