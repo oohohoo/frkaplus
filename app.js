@@ -94,7 +94,7 @@ MAIN JS + LOCOMOTIVE SCROLL + SCROLL TRIGGER
 
 function initScroll(container) {
 
-  locoScroll = new LocomotiveScroll({
+ const locoScroll = new LocomotiveScroll({
     el: document.querySelector(".smooth-scroll"),
     smooth: true, 
     /* offset: [0, 0], */
