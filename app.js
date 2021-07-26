@@ -100,10 +100,10 @@ function initScroll(container) {
     offset: [0, 0],
     getDirection: true,
     scrollFromAnywhere: true,
-    multiplier: 1.0, // body sroll speed / object speed values are multiplied
+    //multiplier: 1.0, // body sroll speed / object speed values are multiplied
     touchMultiplier: 3.0,
     useKeyboard: true,
-    inertia: .85,
+    inertia: .75,
     smartphone: {
       smooth: true,
     },
