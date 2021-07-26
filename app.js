@@ -1964,7 +1964,7 @@ function homevideo() {
 
   let videoroll = gsap.timeline()
 
-  let cover = document.querySelector('.bgvideo')
+  let cover = document.querySelector('.hero--video')
   let firstSection = document.querySelector('.big-logo')
   let apelTrigger = document.querySelector('.hero--header--wrapper')
 
