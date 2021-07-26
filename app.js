@@ -281,7 +281,7 @@ INIT CONTENT --> vodi na --> INIT SCROLL
 */
 function initContent() {
 
-  select('body').classList.remove('is-loading');
+  select('.show').classList.add('is-loading');
 
  // (function($) {
 
@@ -490,7 +490,7 @@ function initPageTransitions() {
     //document.querySelector('.header').innerHTML = nextHeader.innerHTML;
     */
      });
-     console.log("HEADER SCRIPT"); 
+     /* console.log("HEADER SCRIPT");  */
 
   //kill scrolltrigger
   barba.hooks.beforeLeave(() => {
