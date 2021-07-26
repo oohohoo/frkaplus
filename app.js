@@ -94,7 +94,7 @@ MAIN JS + LOCOMOTIVE SCROLL + SCROLL TRIGGER
 
 function initScroll(container) {
 
- const locoScroll = new LocomotiveScroll({
+locoScroll = new LocomotiveScroll({
     el: document.querySelector(".smooth-scroll"),
     smooth: true, 
     /* offset: [0, 0], */
@@ -142,9 +142,10 @@ function initScroll(container) {
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
 
 // CLOSE LOKACIJE SELECT DROPDOWN ON SCROLL
-/* locoScroll.on('scroll', (instance) => {
+ locoScroll.on('scroll', (instance) => {
  $("#selectone, #selecttwo, #sorto").select2('close');
-}); */
+ console.log("Hello world! ja skrolam i zatvaram SELECT");
+}); 
 
 /*
 ================================================================================
