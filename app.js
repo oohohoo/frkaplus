@@ -98,7 +98,7 @@ function initScroll(container) {
     el: document.querySelector(".smooth-scroll"),
     smooth: true, 
     /* offset: [0, 0], */
-    getDirection: true,
+ /*    getDirection: true,
     scrollFromAnywhere: true,
    multiplier: 1.0, // body sroll speed / object speed values are multiplied
     touchMultiplier: 3.0,
@@ -110,7 +110,7 @@ function initScroll(container) {
     tablet: {
       smooth: true,
     }
-  });
+  }); */
 // data direction ubačeno naknadno
   locoScroll.on("scroll", function (t) {
     document.documentElement.setAttribute("data-direction", t.direction);
