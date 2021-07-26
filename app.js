@@ -96,8 +96,8 @@ function initScroll(container) {
 
   locoScroll = new LocomotiveScroll({
     el: document.querySelector(".smooth-scroll"),
-   // smooth: true, 
-    offset: [0, 0],
+    smooth: true, 
+    /* offset: [0, 0], */
     getDirection: true,
     scrollFromAnywhere: true,
    multiplier: 1.0, // body sroll speed / object speed values are multiplied
