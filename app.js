@@ -103,7 +103,7 @@ function initScroll(container) {
     //multiplier: 1.0, // body sroll speed / object speed values are multiplied
     touchMultiplier: 3.0,
     useKeyboard: true,
-    inertia: .75,
+    /* inertia: .75, */
     smartphone: {
       smooth: true,
     },
