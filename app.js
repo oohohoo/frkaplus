@@ -390,7 +390,7 @@ function initContent() {
     /* this.shuffle.layout(); */
     locoScroll.update();
     ScrollTrigger.refresh(true);
-    console.log("FINAL LOCO + SCROLLTRIGGER REFRESH");
+    console.log("FINAL LOCO + SCROLLTRIGGER REFRESHHHHHHH");
   }, 6000)
  /*  ScrollTrigger.refresh(true); // ScrollTrigger Refresh
   console.log("scrolltrigger refreshed AFTER all script load"); */
