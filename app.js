@@ -109,8 +109,8 @@ function initScroll(container) {
     },
     tablet: {
       smooth: true,
-    }
-  }); */
+    } */
+  }); 
 // data direction ubačeno naknadno
   locoScroll.on("scroll", function (t) {
     document.documentElement.setAttribute("data-direction", t.direction);
