@@ -473,22 +473,23 @@ function initPageTransitions() {
   }); */
   barba.hooks.afterLeave((data) => {
     // Set <body> classes for "next" page
-  /*   var nextHtml = data.next.html;
+    var nextHtml = data.next.html;
     var response = nextHtml.replace(/(<\/?)body( .+?)?>/gi, '$1notbody$2>', nextHtml)
     var bodyClasses = $(response).filter('notbody').attr('class')
     $("body").attr("class", bodyClasses);
     
-    console.log("BODY CLASSES UPDATED"); */
+    console.log("BODY CLASSES UPDATED");
   });
   
   barba.hooks.enter((data) => {
     window.scrollTo(0, 0);
+    
    /*  let parser = new DOMParser();
-    let dom = parser.parseFromString(data.next.html, 'text/html'); */
+    let dom = parser.parseFromString(data.next.html, 'text/html');
     //let nextHeader = parser.parseFromString(data);
     //document.querySelector('.header').innerHTML = nextHeader.innerHTML;
      });
-     console.log("HEADER SCRIPT");
+     console.log("HEADER SCRIPT"); */
 
   //kill scrolltrigger
   barba.hooks.beforeLeave(() => {
