@@ -281,7 +281,7 @@ INIT CONTENT --> vodi na --> INIT SCROLL
 */
 function initContent() {
 
-  
+  select('body').classList.remove('is-loading');
 
  // (function($) {
 
@@ -471,15 +471,15 @@ function initPageTransitions() {
     window.scrollTo(0, 0);
 
   }); */
-  barba.hooks.afterLeave((data) => {
+ /*  barba.hooks.afterLeave((data) => {
     // Set <body> classes for "next" page
     var nextHtml = data.next.html;
     var response = nextHtml.replace(/(<\/?)body( .+?)?>/gi, '$1notbody$2>', nextHtml)
     var bodyClasses = $(response).filter('notbody').attr('class')
-      $("body").attr("class", bodyClasses);
+    $("body").attr("class", bodyClasses);
+    
     console.log("BODY CLASSES UPDATED");
-
-  });
+  }); */
   
   barba.hooks.enter((data) => {
     window.scrollTo(0, 0);
@@ -517,7 +517,6 @@ function initPageTransitions() {
   });
   //init scrolltrigger
   barba.hooks.afterEnter(() => {
-    select('body').classList.add('is-loading');
 
   });
 
