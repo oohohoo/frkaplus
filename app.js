@@ -472,6 +472,7 @@ function initPageTransitions() {
 
   }); */
   barba.hooks.afterLeave((data) => {
+    /* OVO JE BITNO!!!!!!!*/
     // Set <body> classes for "next" page
     /* var nextHtml = data.next.html;
     var response = nextHtml.replace(/(<\/?)body( .+?)?>/gi, '$1notbody$2>', nextHtml)
