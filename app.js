@@ -329,7 +329,7 @@ function initContent() {
           lokacijehover();
           setTimeout(()=>{ 
             locationMap();
-               },1500)  
+               },5000)  
           console.log('from app.js | lokacije');
         },
         sololokacije: function () {
