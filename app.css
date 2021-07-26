@@ -1083,7 +1083,7 @@ TEST YOUR DESIGN
     -ms-transform: translateY(-10%);
     transform: translateY(-10%);
     opacity: 0;
-    scroll-behavior: smooth;
+  /*   scroll-behavior: smooth; */
   }
 
   .photo-crop-container.show-result #user_cropped_img img {
