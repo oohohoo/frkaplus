@@ -147,6 +147,10 @@ locoScroll = new LocomotiveScroll({
  console.log("Hello world! ja skrolam i zatvaram SELECT");
 });  */
 
+
+window.onanimationiteration = console.log;
+
+
 /*
 ================================================================================
 ON WINDOW RESIZE
