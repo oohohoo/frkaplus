@@ -21,7 +21,7 @@ body {
 .smooth-scroll {
   overflow-y: hidden!important;
   transform: translateZ(0);
--webkit-transform: translateZ(0);
+/* -webkit-transform: translateZ(0); */
    /* will-change: transform, opacity;  */
  /*  will-change: scroll-position; */
   
