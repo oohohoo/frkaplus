@@ -1746,7 +1746,7 @@ STATIC IMAGE ZA MAPU
   left:0;
   top:0;
       background: transparent;
-      padding: 0.5rem 1rem;
+      padding: .5em 0.5em 1.5em 2.5em;
      }
   .visually-hidden {
       position: absolute;
