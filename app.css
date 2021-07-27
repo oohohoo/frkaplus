@@ -793,6 +793,10 @@ body .cursory {
   transform: translateX(-50%) translateY(-50%);
 } */
 
+.sorty, .control-me {
+cursor: pointer;
+}
+
 /*
 ================================================================================
 SEARCH INPUT
