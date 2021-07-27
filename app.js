@@ -421,7 +421,7 @@ function pageTransitionIn({
   .set(".imageloadicon", {autoAlpha: 1})
   .set(loaderInner, {autoAlpha: 0})
   .fromTo(loader, {yPercent: -100}, {yPercent: 0})
-  .fromTo(loaderMask, {yPercent: 80}, {yPercent: 0}, 0)
+  .fromTo(loaderMask, {yPercent: 80}, {yPercent: 0}, 0);
   //.to(container, {y: 80}, 0);
 
   return tl;
@@ -443,7 +443,7 @@ function pageTransitionOut({
   tl
 
     .to(loader, {yPercent: 100})
-    .to(loaderMask, {yPercent: -80}, 0)
+    .to(loaderMask, {yPercent: -80}, 0);
    // .from(container, {y: -80}, 0);
     return tl;
 }
