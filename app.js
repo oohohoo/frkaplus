@@ -385,10 +385,15 @@ function initContent() {
 
 
   myscripts.init();
-
+/* 
   ScrollTrigger.refresh(true); // ScrollTrigger Refresh
-  console.log("scrolltrigger refreshed AFTER all script load");
+  console.log("scrolltrigger refreshed AFTER all script load"); */
  
+  setTimeout(() => {
+     locoScroll.update();
+    ScrollTrigger.refresh(true);
+    console.log("Locoscrollupdated + SCROLLTRIGGER NAKON 5 SEKUNDI");
+  }, 5000)
  
  
 //DRUKČIJE SE PONAŠA AKO UBACIMO UNUTAR document ready/ 
@@ -3318,7 +3323,11 @@ Demo.prototype.itemPassesFilters = function (element) {
       window.demo = new Demo(document.querySelector(".js-shuffle"));
       /*  },200)   */
 
-     
+      /*  setTimeout(()=>{  
+     //   locoScroll.update(); 
+       ScrollTrigger.refresh(true);
+       console.log("DELAY SORT REFRESH");
+      },1000)  */
 
 }
 
