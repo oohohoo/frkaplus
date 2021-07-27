@@ -771,7 +771,7 @@ LOCATION MAP
 */
 function locationMap() {
 
-  mapboxgl.accessToken = 'pk.eyJ1IjoiZm9nc2VsbGVyIiwiYSI6ImNrN2VpbXlpbjAwNDIzbnM1N2ZhMW9laGkifQ.DUf-8r1jXF4o7ApMUcKVXQ';
+  mapboxgl.accessToken = 'pk.eyJ1IjoiZnJrYXBsdXMiLCJhIjoiY2tybHY1djhuNDE4YzJ6cDhtZmkzdzFvaiJ9.hTRDicTnxDfby_3lEybkNwxxx';
 
   var bounds = [
     [13.109302076751561, 42.167215037402855],
@@ -780,7 +780,7 @@ function locationMap() {
 
   var map = new mapboxgl.Map({
     container: 'map', // container ID
-    style: 'mapbox://styles/fogseller/ckqkw1hr4091g17sgan3bwjzp?optimize=true', // style URL / dodano optimize=true
+    style: 'mapbox://styles/frkaplus/ckrm2d3v226f017lps9oqdrpmxxx?optimize=true', // style URL / dodano optimize=true
     center: [16.527, 44.663], // starting position [lng, lat]
     zoom: 6.64, // starting zoom
     minZoom: 6.64, // note the camel-case
