@@ -2383,7 +2383,7 @@ zoom.forEach(function (el) {
 
   el.addEventListener('mouseenter', () => {
     gsap.to(cursor, 0.25, {scale: 12});
-    $('.cursor__text').text('+');
+   /*  $('.cursor__text').text('+'); */
   gsap.to(buttonText, 0.25, {
     css: {
       opacity: 1
