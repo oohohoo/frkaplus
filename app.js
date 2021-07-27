@@ -100,10 +100,10 @@ locoScroll = new LocomotiveScroll({
     offset: [0, 0],
     getDirection: true,
     scrollFromAnywhere: true,
-    multiplier: 2.0, // body sroll speed / object speed values are multiplied
+    multiplier: 1.0, // body sroll speed / object speed values are multiplied
     touchMultiplier: 3.0,
     useKeyboard: true,
-     /* inertia: 1,  */
+     inertia: 1.2,  
     smartphone: {
       smooth: true,
     },
