@@ -1734,7 +1734,7 @@ STATIC IMAGE ZA MAPU
   top: 0.55em;
   right: 0.85em;
   }
-  .control-me::after {
+  .control-me::after {  
       content: "A — Z";
       font-size: 1.04em—;
   }
