@@ -1748,6 +1748,7 @@ STATIC IMAGE ZA MAPU
   width:100%;
       background: transparent;
       padding: .5em 0.5em 1.5em 2.5em!important;
+      cursor: pointer;
      }
   .visually-hidden {
       position: absolute;
