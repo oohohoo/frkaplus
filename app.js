@@ -160,6 +160,8 @@ window.addEventListener('resize', function(){
   console.log("RESIZE ST+LS");
 });
 
+console.log(devicePixelRatio);
+
 /*
 ================================================================================
 RELOAD ON MOBILE ORIENTATION CHANGE // OVO TESTIRAJ DA LI TREBA
