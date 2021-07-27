@@ -2369,11 +2369,32 @@ var buttonText = document.querySelector('.cursor__text');
 var followArea = document.querySelectorAll('.button-link');
 var reference = document.querySelectorAll('.reference-box');
 var sorty = document.querySelectorAll('.sorty');
+var ugasi = document.querySelectorAll('.ugasi');
 
 /* var page = document.querySelector('.posts'); */
 
 
-// Ugasi cursor
+// turn off
+// ************
+
+ugasi.forEach(function (el) {
+
+  gsap.set(cursor, {autoAlpha: 1, backgroundColor: "#231f20", scale: 1});
+
+  el.addEventListener('mouseenter', () => {
+    gsap.to(cursor, 0.25, {scale: 0.1, autoAlpha: 0 });
+  });
+
+  el.addEventListener('mouseleave', () => {
+    gsap.to(cursor, 0.25, {scale: 1, autoAlpha: 1 });
+  });
+
+})
+
+
+
+
+// Sort change layout
 // ************
 
 sorty.forEach(function (el) {
@@ -2430,7 +2451,7 @@ sorty.forEach(function (el) {
 
 
 
-// Event Listeners
+// Bijeli dot
 // ************
 
 followArea.forEach(function (el) {
