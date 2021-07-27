@@ -777,7 +777,7 @@ LOCATION MAP
 ================================================================================
 */
 function locationMap() {
-  setTimeout(()=>{ 
+ /*  setTimeout(()=>{  */
    
   mapboxgl.accessToken = 'pk.eyJ1IjoiZnJrYXBsdXMiLCJhIjoiY2tybHY1djhuNDE4YzJ6cDhtZmkzdzFvaiJ9.hTRDicTnxDfby_3lEybkNw';
 
@@ -938,7 +938,7 @@ map.on("load", function (e) {
   mapContainerEl.style.opacity = "1";
 });
 
-},200)  
+/* },200)  */ 
 /*
 ================================================================================
 FADE IN MAP
