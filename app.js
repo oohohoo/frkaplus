@@ -2381,7 +2381,7 @@ sorty.forEach(function (el) {
   gsap.set(cursor, {autoAlpha: 1, backgroundColor: "#231f20", scale: 1});
 
   el.addEventListener('mouseenter', () => {
-    gsap.to(cursor, 0.25, {scale: 8, backgroundColor: "#231f20",  autoAlpha: .4 });
+    gsap.to(cursor, 0.25, {scale: 8, backgroundColor: "#FFFCF0",  autoAlpha: .3 });
     /*     page.addEventListener('mousemove', moveCircle);*/
   });
 
@@ -2410,7 +2410,7 @@ sorty.forEach(function (el) {
   el.addEventListener('mouseup', () => {
     gsap.to(cursor, 1, {
       css: {
-        background: 'transparent'
+        background: '#231f20'
       }
     });
 
