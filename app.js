@@ -226,7 +226,7 @@ function initLoader() {
 
   const tlLoaderIn = gsap.timeline({
     id: 'tlLoaderIn',
-    defaults: {duration: 0.8, ease: 'power2.out'},
+    defaults: {duration: 1, ease: 'power1.out'},
     onComplete: () => initContent()
   });
 
@@ -248,7 +248,7 @@ function initLoader() {
     .set(".l2", {scaleY: 0})
     .set(".freveal", {yPercent: 100})
     .set(mask, {yPercent: 0})
-    .set("#main", {y: 80})
+    //.set("#main", {y: 80})
 
     /* OVO JE DODANO ZA PREZENTACIJU*/
     .set(progress, {autoAlpha: 0})
@@ -264,12 +264,12 @@ function initLoader() {
   // LOADER OUT
   const tlLoaderOut = gsap.timeline({
     id: 'tlLoaderOut',
-    defaults: {duration: 0.8, ease: 'power2.inOut'},delay: 0});
+    defaults: {duration: 1, ease: 'power1.inOut'},delay: 0});
 
   tlLoaderOut
 
     .to([loader, loaderContent], {yPercent: -100}, 0.2)
-    .to('#main', {y: 0}, 0);
+    //.to('#main', {y: 0}, 0);
 
   const tlLoader = gsap.timeline();
   tlLoader
@@ -419,13 +419,13 @@ function pageTransitionIn({
   container
 }) {
   // timeline to stretch the loader over the whole screen
-  const tl = gsap.timeline({defaults: {duration: 0.6,ease: 'power3.out'}});
+  const tl = gsap.timeline({defaults: {duration: 1,ease: 'power1.inOut'}});
   tl
   .set(".imageloadicon", {autoAlpha: 1})
   .set(loaderInner, {autoAlpha: 0})
   .fromTo(loader, {yPercent: -100}, {yPercent: 0})
-  .fromTo(loaderMask, {yPercent: 80}, {yPercent: 0}, 0)
-  .to(container, {y: 80}, 0);
+  .fromTo(loaderMask, {yPercent: 0}, {yPercent: 0}, 0)
+  //.to(container, {y: 80}, 0);
 
   return tl;
 }
@@ -439,7 +439,7 @@ function pageTransitionOut({
   container
 }) {
   // timeline to move loader away down
-  const tl = gsap.timeline({defaults: {duration: 0.8, ease: 'power3.inOut'},
+  const tl = gsap.timeline({defaults: {duration: 1, ease: 'power1.inOut'},
     // OVDJE SE INICIRA PONOVO SAV JS CONTENT / AKO ZATREBA
     onComplete: () => initContent()
   });
@@ -447,7 +447,7 @@ function pageTransitionOut({
 
     .to(loader, {yPercent: 100})
     .to(loaderMask, {yPercent: -80}, 0)
-    .from(container, {y: -80}, 0);
+    .from(container, {y: 0}, 0);
     return tl;
 }
 
