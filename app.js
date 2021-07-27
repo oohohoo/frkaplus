@@ -2381,7 +2381,7 @@ sorty.forEach(function (el) {
   gsap.set(cursor, {autoAlpha: 1, backgroundColor: "#231f20", scale: 1});
 
   el.addEventListener('mouseover', () => {
-    gsap.to(cursor, 0.25, {scale: 8, backgroundColor: "#FFFCF0",  autoAlpha: .3 });
+    gsap.to(cursor, 0.25, {scale: 8, backgroundColor: "#231f20",  autoAlpha: .4 });
     /*     page.addEventListener('mousemove', moveCircle);*/
   });
 
