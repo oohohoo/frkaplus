@@ -2385,18 +2385,14 @@ zoom.forEach(function (el) {
     gsap.to(cursor, 0.25, {scale: 12});
    /*  $('.cursor__text').text('+'); */
   gsap.to(buttonText, 0.25, {
-    css: {
-      opacity: 1
-    }
+    autoAlpha:1
   });
   });
 
   el.addEventListener('mouseleave', () => {
     gsap.to(cursor, 0.25, {scale: 1});
     gsap.to(buttonText, 0.25, {
-      css: {
-        opacity: 0
-      }
+      autoAlpha:0
     });
   });
 
