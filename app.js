@@ -165,7 +165,7 @@ window.addEventListener('resize', function(){
 RELOAD ON MOBILE ORIENTATION CHANGE // OVO TESTIRAJ DA LI TREBA
 ================================================================================
 */
-/*
+
 (function(w){
 
   var ua = navigator.userAgent;
@@ -213,7 +213,7 @@ RELOAD ON MOBILE ORIENTATION CHANGE // OVO TESTIRAJ DA LI TREBA
 
 })( this );
 }
-*/
+
 /*
 ================================================================================
 PRELOADER --> vodi na --> INIT CONTENT
@@ -223,7 +223,7 @@ function initLoader() {
 
   const tlLoaderIn = gsap.timeline({
     id: 'tlLoaderIn',
-    defaults: {duration: 1.2, ease: 'power1.out'},
+    defaults: {duration: 0.8, ease: 'power2.out'},
     onComplete: () => initContent()
   });
 
@@ -245,7 +245,7 @@ function initLoader() {
     .set(".l2", {scaleY: 0})
     .set(".freveal", {yPercent: 100})
     .set(mask, {yPercent: 0})
-    .set("#mainxx", {y: 80})
+    .set("#main", {y: 80})
 
     /* OVO JE DODANO ZA PREZENTACIJU*/
     .set(progress, {autoAlpha: 0})
@@ -261,12 +261,12 @@ function initLoader() {
   // LOADER OUT
   const tlLoaderOut = gsap.timeline({
     id: 'tlLoaderOut',
-    defaults: {duration: 1.2, ease: 'power1.inOut'},delay: 0});
+    defaults: {duration: 0.8, ease: 'power2.inOut'},delay: 0});
 
   tlLoaderOut
 
     .to([loader, loaderContent], {yPercent: -100}, 0.2)
-    .to('#mainxx', {y: 0}, 0);
+    .to('#main', {y: 0}, 0);
 
   const tlLoader = gsap.timeline();
   tlLoader
@@ -392,8 +392,8 @@ function initContent() {
   setTimeout(() => {
     locoScroll.update();
     ScrollTrigger.refresh(true);
-    console.log("Locoscrollupdated + SCROLLTRIGGER --- update");
-  }, 500)
+    console.log("Locoscrollupdated + SCROLLTRIGGER NAKON 5 SEKUNDI + shuffle");
+  }, 5000)
 
 });
  
@@ -422,7 +422,7 @@ function pageTransitionIn({
   .set(loaderInner, {autoAlpha: 0})
   .fromTo(loader, {yPercent: -100}, {yPercent: 0})
   .fromTo(loaderMask, {yPercent: 80}, {yPercent: 0}, 0)
-  //.to(container, {y: 80}, 0);
+  .to(container, {y: 80}, 0);
 
   return tl;
 }
@@ -444,7 +444,7 @@ function pageTransitionOut({
 
     .to(loader, {yPercent: 100})
     .to(loaderMask, {yPercent: -80}, 0)
-    //.from(container, {y: -80}, 0);
+    .from(container, {y: -80}, 0);
     return tl;
 }
 
