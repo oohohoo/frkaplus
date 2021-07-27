@@ -2368,7 +2368,66 @@ var cursor = document.querySelector('.cursor__dot1');
 var buttonText = document.querySelector('.cursor__text');
 var followArea = document.querySelectorAll('.button-link');
 var reference = document.querySelectorAll('.reference-box');
+var sorty = document.querySelectorAll('.sorty');
+
 /* var page = document.querySelector('.posts'); */
+
+
+// Ugasi cursor
+// ************
+
+sorty.forEach(function (el) {
+
+  gsap.set(cursor, {autoAlpha: 1, backgroundColor: "#231f20", scale: 1});
+
+  el.addEventListener('mouseover', () => {
+    gsap.to(cursor, 0.25, {scale: 8, backgroundColor: "#FFFCF0",  autoAlpha: .3 });
+    /*     page.addEventListener('mousemove', moveCircle);*/
+  });
+
+  el.addEventListener('mouseout', () => {
+    gsap.to(cursor, 0.25, {scale: 1,backgroundColor: "#231f20",  autoAlpha: 1 });
+  });
+
+
+
+  el.addEventListener('mousedown', () => {
+    gsap.to(cursor, 0.5, {
+      css: {
+      transform: 'translate(-50%, -50%) scale(0.75)'}
+    });
+
+    $('.cursor__text').text('OPEN');
+    gsap.to(buttonText, 0.25, {
+      css: {
+        opacity: 1
+      }
+    });
+  });
+
+
+
+  el.addEventListener('mouseup', () => {
+    gsap.to(cursor, 1, {
+      css: {
+        background: 'transparent'
+      }
+    });
+
+    gsap.to(cursor, 0.5, {
+      css: {
+        transform: 'translate(-50%, -50%) scale(1)'      
+      }
+    });
+
+    gsap.to(buttonText, 0.25, {
+      css: {
+        opacity: 1
+      }
+    });
+  });
+})
+
 
 
 // Event Listeners
@@ -2467,66 +2526,9 @@ reference.forEach(function (el) {
   });
 })
 
-
-/* OLD*/
-/*
-$('.splide__list, .trigger').hover(function() {
-  $('.cursor__dot1').toggleClass('is--larger');
-  $('.cursor__dot2').toggleClass('is--larger');
-
-});
-
-$('.trigger').hover(function() {
-  $('.cursor__text').toggleClass('fadein');
-  $('.cursor__text').text('OPEN');
-   
-});
-
-$('.splide__list').hover(function() {
-$('.dragicon').toggleClass('fadein');
- $('.cursor__text').text('');
-/*  $('.cursor__text').text('DRAG'); */
-  /* 
-});
-
-$('.control').hover(function() {
-  $('.cursor__dot1').toggleClass('opacity-0');
- /* $('.cursor__dot2').toggleClass('light-ring'); */
- /*
-});
-
-$('.trigger').click(function() {
-	$('.cursor').toggleClass('hide-cursor');
-});
-*/
 }
 
 
-/*
-================================================================================
-SORT BUTTONS
-================================================================================
-*/  
-/*
-function sortButtons() {
-
-  $('.linky').hover(function() {
-    $('.cursor').toggleClass('link-hover');
-    let textOne = $(this).find('.link_text').eq(0).text();
-    $(this).find('.link_text.is--2').text(textOne);
-  });
-  
-  $( ".options .linky input" ).change(function() {
-    $(this).closest('.shapes').find('.selected-toggle').removeClass('selected-toggle');
-    $(this).closest('.linky').addClass('selected-toggle');
-  });
-  
-  $( ".check .linky input" ).change(function() {
-    $(this).closest('.linky').toggleClass('selected-toggle');
-  });
-
-}
-*/
 /*
 ================================================================================
 GSAP UNDERLINE
