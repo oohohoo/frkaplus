@@ -331,9 +331,7 @@ function initContent() {
           openMobileMenu();
           pinHover();
           lokacijehover();
-          setTimeout(()=>{ 
-            locationMap();
-               },3000)  
+          locationMap();
           console.log('from app.js | lokacije');
         },
         sololokacije: function () {
@@ -779,7 +777,8 @@ LOCATION MAP
 ================================================================================
 */
 function locationMap() {
-
+  setTimeout(()=>{ 
+   
   mapboxgl.accessToken = 'pk.eyJ1IjoiZnJrYXBsdXMiLCJhIjoiY2tybHY1djhuNDE4YzJ6cDhtZmkzdzFvaiJ9.hTRDicTnxDfby_3lEybkNw';
 
   var bounds = [
@@ -829,37 +828,6 @@ $.getJSON('https://raw.githubusercontent.com/oohohoo/frkaplus/main/frka.geojson'
     });
 
 
-
-
-/*   map.on('click', function (e) {
-    // If the user clicked on one of your markers, get its information.
-    var features = map.queryRenderedFeatures(e.point, {
-      layers: ['frka'] // replace with your layer name
-    });
-    if (!features.length) {
-      return;
-    }
-    var feature = features[0];
-
-
- //   Create a popup, specify its options 
-//    and properties, and add it to the map.
-      var popup = new mapboxgl.Popup({
-        offset: [0, -15] /*, className: 'popup-style' 
-      })
-      .setLngLat(feature.geometry.coordinates)
-
-      .setHTML(
-        '<h3>' + feature.properties.title + '</h3>' +
-        '<p>' + feature.properties.description + '</p>' +
-        '<img>' + feature.properties.image + '</img>'
-      )
-
-      .addTo(map);
-    console.log("POPUP on MAP");
-
-  }) 
-}*/
 
 
 map.doubleClickZoom.enable();
@@ -970,6 +938,7 @@ map.on("load", function (e) {
   mapContainerEl.style.opacity = "1";
 });
 
+},200)  
 /*
 ================================================================================
 FADE IN MAP
@@ -984,21 +953,10 @@ var fadein = gsap.timeline({defaults:{ease:'none'}})
 .to('.loader-icon', {autoAlpha:0}, "-=1.5")
 //.to('.loader-txt', {autoAlpha:0}, "<")
 
+
+
+
 }
-
-
- /* OVO MOŽDA KORISTITI ZA LOADANJE SKRIPTI*/
-
-/*  document.body.contains(document.getElementById("map")) && $(document).ready(function() {
-  map = new map,
- mapView.createMaps(),
-  mapView.showFilters(),
-  mapView.addSlider(),
-  project.createViewslider(1) 
-}); */
-
-/*  mapboxgl.prewarm(); */
-
 
 
 
