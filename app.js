@@ -330,7 +330,7 @@ function initContent() {
           lokacijehover();
           setTimeout(()=>{ 
             locationMap();
-               },2000)  
+               },300)  
           console.log('from app.js | lokacije');
         },
         sololokacije: function () {
