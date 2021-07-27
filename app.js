@@ -388,8 +388,7 @@ function initContent() {
 /* 
   ScrollTrigger.refresh(true); // ScrollTrigger Refresh
   console.log("scrolltrigger refreshed AFTER all script load"); */
-  $(document).ready(function()
-
+  $(document).ready(function() {
   setTimeout(() => {
      locoScroll.update();
     ScrollTrigger.refresh(true);
