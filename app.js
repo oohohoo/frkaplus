@@ -103,7 +103,7 @@ locoScroll = new LocomotiveScroll({
    multiplier: 1.0, // body sroll speed / object speed values are multiplied
     touchMultiplier: 3.0,
     useKeyboard: true,
-     inertia: .75, 
+     inertia: 1, 
     smartphone: {
       smooth: true,
     },
@@ -226,7 +226,7 @@ function initLoader() {
 
   const tlLoaderIn = gsap.timeline({
     id: 'tlLoaderIn',
-    defaults: {duration: 0.8, ease: 'power2.out'},
+    defaults: {duration: 0.8, ease: 'power3.out'},
     onComplete: () => initContent()
   });
 
@@ -264,7 +264,7 @@ function initLoader() {
   // LOADER OUT
   const tlLoaderOut = gsap.timeline({
     id: 'tlLoaderOut',
-    defaults: {duration: 0.8, ease: 'power2.inOut'},delay: 0});
+    defaults: {duration: 0.8, ease: 'power3.inOut'},delay: 1});
 
   tlLoaderOut
 
