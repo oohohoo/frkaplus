@@ -439,7 +439,7 @@ function pageTransitionOut({
   container
 }) {
   // timeline to move loader away down
-  const tl = gsap.timeline({defaults: {duration: 1, ease: 'power3.inOut', delay: 0.5},
+  const tl = gsap.timeline({defaults: {duration: 0.5, ease: 'power3.inOut', delay: 0.5},
     // OVDJE SE INICIRA PONOVO SAV JS CONTENT / AKO ZATREBA
     onComplete: () => initContent()
   });
