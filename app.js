@@ -166,7 +166,7 @@ RELOAD ON MOBILE ORIENTATION CHANGE // OVO TESTIRAJ DA LI TREBA
 ================================================================================
 */
 
-(function(w){
+/* (function(w){
 
   var ua = navigator.userAgent;
   if( !( /iPhone|iPad|iPod/.test( navigator.platform ) && /OS [1-5]_[0-9_]* like Mac OS X/i.test(ua) && ua.indexOf( "AppleWebKit" ) > -1 ) ) {
@@ -211,7 +211,7 @@ RELOAD ON MOBILE ORIENTATION CHANGE // OVO TESTIRAJ DA LI TREBA
   w.addEventListener( "orientationchange", restoreZoom, false );
   w.addEventListener( "devicemotion", checkTilt, false );
 
-})( this );
+})( this ); */
 }
 
 /*
