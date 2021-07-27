@@ -148,8 +148,6 @@ locoScroll = new LocomotiveScroll({
 });  */
 
 
-window.onanimationiteration = console.log;
-
 
 /*
 ================================================================================
@@ -164,7 +162,6 @@ window.addEventListener('resize', function(){
   console.log("RESIZE ST+LS");
 });
 
-console.log(devicePixelRatio);
 
 /*
 ================================================================================
