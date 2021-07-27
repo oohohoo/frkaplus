@@ -333,7 +333,7 @@ function initContent() {
           lokacijehover();
           setTimeout(()=>{ 
             locationMap();
-               },300)  
+               },3000)  
           console.log('from app.js | lokacije');
         },
         sololokacije: function () {
@@ -549,7 +549,7 @@ function initPageTransitions() {
 barba.init({
       timeout: 7000,
       debug: true,
-      prefetch: true,
+      prefetch: false,
 /*
   ================================================================================
   BARBA VIEWS
@@ -586,8 +586,7 @@ barba.init({
                 webflowInteractions();
                /*  pinHover(); */
                 lokacijehover();
-                console.log("Lokacija Hover");
-              },
+                },
               beforeLeave({current}) {
               //  map.remove();
                // console.log("map removed...");
