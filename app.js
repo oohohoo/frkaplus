@@ -323,7 +323,7 @@ function initContent() {
             console.log('from app.js | o nama');
         },
         lokacije: function () {
-          newSort();
+          /* newSort(); */
           sortChangeLayout();
           lokacijeBotuni();
                  
