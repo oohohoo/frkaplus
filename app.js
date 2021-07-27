@@ -396,7 +396,7 @@ function initContent() {
   console.log("scrolltrigger refreshed AFTER all script load"); */
   $(document).ready(function() {
   setTimeout(() => {
-    locoScroll.update();
+   /*  locoScroll.update(); */
     ScrollTrigger.refresh(true);
     console.log("Locoscrollupdated + SCROLLTRIGGER NAKON 5 SEKUNDI + shuffle");
   }, 5000)
