@@ -549,7 +549,7 @@ function initPageTransitions() {
 barba.init({
       timeout: 7000,
       debug: true,
-      prefetch: false,
+      prefetch: true,
 /*
   ================================================================================
   BARBA VIEWS
