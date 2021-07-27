@@ -419,7 +419,7 @@ function pageTransitionIn({
   container
 }) {
   // timeline to stretch the loader over the whole screen
-  const tl = gsap.timeline({defaults: {duration: 0.8,ease: 'power3.out'}});
+  const tl = gsap.timeline({defaults: {duration: 0.8, ease: 'power3.out'}});
   tl
   .set(".imageloadicon", {autoAlpha: 1})
   .set(loaderInner, {autoAlpha: 0})
