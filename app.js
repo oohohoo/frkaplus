@@ -2051,6 +2051,7 @@ function hideMenu() {
        },  */
       start: "top top",
       end: 99999,
+      force3D: true,
       /* onEnter: () => myfunction(), */
       /*  onLeaveBack: () => myfunction(), */
 
