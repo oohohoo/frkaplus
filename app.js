@@ -96,20 +96,20 @@ function initScroll(container) {
 
 locoScroll = new LocomotiveScroll({
     el: document.querySelector(".smooth-scroll"),
-    smooth: true, 
+    smooth: true, /* 
     offset: [0, 0],
     getDirection: true,
     scrollFromAnywhere: true,
     multiplier: 1.0, // body sroll speed / object speed values are multiplied
     touchMultiplier: 3.0,
     useKeyboard: true,
-     inertia: 1.6,  
+     inertia: 2,  
     smartphone: {
       smooth: true,
     },
     tablet: {
       smooth: true,
-    }
+    } */
   });
 // data direction ubačeno naknadno
   locoScroll.on("scroll", function (t) {
@@ -398,7 +398,7 @@ function initContent() {
 
 });
  
-
+select('body').classList.add('is-loading');
 //DRUKČIJE SE PONAŠA AKO UBACIMO UNUTAR document ready/ 
 
  
@@ -464,8 +464,7 @@ function initPageTransitions() {
   // do something after the transition finishes
   barba.hooks.after(() => {
     select('html').classList.remove('is-transitioning');
-    select('body').classList.add('is-loading');
-    console.log("Hello world BODY CLASS!");
+   
   });
 
   barba.hooks.after((data) => {
