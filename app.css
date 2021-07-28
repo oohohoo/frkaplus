@@ -1725,4 +1725,41 @@ display: none;
 
 }
  
+  /*
+================================================================================
+PRINT TO PDF
+================================================================================
+*/
+
+
+@media print { 
+  @page {
+   margin: 0.5cm!important; 
+   /*size: 3508px 2482px!important; */
+    } 
+     
+ h1 {
+ font-size: 48pt;
+ }
+    /* All your print styles go here */
+  #headerxx, .vizual-header, .tabs-block, .article-block { 
+    display: none !important; 
+   } 
+   
+   .vizual-header-print {
+   display: block;
+   }
+   /*
+   .vizuale {
+   width: 1800px !important; 
+   
+   }
+      */
+   /*  .mockup__img {
+     width:100%;
+    
+     }  */
+  
+  }
+  
 
