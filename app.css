@@ -1765,8 +1765,8 @@ PRINT TO PDF
   }
 
    .mockup    {
-    width: 500px!important; 
-    margin-left: 600px;
+    /* width: 500px!important;  */
+   /*  margin-left: 600px; */
     }
    /*
    .vizuale {
