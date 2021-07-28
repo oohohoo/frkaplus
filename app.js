@@ -362,7 +362,7 @@ function initContent() {
   //});
 
   
-
+  select('body').classList.remove('is-loading');
 
   
  /* ORIGINAL*/
@@ -398,7 +398,7 @@ function initContent() {
 
 });
  
-select('body').classList.remove('is-loading');
+
 //DRUKČIJE SE PONAŠA AKO UBACIMO UNUTAR document ready/ 
 
  
