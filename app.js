@@ -489,8 +489,8 @@ function initPageTransitions() {
     var response = nextHtml.replace(/(<\/?)body( .+?)?>/gi, '$1notbody$2>', nextHtml)
     var bodyClasses = $(response).filter('notbody').attr('class')
     $("body").attr("class", bodyClasses);
-    
-    console.log("BODY CLASSES UPDATED");
+    $("body").attr("is-loading", bodyClasses);
+    console.log("BODY CLASSES UPDATED ISLOADING");
   });
   
   barba.hooks.enter((data) => {
@@ -545,7 +545,7 @@ function initPageTransitions() {
   */
 
 barba.init({
-      timeout: 20000,
+      timeout: 7000,
       debug: true,
       prefetch: true,
 /*
