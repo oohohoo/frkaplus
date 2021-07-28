@@ -1734,7 +1734,7 @@ PRINT TO PDF
 
 @media print { 
   @page {
-   margin: 0.5cm!important; 
+   /* margin: 0.5cm!important;  */
    /*size: 3508px 2482px!important; */
     } 
      
@@ -1748,8 +1748,21 @@ PRINT TO PDF
    
    .vizual-header-print {
    display: block;
-   margin-left: 600px;
+   /* margin-left: 600px; */
    }
+
+   .print-para {
+    display: block;
+  }
+  
+  .print-info {
+    display: block;
+  }
+  
+  .print-logo {
+
+    display: block;
+  }
 
    .mockup    {
     width: 500px!important; 
