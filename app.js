@@ -465,6 +465,7 @@ function initPageTransitions() {
   barba.hooks.after(() => {
     select('html').classList.remove('is-transitioning');
     select('body').classList.add('is-loading');
+    console.log("Hello world BODY CLASS!");
   });
 
   barba.hooks.after((data) => {
