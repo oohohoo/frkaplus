@@ -595,7 +595,8 @@ barba.init({
 
               beforeEnter(data) {
 
-                
+                printTOPDF();
+                console.log("PRINT TO PDF");
                 //soloMap();
                 //splidesolo();
                // console.log("SPLIDE before enter loaded!!!");
@@ -3560,3 +3561,43 @@ transformOrigin: 'top',
 });
 }
                 
+
+/*
+================================================================================
+PRINT TO PDF
+================================================================================
+*/
+
+function printTOPDF() {
+
+/* setTimeout(function () {  */
+  $(function() {
+    $('.butonio').click(function(){
+      $(".vizuale").printThis({
+      //debug: true,               // show the iframe for debugging
+      importCSS: true,            // import parent page css
+     importStyle: true,         // import style tags
+      printContainer: true,       // print outer container/$.selector
+     // loadCSS: "",                // path to additional css file - use an array [] for multiple
+    //  pagetitle:"Two-dimensional code",            // add title to print page
+     // removeInline: false,        // remove inline styles from print elements
+    //  removeInlineSelector: "*",  // custom selectors to filter inline styles. removeInline must be true
+      printDelay:1000,            // variable print delay
+    //  header: null,               // prefix to html
+    //  footer: null,               // postfix to html
+    //  base: false,                // preserve the BASE tag or accept a string for the URL
+    //  formValues: true,           // preserve input/form values
+   //   canvas: false,              // copy canvas content
+    //  doctypeString: '...',       // enter a different doctype for older markup
+    //  removeScripts: false,       // remove script tags from print content
+    //  copyTagClasses: false,      // copy classes from the html & body tag
+    //  beforePrintEvent: null,     // function for printEvent in iframe
+   //   beforePrint: null,          // function called before iframe is filled
+    //  afterPrint: null            // function called before iframe is removed
+  });
+    });
+   });
+   console.log("PRINTTHIS LOADED");
+ /*  }, 4000);  */
+
+}
