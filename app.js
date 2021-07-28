@@ -2036,7 +2036,7 @@ SHOW HIDE HEADER ON SCROLL + CUSTOM ANIMATION + CHANGE COLOR ON DIFF BACKGROUNDS
 ================================================================================
 */
 
-function hideMenu() {
+function hideMenux() {
   const showAnim = gsap.timeline({
     paused: true,
     defaults: {
