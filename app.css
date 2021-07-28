@@ -1519,14 +1519,14 @@ VIZUAL SIMULATOR - VIDEO TAB ON/OFF
 STATIC IMAGE ZA MAPU
 =========================r=======================================================
 */
-#static {
+/* #static {
   background-image: url("https://api.mapbox.com/styles/v1/fogseller/ckqkw1hr4091g17sgan3bwjzp/static/16.527,44.663,6.64/100%x100vh?access_token=pk.eyJ1IjoiZm9nc2VsbGVyIiwiYSI6ImNrN2VpbXlpbjAwNDIzbnM1N2ZhMW9laGkifQ.DUf-8r1jXF4o7ApMUcKVXQ");
   width: 100%;
   height: 100vh;
   grid-column: 1;
   grid-row: 1;
 }
-
+ */
 
 #map {
   opacity: 0;
@@ -1543,8 +1543,7 @@ STATIC IMAGE ZA MAPU
 
 
 .iconright.hide {
- 
-  visibility:hidden;
+   visibility:hidden;
 }
 
 .spanwhite {
@@ -1569,7 +1568,7 @@ STATIC IMAGE ZA MAPU
    left: 0em;  
   }
 
-}
+
 
 
 /* SORT ITEM */
