@@ -1749,6 +1749,10 @@ PRINT TO PDF
    .vizual-header-print {
    display: block;
    }
+
+   .mockup    {
+    width: 500px!important; 
+    }
    /*
    .vizuale {
    width: 1800px !important; 
