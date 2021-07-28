@@ -2045,15 +2045,10 @@ function hideMenu() {
     },
     scrollTrigger: {
       scroller: ".smooth-scroll",
-      /*  toggleClass: {
-         targets: '.logofrka, .navstyle, .kontakt',
-         className: 'mrak'
-       },  */
       start: "top top",
       end: 99999,
       force3D: true,
-      /* onEnter: () => myfunction(), */
-      /*  onLeaveBack: () => myfunction(), */
+
 
       onUpdate: (self) => {
         self.direction === 1 ? showAnim.play() : showAnim.reverse()
