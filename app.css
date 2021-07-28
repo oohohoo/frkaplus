@@ -1748,6 +1748,7 @@ PRINT TO PDF
    
    .vizual-header-print {
    display: block;
+   margin-left: 600px;
    }
 
    .mockup    {
