@@ -96,7 +96,7 @@ function initScroll(container) {
 
 locoScroll = new LocomotiveScroll({
     el: document.querySelector(".smooth-scroll"),
-    smooth: true, /* 
+    smooth: true, 
     offset: [0, 0],
     getDirection: true,
     scrollFromAnywhere: true,
@@ -109,7 +109,7 @@ locoScroll = new LocomotiveScroll({
     },
     tablet: {
       smooth: true,
-    } */
+    } 
   });
 // data direction ubačeno naknadno
   locoScroll.on("scroll", function (t) {
