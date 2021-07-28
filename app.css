@@ -1748,10 +1748,14 @@ PRINT TO PDF
    
    .vizual-header-print {
    display: block;
-   position: relative;
-   top: -200px;
-   margin-left: 600px; 
+   margin-top: -200px;
+ /*   position: relative;
+   top: -200px; */
+
+ /*   margin-left: 600px;  */
    }
+
+
 
    .print-para {
     display: block;
