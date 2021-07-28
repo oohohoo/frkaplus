@@ -285,7 +285,7 @@ INIT CONTENT --> vodi na --> INIT SCROLL
 */
 function initContent() {
 
-  select('body').classList.add('is-loading');
+  
 
  // (function($) {
 
@@ -398,7 +398,7 @@ function initContent() {
 
 });
  
- 
+select('body').classList.add('is-loading');
 //DRUKČIJE SE PONAŠA AKO UBACIMO UNUTAR document ready/ 
 
  
