@@ -1784,9 +1784,9 @@ z-index:200;
 
 
 
- /*  img {
-    max-width: 300px;
-    } */
+  img {
+    max-width: 1920px;
+    } 
     
   /*  .mockup    {
      position: relative;
