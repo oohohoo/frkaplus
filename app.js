@@ -3603,3 +3603,28 @@ function printTOPDF() {
  /*  }, 4000);  */
 
 }
+
+
+
+/*
+================================================================================
+INFINITE SCROLL
+================================================================================
+*/
+
+function infiniteScroll() {
+
+  $('.js-shuffle').infiniteScroll({
+    // options
+    path: '.pagination__next',
+    append: '.webinar-posts__event-item',
+    history: false,
+  });
+
+ /*  $('.container').infiniteScroll({
+    path: getPenPath,
+    append: '.post',
+    status: '.page-load-status',
+  }); */
+
+}
