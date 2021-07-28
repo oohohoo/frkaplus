@@ -3573,7 +3573,7 @@ function printTOPDF() {
 /* setTimeout(function () {  */
   $(function() {
     $('.butonio').click(function(){
-      $(".vizuale").printThis({
+      $(".simulator-container").printThis({
       //debug: true,               // show the iframe for debugging
       importCSS: true,            // import parent page css
      importStyle: true,         // import style tags
