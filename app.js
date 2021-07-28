@@ -251,7 +251,7 @@ function initLoader() {
     //.set("#main", {y: 80})
 
     /* OVO JE DODANO ZA PREZENTACIJU*/
-    .set(progress, {autoAlpha: 0})
+   // .set(progress, {autoAlpha: 0})
     //.to(loaderInner, {scaleY: 1, transformOrigin: 'bottom', ease: 'power1.inOut'})
 
     .addLabel('revealImage')
