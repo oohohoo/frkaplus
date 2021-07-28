@@ -1748,7 +1748,9 @@ PRINT TO PDF
    
    .vizual-header-print {
    display: block;
-   /* margin-left: 600px; */
+   position: relative;
+   top: -200px;
+   margin-left: 600px; 
    }
 
    .print-para {
