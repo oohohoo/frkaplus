@@ -2037,37 +2037,7 @@ SHOW HIDE HEADER ON SCROLL + CUSTOM ANIMATION + CHANGE COLOR ON DIFF BACKGROUNDS
 */
 
 function hideMenu() {
-  const showAnim = gsap.timeline({
-    paused: true,
-    defaults: {
-      duration: 0.5,
-      ease: "power1.inOut",
-    },
-    scrollTrigger: {
-      scroller: ".smooth-scroll",
-      /*  toggleClass: {
-         targets: '.logofrka, .navstyle, .kontakt',
-         className: 'mrak'
-       },  */
-      start: "top top",
-      end: 99999,
-      /* onEnter: () => myfunction(), */
-      /*  onLeaveBack: () => myfunction(), */
 
-      onUpdate: (self) => {
-        self.direction === 1 ? showAnim.play() : showAnim.reverse()
-      }
-    }
-  });
-
-showAnim
-//.to(".logofade", {autoAlpha:0 }, 0)
-.to(".header-nav-list, .slogan", {yPercent: -50, autoAlpha:0, stagger: 0.05},"<0.1")
-//.to(".header-contact--button", {scale:0.7, /*x:"3.1em"*/},"<0.2")
-/* .to(".freveal", {y: 100, duration: 0.6, stagger: 0.02}, "<0.1")
-.to(".l2", {scaleY: 0, transformOrigin: 'bottom', duration: 0.3}, "<0.2")
-.to(".l3", {scaleX: 0, transformOrigin: 'left', duration: 0.3}, "<0.2")
-.to(".l1", {scaleX: 0, transformOrigin: 'left', duration: 0.3}, "<0.2") */
 
 }
 
