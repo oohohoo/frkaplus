@@ -788,6 +788,7 @@ function locationMap() {
   ];
 
   var map = new mapboxgl.Map({
+    buffer: 0,
     container: 'map', // container ID
     style: 'mapbox://styles/frkaplus/ckrm2d3v226f017lps9oqdrpm?optimize=true', // style URL / dodano optimize=true
     center: [16.527, 44.663], // starting position [lng, lat]
