@@ -483,7 +483,15 @@ function initPageTransitions() {
     window.scrollTo(0, 0);
 
   }); */
-  
+  barba.hooks.afterLeave((data) => {
+    // Set <body> classes for "next" page
+    var nextHtml = data.next.html;
+    var response = nextHtml.replace(/(<\/?)body( .+?)?>/gi, '$1notbody$2>', nextHtml)
+    var bodyClasses = $(response).filter('notbody').attr('class')
+    $("body").attr("class", bodyClasses);
+    
+    console.log("BODY CLASSES UPDATED");
+  });
   
   barba.hooks.enter((data) => {
     window.scrollTo(0, 0);
@@ -537,7 +545,7 @@ function initPageTransitions() {
   */
 
 barba.init({
-      timeout: 7000,
+      timeout: 20000,
       debug: true,
       prefetch: true,
 /*
