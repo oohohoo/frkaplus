@@ -1771,10 +1771,16 @@ PRINT TO PDF
     display: block;
   }
 
-   .mockup    {
-    /*  width: 200px!important;  */ 
-     margin-left: -600px; 
+  img {
+    max-width: 500px;
     }
+    
+  /*  .mockup    {
+     position: relative;
+     left:-500;
+    /*  width: 200px!important;  */ 
+     /* margin-left: -600px; 
+    } */
    /*
    .vizuale {
    width: 1800px !important; 
