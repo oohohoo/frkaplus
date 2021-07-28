@@ -1774,6 +1774,7 @@ z-index:200;
 
   .vizuale {
     position:relative;
+    width:100%;
     left: -250px;
 /*  margin-left:-300px;  */
 
