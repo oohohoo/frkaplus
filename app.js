@@ -2,6 +2,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 let locoScroll;
 
+gsap.config({ nullTargetWarn: false });
 /*
 ================================================================================
 PRELOADER
