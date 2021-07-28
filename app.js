@@ -398,7 +398,7 @@ function initContent() {
 
 });
  
-select('body').classList.add('is-loading');
+
 //DRUKČIJE SE PONAŠA AKO UBACIMO UNUTAR document ready/ 
 
  
@@ -464,7 +464,7 @@ function initPageTransitions() {
   // do something after the transition finishes
   barba.hooks.after(() => {
     select('html').classList.remove('is-transitioning');
-   
+    select('body').classList.add('is-loading');
   });
 
   barba.hooks.after((data) => {
