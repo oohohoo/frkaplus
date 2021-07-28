@@ -373,7 +373,7 @@ function initContent() {
   customCursor();
   underlineLink();
   scrollTotop();
-  hideMenu();
+  //hideMenu();
   openMobileMenu();
   openTestYourDesign();
   simulatorButton();
@@ -2036,7 +2036,7 @@ SHOW HIDE HEADER ON SCROLL + CUSTOM ANIMATION + CHANGE COLOR ON DIFF BACKGROUNDS
 ================================================================================
 */
 
-function hideMenux() {
+function hideMenu() {
   const showAnim = gsap.timeline({
     paused: true,
     defaults: {
