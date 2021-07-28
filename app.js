@@ -585,6 +585,8 @@ barba.init({
                 webflowInteractions();
                /*  pinHover(); */
                 lokacijehover();
+                infiniteScroll();
+
                 },
               beforeLeave({current}) {
               //  map.remove();
@@ -3618,7 +3620,8 @@ function infiniteScroll() {
     // options
    /*  path: '.pagination__next', */
     append: '.webinar-posts__event-item',
-    history: false,
+    history: true,
+    scrollThreshold: 100;
   });
 
  /*  $('.container').infiniteScroll({
