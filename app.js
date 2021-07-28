@@ -3618,7 +3618,7 @@ function infiniteScroll() {
 
   $('.js-shuffle').infiniteScroll({
     // options
-   /*  path: '.pagination__next', */
+     path: '.webinar-posts__event-item', 
     append: '.webinar-posts__event-item',
     history: true,
     /* scrollThreshold: 100; */
