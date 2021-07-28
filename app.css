@@ -1770,6 +1770,11 @@ PRINT TO PDF
 z-index:200;
     display: block;
   }
+.is--simulator {
+
+  margin-top: 150px;
+
+}
 
 
   .vizuale {
