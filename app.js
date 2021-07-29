@@ -144,6 +144,7 @@ locoScroll = new LocomotiveScroll({
 
 
 // CLOSE LOKACIJE SELECT DROPDOWN ON SCROLL
+if (document.querySelector('#lokacije')) {
 
 //check object is in view
  function checkVisible( elm, eval ) {
@@ -166,6 +167,8 @@ else {
   
 }
 });
+
+} 
  
 /* 
 locoScroll.on('call', func => {
