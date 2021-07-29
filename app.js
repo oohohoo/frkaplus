@@ -1977,22 +1977,55 @@ function homevideo() {
   let firstSection = document.querySelector('.big-logo')
   let apelTrigger = document.querySelector('.hero--header--wrapper')
 
-    /* .set(".apeli--hero-wrap", {autoAlpha: 0}) */
-    videoroll.to(cover, {
-      scrollTrigger: {
+
+  ScrollTrigger.matchMedia({
+	
+    // desktop
+    "(min-width: 800px)": function() {
+      // setup animations and ScrollTriggers for screens over 800px wide (desktop) here...
+      // ScrollTriggers will be reverted/killed when the media query doesn't match anymore.
+      let tl = gsap.timeline({
         scroller: ".smooth-scroll",
         trigger: firstSection,
         start: 'top 20%',
         end: "+=30%",
         scrub: 2,
-      },
-      /*clipPath: 'inset(60%)',*/
-      scale: 1.15,
-      /* rotate: 0, */
-      yPercent: -30,
-       });
+          }
+        });
+        tl.to(cover, {scale: 1.15, yPercent: -30})
+    }, 
+    
+    // mobile
+    "(max-width: 799px)": function() {
+      // Any ScrollTriggers created inside these functions are segregated and get
+      // reverted/killed when the media query doesn't match anymore. 
+      let tl = gsap.timeline({ 
+          scrollTrigger:{
+            scroller: ".smooth-scroll",
+            trigger: firstSection,
+            start: 'top 20%',
+            end: "+=30%",
+            scrub: 2,
+          }
+        });
+      tl.to(cover, {rotate:30})
+       
+    }, 
+    
+    // all 
+    "all": function() {
+      // ScrollTriggers created here aren't associated with a particular media query,
+      // so they persist.
+    }
+    
+/*   });
+   */
 
-    gsap.set(".apeli--hero-wrap", {autoAlpha: 0})
+
+  
+   
+
+    /* gsap.set(".apeli--hero-wrap", {autoAlpha: 0})
     gsap.to(".apeli--hero-wrap", {
       scrollTrigger: {
         scroller: ".smooth-scroll",
@@ -2002,7 +2035,7 @@ function homevideo() {
       },
       duration: 2,
       autoAlpha: 1,
-    });
+    }); */
 
 }
 
