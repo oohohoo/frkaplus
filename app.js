@@ -1366,18 +1366,23 @@ function lokacijehover() {
 
   /* gsap.set(".newsminigrid img", {scale:1}) */
   gsap.utils.toArray(".webinar-posts__event-link").forEach(container => {
-        let lokacija = container.querySelector(".webinar-posts__event-list li"),
-            tl = gsap.timeline({
+        let lokacija = container.querySelector(".newsminigrid img"),
+          /*  border = container.querySelector(".newsminigrid"),  */
+          tl = gsap.timeline({
             paused: true
           });
 
         tl.to(lokacija, {
-          rotate: 
-          backgroundColor: "#231f20",
-          color: "#ffdc52",
+          scale:1.1,
           duration: 0.3,
           ease: 'power1.inOut',
         })
+
+        /* .to(border, {
+          borderBottomWidth:3,
+          duration: 0.3,
+          ease: 'power1.inOut',
+        }, "<"); */
 
         container.addEventListener("mouseenter", () => tl.play());
         container.addEventListener("mouseleave", () => tl.reverse());
