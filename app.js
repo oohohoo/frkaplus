@@ -149,7 +149,7 @@ locoScroll = new LocomotiveScroll({
  console.log("skrolam i zatvaram SELECT");
 } 
 else {
-  console.log("SELECT OUT OF VIEW"
+  
 }
 });
  
