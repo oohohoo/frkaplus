@@ -2744,7 +2744,7 @@ $('#crop_img').click(function () {
 
 /* VIDEO BUTTOINs*/
 $('.upload-video').on('FilePond:addfile', function () {
-    $('.movevideo').removeClass('sakrij');
+    $('.movevideo').addClass('sakrij');
     console.log("SHOW VIDEO TRANSFER AAAA");
 });
 
