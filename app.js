@@ -374,7 +374,7 @@ function initContent() {
   customCursor();
   underlineLink();
   scrollTotop();
-  //hideMenu();
+  hideMenu();
   openMobileMenu();
   openTestYourDesign();
   simulatorButton();
