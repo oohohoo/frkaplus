@@ -1392,9 +1392,9 @@ VIZUAL SIMULATOR CSS
 
 /* BOTUNI VIDEO UPLOAD*/
 
-/* .movevideo.hide {
+.movevideo.hide {
   display:none;
-} */
+}
 .pdf.butonio {
 position: relative;
 top: -0.5em;
@@ -1498,7 +1498,10 @@ SHUFFLE.js
      }
   }
 
-
+  .removevideo.sakrij, .movevideo.sakrij {
+    opacity: 0;
+ 
+  } 
 
 
 /*

@@ -2744,13 +2744,13 @@ $('#crop_img').click(function () {
 
 /* VIDEO BUTTOINs*/
 $('.upload-video').on('FilePond:addfile', function () {
-    $('.movevideo').addClass('sakrij');
+    $('.movevideo').removeClass('hide');
     console.log("SHOW VIDEO TRANSFER AAAA");
 });
 
 /* VIDEO BUTTOINs*/
  $('.upload-video').on('FilePond:removefile', function () {
-  $('.movevideo').addClass('sakrij');
+  $('.movevideo').addClass('hide');
   $('.videjos').children().filter("video").each(function () {
     this.pause(); // can't hurt
     delete this; // @sparkey reports that this did the trick (even though it makes no sense!)
