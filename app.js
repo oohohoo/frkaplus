@@ -2769,13 +2769,12 @@ $('.upload-video').on('FilePond:addfile', function () {
 });
  */
 
-/* $('.tabs-li').click(function () {
+ $('.tabs-li').click(function () {
   $('.upload-photo').filepond('removeFile');
   $('.upload-video').filepond('removeFile');
   console.log("BOTH FILEPOND and Video slot cleared on tabs...");
 });
 
- */
 
 
 
