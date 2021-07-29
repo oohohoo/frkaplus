@@ -142,6 +142,20 @@ locoScroll = new LocomotiveScroll({
   ScrollTrigger.refresh();
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
 
+
+
+//check object is in view
+function checkVisible( elm, eval ) {
+    eval = eval || "object visible";
+    var viewportHeight = $(window).height(), // Viewport Height
+        scrolltop = $(window).scrollTop(), // Scroll Top
+        y = $(elm).offset().top,
+        elementHeight = $(elm).height();   
+
+    if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
+    if (eval == "above") return ((y < (viewportHeight + scrolltop)));
+}
+
 // CLOSE LOKACIJE SELECT DROPDOWN ON SCROLL
    locoScroll.on('scroll', func => {
     if (checkVisible($('#selectone'))) {
