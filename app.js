@@ -143,12 +143,24 @@ locoScroll = new LocomotiveScroll({
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
 
 // CLOSE LOKACIJE SELECT DROPDOWN ON SCROLL
- /*  locoScroll.on('scroll', (instance) => {
+   locoScroll.on('scroll', SVGComponentTransferFunctionElement => {
  $("#selectone, #selecttwo, #sorto").select2('close');
  console.log("Hello world! ja skrolam i zatvaram SELECT");
 });  
- */
+ 
 
+/* locoScroll.on('call', func => {
+  if (checkVisible($('#myID1'))) {
+      //do something when myID1 is in view
+      console.log("test myID1");
+  } else if (checkVisible($('#myID2'))) {
+      //do something when myID2 is in view
+      console.log("test myID2");
+  } else {
+      // do nothing
+  }
+});
+ */
 
 /*
 ================================================================================
