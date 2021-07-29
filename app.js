@@ -2306,14 +2306,14 @@ function scrollTotop() {
     });
 
   });
-  $("#tomainipad").on("click", function () {
+ /*  $("#tomainipad").on("click", function () {
     locoScroll.scrollTo('#top', {
       'offset': 0,
       'duration': 1500,
       'easing': [0.25, 0.00, 0.35, 1.00],
       'disableLerp': true
     });
-  });
+  }); */
 }
 
 /*
