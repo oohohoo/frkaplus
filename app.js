@@ -2023,6 +2023,16 @@ function homevideo() {
           }
         });
         tl.to(cover, {scale: 1});
+
+        let tl2 = gsap.timeline({
+          scrollTrigger: {
+             scroller: ".smooth-scroll",
+             trigger: apelTrigger,
+             start: "top 60%",
+             toggleActions: "restart none none reverse",  
+           },
+         });
+         tl2.to(apelo, {autoAlpha:1, rotate:360, repeat:-1, duration:2});
        
     }, 
     
