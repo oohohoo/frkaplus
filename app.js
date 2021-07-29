@@ -2718,11 +2718,11 @@ function uploadCrop() {
   pond.browse();
 }); */
 
- document.querySelector('.upload-video').pond.addEventListener('FilePond:addfile', function (e) {
+/*  document.querySelector('.upload-video').pond.addEventListener('FilePond:addfile', function (e) {
   $('.movevideo').toggleClass('hide'); 
     console.log("SHOW BUTTON ON ADD FILE");
    
-});
+}); */
 
 
 
@@ -2732,56 +2732,47 @@ function uploadCrop() {
 
 // Show PDF Button
 
-$('#crop_img').click(function() {
-   setTimeout(()=>{ 
-  $('.linkos.opacity').removeClass('hide');
-  console.log("SHOW PDFio*");
-     },1500)  
-  });
-
-/*
-  $('.filepond--file-action-button.filepond--file-action-button::after').click(function() {
-    setTimeout(()=>{ 
-   $('.movevideo').addClass('hide');
-   console.log("SHOW PDFio*");
-      },1500)  
-   });
- */
+$('#crop_img').click(function () {
+  setTimeout(() => {
+    $('.linkos.opacity').removeClass('hide');
+    console.log("SHOW PDFio*");
+  }, 1500)
+});
 
 /* VIDEO BUTTOINs*/
 $('.upload-video').on('FilePond:addfile', function () {
   crop_preview_cont.slideUp();
   $('.movevideo').removeClass('hide');
 });
-   
+
 /* VIDEO BUTTOINs*/
 $('.upload-video').on('FilePond:removefile', function () {
   $('.movevideo').addClass('hide');
-  $('.videjos').children().filter("video").each(function(){
+  $('.videjos').children().filter("video").each(function () {
     this.pause(); // can't hurt
     delete this; // @sparkey reports that this did the trick (even though it makes no sense!)
     $(this).remove(); // this is probably what actually does the trick
   });
- 
+
 });
 
 
-$('.movevideo').click(function(){
+$('.movevideo').click(function () {
   $('.movevideo').addClass('hide');
 });
 
 
-  $('.closetrigger').click(function(){
-   $('.upload-photo').filepond('removeFile');
-    $('.upload-video').filepond('removeFile');
-        console.log("BOTH FILEPOND and Video slot cleared on exit...");
+$('.closetrigger').click(function () {
+  $('.upload-photo').filepond('removeFile');
+  $('.upload-video').filepond('removeFile');
+  console.log("BOTH FILEPOND and Video slot cleared on exit...");
 });
 
 
-$('.tabs-li').click(function(){
+$('.tabs-li').click(function () {
   $('.upload-photo').filepond('removeFile');
-   $('.upload-video').filepond('removeFile');
-       console.log("BOTH FILEPOND and Video slot cleared on tabs...");
+  $('.upload-video').filepond('removeFile');
+  console.log("BOTH FILEPOND and Video slot cleared on tabs...");
 });
 
 
