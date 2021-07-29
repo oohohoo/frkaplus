@@ -415,7 +415,7 @@ function initContent() {
   //splidesolo();
   stopScrollMap();
   //lokacijeTabs();
-  uploadCrop();
+  //uploadCrop();
  // splidesolo();
 
   console.log("initial scripts loaded...");
@@ -2745,7 +2745,7 @@ $('.upload-video').on('FilePond:addfile', function () {
 });
 
 /* VIDEO BUTTOINs*/
-$('.upload-video').on('FilePond:removefile', function () {
+/* $('.upload-video').on('FilePond:removefile', function () {
   $('.movevideo').addClass('hide');
   $('.videjos').children().filter("video").each(function () {
     this.pause(); // can't hurt
@@ -2754,41 +2754,31 @@ $('.upload-video').on('FilePond:removefile', function () {
   });
 
 });
+ */
 
-
-$('.movevideo').click(function () {
+/* $('.movevideo').click(function () {
   $('.movevideo').addClass('hide');
-});
+}); */
 
 
-$('.closetrigger').click(function () {
+/* $('.closetrigger').click(function () {
   $('.upload-photo').filepond('removeFile');
   $('.upload-video').filepond('removeFile');
   console.log("BOTH FILEPOND and Video slot cleared on exit...");
 });
+ */
 
-
-$('.tabs-li').click(function () {
+/* $('.tabs-li').click(function () {
   $('.upload-photo').filepond('removeFile');
   $('.upload-video').filepond('removeFile');
   console.log("BOTH FILEPOND and Video slot cleared on tabs...");
 });
 
+ */
 
 
 
 
-
-
-
-  // Hide PDF Button
-//$('.filepond--file-action-button:hover, .filepond--file-action-button:focus').click(function() {
-/*   setTimeout(()=>{ */
-  //$('.butonio').toggleClass('hide');
-  //console.log("HIDE PDF");
-   /*  },100)  */
- // });
-  
 
 
 
