@@ -415,7 +415,7 @@ function initContent() {
   //splidesolo();
   stopScrollMap();
   //lokacijeTabs();
-  //uploadCrop();
+  uploadCrop();
  // splidesolo();
 
   console.log("initial scripts loaded...");
