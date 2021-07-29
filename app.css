@@ -1373,7 +1373,7 @@ VIZUAL SIMULATOR CSS
 
 
 .mobile {
- /*  filter:blur(.5px);
+  filter:blur(.5px);
 	overflow: hidden;
 	z-index: 100;
  	outline: 1px solid transparent;
@@ -1385,16 +1385,16 @@ VIZUAL SIMULATOR CSS
   -webkit-transform: rotateZ(2deg);
   -webkit-perspective: 1000;
 	-webkit-transform-origin: 0 0 0;
-	transform-origin: 0 0 0; */
+	transform-origin: 0 0 0;
 
 }
 
 
 /* BOTUNI VIDEO UPLOAD*/
 
-.movevideo.hide {
+/* .movevideo.hide {
   display:none;
-}
+} */
 .pdf.butonio {
 position: relative;
 top: -0.5em;
