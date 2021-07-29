@@ -1374,7 +1374,6 @@ function lokacijehover() {
 
         tl.to(lokacija, {
           scale:1.1,
-          rotate:20,
           duration: 0.3,
           ease: 'power1.inOut',
         })
