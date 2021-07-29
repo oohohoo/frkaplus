@@ -1985,12 +1985,13 @@ function homevideo() {
       // setup animations and ScrollTriggers for screens over 800px wide (desktop) here...
       // ScrollTriggers will be reverted/killed when the media query doesn't match anymore.
       let tl = gsap.timeline({
+        scrollTrigger: {
         scroller: ".smooth-scroll",
         trigger: firstSection,
         start: 'top 20%',
         end: "+=30%",
         scrub: 2,
-          })
+          }
         });
         tl.to(cover, {scale: 1.15, yPercent: -30});
  
