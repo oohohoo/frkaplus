@@ -1373,7 +1373,7 @@ function lokacijehover() {
           });
 
         tl.to(lokacija, {
-          background-color: "#231f20",
+          backgroundColor: "#231f20",
           color: "#ffdc52",
           duration: 0.3,
           ease: 'power1.inOut',
