@@ -158,7 +158,7 @@ locoScroll = new LocomotiveScroll({
 
 // CLOSE LOKACIJE SELECT DROPDOWN ON SCROLL
    locoScroll.on('scroll', func => {
-    if $("#selectone, #selecttwo, #sorto").select2('open') {
+    if $(select2('open') {
  $("#selectone, #selecttwo, #sorto").select2('close');
  console.log("skrolam i zatvaram SELECT");
 } 
