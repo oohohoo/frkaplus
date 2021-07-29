@@ -391,15 +391,7 @@ function initContent() {
 /* 
   ScrollTrigger.refresh(true); // ScrollTrigger Refresh
   console.log("scrolltrigger refreshed AFTER all script load"); */
-  $(document).ready(function() {
-  setTimeout(() => {
-   /*  locoScroll.update(); */
-    ScrollTrigger.refresh(true);
-    console.log("Locoscrollupdated + SCROLLTRIGGER NAKON 5 SEKUNDI + shuffle");
-  }, 5000)
-
-});
- 
+  
 
 //DRUKČIJE SE PONAŠA AKO UBACIMO UNUTAR document ready/ 
 
