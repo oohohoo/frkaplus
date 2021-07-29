@@ -2760,17 +2760,17 @@ $('.upload-video').on('FilePond:addfile', function () {
 });
 
 
-/* $('.movevideo').click(function () {
+ $('.movevideo').click(function () {
   $('.movevideo').addClass('hide');
-}); */
+}); 
 
 
-/* $('.closetrigger').click(function () {
+$('.closetrigger').click(function () {
   $('.upload-photo').filepond('removeFile');
   $('.upload-video').filepond('removeFile');
   console.log("BOTH FILEPOND and Video slot cleared on exit...");
 });
- */
+ 
 
  $('.tabs-li').click(function () {
   $('.upload-photo').filepond('removeFile');
