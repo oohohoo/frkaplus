@@ -3058,9 +3058,10 @@ Demo.prototype._handleupdate = function (evt) {
      locoScroll.update(); 
      ScrollTrigger.refresh(true); 
     console.log("Locoscrollupdated + SCROLLTRIGGER NUOVO");
-  }, 10)
+  }, 200)
   locoScroll.update(); 
   ScrollTrigger.refresh(true); 
+  this.shuffle.layout();
 };
 
 /*
