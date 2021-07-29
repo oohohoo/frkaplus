@@ -1367,7 +1367,7 @@ function lokacijehover() {
   /* gsap.set(".newsminigrid img", {scale:1}) */
   gsap.utils.toArray(".webinar-posts__event-link").forEach(container => {
         let lokacija = container.querySelector(".webinar-posts__event-item img"),
-          /*  border = container.querySelector(".newsminigrid"),  */
+           changecolor = container.querySelector(".webinar-posts__event-list li"), 
           tl = gsap.timeline({
             paused: true
           });
@@ -1378,11 +1378,12 @@ function lokacijehover() {
           ease: 'power1.inOut',
         })
 
-        /* .to(border, {
+         .to(changecolor, {
+           backgroundColor: "#231f20",
           borderBottomWidth:3,
           duration: 0.3,
           ease: 'power1.inOut',
-        }, "<"); */
+        }, "<"); 
 
         container.addEventListener("mouseenter", () => tl.play());
         container.addEventListener("mouseleave", () => tl.reverse());
