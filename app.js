@@ -3052,13 +3052,14 @@ SHUFFLE.JS - SWITCH LAYOUT LOKACIJE ITEMS
 ================================================================================
 */
 Demo.prototype._handleupdate = function (evt) {
-  this.shuffle.layout();
+ 
   setTimeout(() => {
-    
+    this.shuffle.layout();
      locoScroll.update(); 
      ScrollTrigger.refresh(true); 
     console.log("Locoscrollupdated + SCROLLTRIGGER NUOVO");
   }, 500)
+  locoScroll.update(); 
 };
 
 /*
