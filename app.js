@@ -2718,11 +2718,11 @@ function uploadCrop() {
   pond.browse();
 }); */
 
-/* document.querySelector('.upload-video').pond.addEventListener('FilePond:addfile', function (e) {
+ document.querySelector('.upload-video').pond.addEventListener('FilePond:addfile', function (e) {
   $('.movevideo').toggleClass('hide'); 
     console.log("SHOW BUTTON ON ADD FILE");
    
-}); */
+});
 
 
 
