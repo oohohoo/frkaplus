@@ -2662,6 +2662,7 @@ $('#crop_img').click(function() {
 
 /* VIDEO BUTTOINs*/
 $('.upload-video').on('FilePond:addfile', function () {
+  crop_preview_cont.slideUp();
   $('.movevideo').removeClass('hide');
 });
    
