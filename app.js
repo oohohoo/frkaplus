@@ -1993,7 +1993,7 @@ function homevideo() {
           }
         });
         tl.to(cover, {scale: 1.15, yPercent: -30});
-    }, 
+ 
     
     // mobile
     "(max-width: 799px)": function() {
