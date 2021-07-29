@@ -143,7 +143,7 @@ locoScroll = new LocomotiveScroll({
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
 
 // CLOSE LOKACIJE SELECT DROPDOWN ON SCROLL
-   locoScroll.on('scroll', SVGComponentTransferFunctionElement => {
+   locoScroll.on('scroll', func => {
  $("#selectone, #selecttwo, #sorto").select2('close');
  console.log("Hello world! ja skrolam i zatvaram SELECT");
 });  
