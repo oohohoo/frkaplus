@@ -2741,7 +2741,7 @@ $('#crop_img').click(function () {
 
 /* VIDEO BUTTOINs*/
 $('.upload-video').on('FilePond:addfile', function () {
-    $('#movevideo').removeClass('hide');
+    $('#movevideox').removeClass('hide');
     console.log("SHOW VIDEO TRANSFER");
 });
 
