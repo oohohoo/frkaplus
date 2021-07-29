@@ -1992,7 +1992,7 @@ function homevideo() {
         scrub: 2,
           }
         });
-        tl.to(cover, {scale: 1.15, yPercent: -30})
+        tl.to(cover, {scale: 1.15, yPercent: -30});
     }, 
     
     // mobile
