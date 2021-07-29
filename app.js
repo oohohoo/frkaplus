@@ -1976,7 +1976,7 @@ function homevideo() {
   let cover = document.querySelector('.hero-video--container')
   let firstSection = document.querySelector('.big-logo')
   let apelTrigger = document.querySelector('.hero--header--wrapper')
-  let apelo = document.querySelector('. apeli--hero-wrap')
+  let apelo = document.querySelector('.apeli--hero-wrap')
 
  
 
