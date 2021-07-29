@@ -155,6 +155,7 @@ locoScroll = new LocomotiveScroll({
 ON WINDOW RESIZE
 ================================================================================
 */
+
 window.addEventListener('resize', function(){
   setTimeout(()=>{
   locoScroll.update();
@@ -162,6 +163,21 @@ window.addEventListener('resize', function(){
 },200) 
   console.log("RESIZE ST+LS");
 });
+
+/*
+================================================================================
+ON FUNCTION CALL
+================================================================================
+*/
+
+function updateOnFunction() {
+  setTimeout(()=>{
+  locoScroll.update();
+  ScrollTrigger.refresh(true);
+},200) 
+  console.log("ON FUNCTION ST+LS");
+}
+
 
 
 /*
@@ -388,10 +404,22 @@ function initContent() {
 
 
   myscripts.init();
+
+  updateOnFunction();
+  console.log("UPDATE ON FUNCTION AFTER ALL SCRIPTS LOADED AND 200ms");
+  
 /* 
   ScrollTrigger.refresh(true); // ScrollTrigger Refresh
   console.log("scrolltrigger refreshed AFTER all script load"); */
-  
+  /* $(document).ready(function() { */
+  //setTimeout(() => {
+   /*  locoScroll.update(); */
+   // ScrollTrigger.refresh(true);
+   // console.log("Locoscrollupdated + SCROLLTRIGGER NAKON 5 SEKUNDI + shuffle");
+  /* }, 5000) */
+
+});
+ 
 
 //DRUKČIJE SE PONAŠA AKO UBACIMO UNUTAR document ready/ 
 
