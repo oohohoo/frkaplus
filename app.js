@@ -586,7 +586,7 @@ barba.init({
                 webflowInteractions();
                /*  pinHover(); */
                 lokacijehover();
-                infiniteScroll();
+                /* infiniteScroll(); */
 
                 },
               beforeLeave({current}) {
