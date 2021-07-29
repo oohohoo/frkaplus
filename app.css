@@ -1031,6 +1031,7 @@ FILEPOND STYLING
 /* the color of the focus ring */
 .filepond--file-action-button:hover,
 .filepond--file-action-button:focus {
+  color: var(--frkablack)!important;
   background-color: var(--frkayellow)!important;
   box-shadow: 0 0 0 0em rgba(244,221,84,0)!important; 
 }
