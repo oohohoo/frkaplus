@@ -1381,6 +1381,7 @@ function lokacijehover() {
 
          .to(changecolor, {
            backgroundColor: "#231f20",
+           rotate: 30,
           borderBottomWidth:3,
           duration: 0.3,
           ease: 'power1.inOut',
