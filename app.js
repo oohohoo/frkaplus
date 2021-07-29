@@ -143,9 +143,10 @@ locoScroll = new LocomotiveScroll({
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
 
 
+// CLOSE LOKACIJE SELECT DROPDOWN ON SCROLL
 
 //check object is in view
-/* function checkVisible( elm, eval ) {
+ function checkVisible( elm, eval ) {
     eval = eval || "object visible";
     var viewportHeight = $(window).height(), // Viewport Height
         scrolltop = $(window).scrollTop(), // Scroll Top
@@ -154,11 +155,10 @@ locoScroll = new LocomotiveScroll({
 
     if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
     if (eval == "above") return ((y < (viewportHeight + scrolltop)));
-} */
+} 
 
-// CLOSE LOKACIJE SELECT DROPDOWN ON SCROLL
    locoScroll.on('scroll', func => {
-    if $(select2('open') {
+    if (checkVisible($('#selectone'))) {
  $("#selectone, #selecttwo, #sorto").select2('close');
  console.log("skrolam i zatvaram SELECT");
 } 
