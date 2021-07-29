@@ -2297,7 +2297,7 @@ LOCOMOTIVE 4 SCROLL TO TOP
 */
 function scrollTotop() {
 
-  $("#tomain").on("click", function () {
+  $("#tomain, #tomaino").on("click", function () {
     locoScroll.scrollTo('#top', {
       'offset': 0,
       'duration': 1500,
