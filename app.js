@@ -1990,7 +1990,7 @@ function homevideo() {
         start: 'top 20%',
         end: "+=30%",
         scrub: 2,
-          }
+          })
         });
         tl.to(cover, {scale: 1.15, yPercent: -30});
  
