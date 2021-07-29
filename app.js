@@ -1366,9 +1366,8 @@ function lokacijehover() {
 
   /* gsap.set(".newsminigrid img", {scale:1}) */
   gsap.utils.toArray(".webinar-posts__event-link").forEach(container => {
-        let lokacija = container.querySelector(".newsminigrid img"),
-          /*  border = container.querySelector(".newsminigrid"),  */
-          tl = gsap.timeline({
+        let lokacija = container.querySelector(".webinar-posts__event-item"),
+            tl = gsap.timeline({
             paused: true
           });
 
@@ -1378,12 +1377,6 @@ function lokacijehover() {
           duration: 0.3,
           ease: 'power1.inOut',
         })
-
-        /* .to(border, {
-          borderBottomWidth:3,
-          duration: 0.3,
-          ease: 'power1.inOut',
-        }, "<"); */
 
         container.addEventListener("mouseenter", () => tl.play());
         container.addEventListener("mouseleave", () => tl.reverse());
