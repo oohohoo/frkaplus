@@ -2022,12 +2022,12 @@ function homevideo() {
             scrub: 2,
           }
         });
-        tl.to(cover, {scale: 3, overwrite: "true"});
+        tl.to(cover, {scale: 1, overwrite: "true"});
 
         let tl2 = gsap.timeline({
          
          });
-         tl2.to(apelo, {autoAlpha:1, rotate:360, repeat:-1, duration:2, overwrite: "true"});
+         tl2.to(apelo, {autoAlpha:1, yPercent: -30, overwrite: "true"});
        
     }, 
     
