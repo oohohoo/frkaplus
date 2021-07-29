@@ -1995,7 +1995,7 @@ function homevideo() {
         scrub: 2,
           }
         });
-        tl.to(cover, {scale: 1.15, yPercent: -30});
+        tl.to(cover, {scale: 1.15, yPercent: -30, overwrite: "auto"});
  
         let tl2 = gsap.timeline({
          scrollTrigger: {
@@ -2005,7 +2005,7 @@ function homevideo() {
             toggleActions: "restart none none reverse",  
           },
         });
-        tl2.to(apelo, {autoAlpha:1, duration:2});
+        tl2.to(apelo, {autoAlpha:1, duration:2, overwrite: "auto"});
       }, 
 
       
@@ -2014,14 +2014,20 @@ function homevideo() {
       // Any ScrollTriggers created inside these functions are segregated and get
       // reverted/killed when the media query doesn't match anymore. 
       let tl = gsap.timeline({ 
-        
+          scrollTrigger:{
+            scroller: ".smooth-scroll",
+            trigger: firstSection,
+            start: 'top 20%',
+            end: "+=30%",
+            scrub: 2,
+          }
         });
-        tl.to(cover, {scale: 1});
+        tl.to(cover, {scale: 1, overwrite: "auto"});
 
         let tl2 = gsap.timeline({
          
          });
-         tl2.to(apelo, {autoAlpha:1, rotate:360, repeat:-1, duration:2});
+         tl2.to(apelo, {autoAlpha:1, rotate:360, repeat:-1, duration:2, overwrite: "auto"});
        
     }, 
     
