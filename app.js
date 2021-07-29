@@ -2814,7 +2814,7 @@ const botun = document.querySelector('.botun'); */
 //onclick = function(){ botun.appendChild(".filepond--media-preview"); }
 $(document).ready(function()
   {    
-  $('#movevideox').click(function(){
+  $('#movevideo').click(function(){
 
           //  var toAdd = $('input[name=checkListItem]').val();
             var item = $('.filepond--media-preview video');
