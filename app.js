@@ -2014,13 +2014,7 @@ function homevideo() {
       // Any ScrollTriggers created inside these functions are segregated and get
       // reverted/killed when the media query doesn't match anymore. 
       let tl = gsap.timeline({ 
-          scrollTrigger:{
-            scroller: ".smooth-scroll",
-            trigger: firstSection,
-            start: 'top 20%',
-            end: "+=30%",
-            scrub: 2,
-          }
+        
         });
         tl.to(cover, {scale: 1});
 
