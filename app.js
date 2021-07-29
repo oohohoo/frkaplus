@@ -508,7 +508,7 @@ function initPageTransitions() {
   //kill scrolltrigger
   barba.hooks.beforeLeave(() => {
    locoScroll.destroy(); 
-   console.log("locoscroll killed...");
+   console.log("locoscroll killed ILI ...");
      if (ScrollTrigger.getAll().length > 0) {
       ScrollTrigger.getAll().forEach((trigger) => {
           trigger.kill()
