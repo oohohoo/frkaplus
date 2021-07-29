@@ -1366,12 +1366,13 @@ function lokacijehover() {
 
   /* gsap.set(".newsminigrid img", {scale:1}) */
   gsap.utils.toArray(".webinar-posts__event-link").forEach(container => {
-        let lokacija = container.querySelector(".webinar-posts__event-item"),
+        let lokacija = container.querySelector(".webinar-posts__event-list li"),
             tl = gsap.timeline({
             paused: true
           });
 
         tl.to(lokacija, {
+          rotate: 
           backgroundColor: "#231f20",
           color: "#ffdc52",
           duration: 0.3,
