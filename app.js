@@ -2338,7 +2338,7 @@ SET VARIABLE
 ================================================================================
 */
 var ball = document.querySelector(".cursory");
-var pos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+//gvar pos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
 var mouse = { x: pos.x, y: pos.y };
 var speed = 0.15;
 
