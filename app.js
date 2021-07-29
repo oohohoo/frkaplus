@@ -2739,16 +2739,13 @@ $('#crop_img').click(function () {
   }, 1500)
 });
 
-$('.upload-photo').on('FilePond:removefile', function () {
-  $('.linkos.opacity').addClass('hide');
-  });
 
 
 
 /* VIDEO BUTTOINs*/
 $('.upload-video').on('FilePond:addfile', function () {
     $('.movevideo').removeClass('sakrij');
-    console.log("SHOW VIDEO TRANSFER");
+    console.log("SHOW VIDEO TRANSFER AAAA");
 });
 
 /* VIDEO BUTTOINs*/
@@ -2778,10 +2775,13 @@ $('.upload-video').on('FilePond:addfile', function () {
  $('.tabs-li').click(function () {
   $('.upload-photo').filepond('removeFile');
   $('.upload-video').filepond('removeFile');
-  $('.linkos.opacity').addClass('hide');
+
   console.log("BOTH FILEPOND and Video slot cleared on tabs...");
 });
 
+$('.upload-photo').on('FilePond:removefile', function () {
+  $('.linkos.opacity').addClass('hide');
+  });
 
 
 
