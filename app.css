@@ -872,8 +872,20 @@ TEST YOUR DESIGN
     display: none;
   }
 
-
   .photo-crop-container .crop-preview-cont #crop_img {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    color: #fff;
+    text-decoration: underline;
+    right: 0;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.30196078431372547);
+    padding: 2px 10px;
+}
+
+
+ /*  .photo-crop-container .crop-preview-cont #crop_img {
     position: absolute;
     bottom: 0.52em;
     width: 2.5em;
@@ -891,6 +903,8 @@ TEST YOUR DESIGN
     justify-content: center;
     align-items: center;
   }
+ */
+
 
   .photo-crop-container.show-result .crop-preview-cont .img_container {
     max-width: 400px;
@@ -944,7 +958,7 @@ TEST YOUR DESIGN
     -ms-transform: translateY(-10%);
     transform: translateY(-10%);
     opacity: 0;
-  /*   scroll-behavior: smooth; */
+   scroll-behavior: smooth; 
   }
 
   .photo-crop-container.show-result #user_cropped_img img {
