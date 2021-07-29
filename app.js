@@ -1971,17 +1971,19 @@ HOME // VIDEO
 
 function homevideo() {
 
-  let videoroll = gsap.timeline()
+  /* let videoroll = gsap.timeline() */
 
   let cover = document.querySelector('.hero-video--container')
   let firstSection = document.querySelector('.big-logo')
   let apelTrigger = document.querySelector('.hero--header--wrapper')
+  let apelo = document.querySelector('. apeli--hero-wrap')
 
+ 
 
   ScrollTrigger.matchMedia({
 	
     // desktop
-    "(min-width: 800px)": function() {
+    "(min-width: 480px)": function() {
       // setup animations and ScrollTriggers for screens over 800px wide (desktop) here...
       // ScrollTriggers will be reverted/killed when the media query doesn't match anymore.
       let tl = gsap.timeline({
@@ -1995,9 +1997,20 @@ function homevideo() {
         });
         tl.to(cover, {scale: 1.15, yPercent: -30});
  
+        let tl2 = gsap.timeline({
+         scrollTrigger: {
+            scroller: ".smooth-scroll",
+            trigger: apelTrigger,
+            start: "top 60%",
+            toggleActions: "restart none none reverse",  
+          },
+        });
+        tl2.to(apelo, {autoAlpha:1, duration:2});
       }, 
+
+      
     // mobile
-    "(max-width: 799px)": function() {
+    "(max-width: 479px)": function() {
       // Any ScrollTriggers created inside these functions are segregated and get
       // reverted/killed when the media query doesn't match anymore. 
       let tl = gsap.timeline({ 
@@ -2009,7 +2022,7 @@ function homevideo() {
             scrub: 2,
           }
         });
-      tl.to(cover, {rotate:30})
+        tl.to(cover, {scale: 1});
        
     }, 
     
