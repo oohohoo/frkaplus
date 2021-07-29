@@ -923,6 +923,9 @@ TEST YOUR DESIGN
     position: relative;
   }
 
+  .photo-crop-container #user_cropped_img img {
+    max-width: 300px;
+}
 
   /**/
 /*   .photo-crop-container #user_cropped_img img {
