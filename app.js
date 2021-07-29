@@ -2739,6 +2739,12 @@ $('#crop_img').click(function () {
   }, 1500)
 });
 
+$('.upload-photo').on('FilePond:removefile', function () {
+  $('.linkos.opacity').addClass('hide');
+  });
+
+
+
 /* VIDEO BUTTOINs*/
 $('.upload-video').on('FilePond:addfile', function () {
     $('.movevideo').removeClass('sakrij');
@@ -2746,8 +2752,8 @@ $('.upload-video').on('FilePond:addfile', function () {
 });
 
 /* VIDEO BUTTOINs*/
-/* $('.upload-video').on('FilePond:removefile', function () {
-  $('.movevideo').addClass('hide');
+ $('.upload-video').on('FilePond:removefile', function () {
+  $('.movevideo').addClass('sakrij');
   $('.videjos').children().filter("video").each(function () {
     this.pause(); // can't hurt
     delete this; // @sparkey reports that this did the trick (even though it makes no sense!)
@@ -2755,7 +2761,7 @@ $('.upload-video').on('FilePond:addfile', function () {
   });
 
 });
- */
+
 
 /* $('.movevideo').click(function () {
   $('.movevideo').addClass('hide');
@@ -2772,6 +2778,7 @@ $('.upload-video').on('FilePond:addfile', function () {
  $('.tabs-li').click(function () {
   $('.upload-photo').filepond('removeFile');
   $('.upload-video').filepond('removeFile');
+  $('.linkos.opacity').addClass('hide');
   console.log("BOTH FILEPOND and Video slot cleared on tabs...");
 });
 
