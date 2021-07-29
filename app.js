@@ -418,7 +418,7 @@ function initContent() {
    // console.log("Locoscrollupdated + SCROLLTRIGGER NAKON 5 SEKUNDI + shuffle");
   /* }, 5000) */
 
-});
+/* }); */
  
 
 //DRUKČIJE SE PONAŠA AKO UBACIMO UNUTAR document ready/ 
