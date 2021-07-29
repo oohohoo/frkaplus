@@ -1921,7 +1921,7 @@ function horizpin() {
         pin: ".stophor",
         /* anticipatePin: 1, */
         //markers: true,
-        start: "top 8%",
+        start: "top top",
         end: () => `+=${pinWrapWidth}`,
         invalidateOnRefresh: true
       },
