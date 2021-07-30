@@ -57,7 +57,7 @@ HIDE PAGE CONTENT BY DEFAULT
 */
 .is-loading #main,
 .is-loading .header-container,
-.is-loading .fill-backgroundx {
+.is-loading .fill-background {
   display: none;
 }
 
