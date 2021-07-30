@@ -2215,8 +2215,8 @@ ease:Linear.easeNone,
 scrollTrigger: {
   scroller: ".smooth-scroll",
    trigger: triggeraj,  
-  start: "top 50%",
-   markers:true, 
+  start: "top 100%",
+  /*  markers:true,  */
  end: "bottom bottom", 
   toggleActions: "restart none none reset",
 /*  scrub: 1, */
