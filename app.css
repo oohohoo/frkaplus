@@ -981,6 +981,14 @@ FILEPOND STYLING
 ================================================================================
 */
 
+
+.filepond--file-action-button.filepond--file-action-button {
+  background-color: var(--frkayellow)!important;
+  
+}
+
+
+
 /* use a hand cursor intead of arrow for the action buttons */
 .filepond--file-action-button {
   cursor: pointer!important;
@@ -1071,8 +1079,10 @@ margin-bottom: 2em;
 
 
 .filepond--file-action-button.filepond--file-action-button svg {
+  color: var(--frkablack)!important;
   margin-left: 0.395em!important;
   margin-top: 0.395em!important;
+
 }
 
 
