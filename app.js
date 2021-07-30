@@ -379,7 +379,7 @@ function initContent() {
           simulatorButton();
           openMobileMenu();
           //soloMap();
-          stopScrollMap();
+       
         
           
           
@@ -413,7 +413,7 @@ function initContent() {
   openTestYourDesign();
   simulatorButton();
   //splidesolo();
-  stopScrollMap();
+  //stopScrollMap();
   //lokacijeTabs();
   //uploadCrop();
  // splidesolo();
@@ -1103,7 +1103,7 @@ $(".fs-nav-butt").one("click", handler1);
 
 
 
-$(".mapbox").hover(function () {
+$(".mapbox").mouseenter(function () {
   locoScroll.stop();
 });
 
