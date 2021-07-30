@@ -151,7 +151,7 @@ LOADER
 }
 
 .inner-loader {
-  background-color: var(--frkablack);
+  background-color: #f00;
 }
 .loader__content {
   visibility: hidden;
