@@ -149,7 +149,8 @@ LOADER
   width: var(--loader-width);
   height: var(--loader-height);
   background-color: var(--frkayellow);
-  margin-top: -2em,
+  margin-top: -2em;
+  visibility: hidden;
 }
 
 .loader__content {
