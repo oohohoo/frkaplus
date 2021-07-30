@@ -2225,7 +2225,7 @@ scrollTrigger: {
 
 });
 
-console.log("COUNTER TRIGGERED NEW");
+
 }
 
 function changeNumber() {
@@ -2233,7 +2233,7 @@ numbers.innerHTML = (num.var).toFixed();
 }
 
 countIt();
-
+console.log("COUNTER TRIGGERED NEWWWW");
   /*
   $(".counts").each(function () {
     var count = $(this),
