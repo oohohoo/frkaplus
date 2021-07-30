@@ -69,7 +69,7 @@ HIDE PAGE CONTENT BY DEFAULT
   position: fixed;
   z-index: 1;
   will-change: background-color;
- background-color: #ff0000;
+ background-color: var(--frkablack);
   transition: background-color 0.3s linear;
 }
 
