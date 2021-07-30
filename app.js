@@ -3003,8 +3003,8 @@ var Demo = function (element) {
   //  buffer: 0,
 		easing: 'cubic-bezier(0.165, 0.840, 0.440, 1.000)', // easeOutQuart
 		/* sizer: '.sizer', */ 
-    buffer:1,
-    gutterWidth: 30,
+    buffer:0,
+    gutterWidth: 0,
     roundTransforms: true,
     useTransforms: true,
     itemSelector: '.webinar-posts__event-item',
