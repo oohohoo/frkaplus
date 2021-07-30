@@ -36,8 +36,8 @@ DEFINE ROOT VARIABLES / definiraj svoje
 :root {
   --frkayellow:#ffdc52;
   --frkablack: #231f20;
-  --loader-width: 100vw;
-  --loader-height: 5em;
+  --loader-width: 30vw;
+  --loader-height: 1px;
 }
 /*
 ================================================================================
