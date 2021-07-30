@@ -289,7 +289,7 @@ function initLoader() {
     /* OVO JE DODANO ZA PREZENTACIJU*/
    /*  .set(progress, {autoAlpha: 0}) */
    /* .to(loaderInner, {scaleY: 1, transformOrigin: 'bottom', ease: 'power1.inOut'}) */
-   .to(loaderInner, {autoAlpha:1}) 
+   .to(loaderInner, {autoAlpha:1, rotate:30}) 
    .to(loaderInner, {scaleX: 1,transformOrigin: 'left bottom',ease: 'power1.inOut'}, "<") 
    .to(loaderInner, {scaleX: 0,transformOrigin: 'right bottom',ease: 'power1.inOut'}) 
 
