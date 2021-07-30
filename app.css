@@ -876,7 +876,7 @@ TEST YOUR DESIGN
     position: absolute;
     bottom: 0;
     z-index: 1;
-    color: #fff;
+    color: #FFFCF0;
     text-decoration: underline;
     right: 0;
     cursor: pointer;
@@ -1439,7 +1439,7 @@ SHUFFLE.js
 
 .webinar-posts__event-list li {
   margin: 0 1px 20px;
-  background-color: antiquewhite;
+  background-color: #FFFCF0;
 }
 
 .webinar-posts__event-item {
