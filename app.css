@@ -884,6 +884,13 @@ TEST YOUR DESIGN
     padding: 2px 10px;
 }
 
+/*LOCATION HOVER*/
+.webinar-posts__event-item:hover {
+  background-color: #231f20;
+  color: #ffdc52;
+}
+
+
 
  /*  .photo-crop-container .crop-preview-cont #crop_img {
     position: absolute;
