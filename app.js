@@ -283,13 +283,14 @@ function initLoader() {
     .set(".l2", {scaleY: 0})
     .set(".freveal", {yPercent: 100})
     .set(mask, {yPercent: 0})
-    .set(loaderInner, {scaleX: 0, autoAlpha:1}) 
+    .set(loaderInner, {scaleX: 0, autoAlpha:0}) 
     //.set("#main", {y: 80})
 
     /* OVO JE DODANO ZA PREZENTACIJU*/
    /*  .set(progress, {autoAlpha: 0}) */
    /* .to(loaderInner, {scaleY: 1, transformOrigin: 'bottom', ease: 'power1.inOut'}) */
-   .to(loaderInner, {scaleX: 1,transformOrigin: 'left bottom',ease: 'power1.inOut'}) 
+   .to(loaderInner, {autoAlpha:1}) 
+   .to(loaderInner, {scaleX: 1,transformOrigin: 'left bottom',ease: 'power1.inOut'}, "<") 
    .to(loaderInner, {scaleX: 0,transformOrigin: 'right bottom',ease: 'power1.inOut'}) 
 
     .addLabel('revealImage')
@@ -324,9 +325,9 @@ INIT CONTENT --> vodi na --> INIT SCROLL
 function initContent() {
 /*   select('body').classList.remove('is-loading'); */
 
-  if ($('body').hasClass('page-template-lokacije')) {
+ /*  if ($('body').hasClass('page-template-lokacije')) {
     select('.lokacije--main-container').classList.remove('is-loading'); 
-                } 
+                }  */
   select('.fill-background').classList.add('is-loading');
   
 
