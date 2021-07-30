@@ -67,7 +67,7 @@ HIDE PAGE CONTENT BY DEFAULT
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   will-change: background-color;
  background-color: var(--frkablack);
   transition: background-color 0.3s linear;
