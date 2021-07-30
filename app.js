@@ -3759,6 +3759,6 @@ function batchLokacije() {
 
 function fadeinlokacije() {
 var fadein = gsap.timeline({defaults:{ease:'none'}})
-.to('.lokacije-body, .is--lokacije__left', {autoAlpha:1})
+.to('.is--full_location', {autoAlpha:1})
 
 }
