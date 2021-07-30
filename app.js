@@ -323,7 +323,10 @@ INIT CONTENT --> vodi na --> INIT SCROLL
 */
 function initContent() {
 /*   select('body').classList.remove('is-loading'); */
- select('.lokacije--main-container').classList.remove('is-loading'); 
+
+  if ($('body').hasClass('page-template-lokacije')) {
+    select('.lokacije--main-container').classList.remove('is-loading'); 
+                } 
   select('.fill-background').classList.add('is-loading');
   
 
