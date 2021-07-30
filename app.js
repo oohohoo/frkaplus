@@ -1399,21 +1399,21 @@ LOKACIJE ITEM HOVER
 function lokacijehover() {
 
   /* gsap.set(".newsminigrid img", {scale:1}) */
-  gsap.utils.toArray(".webinar-posts__event-link").forEach(container => {
+  gsap.utils.toArray(".webinar-posts__event-item").forEach(container => {
         let lokacija = container.querySelector(".webinar-posts__event-item img"),
-           colour = container.querySelector(".webinar-posts__event-list li "), 
+           /* colour = container.querySelector(".webinar-posts__event-list li "),  */
           tl = gsap.timeline({
             paused: true
           });
 
         tl.to(lokacija, {
-          scale:1.1,
-          duration: 0.3,
+          scale:1.05,
+          duration: 0.25,
           ease: 'power1.inOut',
           overwrite: "true"
         })
 
-         tl.to(colour, {
+       /*   tl.to(colour, {
            color: "#ffdc52",
            backgroundColor: "#231f20",
            rotate: 30,
@@ -1422,7 +1422,7 @@ function lokacijehover() {
           ease: 'power1.inOut',
           overwrite: "true"
         }, "<"); 
-        console.log("HOVERRRRRRRRRRRRR ITEM");
+        console.log("HOVERRRRRRRRRRRRR ITEM"); */
 
         container.addEventListener("mouseenter", () => tl.play());
         container.addEventListener("mouseleave", () => tl.reverse());
