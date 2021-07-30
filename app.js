@@ -3005,7 +3005,7 @@ var Demo = function (element) {
 		/* sizer: '.sizer', */ 
     buffer:0,
     gutterWidth: 20,
-    //roundTransforms: true,
+    roundTransforms: true,
     //useTransforms: true,
     itemSelector: '.webinar-posts__event-item',
     //staggerAmount: 15, // Transition delay offset for each item in milliseconds.
