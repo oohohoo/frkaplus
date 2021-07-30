@@ -1006,7 +1006,9 @@ FILEPOND STYLING
   
 }
 
-
+.filepond--panel-top, .filepond--panel-bottom {
+  height: 0.8em!important;
+}
 
 /* use a hand cursor intead of arrow for the action buttons */
 .filepond--file-action-button {
