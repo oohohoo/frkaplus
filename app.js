@@ -1401,7 +1401,7 @@ function lokacijehover() {
   /* gsap.set(".newsminigrid img", {scale:1}) */
   gsap.utils.toArray(".webinar-posts__event-link").forEach(container => {
         let lokacija = container.querySelector(".webinar-posts__event-item img"),
-          /*  colour = container.querySelector(".lokacije-small-header"),  */
+           colour = container.querySelector(".webinar-posts__event-list li "), 
           tl = gsap.timeline({
             paused: true
           });
@@ -1413,7 +1413,7 @@ function lokacijehover() {
           overwrite: "true"
         })
 
-      /*    tl.to(colour, {
+         tl.to(colour, {
            color: "#ffdc52",
            backgroundColor: "#231f20",
            rotate: 30,
@@ -1422,7 +1422,7 @@ function lokacijehover() {
           ease: 'power1.inOut',
           overwrite: "true"
         }, "<"); 
-        console.log("HOVERRRRRRRRRRRRR ITEM"); */
+        console.log("HOVERRRRRRRRRRRRR ITEM");
 
         container.addEventListener("mouseenter", () => tl.play());
         container.addEventListener("mouseleave", () => tl.reverse());
