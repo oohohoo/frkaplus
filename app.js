@@ -366,11 +366,12 @@ function initContent() {
             console.log('from app.js | o nama');
         },
         lokacije: function () {
-           newSort(); 
+          fadeinlokacije();
+          newSort(); 
           batchLokacije();
           sortChangeLayout();
           lokacijeBotuni();
-                 
+          
           stopScrollMap();
           openMobileMenu();
           pinHover();
@@ -623,6 +624,7 @@ barba.init({
               namespace: 'lokacije',
 
               beforeEnter(data) {
+                fadeinlokacije();
                 newSort();
                 stopScrollMap();
                 webflowInteractions();
@@ -3751,4 +3753,12 @@ function batchLokacije() {
   // positioning, so we use a "refreshInit" listener to reset the y temporarily. When we 
   // return a gsap.set() in the listener, it'll automatically revert it after the refresh()!
   /* ScrollTrigger.addEventListener("refreshInit", () => gsap.set(".box", {y: 0})); */
+}
+
+
+
+function fadeinlokacije() {
+var fadein = gsap.timeline({defaults:{ease:'none'}})
+.to('.lokacije-body, .is--lokacije__left', {autoAlpha:1})
+
 }
