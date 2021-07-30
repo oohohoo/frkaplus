@@ -1410,6 +1410,7 @@ function lokacijehover() {
           scale:1.1,
           duration: 0.3,
           ease: 'power1.inOut',
+          overwrite: "auto"
         })
 
          .to(changecolor, {
@@ -1419,6 +1420,7 @@ function lokacijehover() {
           borderBottomWidth:3,
           duration: 0.3,
           ease: 'power1.inOut',
+          overwrite: "auto"
         }, "<"); 
         console.log("HOVERRRRRRRRRRRRR ITEM");
 
