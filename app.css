@@ -1204,9 +1204,7 @@ VIDEO PREVIEW CSS
 }
 
 .filepond--progress-indicator {
-  color: var(--frkayellow)!important;
-
-
+  color: var(--frkablack)!important;
 }
 
 
