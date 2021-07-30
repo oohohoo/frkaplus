@@ -2215,9 +2215,9 @@ ease:Linear.easeNone,
 scrollTrigger: {
   scroller: ".smooth-scroll",
    trigger: triggeraj,  
-  start: "top 100%",
-  /* markers:true, */
-/* end: "bottom bottom", */
+  start: "top 50%",
+   markers:true, 
+ end: "bottom bottom", 
   toggleActions: "restart none none reset",
 /*  scrub: 1, */
  refreshPriority: 1,
@@ -2225,7 +2225,7 @@ scrollTrigger: {
 
 });
 
-console.log("COUNTER TRIGGERED");
+console.log("COUNTER TRIGGERED NEW");
 }
 
 function changeNumber() {
