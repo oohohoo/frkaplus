@@ -1413,6 +1413,7 @@ function lokacijehover() {
         })
 
          .to(changecolor, {
+           color: "#ffdc52",
            backgroundColor: "#231f20",
            rotate: 30,
           borderBottomWidth:3,
