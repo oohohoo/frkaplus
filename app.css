@@ -148,11 +148,10 @@ LOADER
 .inner-loader {
   width: var(--loader-width);
   height: var(--loader-height);
+  background-color: var(--frkayellow);
+  margin-top: -1em,
 }
 
-.inner-loader {
-  background-color: #f00;
-}
 .loader__content {
   visibility: hidden;
    z-index: 6; 
