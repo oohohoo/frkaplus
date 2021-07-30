@@ -1398,7 +1398,7 @@ LOKACIJE ITEM HOVER
 
 function lokacijehover() {
 
-  /* gsap.set(".newsminigrid img", {scale:1}) */
+   gsap.set(".webinar-posts__event-item img", {scale:1}) 
   gsap.utils.toArray(".webinar-posts__event-item").forEach(container => {
         let lokacija = container.querySelector(".webinar-posts__event-item img"),
            /* colour = container.querySelector(".webinar-posts__event-list li "),  */
