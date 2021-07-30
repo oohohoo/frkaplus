@@ -1167,7 +1167,7 @@ VIDEO PREVIEW CSS
   height: 13px;
   border-radius: 50%;
   margin-top: -5px;
-  background: var(--frkayellow)!important;;
+  background: var(--frkayellow)!important;
 }
 .filepond--media-preview-wrapper {
   position: absolute;
@@ -1202,6 +1202,13 @@ VIDEO PREVIEW CSS
   width: 100%;
   will-change: transform;
 }
+
+.filepond--progress-indicator {
+  color: var(--frkayellow)!important;
+
+
+}
+
 
 
 
