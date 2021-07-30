@@ -1419,6 +1419,7 @@ function lokacijehover() {
           duration: 0.3,
           ease: 'power1.inOut',
         }, "<"); 
+        console.log("HOVERRRRRRRRRRRRR ITEM");
 
         container.addEventListener("mouseenter", () => tl.play());
         container.addEventListener("mouseleave", () => tl.reverse());
