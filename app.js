@@ -1401,7 +1401,7 @@ function lokacijehover() {
   /* gsap.set(".newsminigrid img", {scale:1}) */
   gsap.utils.toArray(".webinar-posts__event-link").forEach(container => {
         let lokacija = container.querySelector(".webinar-posts__event-item img"),
-           colour = container.querySelector("h1"), 
+           colour = container.querySelector(".lokacije-small-header"), 
           tl = gsap.timeline({
             paused: true
           });
