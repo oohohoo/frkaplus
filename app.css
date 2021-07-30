@@ -1457,6 +1457,7 @@ SHUFFLE.js
 
 .webinar-posts__event-item.full {
   width: 100%;
+  transition: all 0.3s cubic-bezier(.4,0,0,1);
   /*   overflow: hidden;
    position: relative; */
 }
