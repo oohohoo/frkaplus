@@ -323,8 +323,9 @@ INIT CONTENT --> vodi na --> INIT SCROLL
 */
 function initContent() {
 /*   select('body').classList.remove('is-loading'); */
+ select('.lokacije--main-container').classList.remove('is-loading'); 
   select('.fill-background').classList.add('is-loading');
-  /* select('.header').classList.remove('is-loading'); */
+  
 
  // (function($) {
 
