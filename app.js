@@ -3005,13 +3005,13 @@ var Demo = function (element) {
 		/* sizer: '.sizer', */ 
     buffer:0,
     gutterWidth: 0,
-    roundTransforms: true,
+    //roundTransforms: true,
     useTransforms: true,
     itemSelector: '.webinar-posts__event-item',
-   /* staggerAmount: 15, // Transition delay offset for each item in milliseconds.
+    staggerAmount: 15, // Transition delay offset for each item in milliseconds.
     staggerAmountMax: 150, // Maximum stagger delay in milliseconds.
     throttle: throttle, // By default, shuffle will throttle resize events. This can be changed or removed.
-    throttleTime: 300,*/
+    throttleTime: 300,
 
   });
 
