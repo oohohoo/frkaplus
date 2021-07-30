@@ -1038,6 +1038,9 @@ FILEPOND STYLING
 /* the text color of the file status and info labels */
 .filepond--file {
   color: var(--frkayellow)!important;
+    background-color: var(--frkablack)!important;
+    border-radius: 0.5px!important;
+}
 }
 
 /* error state color */
