@@ -319,7 +319,7 @@ INIT CONTENT --> vodi na --> INIT SCROLL
 ================================================================================
 */
 function initContent() {
-
+  select('body').classList.remove('is-loading');
   
 
  // (function($) {
@@ -398,7 +398,7 @@ function initContent() {
   //});
 
   
-  select('body').classList.remove('is-loading');
+ 
 
   
  /* ORIGINAL*/
