@@ -2942,7 +2942,7 @@ $("#selectone, #selecttwo, #sorto").each(function (index, item) {
 
 $('select.combobox').select2({ width: 'style' });
 
-
+$(document).on('mouseenter', '.select2-selection__rendered', function () { $(this).removeAttr('title');  });
 
 
 /* $("#sorto").select2({
