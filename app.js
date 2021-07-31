@@ -3684,7 +3684,7 @@ function printTOPDF() {
     //  footer: null,               // postfix to html
     //  base: false,                // preserve the BASE tag or accept a string for the URL
     //  formValues: true,           // preserve input/form values
-    canvas: true,              // copy canvas content
+   /*  canvas: true,  */             // copy canvas content
     //  doctypeString: '...',       // enter a different doctype for older markup
     //  removeScripts: false,       // remove script tags from print content
     //  copyTagClasses: false,      // copy classes from the html & body tag
