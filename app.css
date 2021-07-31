@@ -1821,9 +1821,9 @@ z-index:200;
 
 }
 
-
-  img {
-    /* position:relative; */
+.mockup img {
+  width:100%;
+  /* position:relative; */
   /*  width:1920px;  */
   /* height: 1280px; */
   /*   height:740px;  */
