@@ -45,7 +45,7 @@ FilePondPluginFileValidateSize,
 FilePondPluginFileValidateType,
 FilePondPluginImageValidateSize,
 FilePondPluginFileEncode,
-FilePondPluginMediaPreview
+/* FilePondPluginMediaPreview */
 );
 
 // Initialise the filepond plugin with required options
