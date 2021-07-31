@@ -384,35 +384,6 @@ OKOMITI TXT
     text-orientation: mixed;
     }
 
-/*
-================================================================================
-OUTLINE
-================================================================================
-*/
-  .outlajn {
-      color: var(--frkablack); /* Fallback */
-      -webkit-text-fill-color: var(--frkablack);
-      -webkit-text-stroke-width: 2px;
-      -webkit-text-stroke-color: var(--frkayellow);
-      letter-spacing: 3px;
-      text-stroke: 2px var(--frkayellow); /* Future-proofing */
-    }
-
-
-    .outlajn--black {
-      color: var(--frkayellow); /* Fallback */
-      -webkit-text-fill-color: var(--frkayellow); 
-      -webkit-text-stroke-width: 2px;
-      -webkit-text-stroke-color: var(--frkablack);
-      letter-spacing: 3px;
-      text-stroke: 2px var(--frkablack); /* Future-proofing */
-    }
-
-    .outline-text, .outlinetwo  {
-      -webkit-text-stroke-width: 2px;
-      -webkit-text-stroke-color: #FFDC52;
-      text-stroke: 2px var(--frkayellow); /* Future-proofing */
-    }
 
 
 /*
