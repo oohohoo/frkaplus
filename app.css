@@ -1783,13 +1783,13 @@ PRINT TO PDF
    /*size: 3508px 2482px!important; */
     } 
      
- h1 {
+/*  h1 {
  font-size: 48pt;
- }
+ } */
     /* All your print styles go here */
-  #headerxx, .vizual-header, .tabs-block, .article-block { 
+ /*  #headerxx, .vizual-header, .tabs-block, .article-block { 
     display: none !important; 
-   } 
+   }  */
    
    .vizual-header-print {
    display: block;
