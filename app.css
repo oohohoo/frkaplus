@@ -1830,6 +1830,17 @@ z-index:200;
     /* left: -250px; */
 /*  margin-left:-300px;  */
 
+
+
+}
+.wrap {
+    margin: 0 auto;
+    width: 100%;
+    height: 0;
+    padding-top: 66%;
+    /* overflow: hidden; */
+    position: relative;
+}
   } 
   /* #w-node-_7de268a7-81d0-5662-af86-98639feca1e4-fab8b403 {
     -ms-grid-row: 1;
