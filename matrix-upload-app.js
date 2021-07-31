@@ -165,12 +165,10 @@ $('#movevideo').click(function(){
 });
 
 
-</script> 
 
 
 
 
-<script> 
 /* 3DMATRIX */   
 
 (function() {
