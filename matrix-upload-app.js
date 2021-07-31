@@ -170,7 +170,7 @@ $('#movevideo').click(function(){
 
 
 /* 3DMATRIX */   
-
+$(document).ready(function()
 (function() {
 var $, applyTransform, getTransform, makeTransformable;
 
@@ -347,3 +347,6 @@ return results;
 });
 
 }).call(this);
+
+
+});
