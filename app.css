@@ -1697,6 +1697,7 @@ STATIC IMAGE ZA MAPU
 
 @media (max-width: 479px) {
 
+  
   /*OUTLINE TXT*/
   .outline-text, .outlinetwo {
     -webkit-text-stroke-width: 1px!important;
