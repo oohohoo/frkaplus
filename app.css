@@ -1779,18 +1779,9 @@ PRINT TO PDF
 
 
 @media print { 
-
-/*   body {
-    display: table;
-    table-layout: fixed;
-     padding-top: 2.5cm;
-    padding-bottom: 2.5cm; 
-    height: auto;
-} */
-
   @page {
-    margin-top: 1cm!important; 
-    margin-left: 1cm!important;   
+    margin-top: 1cm;
+  margin-left: 1cm;  
    size: 1920px 1280 px!important; 
  /*   margin: 4mm 4mm 4mm 4mm;  */
     } 
