@@ -1777,11 +1777,21 @@ PRINT TO PDF
 */
 
 
+
 @media print { 
+
+  body {
+    display: table;
+    table-layout: fixed;
+   /*  padding-top: 2.5cm;
+    padding-bottom: 2.5cm; */
+    height: auto;
+}
+
   @page {
    /* margin-left: 5cm!important;    */
   /*  size: 3508px 2482px!important; */ 
-  margin: 25mm 25mm 25mm 25mm;
+   margin: 0mm 0mm 0mm 0mm; 
     } 
      
 /*  h1 {
