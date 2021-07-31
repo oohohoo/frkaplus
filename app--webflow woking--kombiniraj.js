@@ -283,18 +283,18 @@ function initContent() {
   select('body').classList.remove('is-loading');
  /* ORIGINAL*/
   initScroll();
-  webflowInteractions();
-  customCursor();
-  underlineLink();
-  scrollTotop();
-  hideMenu();
- 
-  openMobileMenu();
-  stopScrollMap();
+  //webflowInteractions();
+  //customCursor();
+  //underlineLink();
+  //scrollTotop();
+ // hideMenu();
+  //yearupdate();
+ // openMobileMenu();
+ // stopScrollMap();
   //lokacijeTabs();
   //uploadCrop();
  // splidesolo();
-  simulatorButton();
+  //simulatorButton();
   console.log("initial scripts loaded...");
   ScrollTrigger.refresh(true); // ScrollTrigger Refresh
   console.log("scrolltrigger refreshed script load");
