@@ -1802,39 +1802,34 @@ PRINT TO PDF
     display: none !important; 
    }  
    
-   .vizual-header-print {
+ /*   .vizual-header-print {
    display: block;
    margin-top: -100px;
- /*   position: relative;
-   top: -200px; */
-
- /*   margin-left: 600px;  */
-   }
+   } */
 
    .print-adresa {
-
     display:block;
-   
+  
   }
 
-   .print-para {
+  /*  .print-para {
     margin-top: -100px;
     display: block;
-  }
+  } */
   
   .print-info {
     display: block;
   }
   
-  .print-logo {
-z-index:200;
+ /*  .print-logo {
+
     display: block;
-  }
-.is--simulator {
+  } */
+/* .is--simulator {
 
   margin-top: 150px;
 
-}
+} */
 
  mockup img { 
     /* position:relative; */
