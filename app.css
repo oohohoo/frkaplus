@@ -1800,7 +1800,11 @@ PRINT TO PDF
  /*   margin-left: 600px;  */
    }
 
+   .print-adresa {
 
+    display:block;
+   
+  }
 
    .print-para {
     margin-top: -100px;
