@@ -3679,7 +3679,7 @@ function printTOPDF() {
     //  pagetitle:"Two-dimensional code",            // add title to print page
      // removeInline: false,        // remove inline styles from print elements
     //  removeInlineSelector: "*",  // custom selectors to filter inline styles. removeInline must be true
-      printDelay:1000,            // variable print delay
+      printDelay:2000,            // variable print delay
     //  header: null,               // prefix to html
     //  footer: null,               // postfix to html
     //  base: false,                // preserve the BASE tag or accept a string for the URL
