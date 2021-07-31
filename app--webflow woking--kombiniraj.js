@@ -288,7 +288,7 @@ function initContent() {
   underlineLink();
   scrollTotop();
   hideMenu();
-  yearupdate();
+ 
   openMobileMenu();
   stopScrollMap();
   //lokacijeTabs();
