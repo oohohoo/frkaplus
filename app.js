@@ -603,7 +603,7 @@ barba.init({
 
               beforeEnter(data) {
                 heroApeli();
-                /* document.getElementById('homevid').play(); */
+                document.getElementById('homevid').play();
               },
              
             }, {
