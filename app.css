@@ -1635,6 +1635,7 @@ STATIC IMAGE ZA MAPU
 }
  .onama-h1.fix.max {
   max-width: 78ch;
+  margin-bottom: 2em;
 }
 
 
