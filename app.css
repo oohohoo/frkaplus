@@ -1867,3 +1867,91 @@ z-index:200;
   }
   
 
+
+  .vizual-header-print {
+    z-index: 1;
+    display: block;
+    max-width: 29ch;
+    margin-bottom: 0.8em;
+    padding-bottom: 0.6em;
+    border-bottom: 1px solid #231f20;
+    font-size: 3.28em;
+    line-height: 1.1;
+    font-weight: 400;
+    white-space: normal;
+  }
+  
+  .print-header2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 2.7em;
+    padding-top: 0.6em;
+    padding-bottom: 1.3em;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    border-bottom: 1px solid #231f20;
+  }
+  
+  .print-frka-logo {
+    width: 128px;
+  }
+  
+  .print-para {
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin-right: 8.9em;
+  }
+  
+  .print-header3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  
+  .div-block-52 {
+    color: #231f20;
+  }
+  
+  .print-info {
+    color: #231f20;
+  }
+  
+  .print-info.fix {
+    margin-right: 3.9em;
+  }
+  
+  .print-logo {
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin-right: 3.7em;
+  }
+  
+  .print-adresa {
+    position: relative;
+    left: 0%;
+    right: auto;
+    bottom: -337px;
+    z-index: 1;
+    display: block;
+    width: 590px;
+    margin-left: 2em;
+    padding: 1.5em 2em 2em;
+    background-color: #fff;
+    color: #ffdc52;
+  }
