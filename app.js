@@ -1997,7 +1997,7 @@ function homevideo() {
   ScrollTrigger.matchMedia({
 	
     // desktop
-    "(min-width: 480px)": function() {
+    "(min-width: 992px)": function() {
       // setup animations and ScrollTriggers for screens over 800px wide (desktop) here...
       // ScrollTriggers will be reverted/killed when the media query doesn't match anymore.
       let tl = gsap.timeline({
@@ -2024,7 +2024,7 @@ function homevideo() {
 
       
     // mobile
-    "(max-width: 479px)": function() {
+    "(max-width: 991px)": function() {
       // Any ScrollTriggers created inside these functions are segregated and get
       // reverted/killed when the media query doesn't match anymore. 
       let tl = gsap.timeline({ 
