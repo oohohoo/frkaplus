@@ -1787,9 +1787,9 @@ PRINT TO PDF
  font-size: 48pt;
  } */
     /* All your print styles go here */
- /*  #headerxx, .vizual-header, .tabs-block, .article-block { 
+  #headerxx, .vizual-header, .tabs-block, .article-block { 
     display: none !important; 
-   }  */
+   }  
    
    .vizual-header-print {
    display: block;
