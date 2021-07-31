@@ -1779,8 +1779,8 @@ PRINT TO PDF
 
 @media print { 
   @page {
-    margin: 5cm!important;  
-   /*size: 3508px 2482px!important; */
+ /*   margin: 5cm!important;   */
+   size: 3508px 2482px!important; 
     } 
      
 /*  h1 {
