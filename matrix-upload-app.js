@@ -170,7 +170,7 @@ $('#movevideo').click(function(){
 
 
 /* 3DMATRIX */   
-$(document).ready(function()
+$(document).ready(function() {
 (function() {
 var $, applyTransform, getTransform, makeTransformable;
 
