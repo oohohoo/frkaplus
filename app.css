@@ -1789,9 +1789,10 @@ PRINT TO PDF
 } */
 
   @page {
-   /* margin-left: 5cm!important;    */
-  /*  size: 3508px 2482px!important; */ 
-   margin: 4mm 4mm 4mm 4mm; 
+    margin-top: 1cm!important; 
+    margin-left: 1cm!important;   
+   size: 3508px 2482px!important; 
+ /*   margin: 4mm 4mm 4mm 4mm;  */
     } 
      
 /*  h1 {
