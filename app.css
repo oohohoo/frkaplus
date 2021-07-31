@@ -1633,10 +1633,6 @@ STATIC IMAGE ZA MAPU
   position: relative;
  /*  left: -0.5em; */
 }
-.onama-h1.fix.max {
-  max-width: 78ch;
-  margin-bottom: 2em;
-}
 
 .leftfix {
     
