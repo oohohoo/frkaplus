@@ -1687,17 +1687,17 @@ STATIC IMAGE ZA MAPU
 /* .hero--video {
   overflow: hidden!important;
 } */
+.onama-h1.fix.max {
+  max-width: 78ch;
+  margin-bottom: 2em;
+}
 
 
 /* HOME video iphone*/
 
 @media (max-width: 479px) {
 
-  .onama-h1.fix.max {
-    max-width: 78ch;
-    margin-bottom: 2em;
-  }
-  
+
   
   /*OUTLINE TXT*/
   .outline-text, .outlinetwo {
