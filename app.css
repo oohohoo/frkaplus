@@ -1780,13 +1780,13 @@ PRINT TO PDF
 
 @media print { 
 
-  body {
+/*   body {
     display: table;
     table-layout: fixed;
-   /*  padding-top: 2.5cm;
-    padding-bottom: 2.5cm; */
+     padding-top: 2.5cm;
+    padding-bottom: 2.5cm; 
     height: auto;
-}
+} */
 
   @page {
    /* margin-left: 5cm!important;    */
