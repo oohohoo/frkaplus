@@ -1012,13 +1012,14 @@ var fadein = gsap.timeline({defaults:{ease:'none'}})
       setTimeout(() => {
          add_target_blank_to_external_links();
       }, 5000)
+      console.log("REFERERERERERERERERERER");
     });
   
     function add_target_blank_to_external_links() {
       $('body a[href^="http"]').not('a[href*="' + location.hostname + '"]').attr({target: "_blank", rel: "noopener noreferrer nofollow"});
     }
   })(jQuery);
-  console.log("DAJ ODJEBI!");
+  
 /*
 ================================================================================
 SOLOMAP MAP
