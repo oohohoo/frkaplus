@@ -1018,7 +1018,7 @@ var fadein = gsap.timeline({defaults:{ease:'none'}})
       $('body a[href^="http"]').not('a[href*="' + location.hostname + '"]').attr({target: "_blank", rel: "noopener noreferrer nofollow"});
     }
   })(jQuery);
-
+  console.log("DAJ ODJEBI!");
 /*
 ================================================================================
 SOLOMAP MAP
