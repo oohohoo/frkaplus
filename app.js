@@ -986,6 +986,7 @@ map.on("load", function (e) {
   const mapContainerEl = document.getElementById("map");
   //mapContainerEl.style.visibility = "visible";
   mapContainerEl.style.opacity = "1";
+  $('body a[href^="http"]').not('a[href*="' + location.hostname + '"]').attr({target: "_blank", rel: "noopener noreferrer nofollow"});
 });
 
 /* },200)  */ 
@@ -1007,7 +1008,7 @@ var fadein = gsap.timeline({defaults:{ease:'none'}})
 /*   document.querySelectorAll( 'a[href^="http"]:not([href*="example.com"])' ).forEach(anchor => anchor.setAttribute( 'rel', 'noopener noreferrer nofollow' )); 
  */
 
-  (function($) {
+ /*  (function($) {
     jQuery(document).ready(function() {
       setTimeout(() => {
          add_target_blank_to_external_links();
@@ -1019,7 +1020,7 @@ var fadein = gsap.timeline({defaults:{ease:'none'}})
     function add_target_blank_to_external_links() {
       $('body a[href^="http"]').not('a[href*="' + location.hostname + '"]').attr({target: "_blank", rel: "noopener noreferrer nofollow"});
     }
-  })(jQuery);
+  })(jQuery); */
   
 /*
 ================================================================================
