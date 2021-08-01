@@ -255,7 +255,7 @@ function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a
             applyProperties( container, containerProperties );
       
             var imageProperties = {
-              'cursor': 'url( "https://uploads-ssl.webflow.com/6061fc4a0ad1c29787bd162c/60dc69289d7b776bb9ec5ab0_close-fullscreen.svg" ) 64 64, auto'
+              'cursor': 'url( "/wp-content/uploads/2021/08/close-fullscreen.svg" ) 64 64, auto'
             }
             applyProperties( target, imageProperties );
       
