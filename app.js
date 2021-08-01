@@ -1435,10 +1435,10 @@ function openTestYourDesign() {
     forwards = !forwards;
   });
 
-  const button = document.querySelector('.printtopdf');
+/*   const button = document.querySelector('.printtopdf');
   button.addEventListener('click', () => {
     window.print()
-  });
+  }); */
 
 /* DISABLE LOCO WHEN SIMULATOR OPEN*/
   $("#tweenbox, .testbutton").mouseenter(function () {
