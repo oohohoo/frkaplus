@@ -1009,7 +1009,9 @@ var fadein = gsap.timeline({defaults:{ease:'none'}})
 
   (function($) {
     jQuery(document).ready(function() {
-      add_target_blank_to_external_links();
+      setTimeout(() => {
+         add_target_blank_to_external_links();
+      }, 5000)
     });
   
     function add_target_blank_to_external_links() {
