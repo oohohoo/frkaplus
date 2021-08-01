@@ -1012,7 +1012,7 @@ var fadein = gsap.timeline({defaults:{ease:'none'}})
       setTimeout(() => {
          add_target_blank_to_external_links();
          console.log("UH EVO GA!");
-      }, 5000)
+      }, 3000)
      
     });
   
