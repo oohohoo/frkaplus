@@ -421,6 +421,7 @@ function initContent() {
   openMobileMenu();
   openTestYourDesign();
   simulatorButton();
+  addLinkAttrib();
   //splidesolo();
   //stopScrollMap();
   //lokacijeTabs();
@@ -1008,19 +1009,7 @@ var fadein = gsap.timeline({defaults:{ease:'none'}})
 /*   document.querySelectorAll( 'a[href^="http"]:not([href*="example.com"])' ).forEach(anchor => anchor.setAttribute( 'rel', 'noopener noreferrer nofollow' )); 
  */
 
- /*  (function($) {
-    jQuery(document).ready(function() {
-      setTimeout(() => {
-         add_target_blank_to_external_links();
-         console.log("UH EVO GA!");
-      }, 4000)
-     
-    });
-  
-    function add_target_blank_to_external_links() {
-      $('body a[href^="http"]').not('a[href*="' + location.hostname + '"]').attr({target: "_blank", rel: "noopener noreferrer nofollow"});
-    }
-  })(jQuery); */
+
   
 /*
 ================================================================================
@@ -3669,4 +3658,8 @@ function fadeinlokacije() {
 var fadein = gsap.timeline({defaults:{ease:'none'}})
 .to('.is--full_location', {autoAlpha:1})
 
+}
+
+function addLinkAttrib() {
+      $('body a[href^="http"]').not('a[href*="' + location.hostname + '"]').attr({target: "_blank", rel: "noopener noreferrer nofollow"});
 }
