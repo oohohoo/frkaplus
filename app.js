@@ -1011,8 +1011,9 @@ var fadein = gsap.timeline({defaults:{ease:'none'}})
     jQuery(document).ready(function() {
       setTimeout(() => {
          add_target_blank_to_external_links();
+         console.log("UH EVO GA!");
       }, 5000)
-      console.log("REFERERERERERERERERERER");
+     
     });
   
     function add_target_blank_to_external_links() {
