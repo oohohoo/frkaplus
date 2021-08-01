@@ -1004,9 +1004,17 @@ var fadein = gsap.timeline({defaults:{ease:'none'}})
 //.to('.loader-txt', {autoAlpha:0}, "<")
 }
 /*ADD DATA ATTRIBUTE TO MAPBOX LINKS*/
-  document.querySelectorAll( 'a[href^="http"]:not([href*="example.com"])' ).forEach(anchor => anchor.setAttribute( 'rel', 'noopener noreferrer nofollow' )); 
-
-
+/*   document.querySelectorAll( 'a[href^="http"]:not([href*="example.com"])' ).forEach(anchor => anchor.setAttribute( 'rel', 'noopener noreferrer nofollow' )); 
+ */
+  (function($) {
+    jQuery(document).ready(function() {
+      add_target_blank_to_external_links();
+    });
+  
+    function add_target_blank_to_external_links() {
+      $('body a[href^="http"]').not('a[href*="' + location.hostname + '"]').attr({target: "_blank", rel: "noopener noreferrer nofollow"});
+    }
+  })(jQuery);
 
 /*
 ================================================================================
