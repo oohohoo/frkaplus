@@ -382,7 +382,7 @@ function initContent() {
         sololokacije: function () {
           uploadCrop();
           lokacijeBotuni();
-          saveaspdf();
+         /*  saveaspdf(); */
           lokacijeTabs(); 
           mockupSimulatorProportions();
           simulatorButton();
@@ -650,7 +650,7 @@ barba.init({
                // console.log("SPLIDE before enter loaded!!!");
                // openTestYourDesign();
                 uploadCrop();
-                saveaspdf();
+               /*  saveaspdf(); */
                 lokacijeTabs(); 
                 mockupSimulatorProportions();
                 simulatorButton();
@@ -1213,110 +1213,6 @@ DYNAMIC YEAR
   document.getElementById("year").innerHTML = date;
 
 } */
-
-/*
-================================================================================
-DOWNLOAD AS PDF *** TESTNA STRANICA *** NIJE PRODUKCIJA
-================================================================================
-*/
-
-function saveaspdf() {
-  
-/*STARI KOD KOJI RADI*/
-
-let btn = document.getElementById('btn');
-let page = document.getElementById('page');
-
-btn.addEventListener('click', function(){
-  html2PDF(page, {
-    jsPDF: {
-      format: 'a4',
-      orientation: "portrait",
-      background: '#fff',
-      
-    },
-    html2canvas: {
-     
-       imageTimeout: 15000,
-     logging: true, 
-      useCORS: true,
-      backgroundColor:	"#ffffff",
-      onrendered: function(canvas) {
-
-        /* doc.addPage(newWidth, newHeight); */
-        
-        var imgData = canvas.toDataURL('image/jpeg');
- 
-        doc.addImage(imgData, 'JPEG', 15, 0, 34, 37);
-        console.log(imgData);
-        /* doc.text(10, 10, 'Hello everybody'); */ 
- 
-        $('#page').append(canvas);
-        doc.save('Spec_Sheet.pdf');
-        alert('did it');
-     },  
-     width: 3508,
-     height: 2482,
-      scrollX: 0,
-  scrollY: -window.scrollY, 
-
-    },
-    imageType: 'image/jpeg',
-    imageQuality: 100,
-    margin: {
-      top: 0,
-      right: 0,
-      bottom: 0,
-      left: 0,
-    },
-
-
-
-/*STARI KOD KOJI RADI*/
-/*
-  let btn = document.getElementById('btn');
-  let page = document.getElementById('page');
-  
-  btn.addEventListener('click', function(){
-   
-   
-   
-    html2PDF(page, {
-      jsPDF: {
-        format: 'a4',
-      },
-      html2canvas: {
-        imageTimeout: 15000,
-        logging: true,
-        useCORS: true,
-
-        scrollX: 0,
-    scrollY: -window.scrollY,
-
-
-      },
-      imageType: 'image/jpeg',
-      imageQuality: 100,
-      /*margin: {
-        top: 20,
-        right: 20,
-        bottom: 20,
-        left: 20,
-      },*/
-    /*
-      output: './pdf/generate.pdf',
-      init: function() {},
-      success: function(pdf) {
-        pdf.save(this.output);
-      }
-    });
-*/
-
-  })
-
-})
-
-}
 
 
 /*
