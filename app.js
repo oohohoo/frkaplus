@@ -382,6 +382,7 @@ function initContent() {
         sololokacije: function () {
           uploadCrop();
           lokacijeBotuni();
+          addAriaAttrib();
          /*  saveaspdf(); */
           lokacijeTabs(); 
           mockupSimulatorProportions();
@@ -3662,4 +3663,7 @@ var fadein = gsap.timeline({defaults:{ease:'none'}})
 
 function addLinkAttrib() {
       $('body a[href^="http"]').not('a[href*="' + location.hostname + '"]').attr({target: "_blank", rel: "noopener noreferrer nofollow"});
+}
+function addAriaAttrib() {
+$('.splide__video__play').attr('aria-label',  '<?php the_title(); ?>');
 }
