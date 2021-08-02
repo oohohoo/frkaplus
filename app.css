@@ -987,20 +987,20 @@ FILEPOND STYLING
 } */
 
 /* use a hand cursor intead of arrow for the action buttons */
-.filepond--file-action-button {
+/* .filepond--file-action-button {
   cursor: pointer!important;
 }
-
+ */
 /* the text color of the drop label*/
-.filepond--drop-label {
+/* .filepond--drop-label {
   color: var(--frkablack)!important;
-}
+} */
 
 /* underline color for "Browse" button */
-.filepond--label-action {
+/* .filepond--label-action {
   text-decoration-color: var(--frkayellow)!important;
 }
-
+ */
 /* the background color of the filepond drop area */
 .filepond--panel-root {
   background-color: var(--frkablack)!important;
@@ -1113,6 +1113,9 @@ user-select:none;
 .slideshow__item img {
   width: 100%;
 }
+
+
+
 
 
 /*
@@ -1303,8 +1306,9 @@ VIDEO PREVIEW CSS
   right: 0;
   top: 0;
   margin: 0;
-  color: #4f4f4f;
+  color: var(--frkablack);
 
+  
   /* center contents */
   display: flex;
   justify-content: center;
@@ -1342,6 +1346,7 @@ VIDEO PREVIEW CSS
   -webkit-text-decoration-color: #a7a4a4;
   text-decoration-color: #a7a4a4;
   cursor: pointer;
+  text-decoration-color: var(--frkayellow)!important;
 }
 .filepond--root[data-disabled] .filepond--drop-label label {
   opacity: 0.5;
@@ -1398,7 +1403,8 @@ VIDEO PREVIEW CSS
 /* Soft styles */
 .filepond--file-action-button {
   /* use default arrow cursor */
-  cursor: auto;
+/*   cursor: auto; */
+  cursor: pointer;
 
   /* reset default button styles */
   color: #fff;
