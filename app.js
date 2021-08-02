@@ -294,12 +294,12 @@ function initLoader() {
    /* .to(loaderInner, {scaleY: 1, transformOrigin: 'bottom', ease: 'power1.inOut'}) */
   /*   .to(loaderInner, {scaleX: 1,transformOrigin: 'left bottom',ease: 'power1.inOut'}, "<") 
    .to(loaderInner, {scaleX: 0,transformOrigin: 'right bottom',ease: 'power1.inOut'})  */
-   .to(".l1", {scaleX: 1, transformOrigin: 'left', duration: 0.6},)
-   .to(".l2", {scaleY: 1, transformOrigin: 'bottom', duration: 0.6}, "<0.1")
-   .to(".l3", {scaleX: 1, transformOrigin: 'left', duration: 0.6}, "<0.2")
 
     .addLabel('revealImage')
-     
+    .to(".l1", {scaleX: 1, transformOrigin: 'left', duration: 0.6}, 'revealImage+=0.1')
+    .to(".l2", {scaleY: 1, transformOrigin: 'bottom', duration: 0.6}, 'revealImage+=0.1')
+    .to(".l3", {scaleX: 1, transformOrigin: 'left', duration: 0.6}, 'revealImage+=0.1')
+    
     .to(".freveal", {yPercent: 0, stagger: 0.03}, 'revealImage+=0.2')
 
   // LOADER OUT
