@@ -2011,7 +2011,7 @@ function numberoll() {
           end: "bottom top",
           scrub: 1,
         }
-        });
+        })
         tl.to(".roll-number-wrap" {y: -700, overwrite: "auto"});
  
        }, 
@@ -2028,7 +2028,7 @@ function numberoll() {
           end: "bottom top",
           scrub: 1,
         }
-        });
+        })
         tl.to(".roll-number-wrap" {y: -300, overwrite: "auto"});
    }, 
     
