@@ -1977,16 +1977,58 @@ O NAMA // 14/15 ROLL
 */
 
 function numberoll() {
-  gsap.to(".roll-number-wrap", {
-    scrollTrigger: {
-      scroller: ".smooth-scroll",
-      trigger: ".gi--num--wrap",
-      start: "top 85%",
-      end: "bottom top",
-      scrub: 1,
-    },
-    y: -700,
-  });
+
+
+
+  ScrollTrigger.matchMedia({
+	
+    // desktop
+    "(min-width: 992px)": function() {
+      // setup animations and ScrollTriggers for screens over 800px wide (desktop) here...
+      // ScrollTriggers will be reverted/killed when the media query doesn't match anymore.
+      let tl = gsap.timeline({
+        scrollTrigger: {
+          scroller: ".smooth-scroll",
+          trigger: ".gi--num--wrap",
+          start: "top 85%",
+          end: "bottom top",
+          scrub: 1,
+        }
+        });
+        tl.to(".roll-number-wrap" {y: -700, overwrite: "auto"});
+ 
+       }, 
+
+         
+    // mobile
+    "(max-width: 991px)": function() {
+      // Any ScrollTriggers created inside these functions are segregated and get
+      // reverted/killed when the media query doesn't match anymore. 
+      let tl = gsap.timeline({
+        scrollTrigger: {
+          scroller: ".smooth-scroll",
+          trigger: ".gi--num--wrap",
+          start: "top 85%",
+          end: "bottom top",
+          scrub: 1,
+        }
+        });
+        tl.to(".roll-number-wrap" {y: -300, overwrite: "auto"});
+   }, 
+    
+    // all 
+    "all": function() {
+      // ScrollTriggers created here aren't associated with a particular media query,
+      // so they persist.
+    }
+    
+   });
+
+
+
+ 
+
+
 }
 
 
