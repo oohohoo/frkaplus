@@ -971,20 +971,15 @@ FILEPOND STYLING
 ================================================================================
 */
 
-/* 
+
 .filepond--file-action-button.filepond--file-action-button {
   background-color: var(--frkayellow)!important;
   
 }
- */
 
-
-
-
-
-/* .filepond--panel-top, .filepond--panel-bottom {
+.filepond--panel-top, .filepond--panel-bottom {
   height: 0.8em!important;
-} */
+}
 
 /* use a hand cursor intead of arrow for the action buttons */
 .filepond--file-action-button {
@@ -1351,7 +1346,6 @@ VIDEO PREVIEW CSS
   font-size: 1em;
   width: 1.625em;
   height: 1.625em;
-  background-color: var(--frkayellow)!important;
 
   font-family: inherit;
   line-height: inherit;
@@ -2088,7 +2082,7 @@ VIDEO PREVIEW CSS
 }
 .filepond--panel-top,
 .filepond--panel-bottom {
-  height: 0.8em;
+  height: 0.5em;
 }
 .filepond--panel-top {
   border-bottom-left-radius: 0 !important;
