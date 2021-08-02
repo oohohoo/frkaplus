@@ -1008,26 +1008,26 @@ FILEPOND STYLING
 } */
 
 /* the border radius of the drop area and file item */
-.filepond--panel-root, .filepond--item-panel {
+/* .filepond--panel-root, .filepond--item-panel {
   border-radius: 0.5px!important;
-}
+} */
 
 /* the background color of the file and file panel (used when dropping an image) */
-.filepond--item-panel {
+/* .filepond--item-panel {
   background-color: var(--frkablack)!important;
  
-}
+} */
 
 /* the background color of the drop circle */
-.filepond--drip-blob {
+/* .filepond--drip-blob {
   background-color: var(--frkablack)!important;
-}
+} */
 
 /* the background color of the black action buttons */
-.filepond--file-action-button {
+/* .filepond--file-action-button {
   background-color: var(--frkablack)!important;
 }
-
+ */
 /* the icon color of the black action buttons */
 .filepond--file-action-button {
   color: var(--frkayellow)!important;
@@ -1294,8 +1294,8 @@ VIDEO PREVIEW CSS
   height: 8em;
   margin-left: -4em;
   margin-top: -4em;
-  background: #292625;
-  border-radius: 50%;
+background-color: var(--frkablack);
+border-radius: 50%;
 
   /* will be animated */
   will-change: transform, opacity;
@@ -1404,14 +1404,15 @@ VIDEO PREVIEW CSS
 .filepond--file-action-button {
   /* use default arrow cursor */
 /*   cursor: auto; */
+
   cursor: pointer;
 
   /* reset default button styles */
-  color: #fff;
+  olor: var(--frkayellow);
 
   /* set default look n feel */
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--frkablack);
   background-image: none;
 
   /* we animate box shadow on focus */
@@ -1894,7 +1895,7 @@ VIDEO PREVIEW CSS
 }
 /* states */
 .filepond--item-panel {
-  background-color: #64605e;
+  background-color: var(--frkablack);
 }
 [data-filepond-item-state='processing-complete'] .filepond--item-panel {
   background-color: #369763;
