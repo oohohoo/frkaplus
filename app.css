@@ -1041,15 +1041,15 @@ FILEPOND STYLING
 } */
 
 /* the text color of the file status and info labels */
-.filepond--file {
+/* .filepond--file {
   color: var(--frkayellow)!important;
     background-color: var(--frkablack)!important;
     border-radius: 0.5px!important;
 
-}
+} */
 
 /* error state color */
-[data-filepond-item-state*='error'] .filepond--item-panel,
+/* [data-filepond-item-state*='error'] .filepond--item-panel,
 [data-filepond-item-state*='invalid'] .filepond--item-panel {
   background-color: var(--frkayellow)!important;
 }
@@ -1057,7 +1057,7 @@ FILEPOND STYLING
 [data-filepond-item-state='processing-complete'] .filepond--item-panel {
   background-color: var(--frkablack)!important;
 }
-
+ */
 /* bordered drop area */
 
 .filepond--panel-root {
@@ -1902,11 +1902,11 @@ color: var(--frkayellow)!important;
   background-color: var(--frkablack);
 }
 [data-filepond-item-state='processing-complete'] .filepond--item-panel {
-  background-color: #369763;
+  background-color: var(--frkayellow)!important;
 }
 [data-filepond-item-state*='invalid'] .filepond--item-panel,
 [data-filepond-item-state*='error'] .filepond--item-panel {
-  background-color: #c44e47;
+  background-color: var(--frkayellow)!important;
 }
 /* style of item panel */
 .filepond--item-panel {
@@ -2059,6 +2059,12 @@ color: var(--frkayellow)!important;
   /* background-color: #f1f0ef; */
   background-color: var(--frkablack);
   border-radius: 0.5px;
+
+/*   background-color: transparent!important; */
+  border: 1px solid var(--frkablack);
+  color: var(--frkablack);
+
+  
 }
 .filepond--panel {
   position: absolute;
