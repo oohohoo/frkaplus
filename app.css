@@ -1060,16 +1060,16 @@ FILEPOND STYLING
  */
 /* bordered drop area */
 
-.filepond--panel-root {
+/* .filepond--panel-root {
   background-color: transparent!important;
   border: 1px solid var(--frkablack)!important;
   color: var(--frkablack)!important;
-}
+} */
 
-.filepond--file-status {
+/* .filepond--file-status {
 display:none!important;
 }
-
+ */
 .crop-para {
 margin-bottom: 2em;
 }
