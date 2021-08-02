@@ -305,12 +305,12 @@ function initLoader() {
   // LOADER OUT
   const tlLoaderOut = gsap.timeline({
     id: 'tlLoaderOut',
-    defaults: {duration: 0.8, ease: 'power2.inOut'},delay: 0.2});
+    defaults: {duration: 0.8, ease: 'power3.inOut'},delay: 0.2});
 
   tlLoaderOut
 
     .to([loader, loaderContent], {yPercent: -100}, 0.2)
-    .from('#main', {y: 150}, 0.2);
+    //.to('#main', {y: 0}, 0);
 
   const tlLoader = gsap.timeline();
   tlLoader
@@ -469,13 +469,13 @@ function pageTransitionIn({
   container
 }) {
   // timeline to stretch the loader over the whole screen
-  const tl = gsap.timeline({defaults: {duration: 0.8, ease: 'power1.inOut'}});
+  const tl = gsap.timeline({defaults: {duration: 0.8, ease: 'power3.out'}});
   tl
   .set(".imageloadicon", {autoAlpha: 1})
   .set(loaderInner, {autoAlpha: 0})
   .fromTo(loader, {yPercent: -100}, {yPercent: 0})
   .fromTo(loaderMask, {yPercent: 80}, {yPercent: 0}, 0)
-  .to(container, {y: 150}, 0);
+  //.to(container, {y: 80}, 0);
 
   return tl;
 }
@@ -489,7 +489,7 @@ function pageTransitionOut({
   container
 }) {
   // timeline to move loader away down
-  const tl = gsap.timeline({defaults: {duration: 0.8, ease: 'power1.inOut', delay: 0.2},
+  const tl = gsap.timeline({defaults: {duration: 0.8, ease: 'power3.inOut', delay: 0.4},
     // OVDJE SE INICIRA PONOVO SAV JS CONTENT / AKO ZATREBA
     onComplete: () => initContent()
   });
@@ -497,7 +497,7 @@ function pageTransitionOut({
 
     .to(loader, {yPercent: 100})
     .to(loaderMask, {yPercent: -80}, 0)
-    .from(container, {y: -150}, 0);
+    //.from(container, {y: -80}, 0);
     return tl;
 }
 
