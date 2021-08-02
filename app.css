@@ -2115,7 +2115,7 @@ color: var(--frkayellow)!important;
 }
 .filepond--panel-top,
 .filepond--panel-bottom {
-  height: 0.8em;
+  height: 1em;
 }
 .filepond--panel-top {
   border-bottom-left-radius: 0 !important;
