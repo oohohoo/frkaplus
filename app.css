@@ -1002,10 +1002,10 @@ FILEPOND STYLING
 }
  */
 /* the background color of the filepond drop area */
-.filepond--panel-root {
+/* .filepond--panel-root {
   background-color: var(--frkablack)!important;
  
-}
+} */
 
 /* the border radius of the drop area and file item */
 .filepond--panel-root, .filepond--item-panel {
@@ -1905,8 +1905,9 @@ VIDEO PREVIEW CSS
 }
 /* style of item panel */
 .filepond--item-panel {
-  border-radius: 0.5em;
+  border-radius: 0.5px;
   transition: background-color 0.25s;
+  
 }
 /* normal mode */
 .filepond--list-scroller {
@@ -2050,7 +2051,9 @@ VIDEO PREVIEW CSS
 }
 .filepond--panel-root {
   border-radius: 0.5em;
-  background-color: #f1f0ef;
+  /* background-color: #f1f0ef; */
+  background-color: var(--frkablack);
+  border-radius: 0.5px;
 }
 .filepond--panel {
   position: absolute;
