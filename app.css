@@ -1029,16 +1029,16 @@ FILEPOND STYLING
 }
  */
 /* the icon color of the black action buttons */
-.filepond--file-action-button {
+/* .filepond--file-action-button {
   color: var(--frkayellow)!important;
-}
+} */
 
 /* the color of the focus ring */
-.filepond--file-action-button:hover,
+/* .filepond--file-action-button:hover,
 .filepond--file-action-button:focus {
   background-color: var(--frkayellow)!important;
   box-shadow: 0 0 0 0em rgba(244,221,84,0)!important; 
-}
+} */
 
 /* the text color of the file status and info labels */
 .filepond--file {
@@ -1408,7 +1408,7 @@ border-radius: 50%;
   cursor: pointer;
 
   /* reset default button styles */
-  olor: var(--frkayellow);
+  color: var(--frkayellow);
 
   /* set default look n feel */
   border-radius: 50%;
@@ -1424,7 +1424,8 @@ border-radius: 50%;
 }
 .filepond--file-action-button:hover,
 .filepond--file-action-button:focus {
-  box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.9);
+  background-color: var(--frkayellow)!important;
+  box-shadow: 0 0 0 0em rgba(244,221,84,0)!important; 
 }
 .filepond--file-action-button[disabled] {
   color: rgba(255, 255, 255, 0.5);
@@ -1579,10 +1580,13 @@ border-radius: 50%;
   height: 100%;
   align-items: flex-start;
 
-  padding: 0.5625em 0.5625em;
+  padding: 0.5em 0.5em;
 
-  color: #fff;
-  border-radius: 0.5em;
+color: var(--frkayellow)!important;
+  background-color: var(--frkablack)!important;
+  border-radius: 0.5px!important;
+
+
 
   /* control positions */
 }
