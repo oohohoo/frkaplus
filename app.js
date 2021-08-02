@@ -1980,6 +1980,23 @@ function numberoll() {
 
 
 
+  
+/* 
+  gsap.to(".roll-number-wrap", {
+    scrollTrigger: {
+      scroller: ".smooth-scroll",
+      trigger: ".gi--num--wrap",
+      start: "top 85%",
+      end: "bottom top",
+      scrub: 1,
+    },
+    y: -700,
+  });
+
+ */
+
+
+
   ScrollTrigger.matchMedia({
 	
     // desktop
@@ -1993,7 +2010,7 @@ function numberoll() {
           start: "top 85%",
           end: "bottom top",
           scrub: 1,
-        },
+        }
         });
         tl.to(".roll-number-wrap" {y: -700, overwrite: "auto"});
  
@@ -2010,7 +2027,7 @@ function numberoll() {
           start: "top 85%",
           end: "bottom top",
           scrub: 1,
-        },
+        }
         });
         tl.to(".roll-number-wrap" {y: -300, overwrite: "auto"});
    }, 
