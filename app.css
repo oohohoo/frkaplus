@@ -1333,7 +1333,7 @@ border-radius: 50%;
   /* padding: 0.5em; /* use padding instead of margin so click area is not impacted */ 
 
   padding: 1.75em 0.5em 0.5em 0.5em;
- /*  width: 100%!important; */
+   width: 100%!important; 
 }
 .filepond--drop-label label {
   cursor: default;
