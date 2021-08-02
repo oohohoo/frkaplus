@@ -1993,13 +1993,12 @@ function numberoll() {
           start: "top 85%",
           end: "bottom top",
           scrub: 1,
-        }
+        },
         });
         tl.to(".roll-number-wrap" {y: -700, overwrite: "auto"});
  
        }, 
 
-         
     // mobile
     "(max-width: 991px)": function() {
       // Any ScrollTriggers created inside these functions are segregated and get
@@ -2011,7 +2010,7 @@ function numberoll() {
           start: "top 85%",
           end: "bottom top",
           scrub: 1,
-        }
+        },
         });
         tl.to(".roll-number-wrap" {y: -300, overwrite: "auto"});
    }, 
