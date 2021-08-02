@@ -2407,7 +2407,7 @@ sorty.forEach(function (el) {
   });
 
 
-
+/* 
   el.addEventListener('mousedown', () => {
     gsap.to(cursor, 0.5, {
       css: {
@@ -2420,11 +2420,11 @@ sorty.forEach(function (el) {
         opacity: 1
       }
     });
-  });
+  }); */
 
 
 
-  el.addEventListener('mouseup', () => {
+/*   el.addEventListener('mouseup', () => {
     gsap.to(cursor, 1, {
       css: {
         background: '#231f20'
@@ -2442,7 +2442,7 @@ sorty.forEach(function (el) {
         opacity: 1
       }
     });
-  });
+  }); */
 })
 
 
@@ -2463,7 +2463,7 @@ followArea.forEach(function (el) {
     gsap.to(cursor, 0.25, {scale: 1,backgroundColor: "#231f20", /* autoAlpha: 0 */});
   });
 
-  el.addEventListener('mousedown', () => {
+ /*  el.addEventListener('mousedown', () => {
     gsap.to(cursor, 0.5, {
       css: {
       transform: 'translate(-50%, -50%) scale(0.75)'}
@@ -2475,8 +2475,8 @@ followArea.forEach(function (el) {
         opacity: 1
       }
     });
-  });
-
+  }); */
+/* 
   el.addEventListener('mouseup', () => {
     gsap.to(cursor, 1, {
       css: {
@@ -2495,7 +2495,7 @@ followArea.forEach(function (el) {
         opacity: 1
       }
     });
-  });
+  }); */
 })
 
 
@@ -2514,15 +2514,15 @@ reference.forEach(function (el) {
     gsap.to(cursor, 0.25, {scale: 1,backgroundColor: "#231f20", /* autoAlpha: 0 */});
   });
 
-  el.addEventListener('mousedown', () => {
+/*   el.addEventListener('mousedown', () => {
     gsap.to(cursor, 0.5, {
       css: {
       transform: 'translate(-50%, -50%) scale(0.75)'}
     });
 
-  });
+  }); */
 
-  el.addEventListener('mouseup', () => {
+/*   el.addEventListener('mouseup', () => {
     gsap.to(cursor, 1, {
       css: {
         background: 'transparent'
@@ -2540,7 +2540,7 @@ reference.forEach(function (el) {
         opacity: 1
       }
     });
-  });
+  }); */
 })
 
 }
