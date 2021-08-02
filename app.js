@@ -305,7 +305,7 @@ function initLoader() {
   // LOADER OUT
   const tlLoaderOut = gsap.timeline({
     id: 'tlLoaderOut',
-    defaults: {duration: 1.2, ease: 'power2.inOut'},delay: 0.2});
+    defaults: {duration: 0.8, ease: 'power2.inOut'},delay: 0.2});
 
   tlLoaderOut
 
@@ -489,7 +489,7 @@ function pageTransitionOut({
   container
 }) {
   // timeline to move loader away down
-  const tl = gsap.timeline({defaults: {duration: 0.8, ease: 'power1.inOut', delay: 0},
+  const tl = gsap.timeline({defaults: {duration: 0.8, ease: 'power1.inOut', delay: 0.2},
     // OVDJE SE INICIRA PONOVO SAV JS CONTENT / AKO ZATREBA
     onComplete: () => initContent()
   });
