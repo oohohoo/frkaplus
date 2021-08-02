@@ -2024,12 +2024,12 @@ function numberoll() {
         scrollTrigger: {
           scroller: ".smooth-scroll",
           trigger: ".gi--num--wrap",
-          start: "top 85%",
+          start: "top 55%",
           end: "bottom top",
           scrub: 1,
         }
         });
-        tl.to(".roll-number-wrap", {y: -300, overwrite: "auto"});
+        tl.to(".roll-number-wrap", {y: -200, overwrite: "auto"});
    }, 
     
     // all 
