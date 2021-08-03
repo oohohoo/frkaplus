@@ -379,7 +379,7 @@ function initContent() {
           openMobileMenu();
           pinHover();
           lokacijehover();
-         /*  locationMap(); */
+          locationMap();
           console.log('from app.js | lokacije');
         },
         sololokacije: function () {
