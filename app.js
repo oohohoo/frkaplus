@@ -1320,7 +1320,7 @@ function lokacijehover() {
           });
 
         tl.to(lokacija, {
-          scale:1.3,
+          scale:1.15,
           duration: 0.25,
           ease: 'power1.inOut',
           overwrite: "true"
