@@ -1074,15 +1074,6 @@ display:none!important;
 margin-bottom: 2em;
 }
 
-
-/* .filepond--file-action-button.filepond--file-action-button svg {
-  color: var(--frkablack)!important;
-  margin-left: 0.4em!important;
-  margin-top: 0.4em!important;
-
-} */
-
-
 .vert {
   height: 100%;
 }
@@ -1315,7 +1306,7 @@ border-radius: 50%;
   align-items: center;
 
   /* fixes IE11 centering problems (is overruled by label min-height) */
-  height: 0px;
+  height: 0;
 
   /* dont allow selection */
   -webkit-user-select: none;
