@@ -416,7 +416,7 @@ function initContent() {
   
   /* LOAD ON EVERY PAGE ---- edit*/
   /* passiveListeners(); */
-  /* webflowInteractions(); */
+  webflowInteractions();
   customCursor();
   underlineLink();
   scrollTotop();
@@ -991,7 +991,7 @@ map.on("load", function (e) {
     });
 });
 
-},200)  
+/* },200)  */ 
 /*
 ================================================================================
 FADE IN MAP
@@ -1079,12 +1079,12 @@ WEBFLOW INTERACTIONS REINIT
 ================================================================================
 */
 
-/* function webflowInteractions() {
+function webflowInteractions() {
   Webflow.ready();
   Webflow.require('ix2').init();
   console.log("WEBFLOW RELOAD");
 
-} */
+}
 
 /*
 ================================================================================
