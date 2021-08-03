@@ -49,7 +49,6 @@ KILL OUTLINE ON ALL
   outline: none;
 }
 
-
 /*
 ================================================================================
 HIDE PAGE CONTENT BY DEFAULT
@@ -106,26 +105,15 @@ DISABLE MOBILE LANDSCAPE
 ================================================================================
 */
 
-/*   @media only screen and (orientation:landscape){
+/*  @media only screen and (orientation:landscape){
   .hidden{ display:block; }
   .show{ display:none; }
 }
 @media only screen and (orientation:portrait){
   .hidden{ display:none; }
   .show{ display:block; }
-} */
-
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (orientation: landscape) { 
-    .hidden{ display:block; }
-    .show{ display:none; }
-
 }
-
- 
-
+ */
 
 /*
 ================================================================================
@@ -225,7 +213,7 @@ LOADER
 
 .progress {
   /*OVO JE UGAŠENO ZA PREZENTACIJU*/
-  background-color: #ff0000;
+  /* background-color: var(--frkablack); */
   position: absolute;
   left: 0;
   top: 0;
@@ -243,6 +231,11 @@ LOADER
     visibility: hidden;
 }  
 
+/* KILL WEBFLOW BADGE */
+.w-webflow-badge {
+    position: relative !important;
+    right: 1000px !important;
+}
 
 /*
 ================================================================================
@@ -344,6 +337,21 @@ html.has-scroll-smooth {
 
 /*
 ================================================================================
+GSAP PERFORMANCE FIX
+================================================================================
+*/
+
+/*  .gsapfix {
+  will-change: transform;
+  backface-visibility: hidden;
+}   
+
+#main {
+  will-change: transform;
+  backface-visibility: hidden;
+}    */
+/*
+================================================================================
 DISABLE SELECTION
 ================================================================================
 */
@@ -392,9 +400,6 @@ SIMPLE FADE IN / FADE OUT / AUTOALPHA 023
 BUTTON HOVER LOCO
 ================================================================================
 */
-
-/* *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } */
-/* body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;} */
 
 .item a {
 display: flex;
@@ -509,6 +514,35 @@ TXT SELECT
   background: var(--frkablack);
   color: var(--frkayellow);
 }
+
+/*
+================================================================================
+OHOHO ANIMACIJA
+================================================================================
+*/
+.ohohoone {
+  display: block;
+}
+.ohohotwo {
+  display:none;
+}
+.ohohowrap:hover .ohohoone {
+  display: none;
+}
+.ohohowrap:hover .ohohotwo {
+  display: block;
+} 
+
+/*
+================================================================================
+TRICK TO UNIT PORTS ON MOBILE - VH
+================================================================================
+
+.vhfix {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100)
+}
+/*
 
 
 /*
@@ -829,6 +863,14 @@ TEST YOUR DESIGN
     padding: 2px 10px;
 }
 
+/*LOCATION HOVER*/
+/* .webinar-posts__event-item:hover {
+  background-color: #231f20;
+  color: #ffdc52;
+} */
+
+
+
    .photo-crop-container .crop-preview-cont #crop_img {
     position: absolute;
     bottom: 0.52em;
@@ -847,6 +889,8 @@ TEST YOUR DESIGN
     justify-content: center;
     align-items: center;
   }
+
+
 
   .photo-crop-container.show-result .crop-preview-cont .img_container {
     max-width: 400px;
@@ -923,6 +967,105 @@ FILEPOND STYLING
 ================================================================================
 */
 
+/* 
+.filepond--file-action-button.filepond--file-action-button {
+  background-color: var(--frkayellow)!important;
+  
+}
+ */
+
+
+
+
+
+/* .filepond--panel-top, .filepond--panel-bottom {
+  height: 0.8em!important;
+} */
+
+/* use a hand cursor intead of arrow for the action buttons */
+/* .filepond--file-action-button {
+  cursor: pointer!important;
+}
+ */
+/* the text color of the drop label*/
+/* .filepond--drop-label {
+  color: var(--frkablack)!important;
+} */
+
+/* underline color for "Browse" button */
+/* .filepond--label-action {
+  text-decoration-color: var(--frkayellow)!important;
+}
+ */
+/* the background color of the filepond drop area */
+/* .filepond--panel-root {
+  background-color: var(--frkablack)!important;
+ 
+} */
+
+/* the border radius of the drop area and file item */
+/* .filepond--panel-root, .filepond--item-panel {
+  border-radius: 0.5px!important;
+} */
+
+/* the background color of the file and file panel (used when dropping an image) */
+/* .filepond--item-panel {
+  background-color: var(--frkablack)!important;
+ 
+} */
+
+/* the background color of the drop circle */
+/* .filepond--drip-blob {
+  background-color: var(--frkablack)!important;
+} */
+
+/* the background color of the black action buttons */
+/* .filepond--file-action-button {
+  background-color: var(--frkablack)!important;
+}
+ */
+/* the icon color of the black action buttons */
+/* .filepond--file-action-button {
+  color: var(--frkayellow)!important;
+} */
+
+/* the color of the focus ring */
+/* .filepond--file-action-button:hover,
+.filepond--file-action-button:focus {
+  background-color: var(--frkayellow)!important;
+  box-shadow: 0 0 0 0em rgba(244,221,84,0)!important; 
+} */
+
+/* the text color of the file status and info labels */
+/* .filepond--file {
+  color: var(--frkayellow)!important;
+    background-color: var(--frkablack)!important;
+    border-radius: 0.5px!important;
+
+} */
+
+/* error state color */
+/* [data-filepond-item-state*='error'] .filepond--item-panel,
+[data-filepond-item-state*='invalid'] .filepond--item-panel {
+  background-color: var(--frkayellow)!important;
+}
+
+[data-filepond-item-state='processing-complete'] .filepond--item-panel {
+  background-color: var(--frkablack)!important;
+}
+ */
+/* bordered drop area */
+
+/* .filepond--panel-root {
+  background-color: transparent!important;
+  border: 1px solid var(--frkablack)!important;
+  color: var(--frkablack)!important;
+}
+ */
+/* .filepond--file-status {
+display:none!important;
+} */
+
 .crop-para {
 margin-bottom: 2em;
 }
@@ -957,6 +1100,10 @@ user-select:none;
 /* .slideshow__item img {
   width: 100%;
 } */
+
+
+
+
 
 /*
 ================================================================================
@@ -1059,7 +1206,6 @@ VIDEO PREVIEW CSS
 
 
 /*FILEPOND CIJELI CSS*/
-
 
 .filepond--assistant {
   position: absolute;
@@ -2452,10 +2598,77 @@ width: 8px!important;
 
 
 
+
+
+/* OVERRIDE CROPPER CSS*/
+/* .cropper-view-box {
+  outline: 1px solid var(--frkablack)!important;
+  outline-color: var(--frkablack)!important;
+}
+ */
+/* .cropper-line {
+  background-color: var(--frkablack)!important;
+} */
+
+/* .cropper-point {
+  background-color: var(--frkablack)!important;
+  height: 8px!important;
+  opacity: 1!important; 
+  width: 8px!important;
+} */
+
+/* .cropper-modal {
+  background-color: var(--frkayellow)!important;
+  opacity: .8!important;
+} */
+/* .cropper-point.point-ne {
+  right: -4px!important;
+  top: -4px!important;
+}
+ */
+/* .cropper-point.point-nw {
+  left: -4px!important;
+  top: -4px!important;
+}
+
+.cropper-point.point-sw {
+  bottom: -4px!important;
+  left: -4px!important;
+}
+
+.cropper-point.point-se {
+  bottom: -4px!important;
+  right: -4px!important;
+}
+
+.cropper-point.point-s {
+  bottom: -4px!important;
+  margin-left: -4px!important;
+}
+
+.cropper-point.point-w {
+  left: -4px!important;
+  margin-top: -4px!important;
+}
+
+.cropper-point.point-n {
+  margin-left: -4px!important;
+  top: -4px!important;
+}
+
+.cropper-point.point-e {
+  margin-top: -4px!important;
+  right: -4px!important;
+} */
+
  .img_container {
   max-height: 13.5em!important;
 
 } 
+
+
+
+
 
 
 /*
@@ -2468,6 +2681,22 @@ PRINTTHIS PLUGIN STYLING
   opacity: 1;  
 }
 
+
+/*
+.filepond--root {
+  height: 20em;
+}
+
+.filepond--root .filepond--list-scroller {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+.filepond--list {
+  left: 0em;
+  right: 0em;
+}
+*/
 
 /*
 ================================================================================
@@ -2594,21 +2823,26 @@ SHUFFLE.js
 
 .webinar-posts__event-list li {
   margin: 0 1px 20px;
+ /*  background-color: #FFF8E0; */
 }
 
 .webinar-posts__event-item {
   width: calc(50% - 20px);
+  /*   overflow: hidden;
+   position: relative; */
 }
 
 .webinar-posts__event-item.full {
   width: 100%;
   transition: all 0.3s cubic-bezier(.4,0,0,1);
-
+  /*   overflow: hidden;
+   position: relative; */
 }
 
 .newsimgwrap.full {
+ /*  width: 20.65em; */
   transition: all 0.3s cubic-bezier(.4,0,0,1);
-
+  /* height: 100% */
 }
 
 .newsimgwrap {
@@ -2626,6 +2860,9 @@ SHUFFLE.js
   grid-template-areas: ".";
   grid-template-columns: 1fr;
   grid-template-rows: auto minmax(8em, auto);
+/*   border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: var(--frkablack); */
 }
 
 .newsminigrid.full {
@@ -2633,6 +2870,8 @@ SHUFFLE.js
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
+  /* padding-top: 0em; */
+  /* padding-bottom: 2.1em; */
   grid-column-gap: 2em;
 }
 
@@ -2714,16 +2953,28 @@ VIZUAL SIMULATOR - VIDEO TAB ON/OFF
 STATIC IMAGE ZA MAPU
 =========================r=======================================================
 */
+/* #static {
+  background-image: url("https://api.mapbox.com/styles/v1/fogseller/ckqkw1hr4091g17sgan3bwjzp/static/16.527,44.663,6.64/100%x100vh?access_token=pk.eyJ1IjoiZm9nc2VsbGVyIiwiYSI6ImNrN2VpbXlpbjAwNDIzbnM1N2ZhMW9laGkifQ.DUf-8r1jXF4o7ApMUcKVXQ");
+  width: 100%;
+  height: 100vh;
+  grid-column: 1;
+  grid-row: 1;
+}
+ */
 
 #map {
   opacity: 0;
+ /*  visibility: hidden; */
 }
+
 
 /* CURRENT MENU WORDPRESS*/
 .current-menu-item .underline {
   left: 0%!important;
   width: 100%!important;
+
 }
+
 
 .iconright.hide {
    visibility:hidden;
@@ -2747,8 +2998,9 @@ STATIC IMAGE ZA MAPU
 }
 
 .leftfix {
-  left: 0em;  
-}
+    
+   left: 0em;  
+  }
 
 
 
