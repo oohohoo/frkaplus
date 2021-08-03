@@ -653,7 +653,7 @@ MAPBOX
 }
 
 .marker {
-  background-image: url('/images/marker-fat.svg');
+  background-image: url('/wp-content/themes/frkaplus/images/marker-fat.svg');
   background-size: cover;
   width: 1.6em;
   height: 2.4em;
