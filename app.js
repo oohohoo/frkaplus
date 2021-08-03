@@ -379,8 +379,8 @@ function initContent() {
           openMobileMenu();
           pinHover();
           lokacijehover();
-/*           locationMap();
- */          console.log('from app.js | lokacije');
+          locationMap();
+          console.log('from app.js | lokacije');
         },
         sololokacije: function () {
           uploadCrop();
