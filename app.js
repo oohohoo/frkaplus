@@ -860,7 +860,7 @@ function locationMap() {
 // map.addControl(new mapboxgl.NavigationControl()); 
 
 
-$.getJSON('https://raw.githubusercontent.com/oohohoo/frkaplus/main/frka.geojson', function (geojson) {
+/* $.getJSON('https://raw.githubusercontent.com/oohohoo/frkaplus/main/frka.geojson', function (geojson) {
   geojson.features.forEach(function(marker) {
           // create a HTML element for each feature
           var el = document.createElement('div');
@@ -877,13 +877,12 @@ $.getJSON('https://raw.githubusercontent.com/oohohoo/frkaplus/main/frka.geojson'
   marker.properties.description +
   '</p>'
   ))
-              
-              
+            
               .addTo(map);        
       });
   
     });
-
+ */
 
 
 
