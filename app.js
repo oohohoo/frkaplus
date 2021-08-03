@@ -631,7 +631,7 @@ barba.init({
                 fadeinlokacije();
                 newSort();
                 stopScrollMap();
-                /* webflowInteractions(); */
+                webflowInteractions();
                /*  pinHover(); */
                 lokacijehover();
                 /* infiniteScroll(); */
