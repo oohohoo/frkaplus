@@ -2895,9 +2895,9 @@ SHUFFLE.js
   grid-column-gap: 2em;
 }
 
-.item--flex__inner.full {
+/* .item--flex__inner.full {
    height: 100%;
-}
+} */
 
 .pin-button-link.full {
   bottom: 2.2em;
