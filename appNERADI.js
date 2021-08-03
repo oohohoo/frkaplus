@@ -1,6 +1,3 @@
-
-
-
 gsap.registerPlugin(ScrollTrigger);
 
 let locoScroll;
@@ -833,7 +830,7 @@ LOCATION MAP
 ================================================================================
 */
 function locationMap() {
- /*  setTimeout(()=>{  */
+  /*  setTimeout(()=>{   */
    
   mapboxgl.accessToken = 'pk.eyJ1IjoiZnJrYXBsdXMiLCJhIjoiY2tybHY1djhuNDE4YzJ6cDhtZmkzdzFvaiJ9.hTRDicTnxDfby_3lEybkNw';
 
@@ -1020,8 +1017,9 @@ var fadein = gsap.timeline({defaults:{ease:'none'}})
 SOLOMAP MAP
 ================================================================================
 */
-function soloMap() {
 
+/* function soloMap() { */
+/* 
   mapboxgl.accessToken = 'pk.eyJ1IjoiZm9nc2VsbGVyIiwiYSI6ImNrN2VpbXlpbjAwNDIzbnM1N2ZhMW9laGkifQ.DUf-8r1jXF4o7ApMUcKVXQ';
 
   var bounds = [
@@ -1037,20 +1035,10 @@ function soloMap() {
     minZoom: 6.64, // note the camel-case
     maxZoom: 19,
     maxBounds: bounds,
-/*     bearing: 27,
-    pitch: 45 */
   });
 
-
-/* DODANO ALI NE RADI*/
-/*  map.addControl(new mapboxgl.NavigationControl());  */
-
-
-
-
-
 map.doubleClickZoom.enable();
-console.log("MAP DOUBLECLICK!"); 
+console.log("MAP DOUBLECLICK!");  */
 
 
 
@@ -1060,10 +1048,10 @@ MAP RESIZE
 ================================================================================
 */
 
- map.once('load', () => {
+/*  map.once('load', () => {
 map.resize();
 });
-console.log("MAP RESIZE!"); 
+console.log("MAP RESIZE!");  */
 
 /*
 ================================================================================
@@ -1071,7 +1059,7 @@ FADE IN MAP
 ================================================================================
 */
  
-var fadein = gsap.timeline({defaults:{ease:'none'}})
+/* var fadein = gsap.timeline({defaults:{ease:'none'}})
 .to('.loader-icon', {autoAlpha:1})
 .to('.loader-wrap', {rotate: 360, repeat: -1, duration:2}, "<")
 .to('.loader-txt', {autoAlpha:1, repeat: -1, duration:0.5}, "<")
@@ -1079,7 +1067,7 @@ var fadein = gsap.timeline({defaults:{ease:'none'}})
 .to('.loader-icon', {autoAlpha:0}, "-=1.5")
 .to('.loader-txt', {autoAlpha:0}, "<")
 
-}
+} */
 
 
 
