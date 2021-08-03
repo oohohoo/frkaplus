@@ -973,7 +973,7 @@ map.on("load", function (e) {
   mapContainerEl.style.opacity = "1";
   $('body a[href^="http"]').not('a[href*="' + location.hostname + '"]').attr({target: "_blank", rel: "noopener noreferrer nofollow"});
 
-  $.getJSON('https://raw.githubusercontent.com/oohohoo/frkaplus/main/frka.geojson', function (geojson) {
+/*   $.getJSON('https://raw.githubusercontent.com/oohohoo/frkaplus/main/frka.geojson', function (geojson) {
   geojson.features.forEach(function(marker) {
           // create a HTML element for each feature
           var el = document.createElement('div');
@@ -993,7 +993,7 @@ map.on("load", function (e) {
 .addTo(map);        
       });
   
-    });
+    }); */
 });
 
 /* },200)  */ 
