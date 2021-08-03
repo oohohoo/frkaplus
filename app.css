@@ -2880,9 +2880,9 @@ SHUFFLE.js
   grid-template-areas: ".";
   grid-template-columns: 1fr;
   grid-template-rows: auto minmax(8em, auto);
-  border-bottom-style: solid;
+/*   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-bottom-color: var(--frkablack);
+  border-bottom-color: var(--frkablack); */
 }
 
 .newsminigrid.full {
