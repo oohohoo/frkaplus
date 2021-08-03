@@ -860,29 +860,8 @@ function locationMap() {
 // map.addControl(new mapboxgl.NavigationControl()); 
 
 
-/* $.getJSON('https://raw.githubusercontent.com/oohohoo/frkaplus/main/frka.geojson', function (geojson) {
-  geojson.features.forEach(function(marker) {
-          // create a HTML element for each feature
-          var el = document.createElement('div');
-          el.className = 'marker';
-          new mapboxgl.Marker(el)
-              .setLngLat(marker.geometry.coordinates)
-              .setPopup(new mapboxgl.Popup()
-              //.setHTML(marker.properties.title))
-              .setHTML(
-  '<h3>' +
-  marker.properties.title +
-  '</h3>' +
-  '<p>' +
-  marker.properties.description +
-  '</p>'
-  ))
-            
-              .addTo(map);        
-      });
-  
-    });
- */
+
+
 
 
 
@@ -977,7 +956,7 @@ MAP RESIZE
 ================================================================================
 */
 
- map.once('load', () => {
+map.once('load', () => {
 map.resize();
 });
 console.log("MAP RESIZE!"); 
@@ -993,6 +972,28 @@ map.on("load", function (e) {
   //mapContainerEl.style.visibility = "visible";
   mapContainerEl.style.opacity = "1";
   $('body a[href^="http"]').not('a[href*="' + location.hostname + '"]').attr({target: "_blank", rel: "noopener noreferrer nofollow"});
+
+  $.getJSON('https://raw.githubusercontent.com/oohohoo/frkaplus/main/frka.geojson', function (geojson) {
+  geojson.features.forEach(function(marker) {
+          // create a HTML element for each feature
+          var el = document.createElement('div');
+          el.className = 'marker';
+          new mapboxgl.Marker(el)
+              .setLngLat(marker.geometry.coordinates)
+              .setPopup(new mapboxgl.Popup()
+              //.setHTML(marker.properties.title))
+              .setHTML(
+  '<h3>' +
+  marker.properties.title +
+  '</h3>' +
+  '<p>' +
+  marker.properties.description +
+  '</p>'
+  ))
+.addTo(map);        
+      });
+  
+    });
 });
 
 /* },200)  */ 
