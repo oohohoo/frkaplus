@@ -2670,24 +2670,6 @@ UPLOAD CROP
 
 function uploadCrop() {
 
-
-
-/* document.querySelector('button').addEventListener('click', () => {
-  pond.browse();
-}); */
-
-/*  document.querySelector('.upload-video').pond.addEventListener('FilePond:addfile', function (e) {
-  $('.movevideo').toggleClass('hide'); 
-    console.log("SHOW BUTTON ON ADD FILE");
-   
-}); */
-
-
-
-
-
-
-
 // Show PDF Button
 
 $('#crop_img').click(function () {
