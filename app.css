@@ -2891,7 +2891,7 @@ SHUFFLE.js
   -ms-grid-rows: auto;
   grid-template-rows: auto;
   /* padding-top: 0em; */
-  padding-bottom: 2.1em;
+  /* padding-bottom: 2.1em; */
   grid-column-gap: 2em;
 }
 
