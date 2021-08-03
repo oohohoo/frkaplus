@@ -416,7 +416,7 @@ function initContent() {
   
   /* LOAD ON EVERY PAGE ---- edit*/
   /* passiveListeners(); */
-  webflowInteractions();
+  /* webflowInteractions(); */
   customCursor();
   underlineLink();
   scrollTotop();
@@ -631,7 +631,7 @@ barba.init({
                 fadeinlokacije();
                 newSort();
                 stopScrollMap();
-                webflowInteractions();
+               /*  webflowInteractions(); */
                /*  pinHover(); */
                 lokacijehover();
                 /* infiniteScroll(); */
@@ -1079,12 +1079,12 @@ WEBFLOW INTERACTIONS REINIT
 ================================================================================
 */
 
-function webflowInteractions() {
+/* function webflowInteractions() {
   Webflow.ready();
   Webflow.require('ix2').init();
   console.log("WEBFLOW RELOAD");
 
-}
+} */
 
 /*
 ================================================================================
