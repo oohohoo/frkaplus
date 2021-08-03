@@ -851,8 +851,6 @@ function locationMap() {
     minZoom: 6.64, // note the camel-case
     maxZoom: 19,
     maxBounds: bounds,
-    //bearing: 27,
-   // pitch: 45
   });
 
 
@@ -862,13 +860,13 @@ function locationMap() {
 
 
 
-
+/* 
 
 
 map.doubleClickZoom.enable();
 console.log("MAP DOUBLECLICK!"); 
 
-
+ */
 
 
 /*
@@ -956,13 +954,13 @@ MAP RESIZE
 ================================================================================
 */
 
-map.once('load', () => {
+/* map.once('load', () => {
 map.resize();
-});
-console.log("MAP RESIZE!"); 
+}); */
+/* console.log("MAP RESIZE!");  */
 
 /*  },5000)    */
- console.log("MAP LOADDDDDDD!"); 
+ /* console.log("MAP LOADDDDDDD!");  */
 
 /* mapboxgl.clearStorage();
 console.log("STORAGE CLEARED");  */
