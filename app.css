@@ -106,15 +106,26 @@ DISABLE MOBILE LANDSCAPE
 ================================================================================
 */
 
-  @media only screen and (orientation:landscape){
+/*   @media only screen and (orientation:landscape){
   .hidden{ display:block; }
   .show{ display:none; }
 }
 @media only screen and (orientation:portrait){
   .hidden{ display:none; }
   .show{ display:block; }
+} */
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (orientation: landscape) { 
+    .hidden{ display:block; }
+    .show{ display:none; }
+
 }
+
  
+
 
 /*
 ================================================================================
