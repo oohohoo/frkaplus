@@ -2677,11 +2677,11 @@ SHUFFLE.js
 ZOOM IMAGE CURSOR
 ================================================================================
 */
-  .demo-image {
+ /*  .demo-image {
     cursor: url("/wp-content/uploads/2021/08/close-fullscreen.svg") 64 64, auto; 
   
   }
-
+ */
   .demo-image h1 {
 color: var(--frkayellow)!important;  
   }
