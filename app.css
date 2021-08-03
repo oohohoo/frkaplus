@@ -6,8 +6,6 @@ html {
   overflow-y: hidden;
 }
 body {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
   transition: 0.3s ease-out;
 }
 
