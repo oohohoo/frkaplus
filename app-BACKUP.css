@@ -49,7 +49,6 @@ KILL OUTLINE ON ALL
   outline: none;
 }
 
-
 /*
 ================================================================================
 HIDE PAGE CONTENT BY DEFAULT
@@ -401,9 +400,6 @@ SIMPLE FADE IN / FADE OUT / AUTOALPHA 023
 BUTTON HOVER LOCO
 ================================================================================
 */
-
-/* *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } */
-/* body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;} */
 
 .item a {
 display: flex;

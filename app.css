@@ -106,7 +106,7 @@ DISABLE MOBILE LANDSCAPE
 ================================================================================
 */
 
-/*  @media only screen and (orientation:landscape){
+  @media only screen and (orientation:landscape){
   .hidden{ display:block; }
   .show{ display:none; }
 }
@@ -114,7 +114,7 @@ DISABLE MOBILE LANDSCAPE
   .hidden{ display:none; }
   .show{ display:block; }
 }
- */
+ 
 
 /*
 ================================================================================
@@ -214,7 +214,7 @@ LOADER
 
 .progress {
   /*OVO JE UGAŠENO ZA PREZENTACIJU*/
-  /* background-color: var(--frkablack); */
+  background-color: #ff0000;
   position: absolute;
   left: 0;
   top: 0;
