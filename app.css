@@ -1708,7 +1708,7 @@ color: var(--frkayellow)!important;
   left: 0;
   right: 0;
   z-index: 1;
-height: 2.08em;
+height: 2.66em;
   padding: 0;
   margin: 0.25em;
 
@@ -1959,7 +1959,7 @@ height: 2.08em;
 }
 .filepond--panel-top,
 .filepond--panel-bottom {
-  height: 1em;
+  height: 1.2em;
 }
 .filepond--panel-top {
   border-bottom-left-radius: 0 !important;
