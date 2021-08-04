@@ -2017,7 +2017,7 @@ color: var(--frkayellow)!important;
 .filepond--panel-center {
   /* the center panel is scaled using scale3d to fit the correct height */
   /* we use 100px instead of 1px as scaling 1px to a huge height is really laggy on chrome */
-  height: 100px !important;
+  height: 110px !important;
   border-top: none !important;
   border-bottom: none !important;
   border-radius: 0 !important;
