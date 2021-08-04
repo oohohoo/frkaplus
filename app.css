@@ -532,13 +532,13 @@ ONAMA--KARTA--PULSING BUTTONS
   -webkit-animation: pulse 3.5s infinite;
 }
 
-.pulse-button:hover {
+/* .pulse-button:hover {
   -webkit-animation: none;
   -moz-transform: scale(2);
   -ms-transform: scale(2);
   -webkit-transform: scale(2);
   transform: scale(2);
-}
+} */
 
 @-webkit-keyframes pulse {
   0% {
