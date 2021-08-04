@@ -1,3 +1,5 @@
+
+
 body,
 html {
   margin: 0;
@@ -25,6 +27,9 @@ body {
   
  /*  transform: translate3d(0, 0, 0); */
 }
+
+
+
 
 /*
 ================================================================================
@@ -113,14 +118,14 @@ DISABLE MOBILE LANDSCAPE
   .show{ display:block; }
 } */
 
-@media only screen 
+/* @media only screen 
   and (min-device-width: 414px) 
   and (max-device-width: 736px) 
   and (orientation: landscape) { 
     .hidden{ display:block; }
     .show{ display:none; }
 
-}
+} */
 
  
 
@@ -181,15 +186,16 @@ LOADER
   transform: translate(-50%, -50%);
 }
 
-/*KILL LOCOSCROLL MOBILE*/
-@media screen and (min-width: 992px) {
-  body {
-    overflow: hidden;
-  }
-}
-
 
 @media (max-width: 991px) {
+
+
+/*KILL LOCOMOTIVE SCROLL ON MOBILE*/
+body {
+  overflow: auto;
+  overflow-y: auto;
+}
+
 
 
   .loader__title {
