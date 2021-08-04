@@ -1912,7 +1912,7 @@ height: 2.66em;
   border-radius: 0.5px;
 
   background-color: transparent!important; 
-  border: 1.5px solid var(--frkablack);
+  border: 1px solid var(--frkablack);
   color: var(--frkablack);
 
   
