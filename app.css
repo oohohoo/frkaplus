@@ -1959,7 +1959,7 @@ color: var(--frkayellow)!important;
 }
 .filepond--panel-top,
 .filepond--panel-bottom {
-  height: 1em;
+  height: 0.5em;
 }
 .filepond--panel-top {
   border-bottom-left-radius: 0 !important;
