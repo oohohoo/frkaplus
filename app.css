@@ -1947,7 +1947,7 @@ height: 2.66em;
   background-color: transparent !important;
   border: none !important;
 }
-.filepond--panel-top,
+
 .filepond--panel-bottom,
 .filepond--panel-center {
   position: absolute;
@@ -1957,6 +1957,17 @@ height: 2.66em;
   margin: 0;
   padding: 0;
 }
+
+.filepond--panel-top {
+  position: absolute;
+  left: 0;
+  top: -2px;
+  right: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
 .filepond--panel-top,
 .filepond--panel-bottom {
   height: 1.2em;
@@ -1974,7 +1985,7 @@ height: 2.66em;
   height: 2px;
   left: 0;
   right: 0;
-  bottom: -5px;
+  bottom: -1px;
   background-color: inherit;
 }
 .filepond--panel-center,
