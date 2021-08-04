@@ -1899,7 +1899,7 @@ function homevideo() {
          scrollTrigger: {
             scroller: ".smooth-scroll",
             trigger: apelTrigger,
-            start: "top 70%",
+            start: "top 50%",
             toggleActions: "restart none none reverse",  
           },
         });
