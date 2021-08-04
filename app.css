@@ -1947,7 +1947,7 @@ color: var(--frkayellow)!important;
   background-color: transparent !important;
   border: none !important;
 }
-
+.filepond--panel-top,
 .filepond--panel-bottom,
 .filepond--panel-center {
   position: absolute;
@@ -1957,16 +1957,6 @@ color: var(--frkayellow)!important;
   margin: 0;
   padding: 0;
 }
-
-.filepond--panel-top {
-  position: absolute;
-  left: 0;
-  top: -2px;
-  right: 0;
-  margin: 0;
-  padding: 0;
-}
-
 
 .filepond--panel-top,
 .filepond--panel-bottom {
@@ -2017,7 +2007,7 @@ color: var(--frkayellow)!important;
 .filepond--panel-center {
   /* the center panel is scaled using scale3d to fit the correct height */
   /* we use 100px instead of 1px as scaling 1px to a huge height is really laggy on chrome */
-  height: 110px !important;
+  height: 100px !important;
   border-top: none !important;
   border-bottom: none !important;
   border-radius: 0 !important;
