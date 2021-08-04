@@ -1,12 +1,18 @@
 
-
 body,
 html {
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  overflow-y: hidden;
 }
+
+@media screen and (min-width: 992px) {
+  body {
+    overflow: hidden;
+    overflow-y: hidden;
+  }
+}
+
+
 body {
   transition: 0.3s ease-out;
 }
@@ -188,14 +194,6 @@ LOADER
 
 
 @media (max-width: 991px) {
-
-
-/*KILL LOCOMOTIVE SCROLL ON MOBILE*/
-body {
-  overflow: auto;
-  overflow-y: auto;
-}
-
 
 
   .loader__title {
