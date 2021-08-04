@@ -106,7 +106,7 @@ locoScroll = new LocomotiveScroll({
     useKeyboard: true,
      inertia: .75,  
     smartphone: {
-      smooth: true,
+      smooth: false,
     },
     tablet: {
       smooth: true,

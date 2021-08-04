@@ -181,6 +181,14 @@ LOADER
   transform: translate(-50%, -50%);
 }
 
+/*KILL LOCOSCROLL MOBILE*/
+@media screen and (min-width: 992px) {
+  body {
+    overflow: hidden;
+  }
+}
+
+
 @media (max-width: 991px) {
 
 
@@ -2661,6 +2669,8 @@ SHUFFLE.js
 
 
 @media (max-width: 479px) {
+
+
   .webinar-posts__event-item {
     width: 100%!important;
      }
@@ -2908,6 +2918,8 @@ display: none;
 
 }
  
+
+
   /*
 ================================================================================
 PRINT TO PDF
