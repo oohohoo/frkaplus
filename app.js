@@ -2002,7 +2002,7 @@ function numberoll() {
  
        }, 
 
-    // mobile
+    // ipad
     "(max-width: 991px)": function() {
       // Any ScrollTriggers created inside these functions are segregated and get
       // reverted/killed when the media query doesn't match anymore. 
@@ -2018,6 +2018,22 @@ function numberoll() {
         tl.to(".roll-number-wrap", {y: -500, overwrite: "auto"});
    }, 
     
+
+   "(max-width: 991px)": function() {
+    // Any ScrollTriggers created inside these functions are segregated and get
+    // reverted/killed when the media query doesn't match anymore. 
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        scroller: ".smooth-scroll",
+        trigger: ".gi--num--wrap",
+        start: "top 55%",
+        end: "bottom top",
+        scrub: 1,
+      }
+      });
+      tl.to(".roll-number-wrap", {y: -200, overwrite: "auto"});
+ }, 
+
     // all 
     "all": function() {
       // ScrollTriggers created here aren't associated with a particular media query,
