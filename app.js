@@ -2019,7 +2019,7 @@ function numberoll() {
    }, 
     
 
-   "(max-width: 991px)": function() {
+   "(max-width: 479px)": function() {
     // Any ScrollTriggers created inside these functions are segregated and get
     // reverted/killed when the media query doesn't match anymore. 
     let tl = gsap.timeline({
