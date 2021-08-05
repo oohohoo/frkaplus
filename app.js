@@ -2010,7 +2010,7 @@ function numberoll() {
         scrollTrigger: {
           scroller: ".smooth-scroll",
           trigger: ".gi--num--wrap",
-          start: "top 75%",
+          start: "top 85%",
           end: "bottom top",
           scrub: 1,
         }
