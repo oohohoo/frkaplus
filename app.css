@@ -169,7 +169,7 @@ LOADER
   width: var(--loader-width);
   height: var(--loader-height);
   background-color: var(--frkayellow);
-  margin-top: -2em;
+/*   margin-top: -2em; */
  
 }
 
@@ -374,18 +374,6 @@ COUNTER / BROJAČ O NAMA
   font-variant-numeric: tabular-nums;
 }
 
-/*
-================================================================================
-OKOMITI TXT
-================================================================================
-*/
-  
-  .okomito {
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    }
-
-
 
 /*
 ================================================================================
@@ -472,35 +460,7 @@ ACCORDION HOVER LOCO
   
   
 
-/*
-================================================================================
-ACCORDION HOVER LOCO
-================================================================================
-*/
 
-.resto a {
-  display: flex;
-  flex-grow: 1;
-  text-decoration: none;
-  padding: 3em 0em 2.5em 0em;
- /*  border-bottom: 1px solid var(--frkablack); */
-  color: var(--frkablack);
-  background-size: 200% 200%;
-  background-image: 
-  linear-gradient(to top, #231F20 50%, transparent 50%);
-  transition: all 0.3s cubic-bezier(.4,0,0,1);
-  }
-  
-  .resto a:hover {
-  color: var(--frkayellow);
-  background-image: 
-  linear-gradient(to top, #231F20 51%, transparent 50%);
-  background-position: 0 100%;
-  padding: 3em 2em 2.5em 2em;
-  cursor: pointer;
-  }
-  
- 
 
   
 
@@ -1229,9 +1189,7 @@ border-radius: 50%;
   clip-path: inset(50%);
   white-space: nowrap;
 }
-.filepond--file-action-button.filepond--file-action-button {
-  /* scale SVG to fill button */
-}
+
 .filepond--file-action-button.filepond--file-action-button svg {
   width: 100%;
   height: 100%;
@@ -2866,7 +2824,7 @@ display: none;
 }
 
 .accord a:hover {
-  padding: 2em 1.5em 1.5em;
+  padding: 2em 0.6em 1.5em;
 }
 
 .horizontal-scroll {
@@ -2892,10 +2850,7 @@ display: none;
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
 
   /*SELECT BOTUNI*/
-  .select2-container {
-  width: 14em!important;
-  }
-
+ 
 /*SPLIDE*/
   .splide__slide {
     height: 36em;
@@ -2905,8 +2860,8 @@ display: none;
 .splide-img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-  object-fit: contain;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .splide__track {
@@ -2979,48 +2934,13 @@ PRINT TO PDF
 } */
 
  mockup img { 
-    /* position:relative; */
-  /*  width:1920px;  */
-  /* height: 1280px; */
-  /*   height:740px;  */
-    /* left: -250px; */
-/*  margin-left:-300px;  */
+
 max-width:100%
-  /* }  */
-  /* #w-node-_7de268a7-81d0-5662-af86-98639feca1e4-fab8b403 {
-    -ms-grid-row: 1;
-    grid-row-start: 1;
-    -ms-grid-row-span: 1;
-    grid-row-end: 2;
-    -ms-grid-column: 1;
-    grid-column-start: 1;
-    -ms-grid-column-span: 11;
-    grid-column-end: 12;
-    */
+
 } 
 
 
 
-/* .mockup {
-    max-width: 1920px;
-    }  */
-    
-  /*  .mockup    {
-     position: relative;
-     left:-500;
-    /*  width: 200px!important;  */ 
-     /* margin-left: -600px; 
-    } */
-   /*
-   .vizuale {
-   width: 1800px !important; 
-   
-   }
-      */
-   /*  .mockup__img {
-     width:100%;
-    
-     }  */
   
   }
   
