@@ -2015,7 +2015,7 @@ function numberoll() {
           scrub: 1,
         }
         });
-        tl.to(".roll-number-wrap", {y: -350, overwrite: "auto"});
+        tl.to(".roll-number-wrap", {y: -500, overwrite: "auto"});
    }, 
     
     // all 
