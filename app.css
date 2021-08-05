@@ -2631,13 +2631,6 @@ SHUFFLE.js
 
 
 
-@media (max-width: 479px) {
-
-
-  .webinar-posts__event-item {
-    width: 100%!important;
-     }
-  }
 
   .removevideo.sakrij, .movevideo.sakrij {
     opacity: 0;
@@ -2771,80 +2764,7 @@ STATIC IMAGE ZA MAPU
 
 
 
-/* HOME video iphone*/
 
-@media (max-width: 479px) {
-
-
-  
-  /*OUTLINE TXT*/
-  .outline-text, .outlinetwo {
-    -webkit-text-stroke-width: 1px!important;
- }
-
-
- .outline-text {
-  left: -15em!important;
-  top: 1.8em!important;
-}
-
-
-
-
-/*VIDEO HOME*/
-.bgvideo video {
-width: 100%;
-height: 100%;
-object-fit: cover;
-}
-/*FILTER LEFT FIX*/
-.webinar-posts__event-filter.filter-group.js-sort {
-  left: 0em;
-}
-.select2-container {
-  width: 91.8vw!important;
-  }
-
-  /*SCROLLBAR*/
-  .c-scrollbar_thumb {
-    width: 4px!important;
-}
-/*SPLIDE IMAGE*/
-.splide-img, .splide__track {
-  height: auto;
-}
-
-.splide__pagination {
-display: none;
-}
-
-/*TOP PADDING ACCORD*/
-.accord a {
-  padding: 2em 0em 1.5em 0em;
-}
-
-.accord a:hover {
-  padding: 2em 0.6em 1.5em;
-}
-
-.horizontal-scroll {
-  height: 75vh;  
- }
- 
- .pin-wrap {
-  height: 75vh;
-  padding: 50px 10vw;
- }
- 
- .pin-wrap > * {
-   min-width: 86vw;
-   padding: 0 5vw;
- }
-
- 
-
-
-}
 
 /*IPAD VERTICAL*/
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
@@ -2934,48 +2854,13 @@ PRINT TO PDF
 } */
 
  mockup img { 
-    /* position:relative; */
-  /*  width:1920px;  */
-  /* height: 1280px; */
-  /*   height:740px;  */
-    /* left: -250px; */
-/*  margin-left:-300px;  */
+
 max-width:100%
-  /* }  */
-  /* #w-node-_7de268a7-81d0-5662-af86-98639feca1e4-fab8b403 {
-    -ms-grid-row: 1;
-    grid-row-start: 1;
-    -ms-grid-row-span: 1;
-    grid-row-end: 2;
-    -ms-grid-column: 1;
-    grid-column-start: 1;
-    -ms-grid-column-span: 11;
-    grid-column-end: 12;
-    */
+
 } 
 
 
 
-/* .mockup {
-    max-width: 1920px;
-    }  */
-    
-  /*  .mockup    {
-     position: relative;
-     left:-500;
-    /*  width: 200px!important;  */ 
-     /* margin-left: -600px; 
-    } */
-   /*
-   .vizuale {
-   width: 1800px !important; 
-   
-   }
-      */
-   /*  .mockup__img {
-     width:100%;
-    
-     }  */
   
   }
   
