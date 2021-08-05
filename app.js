@@ -2018,7 +2018,23 @@ function numberoll() {
         tl.to(".roll-number-wrap", {y: -600, overwrite: "auto"});
    }, 
     
-
+      // ipad
+      "(max-width: 767px)": function() {
+        // Any ScrollTriggers created inside these functions are segregated and get
+        // reverted/killed when the media query doesn't match anymore. 
+        let tl = gsap.timeline({
+          scrollTrigger: {
+            scroller: ".smooth-scroll",
+            trigger: ".gi--num--wrap",
+            start: "top 85%",
+            end: "bottom top",
+            scrub: 1,
+          }
+          });
+          tl.to(".roll-number-wrap", {y: -400, overwrite: "auto"});
+     }, 
+      
+// iphone
    "(max-width: 479px)": function() {
     // Any ScrollTriggers created inside these functions are segregated and get
     // reverted/killed when the media query doesn't match anymore. 
