@@ -1,4 +1,577 @@
 
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    overflow: hidden;
+    overflow-y: hidden;
+  }
+}
+
+
+body {
+  transition: 0.3s ease-out;
+}
+
+* {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */      
+}
+
+.smooth-scroll {
+  overflow-y: hidden!important;
+  /* transform: translateZ(0); */
+/* -webkit-transform: translateZ(0); */
+   /* will-change: transform, opacity;  */
+ /*  will-change: scroll-position; */
+  
+ /*  transform: translate3d(0, 0, 0); */
+}
+
+
+
+
+/*
+================================================================================
+DEFINE ROOT VARIABLES / definiraj svoje
+================================================================================
+*/
+:root {
+  --frkayellow:#ffdc52;
+  --frkablack: #231f20;
+  --loader-width: 60vw;
+  --loader-height: 3em;
+}
+/*
+================================================================================
+KILL OUTLINE ON ALL
+================================================================================
+*/
+
+*:focus {
+  outline: none;
+}
+
+
+/*
+================================================================================
+HIDE PAGE CONTENT BY DEFAULT
+================================================================================
+*/
+.is-loading #main,
+.is-loading .header-container,
+.is-loading .fill-background {
+  display: none;
+}
+
+.fill-background {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 5;
+  will-change: background-color;
+ background-color: var(--frkablack);
+  transition: background-color 0.3s linear;
+}
+
+
+/*
+================================================================================
+IS LOADING BACKGROUND COLOR
+================================================================================
+*/
+.is-loading {
+  display:none;
+}
+/*
+================================================================================
+IS TRANSITIONING / BLUE PROGRESS CURSOR & POINTER EVENTS
+================================================================================
+*/
+.is-transitioning {
+  pointer-events: none;
+  cursor: progress;
+}
+/*
+================================================================================
+LINK COLOR
+================================================================================
+*/
+a {
+	color: inherit;
+}
+
+/*
+================================================================================
+DISABLE MOBILE LANDSCAPE
+================================================================================
+*/
+
+/*   @media only screen and (orientation:landscape){
+  .hidden{ display:block; }
+  .show{ display:none; }
+}
+@media only screen and (orientation:portrait){
+  .hidden{ display:none; }
+  .show{ display:block; }
+} */
+
+/* @media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (orientation: landscape) { 
+    .hidden{ display:block; }
+    .show{ display:none; }
+
+} */
+
+ 
+
+
+/*
+================================================================================
+LOADER
+================================================================================
+*/
+.loader,
+.loader__content {
+  min-height: 100vh;
+  position: fixed;
+  flex-direction: column;
+  z-index: 6; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.loader__mask {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--frkablack);
+  overflow: hidden;
+}
+
+.inner-loader {
+  width: var(--loader-width);
+  height: var(--loader-height);
+  background-color: var(--frkayellow);
+/*   margin-top: -2em; */
+ 
+}
+
+.loader__content {
+  visibility: hidden;
+   z-index: 7; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.loader__title {
+  margin: 0;
+  font-weight: normal;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+@media (max-width: 991px) {
+
+
+  .loader__title {
+    transform: translate(-50%, -90%);
+  }
+  }
+
+.loader__image {
+  width: var(--loader-width);
+  padding-bottom: 50vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.loader__image img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.loader__title--mask {
+  overflow: hidden;
+}
+
+.loader__title--mask span {
+  display: block;
+}
+
+.loader__image--mask {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.progress {
+  /*OVO JE UGAŠENO ZA PREZENTACIJU*/
+  background-color: #ff0000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: var(--loader-width);
+  height: var(--loader-height);
+}
+
+ /* VISIBILITY NONE */
+ .hide, .fadein, .in1, .in2, .since, .t1, .c1 {
+    visibility: hidden;
+}
+ 
+/* Barba overlay blue */
+ .loader {
+    visibility: hidden;
+}  
+
+
+/*
+================================================================================
+O NAMA HORIZONTAL SCROLL // sredi
+================================================================================
+*/
+
+.horizontal-scroll {
+ height: 100vh;  
+  overflow: hidden;
+  display: flex;
+  left: 0;
+}
+
+.pin-wrap {
+    height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 10vw;
+}
+
+.pin-wrap > * {
+  min-width: 70vw;
+  padding: 0 5vw;
+}
+
+
+/*
+================================================================================
+LOCOMOTIVE SCROLL 4.1.1
+================================================================================
+*/
+html.has-scroll-smooth {
+    overflow: hidden; }
+  
+  html.has-scroll-dragging {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  
+  .has-scroll-smooth body {
+    overflow: hidden; }
+  
+  .has-scroll-smooth [data-scroll-container] {
+    min-height: 100vh; }
+  
+  [data-scroll-direction="horizontal"] [data-scroll-container] {
+    height: 100vh;
+    display: inline-block;
+    white-space: nowrap; }
+  
+  [data-scroll-direction="horizontal"] [data-scroll-section] {
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    height: 100%; }
+  
+  .c-scrollbar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 8px;
+    height: 100%;
+    transform-origin: center right;
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0; }
+    .c-scrollbar:hover {
+      transform: scaleX(1.45); }
+    .c-scrollbar:hover, .has-scroll-scrolling .c-scrollbar, .has-scroll-dragging .c-scrollbar {
+      opacity: 1; }
+    [data-scroll-direction="horizontal"] .c-scrollbar {
+      width: 100%;
+      height: 10px;
+      top: auto;
+      bottom: 0;
+      transform: scaleY(1); }
+      [data-scroll-direction="horizontal"] .c-scrollbar:hover {
+        transform: scaleY(1.3); }
+  
+  .c-scrollbar_thumb {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #231f20;
+    opacity: 1;
+    width: 8px;
+    margin: 2px;
+    z-index:2;
+    cursor: -webkit-grab;
+    cursor: grab; }
+    .has-scroll-dragging .c-scrollbar_thumb {
+      cursor: -webkit-grabbing;
+      cursor: grabbing; }
+    [data-scroll-direction="horizontal"] .c-scrollbar_thumb {
+      right: auto;
+      bottom: 0; }
+
+/*
+================================================================================
+DISABLE SELECTION
+================================================================================
+*/
+.no--select {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */      
+}
+
+/*
+================================================================================
+COUNTER / BROJAČ O NAMA
+================================================================================
+*/
+.data, .counterx, .tisucu{
+  font-feature-settings: "tnum";
+  font-variant-numeric: tabular-nums;
+}
+
+
+/*
+================================================================================
+SIMPLE FADE IN / FADE OUT / AUTOALPHA 023
+================================================================================
+*/
+
+.fadeheader{
+  visibility:hidden;
+}
+
+/*
+================================================================================
+BUTTON HOVER LOCO
+================================================================================
+*/
+
+/* *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } */
+/* body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;} */
+
+.item a {
+display: flex;
+flex-grow: 1;
+text-decoration: none;
+padding: 1.82em 0;
+border-bottom: 1px solid var(--frkablack);
+color: var(--frkablack);
+background-size: 200% 200%;
+background-image: 
+linear-gradient(to top, #231F20 50%, transparent 50%);
+transition: all 0.3s cubic-bezier(.4,0,0,1);
+}
+
+.item a:hover {
+color: var(--frkayellow);
+background-image: 
+linear-gradient(to top, #231F20 51%, transparent 50%);
+background-position: 0 100%;
+padding: 1.82em;
+cursor: pointer;
+}
+
+.item a:pressed {
+  color: var(--frkayellow);
+  background-image: 
+  linear-gradient(to top, #ff0000 51%, transparent 50%);
+  background-position: 0 100%;
+  padding: 1.82em;
+  cursor: pointer;
+  }
+
+.arrow--right {
+  flex: 1;
+}
+
+
+/*
+================================================================================
+ACCORDION HOVER LOCO
+================================================================================
+*/
+
+.accord a {
+  display: flex;
+  flex-grow: 1;
+  text-decoration: none;
+  padding: 3em 0em 1.5em 0em;
+ /*  border-bottom: 1px solid var(--frkablack); */
+  color: var(--frkablack);
+  background-size: 200% 200%;
+  background-image: 
+  linear-gradient(to top, #231F20 50%, transparent 50%);
+  transition: all 0.3s cubic-bezier(.4,0,0,1);
+  }
+  
+  .accord a:hover {
+  color: var(--frkayellow);
+  background-image: 
+  linear-gradient(to top, #231F20 51%, transparent 50%);
+  background-position: 0 100%;
+  padding: 3em 3em 1.5em 2em;
+  cursor: pointer;
+  }
+  
+  
+
+
+
+  
+
+/*
+================================================================================
+TXT SELECT
+================================================================================
+*/
+::selection {
+  background: var(--frkablack);
+  color: var(--frkayellow);
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: var(--frkablack);
+  color: var(--frkayellow);
+}
+
+
+/*
+================================================================================
+ONAMA--KARTA--PULSING BUTTONS
+================================================================================
+*/
+
+.pulse-button {
+  box-shadow: 0 0 0 0 rgba(255, 189, 0, 0.5);
+  -webkit-animation: pulse 3.5s infinite;
+}
+
+/* .pulse-button:hover {
+  -webkit-animation: none;
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -webkit-transform: scale(2);
+  transform: scale(2);
+} */
+
+@-webkit-keyframes pulse {
+  0% {
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  30% {
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    box-shadow: 0 0 0 20px rgba(255, 189, 0, 0);
+  }
+
+  50% {
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(255, 189, 0, 0);
+  }
+
+  100% {
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(255, 189, 0, 0);
+  }
+}
+
+/*
+================================================================================
+REFERENCE LOGO BOX
+================================================================================
+*/
+
+.reference--logo--outline{
+  aspect-ratio: 1/1; 
+  width: 100%;
+   height: 100%;
+   overflow: hidden;
+ }
+ 
+   .ref-logo-container {
+     position: relative;
+     width: 100%;
+     padding-top: 100%; /* 1:1 Aspect Ratio */
+  }
+  .ref-logo-inner {
+     position: absolute;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+  }
+
+/*
+================================================================================
+WIZARDRY 1920
+================================================================================
+*/
+@media only screen and (min-width: 1920px) {
+     body {font-size: 19.2px;}
+}
+
+/* @media only screen and (min-width: 992px) and (max-width: 1200px)  {
+     body {font-size: 14px;}
+} */
+
 /*
 ================================================================================
 MAPBOX
@@ -110,6 +683,36 @@ SPLIDE CSS
 
 
 
+
+/*
+================================================================================
+CUSTOM CURSOR
+================================================================================
+*/
+
+body .cursory {
+  pointer-events: none;
+
+}
+ body .cursor__circle { 
+  /*position: fixed;
+  top: 0;/*  */
+/*   left: 0; */
+/*   z-index: 10;  */
+ /*  mix-blend-mode: difference;  */
+ 
+   transform: translateX(-50%) translateY(-50%);
+} 
+/* body .cursor__circle--big {
+  stroke: #dedede;
+  fill: transparent;
+     mix-blend-mode: difference; 
+  transform: translateX(-50%) translateY(-50%);
+} */
+
+.sorty, .togpapa {
+cursor: pointer;
+}
 
 
 
@@ -2028,6 +2631,13 @@ SHUFFLE.js
 
 
 
+@media (max-width: 479px) {
+
+
+  .webinar-posts__event-item {
+    width: 100%!important;
+     }
+  }
 
   .removevideo.sakrij, .movevideo.sakrij {
     opacity: 0;
@@ -2163,8 +2773,101 @@ STATIC IMAGE ZA MAPU
 
 
 
+/*IPAD VERTICAL*/
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
 
+  /*SELECT BOTUNI*/
+ 
+/*SPLIDE*/
+  .splide__slide {
+    height: 36em;
+   
+}
+
+.splide-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.splide__track {
+  height: auto; 
+}
+
+.arrow-svg {
+  top: 0.65em;
+}
+
+.arrow-svg.fix {
+  top: 0.65em;
+}
+
+}
  
 
 
+  /*
+================================================================================
+PRINT TO PDF
+================================================================================
+*/
+
+
+
+@media print { 
+  @page {
+    margin-top: 1cm;
+  margin-left: 1cm;  
+   size: 1920px 1280 px!important; 
+ /*   margin: 4mm 4mm 4mm 4mm;  */
+    } 
+     
+/*  h1 {
+ font-size: 48pt;
+ } */
+    /* All your print styles go here */
+  #headerxx, .vizual-header, .tabs-block, .article-block { 
+    display: none !important; 
+   }  
+   
+ /*   .vizual-header-print {
+   display: block;
+   margin-top: -100px;
+   } */
+
+   .print-adresa {
+    display:block;
+  
+  }
+
+  /*  .print-para {
+    margin-top: -100px;
+    display: block;
+  } */
+  
+  .print-info {
+    display: block;
+  }
+  
+ /*  .print-logo {
+
+    display: block;
+  } */
+/* .is--simulator {
+
+  margin-top: 150px;
+
+} */
+
+ mockup img { 
+
+max-width:100%
+
+} 
+
+
+
+  
+  }
   
