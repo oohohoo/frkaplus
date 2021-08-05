@@ -289,8 +289,8 @@ function initLoader() {
     /* OVO JE DODANO ZA PREZENTACIJU*/
    /*  .set(progress, {autoAlpha: 0}) */
    /* .to(loaderInner, {scaleY: 1, transformOrigin: 'bottom', ease: 'power1.inOut'}) */
-   .to(loaderInner, {scaleX: 1,transformOrigin: 'left bottom',ease: 'power1.inOut'}, "<") 
-   .to(loaderInner, {scaleX: 0,transformOrigin: 'right bottom',ease: 'power1.inOut'})  
+   /* .to(loaderInner, {scaleX: 1,transformOrigin: 'left bottom',ease: 'power1.inOut'}, "<") 
+   .to(loaderInner, {scaleX: 0,transformOrigin: 'right bottom',ease: 'power1.inOut'})   */
 
     .addLabel('revealImage')
     .to(".l1", {scaleX: 1, transformOrigin: 'left', duration: 0.6}, 'revealImage+=0.1')
