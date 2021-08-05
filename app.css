@@ -157,7 +157,7 @@ LOADER
 .loader__mask {
   position: absolute;
   display: flex;
-  justify-content: center;r
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -1189,9 +1189,7 @@ border-radius: 50%;
   clip-path: inset(50%);
   white-space: nowrap;
 }
-.filepond--file-action-button.filepond--file-action-button {
-  /* scale SVG to fill button */
-}
+
 .filepond--file-action-button.filepond--file-action-button svg {
   width: 100%;
   height: 100%;
