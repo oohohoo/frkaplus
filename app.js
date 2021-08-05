@@ -2026,7 +2026,7 @@ function numberoll() {
       scrollTrigger: {
         scroller: ".smooth-scroll",
         trigger: ".gi--num--wrap",
-        start: "top 55%",
+        start: "top 65%",
         end: "bottom top",
         scrub: 1,
       }
