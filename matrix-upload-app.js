@@ -55,10 +55,10 @@ document.querySelector('.upload-photo'), {
 labelIdle: '<div class="uploading-frame">Drag&drop fotku ili <span class="filepond--label-action fontDarkOrange"> Click za upload </span></div>',
 checkValidity: true,
 dropValidation: true,
-/* dropOnPage:true, */
+dropOnPage:true,
 acceptedFileTypes: ['image/png', 'image/jpeg', 'video/quicktime', 'video/mp4'],
-/* imageValidateSizeMinWidth: 1200,
-imageValidateSizeMinHeight: 300, */
+imageValidateSizeMinWidth: 1200,
+imageValidateSizeMinHeight: 300,
 maxFileSize: '11MB',
 labelMaxFileSize: 'Maksimalna dozvoljena težina datoteke je {filesize}',
 labelFileProcessing: 'Pripremam za crop',
