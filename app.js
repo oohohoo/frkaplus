@@ -1875,7 +1875,7 @@ function vidljivostMobile() {
           start: "top bottom",
           end: "bottom 10%"
         },
-        y: "-30px",
+        y: "-60px",
         delay:0.1
       });
 
@@ -1886,7 +1886,7 @@ function vidljivostMobile() {
           start: "top bottom",
           end: "bottom 10%"
         },
-        y: "-30px",
+        y: "-50px",
         delay:0.2
       });
   
@@ -1897,7 +1897,7 @@ function vidljivostMobile() {
           start: "top bottom",
           end: "bottom 10%"
         },
-        y: "-30px",
+        y: "-40px",
         delay:0.3
       });
 
@@ -1908,7 +1908,7 @@ function vidljivostMobile() {
           start: "top bottom",
           end: "bottom 10%"
         },
-        y: "-30px",
+        y: "-50px",
         delay:0.4
       });
 
@@ -1919,7 +1919,7 @@ function vidljivostMobile() {
           start: "top bottom",
           end: "bottom 10%"
         },
-        y: "-30px",
+        y: "-40px",
         delay:0.5
       });
 
