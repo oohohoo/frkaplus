@@ -1873,11 +1873,11 @@ function vidljivostMobile() {
           trigger: ".zz1",
           scrub: 2,
           start: "top bottom",
-          end: "bottom 100%"
+          end: "bottom 30%"
         },
-        y: "-40%",
+        y: "-100px",
       });
-
+/* 
       gsap.to(".zz2", {
         scrollTrigger: {
           trigger: ".zz2",
@@ -1926,7 +1926,7 @@ function vidljivostMobile() {
           end: "bottom 100%"
         },
         y: "-90%",
-      });
+      }); */
  
 
 
