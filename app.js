@@ -1857,6 +1857,43 @@ function vidljivostMobile() {
 
 /*
 ================================================================================
+MOBILE nolocomotive // OUTLINE HERO
+================================================================================
+*/
+
+
+function vidljivostMobile() {
+
+  ScrollTrigger.matchMedia({
+
+    "(max-width: 991px)": function() {
+
+      gsap.to(".creative--image-wrapper", {
+        scrollTrigger: {
+          trigger: ".creative--image-wrapper",
+          scrub: 1,
+          start: "top bottom",
+          end: "bottom -300%"
+        },
+        y: "-30%"
+      });
+  
+ 
+
+
+
+ }
+});
+
+}
+
+
+
+
+
+
+/*
+================================================================================
 O NAMA // HORIZONTAL PIN
 ================================================================================
 */
