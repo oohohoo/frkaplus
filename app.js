@@ -1873,9 +1873,9 @@ function vidljivostMobile() {
           trigger: ".zz1",
           scrub: 1,
           start: "top bottom",
-          end: "bottom 30%"
+          end: "bottom 10%"
         },
-        y: "-20px",
+        y: "-30px",
       });
 /* 
       gsap.to(".zz2", {
