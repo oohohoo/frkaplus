@@ -360,6 +360,7 @@ function initContent() {
             numberoll();
             horizpin();
             vidljivostMobile();
+            zoomMobile();
             playpausevideo();
             smallCounteronama();
             openMobileMenu();
@@ -618,6 +619,7 @@ barba.init({
               beforeEnter(data) {
                 playpausevideo();
                 vidljivostMobile();
+                zoomMobile();
                 //onamacounter();
                 simpleaccordion();
                 zoomimage();
@@ -1862,7 +1864,7 @@ MOBILE nolocomotive // OUTLINE HERO
 */
 
 
-function vidljivostMobile() {
+function zoomMobile() {
 
   ScrollTrigger.matchMedia({
 
