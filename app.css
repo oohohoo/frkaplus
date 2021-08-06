@@ -1106,49 +1106,43 @@ VIZUAL SIMULATOR CSS
 ================================================================================
 */
 
-.wrap {
+/* .wrap {
 	margin: 0 auto;
 	width: 100%;
 	height: 0;
-	padding-top: 66%; /* ratio of image * 100 */
+	padding-top: 66%; 
 	overflow: hidden;
 	position: relative;
+} */
+
+
+.wrap {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-top: 0px;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
 }
 
-.mockup {
-	position: absolute;
-	top: 0;
-	-webkit-transform-origin: 0 0;
-	transform-origin: 0 0;
+.mockup__img {
+  display: block;
+  width: 1920px;
+  max-width: none;
 }
 
-.mockup::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	pointer-events: none;
-}
+.filepond-css {
+   font-size: 1.04em; 
+   cursor: pointer;
+ }
+ 
 
 
-.mobile {
-   filter:blur(.5px); 
-	overflow: hidden;
-	z-index: 100;
- 	outline: 1px solid transparent;
-  -webkit-backface-visibility: hidden;
-  transform: translateZ(0);
-  will-change: transform; 
-  box-shadow: 0 0 1px rgba(255,255,255,0);
-  -webkit-transform-style: preserve-3d; 
-  -webkit-transform: rotateZ(2deg);
-  -webkit-perspective: 1000;
-	-webkit-transform-origin: 0 0 0;
-	transform-origin: 0 0 0;
 
-}
+
 
 
 /* BOTUNI VIDEO UPLOAD*/
