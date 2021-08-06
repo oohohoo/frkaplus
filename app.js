@@ -1910,7 +1910,7 @@ function zoomMobile() {
           start: "top bottom",
           end: "bottom 20%"
         },
-        y: "-200px",
+        y: "-90px",
         delay:0.4
       });
 
@@ -1921,7 +1921,7 @@ function zoomMobile() {
           start: "top bottom",
           end: "bottom 20%"
         },
-        y: "-60px",
+        y: "-30px",
         delay:0.5
       });
 
