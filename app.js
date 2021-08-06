@@ -1846,7 +1846,7 @@ function vidljivostMobile() {
       end: "bottom top", 
       scrub: 1
     },
-    x: -500
+    x: -200
   });
 
  }
