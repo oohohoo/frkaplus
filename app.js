@@ -1873,9 +1873,9 @@ function vidljivostMobile() {
           trigger: ".zz1",
           scrub: 1,
           start: "top bottom",
-          end: "bottom 10%"
+          end: "bottom 20%"
         },
-        y: "-60px",
+        y: "-30px",
         delay:0.1
       });
 
@@ -1884,7 +1884,7 @@ function vidljivostMobile() {
           trigger: ".zz2",
           scrub: 1,
           start: "top bottom",
-          end: "bottom 10%"
+          end: "bottom 20%"
         },
         y: "-50px",
         delay:0.2
@@ -1895,7 +1895,7 @@ function vidljivostMobile() {
           trigger: ".zz3",
           scrub: 1,
           start: "top bottom",
-          end: "bottom 10%"
+          end: "bottom 20%"
         },
         y: "-40px",
         delay:0.3
@@ -1906,7 +1906,7 @@ function vidljivostMobile() {
           trigger: ".zz4",
           scrub: 2,
           start: "top bottom",
-          end: "bottom 10%"
+          end: "bottom 20%"
         },
         y: "-50px",
         delay:0.4
@@ -1917,7 +1917,7 @@ function vidljivostMobile() {
           trigger: ".zz5",
           scrub: 1,
           start: "top bottom",
-          end: "bottom 10%"
+          end: "bottom 20%"
         },
         y: "-40px",
         delay:0.5
@@ -1928,7 +1928,7 @@ function vidljivostMobile() {
           trigger: ".zz6",
           scrub: 1,
           start: "top bottom",
-          end: "bottom 10%"
+          end: "bottom 20%"
         },
         y: "-30px",
         delay:0.6
