@@ -719,7 +719,7 @@ cursor: pointer;
 
 /*
 ================================================================================
-TEST YOUR DESIGN ///
+TEST YOUR DESIGN
 ================================================================================
 */
 
@@ -757,7 +757,7 @@ TEST YOUR DESIGN ///
   }
 
   .photo-crop-container.show-loader:before {
-    content: 'Cropping ';
+    content: ' ';
     opacity: 1;
     background-color: transparent;
     height: calc(100% - 80px);
@@ -800,8 +800,7 @@ TEST YOUR DESIGN ///
     padding: 2px 10px;
 }
 
-/* OVO JE UGAŠENO!!!!!*/
-   /* .photo-crop-container .crop-preview-cont #crop_img {
+   .photo-crop-container .crop-preview-cont #crop_img {
     position: absolute;
     bottom: 0.52em;
     width: 2.5em;
@@ -818,7 +817,7 @@ TEST YOUR DESIGN ///
     display: flex;
     justify-content: center;
     align-items: center;
-  } */
+  }
 
   .photo-crop-container.show-result .crop-preview-cont .img_container {
     max-width: 400px;
