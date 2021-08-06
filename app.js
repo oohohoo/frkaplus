@@ -1871,11 +1871,11 @@ function vidljivostMobile() {
       gsap.to(".zz1", {
         scrollTrigger: {
           trigger: ".zz1",
-          scrub: 2,
+          scrub: 1,
           start: "top bottom",
           end: "bottom 30%"
         },
-        y: "-100px",
+        y: "-20px",
       });
 /* 
       gsap.to(".zz2", {
