@@ -2432,7 +2432,7 @@ zoom.forEach(function (el) {
     gsap.to(cursor, 0.25, {scale: 10});
   /*    $('.cursor__text').text('+');  */
   gsap.to(buttonText, 0.25, {
-    autoAlpha:1, scale:0.2
+    autoAlpha:1, scale:0.1
   });
   });
 
