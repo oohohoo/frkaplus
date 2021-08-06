@@ -1868,17 +1868,71 @@ function vidljivostMobile() {
 
     "(max-width: 991px)": function() {
 
-      gsap.to(".creative--image-wrapper", {
+      gsap.to(".zz1", {
         scrollTrigger: {
-          trigger: ".creative--image-wrapper",
+          trigger: ".zz1",
           scrub: 1,
           start: "top bottom",
           end: "bottom -300%"
         },
-        y: "-30%",
-        rotate: 30
+        y: "20%",
+        rotate: -22
+      });
+
+      gsap.to(".zz2", {
+        scrollTrigger: {
+          trigger: ".zz2",
+          scrub: 1,
+          start: "top bottom",
+          end: "bottom -300%"
+        },
+        y: "-33%",
+        rotate: 17
       });
   
+      gsap.to(".zz3", {
+        scrollTrigger: {
+          trigger: ".zz3",
+          scrub: 1,
+          start: "top bottom",
+          end: "bottom -300%"
+        },
+        y: "-88%",
+        rotate: 66
+      });
+
+      gsap.to(".zz4", {
+        scrollTrigger: {
+          trigger: ".zz4",
+          scrub: 1,
+          start: "top bottom",
+          end: "bottom -300%"
+        },
+        y: "45%",
+        rotate: 22
+      });
+
+      gsap.to(".zz5", {
+        scrollTrigger: {
+          trigger: ".zz5",
+          scrub: 1,
+          start: "top bottom",
+          end: "bottom -300%"
+        },
+        y: "30%",
+        rotate: 60
+      });
+
+      gsap.to(".zz6", {
+        scrollTrigger: {
+          trigger: ".zz6",
+          scrub: 1,
+          start: "top bottom",
+          end: "bottom -300%"
+        },
+        y: "-70%",
+        rotate: 540
+      });
  
 
 
