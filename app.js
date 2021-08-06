@@ -1886,7 +1886,7 @@ function vidljivostMobile() {
           start: "top bottom",
           end: "bottom 20%"
         },
-        y: "-50px",
+        y: "-100px",
         delay:0.2
       });
   
@@ -1897,7 +1897,7 @@ function vidljivostMobile() {
           start: "top bottom",
           end: "bottom 20%"
         },
-        y: "-40px",
+        y: "-300px",
         delay:0.3
       });
 
