@@ -1815,7 +1815,7 @@ function vidljivostMobile() {
 
     "(max-width: 991px)": function() {
 
-  gsap.to(".home-scroller-wrap._1" {
+  gsap.to(".home-scroller-wrap._1", {
     scrollTrigger:{
     scroller: ".smooth-scroll",
       trigger: ".home-scroller-wrap._1", 
