@@ -1849,7 +1849,7 @@ function vidljivostMobile() {
     x: -800
   });
 
- });
+ }
 });
 
 }
