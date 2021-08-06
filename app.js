@@ -2417,35 +2417,11 @@ var followArea = document.querySelectorAll('.button-link');
 var reference = document.querySelectorAll('.reference-box');
 var sorty = document.querySelectorAll('.sorty');
 var ugasi = document.querySelectorAll('.ugasi');
-var zoom = document.querySelectorAll('.zoom-container');
+
 
 /* var page = document.querySelector('.posts'); */
 
-// zoom
-// ************
 
-zoom.forEach(function (el) {
-
-  gsap.set(cursor, {autoAlpha: 1, backgroundColor: "#231f20", scale: 1});
-
-  el.addEventListener('mouseenter', () => {
-    gsap.to(cursor, 0.25, {scale: 11});
-  /*    $('.cursor__text').text('+');  */
-  gsap.to(buttonText, 0.25, {
-    autoAlpha:1, scale:0.1
-  });
-  });
-
-  el.addEventListener('mouseleave', () => {
-    gsap.to(cursor, 0.25, {scale: 1});
-    gsap.to(buttonText, 0.25, {
-      autoAlpha:0
-    });
-  });
-
-  
-
-})
 
 
 // turn off
