@@ -359,6 +359,7 @@ function initContent() {
             outlinehero();
             numberoll();
             horizpin();
+            vidljivostMobile();
             playpausevideo();
             smallCounteronama();
             openMobileMenu();
@@ -616,6 +617,7 @@ barba.init({
               
               beforeEnter(data) {
                 playpausevideo();
+                vidljivostMobile();
                 //onamacounter();
                 simpleaccordion();
                 zoomimage();
@@ -1799,6 +1801,59 @@ function outlinehero() {
     x: -500
   });
 }
+
+
+/*
+================================================================================
+MOBILE nolocomotive // OUTLINE HERO
+================================================================================
+*/
+
+function vidljivostMobile() {
+
+  ScrollTrigger.matchMedia({
+
+    "(max-width: 991px)": function() {
+
+  gsap.to(".home-scroller-wrap._1" {
+    scrollTrigger:{
+    scroller: ".smooth-scroll",
+      trigger: ".home-scroller-wrap._1", 
+      start: "top bottom", 
+      end: "bottom top", 
+      scrub: 1
+    },
+    x: 500
+  });
+  
+ 
+  gsap.to(".home-scroller-wrap._1", {
+    scrollTrigger:{
+    scroller: ".smooth-scroll",
+      trigger: ".home-scroller-wrap._1", 
+      start: "top bottom", 
+      end: "bottom top", 
+      scrub: 1
+    },
+    x: -500
+  });
+
+  gsap.to(".home-scroller-wrap._3", {
+    scrollTrigger:{
+    scroller: ".smooth-scroll",
+      trigger: ".home-scroller-wrap._3", 
+      start: "top bottom", 
+      end: "bottom top", 
+      scrub: 1
+    },
+    x: -800
+  });
+
+ });
+
+
+}
+
 
 /*
 ================================================================================
