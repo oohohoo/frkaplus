@@ -1827,10 +1827,10 @@ function vidljivostMobile() {
   });
   
  
-  gsap.to("..home-scroller-wrap._1-copy", {
+  gsap.to(".home-scroller-wrap._1-copy", {
     scrollTrigger:{
     scroller: ".smooth-scroll",
-      trigger: "..home-scroller-wrap._1-copy", 
+      trigger: ".home-scroller-wrap._1-copy", 
       start: "top bottom", 
       end: "bottom top", 
       scrub: 1
