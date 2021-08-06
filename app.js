@@ -1823,7 +1823,7 @@ function vidljivostMobile() {
       end: "bottom top", 
       scrub: 1
     },
-    x: 500
+    x: -300
   });
   
  
@@ -1835,7 +1835,7 @@ function vidljivostMobile() {
       end: "bottom top", 
       scrub: 1
     },
-    x: -500
+    x: 500
   });
 
   gsap.to(".home-scroller-wrap._3", {
@@ -1846,7 +1846,7 @@ function vidljivostMobile() {
       end: "bottom top", 
       scrub: 1
     },
-    x: -800
+    x: -500
   });
 
  }
