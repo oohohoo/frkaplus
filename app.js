@@ -1873,7 +1873,7 @@ function vidljivostMobile() {
           trigger: ".zz1",
           scrub: 2,
           start: "top bottom",
-          end: "bottom -100%"
+          end: "bottom 100%"
         },
         y: "-40%",
       });
@@ -1883,7 +1883,7 @@ function vidljivostMobile() {
           trigger: ".zz2",
           scrub: 2,
           start: "top bottom",
-          end: "bottom -100%"
+          end: "bottom 100%"
         },
         y: "-33%",
       });
@@ -1893,7 +1893,7 @@ function vidljivostMobile() {
           trigger: ".zz3",
           scrub: 2,
           start: "top bottom",
-          end: "bottom -100%"
+          end: "bottom 100%"
         },
         y: "-88%",
       });
@@ -1903,7 +1903,7 @@ function vidljivostMobile() {
           trigger: ".zz4",
           scrub: 2,
           start: "top bottom",
-          end: "bottom -100%"
+          end: "bottom 100%"
         },
         y: "-45%",
       });
@@ -1913,7 +1913,7 @@ function vidljivostMobile() {
           trigger: ".zz5",
           scrub: 2,
           start: "top bottom",
-          end: "bottom -100%"
+          end: "bottom 100%"
         },
         y: "-60%",
       });
@@ -1923,7 +1923,7 @@ function vidljivostMobile() {
           trigger: ".zz6",
           scrub: 2,
           start: "top bottom",
-          end: "bottom -100%"
+          end: "bottom 100%"
         },
         y: "-90%",
       });
