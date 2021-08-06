@@ -1875,7 +1875,8 @@ function vidljivostMobile() {
           start: "top bottom",
           end: "bottom -300%"
         },
-        y: "-30%"
+        y: "-30%",
+        rotate: 30
       });
   
  
