@@ -91,7 +91,7 @@ img_cropping.attr('src', image.src);
 img_cropping.cropper({
 viewMode: 1,
 dragMode: 'move',
-aspectRatio: 342 / 91,
+/* aspectRatio: 342 / 91, */
 guides: false,
 modal:true,
 highlight:true,
@@ -107,8 +107,8 @@ $('#crop_img').on('click', function (ev) {
 photo_crop_container.addClass('show-loader show-result');
 cropped_img = img_cropping.cropper('getCroppedCanvas', {
 
-  width: 342,
-  height: 91,
+  /* width: 342,
+  height: 91, */
   imageSmoothingEnabled: false,
   imageSmoothingQuality: 'high',
 }).toDataURL('image/png');
