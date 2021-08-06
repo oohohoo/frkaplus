@@ -1876,26 +1876,29 @@ function vidljivostMobile() {
           end: "bottom 10%"
         },
         y: "-30px",
+        delay:0.1
       });
-/* 
+
       gsap.to(".zz2", {
         scrollTrigger: {
           trigger: ".zz2",
-          scrub: 2,
+          scrub: 1,
           start: "top bottom",
-          end: "bottom 100%"
+          end: "bottom 10%"
         },
-        y: "-33%",
+        y: "-30px",
+        delay:0.2
       });
   
       gsap.to(".zz3", {
         scrollTrigger: {
           trigger: ".zz3",
-          scrub: 2,
+          scrub: 1,
           start: "top bottom",
-          end: "bottom 100%"
+          end: "bottom 10%"
         },
-        y: "-88%",
+        y: "-30px",
+        delay:0.3
       });
 
       gsap.to(".zz4", {
@@ -1903,30 +1906,33 @@ function vidljivostMobile() {
           trigger: ".zz4",
           scrub: 2,
           start: "top bottom",
-          end: "bottom 100%"
+          end: "bottom 10%"
         },
-        y: "-45%",
+        y: "-30px",
+        delay:0.4
       });
 
       gsap.to(".zz5", {
         scrollTrigger: {
           trigger: ".zz5",
-          scrub: 2,
+          scrub: 1,
           start: "top bottom",
-          end: "bottom 100%"
+          end: "bottom 10%"
         },
-        y: "-60%",
+        y: "-30px",
+        delay:0.5
       });
 
       gsap.to(".zz6", {
         scrollTrigger: {
           trigger: ".zz6",
-          scrub: 2,
+          scrub: 1,
           start: "top bottom",
-          end: "bottom 100%"
+          end: "bottom 10%"
         },
-        y: "-90%",
-      }); */
+        y: "-30px",
+        delay:0.6
+      });
  
 
 
