@@ -107,8 +107,8 @@ $('#crop_img').on('click', function (ev) {
 photo_crop_container.addClass('show-loader show-result');
 cropped_img = img_cropping.cropper('getCroppedCanvas', {
 
-  //width: 677,
-  //height: 158,
+  width: 342,
+  height: 91,
   imageSmoothingEnabled: false,
   imageSmoothingQuality: 'high',
 }).toDataURL('image/png');
