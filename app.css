@@ -2123,7 +2123,7 @@ CROPPER STYLING
   user-select: none
 }
 
-.cropper-container img {
+/* .cropper-container img {
   display: block;
   height: 100%;
   image-orientation: 0deg;
@@ -2132,7 +2132,7 @@ CROPPER STYLING
   min-height: 0 !important;
   min-width: 0 !important;
   width: 100%
-}
+} */
 
 .cropper-canvas,
 .cropper-crop-box,
@@ -2401,10 +2401,10 @@ width: 8px!important;
   width: 0
 }
 
-.cropper-hidden {
+/* .cropper-hidden {
   display: none !important
 }
-
+ */
 .cropper-move {
   cursor: move
 }
@@ -2422,8 +2422,8 @@ width: 8px!important;
 
 
 
- .img_container {
-  max-height: 13.5em!important;
+/*  .img_container {
+  max-height: 13.5em!important; */
 
 } 
 
