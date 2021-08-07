@@ -2574,16 +2574,16 @@ pond.addEventListener('FilePond:processfile', function (e, file) {
     modal:true,
     highlight:true,
     cropBoxResizable: true,
-   
-    autoCropArea: 1,
-    restore: false,
-    guides: false,
-    center: false,
-    highlight: false,
-    cropBoxMovable: true,
-    cropBoxResizable: false,
-    toggleDragModeOnDblclick: false,
-  });
+    background = false,
+    rotatable = false,
+    autoCropArea = 1,
+    cropBoxMovable = true,
+    cropBoxResizable = true,
+    modal = false,
+    center = false,
+    toggleDragModeOnDblclick = false,
+    highlight = false,
+    });
   var cropped_img = '';
   $('#crop_img').on('click', function (ev) {
    /* $('html,body').animate({
