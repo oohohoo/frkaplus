@@ -2484,7 +2484,7 @@ UPLOAD CROP
 function uploadCrop() {
 
 // Register filepond plugins
-$.fn.filepondx.registerPlugin(
+$.fn.filepond.registerPlugin(
   FilePondPluginFileValidateSize,
   FilePondPluginFileValidateType,
   FilePondPluginImageValidateSize,
