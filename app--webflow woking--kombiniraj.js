@@ -338,7 +338,7 @@ function initContent() {
 
   if (document.querySelector('#lokacijesolo')) {
     openTestYourDesign();
-    uploadCrop();
+    /* uploadCrop(); */
     lokacijeBotuni();
     saveaspdf();
     lokacijeTabs(); 
