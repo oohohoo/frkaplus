@@ -338,7 +338,7 @@ function initContent() {
 
   if (document.querySelector('#lokacijesolo')) {
     openTestYourDesign();
-    /* uploadCrop(); */
+    uploadCrop();
     lokacijeBotuni();
     saveaspdf();
     lokacijeTabs(); 
@@ -2582,7 +2582,7 @@ pond.addEventListener('FilePond:processfile', function (e, file) {
          },
       'slow');
       console.log("02 crop slide down");*/
-    photo_crop_container.addClass('show-loader show-result');
+    photo_crop_container.addClass('show-loader show-resultx');
     cropped_img = img_cropping.cropper('getCroppedCanvas', {
     
       width: 677,
