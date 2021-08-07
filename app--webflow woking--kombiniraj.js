@@ -2577,8 +2577,9 @@ pond.addEventListener('FilePond:processfile', function (e, file) {
     guides: true,
     modal:true,
     highlight:true,
+    responsive:true,
     cropBoxResizable: true,
-    checkCrossOrigin: false,
+    checkCrossOrigin: true,
   });
   var cropped_img = '';
   $('#crop_img').on('click', function (ev) {
