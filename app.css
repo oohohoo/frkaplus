@@ -195,14 +195,6 @@ LOADER
 }
 
 
-@media (max-width: 991px) {
-
-
-  .loader__title {
-    transform: translate(-50%, -90%);
-  }
-  }
-
 .loader__image {
   width: var(--loader-width);
   padding-bottom: 50vh;
@@ -2633,14 +2625,6 @@ SHUFFLE.js
 
 
 
-@media (max-width: 479px) {
-
-
-  .webinar-posts__event-item {
-    width: 100%!important;
-     }
-  }
-
   .removevideo.sakrij, .movevideo.sakrij {
     opacity: 0;
  
@@ -2766,122 +2750,7 @@ STATIC IMAGE ZA MAPU
     width: 100%!important;
 }
 
-/* .hero--video {
-  overflow: hidden!important;
-} */
-
-
-
-/* HOME video iphone*/
-
-@media (max-width: 479px) {
-
-
-  
-  /*OUTLINE TXT*/
-  .outline-text, .outlinetwo {
-    -webkit-text-stroke-width: 1px!important;
- }
-
-
- .outline-text {
-  left: -15em!important;
-  top: 1.8em!important;
-}
-
-
-
-
-/*VIDEO HOME*/
-.bgvideo video {
-width: 100%;
-height: 100%;
-object-fit: cover;
-}
-/*FILTER LEFT FIX*/
-.webinar-posts__event-filter.filter-group.js-sort {
-  left: 0em;
-}
-.select2-container {
-  width: 91.8vw!important;
-  }
-
-  /*SCROLLBAR*/
-  .c-scrollbar_thumb {
-    width: 4px!important;
-}
-/*SPLIDE IMAGE*/
-.splide-img, .splide__track {
-  height: auto;
-}
-
-.splide__pagination {
-display: none;
-}
-
-/*TOP PADDING ACCORD*/
-.accord a {
-  padding: 2em 0em 1.5em 0em;
-}
-
-.accord a:hover {
-  padding: 2em 0.6em 1.5em;
-}
-
-.horizontal-scroll {
-  height: 75vh;  
- }
- 
- .pin-wrap {
-  height: 75vh;
-  padding: 50px 10vw;
- }
- 
- .pin-wrap > * {
-   min-width: 86vw;
-   padding: 0 5vw;
- }
-
- 
-
-
-}
-
-/*IPAD VERTICAL*/
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-
-  /*SELECT BOTUNI*/
- 
-/*SPLIDE*/
-  .splide__slide {
-    height: 36em;
-   
-}
-
-.splide-img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-.splide__track {
-  height: auto; 
-}
-
-.arrow-svg {
-  top: 0.65em;
-}
-
-.arrow-svg.fix {
-  top: 0.65em;
-}
-
-}
- 
-
-
-  /*
+/*
 ================================================================================
 PRINT TO PDF
 ================================================================================
