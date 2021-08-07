@@ -2584,7 +2584,7 @@ pond.addEventListener('FilePond:processfile', function (e, file) {
       'slow');
       console.log("02 crop slide down");*/
     photo_crop_container.addClass('show-loader show-result');
-    cropped_img = img_cropping.cropper('getCropoxData', {
+    cropped_img = img_cropping.cropper('getCropBoxData', {
     
       width: 750,
       height: 455,
