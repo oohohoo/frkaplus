@@ -2587,9 +2587,9 @@ pond.addEventListener('FilePond:processfile', function (e, file) {
     
       width: 677,
       height: 158,
-      imageSmoothingEnabled: true,
-      imageSmoothingQuality: 'high',
-    }).toDataURL('image/png');
+     /*  imageSmoothingEnabled: true,
+      imageSmoothingQuality: 'high', */
+    }).toDataURL('image/jpeg');
 //       "cropped_img" use this for reteriving cropped image data for further processing like saving in datase, etc.
     photo_preview_container.html('').append('<img src=""/>');
     photo_preview_container.find('img').attr('src', cropped_img);
