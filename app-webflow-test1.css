@@ -757,7 +757,7 @@ TEST YOUR DESIGN
   }
   
   .photo-crop-container.show-loader:before {
-      content: 'Cropping...';
+      content: 'CropKROPPP';
       opacity: 1;
       height: calc(100% - 80px);
   }

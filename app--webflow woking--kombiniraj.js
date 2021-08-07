@@ -2484,7 +2484,7 @@ UPLOAD CROP
 function uploadCrop() {
 
 // Register filepond plugins
-$.fn.filepond.registerPlugin(
+$.fn.filepondx.registerPlugin(
   FilePondPluginFileValidateSize,
   FilePondPluginFileValidateType,
   FilePondPluginImageValidateSize,
@@ -2574,7 +2574,15 @@ pond.addEventListener('FilePond:processfile', function (e, file) {
     modal:true,
     highlight:true,
     cropBoxResizable: true,
-
+   
+    autoCropArea: 1,
+    restore: false,
+    guides: false,
+    center: false,
+    highlight: false,
+    cropBoxMovable: true,
+    cropBoxResizable: false,
+    toggleDragModeOnDblclick: false,
   });
   var cropped_img = '';
   $('#crop_img').on('click', function (ev) {
