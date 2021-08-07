@@ -520,13 +520,13 @@ barba.init({
               namespace: 'lokacijesolo',
 
               beforeEnter(data) {
-                soloMap();
+               /*  soloMap();
                 splidesolo();
                 console.log("SPLIDE before enter loaded!!!");
                 openTestYourDesign();
                 uploadCrop();
                 saveaspdf();
-                lokacijeTabs(); 
+                lokacijeTabs();  */
                 //mockupSimulatorProportions();
                 console.log("Lokacije tabs loaded before enter");
                 simulatorButton();
