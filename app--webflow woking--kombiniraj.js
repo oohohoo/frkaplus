@@ -2547,7 +2547,7 @@ FilePond.create(
 
   
 
-
+/* PROCESIRANJE*/
 const pond = document.querySelector('.filepond--root');
 // Container to show the preview of uploaded image
 var photo_crop_container = $('.photo-crop-container');
@@ -2584,7 +2584,7 @@ pond.addEventListener('FilePond:processfile', function (e, file) {
       'slow');
       console.log("02 crop slide down");*/
     photo_crop_container.addClass('show-loader show-result');
-    cropped_img = img_cropping.cropper('getCroppedCanvas', {
+    cropped_img = img_cropping.cropper('getCropoxData', {
     
       width: 750,
       height: 455,
