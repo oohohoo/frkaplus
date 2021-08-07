@@ -2577,12 +2577,12 @@ pond.addEventListener('FilePond:processfile', function (e, file) {
   });
   var cropped_img = '';
   $('#crop_img').on('click', function (ev) {
-   $('html,body').animate({
+   /* $('html,body').animate({
         scrollTop: $(".photo-crop-container").offset().top - 80
          },
       'slow');
-      console.log("02 crop slide down");
-    photo_crop_container.addClass('show-loader show-result');
+      console.log("02 crop slide down");*/
+    photo_crop_container.addClass('show-loaderx show-result');
     cropped_img = img_cropping.cropper('getCroppedCanvas', {
     
       width: 677,
