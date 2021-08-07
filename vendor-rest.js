@@ -330,7 +330,7 @@ function isMethod(obj, key) {
  */
 
 /* eslint-disable */
-
+/*
 (function(global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined'
       ? (module.exports = factory())
@@ -489,7 +489,7 @@ function isMethod(obj, key) {
 
   return plugin;
 });
-
+*/
 
 
 
@@ -743,7 +743,7 @@ function isMethod(obj, key) {
  */
 
 /* eslint-disable */
-
+/*
 (function(global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined'
     ? (module.exports = factory())
@@ -1000,7 +1000,7 @@ function isMethod(obj, key) {
   return plugin;
 });
 
-
+*/
 
 /*!
  * Cropper v4.1.0
