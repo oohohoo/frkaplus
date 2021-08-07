@@ -2555,7 +2555,7 @@ var crop_preview_cont = photo_crop_container.find('.crop-preview-cont');
 var filepond_img_Container = $('.img_container')
 var photo_preview_container = $('#user_cropped_img');
 var pdfbutton = $('.linkos.opacity')
-var img_cropping = '';
+var img_croppingd = '';
 
 // pond.getFile();
 pond.addEventListener('FilePond:processfile', function (e, file) {
@@ -2564,9 +2564,9 @@ pond.addEventListener('FilePond:processfile', function (e, file) {
   const image = new Image();
   image.src = URL.createObjectURL(e.detail.file.file);
   filepond_img_Container.append(image);
-  img_cropping = filepond_img_Container.find('img');
-  img_cropping.attr('src', image.src);
-  img_cropping.cropper({
+  img_croppingd = filepond_img_Container.find('img');
+  img_croppingd.attr('src', image.src);
+  img_croppingd.cropper({
     viewMode: 3,
     dragMode: 'move',
    aspectRatio: 6.77 / 1.58,
@@ -2583,15 +2583,13 @@ pond.addEventListener('FilePond:processfile', function (e, file) {
       'slow');
       console.log("02 crop slide down");*/
     photo_crop_container.addClass('show-loader show-result');
-    setTimeout(function () {
-    cropped_img = img_cropping.cropper('getCroppedCanvas', {
+    cropped_img = img_croppingg.cropper('getCroppedCanvas', {
     
       width: 677,
       height: 158,
      /*  imageSmoothingEnabled: true,
       imageSmoothingQuality: 'high', */
     }).toDataURL('image/jpeg');
-  }, 300);
 //       "cropped_img" use this for reteriving cropped image data for further processing like saving in datase, etc.
     photo_preview_container.html('').append('<img src=""/>');
     photo_preview_container.find('img').attr('src', cropped_img);
