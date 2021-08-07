@@ -803,16 +803,16 @@ TEST YOUR DESIGN
    .photo-crop-container .crop-preview-cont #crop_img {
     position: absolute;
     bottom: 0.52em;
-    width: 2.5em;
-    height: 2.5em;
+    width: 3em;
+    height: 3em;
     z-index: 1;
-    font-size: 0.7em;
+    font-size: 0.8em;
     color: var(--frkayellow)!important;
     text-decoration: none;
-    right: 2em;
+    right: 1.5em;
     cursor: pointer;
     background-color: var(--frkablack)!important;
-    padding-top: 0.3em;
+    padding-top: 0.55em;
     border-radius: 100%;
     display: flex;
     justify-content: center;
