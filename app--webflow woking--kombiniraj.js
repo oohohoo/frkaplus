@@ -2482,7 +2482,7 @@ UPLOAD CROP
 */
 
 function uploadCrop() {
-  setTimeout(()=>{
+
 // Register filepond plugins
 $.fn.filepond.registerPlugin(
   FilePondPluginFileValidateSize,
@@ -2549,7 +2549,7 @@ FilePond.create(
 
 
 
-
+    
 
 /* PROCESIRANJE*/
 const pond = document.querySelector('.filepond--root');
@@ -2737,12 +2737,12 @@ $(document).ready(function()
     
 /*       var item = $('#destination');
       $('.mobile').remove(item); */
-      
+      console.log("VIDEO AJDEEEE");
 });
 
-console.log("FILEPOND CROPPER AFTER 6 SECONDS");
 
-}, 6000);
+
+
 
 
 }
