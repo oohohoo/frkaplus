@@ -1309,7 +1309,7 @@ function lokacijehover() {
             paused: true
           });
 
-        tl.fromTo(lokacija), {
+        tl.fromTo(lokacija, {
           scale:1,
           overwrite: "true"
         },
@@ -1318,7 +1318,7 @@ function lokacijehover() {
           duration: 0.2,
           ease: 'power1.inOut',
           overwrite: "true"
-        }
+        });
 
        /*   tl.to(colour, {
            color: "#ffdc52",
