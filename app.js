@@ -302,7 +302,7 @@ function initLoader() {
   // LOADER OUT
   const tlLoaderOut = gsap.timeline({
     id: 'tlLoaderOut',
-    defaults: {duration: 0.8, ease: 'power3.inOut'},delay: 0.2});
+    defaults: {duration: 0.8, ease: 'power3.inOut'},delay: 0});
 
   tlLoaderOut
 
@@ -1319,17 +1319,6 @@ function lokacijehover() {
           ease: 'power1.inOut',
           overwrite: "true"
         });
-
-       /*   tl.to(colour, {
-           color: "#ffdc52",
-           backgroundColor: "#231f20",
-           rotate: 30,
-          borderBottomWidth:3,
-          duration: 0.3,
-          ease: 'power1.inOut',
-          overwrite: "true"
-        }, "<"); 
-        console.log("HOVERRRRRRRRRRRRR ITEM"); */
 
         container.addEventListener("mouseenter", () => tl.play());
         container.addEventListener("mouseleave", () => tl.reverse());
