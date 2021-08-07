@@ -2573,8 +2573,7 @@ pond.addEventListener('FilePond:processfile', function (e, file) {
     guides: true,
     modal:true,
     highlight:true,
-    cropBoxResizable: true,
-    center = false,
+    cropBoxResizable: true
   });
   var cropped_img = '';
   $('#crop_img').on('click', function (ev) {
