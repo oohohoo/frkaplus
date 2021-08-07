@@ -19,14 +19,20 @@ body {
 }
 
 * {
-  -webkit-user-select: none; 
-  -moz-user-select: none;   
-  -ms-user-select: none;    
-  user-select: none;          
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */      
 }
 
 .smooth-scroll {
   overflow-y: hidden!important;
+  /* transform: translateZ(0); */
+/* -webkit-transform: translateZ(0); */
+   /* will-change: transform, opacity;  */
+ /*  will-change: scroll-position; */
+  
+ /*  transform: translate3d(0, 0, 0); */
 }
 
 
@@ -873,7 +879,7 @@ margin-bottom: 2em;
 
 
 
-/* .vizsim-txt, .close-x-icon {
+.vizsim-txt, .close-x-icon {
 user-select:none;
 }
 
@@ -887,13 +893,13 @@ user-select:none;
 .filepond--drop-label.filepond--drop-label label {
   padding: 1.75em 0.5em 0.5em 0.5em!important;
   width: 100%!important;
-} */
+}
 
-/* 
+
 .slideshow__item img {
   width: 100%;
 }
- */
+
 /*
 ================================================================================
 VIDEO PREVIEW CSS
@@ -1107,6 +1113,7 @@ VIZUAL SIMULATOR CSS
 	-webkit-transform-origin: 0 0 0;
 	transform-origin: 0 0 0;
 	-webkit-transform:matrix3d(1.12003, -0.296489, 0, -0.000663239, -0.0209571, 1.47574, 0, -5.50055e-05, 0, 0, 1, 0, 79, 49, 0, 1);
+
 	transform:matrix3d(1.12003, -0.296489, 0, -0.000663239, -0.0209571, 1.47574, 0, -5.50055e-05, 0, 0, 1, 0, 79, 49, 0, 1)
 
 }
