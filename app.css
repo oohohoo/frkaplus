@@ -957,7 +957,7 @@ VIDEO PREVIEW CSS
   cursor: pointer;
 }
 .filepond--media-preview .playpausebtn:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--frkablack);
 }
 .filepond--media-preview .play {
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAyElEQVQ4T9XUsWoCQRRG4XPaFL5SfIy8gKYKBCysrax8Ahs7qzQ2qVIFOwsrsbEWLEK6EBFGBrIQhN2d3dnGgalm+Jh7789Ix8uOPe4YDCH0gZ66atKW0pJDCE/AEngDXtRjCpwCRucbGANzNVTBqWBhfAJDdV+GNgWj8wtM41bPt3AbsDB2f69d/0dzwC0wUDe54A8wAWbqJbfkD+BZPeQO5QsYqYu6LKb0MIb7VT3VYfG8CnwEHtT3FKi4c8e/TZMyk3LYFrwCgMdHFbRDKS8AAAAASUVORK5CYII=");
@@ -971,7 +971,7 @@ VIDEO PREVIEW CSS
   margin-top: 1em;
   float: left;
   border-radius: 15px;
-  background: hsla(0, 0%, 100%, 0.3);
+  background: var(--frkayellow)!important;
 }
 .filepond--media-preview .playhead {
   width: 13px;
