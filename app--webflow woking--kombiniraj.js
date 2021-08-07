@@ -2569,7 +2569,7 @@ pond.addEventListener('FilePond:processfile', function (e, file) {
   img_cropping.cropper({
     viewMode: 3,
     dragMode: 'move',
-   aspectRatio: 6.77 / 1.58,
+   aspectRatio: 750 / 455,
     guides: true,
     modal:true,
     highlight:true,
@@ -2585,10 +2585,10 @@ pond.addEventListener('FilePond:processfile', function (e, file) {
     photo_crop_container.addClass('show-loader show-result');
     cropped_img = img_cropping.cropper('getCroppedCanvas', {
     
-      width: 677,
-      height: 158,
-     /*  imageSmoothingEnabled: true,
-      imageSmoothingQuality: 'high', */
+      width: 750,
+      height: 455,
+      imageSmoothingEnabled: true,
+      imageSmoothingQuality: 'high', 
     }).toDataURL('image/jpeg');
 //       "cropped_img" use this for reteriving cropped image data for further processing like saving in datase, etc.
     photo_preview_container.html('').append('<img src=""/>');
