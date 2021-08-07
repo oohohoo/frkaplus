@@ -386,7 +386,7 @@ function initContent() {
           lokacijeBotuni();
           addAriaAttrib();
          /*  saveaspdf(); */
-         /*  lokacijeTabs();  */
+          lokacijeTabs(); 
           mockupSimulatorProportions();
           simulatorButton();
           openMobileMenu();
@@ -659,7 +659,7 @@ barba.init({
                // openTestYourDesign();
                 uploadCrop();
                /*  saveaspdf(); */
-                /* lokacijeTabs();  */
+                lokacijeTabs(); 
                 mockupSimulatorProportions();
                 simulatorButton();
                 simulatorgsapset();
