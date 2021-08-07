@@ -2579,7 +2579,8 @@ pond.addEventListener('FilePond:processfile', function (e, file) {
     highlight:true,
     responsive:true,
     cropBoxResizable: true,
-    checkCrossOrigin: true,
+     checkCrossOrigin: true, 
+    fillColor: "#fff"
   });
   var cropped_img = '';
   $('#crop_img').on('click', function (ev) {
@@ -3315,50 +3316,6 @@ LOKACIJE SOLO // TABS
 function lokacijeTabs() {
 
 
-let targets = document.querySelectorAll(".tabs-li");
-let articles = document.querySelectorAll(".article");
-let activeTab = 0;
-let old = 0;
-let heights = [];
-let dur = 0.4;
-let animation;
-
-for (let i = 0; i < targets.length; i++) {
-  targets[i].index = i;
-  //heights.push(articles[i].offsetHeight); // get height of each article
-  gsap.set(articles[i], {top: 0, autoAlpha:0, y:0}); // push all articles up out of view
-  targets[i].addEventListener("click", doCoolStuff);
-}
-// set initial article and position bubble slider on first tab 
-gsap.set(articles[0], {y:0,autoAlpha:1});
-gsap.set(".slider", {x:targets[0].offsetLeft, width:targets[0].offsetWidth});
-gsap.set(targets[0], {color:"#231f20"});
-//gsap.set(".article-block", {height:heights[0]});
-
-function doCoolStuff() {
-  // check if clicked target is new and if the timeline is currently active
-  if(this.index != activeTab) {
-    //if there's an animation in-progress, jump to the end immediately so there aren't weird overlaps. 
-    if (animation && animation.isActive()) {
-      animation.progress(1);
-    }
-    animation = gsap.timeline({defaults:{duration:0.4}});
-    old = activeTab;
-    activeTab = this.index;
-    // animate bubble slider to clicked target
-    animation.to(".slider", {x:targets[activeTab].offsetLeft, width:targets[activeTab].offsetWidth});
-    // change text color on old and new tab targets
-    /* animation.to(targets[old], {color:"#231f20", ease:"none"}, 0);
-    animation.to(targets[activeTab], {color:"#231f20", ease:"none"}, 0); */
-    // slide current article down out of view and then set it to starting position at top
-    animation.to(articles[old], {autoAlpha:0, ease:"none" }, 0);
-    animation.set(articles[old], {y:0});
-    // resize article block to accommodate new content
-    animation.to(".article-block", {height:heights[activeTab]});
-    // slide in new article
-    animation.to(articles[activeTab], {duration: 0.5, y:0, autoAlpha:1, ease: "none"}, "-=0.25");
-  }
-}
 
 }
 
