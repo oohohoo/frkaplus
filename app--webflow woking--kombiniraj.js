@@ -2569,7 +2569,7 @@ pond.addEventListener('FilePond:processfile', function (e, file) {
   img_cropping.cropper({
     viewMode: 3,
     dragMode: 'move',
-    //aspectRatio: 6.77 / 1.58,
+   aspectRatio: 6.77 / 1.58,
     guides: true,
     modal:true,
     highlight:true,
@@ -2586,8 +2586,8 @@ pond.addEventListener('FilePond:processfile', function (e, file) {
     photo_crop_container.addClass('show-loader show-result');
     cropped_img = img_cropping.cropper('getCroppedCanvas', {
     
-      //width: 677,
-      //height: 158,
+      width: 677,
+      height: 158,
       imageSmoothingEnabled: true,
       imageSmoothingQuality: 'high',
     }).toDataURL('image/png');
