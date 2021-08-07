@@ -2582,7 +2582,8 @@ pond.addEventListener('FilePond:processfile', function (e, file) {
          },
       'slow');
       console.log("02 crop slide down");*/
-    photo_crop_container.addClass('show-loaderx show-result');
+    photo_crop_container.addClass('show-loader show-result');
+    setTimeout(function () {
     cropped_img = img_cropping.cropper('getCroppedCanvas', {
     
       width: 677,
@@ -2590,6 +2591,7 @@ pond.addEventListener('FilePond:processfile', function (e, file) {
      /*  imageSmoothingEnabled: true,
       imageSmoothingQuality: 'high', */
     }).toDataURL('image/jpeg');
+  }, 3000);
 //       "cropped_img" use this for reteriving cropped image data for further processing like saving in datase, etc.
     photo_preview_container.html('').append('<img src=""/>');
     photo_preview_container.find('img').attr('src', cropped_img);
