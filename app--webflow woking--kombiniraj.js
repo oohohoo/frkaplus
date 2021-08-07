@@ -2482,7 +2482,7 @@ UPLOAD CROP
 */
 
 function uploadCrop() {
-
+  setTimeout(()=>{
 // Register filepond plugins
 $.fn.filepond.registerPlugin(
   FilePondPluginFileValidateSize,
@@ -2547,6 +2547,10 @@ FilePond.create(
 
   
 
+
+
+
+
 /* PROCESIRANJE*/
 const pond = document.querySelector('.filepond--root');
 // Container to show the preview of uploaded image
@@ -2584,7 +2588,7 @@ pond.addEventListener('FilePond:processfile', function (e, file) {
       'slow');
       console.log("02 crop slide down");*/
     photo_crop_container.addClass('show-loader show-result');
-    cropped_img = img_cropping.cropper('getCropBoxData', {
+    cropped_img = img_cropping.cropper('getCroppedCanvas', {
     
       width: 750,
       height: 455,
@@ -2600,6 +2604,12 @@ pond.addEventListener('FilePond:processfile', function (e, file) {
   });
 
 });
+
+
+
+
+
+
 
 // Empty the photo preivew containers once the user remove the image from the uploader
 pond.addEventListener('FilePond:removefile', function (e) {
@@ -2727,13 +2737,13 @@ $(document).ready(function()
     
 /*       var item = $('#destination');
       $('.mobile').remove(item); */
-      console.log("VIDEO AJDEEEE");
+      
 });
 
 
 
-
-
+}, 6000);
+console.log("FILEPOND CROPPER AFTER 6 SECONDS");
 
 }
 
