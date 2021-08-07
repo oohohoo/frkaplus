@@ -91,7 +91,7 @@ img_cropping.attr('src', image.src);
 img_cropping.cropper({
 viewMode: 1,
 dragMode: 'move',
-/* aspectRatio: 342 / 91, */
+ aspectRatio: 342 / 91, 
 guides: false,
 modal:true,
 highlight:true,
