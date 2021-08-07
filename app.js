@@ -1301,7 +1301,7 @@ LOKACIJE ITEM HOVER
 
 function lokacijehover() {
 
-   gsap.set(".webinar-posts__event-item img", {scale:3}) 
+ /*   gsap.set(".webinar-posts__event-item img", {scale:1})  */
   gsap.utils.toArray(".webinar-posts__event-item").forEach(container => {
         let lokacija = container.querySelector(".webinar-posts__event-item img"),
            /* colour = container.querySelector(".webinar-posts__event-list li "),  */
@@ -1309,12 +1309,16 @@ function lokacijehover() {
             paused: true
           });
 
-        tl.to(lokacija, {
+        tl.fromTo(lokacija), {
+          scale:1,
+          overwrite: "true"
+        },
+        {
           scale:1.15,
           duration: 0.2,
           ease: 'power1.inOut',
           overwrite: "true"
-        })
+        }
 
        /*   tl.to(colour, {
            color: "#ffdc52",
