@@ -2740,10 +2740,10 @@ $(document).ready(function()
       
 });
 
-
+console.log("FILEPOND CROPPER AFTER 6 SECONDS");
 
 }, 6000);
-console.log("FILEPOND CROPPER AFTER 6 SECONDS");
+
 
 }
 
