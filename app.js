@@ -1464,7 +1464,7 @@ function openMobileMenu() {
 
        .to('.stagger', {
           autoAlpha: 1,
-          stagger: 0.1,
+        /*   stagger: 0.1, */
           overwrite: "auto"
         }, "-=0.1")
 
