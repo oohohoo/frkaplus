@@ -2514,7 +2514,7 @@ VIZUAL SIMULATOR CSS
 
 
 .mobile {
-   filter:blur(.5px); 
+   filter:blur(.7px); 
 	overflow: hidden;
 	z-index: 100;
  	outline: 1px solid transparent;
