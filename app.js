@@ -1455,7 +1455,7 @@ function openMobileMenu() {
   let forwards = true;
   document.querySelector("#openmobile").addEventListener("click", ev => {
     if (forwards) {
-      const tl = gsap.timeline({defaults:{duration:0.64, ease: 'power2.inOut'}})
+      const tl = gsap.timeline({defaults:{duration:0.25, ease: 'power2.inOut'}})
 
         .to('#mobilemenu', {
           scaleY: 1,
@@ -1500,7 +1500,7 @@ function openMobileMenu() {
 
         .to('#mobilemenu', {
           scaleY: 0,
-          duration: 0.4,
+          duration: 0.25,
           overwrite: "auto",
 
         }, "-=0.2")
