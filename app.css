@@ -26,6 +26,12 @@ body {
   user-select: none;          /* Likely future */      
 }
 
+/*KILL BLUE TAP ON MOBILE*/
+* {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+
 .smooth-scroll {
   overflow-y: hidden!important;
   /* transform: translateZ(0); */
