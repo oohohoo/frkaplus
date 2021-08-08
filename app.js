@@ -531,10 +531,10 @@ function initPageTransitions() {
 });
   // scroll to the top of the page
   barba.hooks.enter(() => {
-/*     window.scrollTo(0, 0); */
-    window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+ /*    window.onbeforeunload = function () {
       window.scrollTo(0,0);
-};
+}; */
     /* locoScroll.scrollTo('#top'); */
     /* console.log("scrolltop!"); */
   }); 
