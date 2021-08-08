@@ -173,13 +173,12 @@ LOADER
   overflow: hidden;
 }
 
-.inner-loader {
+/* .inner-loader {
   width: var(--loader-width);
   height: var(--loader-height);
   background-color: var(--frkayellow);
-/*   margin-top: -2em; */
- 
-}
+
+} */
 
 .loader__content {
   visibility: hidden;
