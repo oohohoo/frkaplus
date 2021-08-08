@@ -370,13 +370,13 @@ function initContent() {
         lokacije: function () {
           fadeinlokacije();
           newSort(); 
-          batchLokacije();
+          /* batchLokacije(); */
           sortChangeLayout();
           lokacijeBotuni();
           
           stopScrollMap();
           openMobileMenu();
-          pinHover();
+         /*  pinHover(); */
           lokacijehover();
           locationMap();
           console.log('from app.js | lokacije');
@@ -395,7 +395,7 @@ function initContent() {
         
           
           
-          mockupImageResizer();
+          /* mockupImageResizer(); */
           openTestYourDesign();
          
           
@@ -597,7 +597,7 @@ function initPageTransitions() {
 
 barba.init({
       timeout: 7000,
-      debug: true,
+      debug: false,
       prefetch: true,
 /*
   ================================================================================
@@ -731,7 +731,7 @@ barba.init({
               namespace: 'topdftest',
 
               beforeEnter(data) {
-                matrixtransform();
+                /* matrixtransform(); */
                 console.log("MATRIX TRANS LOADANA");
               
 
@@ -764,17 +764,7 @@ barba.init({
         
       },
 
-   /*    	after(data) {
-			let parser = new DOMParser();
-			let htmlDoc = parser.parseFromString(data.next.html.replace(/(<\/?)body( .+?)?>/gi, '$1notbody$2>', data.next.html), 'text/html');
-			let bodyClasses = htmlDoc.querySelector('notbody').getAttribute('class');
-			body.setAttribute('class', bodyClasses);
-      console.log("BODY CLASSES UPDATED");
-		//	scripts.init();
-		//	borderOut(); 
-		}, */
-
-    
+      
  
       beforeEnter({next}) {
                    
@@ -1505,13 +1495,6 @@ function openMobileMenu() {
 
         }, "-=0.2")
 
-        /* .to('#openmobile', {
-          scale: 1,
-           duration: 0.64,
-          ease: 'power2.inOut',
-          overwrite: "auto"
-        }, "<") */
-
     }
     forwards = !forwards;
   });
@@ -1526,7 +1509,7 @@ function openMobileMenu() {
 TRANSFORM MATRIX 3d GENERATOR
 ================================================================================
 */
-
+/*
 function matrixtransform() {
  
 (function() {
@@ -1710,7 +1693,7 @@ function matrixtransform() {
 
 
 }
-
+*/
 /*
 ================================================================================
 ZOOM IMAGE
@@ -1730,9 +1713,9 @@ function zoomimage() {
 SPLIDE
 ================================================================================
 */
-
+/*
 function splidesolo() {
-/*   if(document.querySelector('.splide')) {
+   if(document.querySelector('.splide')) {
   const splide = new Splide(".splide", {
        // Desktop on down
 	perPage: 1,
@@ -1753,10 +1736,9 @@ function splidesolo() {
   trimSpace: false, 
 
 } ).mount();
-  } */
+  } 
 }
-
-
+*/
 /* 
 =============================================================================================================================================
 =============================================================================================================================================
@@ -1979,7 +1961,7 @@ function horizpin() {
 SCROLLTRIGGER INNER IMAGE PARALLAX 
 ================================================================================
 */
-
+/* 
 function imageparallax() {
 
   gsap.utils.toArray(".grid").forEach(section => {
@@ -2001,7 +1983,7 @@ function imageparallax() {
       ease: "none",
     });
   });
-}
+} */
 
 /*
 ================================================================================
@@ -2293,7 +2275,7 @@ showAnim
 BATCH MULTILINE TXT // OVO NIJE SPOJENO
 ================================================================================
 */
-
+/*
 function multilinereveal() {
   gsap.set('.reveal', {
     autoAlpha: 0,
@@ -2319,7 +2301,7 @@ function multilinereveal() {
   });
 
 }
-
+*/
 /*
 ================================================================================
 O NAMA - COUNTER
@@ -2365,7 +2347,7 @@ numbers.innerHTML = (num.var).toFixed();
 }
 
 countIt();
-console.log("COUNTER TRIGGERED NEWWWW");
+
   /*
   $(".counts").each(function () {
     var count = $(this),
@@ -3657,7 +3639,7 @@ PIN HOVER
 ================================================================================
 */
 
-function pinHover() {
+/* function pinHover() {
   $(".pin-button-link").each(function() {
     $(this).on("mouseover", function() {
       $(".pinicon", this).addClass("hide");
@@ -3669,55 +3651,7 @@ function pinHover() {
     });
   });
 
-}
-
-
-/*
-================================================================================
-SIMULATOR IMAGE + MOCKUP RESIZER
-================================================================================
-*/
-
-function mockupImageResizer() {
-
-(function() {
-  //new Slideshow( document.getElementById( 'slideshow' ) );
-
-  /* Mockup responsiveness */
-  var body = docElem = window.document.documentElement,
-    wrap = document.getElementById( 'wrap' ),
-    mockup = wrap.querySelector( '.mockup' ),
-    mockupWidth = mockup.offsetWidth;
-
-  scaleMockup();
-
-  function scaleMockup() {
-    var wrapWidth = wrap.offsetWidth,
-      val = wrapWidth / mockupWidth;
-
-    mockup.style.transform = 'scale3d(' + val + ', ' + val + ', 1)';
-  }
-  
-  window.addEventListener( 'resize', resizeHandler );
-
-  function resizeHandler() {
-    function delayed() {
-      resize();
-      resizeTimeout = null;
-    }
-    if ( typeof resizeTimeout != 'undefined' ) {
-      clearTimeout( resizeTimeout );
-    }
-    resizeTimeout = setTimeout( delayed, 50 );
-  }
-
-  function resize() {
-    scaleMockup();
-  }
-})();
-
-}
-
+} */
 
 
 /*
@@ -3777,30 +3711,6 @@ function printTOPDF() {
 
 
 
-/*
-================================================================================
-INFINITE SCROLL
-================================================================================
-*/
-
-function infiniteScroll() {
-
-  $('.js-shuffle').infiniteScroll({
-    // options
-     path: '.webinar-posts__event-item', 
-    append: '.webinar-posts__event-item',
-    history: true,
-    /* scrollThreshold: 100; */
-  });
-
- /*  $('.container').infiniteScroll({
-    path: getPenPath,
-    append: '.post',
-    status: '.page-load-status',
-  }); */
-
-}
-
 
 /*
 ================================================================================
@@ -3808,9 +3718,9 @@ BATCH
 ================================================================================
 */
 
-function batchLokacije() {
+/* function batchLokacije() {
 
-  /* gsap.set(".webinar-posts__event-item", {y: 100}); */
+ 
 
   ScrollTrigger.batch(".webinar-posts__event-item", {
     //interval: 0.1, // time window (in seconds) for batching to occur. 
@@ -3828,9 +3738,9 @@ function batchLokacije() {
   // elements to a "y" of 100 solely for the animation in which would throw off the normal 
   // positioning, so we use a "refreshInit" listener to reset the y temporarily. When we 
   // return a gsap.set() in the listener, it'll automatically revert it after the refresh()!
-  /* ScrollTrigger.addEventListener("refreshInit", () => gsap.set(".box", {y: 0})); */
+  // ScrollTrigger.addEventListener("refreshInit", () => gsap.set(".box", {y: 0})); 
 }
-
+ */
 
 
 function fadeinlokacije() {
@@ -3875,6 +3785,6 @@ function passiveListeners() {
     }
   });
   
-console.log("PASSIVE LISTENERS HEJ");
+/* console.log("PASSIVE LISTENERS HEJ"); */
 }
 
