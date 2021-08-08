@@ -161,8 +161,8 @@ if (document.querySelector('#lokacije')) {
    locoScroll.on('scroll', func => {
     if (checkVisible($('#selectone'))) {
  $("#selectone, #selecttwo, #sorto").select2('close');
- console.log("skrolam i zatvaram SELECT");
-} 
+/*  console.log("skrolam i zatvaram SELECT");
+ */} 
 else {
   
 }
@@ -193,7 +193,7 @@ window.addEventListener('resize', function(){
   locoScroll.update();
   ScrollTrigger.refresh(true);
 },200) 
-  console.log("RESIZE ST+LS");
+ // console.log("RESIZE ST+LS");
 });
 
 
@@ -353,7 +353,7 @@ function initContent() {
         home: function () {
             homevideo();
             openMobileMenu();
-            console.log('from app.js | home');
+         //   console.log('from app.js | home');
         },
         onama: function () {
             outlinehero();
@@ -365,7 +365,7 @@ function initContent() {
             smallCounteronama();
             openMobileMenu();
             onamacounter();
-            console.log('from app.js | o nama');
+          //  console.log('from app.js | o nama');
         },
         lokacije: function () {
           fadeinlokacije();
@@ -379,7 +379,7 @@ function initContent() {
          /*  pinHover(); */
           lokacijehover();
           locationMap();
-          console.log('from app.js | lokacije');
+       //   console.log('from app.js | lokacije');
         },
         sololokacije: function () {
           uploadCrop();
@@ -399,11 +399,11 @@ function initContent() {
           openTestYourDesign();
          
           
-          console.log('from app.js | solo lokacije');
+       //   console.log('from app.js | solo lokacije');
         },
         kontakt: function () {
           openMobileMenu();
-          console.log('from app.js | kontakt');
+       //   console.log('from app.js | kontakt');
         } 
 
     };
@@ -433,7 +433,7 @@ function initContent() {
   //uploadCrop();
  // splidesolo();
 
-  console.log("initial scripts loaded...");
+ // console.log("initial scripts loaded...");
 
 
   myscripts.init();
@@ -444,7 +444,7 @@ function initContent() {
   setTimeout(() => {
    /*  locoScroll.update(); */
     ScrollTrigger.refresh(true);
-    console.log("Locoscrollupdated + SCROLLTRIGGER NAKON 5 SEKUNDI + shuffle");
+  //  console.log("Locoscrollupdated + SCROLLTRIGGER NAKON 5 SEKUNDI + shuffle");
   /* }, 5000) */
 
 });
@@ -527,7 +527,7 @@ function initPageTransitions() {
             });
     }
 
-    console.log("SCRIPTS EVALUATED NO PROBLEM");
+  //  console.log("SCRIPTS EVALUATED NO PROBLEM");
 });
   // scroll to the top of the page
   barba.hooks.enter(() => {
@@ -541,7 +541,7 @@ function initPageTransitions() {
     var bodyClasses = $(response).filter('notbody').attr('class')
     $("body").attr("class", bodyClasses);
     
-    console.log("BODY CLASSES UPDATED");
+  //  console.log("BODY CLASSES UPDATED");
   });
   
   barba.hooks.enter((data) => {
@@ -552,20 +552,20 @@ function initPageTransitions() {
     let nextHeader = parser.parseFromString(data);
     document.querySelector('.header').innerHTML = nextHeader.innerHTML; */
      });
-    /*  console.log("HEADER SCRIPT"); */
+    //  console.log("HEADER SCRIPT"); 
 
   //kill scrolltrigger
   barba.hooks.beforeLeave(() => {
    locoScroll.destroy(); 
-   console.log("locoscroll killed ILI ...");
+  // console.log("locoscroll killed ILI ...");
      if (ScrollTrigger.getAll().length > 0) {
       ScrollTrigger.getAll().forEach((trigger) => {
           trigger.kill()
-          console.log("scrolltrigger killed...");
+         // console.log("scrolltrigger killed...");
       });
   }
     Webflow.destroy();
-    console.log("webflow interactions killed...");
+  //  console.log("webflow interactions killed...");
 
   /* NEW JACK SCROLLTRIGGER DESTROY*/
 /*
@@ -652,7 +652,7 @@ barba.init({
               beforeEnter(data) {
 
                 printTOPDF();
-                console.log("PRINT TO PDF");
+             //   console.log("PRINT TO PDF");
                 //soloMap();
                 //splidesolo();
                // console.log("SPLIDE before enter loaded!!!");
@@ -716,7 +716,7 @@ barba.init({
               
               beforeEnter(data) {
                 openMobileMenu();
-                console.log("KONTAKT OPEN MOBILE MENU LOADED");
+              //  console.log("KONTAKT OPEN MOBILE MENU LOADED");
               }
             }, {
 
@@ -724,7 +724,7 @@ barba.init({
               
               beforeEnter(data) {
                 backToPrev();
-                console.log("back to prev page loaded");
+            //    console.log("back to prev page loaded");
               }
             }, {
 
@@ -732,7 +732,7 @@ barba.init({
 
               beforeEnter(data) {
                 /* matrixtransform(); */
-                console.log("MATRIX TRANS LOADANA");
+            //    console.log("MATRIX TRANS LOADANA");
               
 
               }
@@ -1076,7 +1076,7 @@ WEBFLOW INTERACTIONS REINIT
 function webflowInteractions() {
   Webflow.ready();
   Webflow.require('ix2').init();
-  console.log("WEBFLOW RELOAD");
+  //console.log("WEBFLOW RELOAD");
 
 }
 
@@ -1137,7 +1137,7 @@ sections.forEach((section, index) => {
           ease: 'power2.out',
           onComplete:function() {
            locoScroll.update();
-           console.log("locoscroll updated after accordion...");
+           //console.log("locoscroll updated after accordion...");
                     }
         })
       }
@@ -1150,7 +1150,7 @@ sections.forEach((section, index) => {
         ease: 'power2.out',
         onComplete:function() {
           locoScroll.update();
-          console.log("locoscroll updated after accordion...");
+          //console.log("locoscroll updated after accordion...");
           
          }
       })
@@ -1165,7 +1165,7 @@ sections.forEach((section, index) => {
         ease: 'power2.out',
         onComplete:function() {
           locoScroll.update();
-          console.log("locoscroll updated after accordion...");
+          //console.log("locoscroll updated after accordion...");
          }
       })
     }
@@ -1416,12 +1416,12 @@ function openTestYourDesign() {
 /* DISABLE LOCO WHEN SIMULATOR OPEN*/
   $("#tweenbox, .testbutton").mouseenter(function () {
     locoScroll.stop();
-    console.log("LOCO STOP");
+    //console.log("LOCO STOP");
   });
   
   $("#tweenbox, .testbutton").mouseleave(function () {
     locoScroll.start();
-    console.log("LOCO START");
+   // console.log("LOCO START");
   
   });
   
@@ -2216,7 +2216,7 @@ function simulatorButton() {
    
   });
 }
-console.log("TWEENBUTTON");
+//console.log("TWEENBUTTON");
 
 
 
@@ -2807,7 +2807,7 @@ function uploadCrop() {
 $('#crop_img').click(function () {
   setTimeout(() => {
     $('.linkos.opacity').removeClass('hide');
-    console.log("SHOW PDFio*");
+    //console.log("SHOW PDFio*");
   }, 1500)
 });
 
@@ -2817,7 +2817,7 @@ $('#crop_img').click(function () {
 /* VIDEO BUTTOINs*/
 $('.upload-video').on('FilePond:addfile', function () {
     $('.movevideo').removeClass('hide');
-    console.log("SHOW VIDEO TRANSFER AAAA");
+    //console.log("SHOW VIDEO TRANSFER AAAA");
 });
 
 /* VIDEO BUTTOINs*/
@@ -2840,7 +2840,7 @@ $('.upload-video').on('FilePond:addfile', function () {
 $('.closetrigger').click(function () {
   $('.upload-photo').filepond('removeFile');
   $('.upload-video').filepond('removeFile');
-  console.log("BOTH FILEPOND and Video slot cleared on exit...");
+  //console.log("BOTH FILEPOND and Video slot cleared on exit...");
 });
  
 
@@ -2848,7 +2848,7 @@ $('.closetrigger').click(function () {
   $('.upload-photo').filepond('removeFile');
   $('.upload-video').filepond('removeFile');
 
-  console.log("BOTH FILEPOND and Video slot cleared on tabs...");
+  //console.log("BOTH FILEPOND and Video slot cleared on tabs...");
 });
 
 $('.upload-photo').on('FilePond:removefile', function () {
@@ -2898,7 +2898,7 @@ $(document).ready(function()
           //  }, 1000);
            // $('#destination').get(0).play();
            //video.play();
-            console.log("APPEND AND PLAY & LOOP");
+           // console.log("APPEND AND PLAY & LOOP");
        
    });
   });
@@ -2916,7 +2916,7 @@ $(document).ready(function()
     
 /*       var item = $('#destination');
       $('.mobile').remove(item); */
-      console.log("VIDEO AJDEEEE");
+     // console.log("VIDEO AJDEEEE");
 });
 
 
@@ -3116,7 +3116,7 @@ Demo.prototype._handleupdate = function (evt) {
     this.shuffle.layout();
      locoScroll.update(); 
      ScrollTrigger.refresh(true); 
-    console.log("Locoscrollupdated + SCROLLTRIGGER NUOVO");
+  //  console.log("Locoscrollupdated + SCROLLTRIGGER NUOVO");
   }, 10)
   locoScroll.update(); 
   ScrollTrigger.refresh(true); 
@@ -3184,7 +3184,7 @@ Demo.prototype._handleSortChange = function (event) {
       this.shuffle.layout();
       locoScroll.update();
       ScrollTrigger.refresh(true);
-      console.log("Locoscrollupdated + SCROLLTRIGGER NUOVO");
+   //   console.log("Locoscrollupdated + SCROLLTRIGGER NUOVO");
     }, 200)
 
   };
@@ -3365,7 +3365,7 @@ Demo.prototype.filter = function () {
         this.shuffle.layout();
         locoScroll.update();
         ScrollTrigger.refresh(true);
-        console.log("Locoscrollupdated + SCROLLTRIGGER 01");
+     //   console.log("Locoscrollupdated + SCROLLTRIGGER 01");
       }, 200)
 
     } else {
@@ -3374,7 +3374,7 @@ Demo.prototype.filter = function () {
         this.shuffle.layout();
         locoScroll.update();
         ScrollTrigger.refresh(true);
-        console.log("Locoscrollupdated + SCROLLTRIGGER 2");
+     //   console.log("Locoscrollupdated + SCROLLTRIGGER 2");
       }, 200)
     }
 
@@ -3383,7 +3383,7 @@ Demo.prototype.filter = function () {
       this.shuffle.layout();
       locoScroll.update();
       ScrollTrigger.refresh(true);
-      console.log("Locoscrollupdated + SCROLLTRIGGER 3");
+  //    console.log("Locoscrollupdated + SCROLLTRIGGER 3");
 
     } else {
       this.message.innerHTML = "";
@@ -3610,7 +3610,7 @@ function mockupSimulatorProportions() {
   function resize() {
     scaleMockup();
   }
-  console.log("P R O P O R T I O N S");
+//  console.log("P R O P O R T I O N S");
 })();
 
 }
@@ -3704,7 +3704,7 @@ function printTOPDF() {
   });
     });
    });
-   console.log("PRINTTHIS LOADED");
+  // console.log("PRINTTHIS LOADED");
  /*  }, 4000);  */
 
 }
