@@ -1758,7 +1758,7 @@ O NAMA // OUTLINE HERO
 */
 
 function outlinehero() {
-   gsap.set('.filled-text, .outline-text', {x:-500});
+  /*  gsap.set('.filled-text, .outline-text', {x:-500}); */
   gsap.to(".filled-text, .outline-text", {
     scrollTrigger:{
     scroller: ".smooth-scroll",
@@ -1770,7 +1770,7 @@ function outlinehero() {
     x: 500
   });
   
-   gsap.set('.filledtwo, .outlinetwo', {x:500}); 
+  /*  gsap.set('.filledtwo, .outlinetwo', {x:500});  */
   gsap.to(".filledtwo, .outlinetwo", {
     scrollTrigger:{
     scroller: ".smooth-scroll",
