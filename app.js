@@ -530,10 +530,10 @@ function initPageTransitions() {
     console.log("SCRIPTS EVALUATED NO PROBLEM");
 });
   // scroll to the top of the page
-/*   barba.hooks.enter(() => {
+  barba.hooks.enter(() => {
     window.scrollTo(0, 0);
 
-  }); */
+  }); 
   barba.hooks.afterLeave((data) => {
     // Set <body> classes for "next" page
     var nextHtml = data.next.html;
