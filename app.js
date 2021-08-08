@@ -1762,8 +1762,8 @@ function outlinehero() {
   gsap.to(".filled-text, .outline-text", {
     scrollTrigger:{
     scroller: ".smooth-scroll",
-      trigger: ".filled-text, .outline-text", 
-      start: "top 1%", 
+      trigger: ".filled-text", 
+      start: "top bottom", 
       end: "bottom top", 
       scrub: 1
     },
@@ -1774,8 +1774,8 @@ function outlinehero() {
   gsap.to(".filledtwo, .outlinetwo", {
     scrollTrigger:{
     scroller: ".smooth-scroll",
-      trigger: ".filledtwo, .outlinetwo", 
-      start: "top 1%", 
+      trigger: ".filledtwo", 
+      start: "top bottom", 
       end: "bottom top", 
       scrub: 1
     },
