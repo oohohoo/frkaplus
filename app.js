@@ -1763,7 +1763,7 @@ function outlinehero() {
     scrollTrigger:{
     scroller: ".smooth-scroll",
       trigger: ".filled-text, .outline-text", 
-      start: "top 10%", 
+      start: "top 1%", 
       end: "bottom top", 
       scrub: 1
     },
@@ -1775,7 +1775,7 @@ function outlinehero() {
     scrollTrigger:{
     scroller: ".smooth-scroll",
       trigger: ".filledtwo, .outlinetwo", 
-      start: "top 10%", 
+      start: "top 1%", 
       end: "bottom top", 
       scrub: 1
     },
