@@ -533,7 +533,7 @@ function initPageTransitions() {
   barba.hooks.enter(() => {
    /*  window.scrollTo(0, 0); */
     locoScroll.scrollTo('#top');
-
+    console.log("scrolltop!");
   }); 
   barba.hooks.afterLeave((data) => {
     // Set <body> classes for "next" page
