@@ -445,7 +445,7 @@ function initContent() {
    /*  locoScroll.update(); */
     ScrollTrigger.refresh(true);
   //  console.log("Locoscrollupdated + SCROLLTRIGGER NAKON 5 SEKUNDI + shuffle");
-  /* }, 5000) */
+  }, 200) 
 
 });
  
