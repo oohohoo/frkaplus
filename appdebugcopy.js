@@ -417,7 +417,7 @@ function initContent() {
   initScroll();
   
   /* LOAD ON EVERY PAGE ---- edit*/
-  /* passiveListeners(); */
+   passiveListeners(); 
   webflowInteractions();
   customCursor();
   underlineLink();
