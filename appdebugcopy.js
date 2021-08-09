@@ -327,8 +327,8 @@ function initContent() {
  /*  if ($('body').hasClass('page-template-lokacije')) {
     select('.lokacije--main-container').classList.remove('is-loading'); 
                 }  */
-  select('.fill-background').classList.add('is-loading');
-  
+/*   select('.fill-background').classList.add('is-loading');
+ */  
 
  // (function($) {
 
