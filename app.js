@@ -418,7 +418,7 @@ function initContent() {
   
   /* LOAD ON EVERY PAGE ---- edit*/
   /* passiveListeners(); */
-  webflowInteractions();
+/*   webflowInteractions();
   customCursor();
   underlineLink();
   scrollTotop();
@@ -427,7 +427,7 @@ function initContent() {
   openTestYourDesign();
   simulatorButton();
   addLinkAttrib();
-  checked();
+  checked(); */
   //splidesolo();
   //stopScrollMap();
   //lokacijeTabs();
@@ -445,7 +445,7 @@ function initContent() {
   setTimeout(() => {
    /*  locoScroll.update(); */
     ScrollTrigger.refresh(true);
-  //  console.log("Locoscrollupdated + SCROLLTRIGGER NAKON 5 SEKUNDI + shuffle");
+   console.log("SCROLLTRIGGER UPDATED NAKON 200ms);
   }, 200);
 
 /* }); */
@@ -520,13 +520,13 @@ function initPageTransitions() {
   });
 
   barba.hooks.after((data) => {
-    let js = data.next.container.querySelectorAll('main script');
+   /*  let js = data.next.container.querySelectorAll('main script');
     if(js != null){
             js.forEach((item) => {
                 console.log(js)
                 eval(item.innerHTML);
             });
-    }
+    } */
 
   //  console.log("SCRIPTS EVALUATED NO PROBLEM");
 });
@@ -541,10 +541,10 @@ function initPageTransitions() {
   }); 
   barba.hooks.afterLeave((data) => {
     // Set <body> classes for "next" page
-    var nextHtml = data.next.html;
+  /*   var nextHtml = data.next.html;
     var response = nextHtml.replace(/(<\/?)body( .+?)?>/gi, '$1notbody$2>', nextHtml)
     var bodyClasses = $(response).filter('notbody').attr('class')
-    $("body").attr("class", bodyClasses);
+    $("body").attr("class", bodyClasses); */
     
   //  console.log("BODY CLASSES UPDATED");
   });
