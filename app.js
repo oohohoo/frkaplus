@@ -369,7 +369,7 @@ function initContent() {
         },
         lokacije: function () {
           fadeinlokacije();
-          newSort(); 
+         /*  newSort();  */
           /* batchLokacije(); */
           sortChangeLayout();
           lokacijeBotuni();
@@ -637,7 +637,7 @@ barba.init({
 
               beforeEnter(data) {
                 fadeinlokacije();
-                newSort();
+                /* newSort(); */
                 stopScrollMap();
                /*  webflowInteractions(); */
                /*  pinHover(); */
