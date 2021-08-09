@@ -3800,6 +3800,8 @@ function passiveListeners() {
 function checked() {
   // Get the checkbox
   var checkBox = document.getElementById("marketing-2");
+  var zalipi = document.querySelector(".w-checkbox-input");
+ 
   // Get the output text
 
   // If the checkbox is checked, display the output text
