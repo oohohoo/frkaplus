@@ -3806,9 +3806,9 @@ function checked() {
 
   // If the checkbox is checked, display the output text
   if (checkBox.checked == true){
-    checkBox.classList.add("w--redirected-checked");
+    zalipi.classList.add("w--redirected-checked");
   } else {
-    checkBox.classList.remove("w--redirected-checked");
+    zalipi.classList.remove("w--redirected-checked");
   }
 }
 
