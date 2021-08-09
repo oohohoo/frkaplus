@@ -427,6 +427,7 @@ function initContent() {
   openTestYourDesign();
   simulatorButton();
   addLinkAttrib();
+  checked();
   //splidesolo();
   //stopScrollMap();
   //lokacijeTabs();
@@ -3790,5 +3791,22 @@ function passiveListeners() {
   });
   
 /* console.log("PASSIVE LISTENERS HEJ"); */
+}
+
+
+
+
+
+function checked() {
+  // Get the checkbox
+  var checkBox = document.getElementById("marketing-2");
+  // Get the output text
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    checkBox.classList.add("w--redirected-checked");
+  } else {
+    checkBox.classList.remove("w--redirected-checked");
+  }
 }
 
