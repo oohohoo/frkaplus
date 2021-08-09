@@ -19,12 +19,12 @@ body {
   transition: 0.3s ease-out;
 }
 
-* {
-  -webkit-user-select: none;  /* Chrome all / Safari all */
-  -moz-user-select: none;     /* Firefox all */
-  -ms-user-select: none;      /* IE 10+ */
-  user-select: none;          /* Likely future */      
-}
+/* * {
+  -webkit-user-select: none; 
+  -moz-user-select: none;   
+  -ms-user-select: none;     
+  user-select: none;             
+} */
 
 /*KILL BLUE TAP ON MOBILE*/
 * {
@@ -62,10 +62,10 @@ KILL OUTLINE ON ALL
 ================================================================================
 */
 
-*:focus {
+/* *:focus {
   outline: none;
 }
-
+ */
 
 /*
 ================================================================================
@@ -356,13 +356,13 @@ html.has-scroll-smooth {
 DISABLE SELECTION
 ================================================================================
 */
-.no--select {
-  -webkit-user-select: none;  /* Chrome all / Safari all */
-  -moz-user-select: none;     /* Firefox all */
-  -ms-user-select: none;      /* IE 10+ */
-  user-select: none;          /* Likely future */      
+/* .no--select {
+  -webkit-user-select: none; 
+  -moz-user-select: none;     
+  -ms-user-select: none;     
+  user-select: none;            
 }
-
+ */
 /*
 ================================================================================
 COUNTER / BROJAČ O NAMA
@@ -918,8 +918,8 @@ user-select:none;
 }
 
 .filepond--drop-label.filepond--drop-label label {
-  padding: 1.75em 0.5em 0.5em 0.5em!important;
-  width: 100%!important;
+  padding: 1.75em 0.5em 0.5em 0.5em;
+  width: 100%;
 }
 
 
