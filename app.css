@@ -2733,7 +2733,7 @@ STATIC IMAGE ZA MAPU
   #toggle:checked ~ .control-me::after {
       content: "Z — A";
   }
- label {
+ .togpapa label {
   position: absolute;
   left:0;
   top:0;
