@@ -2840,5 +2840,10 @@ max-width:100%
       top: 0px;
     }
 
-    
+
+.loader,
+.loader__content {
+  min-height: calc(100% - 100px);
+ }
+
     }
