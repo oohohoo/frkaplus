@@ -2843,7 +2843,7 @@ max-width:100%
 
 .loader,
 .loader__content {
-  min-height: calc(100% - 80px);
+  min-height: calc(100% - 60px);
  }
 
     }
