@@ -2823,3 +2823,15 @@ max-width:100%
   
   }
   
+
+
+  @media screen and (max-width: 1024px) {
+    .sort-wrap {
+        margin-left: -0.6em;
+    }
+      
+    .cursory {
+      display: none;
+    }
+    
+    }
