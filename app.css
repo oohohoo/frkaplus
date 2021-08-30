@@ -2053,10 +2053,11 @@ color: var(--frkayellow)!important;
 .filepond--root * {
   box-sizing: inherit;
   line-height: inherit;
+  max-height: 248px;
 }
 .filepond--root *:not(text) {
   font-size: inherit;
-  max-height: 220px;
+ 
 }
 .filepond--root {
   /* block everything */
