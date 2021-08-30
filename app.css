@@ -2053,7 +2053,7 @@ color: var(--frkayellow)!important;
 .filepond--root * {
   box-sizing: inherit;
   line-height: inherit;
-  max-height: 200px;
+ /*  max-height: 200px; */
 }
 .filepond--root *:not(text) {
   font-size: inherit;
