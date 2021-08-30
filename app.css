@@ -2833,5 +2833,12 @@ max-width:100%
     .cursory {
       display: none;
     }
+
+    .lokacije-mapbox-container {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0px;
+    }
+
     
     }
