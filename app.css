@@ -2020,7 +2020,7 @@ color: var(--frkayellow)!important;
   /* layout*/
   box-sizing: border-box;
   position: relative;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 
   /* base font size for whole component */
   font-size: 1rem;
