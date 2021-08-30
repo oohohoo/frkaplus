@@ -1402,6 +1402,7 @@ color: var(--frkayellow)!important;
 .filepond--file .filepond--file-status {
   margin-left: auto;
   margin-right: 2.25em;
+  color: #fff;
 }
 .filepond--file .filepond--processing-complete-indicator {
   pointer-events: none;
@@ -1656,6 +1657,7 @@ color: var(--frkayellow)!important;
 }
 .filepond--file-status {
   z-index: 101;
+  color: #fff;
 }
 .filepond--file-info {
   z-index: 100;
