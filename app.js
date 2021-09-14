@@ -981,7 +981,7 @@ map.on("load", function (e) {
   marker.properties.url + '">' 
   + marker.properties.title + '</a></h3>' +
    '<p><a href="' +
-   marker.properties.url + '">' target="_blank"
+   marker.properties.url + '">' 
   + marker.properties.description +  '</a></p>'
   ))
 .addTo(map);        
