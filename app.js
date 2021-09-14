@@ -534,7 +534,7 @@ function initPageTransitions() {
 barba.hooks.afterEnter((data) => {
   // this hook will be called for each transitions
   //data.current.url is the page path.
-  gtag('config', 'UA-207549905-1', {'page_path': data.current.url});
+  gtag('config', 'UA-207549905-1');
   console.log("GOOGLE ANALYTICS TRIGGERED");
 });
   // scroll to the top of the page
