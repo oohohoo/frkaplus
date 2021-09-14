@@ -978,7 +978,7 @@ map.on("load", function (e) {
               //.setHTML(marker.properties.title))
               .setHTML(
                 '<h3><a href="' + 
-  marker.properties.url + '">' 
+  marker.properties.url + '" target="_blank">' 
   + marker.properties.title + '</a></h3>' +
    '<p><a href="' +
    marker.properties.url + '">' 
@@ -989,6 +989,8 @@ map.on("load", function (e) {
   
     });
 });
+
+
 
 /* 
 .setHTML(
