@@ -4,7 +4,8 @@
       "type": "Feature",
       "properties": {
         "title": "Avenija Dubrovnik – Rotor",
-        "description": "Smjer istok - Backlight"
+        "description": "Smjer istok - Backlight",
+        "URL": "https://frkaplus.hr/lokacije/avenija-dubrovnik-rotor/"
       },
       "geometry": {
         "coordinates": [15.95896, 45.77705],

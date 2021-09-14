@@ -977,6 +977,9 @@ map.on("load", function (e) {
               .setPopup(new mapboxgl.Popup()
               //.setHTML(marker.properties.title))
               .setHTML(
+  '<h3><a href="' + 
+  feature.properties.URL + '">' 
+  + marker.properties.title + '</a></h3>')
   '<h3>' +
   marker.properties.title +
   '</h3>' +
@@ -989,6 +992,11 @@ map.on("load", function (e) {
   
     });
 });
+
+
+
+
+
 
 /* },200)  */ 
 /*
