@@ -530,6 +530,12 @@ function initPageTransitions() {
 
   //  console.log("SCRIPTS EVALUATED NO PROBLEM");
 });
+
+barba.hooks.afterEnter((data) => {
+  // this hook will be called for each transitions
+  //data.current.url is the page path.
+  gtag('config', 'UA-207549905-1', {'page_path': data.current.url});
+});
   // scroll to the top of the page
   barba.hooks.enter(() => {
     window.scrollTo(0, 0);
