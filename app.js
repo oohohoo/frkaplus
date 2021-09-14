@@ -977,8 +977,8 @@ map.on("load", function (e) {
               .setPopup(new mapboxgl.Popup()
               //.setHTML(marker.properties.title))
               .setHTML(
-  '<h3><a href="' + 
-  feature.properties.url + '">' 
+                '<h3><a href="' + 
+  marker.properties.url + '">' 
   + marker.properties.title + '</a></h3>' +
   '<h3>' +
   marker.properties.title +
@@ -992,6 +992,13 @@ map.on("load", function (e) {
   
     });
 });
+
+
+.setHTML(
+  '<h3><a href="' + 
+  feature.properties.URL + '">' 
+  + feature.properties.Company + '</a></h3>')
+
 
 
 
