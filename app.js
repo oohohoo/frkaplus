@@ -609,7 +609,7 @@ barba.hooks.afterEnter((data) => {
 
 barba.init({
       timeout: 7000,
-      debug: false,
+      debug: true,
       prefetch: true,
 /*
   ================================================================================
