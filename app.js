@@ -2558,7 +2558,7 @@ var followArea = document.querySelectorAll('.button-link');
 var reference = document.querySelectorAll('.reference-box');
 var sorty = document.querySelectorAll('.sorty');
 var ugasi = document.querySelectorAll('.ugasi');
-
+var links = document.querySelectorAll('a');
 
 /* var page = document.querySelector('.posts'); */
 
@@ -2580,7 +2580,26 @@ ugasi.forEach(function (el) {
     gsap.to(cursor, 0.25, {scale: 1, autoAlpha: 1 });
   });
 
-})
+});
+
+// links
+// ************
+
+links.forEach(function (el) {
+
+   gsap.set(cursor, {autoAlpha: 1, backgroundColor: "#231f20", scale: 1});
+
+  el.addEventListener('mouseover', () => {
+    gsap.to(cursor, 0.25, {scale: 3, backgroundColor: "#F7E725", /* autoAlpha: 1 */});
+    /*     page.addEventListener('mousemove', moveCircle);*/
+  });
+
+  el.addEventListener('mouseout', () => {
+    gsap.to(cursor, 0.25, {scale: 1,backgroundColor: "#231f20", /* autoAlpha: 0 */});
+  });
+
+
+});
 
 
 
