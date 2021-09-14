@@ -979,7 +979,7 @@ map.on("load", function (e) {
               .setHTML(
   '<h3><a href="' + 
   feature.properties.URL + '">' 
-  + marker.properties.title + '</a></h3>')
+  + marker.properties.title + '</a></h3>' +
   '<h3>' +
   marker.properties.title +
   '</h3>' +
