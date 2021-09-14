@@ -2558,7 +2558,7 @@ var followArea = document.querySelectorAll('.button-link');
 var reference = document.querySelectorAll('.reference-box');
 var sorty = document.querySelectorAll('.sorty');
 var ugasi = document.querySelectorAll('.ugasi');
-var links = document.querySelectorAll('a');
+var links = document.querySelectorAll('.mapboxgl-popup-content a');
 
 /* var page = document.querySelector('.posts'); */
 
