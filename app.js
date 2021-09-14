@@ -993,14 +993,14 @@ map.on("load", function (e) {
     });
 });
 
-
+/* 
 .setHTML(
   '<h3><a href="' + 
   feature.properties.URL + '">' 
   + feature.properties.Company + '</a></h3>')
 
 
-
+ */
 
 
 
