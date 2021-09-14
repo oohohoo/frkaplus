@@ -980,10 +980,7 @@ map.on("load", function (e) {
                 '<h3><a href="' + 
   marker.properties.url + '">' 
   + marker.properties.title + '</a></h3>' +
-  '<h3>' +
-  marker.properties.title +
-  '</h3>' +
-  '<p>' +
+   '<p>' +
   marker.properties.description +
   '</p>'
   ))
