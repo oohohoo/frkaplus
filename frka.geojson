@@ -17,7 +17,8 @@
       "type": "Feature",
       "properties": {
         "title": "Avenija Dubrovnik – Rotor",
-        "description": "Smjer zapad"
+        "description": "Smjer zapad",
+        "url": "https://frkaplus.hr/lokacije/avenija-dubrovnik-rotor-2/"
       },
       "geometry": {
         "coordinates": [15.95894, 45.77703],
@@ -28,7 +29,8 @@
       "type": "Feature",
       "properties": {
         "title": "Avenija Dubrovnik – Velesajam",
-        "description": "Smjer istok"
+        "description": "Smjer istok",
+        "url": "https://frkaplus.hr/lokacije/avenija-dubrovnik-velesajam/" 
       },
       "geometry": {
         "coordinates": [15.95976, 45.77704],
@@ -39,7 +41,8 @@
       "type": "Feature",
       "properties": {
         "title": "Avenija Dubrovnik – Velesajam",
-        "description": "Smjer zapad"
+        "description": "Smjer zapad",
+        "url": "https://frkaplus.hr/lokacije/avenija-dubrovnik-velesajam-2/" 
       },
       "geometry": {
         "coordinates": [15.95974, 45.77702],
@@ -50,7 +53,8 @@
       "type": "Feature",
       "properties": {
         "title": "Branimirova – Svetice",
-        "description": "Smjer sjever"
+        "description": "Smjer sjever",
+        "url": "https://frkaplus.hr/lokacije/branimirova-svetice/" 
       },
       "geometry": {
         "coordinates": [16.01357, 45.81135],
@@ -61,7 +65,8 @@
       "type": "Feature",
       "properties": {
         "title": "Branimirova – Svetice",
-        "description": "Smjer jug"
+        "description": "Smjer jug",
+        "url": "https://frkaplus.hr/lokacije/branimirova-svetice-2/" 
       },
       "geometry": {
         "coordinates": [16.01355, 45.81133],
@@ -72,7 +77,8 @@
       "type": "Feature",
       "properties": {
         "title": "Branimirova – Heinzelova",
-        "description": "Smjer jug"
+        "description": "Smjer jug",
+        "url": "https://frkaplus.hr/lokacije/branimirova-heinzelova-2/" 
       },
       "geometry": {
         "coordinates": [16.00368, 45.80883],
@@ -84,7 +90,8 @@
       "type": "Feature",
       "properties": {
         "title": "Branimirova – Heinzelova A",
-        "description": "Smjer sjever"
+        "description": "Smjer sjever",
+        "url": "https://frkaplus.hr/lokacije/branimirova-heinzelova/" 
       },
       "geometry": {
         "coordinates": [16.00366, 45.80881],
@@ -95,7 +102,8 @@
       "type": "Feature",
       "properties": {
         "title": "Branimirova – Heinzelova B",
-        "description": "Smjer sjever"
+        "description": "Smjer sjever",
+        "url": "https://frkaplus.hr/lokacije/branimirova-heinzelova-b/" 
       },
       "geometry": {
         "coordinates": [16.00364, 45.80879],
@@ -106,7 +114,8 @@
       "type": "Feature",
       "properties": {
         "title": "Branimirova – Držićeva",
-        "description": "Smjer jug"
+        "description": "Smjer jug",
+        "url": "https://frkaplus.hr/lokacije/branimirova-drziceva/" 
       },
       "geometry": {
         "coordinates": [15.99269, 45.80598],
@@ -117,7 +126,8 @@
       "type": "Feature",
       "properties": {
         "title": "Branimirova – Držićeva A",
-        "description": "Smjer sjever"
+        "description": "Smjer sjever",
+        "url": "https://frkaplus.hr/lokacije/branimirova-drziceva-2/" 
       },
       "geometry": {
         "coordinates": [15.99267, 45.80596],
@@ -129,7 +139,8 @@
       "type": "Feature",
       "properties": {
         "title": "Branimirova – Držićeva B",
-        "description": "Smjer sjever"
+        "description": "Smjer sjever",
+        "url": "https://frkaplus.hr/lokacije/branimirova-drziceva-b/" 
       },
       "geometry": {
         "coordinates": [15.99265, 45.80594],
@@ -141,7 +152,8 @@
       "type": "Feature",
       "properties": {
         "title": "Zavrtnica A",
-        "description": "Smjer jug"
+        "description": "Smjer jug",
+        "url": "https://frkaplus.hr/lokacije/zavrtnica/" 
       },
       "geometry": {
         "coordinates": [15.99954, 45.80770],
@@ -152,7 +164,8 @@
       "type": "Feature",
       "properties": {
         "title": "Zavrtnica B",
-        "description": "Smjer jug"
+        "description": "Smjer jug",
+        "url": "https://frkaplus.hr/lokacije/zavrtnica-b/" 
       },
       "geometry": {
         "coordinates": [15.99952, 45.80768],
@@ -163,7 +176,8 @@
       "type": "Feature",
       "properties": {
         "title": "Zavrtnica",
-        "description": "Smjer sjever"
+        "description": "Smjer sjever",
+        "url": "https://frkaplus.hr/lokacije/zavrtnica-2/" 
       },
       "geometry": {
         "coordinates": [15.99952, 45.80768],
@@ -174,7 +188,8 @@
       "type": "Feature",
       "properties": {
         "title": "Branimirova - Divke Budaka",
-        "description": "Smjer jug"
+        "description": "Smjer jug",
+        "url": "https://frkaplus.hr/lokacije/branimirova-divke-budaka/" 
       },
       "geometry": {
         "coordinates": [16.01968, 45.81320],
@@ -185,7 +200,8 @@
       "type": "Feature",
       "properties": {
         "title": "Čulinečka",
-        "description": "Smjer sjever"
+        "description": "Smjer sjever",
+        "url": "https://frkaplus.hr/lokacije/culinecka/" 
       },
       "geometry": {
         "coordinates": [16.06388, 45.82088],
@@ -196,7 +212,8 @@
       "type": "Feature",
       "properties": {
         "title": "Strojarska",
-        "description": "Smjer jug"
+        "description": "Smjer jug",
+        "url": "https://frkaplus.hr/lokacije/strojarska/" 
       },
       "geometry": {
         "coordinates": [15.99140, 45.80561],
@@ -207,7 +224,8 @@
       "type": "Feature",
       "properties": {
         "title": "Strojarska",
-        "description": "Smjer sjever"
+        "description": "Smjer sjever",
+        "url": "https://frkaplus.hr/lokacije/strojarska-2/" 
       },
       "geometry": {
         "coordinates": [15.99138, 45.80558],
@@ -218,7 +236,8 @@
       "type": "Feature",
       "properties": {
         "title": "Slavonska - Žitnjak",
-        "description": "Smjer istok"
+        "description": "Smjer istok",
+        "url": "https://frkaplus.hr/lokacije/slavonska-zitnjak/" 
       },
       "geometry": {
         "coordinates": [16.06299, 45.80208],
@@ -229,7 +248,8 @@
       "type": "Feature",
       "properties": {
         "title": "Slavonska - Žitnjak A",
-        "description": "Smjer zapad"
+        "description": "Smjer zapad",
+        "url": "https://frkaplus.hr/lokacije/slavonska-zitnjak-2/" 
       },
       "geometry": {
         "coordinates": [16.06297, 45.80206],
@@ -240,7 +260,8 @@
       "type": "Feature",
       "properties": {
         "title": "Slavonska - Žitnjak B",
-        "description": "Smjer zapad"
+        "description": "Smjer zapad",
+        "url": "https://frkaplus.hr/lokacije/slavonska-zitnjak-b/" 
       },
       "geometry": {
         "coordinates": [16.06295, 45.80204],
@@ -251,7 +272,8 @@
       "type": "Feature",
       "properties": {
         "title": "Savska - Kod Cibone",
-        "description": "Smjer jug"
+        "description": "Smjer jug",
+        "url": "https://frkaplus.hr/lokacije/savska-kod-cibone/" 
       },
       "geometry": {
         "coordinates": [15.96428, 45.80237],
@@ -262,7 +284,8 @@
       "type": "Feature",
       "properties": {
         "title": "Savska - Kod Cibone",
-        "description": "Smjer sjever"
+        "description": "Smjer sjever",
+        "url": "https://frkaplus.hr/lokacije/savska-kod-cibone-2/" 
       },
       "geometry": {
         "coordinates": [15.96426, 45.80235],
@@ -273,7 +296,8 @@
       "type": "Feature",
       "properties": {
         "title": "Savska - Veslačka",
-        "description": "Smjer jug"
+        "description": "Smjer jug",
+        "url": "https://frkaplus.hr/lokacije/savska-veslacka/" 
       },
       "geometry": {
         "coordinates": [15.95461, 45.78821],
@@ -284,7 +308,8 @@
       "type": "Feature",
       "properties": {
         "title": "Savska - Veslačka",
-        "description": "Smjer sjever"
+        "description": "Smjer sjever",
+        "url": "https://frkaplus.hr/lokacije/savska-veslacka-2/" 
       },
       "geometry": {
         "coordinates": [15.95459, 45.78818],
@@ -295,7 +320,8 @@
       "type": "Feature",
       "properties": {
         "title": "Savska - Jukićeva",
-        "description": "Smjer jug - Backlight"
+        "description": "Smjer jug - Backlight",
+        "url": "https://frkaplus.hr/lokacije/savska-jukiceva/" 
       },
       "geometry": {
         "coordinates": [15.96578, 45.80460],
@@ -306,7 +332,8 @@
       "type": "Feature",
       "properties": {
         "title": "Savska - Jukićeva",
-        "description": "Smjer sjever - Backlight"
+        "description": "Smjer sjever - Backlight",
+        "url": "https://frkaplus.hr/lokacije/savska-jukiceva-2/" 
       },
       "geometry": {
         "coordinates": [15.96576, 45.80458],
@@ -317,7 +344,8 @@
       "type": "Feature",
       "properties": {
         "title": "Tratinska - Kranjčevićeva",
-        "description": "Smjer istok"
+        "description": "Smjer istok",
+        "url": "https://frkaplus.hr/lokacije/tratinska-kranjceviceva/" 
       },
       "geometry": {
         "coordinates": [15.96320, 45.80342],
@@ -328,7 +356,8 @@
       "type": "Feature",
       "properties": {
         "title": "Tratinska - Kranjčevićeva",
-        "description": "Smjer zapad"
+        "description": "Smjer zapad",
+        "url": "https://frkaplus.hr/lokacije/tratinska-kranjceviceva-2/" 
       },
       "geometry": {
         "coordinates": [15.96318, 45.80340],
@@ -339,7 +368,8 @@
       "type": "Feature",
       "properties": {
         "title": "Zagrebačka - Ljubljanska",
-        "description": "Smjer istok"
+        "description": "Smjer istok",
+        "url": "https://frkaplus.hr/lokacije/zagrebacka-ljubljanska/" 
       },
       "geometry": {
         "coordinates": [15.95719, 45.79430],
@@ -350,7 +380,8 @@
       "type": "Feature",
       "properties": {
         "title": "Zagrebačka - Ljubljanska",
-        "description": "Smjer zapad"
+        "description": "Smjer zapad",
+        "url": "https://frkaplus.hr/lokacije/zagrebacka-ljubljanska-2/" 
       },
       "geometry": {
         "coordinates": [15.95717, 45.79428],
@@ -361,7 +392,8 @@
       "type": "Feature",
       "properties": {
         "title": "Vukovarska",
-        "description": "Smjer istok"
+        "description": "Smjer istok",
+        "url": "https://frkaplus.hr/lokacije/vukovarska/" 
       },
       "geometry": {
         "coordinates": [15.96063, 45.79933],
@@ -372,7 +404,8 @@
       "type": "Feature",
       "properties": {
         "title": "Vukovarska",
-        "description": "Smjer zapad"
+        "description": "Smjer zapad",
+        "url": "https://frkaplus.hr/lokacije/vukovarska-2/" 
       },
       "geometry": {
         "coordinates": [15.96061, 45.79931],
@@ -383,7 +416,8 @@
       "type": "Feature",
       "properties": {
         "title": "Miramarska",
-        "description": "Smjer jug"
+        "description": "Smjer jug",
+        "url": "https://frkaplus.hr/lokacije/miramarska/" 
       },
       "geometry": {
         "coordinates": [15.97410, 45.80443],
@@ -394,7 +428,8 @@
       "type": "Feature",
       "properties": {
         "title": "Jukićeva - Adžijina",
-        "description": "Smjer jug"
+        "description": "Smjer jug",
+        "url": "https://frkaplus.hr/lokacije/jukiceva-adzijina/" 
       },
       "geometry": {
         "coordinates": [15.96160, 45.80758],
@@ -405,7 +440,8 @@
       "type": "Feature",
       "properties": {
         "title": "Jukićeva - Adžijina",
-        "description": "Smjer sjever"
+        "description": "Smjer sjever",
+        "url": "https://frkaplus.hr/lokacije/jukiceva-adzijina-2/" 
       },
       "geometry": {
         "coordinates": [15.96158, 45.80756],
@@ -416,7 +452,8 @@
       "type": "Feature",
       "properties": {
         "title": "Škorpikova - Aleja Bologna",
-        "description": "Smjer jug"
+        "description": "Smjer jug",
+        "url": "https://frkaplus.hr/lokacije/skorpikova-aleja-bologna/" 
       },
       "geometry": {
         "coordinates": [15.86348, 45.81406],
@@ -427,7 +464,8 @@
       "type": "Feature",
       "properties": {
         "title": "Škorpikova - Aleja Bologna",
-        "description": "Smjer sjever"
+        "description": "Smjer sjever",
+        "url": "https://frkaplus.hr/lokacije/skorpikova-aleja-bologna-2/" 
       },
       "geometry": {
         "coordinates": [15.86346, 45.81404],
@@ -438,7 +476,8 @@
       "type": "Feature",
       "properties": {
         "title": "Zagrebačka cesta",
-        "description": "Smjer jug"
+        "description": "Smjer jug",
+        "url": "https://frkaplus.hr/lokacije/zagrebacka-cesta/" 
       },
       "geometry": {
         "coordinates": [15.92956, 45.81047],
@@ -449,7 +488,8 @@
       "type": "Feature",
       "properties": {
         "title": "Zagrebačka cesta",
-        "description": "Smjer sjever"
+        "description": "Smjer sjever",
+        "url": "https://frkaplus.hr/lokacije/zagrebacka-cesta-2/"       
       },
       "geometry": {
         "coordinates": [15.92954, 45.81045],
@@ -460,7 +500,8 @@
       "type": "Feature",
       "properties": {
         "title": "Oranice",
-        "description": "Smjer jug"
+        "description": "Smjer jug",
+        "url": "https://frkaplus.hr/lokacije/oranice/" 
       },
       "geometry": {
         "coordinates": [ 15.90672, 45.81173],
@@ -471,7 +512,8 @@
       "type": "Feature",
       "properties": {
         "title": "Oranice",
-        "description": "Smjer sjever"
+        "description": "Smjer sjever",
+        "url": "https://frkaplus.hr/lokacije/oranice-2/" 
       },
       "geometry": {
         "coordinates": [ 15.90670, 45.81171],
@@ -482,7 +524,8 @@
       "type": "Feature",
       "properties": {
         "title": "Resnik - Čulinečka",
-        "description": "Smjer jug"
+        "description": "Smjer jug",
+        "url": "https://frkaplus.hr/lokacije/resnik-culinecka/" 
       },
       "geometry": {
         "coordinates": [16.06620, 45.80783],
@@ -494,7 +537,8 @@
       "type": "Feature",
       "properties": {
         "title": "Resnik - Čulinečka",
-        "description": "Smjer sjever"
+        "description": "Smjer sjever",
+        "url": "https://frkaplus.hr/lokacije/resnik-culinecka-2/" 
       },
       "geometry": {
         "coordinates": [16.06618, 45.80781],
@@ -506,7 +550,8 @@
       "type": "Feature",
       "properties": {
         "title": "Cara Hadrijana",
-        "description": "Smjer zapad"
+        "description": "Smjer zapad",
+        "url": "https://frkaplus.hr/lokacije/cara-hadrijana/" 
       },
       "geometry": {
         "coordinates": [18.70376, 45.55904],
@@ -517,7 +562,8 @@
       "type": "Feature",
       "properties": {
         "title": "Cara Hadrijana",
-        "description": "Smjer istok"
+        "description": "Smjer istok",
+        "url": "https://frkaplus.hr/lokacije/cara-hadrijana-2/"
       },
       "geometry": {
         "coordinates": [18.70374, 45.55902],
@@ -528,7 +574,8 @@
       "type": "Feature",
       "properties": {
         "title": "Kneza Trpimira",
-        "description": "Smjer jug"
+        "description": "Smjer jug",
+        "url": "https://frkaplus.hr/lokacije/kneza-trpimira/"        
       },
       "geometry": {
         "coordinates": [18.69479, 45.55344],
@@ -539,7 +586,8 @@
       "type": "Feature",
       "properties": {
         "title": "Kneza Trpimira",
-        "description": "Smjer sjever"
+        "description": "Smjer sjever",
+        "url": "https://frkaplus.hr/lokacije/kneza-trpimira-2/" 
       },
       "geometry": {
         "coordinates": [18.69477, 45.55342],
@@ -550,7 +598,8 @@
       "type": "Feature",
       "properties": {
         "title": "Obilaznica Beli Manastir",
-        "description": "Smjer jug"
+        "description": "Smjer jug",
+        "url": "https://frkaplus.hr/lokacije/obilaznica-beli-manastir/" 
       },
       "geometry": {
         "coordinates": [18.63124, 45.55921],
@@ -561,7 +610,8 @@
       "type": "Feature",
       "properties": {
         "title": "Obilaznica Beli Manastir",
-        "description": "Smjer sjever"
+        "description": "Smjer sjever",
+        "url": "https://frkaplus.hr/lokacije/obilaznica-beli-manastir-2/" 
       },
       "geometry": {
         "coordinates": [18.63122, 45.55918],
@@ -572,7 +622,8 @@
       "type": "Feature",
       "properties": {
         "title": "Svilajska ulica",
-        "description": "Smjer jug razdvojeni"
+        "description": "Smjer jug razdvojeni",
+        "url": "https://frkaplus.hr/lokacije/svilajska-ulica/" 
       },
       "geometry": {
         "coordinates": [18.63507, 45.55864],
@@ -583,7 +634,8 @@
       "type": "Feature",
       "properties": {
         "title": "Svilajska ulica",
-        "description": "Smjer sjever razdvojeni"
+        "description": "Smjer sjever razdvojeni",
+        "url": "https://frkaplus.hr/lokacije/svilajska-ulica-2/" 
       },
       "geometry": {
         "coordinates": [18.63509, 45.55866],
@@ -594,7 +646,8 @@
       "type": "Feature",
       "properties": {
         "title": "Varaždinska ulica",
-        "description": "Smjer zapad"
+        "description": "Smjer zapad",
+        "url": "https://frkaplus.hr/lokacije/varazdinska-ulica/" 
       },
       "geometry": {
         "coordinates": [16.81930, 46.16869],
@@ -605,7 +658,8 @@
       "type": "Feature",
       "properties": {
         "title": "Varaždinska ulica",
-        "description": "Smjer istok"
+        "description": "Smjer istok",
+        "url": "https://frkaplus.hr/lokacije/varazdinska-ulica-2/" 
       },
       "geometry": {
         "coordinates": [16.81932, 46.16871],
@@ -616,7 +670,8 @@
       "type": "Feature",
       "properties": {
         "title": "T. Smičiklasa",
-        "description": "Smjer jug"
+        "description": "Smjer jug",
+        "url": "https://frkaplus.hr/lokacije/t-smiciklasa/" 
       },
       "geometry": {
         "coordinates": [15.55043, 45.48693],
@@ -627,7 +682,8 @@
       "type": "Feature",
       "properties": {
         "title": "Slavonska Avenija",
-        "description": "Smjer zapad"
+        "description": "Smjer zapad",
+        "url": "https://frkaplus.hr/lokacije/slavonska-avenija-3/" 
       },
       "geometry": {
         "coordinates": [15.97155, 45.79493],
@@ -638,7 +694,8 @@
       "type": "Feature",
       "properties": {
         "title": "Slavonska Avenija",
-        "description": "Smjer istok"
+        "description": "Smjer istok",
+        "url": "https://frkaplus.hr/lokacije/slavonska-avenija-4/" 
       },
       "geometry": {
         "coordinates": [15.97157, 45.79495],
@@ -649,7 +706,8 @@
       "type": "Feature",
       "properties": {
         "title": "Kvaternikov trg",
-        "description": ""
+        "description": "",
+        "url": "https://frkaplus.hr/lokacije/kvaternikov-trg/" 
       },
       "geometry": {
         "coordinates": [15.99729, 45.81527],
@@ -660,7 +718,8 @@
       "type": "Feature",
       "properties": {
         "title": "Put Murvice 6",
-        "description": ""
+        "description": "",
+        "url": "https://frkaplus.hr/lokacije/put-murvice-6/" 
       },
       "geometry": {
         "coordinates": [15.23969, 44.10907],
@@ -671,7 +730,8 @@
       "type": "Feature",
       "properties": {
         "title": "Slavonska Avenija",
-        "description": "Smjer zapad"
+        "description": "Smjer zapad",
+        "url": "https://frkaplus.hr/lokacije/slavonska-avenija/" 
       },
       "geometry": {
         "coordinates": [15.97447, 45.79496],
@@ -682,7 +742,8 @@
       "type": "Feature",
       "properties": {
         "title": "Slavonska Avenija",
-        "description": "Smjer istok"
+        "description": "Smjer istok",
+        "url": "https://frkaplus.hr/lokacije/slavonska-avenija-2/" 
       },
       "geometry": {
         "coordinates": [15.97445, 45.79494],
@@ -693,7 +754,8 @@
       "type": "Feature",
       "properties": {
         "title": "Radnička cesta 220",
-        "description": "Smjer jug"
+        "description": "Smjer jug",
+        "url": "https://frkaplus.hr/lokacije/radnicka-cesta-220/" 
       },
       "geometry": {
         "coordinates": [16.03934, 45.78590],
@@ -704,7 +766,8 @@
       "type": "Feature",
       "properties": {
         "title": "Radnička cesta 220",
-        "description": "Smjer sjever"
+        "description": "Smjer sjever",
+        "url": "https://frkaplus.hr/lokacije/radnicka-cesta-220-2/" 
       },
       "geometry": {
         "coordinates": [16.03932, 45.78588],
@@ -715,7 +778,8 @@
       "type": "Feature",
       "properties": {
         "title": "Radnička cesta 171a",
-        "description": "Smjer jug"
+        "description": "Smjer jug",
+        "url": "https://frkaplus.hr/lokacije/radnicka-cesta-171a/" 
       },
       "geometry": {
         "coordinates": [16.03404, 45.78916],
@@ -726,7 +790,8 @@
       "type": "Feature",
       "properties": {
         "title": "Radnička cesta 171a",
-        "description": "Smjer sjever"
+        "description": "Smjer sjever",
+        "url": "https://frkaplus.hr/lokacije/radnicka-cesta-171a-2/" 
       },
       "geometry": {
         "coordinates": [16.03402, 45.78914],
@@ -737,7 +802,8 @@
       "type": "Feature",
       "properties": {
         "title": "Most Mladosti",
-        "description": "Smjer sjever"
+        "description": "Smjer sjever",
+        "url": "https://frkaplus.hr/lokacije/most-mladosti/" 
       },
       "geometry": {
         "coordinates": [16.00172, 45.78337],
@@ -748,7 +814,8 @@
       "type": "Feature",
       "properties": {
         "title": "Zagrebačka avenija",
-        "description": "Smjer zapad"
+        "description": "Smjer zapad",
+        "url": "https://frkaplus.hr/lokacije/zagrebacka-avenija/" 
       },
       "geometry": {
         "coordinates": [15.94786, 45.79406],
@@ -759,7 +826,8 @@
       "type": "Feature",
       "properties": {
         "title": "Bosiljevo",
-        "description": "Smjer Dalmacija"
+        "description": "Smjer Dalmacija",
+        "url": "https://frkaplus.hr/lokacije/bosiljevo/" 
       },
       "geometry": {
         "coordinates": [15.31180, 45.42878],
@@ -770,7 +838,8 @@
       "type": "Feature",
       "properties": {
         "title": "Bosiljevo",
-        "description": "Smjer Zagreb"
+        "description": "Smjer Zagreb",
+        "url": "https://frkaplus.hr/lokacije/bosiljevo-2/" 
       },
       "geometry": {
         "coordinates": [15.31182, 45.42880],
@@ -781,7 +850,8 @@
       "type": "Feature",
       "properties": {
         "title": "Modruš",
-        "description": "Smjer Dalmacija"
+        "description": "Smjer Dalmacija",
+        "url": "https://frkaplus.hr/lokacije/modrus/" 
       },
       "geometry": {
         "coordinates": [15.24310, 45.12777],
@@ -792,7 +862,8 @@
       "type": "Feature",
       "properties": {
         "title": "Modruš",
-        "description": "Smjer Zagreb"
+        "description": "Smjer Zagreb",
+        "url": "https://frkaplus.hr/lokacije/modrus-2/" 
       },
       "geometry": {
         "coordinates": [15.24312, 45.12779],
@@ -803,7 +874,8 @@
       "type": "Feature",
       "properties": {
         "title": "Mitrović",
-        "description": "A"
+        "description": "A",
+        "url": "https://frkaplus.hr/lokacije/mitrovic/" 
       },
       "geometry": {
         "coordinates": [15.26624, 44.11681],
@@ -814,7 +886,8 @@
       "type": "Feature",
       "properties": {
         "title": "Mitrović",
-        "description": "B"
+        "description": "B",
+        "url": "https://frkaplus.hr/lokacije/mitrovic-2/" 
       },
       "geometry": {
         "coordinates": [15.26626, 44.11683],
@@ -825,7 +898,8 @@
       "type": "Feature",
       "properties": {
         "title": "Intermod",
-        "description": "A"
+        "description": "A",
+        "url": "https://frkaplus.hr/lokacije/intermod/" 
       },
       "geometry": {
         "coordinates": [15.26349, 44.10357],
@@ -836,7 +910,8 @@
       "type": "Feature",
       "properties": {
         "title": "Intermod",
-        "description": "B"
+        "description": "B",
+        "url": "https://frkaplus.hr/lokacije/intermod-2/" 
       },
       "geometry": {
         "coordinates": [15.26347, 44.10355],
@@ -847,7 +922,8 @@
       "type": "Feature",
       "properties": {
         "title": "Od Dalmare prema gradu",
-        "description": ""
+        "description": "",
+        "url": "https://frkaplus.hr/lokacije/od-dalmare-prema-gradu/" 
       },
       "geometry": {
         "coordinates": [15.91320, 43.71509],
@@ -858,7 +934,8 @@
       "type": "Feature",
       "properties": {
         "title": "Od Autoputa prema gradu",
-        "description": ""
+        "description": "",
+        "url": "https://frkaplus.hr/lokacije/od-autoputa-prema-gradu/" 
       },
       "geometry": {
         "coordinates": [15.91322, 43.71511],
@@ -869,7 +946,8 @@
       "type": "Feature",
       "properties": {
         "title": "Od grada prema Dalmare",
-        "description": ""
+        "description": "",
+        "url": "https://frkaplus.hr/lokacije/od-grada-prema-dalmare/" 
       },
       "geometry": {
         "coordinates": [15.91318, 43.71507],
@@ -880,7 +958,8 @@
       "type": "Feature",
       "properties": {
         "title": "Lanište",
-        "description": "Smjer istok - Backlight"
+        "description": "Smjer istok - Backlight",
+        "url": "https://frkaplus.hr/lokacije/laniste/" 
       },
       "geometry": {
         "coordinates": [15.94609, 45.77499],
@@ -891,7 +970,8 @@
       "type": "Feature",
       "properties": {
         "title": "Lanište",
-        "description": "Smjer zapad - Backlight"
+        "description": "Smjer zapad - Backlight",
+        "url": "https://frkaplus.hr/lokacije/laniste-2/" 
       },
       "geometry": {
         "coordinates": [15.94607, 45.77497],
@@ -902,7 +982,8 @@
       "type": "Feature",
       "properties": {
         "title": "Most Slobode",
-        "description": "Smjer jug"
+        "description": "Smjer jug",
+        "url": "https://frkaplus.hr/lokacije/most-slobode/" 
       },
       "geometry": {
         "coordinates": [15.97900, 45.79404],
@@ -913,7 +994,8 @@
       "type": "Feature",
       "properties": {
         "title": "Most Mladosti",
-        "description": "Smjer jug"
+        "description": "Smjer jug",
+        "url": "https://frkaplus.hr/lokacije/most-mladosti-2/" 
       },
       "geometry": {
         "coordinates": [16.00172, 45.78337],
@@ -924,7 +1006,8 @@
       "type": "Feature",
       "properties": {
         "title": "Zagrebačka Avenija",
-        "description": "Smjer istok"
+        "description": "Smjer istok",
+        "url": "https://frkaplus.hr/lokacije/zagrebacka-avenija-2/" 
       },
       "geometry": {
         "coordinates": [15.94786, 45.79406],
@@ -935,7 +1018,8 @@
       "type": "Feature",
       "properties": {
         "title": "Poljana 4",
-        "description": ""
+        "description": "",
+        "url": "https://frkaplus.hr/lokacije/poljana-4/" 
       },
       "geometry": {
         "coordinates": [15.89397, 43.73458],
