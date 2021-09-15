@@ -1881,10 +1881,10 @@ function zoomMobile() {
           start: "top bottom",
           end: "bottom 20%"
         },
-        y: "-100px",
+        y: "-80px",
         delay:0.1
       });
-/*
+
       gsap.to(".zz2", {
         scrollTrigger: {
           trigger: ".zz2",
@@ -1895,7 +1895,7 @@ function zoomMobile() {
         y: "-100px",
         delay:0.2
       });
-  
+  /*
       gsap.to(".zz3", {
         scrollTrigger: {
           trigger: ".zz3",
