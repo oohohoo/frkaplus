@@ -555,8 +555,8 @@ function initPageTransitions() {
     // this hook will be called for each transitions
     //data.current.url is the page path.
     
-    gtag('config', 'UA-207655205-1', {'page_path': data.current.url});
-    console.log("GOOGLE ANALYTICS NUOVO");
+    gtag('config', 'UA-207655205-1');
+    console.log("GOOGLE ANALYTICS ETOGA");
   });
   
   barba.hooks.enter((data) => {
