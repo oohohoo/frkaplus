@@ -158,15 +158,14 @@ if (document.querySelector('#lokacije')) {
     if (eval == "above") return ((y < (viewportHeight + scrolltop)));
 } 
 
-   locoScroll.on('scroll', func => {
+ /*   locoScroll.on('scroll', func => {
     if (checkVisible($('#selectone'))) {
  $("#selectone, #selecttwo, #sorto").select2('close');
-/*  console.log("skrolam i zatvaram SELECT");
- */} 
+} 
 else {
   
 }
-});
+}); */
 
 } 
  
