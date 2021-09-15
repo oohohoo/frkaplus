@@ -552,13 +552,13 @@ function initPageTransitions() {
   });
   
   barba.hooks.afterEnter((data) => {
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-207549905-1"></script> 
-
+    // this hook will be called for each transitions
+    //data.current.url is the page path.
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-  
-    gtag('config', 'UA-207549905-1');
+    
+    gtag('config', 'UA-207549905-1', {'page_path': data.current.url});
     console.log("GOOGLE ANALYTICS TRIGGERED");
   });
   
