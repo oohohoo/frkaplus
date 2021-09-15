@@ -1790,7 +1790,7 @@ function outlinehero() {
       start: "top 17%", 
       end: "bottom top", 
       scrub: 1,
-      markers: true, 
+      /* markers: true,  */
     },
     x: 500
   });
