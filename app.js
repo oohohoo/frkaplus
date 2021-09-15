@@ -1787,11 +1787,11 @@ function outlinehero() {
     scrollTrigger:{
     scroller: ".smooth-scroll",
       trigger: ".img__wrapper--hero", 
-      start: "top bottom", 
+      start: "top 10%", 
       end: "bottom top", 
       scrub: 1
     },
-   // x: 500
+    x: 500
   });
   
     gsap.set('.filledtwo, .outlinetwo', {x:500});  
@@ -1803,7 +1803,7 @@ function outlinehero() {
       end: "bottom top", 
       scrub: 1
     },
-    //x: -500
+    x: -500
   });
 }
 
