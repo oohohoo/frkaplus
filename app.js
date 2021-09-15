@@ -552,10 +552,12 @@ function initPageTransitions() {
   });
   
   barba.hooks.afterEnter((data) => {
-    // this hook will be called for each transitions
-    //data.current.url is the page path.
-    gtag('config', 'UA-207549905-1', {'page_path': path});
-    console.log('view sent', path);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-207549905-1');
+    console.log("GOOGLE ANALYTICS TRIGGERED");
   });
   
   barba.hooks.enter((data) => {
