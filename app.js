@@ -1892,7 +1892,7 @@ function zoomMobile() {
           start: "top bottom",
           end: "bottom 20%"
         },
-        y: "-120px",
+        y: "-250px",
         delay:0.2
       });
  
