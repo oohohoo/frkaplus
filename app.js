@@ -1873,18 +1873,7 @@ function zoomMobile() {
 
     "(max-width: 991px)": function() {
 
-      gsap.to("[data-speed]", {
-        y: (i, el) => (1 - parseFloat(el.getAttribute("data-speed"))) * ScrollTrigger.maxScroll(window) ,
-        ease: "none",
-        scrollTrigger: {
-          start: 0,
-          end: "max",
-          invalidateOnRefresh: true,
-          scrub: 0
-        }
-      });
-
-      /*
+      
       gsap.to(".zz1", {
         scrollTrigger: {
           trigger: ".zz1",
@@ -1895,7 +1884,7 @@ function zoomMobile() {
         y: "-10px",
         delay:0.1
       });
-
+/*
       gsap.to(".zz2", {
         scrollTrigger: {
           trigger: ".zz2",
@@ -1951,7 +1940,6 @@ function zoomMobile() {
         delay:0.6
       });
  
-
 */
 
  }
