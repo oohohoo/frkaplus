@@ -557,8 +557,8 @@ function initPageTransitions() {
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
-    gtag('config', 'UA-207549905-1', {'page_path': path});
+    
+    gtag('config', 'UA-207549905-1', {'page_path': data.current.url});
     console.log("GOOGLE ANALYTICS TRIGGERED");
   });
   
