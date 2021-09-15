@@ -1881,7 +1881,7 @@ function zoomMobile() {
           start: "top bottom",
           end: "bottom 20%"
         },
-        y: "-10px",
+        y: "-100px",
         delay:0.1
       });
 /*
