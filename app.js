@@ -554,10 +554,9 @@ function initPageTransitions() {
   barba.hooks.afterEnter((data) => {
     // this hook will be called for each transitions
     //data.current.url is the page path.
-    ga('create', 'UA-207549905-1', {'page_path': data.current.url});
-ga('send', 'pageview');
-   // gtag('config', 'UA-207549905-1', {'page_path': data.current.url});
-    console.log("GOOGLE ANALYTICS OPALA");
+    
+    gtag('config', 'UA-207549905-1', {'page_path': data.current.url});
+    console.log("GOOGLE ANALYTICS SEND");
   });
   
   barba.hooks.enter((data) => {
