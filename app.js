@@ -1787,7 +1787,7 @@ function outlinehero() {
     scrollTrigger:{
     scroller: ".smooth-scroll",
       trigger: ".img__wrapper--hero", 
-      start: "top 30px", 
+      start: "top bottom", 
       end: "bottom top", 
       scrub: 1,
       markers: true, 
@@ -1800,7 +1800,7 @@ function outlinehero() {
     scrollTrigger:{
     scroller: ".smooth-scroll",
       trigger: ".img__wrapper--hero", 
-      start: "top 30px", 
+      start: "top bottom", 
       end: "bottom top", 
       scrub: 1
     },
