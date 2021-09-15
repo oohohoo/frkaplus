@@ -987,7 +987,7 @@ map.on("load", function (e) {
               //.setHTML(marker.properties.title))
               .setHTML(
                 '<h3><a href="' + 
-  marker.properties.url + '" target="_blank">' 
+  marker.properties.url + '" target="_self">' 
   + marker.properties.title + '</a></h3>' +
    '<p><a href="' +
    marker.properties.url + '">' 
