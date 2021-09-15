@@ -1843,15 +1843,12 @@ gsap.to(".filledtwo, .outlinetwo", {
   },
   x: -200
 });
-  
- 
-  
+    
 
  }
-}),
+});
 
 
- 
 }
 
 
