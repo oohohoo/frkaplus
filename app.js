@@ -558,8 +558,8 @@ function initPageTransitions() {
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     
-    gtag('config', 'UA-207549905-1', {'page_path': data.current.url});
-    console.log("GOOGLE ANALYTICS TRIGGERED");
+    gtag('config', 'UA-207549905-1');
+    console.log("GOOGLE ANALYTICS RTTTTOTO");
   });
   
   barba.hooks.enter((data) => {
