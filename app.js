@@ -360,7 +360,7 @@ function initContent() {
             numberoll();
             horizpin();
             vidljivostMobile();
-            zoomMobile();
+           // zoomMobile();
             playpausevideo();
             smallCounteronama();
             openMobileMenu();
@@ -633,7 +633,7 @@ barba.init({
               beforeEnter(data) {
                 playpausevideo();
                 vidljivostMobile();
-                zoomMobile();
+              // zoomMobile();
                 //onamacounter();
                 simpleaccordion();
                 zoomimage();
@@ -1782,30 +1782,76 @@ O NAMA // OUTLINE HERO
 */
 
 function outlinehero() {
-  //  gsap.set('.filled-text, .outline-text', {x:-500}); 
-  gsap.to(".filled-text, .outline-text", {
-    scrollTrigger:{
-    scroller: ".smooth-scroll",
-      trigger: ".img__wrapper--hero", 
-      start: "top 17%", 
-      end: "bottom top", 
-      scrub: 1,
-      /* markers: true,  */
-    },
-    x: 500
-  });
+
+   ScrollTrigger.matchMedia({
+
+    // desktop
+    "(min-width: 992px)": function() {
+    
+ //  gsap.set('.filled-text, .outline-text', {x:-500}); 
+ gsap.to(".filled-text, .outline-text", {
+  scrollTrigger:{
+  scroller: ".smooth-scroll",
+    trigger: ".img__wrapper--hero", 
+    start: "top 17%", 
+    end: "bottom top", 
+    scrub: 1,
+    /* markers: true,  */
+  },
+  x: 500
+});
+
+ // gsap.set('.filledtwo, .outlinetwo', {x:500});  
+gsap.to(".filledtwo, .outlinetwo", {
+  scrollTrigger:{
+  scroller: ".smooth-scroll",
+    trigger: ".img__wrapper--hero", 
+    start: "top 17%", 
+    end: "bottom top", 
+    scrub: 1
+  },
+  x: -500
+});
+
+      }, 
+
+
+
+    "(max-width: 991px)": function() {
+
+ //  gsap.set('.filled-text, .outline-text', {x:-500}); 
+ gsap.to(".filled-text, .outline-text", {
+  scrollTrigger:{
+  scroller: ".smooth-scroll",
+    trigger: ".img__wrapper--hero", 
+    start: "top 17%", 
+    end: "bottom top", 
+    scrub: 1,
+    /* markers: true,  */
+  },
+  x: 200
+});
+
+ // gsap.set('.filledtwo, .outlinetwo', {x:500});  
+gsap.to(".filledtwo, .outlinetwo", {
+  scrollTrigger:{
+  scroller: ".smooth-scroll",
+    trigger: ".img__wrapper--hero", 
+    start: "top 17%", 
+    end: "bottom top", 
+    scrub: 1
+  },
+  x: -200
+});
   
-   // gsap.set('.filledtwo, .outlinetwo', {x:500});  
-  gsap.to(".filledtwo, .outlinetwo", {
-    scrollTrigger:{
-    scroller: ".smooth-scroll",
-      trigger: ".img__wrapper--hero", 
-      start: "top 17%", 
-      end: "bottom top", 
-      scrub: 1
-    },
-    x: -500
-  });
+ 
+  
+
+ }
+}),
+
+
+ 
 }
 
 
@@ -1854,94 +1900,6 @@ function vidljivostMobile() {
     },
     x: -100
   });
-
- }
-});
-
-}
-
-
-/*
-================================================================================
-MOBILE nolocomotive // OUTLINE HERO
-================================================================================
-*/
-
-
-function zoomMobile() {
-
-  ScrollTrigger.matchMedia({
-
-    "(max-width: 991px)": function() {
-
-      /*
-      gsap.to(".zz1", {
-        scrollTrigger: {
-          trigger: ".zz1",
-          scrub: 1.5,
-          start: "top bottom",
-          end: "bottom 60%"
-        },
-        y: "-60px",
-        delay:0.1
-      });
-
-      gsap.to(".zz2", {
-        scrollTrigger: {
-          trigger: ".zz2",
-          scrub: 1.5,
-          start: "top bottom",
-          end: "bottom 20%"
-        },
-        y: "-150px",
-        delay:0.2
-      });
- 
-      gsap.to(".zz3", {
-        scrollTrigger: {
-          trigger: ".zz3",
-          scrub: 1.5,
-          start: "top bottom",
-          end: "bottom 20%"
-        },
-        y: "-150px",
-        delay:0.3
-      });
-
-      gsap.to(".zz4", {
-        scrollTrigger: {
-          trigger: ".zz4",
-          scrub: 1.5,
-          start: "top bottom",
-          end: "bottom 20%"
-        },
-        y: "-300px",
-        delay:0.4
-      });
-/*
-      gsap.to(".zz5", {
-        scrollTrigger: {
-          trigger: ".zz5",
-          scrub: 1,
-          start: "top bottom",
-          end: "bottom 20%"
-        },
-        y: "-30px",
-        delay:0.5
-      });
-
-      gsap.to(".zz6", {
-        scrollTrigger: {
-          trigger: ".zz6",
-          scrub: 1,
-          start: "top bottom",
-          end: "bottom 20%"
-        },
-        y: "-150px",
-        delay:0.6
-      });
- 
-*/
 
  }
 });
