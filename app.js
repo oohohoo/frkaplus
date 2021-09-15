@@ -550,17 +550,14 @@ function initPageTransitions() {
     
   //  console.log("BODY CLASSES UPDATED");
   });
-  
+
   barba.hooks.afterEnter((data) => {
-    // this hook will be called for each transitions
-    //data.current.url is the page path.
+    //Global site tag (gtag.js) - Google Analytics
     var path = (window.location.href).replace(window.location.origin, '').toLowerCase();
-  
     gtag('config', 'UA-207655205-1', {'page_path': path});
-    console.log("GOOGLE ANALYTICS MAHAJDEEE");
+  
   });
   
-
   barba.hooks.enter((data) => {
     window.scrollTo(0, 0);
     
