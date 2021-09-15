@@ -1873,7 +1873,7 @@ function zoomMobile() {
 
     "(max-width: 991px)": function() {
 
-      
+      /*
       gsap.to(".zz1", {
         scrollTrigger: {
           trigger: ".zz1",
