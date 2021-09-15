@@ -1892,7 +1892,7 @@ function zoomMobile() {
           start: "top bottom",
           end: "bottom 20%"
         },
-        y: "-200px",
+        y: "-150px",
         delay:0.2
       });
  
@@ -1906,7 +1906,7 @@ function zoomMobile() {
         y: "-150px",
         delay:0.3
       });
-/*
+
       gsap.to(".zz4", {
         scrollTrigger: {
           trigger: ".zz4",
@@ -1914,10 +1914,10 @@ function zoomMobile() {
           start: "top bottom",
           end: "bottom 20%"
         },
-        y: "-90px",
+        y: "-300px",
         delay:0.4
       });
-
+/*
       gsap.to(".zz5", {
         scrollTrigger: {
           trigger: ".zz5",
