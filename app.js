@@ -1877,9 +1877,9 @@ function zoomMobile() {
       gsap.to(".zz1", {
         scrollTrigger: {
           trigger: ".zz1",
-          scrub: 2,
+          scrub: 1.5,
           start: "top bottom",
-          end: "bottom 20%"
+          end: "bottom 60%"
         },
         y: "-60px",
         delay:0.1
@@ -1888,7 +1888,7 @@ function zoomMobile() {
       gsap.to(".zz2", {
         scrollTrigger: {
           trigger: ".zz2",
-          scrub: 2,
+          scrub: 1.5,
           start: "top bottom",
           end: "bottom 20%"
         },
@@ -1899,7 +1899,7 @@ function zoomMobile() {
       gsap.to(".zz3", {
         scrollTrigger: {
           trigger: ".zz3",
-          scrub: 2,
+          scrub: 1.5,
           start: "top bottom",
           end: "bottom 20%"
         },
@@ -1910,7 +1910,7 @@ function zoomMobile() {
       gsap.to(".zz4", {
         scrollTrigger: {
           trigger: ".zz4",
-          scrub: 2,
+          scrub: 1.5,
           start: "top bottom",
           end: "bottom 20%"
         },
