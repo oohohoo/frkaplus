@@ -1046,7 +1046,7 @@ var fadein = gsap.timeline({defaults:{ease:'none'}})
 /*ADD DATA ATTRIBUTE TO MAPBOX LINKS*/
 /*   document.querySelectorAll( 'a[href^="http"]:not([href*="example.com"])' ).forEach(anchor => anchor.setAttribute( 'rel', 'noopener noreferrer nofollow' )); 
  */
-
+}
 
   
 /*
