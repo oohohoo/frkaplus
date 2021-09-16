@@ -557,16 +557,16 @@ function initPageTransitions() {
     //Global site tag (gtag.js) - Google Analytics
     var path = (window.location.href).replace(window.location.origin, '').toLowerCase();
     gtag('config', 'UA-207655205-1', {'page_path': path});
-  
-
+ 
     rememberSelectLocation();
-    console.log("Remember Me");
+    console.log("Remember Me MF");
 
-    
   });
   
   barba.hooks.enter((data) => {
     window.scrollTo(0, 0);
+    
+   
     
   /*   let parser = new DOMParser();
     let dom = parser.parseFromString(data.next.html, 'text/html');
