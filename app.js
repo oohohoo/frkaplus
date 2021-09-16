@@ -850,31 +850,24 @@ LOCATION MAP
 */
 function locationMap() {
   /*  setTimeout(()=>{   */
+   
 
-
-    /*
+/*
 ================================================================================
 FADE IN MAP
 ================================================================================
 */
 gsap.set('.lokacije-body', {autoAlpha:0})
 var fadein = gsap.timeline({defaults:{ease:'none'}})
-.to('.lokacije-body', {autoAlpha:1, duration:1})
+.to('.lokacije-body', {autoAlpha:1, duration:0.5})
 .to('.loader-icon', {autoAlpha:1})
 .to('.loader-wrap', {rotate: 360, repeat: -1, duration:5}, "<")
 
 //.to('.static', {autoAlpha:0, duration:1.5, delay:0.5})
 .to('.loader-icon', {autoAlpha:0}, "-=1.5")
 //.to('.loader-txt', {autoAlpha:0}, "<")
-//}); 
-/*ADD DATA ATTRIBUTE TO MAPBOX LINKS*/
-/*   document.querySelectorAll( 'a[href^="http"]:not([href*="example.com"])' ).forEach(anchor => anchor.setAttribute( 'rel', 'noopener noreferrer nofollow' )); 
- */
-}
 
 
-
-   
   mapboxgl.accessToken = 'pk.eyJ1IjoiZnJrYXBsdXMiLCJhIjoiY2tybHY1djhuNDE4YzJ6cDhtZmkzdzFvaiJ9.hTRDicTnxDfby_3lEybkNw';
 
   var bounds = [
@@ -1052,6 +1045,12 @@ map.on("load", function (e) {
 
 
 /* },200)  */ 
+
+//}); 
+/*ADD DATA ATTRIBUTE TO MAPBOX LINKS*/
+/*   document.querySelectorAll( 'a[href^="http"]:not([href*="example.com"])' ).forEach(anchor => anchor.setAttribute( 'rel', 'noopener noreferrer nofollow' )); 
+ */
+}
 
   
 /*
