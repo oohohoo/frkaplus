@@ -3903,62 +3903,19 @@ $(function () {
 });
 
 $(function() {
-  var data = localStorage.getItem("adoz");
+  var data = localStorage.getItem("adoza");
   if (data !== null) {
       $("input[name='adoz']").attr("checked", "checked");
   }
 });
 $("input[name='adoz']").click(function() {
   if ($(this).is(":checked")) {
-      localStorage.setItem("adoz", $(this).val());
+      localStorage.setItem("adoza", $(this).val());
   } else {
       localStorage.removeItem("adoz");
   }
 });
 
 
-
-/* $(document).ready(function() {
-  $('#toggle').change(function() {
-   // $('#div1').toggle();
-    if (typeof(Storage) !== "undefined") {
-      localStorage.setItem("CheckboxValue", $('#toggle').is(":checked"));
-    } else {
-      console.log("No Support for localstorage")
-    }
-  });
-}); */
-
-/* 
-function checker(self){
-	if(self.checked){
-		localStorage.setItem('check', true);	
-	}
-	else {
-		localStorage.removeItem('check');
-	}
-}
-
-
-document.getElementById('#toggle').addEventListener('change', function(event){
-	checker(this);
-}, false);
-
-window.addEventListener('load', function(e){
-	if(localStorage.getItem('check')){
-		document.getElementById('#toggle').checked = true;
-	}	
-}, false);
- */
-
-/* $(function () {
-  $('#toggle').click(function () {
-      localStorage.setItem('todoDatatog', this.value);
-  });
-  if (localStorage.getItem('todoDatatog')) {
-
-      $('#toggle').val(localStorage.getItem('todoDatatog')).trigger('click');
-  }
-}); */
 
 }
