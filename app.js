@@ -857,9 +857,9 @@ function locationMap() {
 FADE IN MAP
 ================================================================================
 */
-gsap.set('.lokacije-body', {opacity:0})
+//gsap.set('.lokacije-body', {opacity:0})
 var fadein = gsap.timeline({defaults:{ease:'none'}})
-.to('.lokacije-body', {opacity:1, duration:5})
+//.to('.lokacije-body', {opacity:1, duration:0.5})
 .to('.loader-icon', {autoAlpha:1})
 .to('.loader-wrap', {rotate: 360, repeat: -1, duration:5}, "<")
 
@@ -867,6 +867,15 @@ var fadein = gsap.timeline({defaults:{ease:'none'}})
 .to('.loader-icon', {autoAlpha:0}, "-=1.5")
 //.to('.loader-txt', {autoAlpha:0}, "<")
 
+map.on("load", function (e) {
+
+gsap.set('.lokacije-body', {opacity:0})
+var fadein2 = gsap.timeline({defaults:{ease:'none'}})
+.to('.lokacije-body', {opacity:1, duration:0.5})
+
+//.to('.static', {autoAlpha:0, duration:1.5, delay:0.5})
+.to('.loader-icon', {autoAlpha:0}, "-=1.5")
+});
 
   mapboxgl.accessToken = 'pk.eyJ1IjoiZnJrYXBsdXMiLCJhIjoiY2tybHY1djhuNDE4YzJ6cDhtZmkzdzFvaiJ9.hTRDicTnxDfby_3lEybkNw';
 
