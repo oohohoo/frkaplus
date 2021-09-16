@@ -3912,13 +3912,15 @@ function checker(self){
 	}
 }
 
-document.querySelector('#toggle').addEventListener('change', function(event){
+
+
+document.getElementById('#toggle').addEventListener('change', function(event){
 	checker(this);
 }, false);
 
 window.addEventListener('load', function(e){
 	if(localStorage.getItem('check')){
-		document.querySelector('#toggle').checked = true;
+		document.getElementById('#toggle').checked = true;
 	}	
 }, false);
 
