@@ -3902,7 +3902,18 @@ $(function () {
   }
 });
 
+$(document).ready(function() {
+  $('#toggle').change(function() {
+   // $('#div1').toggle();
+    if (typeof(Storage) !== "undefined") {
+      localStorage.setItem("CheckboxValue", $('#toggle').is(":checked"));
+    } else {
+      console.log("No Support for localstorage")
+    }
+  });
+});
 
+/* 
 function checker(self){
 	if(self.checked){
 		localStorage.setItem('check', true);	
@@ -3922,7 +3933,7 @@ window.addEventListener('load', function(e){
 		document.getElementById('#toggle').checked = true;
 	}	
 }, false);
-
+ */
 
 /* $(function () {
   $('#toggle').click(function () {
