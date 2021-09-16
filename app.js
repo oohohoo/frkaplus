@@ -3146,12 +3146,12 @@ var Demo = function (element) {
 		easing: 'cubic-bezier(0.165, 0.840, 0.440, 1.000)', // easeOutQuart
 		/* sizer: '.sizer', */ 
     buffer:0,
-    speed: 300,
+    speed: 250,
     gutterWidth: 32,
     roundTransforms: true,
    useTransforms: true,
     itemSelector: '.webinar-posts__event-item',
-   staggerAmount: 20, // Transition delay offset for each item in milliseconds.
+   // // Transition delay offset for each item in milliseconds.
     //staggerAmountMax: 150, // Maximum stagger delay in milliseconds.
     //throttle: throttle, // By default, shuffle will throttle resize events. This can be changed or removed.
     //throttleTime: 300,
