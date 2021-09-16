@@ -3403,7 +3403,7 @@ Demo.prototype.filter = function () {
 
       setTimeout(() => {
         this.shuffle.layout();
-        locoScroll.update();
+        //locoScroll.update();
         ScrollTrigger.refresh(true);
      //   console.log("Locoscrollupdated + SCROLLTRIGGER 01");
       }, 200)
@@ -3412,7 +3412,7 @@ Demo.prototype.filter = function () {
       this.shuffle.filter(Shuffle.ALL_ITEMS);
       setTimeout(() => {
         this.shuffle.layout();
-        locoScroll.update();
+       // locoScroll.update();
         ScrollTrigger.refresh(true);
      //   console.log("Locoscrollupdated + SCROLLTRIGGER 2");
       }, 200)
@@ -3421,7 +3421,7 @@ Demo.prototype.filter = function () {
     if (this.shuffle.visibleItems == 0) {
       this.message.innerHTML = (this.shuffle.visibleItems) + " rezultata";
       this.shuffle.layout();
-      locoScroll.update();
+    //  locoScroll.update();
       ScrollTrigger.refresh(true);
   //    console.log("Locoscrollupdated + SCROLLTRIGGER 3");
 
