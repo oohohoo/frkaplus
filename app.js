@@ -1033,7 +1033,7 @@ map.on("load", function (e) {
 FADE IN MAP
 ================================================================================
 */
-.set('.lokacije-body', {autoAlpha:0})
+gsap.set('.lokacije-body', {autoAlpha:0})
 var fadein = gsap.timeline({defaults:{ease:'none'}})
 .to('.lokacije-body', {autoAlpha:1, duration:0.5})
 .to('.loader-icon', {autoAlpha:1})
