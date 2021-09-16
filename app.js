@@ -3025,21 +3025,21 @@ $(document).on('mouseenter', '.select2-selection__rendered', function () { $(thi
 
 $(function () {
   $('#selecttwo').change(function () {
-      localStorage.setItem('todoData', this.value);
+      localStorage.setItem('todoDatatwo', this.value);
   });
-  if (localStorage.getItem('todoData')) {
+  if (localStorage.getItem('todoDatatwo')) {
 
-      $('#selecttwo').val(localStorage.getItem('todoData')).trigger('change');
+      $('#selecttwo').val(localStorage.getItem('todoDatatwo')).trigger('change');
   }
 });
 
 $(function () {
   $('#selectone').change(function () {
-      localStorage.setItem('todoData', this.value);
+      localStorage.setItem('todoDataone', this.value);
   });
-  if (localStorage.getItem('todoData')) {
+  if (localStorage.getItem('todoDataone')) {
 
-      $('#selectone').val(localStorage.getItem('todoData')).trigger('change');
+      $('#selectone').val(localStorage.getItem('todoDataone')).trigger('change');
   }
 });
 
