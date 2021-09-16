@@ -3053,6 +3053,15 @@ $(function () {
   }
 });
 
+$(function () {
+  $('#toggle').change(function () {
+      localStorage.setItem('todoDatatog', this.value);
+  });
+  if (localStorage.getItem('todoDatatog')) {
+
+      $('#toggle').val(localStorage.getItem('todoDatatog')).trigger('change');
+  }
+});
 
 
 
