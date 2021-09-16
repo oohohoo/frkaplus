@@ -197,6 +197,12 @@ window.addEventListener('resize', function(){
 });
 
 
+window.onbeforeunload = function()
+    {
+      window.localStorage.clear();
+
+      console.log("Local storage cleared!");
+    };
 
 /*
 ================================================================================
