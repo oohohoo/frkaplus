@@ -3116,7 +3116,7 @@ var Demo = function (element) {
 		easing: 'cubic-bezier(0.165, 0.840, 0.440, 1.000)', // easeOutQuart
 		/* sizer: '.sizer', */ 
     buffer:0,
-    speed: 250,
+    speed: 200,
     gutterWidth: 32,
     roundTransforms: true,
    useTransforms: true,
