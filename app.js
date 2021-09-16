@@ -654,6 +654,53 @@ barba.init({
                 lokacijehover();
                 /* infiniteScroll(); */
 
+
+
+
+/* REMEMBER SELECT LOCAL STORAGE*/
+
+$(function () {
+  $('#selecttwo').change(function () {
+      localStorage.setItem('todoDatatwo', this.value);
+  });
+  if (localStorage.getItem('todoDatatwo')) {
+
+      $('#selecttwo').val(localStorage.getItem('todoDatatwo')).trigger('change');
+  }
+});
+
+$(function () {
+  $('#selectone').change(function () {
+      localStorage.setItem('todoDataone', this.value);
+  });
+  if (localStorage.getItem('todoDataone')) {
+
+      $('#selectone').val(localStorage.getItem('todoDataone')).trigger('change');
+  }
+});
+
+$(function () {
+  $('#sorto').change(function () {
+      localStorage.setItem('todoDatasorto', this.value);
+  });
+  if (localStorage.getItem('todoDatasorto')) {
+
+      $('#sorto').val(localStorage.getItem('todoDatasorto')).trigger('change');
+  }
+});
+
+$(function () {
+  $('#toggle').click(function () {
+      localStorage.setItem('todoDatatog', this.value);
+  });
+  if (localStorage.getItem('todoDatatog')) {
+
+      $('#toggle').val(localStorage.getItem('todoDatatog')).trigger('click');
+  }
+});
+
+
+
                 },
               beforeLeave({current}) {
               //  map.remove();
@@ -3024,47 +3071,6 @@ $(document).on('mouseenter', '.select2-selection__rendered', function () { $(thi
 
 
 
-/* REMEMBER SELECT LOCAL STORAGE*/
-
-$(function () {
-  $('#selecttwo').change(function () {
-      localStorage.setItem('todoDatatwo', this.value);
-  });
-  if (localStorage.getItem('todoDatatwo')) {
-
-      $('#selecttwo').val(localStorage.getItem('todoDatatwo')).trigger('change');
-  }
-});
-
-$(function () {
-  $('#selectone').change(function () {
-      localStorage.setItem('todoDataone', this.value);
-  });
-  if (localStorage.getItem('todoDataone')) {
-
-      $('#selectone').val(localStorage.getItem('todoDataone')).trigger('change');
-  }
-});
-
-$(function () {
-  $('#sorto').change(function () {
-      localStorage.setItem('todoDatasorto', this.value);
-  });
-  if (localStorage.getItem('todoDatasorto')) {
-
-      $('#sorto').val(localStorage.getItem('todoDatasorto')).trigger('change');
-  }
-});
-
-$(function () {
-  $('#toggle').click(function () {
-      localStorage.setItem('todoDatatog', this.value);
-  });
-  if (localStorage.getItem('todoDatatog')) {
-
-      $('#toggle').val(localStorage.getItem('todoDatatog')).trigger('click');
-  }
-});
 
 
 /* jQuery(function($) { // Shorter document ready namespace safer
