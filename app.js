@@ -3222,7 +3222,7 @@ Demo.prototype._handleSortChange = function (event) {
 
      setTimeout(() => {
       this.shuffle.layout();
-      locoScroll.update();
+    //  locoScroll.update();
       ScrollTrigger.refresh(true);
    //   console.log("Locoscrollupdated + SCROLLTRIGGER NUOVO");
     }, 200)
