@@ -368,8 +368,7 @@ function initContent() {
           //  console.log('from app.js | o nama');
         },
         lokacije: function () {
-          localStorage.clear();
-          console.log("local storage cleared");
+          
           rememberSelectLocation();
           fadeinlokacije();
           newSort(); 
