@@ -368,6 +368,7 @@ function initContent() {
           //  console.log('from app.js | o nama');
         },
         lokacije: function () {
+          rememberSelectLocation();
           fadeinlokacije();
           newSort(); 
           /* batchLokacije(); */
@@ -873,7 +874,7 @@ function locationMap() {
 // map.addControl(new mapboxgl.NavigationControl()); 
 
 
-rememberSelectLocation();
+
 
 /* 
 
