@@ -384,6 +384,13 @@ SIMPLE FADE IN / FADE OUT / AUTOALPHA 023
   visibility:hidden;
 }
 
+
+.lokacije-body {
+  opacity:0;
+};
+
+
+
 /*
 ================================================================================
 BUTTON HOVER LOCO
