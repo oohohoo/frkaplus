@@ -550,8 +550,7 @@ function initPageTransitions() {
     
   //  console.log("BODY CLASSES UPDATED");
 
-  rememberSelectLocation();
-  console.log("Remember Meeeeee?????");
+ 
   });
 
   barba.hooks.afterEnter((data) => {
@@ -559,6 +558,11 @@ function initPageTransitions() {
     var path = (window.location.href).replace(window.location.origin, '').toLowerCase();
     gtag('config', 'UA-207655205-1', {'page_path': path});
   
+
+    rememberSelectLocation();
+    console.log("Remember Me");
+
+    
   });
   
   barba.hooks.enter((data) => {
