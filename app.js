@@ -3043,6 +3043,16 @@ $(function () {
   }
 });
 
+$(function () {
+  $('#sorto').change(function () {
+      localStorage.setItem('todoDatasorto', this.value);
+  });
+  if (localStorage.getItem('todoDatasorto')) {
+
+      $('#sorto').val(localStorage.getItem('todoDatasorto')).trigger('change');
+  }
+});
+
 
 
 
