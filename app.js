@@ -3024,12 +3024,22 @@ $(document).on('mouseenter', '.select2-selection__rendered', function () { $(thi
 /* REMEMBER SELECT LOCAL STORAGE*/
 
 $(function () {
-  $('#selectone, #selecttwo, #sorto').change(function () {
+  $('#selecttwo').change(function () {
       localStorage.setItem('todoData', this.value);
   });
   if (localStorage.getItem('todoData')) {
 
-      $('#selectone, #selecttwo, #sorto').val(localStorage.getItem('todoData')).trigger('change');
+      $('#selecttwo').val(localStorage.getItem('todoData')).trigger('change');
+  }
+});
+
+$(function () {
+  $('#selectone').change(function () {
+      localStorage.setItem('todoData', this.value);
+  });
+  if (localStorage.getItem('todoData')) {
+
+      $('#selectone').val(localStorage.getItem('todoData')).trigger('change');
   }
 });
 
