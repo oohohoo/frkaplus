@@ -859,7 +859,7 @@ FADE IN MAP
 */
 gsap.set('.lokacije-body', {opacity:0})
 var fadein = gsap.timeline({defaults:{ease:'none'}})
-.to('.lokacije-body', {opacity:1, duration:0.5})
+//.to('.lokacije-body', {opacity:1, duration:0.5})
 .to('.loader-icon', {autoAlpha:1})
 .to('.loader-wrap', {rotate: 360, repeat: -1, duration:5}, "<")
 
