@@ -874,7 +874,6 @@ function locationMap() {
 
 
 rememberSelectLocation();
-console.log("Remember Me HEY");
 
 /* 
 
@@ -1033,11 +1032,12 @@ map.on("load", function (e) {
 FADE IN MAP
 ================================================================================
 */
- 
+$(document).ready(function(){ 
 var fadein = gsap.timeline({defaults:{ease:'none'}})
+.to('.lokacije-body', {autoAlpha:1, duration:0.5})
 .to('.loader-icon', {autoAlpha:1})
 .to('.loader-wrap', {rotate: 360, repeat: -1, duration:5}, "<")
-.to('.lokacije-body', {autoAlpha:1, duration:0.5})
+
 //.to('.static', {autoAlpha:0, duration:1.5, delay:0.5})
 .to('.loader-icon', {autoAlpha:0}, "-=1.5")
 //.to('.loader-txt', {autoAlpha:0}, "<")
@@ -1045,7 +1045,7 @@ var fadein = gsap.timeline({defaults:{ease:'none'}})
 /*ADD DATA ATTRIBUTE TO MAPBOX LINKS*/
 /*   document.querySelectorAll( 'a[href^="http"]:not([href*="example.com"])' ).forEach(anchor => anchor.setAttribute( 'rel', 'noopener noreferrer nofollow' )); 
  */
-
+}); 
 
   
 /*
