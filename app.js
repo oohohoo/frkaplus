@@ -3912,13 +3912,13 @@ function checker(self){
 	}
 }
 
-document.querySelector('input[type="checkbox"]').addEventListener('change', function(event){
+document.querySelector('#toggle').addEventListener('change', function(event){
 	checker(this);
 }, false);
 
 window.addEventListener('load', function(e){
 	if(localStorage.getItem('check')){
-		document.querySelector('input[type="checkbox"]').checked = true;
+		document.querySelector('#toggle').checked = true;
 	}	
 }, false);
 
