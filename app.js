@@ -3901,7 +3901,7 @@ $(function () {
       $('#sorto').val(localStorage.getItem('todoDatasorto')).trigger('change');
   }
 });
-
+/* 
 $(function() {
   var data = localStorage.getItem("adoza");
   if (data !== null) {
@@ -3915,7 +3915,7 @@ $("input[name='adoz']").click(function() {
       localStorage.removeItem("adoz");
   }
 });
-
+ */
 
 
 }
