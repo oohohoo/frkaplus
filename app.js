@@ -3902,7 +3902,23 @@ $(function () {
   }
 });
 
-$(document).ready(function() {
+$(function() {
+  var data = localStorage.getItem("adoz");
+  if (data !== null) {
+      $("input[name='adoz']").attr("checked", "checked");
+  }
+});
+$("input[name='adoz']").click(function() {
+  if ($(this).is(":checked")) {
+      localStorage.setItem("adoz", $(this).val());
+  } else {
+      localStorage.removeItem("adoz");
+  }
+});
+
+
+
+/* $(document).ready(function() {
   $('#toggle').change(function() {
    // $('#div1').toggle();
     if (typeof(Storage) !== "undefined") {
@@ -3911,7 +3927,7 @@ $(document).ready(function() {
       console.log("No Support for localstorage")
     }
   });
-});
+}); */
 
 /* 
 function checker(self){
