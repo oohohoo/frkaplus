@@ -3913,7 +3913,6 @@ function checker(self){
 }
 
 
-
 document.getElementById('#toggle').addEventListener('change', function(event){
 	checker(this);
 }, false);
