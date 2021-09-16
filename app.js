@@ -3059,7 +3059,7 @@ $(function () {
   });
   if (localStorage.getItem('todoDatatog')) {
 
-      $('#toggle').val(localStorage.getItem('todoDatatog')).trigger('change');
+      $('#toggle').val(localStorage.getItem('todoDatatog')).trigger('click');
   }
 });
 
