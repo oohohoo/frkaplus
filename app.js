@@ -3064,6 +3064,28 @@ $(function () {
 });
 
 
+jQuery(function($) { // Shorter document ready namespace safer
+
+  // initiate the state
+  var checked = localStorage.getItem('toggle')
+  if (checked) {
+   // $('#div1').hide()
+    $('#toggle').prop('checked', true)
+  }
+  
+  // Toggle the visibility
+  $('#toggle').change(function() {
+   // $('#div1').toggle();
+    this.checked 
+      ? localStorage.setItem(this.id, true)
+      : localStorage.removeItem(this.id)
+  });
+});
+
+
+
+
+
 
 
 /* $("#sorto").select2({
