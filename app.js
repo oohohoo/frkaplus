@@ -3024,12 +3024,12 @@ $(document).on('mouseenter', '.select2-selection__rendered', function () { $(thi
 /* REMEMBER SELECT LOCAL STORAGE*/
 
 $(function () {
-  $('#selecttwo').change(function () {
+  $('#selectone, #selecttwo, #sorto').change(function () {
       localStorage.setItem('todoData', this.value);
   });
   if (localStorage.getItem('todoData')) {
 
-      $('#selecttwo').val(localStorage.getItem('todoData')).trigger('change');
+      $('#selectone, #selecttwo, #sorto').val(localStorage.getItem('todoData')).trigger('change');
   }
 });
 
