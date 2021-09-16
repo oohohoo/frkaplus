@@ -3902,6 +3902,27 @@ $(function () {
   }
 });
 
+
+function checker(self){
+	if(self.checked){
+		localStorage.setItem('check', true);	
+	}
+	else {
+		localStorage.removeItem('check');
+	}
+}
+
+document.querySelector('input[type="checkbox"]').addEventListener('change', function(event){
+	checker(this);
+}, false);
+
+window.addEventListener('load', function(e){
+	if(localStorage.getItem('check')){
+		document.querySelector('input[type="checkbox"]').checked = true;
+	}	
+}, false);
+
+
 /* $(function () {
   $('#toggle').click(function () {
       localStorage.setItem('todoDatatog', this.value);
