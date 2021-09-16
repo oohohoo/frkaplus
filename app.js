@@ -3020,6 +3020,23 @@ $('select.combobox').select2({ width: 'style' });
 $(document).on('mouseenter', '.select2-selection__rendered', function () { $(this).removeAttr('title');  });
 
 
+
+/* REMEMBER SELECT LOCAL STORAGE*/
+
+$(function () {
+  $('#selecttwo').change(function () {
+      localStorage.setItem('todoData', this.value);
+  });
+  if (localStorage.getItem('todoData')) {
+
+      $('#selecttwo').val(localStorage.getItem('todoData')).trigger('change');
+  }
+});
+
+
+
+
+
 /* $("#sorto").select2({
   // dropdownParent: $('.upad'), 
   dropdownAutoWidth: true,
