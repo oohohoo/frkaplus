@@ -549,6 +549,9 @@ function initPageTransitions() {
     $("body").attr("class", bodyClasses);
     
   //  console.log("BODY CLASSES UPDATED");
+
+  rememberSelectLocation();
+  console.log("Remember Meeeeee?????");
   });
 
   barba.hooks.afterEnter((data) => {
@@ -656,50 +659,7 @@ barba.init({
 
 
 
-
-/* REMEMBER SELECT LOCAL STORAGE*/
-
-$(function () {
-  $('#selecttwo').change(function () {
-      localStorage.setItem('todoDatatwo', this.value);
-  });
-  if (localStorage.getItem('todoDatatwo')) {
-
-      $('#selecttwo').val(localStorage.getItem('todoDatatwo')).trigger('change');
-  }
-});
-
-$(function () {
-  $('#selectone').change(function () {
-      localStorage.setItem('todoDataone', this.value);
-  });
-  if (localStorage.getItem('todoDataone')) {
-
-      $('#selectone').val(localStorage.getItem('todoDataone')).trigger('change');
-  }
-});
-
-$(function () {
-  $('#sorto').change(function () {
-      localStorage.setItem('todoDatasorto', this.value);
-  });
-  if (localStorage.getItem('todoDatasorto')) {
-
-      $('#sorto').val(localStorage.getItem('todoDatasorto')).trigger('change');
-  }
-});
-
-$(function () {
-  $('#toggle').click(function () {
-      localStorage.setItem('todoDatatog', this.value);
-  });
-  if (localStorage.getItem('todoDatatog')) {
-
-      $('#toggle').val(localStorage.getItem('todoDatatog')).trigger('click');
-  }
-});
-
-
+                
 
                 },
               beforeLeave({current}) {
@@ -3888,3 +3848,53 @@ function checked() {
   }
 }
 
+
+/*
+================================================================================
+REMEMBER SELECT LOCAL STORAGE
+================================================================================
+*/
+
+function rememberSelectLocation() {
+
+$(function () {
+  $('#selecttwo').change(function () {
+      localStorage.setItem('todoDatatwo', this.value);
+  });
+  if (localStorage.getItem('todoDatatwo')) {
+
+      $('#selecttwo').val(localStorage.getItem('todoDatatwo')).trigger('change');
+  }
+});
+
+$(function () {
+  $('#selectone').change(function () {
+      localStorage.setItem('todoDataone', this.value);
+  });
+  if (localStorage.getItem('todoDataone')) {
+
+      $('#selectone').val(localStorage.getItem('todoDataone')).trigger('change');
+  }
+});
+
+$(function () {
+  $('#sorto').change(function () {
+      localStorage.setItem('todoDatasorto', this.value);
+  });
+  if (localStorage.getItem('todoDatasorto')) {
+
+      $('#sorto').val(localStorage.getItem('todoDatasorto')).trigger('change');
+  }
+});
+
+$(function () {
+  $('#toggle').click(function () {
+      localStorage.setItem('todoDatatog', this.value);
+  });
+  if (localStorage.getItem('todoDatatog')) {
+
+      $('#toggle').val(localStorage.getItem('todoDatatog')).trigger('click');
+  }
+});
+
+}
