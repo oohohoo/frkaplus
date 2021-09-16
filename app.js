@@ -3054,7 +3054,7 @@ $(function () {
 });
 
 $(function () {
-  $('#toggle').change(function () {
+  $('#toggle').click(function () {
       localStorage.setItem('todoDatatog', this.value);
   });
   if (localStorage.getItem('todoDatatog')) {
