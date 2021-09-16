@@ -3064,7 +3064,7 @@ $(function () {
 });
 
 
-jQuery(function($) { // Shorter document ready namespace safer
+/* jQuery(function($) { // Shorter document ready namespace safer
 
   // initiate the state
   var checked = localStorage.getItem('toggle')
@@ -3080,7 +3080,7 @@ jQuery(function($) { // Shorter document ready namespace safer
       ? localStorage.setItem(this.id, true)
       : localStorage.removeItem(this.id)
   });
-});
+}); */
 
 
 
