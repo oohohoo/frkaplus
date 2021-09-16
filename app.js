@@ -3891,7 +3891,7 @@ $(function () {
   }
 });
 
-$(function () {
+/* $(function () {
   $('#toggle').click(function () {
       localStorage.setItem('todoDatatog', this.value);
   });
@@ -3899,6 +3899,6 @@ $(function () {
 
       $('#toggle').val(localStorage.getItem('todoDatatog')).trigger('click');
   }
-});
+}); */
 
 }
