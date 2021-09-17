@@ -2858,7 +2858,7 @@ max-width:100%
 
 /* LAPTOP FONT SIZE*/
 
-@media only screen and (min-width: 1280px) and (max-width: 1440px)  {
+@media only screen and (min-width: 1380px) and (max-width: 1440px)  {
      body {
        font-size: 14.98px;
       }
@@ -2886,6 +2886,17 @@ max-width:100%
     .main-grid.is--simulator {
        font-size: 1vw;
   }
+  .paragraph p {
+     max-width: 39ch;
+}
+.kontakt-big-logo {
+  font-size: 1vw;
+}
+
+#w-node-_5283e112-dbe1-95a5-2508-53b80a77a225-83b8b401 {
+  -ms-grid-column-span: 4;
+  grid-column-end: 12;
+}
 /* 
       .parax {
         max-width: 42ch;
