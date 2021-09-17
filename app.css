@@ -2897,6 +2897,11 @@ max-width:100%
   -ms-grid-column-span: 4;
   grid-column-end: 12;
 }
+
+.splide {
+  height: 40em;
+}
+
 /* 
       .parax {
         max-width: 42ch;
@@ -2911,9 +2916,7 @@ max-width:100%
   
 
 
-.splide {
-  height: 40em;
-}
+
 
 .back--location {
   top: 6.4em;
