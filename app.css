@@ -2880,9 +2880,12 @@ max-width:100%
     }
 
     .grid.is--lokacije__left {
-      font-size: 0.98vw;
+      font-size: 0.985vw;
     }
     
+    .main-grid.is--simulator {
+       font-size: 1vw;
+  }
 /* 
       .parax {
         max-width: 42ch;
