@@ -2862,6 +2862,19 @@ max-width:100%
      body {
        font-size: 14.98px;
       }
+
+      #w-node-f76dfbbb-3ff6-caca-98bc-8f9576ea3cc3-bfb8b406 {
+        -ms-grid-column-span: 4;
+        grid-column-end: 7;
+      
+      }
+      
+      #w-node-b59f27e9-0cc0-3c75-c49f-fc3bfa1efa8a-bfb8b406 {
+        -ms-grid-column-span: 4;
+        grid-column-end: 7;
+        max-width: 38ch;
+      }
+      
 /* 
       .parax {
         max-width: 42ch;
@@ -2874,17 +2887,6 @@ max-width:100%
     max-width: 35ch;
 }
   
-#w-node-f76dfbbb-3ff6-caca-98bc-8f9576ea3cc3-bfb8b406 {
-  -ms-grid-column-span: 4;
-  grid-column-end: 7;
-
-}
-
-#w-node-b59f27e9-0cc0-3c75-c49f-fc3bfa1efa8a-bfb8b406 {
-  -ms-grid-column-span: 4;
-  grid-column-end: 7;
-  max-width: 38ch;
-}
 
 .grid.is--lokacije__left {
   font-size: 0.98vw;
