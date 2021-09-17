@@ -2889,7 +2889,7 @@ max-width:100%
   .paragraph p {
      max-width: 39ch;
 }
-.kontakt-big-logo {
+.kontakt-big-logo, .tisucuwrap {
   font-size: 1vw;
 }
 
@@ -2899,7 +2899,14 @@ max-width:100%
 }
 
 .splide {
-  height: 40em;
+  height: 38em;
+}
+.sort-wrap {
+  margin-left: -0.7em;
+}
+
+.link_container.kontakt {
+  top: 0.5em;
 }
 
 /* 
