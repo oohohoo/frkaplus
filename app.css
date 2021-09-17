@@ -2858,11 +2858,11 @@ max-width:100%
 
 /* LAPTOP FONT SIZE*/
 
-@media only screen and (min-width: 992px) and (max-width: 1440px)  {
+@media only screen and (min-width: 1280px) and (max-width: 1440px)  {
      body {
-       font-size: 15.98px;
+       font-size: 14.98px;
       }
-
+/* 
       .parax {
         max-width: 42ch;
     }
@@ -2902,7 +2902,7 @@ max-width:100%
 
 .article {
   width: 19em;
-}
+} */
 
 /* .filepond--root {
 
