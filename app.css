@@ -2874,7 +2874,15 @@ max-width:100%
         grid-column-end: 7;
         max-width: 38ch;
       }
-      
+
+      #w-node-_3d9eff5f-095a-158a-4151-c02933425643-bfb8b406 {
+        max-width: 34ch;
+    }
+
+    .grid.is--lokacije__left {
+      font-size: 0.98vw;
+    }
+    
 /* 
       .parax {
         max-width: 42ch;
@@ -2888,9 +2896,6 @@ max-width:100%
 }
   
 
-.grid.is--lokacije__left {
-  font-size: 0.98vw;
-}
 
 .splide {
   height: 40em;
