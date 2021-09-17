@@ -2912,6 +2912,11 @@ max-width:100%
 .container.is--onama {
   padding-top: 10em;
 }
+.back--location {
+  top: 6.4em;
+  padding-left: 2em;
+
+}
 
 /* 
       .parax {
@@ -2929,11 +2934,7 @@ max-width:100%
 
 
 
-.back--location {
-  top: 6.4em;
-  padding-left: 2em;
 
-}
 
 .article {
   width: 19em;
