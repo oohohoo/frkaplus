@@ -563,8 +563,8 @@ function initPageTransitions() {
 
   barba.hooks.afterEnter((data) => {
     //Global site tag (gtag.js) - Google Analytics
-    var path = (window.location.href).replace(window.location.origin, '').toLowerCase();
-    gtag('config', 'UA-207655205-1', {'page_path': path});
+   /*  var path = (window.location.href).replace(window.location.origin, '').toLowerCase();
+    gtag('config', 'UA-207655205-1', {'page_path': path}); */
  
     
 
