@@ -542,8 +542,8 @@ function initPageTransitions() {
 
   // scroll to the top of the page
   barba.hooks.beforeEnter(() => {
-    locoScroll.scrollTo("top")
-     console.log("scrolltop!"); 
+   /*  locoScroll.scrollTo("top")
+     console.log("scrolltop!");  */
     /* window.scrollTo(0, 0); */
  /*    window.onbeforeunload = function () {
       window.scrollTo(0,0);
