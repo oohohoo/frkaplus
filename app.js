@@ -541,13 +541,15 @@ function initPageTransitions() {
 
 
   // scroll to the top of the page
-  barba.hooks.enter(() => {
-    window.scrollTo(0, 0);
+  barba.hooks.beforeEnter(() => {
+    locoScroll.scrollTo("top")
+     console.log("scrolltop!"); 
+    /* window.scrollTo(0, 0); */
  /*    window.onbeforeunload = function () {
       window.scrollTo(0,0);
 }; */
-    /* locoScroll.scrollTo('#top'); */
-    /* console.log("scrolltop!"); */
+
+    
   }); 
   barba.hooks.afterLeave((data) => {
     // Set <body> classes for "next" page
@@ -571,7 +573,7 @@ function initPageTransitions() {
   });
   
   barba.hooks.enter((data) => {
-    window.scrollTo(0, 0);
+    /* window.scrollTo(0, 0); */
     
    
     
