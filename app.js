@@ -2920,7 +2920,8 @@ $(document).ready(function()
             $('.videjos').append(item);
             //  document.querySelector('.filepond--media-preview video').play();
            // document.getElementById('destination').play();
-          $('video').trigger('play');
+           $('video').removeAttr("height");
+           $('video').trigger('play');
            $('video').attr({'autoplay':'true', 'loop':'true'});
            
            //setTimeout(function () {
