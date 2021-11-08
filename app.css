@@ -460,7 +460,7 @@ ACCORDION HOVER LOCO
   background-image: 
   linear-gradient(to top, #231F20 51%, transparent 50%);
   background-position: 0 100%;
-  padding: 3em 3em 1.5em 2em;
+  padding: 2em 3em 1.5em 2em;
   cursor: pointer;
   }
   
@@ -468,7 +468,7 @@ ACCORDION HOVER LOCO
 
   @media screen and (max-width: 479px) {
       .accord a:hover {
-      padding: 3em 0em 1.5em 0.8em;
+      padding: 2em 0em 1.5em 0.8em;
       }
 
 
