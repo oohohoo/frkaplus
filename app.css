@@ -466,7 +466,14 @@ ACCORDION HOVER LOCO
   
   
 
+  @media screen and (max-width: 479px) {
+      .accord a:hover {
+      padding: 3em 0em 1.5em 0em;
+      }
 
+
+  }
+  
 
   
 
